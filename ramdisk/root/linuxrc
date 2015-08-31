@@ -1,0 +1,36 @@
+#!/bin/ash
+
+
+# be sure to run this script with init=/linuxrc
+echo "linuxrc script"
+echo "PID:$$"
+
+mkdir -p /dev
+mkdir -p /proc
+mkdir -p /sys
+mkdir -p /rootfs
+
+mount -t devtmpfs   none            /dev
+mount -t proc       proc            /proc
+mount -t sysfs      none            /sys
+
+sleep 1
+
+# temporary line, delete this
+# exec /bin/busybox sh
+
+echo "linuxrc: mount mmc partition 3 as real rootfs"
+# mount -t ext4       /dev/mmcblk0p3  /rootfs
+# mkdir -p /rootfs/initrd
+
+# cd /rootfs
+
+echo "linuxrc: pivot root"
+# pivot_root . initrd
+
+echo "linuxrc: chroot"
+
+# exec chroot . /bin/bash <dev/console >dev/console 2>&1
+# exec chroot . /sbin/init <dev/console >dev/console 2>&1
+exec /bin/busybox sh
+

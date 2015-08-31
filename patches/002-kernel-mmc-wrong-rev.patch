@@ -1,0 +1,11 @@
+--- mmc.c	2011-05-19 12:06:34.000000000 +0800
++++ mmc.c.new	2015-08-25 01:28:23.883592265 +0800
+@@ -238,7 +238,7 @@
+ 	}
+ 
+ 	card->ext_csd.rev = ext_csd[EXT_CSD_REV];
+-	if (card->ext_csd.rev > 5) {
++	if (card->ext_csd.rev > 7) {
+ 		printk(KERN_ERR "%s: unrecognised EXT_CSD revision %d\n",
+ 			mmc_hostname(card->host), card->ext_csd.rev);
+ 		err = -EINVAL;

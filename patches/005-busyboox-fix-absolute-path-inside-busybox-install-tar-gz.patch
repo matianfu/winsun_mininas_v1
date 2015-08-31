@@ -1,0 +1,11 @@
+--- busybox.mk	2012-02-27 11:26:45.000000000 +0800
++++ busybox.mk.new	2015-08-25 17:37:04.607956161 +0800
+@@ -5,7 +5,7 @@
+ 
+ $(BUSYBOX_BUILD_DIR)/.install_dev: $(BUSYBOX_BUILD_DIR)/.build $(E2FSPROGS_BUILD_DIR)/.install_dev $(MINICOM_BUILD_DIR)/.install_dev
+ 	make -C $(BUSYBOX_BUILD_DIR) CONFIG_PREFIX=$(BUSYBOX_UTILS_INSTALL_ROOT) install 
+-	@tar -czf $(BUILD_DEST)/bin/busybox_install.tar.gz $(BUSYBOX_UTILS_INSTALL_ROOT)/*
++	tar -czf $(BUILD_DEST)/bin/busybox_install.tar.gz -C $(BUSYBOX_UTILS_INSTALL_ROOT) .
+ 	@touch $@
+ 
+ $(BUSYBOX_BUILD_DIR)/.install_target: $(BUSYBOX_BUILD_DIR)/.build  $(E2FSPROGS_BUILD_DIR)/.install_target $(MINICOM_BUILD_DIR)/.install_target

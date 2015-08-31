@@ -1,0 +1,11 @@
+--- Makefile	2012-06-27 02:49:53.000000000 +0800
++++ Makefile.new	2015-08-25 12:40:25.490789114 +0800
+@@ -282,7 +282,7 @@
+ # MAGIC LITERAL: This is the delusion spun by fakeroot_ng.
+ STATE_FILE=$(PROJECT_BUILD_DIR)/state_fakeroot_ng
+ 
+-FAKEROOT_NG_CMD=LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(FSROOT)/lib $(BUILD_DEST)/bin/fakeroot_ng -p$(STATE_FILE)
++FAKEROOT_NG_CMD=LD_LIBRARY_PATH=$(LD_LIBRARY_PATH):$(FSROOT)/lib fakeroot-ng -p$(STATE_FILE)
+ 
+ TARGETS+=erase-fakeroots
+ 

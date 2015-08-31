@@ -1,0 +1,9 @@
+
+# the following folders are ignored
+
+disc
+images
+workspace
+
+*.img
+*.gz

@@ -1,0 +1,43 @@
+--- ramdisk.old	2015-08-26 22:08:30.065225091 +0800
++++ ramdisk.mk	2015-08-26 22:37:51.513133326 +0800
+@@ -51,17 +51,21 @@
+ endif
+ 
+ BUSYBOX_INSTALL=$(STAGING_DIR)/bin/busybox_install.tar.gz
++TOOLCHAIN_INSTALL=$(BASE_DIR)/target/ramdisk/toolchain_install.tar.gz
+ RD_STAGING_DIR=$(BASE_DIR)/target/ramdisk/ramdisk_staging
+ RAMDISK_TEMPLATE=$(BASE_DIR)/target/ramdisk/ramdisk_template.tar.gz
+ RAMDISK_RCS=$(BASE_DIR)/target/ramdisk/rcS
++RAMDISK_TEMPLATE_DIR=$(BASE_DIR)/../ramdisk/root
++CUSTOM_DEVICE_TABLE=$(BASE_DIR)/../ramdisk/custom_device_table.txt
+ 
+ 
+ $(RAMDISK_BASE): genext2fs
+ 	# create the ramdisk staging dir
++	rm -rf $(RD_STAGING_DIR)
+ 	mkdir $(RD_STAGING_DIR)
+-	tar zxv -C $(RD_STAGING_DIR) -f $(RAMDISK_TEMPLATE)
++	cp -ar $(RAMDISK_TEMPLATE_DIR)/* $(RD_STAGING_DIR)
++	tar zxv -C $(RD_STAGING_DIR) -f $(TOOLCHAIN_INSTALL)
+ 	tar zxv -C $(RD_STAGING_DIR) -f $(BUSYBOX_INSTALL)
+-	cp -f $(RAMDISK_RCS) $(RD_STAGING_DIR)/etc/init.d/rcS
+ 	chmod a+x $(RD_STAGING_DIR)/etc/init.d/rcS
+ 
+ 	@echo "*** Creating ramdisk filesystem"
+@@ -71,13 +75,13 @@
+ 	RAMDISK_ADDTOROOTSIZE=`if [ $$RAMDISK_REALSIZE -ge 20000 ]; then echo 16384; else echo 2400; fi` ; \
+ 	RAMDISK_SIZE=`expr $$RAMDISK_REALSIZE + $$RAMDISK_ADDTOROOTSIZE` ; \
+ 	RAMDISK_ADDTOINODESIZE=`find $(RD_STAGING_DIR) | wc -l` ; \
+-	RAMDISK_INODES=`expr $$RAMDISK_ADDTOINODESIZE + 400` ; \
++	RAMDISK_INODES=`expr $$RAMDISK_ADDTOINODESIZE + 600` ; \
+ 	set -x ; \
+-	$(GENEXT2_DIR)/genext2fs -b $$RAMDISK_SIZE -N $$RAMDISK_INODES -D $(TARGET_DEVICE_TABLE) \
++	$(GENEXT2_DIR)/genext2fs -b $$RAMDISK_SIZE -N $$RAMDISK_INODES -D $(CUSTOM_DEVICE_TABLE) \
+ 	               -d $(RD_STAGING_DIR) $(RAMDISK_OPTS) $(RAMDISK_BASE)
+ else
+ 	# create filesystem
+-	$(GENEXT2_DIR)/genext2fs -D $(TARGET_DEVICE_TABLE) -d $(RD_STAGING_DIR) $(RAMDISK_OPTS) $(RAMDISK_BASE)
++	$(GENEXT2_DIR)/genext2fs -D $(CUSTOM_DEVICE_TABLE) -d $(RD_STAGING_DIR) $(RAMDISK_OPTS) $(RAMDISK_BASE)
+ endif
+ 	# delete the ramdisk staging dir
+ 	@echo "*** Deleting ramdisk staging dir"

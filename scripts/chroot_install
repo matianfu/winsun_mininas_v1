@@ -1,0 +1,74 @@
+#!/bin/bash
+
+echo "====================================="
+echo "running installation script on target"
+echo "====================================="
+
+# pts and proc are mounted in pre-chroot-install stage
+
+# pts must be mounted, otherwise expect/spawn will complain
+# mkdir -p /proc
+# mkdir -p /dev/pts
+
+# mount -t proc proc /proc
+# mount -t devpts devpts /dev/pts
+
+cd /.install
+
+# timezone
+echo "update adjtime, timezone and localtime"
+cat ./etc/adjtime > /etc/adjtime
+echo "Asia/Shanghai" > /etc/timezone
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+# networking, don't do this here, the host machine will
+# malfunction since the two share the same proc file
+# echo "winsun" > /etc/hostname
+
+# update apt source
+echo "update apt source list"
+cat ./etc/apt/sources.list > /etc/apt/sources.list
+echo "apt update"
+aptitude update
+
+# install expect
+# aptitude -y install expect
+
+# install locale, see 
+
+: <<EOD
+# put file first will suppress prompt GUI
+# install locale
+cat ./etc/locale.gen > /etc/locale.gen
+cat ./etc/default/locale > /etc/default/locale
+aptitude -y install locales
+EOD
+
+# install console-setup TODO not sure
+cat ./etc/default/keyboard > /etc/default/keyboard
+
+# install console-setup
+echo "install console-setup, silently"
+DEBIAN_FRONTEND=noninteractive aptitude -y -q install console-setup
+
+# install standard package
+tasksel install standard
+
+# install ssh, network-manager, usbutils package
+aptitude -y install ssh network-manager usbutils
+
+# enable serial console on ttyS0 in inittab
+cat ./etc/inittab > /etc/inittab
+
+# clear udev cache on eth mac addr
+echo "" > /etc/udev/rules.d/70-persistent-net.rules
+
+# update depmod
+echo "update kernel mod dependencies"
+depmod -a 2.6.39
+
+echo "=========================================="
+echo "finished installation jobs in chroot shell"
+echo "=========================================="
+
+exit 

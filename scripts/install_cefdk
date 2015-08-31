@@ -1,0 +1,137 @@
+#!/bin/bash
+
+set -e
+
+# -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
+# -rw-r--r-- 1 ma ma   5617664 Aug 24 00:14 IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+# -rw-r--r-- 1 ma ma  45783040 Aug 24 00:14 IntelCE-GATEWAY-29.0.12364.325671.iso
+# -rw-r--r-- 1 ma ma 327315456 Aug 24 00:14 IntelCE-GPL-29.0.12364.325671.iso
+# -rw-r--r-- 1 ma ma 323629056 Aug 24 00:14 IntelCE-MEDIA-29.0.12364.325671.iso
+# -rw-r--r-- 1 ma ma  68870144 Aug 24 00:14 IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+
+
+# This function use expect to install iso image
+function install_iso() {
+
+    rm -rf tmp
+    mkdir tmp
+
+    echo "mount"
+
+    sudo mount -t iso9660 -o loop disc/$1 tmp
+
+    echo "ls"
+    ls tmp
+
+    /usr/bin/expect << EOD
+
+    spawn tmp/installer -d .
+    set timeout 1
+    expect -exact "--MORE--"
+    send "q"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    set timeout 30
+    expect "Successfully completed installation"
+
+EOD
+
+    sudo umount tmp
+    rm -rf tmp
+}
+
+
+scripts/banner "Start installing Intel CEFDK iso images"
+
+# in case previous failure
+rm -rf IntelCE-29.0.12364.325671
+
+# install five iso
+install_iso IntelCE-BASE-29.0.12364.325671.iso
+install_iso IntelCE-GPL-29.0.12364.325671.iso
+install_iso IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+install_iso IntelCE-MEDIA-29.0.12364.325671.iso
+install_iso IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+
+# rename 
+rm -rf workspace
+mv IntelCE-29.0.12364.325671 workspace
+
+scripts/banner "Start patching Intel CEFDK"
+
+# change to project's top dir
+cd workspace
+
+# set targetFS package default to n
+patch package/targetFS/Config.in < ../patches/000-01-set-targetFS-package-default-n.patch
+
+# set freetype package default to n, this will result in all graphics-related packages
+# unselected, including but not limited to graphics, display, directFB, freedesktop.
+# this will save about 25 minutes for build time.
+patch package/freetype/Config.in < ../patches/000-02-set-freetype-package-default-n.patch
+
+# generate (buildroot) global buildroot config
+make defconfig
+
+# unpack bison and patch bug
+make bison-unpackage
+patch project_build_i686/IntelCE/bison-29.0.12344.325128/bison-2.4.2/lib/stdio.in.h < ../patches/001-bison-stdio.in.h-false-warning.patch
+
+# unpack kernel and patch bug
+make kernel-unpackage
+patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/mmc/core/mmc.c < ../patches/002-kernel-mmc-wrong-rev.patch
+
+# patch Makefile to use host fakeroot-ng
+patch Makefile < ../patches/003-Makefile-use-host-fakeroot-ng.patch
+
+# unpack busybox
+make busybox-unpackage
+
+# enable pivor_root and switch_root
+patch project_build_i686/IntelCE/busybox-29.0.12344.325128/conf/busybox.config < ../patches/004-busybox-enable-pivot-root-and-switch-root.patch
+
+# fix absolute-path bug in busybox-install.tar.gz archive
+patch project_build_i686/IntelCE/busybox-29.0.12344.325128/mk/busybox.mk < ../patches/005-busyboox-fix-absolute-path-inside-busybox-install-tar-gz.patch
+
+# build kernel in multithread way (make -j8)
+patch project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < ../patches/006-build-kernel-using-multithread.patch
+
+# modified ramdisk makefile
+patch target/ramdisk/ramdisk.mk < ../patches/100-modified-ramdisk-makefile.patch
+
+../scripts/banner "Building toolchain"
+
+# build toolchain
+make toolchain
+
+../scripts/banner "Tar toolchain lib files for ramdisk"
+
+# tar toolchain target installation (mostly lib file) for ramdisk
+tar -czf target/ramdisk/toolchain_install.tar.gz -C project_build_i686/IntelCE/root/ .
+
+../scripts/banner "Building kernel for the first time"
+#
+# there won't be configure file if kernel have not ever beed built
+#
+make kernel
+
+# (experimental) enable devtmpfs and all raid/md related configuration
+patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/gen3_defconfig.ht < ../patches/007-kernel-enable-devtmpfs-and-everything-raid-md.patch
+
+../scripts/banner "Building kernel for the second time"
+
+# do it again
+make kernel
+
+../scripts/banner "Building all targets"
+
+# make all, comment out this line if you want to make manually
+make 
+
+../scripts/banner "End"
+
+cd -
+
+

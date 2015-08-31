@@ -1,0 +1,9 @@
+--- Config.in	2012-09-06 09:34:15.000000000 +0800
++++ Config.in.new	2015-08-25 13:31:27.999035446 +0800
+@@ -1,5 +1,5 @@
+ config BR2_PACKAGE_TARGETFS
+ bool "targetFS"
+-default y
++default n
+ help
+ None

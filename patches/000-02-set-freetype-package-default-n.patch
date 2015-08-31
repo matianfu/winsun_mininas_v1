@@ -1,0 +1,10 @@
+--- package/freetype/Config.in	2012-08-24 02:19:53.000000000 +0800
++++ package/freetype/Config.in.new	2015-08-25 16:26:01.582310072 +0800
+@@ -1,6 +1,6 @@
+ config BR2_PACKAGE_FREETYPE
+ bool "freetype"
+-default y
++default n
+ depends on BR2_PACKAGE_TOOLCHAIN
+ depends on BR2_PACKAGE_AUTOTOOLS
+ help

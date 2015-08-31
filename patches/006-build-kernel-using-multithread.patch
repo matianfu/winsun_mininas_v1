@@ -1,0 +1,11 @@
+--- Makefile	2012-07-30 22:37:53.000000000 +0800
++++ Makefile.new	2015-08-26 16:54:00.744782901 +0800
+@@ -187,7 +187,7 @@
+ 	@touch $@
+ 
+ $(LINUX_BUILD_DIR)/.build: $(LINUX_BUILD_DIR)/.configure 
+-	@make -C $(LINUX_BUILD_DIR)
++	@make -C $(LINUX_BUILD_DIR) -j8
+ 	@touch $@
+ 
+ $(LINUX_BUILD_DIR)/.configure: $(LINUX_BUILD_DIR)/.patch

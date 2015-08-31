@@ -1,0 +1,74 @@
+#!/bin/sh
+
+function banner {
+
+    local DASH="========================================"
+    echo -e "\e[32m\e[1m$DASH"
+    echo -e "$1"
+    echo -e "${DASH}\e[0m"
+}
+
+# The assuption is the partition is already mounted @ deb/debinst
+
+# mount debian cdrom
+mkdir -p deb/cdrom
+sudo mount -t iso9660 disc/debian-6.0.10-i386-CD-1.iso deb/cdrom
+
+# debootstrap
+sudo debootstrap --arch i386 squeeze deb/debinst file:deb/cdrom/debian
+
+sudo umount deb/cdrom
+rm -rf deb/cdrom
+
+##
+##  pre_chroot_install
+##
+
+banner "pre-chroot-install"
+
+# push lib modules
+sudo mkdir -p deb/debinst/lib/modules/2.6.39
+sudo tar xvzf workspace/lib_modules.tar.gz -C deb/debinst/lib/modules/2.6.39
+
+# push files and scripts
+sudo mkdir -p deb/debinst/.install
+sudo cp -r deb/root/* deb/debinst/.install
+sudo cp scripts/chroot_install deb/debinst/.install/chroot_install 
+
+# mount proc
+sudo mkdir -p deb/debinst/proc
+sudo mount -t proc proc deb/debinst/proc
+
+# mount sysfs
+# sudo mkdir -p deb/debinst/sys
+# sudo mount -t sysfs none deb/debinst/sys
+
+# bind mount dev
+# sudo mkdir -p deb/debinst/dev
+# sudo mount -o bind /dev deb/debinst/dev
+
+# mount devpts
+sudo mkdir -p deb/debinst/dev/pts
+sudo mount -t devpts none deb/debinst/dev/pts
+
+##
+##  chroot_install
+##
+
+banner "chroot-install"
+
+# chroot
+sudo LANG=C.UTF-8 chroot deb/debinst /.install/chroot_install
+
+##  post_chroot_install
+
+banner "post-chroot-install"
+
+sudo cat "winsun" > deb/debinst/etc/hostname
+sudo rm -rf deb/debinst/.install
+
+sudo umount deb/debinst/dev/pts
+sudo umount deb/debinst/proc
+
+banner "debian installation finished"
+
