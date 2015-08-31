@@ -1,6 +1,6 @@
---- ramdisk.old	2015-08-26 22:08:30.065225091 +0800
-+++ ramdisk.mk	2015-08-26 22:37:51.513133326 +0800
-@@ -51,17 +51,21 @@
+--- workspace/target/ramdisk/ramdisk.mk	2015-08-31 21:52:40.122782058 +0800
++++ ./ramdisk.mk	2015-08-31 21:25:01.857757052 +0800
+@@ -51,19 +51,24 @@
  endif
  
  BUSYBOX_INSTALL=$(STAGING_DIR)/bin/busybox_install.tar.gz
@@ -21,10 +21,15 @@
 +	tar zxv -C $(RD_STAGING_DIR) -f $(TOOLCHAIN_INSTALL)
  	tar zxv -C $(RD_STAGING_DIR) -f $(BUSYBOX_INSTALL)
 -	cp -f $(RAMDISK_RCS) $(RD_STAGING_DIR)/etc/init.d/rcS
- 	chmod a+x $(RD_STAGING_DIR)/etc/init.d/rcS
- 
+-	chmod a+x $(RD_STAGING_DIR)/etc/init.d/rcS
+-
++	rm -f $(RD_STAGING_DIR)/linuxrc
++	cp -a $(RAMDISK_TEMPLATE_DIR)/linuxrc $(RD_STAGING_DIR)
++	chmod a+x $(RD_STAGING_DIR)/linuxrc
  	@echo "*** Creating ramdisk filesystem"
-@@ -71,13 +75,13 @@
+ ifeq ($(strip $(BR2_TARGET_ROOTFS_RAMDISK_BLOCKS)),0)
+ 	# compute blocks & inodes, and create filesystem
+@@ -71,13 +76,13 @@
  	RAMDISK_ADDTOROOTSIZE=`if [ $$RAMDISK_REALSIZE -ge 20000 ]; then echo 16384; else echo 2400; fi` ; \
  	RAMDISK_SIZE=`expr $$RAMDISK_REALSIZE + $$RAMDISK_ADDTOROOTSIZE` ; \
  	RAMDISK_ADDTOINODESIZE=`find $(RD_STAGING_DIR) | wc -l` ; \
