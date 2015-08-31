@@ -72,6 +72,9 @@ patch package/targetFS/Config.in < ../patches/000-01-set-targetFS-package-defaul
 # this will save about 25 minutes for build time.
 patch package/freetype/Config.in < ../patches/000-02-set-freetype-package-default-n.patch
 
+# disable ext2root build, error in Ubuntu 12.04, but not 15.04
+patch target/ext2/Config.in < ../patches/000-03-set-ext2root-default-n.patch
+
 # generate (buildroot) global buildroot config
 make defconfig
 
@@ -93,7 +96,7 @@ make busybox-unpackage
 patch project_build_i686/IntelCE/busybox-29.0.12344.325128/conf/busybox.config < ../patches/004-busybox-enable-pivot-root-and-switch-root.patch
 
 # fix absolute-path bug in busybox-install.tar.gz archive
-patch project_build_i686/IntelCE/busybox-29.0.12344.325128/mk/busybox.mk < ../patches/005-busyboox-fix-absolute-path-inside-busybox-install-tar-gz.patch
+patch project_build_i686/IntelCE/busybox-29.0.12344.325128/mk/busybox.mk < ../patches/005-busybox-fix-absolute-path-inside-busybox-install-tar-gz.patch
 
 # build kernel in multithread way (make -j8)
 patch project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < ../patches/006-build-kernel-using-multithread.patch

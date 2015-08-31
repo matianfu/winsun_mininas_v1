@@ -28,12 +28,14 @@ banner "pre-chroot-install"
 
 # push lib modules
 sudo mkdir -p deb/debinst/lib/modules/2.6.39
-sudo tar xvzf workspace/lib_modules.tar.gz -C deb/debinst/lib/modules/2.6.39
+# sudo tar xvzf workspace/lib_modules.tar.gz -C deb/debinst/lib/modules/2.6.39
+sudo cp -r workspace/project_build_i686/IntelCE/root/lib/modules/* deb/debinst/lib/modules/2.6.39
 
 # push files and scripts
 sudo mkdir -p deb/debinst/.install
 sudo cp -r deb/root/* deb/debinst/.install
-sudo cp scripts/chroot_install deb/debinst/.install/chroot_install 
+sudo cp scripts/chroot_install deb/debinst/.install/chroot_install
+
 
 # mount proc
 sudo mkdir -p deb/debinst/proc

@@ -1,0 +1,11 @@
+--- Config.in	2012-01-12 08:09:53.000000000 +0800
++++ Config.in.new	2015-08-31 23:28:17.168438626 +0800
+@@ -2,7 +2,7 @@
+ 	bool "ext2 root filesystem"
+     depends on ! BR2_PACKAGE_TARGETFS
+     depends on ! BR2_PACKAGE_TARGETFS_GATEWAY
+-	default y
++	default n
+ 	select BR2_HOST_FAKEROOT
+ 	help
+ 	  Build an ext2 root filesystem
