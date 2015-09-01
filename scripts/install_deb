@@ -65,7 +65,7 @@ sudo LANG=C.UTF-8 chroot deb/debinst /.install/chroot_install
 
 banner "post-chroot-install"
 
-sudo cat "winsun" > deb/debinst/etc/hostname
+sudo echo "winsun" > deb/debinst/etc/hostname
 sudo rm -rf deb/debinst/.install
 
 sudo umount deb/debinst/dev/pts
