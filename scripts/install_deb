@@ -36,7 +36,6 @@ sudo mkdir -p deb/debinst/.install
 sudo cp -r deb/root/* deb/debinst/.install
 sudo cp scripts/chroot_install deb/debinst/.install/chroot_install
 
-
 # mount proc
 sudo mkdir -p deb/debinst/proc
 sudo mount -t proc proc deb/debinst/proc

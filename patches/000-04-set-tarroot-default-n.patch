@@ -1,0 +1,11 @@
+--- Config.in	2012-01-12 08:09:53.000000000 +0800
++++ Config.in.new	2015-09-01 12:16:40.316318001 +0800
+@@ -2,7 +2,7 @@
+ 	bool "tar the root filesystem"
+     depends on ! BR2_PACKAGE_TARGETFS
+     depends on ! BR2_PACKAGE_TARGETFS_GATEWAY
+-    default y
++    default n
+ 	select BR2_HOST_FAKEROOT
+ 	help
+ 	  Build a tar archive of the root filesystem
