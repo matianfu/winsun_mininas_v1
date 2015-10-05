@@ -126,6 +126,9 @@ make kernel
 # (experimental) enable devtmpfs and all raid/md related configuration
 patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.config < ../patches/007-kernel-enable-devtmpfs-and-everything-raid-md.patch
 
+# patch usb
+cp ../patches/pci-quirks.c project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/usb/host/pci-quirks.c
+
 ../scripts/banner "Building kernel for the second time"
 
 # do it again
