@@ -7,17 +7,17 @@
 boot_new_kernel() {
 
     # debug
-    echo "command line: $(cat /mnt/boot/commandline)"
+    echo "command line: $(cat /mnt/boot/cmdline)"
 
     # 
     #  check ramdisk
     #
     if [ ! -e "/mnt/boot/ramdisk" ]; then
         # does not exist
-        kexec -l /mnt/boot/bzImage --command-line="$(cat /mnt/boot/commandline)"
+        kexec -l /mnt/boot/bzImage --command-line="$(cat /mnt/boot/cmdline)"
     else 
         # ramdisk file does not exist
-        kexec -l /mnt/boot/bzImage --initrd=/mnt/boot/ramdisk --command-line="$(cat /mnt/boot/commandline)"
+        kexec -l /mnt/boot/bzImage --initrd=/mnt/boot/ramdisk --command-line="$(cat /mnt/boot/cmdline)"
     fi
 
     if [ $? -eq 0 ]; then
@@ -39,8 +39,8 @@ check_boot_file() {
         return 1
     fi
 
-    if [ ! -e "/mnt/boot/commandline" ]; then
-        echo "commandline not found"
+    if [ ! -e "/mnt/boot/cmdline" ]; then
+        echo "cmdline not found"
         return 1
     fi
 
