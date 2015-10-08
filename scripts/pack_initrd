@@ -7,7 +7,7 @@ if [ -z "$BARCELONA_ROOT" ]; then
     exit 1
 fi
 
-INITRD_DIR=${BARCELONA_ROOT}/usb/initrd
+INITRD_DIR=${BARCELONA_ROOT}/usb/initrd/wheezy-netboot
 TMP_DIR=${BARCELONA_ROOT}/tmp
 OUTPUT_DIR=${BARCELONA_ROOT}/output
 
