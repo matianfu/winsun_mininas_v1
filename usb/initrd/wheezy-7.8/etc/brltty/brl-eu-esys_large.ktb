@@ -1,6 +1,0 @@
-title EuroBraille Esys 80
-include brl-eu-common.kti
-include brl-eu-joysticks.kti
-include brl-eu-sw12.kti
-include brl-eu-sw34.kti
-include brl-eu-sw56.kti

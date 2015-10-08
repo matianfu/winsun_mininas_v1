@@ -1,0 +1,592 @@
+Template: base-installer/progress/register-modules
+Type: text
+Description: Registering modules...
+Description-ar.UTF-8: تسجيل الوحدات...
+Description-ast.UTF-8: Rexistrando módulos...
+Description-be.UTF-8: Рэгістрацыя модуляў...
+Description-bg.UTF-8: Регистриране на модулите...
+Description-bo.UTF-8: དཔེ་དབྱིབས་ཐོ་འགོད་བྱེད་བཞིན་པ་་་
+Description-bs.UTF-8: Registrujem module...
+Description-ca.UTF-8: S'estan registrant els mòduls...
+Description-cs.UTF-8: Registrují se moduly...
+Description-cy.UTF-8: Yn cofrestru modiwlau...
+Description-da.UTF-8: Registrerer moduler ...
+Description-de.UTF-8: Registrieren der Module ...
+Description-el.UTF-8: Καταγραφή αρθρωμάτων λογισμικού ...
+Description-eo.UTF-8: Registrado de moduloj...
+Description-es.UTF-8: Registrando los módulos...
+Description-et.UTF-8: Moodulite registreerimine...
+Description-eu.UTF-8: Moduluak erregistratzen...
+Description-fa.UTF-8: ثبت ماژول‌ها
+Description-fi.UTF-8: Rekisteröidään moduulit...
+Description-fr.UTF-8: Enregistrement des modules...
+Description-ga.UTF-8: Modúil á gclárú...
+Description-gl.UTF-8: Estanse a rexistrar os módulos
+Description-he.UTF-8: רושם מודולים ...
+Description-hr.UTF-8: Registriram module...
+Description-hu.UTF-8: Modulok bejegyzése...
+Description-id.UTF-8: Mendaftarkan modul-modul ...
+Description-is.UTF-8: Skrái kjarnaeiningar...
+Description-it.UTF-8: Registrazione dei moduli...
+Description-ja.UTF-8: モジュールを登録しています...
+Description-kk.UTF-8: Модульдерді тіркеу...
+Description-kn.UTF-8: "ಮಾಡ್ಯೂಲ್"ಗಳನ್ನು ನೋಂದಾಯಿಸಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: 모듈을 등록하는 중입니다...
+Description-ku.UTF-8: Modul tên tomarkirin...
+Description-lo.UTF-8: ກຳລັງລົງທະບຽນໂມດູນຕ່າງໆ...
+Description-lt.UTF-8: Registruojami moduliai...
+Description-lv.UTF-8: Reģistrē moduļus...
+Description-mk.UTF-8: Регистрирам модули...
+Description-nb.UTF-8: Registrerer moduler ...
+Description-nl.UTF-8: Modules worden geregistreerd...
+Description-nn.UTF-8: Registrerer modular …
+Description-no.UTF-8: Registrerer moduler ...
+Description-pl.UTF-8: Rejestrowanie modułów...
+Description-pt.UTF-8: A registar os módulos ...
+Description-pt_BR.UTF-8: Registrando módulos...
+Description-ro.UTF-8: Se înregistrează modulele...
+Description-ru.UTF-8: Выполняется регистрация модулей...
+Description-se.UTF-8: Registreremin modulaid …
+Description-si.UTF-8: මොඩියුල ලියාපදිංචි කරමින්...
+Description-sk.UTF-8: Registrujú sa moduly...
+Description-sl.UTF-8: Vpisovanje modulov ...
+Description-sq.UTF-8: Duke regjistruar modulet ...
+Description-sr.UTF-8: Регистрованје модула...
+Description-sv.UTF-8: Registrerar moduler...
+Description-te.UTF-8: మాధ్యమాలు (modules) నమోదు చేయబడుతున్నాయి...
+Description-tg.UTF-8: Бақайдгирии модулҳо...
+Description-th.UTF-8: กำลังลงทะเบียนมอดูลต่างๆ...
+Description-tl.UTF-8: Tinatala ang mga module...
+Description-tr.UTF-8: Modüller kaydediliyor...
+Description-ug.UTF-8: بۆلەكلەرنى خەتلەۋاتىدۇ…
+Description-uk.UTF-8: Реєстрація модулів...
+Description-vi.UTF-8: Đang đăng ký các mô-đun...
+Description-zh_CN.UTF-8: 正在注册模块...
+Description-zh_TW.UTF-8: 正在註冊模組……
+
+Template: debian-installer/add-kernel-opts
+Type: string
+Description: for internal use; can be preseeded
+ Extra (custom) boot options to add for target system.
+
+Template: debian-installer/dummy
+Type: string
+Description: Dummy template for preseeding unavailable questions
+ The answer to this question has been preseeded (${ID}).
+ If you see this template, you've found a bug in the installer;
+ please file a report.
+
+Template: debian-installer/shell-plugin
+Type: terminal
+Description: ${TITLE}
+
+Template: debian-installer/shell-plugin-default-title
+Type: text
+Description: Interactive shell
+Description-ar.UTF-8: سطر أوامر تفاعلي
+Description-ast.UTF-8: Intérprete d'órdenes interactivu
+Description-be.UTF-8: Камандная абалонка
+Description-bg.UTF-8: Интерактивна обвивка
+Description-bo.UTF-8: ཕན་ཚུན་འབྲེལ་ཡོད་ཀྱི་འཇུག་ངོགས
+Description-bs.UTF-8: Interaktivni shell
+Description-ca.UTF-8: Intèrpret d'ordres interactiu
+Description-cs.UTF-8: Interaktivní shell
+Description-cy.UTF-8: Cragen rhyngweithiol
+Description-da.UTF-8: Interaktiv skal
+Description-de.UTF-8: Interaktive Shell
+Description-el.UTF-8: Διαδραστικό κέλυφος
+Description-eo.UTF-8: Interaga interpretilo (ŝelo).
+Description-es.UTF-8: Intérprete de órdenes interactivo
+Description-et.UTF-8: Interaktiivne kest
+Description-eu.UTF-8: Shell elkarreragilea
+Description-fa.UTF-8: پوسته‌ٔ محاوره‌ای
+Description-fi.UTF-8: Vuorovaikutteinen komentotulkki
+Description-fr.UTF-8: Ligne de commande interactive
+Description-ga.UTF-8: Blaosc idirghníomhach
+Description-gl.UTF-8: Shell interactiva
+Description-he.UTF-8: מעטפת אינטראקטיבית
+Description-hr.UTF-8: Interaktivna ljuska (shell)
+Description-hu.UTF-8: Interaktív héj
+Description-id.UTF-8: Shell interaktif
+Description-is.UTF-8: Gagnvirk skel
+Description-it.UTF-8: Shell interattiva
+Description-ja.UTF-8: インタラクティブシェル
+Description-kk.UTF-8: Интерактивті қоршам
+Description-kn.UTF-8: ಸಕ್ರಿಯವಾದ ಶೆಲ್
+Description-ko.UTF-8: 인터랙티브 쉘
+Description-ku.UTF-8: Qalikê înteraktîf
+Description-lo.UTF-8: ເຊຣ໌ວໂຕ້ຕອບ
+Description-lt.UTF-8: Interaktyvi aplinka (shell)
+Description-lv.UTF-8: Interaktīvā čaula
+Description-mk.UTF-8: Интерактивна конзола
+Description-nb.UTF-8: Interaktivt skall
+Description-nl.UTF-8: Interactieve shell
+Description-nn.UTF-8: Interaktivt skal.
+Description-no.UTF-8: Interaktivt skall
+Description-pl.UTF-8: Powłoka interaktywna
+Description-pt.UTF-8: Shell interactiva
+Description-pt_BR.UTF-8: Shell interativo
+Description-ro.UTF-8: Consolă interactivă
+Description-ru.UTF-8: Интерактивная оболочка
+Description-se.UTF-8: Interaktiivalaš skálžu
+Description-si.UTF-8: අන්තර්ක්‍රියාකාරී ශෙලය
+Description-sk.UTF-8: Interaktívny shell
+Description-sl.UTF-8: Interaktivna lupina
+Description-sq.UTF-8: Shell ndërveprues
+Description-sr.UTF-8: Интерактивни командни интерфејс
+Description-sv.UTF-8: Interaktivt skal
+Description-te.UTF-8: సంవాద(interactive) షెల్
+Description-tg.UTF-8: Восити интерактивӣ
+Description-th.UTF-8: เชลล์โต้ตอบ
+Description-tl.UTF-8: Interactive shell
+Description-tr.UTF-8: Etkileşimli kabuk
+Description-ug.UTF-8: shell سۆزلىشىشى
+Description-uk.UTF-8: Інтерактивний командний процесор
+Description-vi.UTF-8: Trình bao tương tác
+Description-zh_CN.UTF-8: 交互式 shell
+Description-zh_TW.UTF-8: 互動式 shell
+
+Template: debian-installer/terminal-plugin-unavailable
+Type: error
+Description: Terminal plugin not available
+ This build of the debian-installer requires the terminal plugin in
+ order to display a shell. Unfortunately, this plugin is currently
+ unavailable.
+ .
+ It should be available after reaching the "Loading additional components"
+ installation step.
+ .
+ ${WORKAROUND}
+Description-ar.UTF-8: إضافة الطرفية غير متوفّرة
+ تتطلب هذه البنية من برنامج تثبيت دبيان إلى إضافةٍ للطرفية كي تتمكن من فتح سطر الأوامر. للأسف، هذه الإضافة غير متوفّرة حالياً.
+ .
+ يجب أن تتوفر هذه الإضافة بعد أن تصل إلى خطوة التثبيت "تحميل المكوّنات الإضافية".
+ .
+ ${WORKAROUND}
+Description-ast.UTF-8: Módulu complementariu de terminal nun disponible
+ Esta versión del debian-installer requier el módulu complementariu de la terminal pa visualizar un shell. Desafortunadamente, esti módulu complementariu nun ta disponible anguaño.
+ .
+ Debiera tar disponible dempués del pasu d'instalación "Carga de componentes adicionales".
+ .
+ ${WORKAROUND}
+Description-be.UTF-8: Плагін тэрміналу недаступны
+ Гэта зборка debian-installer патрабуе плагін тэрміналу, каб паказваць абалонку. Нажаль, гэты плагін зараз недаступны.
+ .
+ Ён мае быць даступным пасля дасягнення кроку "Загрузка дадатковых кампанентаў".
+ .
+ ${WORKAROUND}
+Description-bg.UTF-8: Няма налична приставка за терминал
+ За да стартира обвивка, инсталаторът има нужда от приставката за терминал, която за съжаление не е налична.
+ .
+ Приставката би трябвало да се зареди след стъпката „Зареждане на допълнителни компоненти“.
+ .
+ ${WORKAROUND}
+Description-bo.UTF-8: མཐའ་སྣེའི་ནང་འཛུགས་སྤྱོད་མི་རུང་བ
+ debian སྒྲིག་འཇུག་ཆས་ཀྱི་པར་གཞི་འདིར་མཐའ་སྣེའི་ནང་འཛུགས་དེ་སྤྱད་ནས་འཇུག་སྒོ་ཞིག་མངོན་ཐུབ སྟབས་མ་ལེགས་པར་ནང་འཛུགས་དེ་དང་ཐོག་སྤྱོད་རྒྱུ་མེད་པ
+ .
+ སྒྲིག་འཇུག་གི་རྒྱུད་རིམ་"ལྷུ་ལག་གཞན་དག་ཡར་འཇུག་བྱེད་པ" ཞེས་པ་དེའི་མཚམས་སུ་དེ་སྤྱོད་ཐུབ
+ .
+ ${WORKAROUND}
+Description-bs.UTF-8: Terminalni plugin nije dostupan
+ Ova verzija debian-instalera zahtijeva terminalni plugin da otvorite shell. Nažalost, ovaj plugin trenutno nije dostupan.
+ .
+ Trebao bi biti dostupan nakon "Učitavanje dodatnih komponenti" instalacijskog koraka.
+ .
+ ${WORKAROUND}
+Description-ca.UTF-8: El connector del terminal no és disponible
+ Aquesta construcció del debian-installer requereix el connector del terminal per a poder mostrar un intèrpret d'ordres. Malauradament, aquest connector no és disponible actualment.
+ .
+ Hauria de ser disponible després d'arribar al pas de la instal·lació «Càrrega de components addicionals».
+ .
+ ${WORKAROUND}
+Description-cs.UTF-8: Modul s terminálem není dostupný
+ Toto sestavení debian-installeru vyžaduje pro zobrazení shellu zásuvný modul s terminálem. Tento modul však momentálně není dostupný.
+ .
+ Měl by být k dispozici po kroku „Nahrávají se dodatečné komponenty“.
+ .
+ ${WORKAROUND}
+Description-cy.UTF-8: Nid yw'r ategyn terfynell ar gael
+ Mae'r fersiwn hwn o'r sefydlydd-debian angen yr ategyn terfynell er mwyn arddangos cragen. Yn anffodus, nid yw'r ategyn hyn ar gael ar hyn o bryd.
+ .
+ Dylai fod ar gael wedi cyrraedd y cam sefydlu "Yn llwytho cydrannau ychwanegol".
+ .
+ ${WORKAROUND}
+Description-da.UTF-8: Terminaludvidelsen ikke tilgængelig
+ Denne udgave af Debian-installationsprogrammet skal bruge terminaludvidelsen for at vise en skal. Desværre er denne udvidelse ikke tilgængelig for øjeblikket.
+ .
+ Den skulle være tilgængelig, når installationen når til trinnet »Indlæsning af yderligere komponenter«.
+ .
+ ${WORKAROUND}
+Description-de.UTF-8: Konsolen-Plugin nicht verfügbar
+ Dieser Bau des Debian-Installers benötigt das Konsolen-Plugin, um eine Shell anzuzeigen. Unglücklicherweise ist dieses Plugin derzeit nicht verfügbar.
+ .
+ Es sollte nach dem Erreichen des Installationsschritts »Zusätzliche Komponenten laden« verfügbar sein.
+ .
+ ${WORKAROUND}
+Description-el.UTF-8: Δεν είναι διαθέσιμο το plugin τερματικού
+ Η παρούσα έκδοση του εγκαταστάτη του Debian απαιτεί το plugin τερματικού για να εμφανίσει ένα κέλυφος. Δυστυχώς το plugin δεν είναι διαθέσιμο αυτή τη στιγμή.
+ .
+ Θα έπρεπε να είναι διαθέσιμο αφού φτάσετε στο βήμα "Φόρτωση επιπρόσθετων συστατικών" της εγκατάστασης.
+ .
+ ${WORKAROUND}
+Description-eo.UTF-8: Ne disponeblas kromaĵo por terminalo.
+ Tiu ĉi versio de la debian-instalilo postulas la terminalo-kromaĵon por montrigi ŝelon. Malfeliĉe, tiu ĉi kromaĵo de disponeblas.
+ .
+ Ĝi devos esti disponebla post atingo de la instal-etapo "Ŝargado de kromaj instalpakoj".
+ .
+ ${WORKAROUND}
+Description-es.UTF-8: No está disponible el complemento de terminal
+ Es necesario tener el complemento del terminal para poder mostrar un intérprete de órdenes en esta versión del «debian-installer». Desafortunadamente este complemento no está disponible actualmente.
+ .
+ Debería estar disponible una vez llegue al paso de instalación «Cargando componentes adicionales».
+ .
+ ${WORKAROUND}
+Description-et.UTF-8: Terminali plugin pole saadaval
+ Sellel debian-installer'i kompilatsioonil on kesta näitamiseks vaja terminali pluginat. Kahjuks ei ole see plugin praegu saadaval.
+ .
+ See peaks olema saadaval pärast paigaldussammu "Lisakomponentide laadimine" läbimist.
+ .
+ ${WORKAROUND}
+Description-eu.UTF-8: Terminal plugina ez dago erabilgarri
+ Debian-installer bertsio honek terminal plugina behar du shell bat bistaratzeko. Zoritxarrez, plugin hau ez dago eskuragarri momentu honetan.
+ .
+ Eskuragarri egon beharko litzateke "Instalatzailearen osagaiak kargatzen" urratsa osatu ondoren.
+ .
+ ${WORKAROUND}
+Description-fa.UTF-8: افزونهٔ ترمینال موجود نیست.
+ ساختار نصاب دبیان به افزونهٔ ترمینال برای نماش دادن یک پوسته احتیاج دارد. متأسفانه این افزونه هم‌اکنون موجود نیست.
+ .
+ پس از رسیدن به مرحلهٔ نصب «بارگذاری کامپوننت‌های اضافی» می‌بایست در اختیار شما باشد.
+ .
+ ${WORKAROUND}
+Description-fi.UTF-8: Pääteliitännäinen ei ole käytettävissä
+ Ohjelman debian-installer tämä käännös vaatii pääteliitännäisen näyttääkseen komentotulkin. Ikävä kyllä liitännäinen ei ole nyt saatavilla.
+ .
+ Sen pitäisi olla saatavilla asennusvaiheen ”Ladataan lisää asentimen osia” jälkeen.
+ .
+ ${WORKAROUND}
+Description-fr.UTF-8: Module d'émulation de terminal indisponible
+ Cette version de l'installateur a besoin du module d'émulation de terminal pour donner accès à la ligne de commande. Ce module n'est toutefois pas disponible.
+ .
+ Il devrait devenir disponible après l'étape « charger des composants supplémentaires ».
+ .
+ ${WORKAROUND}
+Description-ga.UTF-8: Níl an breiseán teirminéil le fáil
+ Tá an breiseán teirminéil de dhíth ar an leagan seo den suiteálaí Debian chun blaosc a thaispeáint.  Faraor, níl an breiseán seo le fáil faoi láthair.
+ .
+ Beidh sé le fáil tar éis duit an chéim "Comhpháirteanna eile á luchtú" a shroicheadh.
+ .
+ ${WORKAROUND}
+Description-gl.UTF-8: O módulo de terminal non está dispoñíbel
+ Esta versión de debian-installer precisa do módulo do terminal para mostrar unha shell. Porén, este módulo non está dispoñíbel.
+ .
+ Debería estar dispoñíbel despois de chegar ao paso de instalación «A cargar as compoñentes adicionais».
+ .
+ ${WORKAROUND}
+Description-he.UTF-8: תוכנת תקע למסוף אינה זמינה
+ גירסא זו של debian-installer צריכה את תוכנת התקע למסוף כדי להציג מעטפת. לרוע המזל, תוכנת תקע זו אינה זמינה כרגע.
+ .
+ תוכנת תקע זו אמורה להיות זמינה אחרי הגעה לשלב ההתקנה "הטענת רכיבים נוספים".
+ .
+ ${WORKAROUND}
+Description-hr.UTF-8: Nije dostupan priključak za terminal
+ Ovo izdanje instalacijskog programa zahtijeva priključak za terminal kako bi prikazali ljusku (shell). Nažalost, taj priključak trenutno nije dostupan.
+ .
+ Trebao bi biti dostupan nakon što se dođe do koraka u instalaciji pod nazivom "Učitavanje dodatnih komponenti".
+ .
+ ${WORKAROUND}
+Description-hu.UTF-8: Terminál beillesztés nem elérhető
+ A debian-telepítő e verziója a terminál beépülő modult igényli a héj megjelenítéséhez. Sajnos e modul jelenleg nem elérhető.
+ .
+ Elérhetővé válik a "További összetevők betöltése" telepítő lépéssel.
+ .
+ ${WORKAROUND}
+Description-id.UTF-8: Plugin terminal tidak tersedia
+ Program debian-installer ini membutuhkan plugin terminal untuk menjalankan shell. Sayangnya, plugin ini belum tersedia.
+ .
+ Plugin tersebut biasanya tersedia setelah proses instalasi sampai pada langkah "Memuat komponen tambahan".
+ .
+ ${WORKAROUND}
+Description-is.UTF-8: Viðbót fyrir útstöðina ekki fáanleg
+ Þessi útgáfa af debian-installer þarfnast viðbótar fyrir útstöðina ef hún á að geta birt skelina. Því miður er viðbótin ekki fáanleg.
+ .
+ Hún ætti að vera fáanleg þegar þú hefur náð "Bæta við aukahlutum" uppsetningarhlutanum.
+ .
+ ${WORKAROUND}
+Description-it.UTF-8: Plugin per il terminale non disponibile
+ Questa versione di debian-installer necessita del plugin per il terminale per poter visualizzare una shell. Attualmente il plugin non è installato.
+ .
+ Dovrebbe essere disponibile dopo aver raggiunto il passo d'installazione «Caricamento componenti aggiuntivi».
+ .
+ ${WORKAROUND}
+Description-ja.UTF-8: 端末プラグインは利用できません
+ シェルを表示するためにこの debian-installer のビルドは端末プラグインを必要とします。しかし、このプラグインは現在利用できません。
+ .
+ "追加コンポーネントをロードしています" のインストール段階に到達してから利用できるはずです。
+ .
+ ${WORKAROUND}
+Description-kk.UTF-8: Терминал плагині жоқ
+ Debian орнату бағдарламасы қоршамды бастау үшін терминал плагинін талап етеді. Өкінішке орай, мұндай плагин табылмады.
+ .
+ Ол "Қосымша құрама жүктеу" қадамы кезінде табылуы тиіс.
+ .
+ ${WORKAROUND}
+Description-kn.UTF-8: ಟರ್ಮಿನಲ್ ಪ್ಲಗಿನ್ ಲಭ್ಯವಿಲ್ಲ
+ ಈ ಡೆಬಿಯನ್ ಸಂಸ್ಥಾಪಕ ವ್ಯವಸ್ಥೆಗೆ ಶೆಲ್ ಅನ್ನು ತೋರಿಸಲು ಟರ್ಮಿನಲ್ ಪ್ಲಗಿನ್ ಬೇಕಾಗಿದೆ. ದುರದೃಷ್ಟವಶಾತ್ ಈ ಪ್ಲಗಿನ್ ಸದ್ಯಕ್ಕೆ ಲಭ್ಯವಿಲ್ಲ.
+ .
+ ಸಂಸ್ಥಾಪನಾ ಹಂತ "Loading additional components" ಅನ್ನು ತಲುಪಿದ ನಂತರ ಅದು ದೊರೆಯಲಿದೆ.
+ .
+ ${WORKAROUND}
+Description-ko.UTF-8: 터미널 플러그인을 사용할 수 없습니다
+ 이 debian-installer 빌드는 쉘을 실행하려면 터미널 플러그인이 필요합니다. 하지만 이 플러그인이 없습니다.
+ .
+ 이 기능은 "추가 컴포넌트를 읽어들이는 중입니다"까지 설치를 진행하면 사용할 수 있습니다.
+ .
+ ${WORKAROUND}
+Description-ku.UTF-8: Plugin a termînalê ne amade ye
+ Ev build a debian-installer (sazkarê debian) ji bo nîşandayîna shell'ekê plugin a termînalê pêwist dike. Mixabin, ew plugin niha ne amade ye.
+ .
+ Qey piştî gava sazkirinê ya "Barkirina pêkhatiyên pêvekî" dê amade be.
+ .
+ ${WORKAROUND}
+Description-lo.UTF-8: ບໍ່ມີປຣັ້ກອີນຮອງຮັບເທີມີນຣັດ
+ ໂປຣແກຣມຕິດຕັ້ງເດບຽນລຸ່ນນີ້ ຕ້ອງການປຣັ້ກອີນເທີມີນຣັດຈື່ງຈະໃຊ້ເຊຣວໄດ້ແຕ່ບໍ່ພົບປຣັ້ກອີນດັ່ງກວ່າ.
+ .
+ ຄວນມີປຣັ້ກອີນດັ່ງກວ່າຕັ້ງແຕ່ເຖີງຂັ້ນຕອນ "ກຳລັງໂຫຼດອົງປະກອບເພີ່ມເຕີມ" ຂອງການຕິດຕັ້ງແລ້ວ.
+ .
+ ${WORKAROUND}
+Description-lt.UTF-8: Terminalo priedas neprieinamas
+ Šiam debiano įdiegikliui reikalingas terminalo įskiepis, kad rodytų apvalkalą (shell). Deja, ši papildoma programa yra šiuo metu neprieinama.
+ .
+ Tai bus pasiekiama atlikus įdiegimo žingsnį "Papildomų komponentų įkėlimas" 
+ .
+ ${WORKAROUND}
+Description-lv.UTF-8: Komandrindas spraudnis nav pieejams
+ Šai debian-installer versijai ir nepieciešams komandrindas spraudnis, lai attēlotu komandrindu. Diemžēl, tas nav pieejams.
+ .
+ Tas varētu kļūt pieejams pēc "Ielādē papildu komponentes" instalēšanas soļa.
+ .
+ ${WORKAROUND}
+Description-mk.UTF-8: Додатокот за терминалот не е достапен
+ Овој билд на debian инсталерот има потреба од приклучок за терминалот за да може да прикаже школка. За жал, овој приклучок е моментално недостапен.
+ .
+ Треба да биде достапен откако ќе стигнете до  делот од инсталацијата „Вчитување на додатните компоненти“.
+ .
+ ${WORKAROUND}
+Description-nb.UTF-8: Terminaltillegget er ikke tilgjengelig
+ Denne versjonen av Debian installasjonsprogrammet krever terminaltillegget for å være i stand til å vise et skall. Dessverre er ikke dette tillegget tilgjengelig nå.
+ .
+ Det burde være tilgjengelig etter at du har nådd installasjonssteget «Laster ekstra komponenter».
+ .
+ ${WORKAROUND}
+Description-nl.UTF-8: Terminal-plugin is niet beschikbaar
+ Om een shell te kunnen tonen in deze versie van het installatiesysteem is de terminal-plugin vereist. Helaas is deze plugin op dit moment niet beschikbaar.
+ .
+ De plugin zou wel beschikbaar moeten zijn nadat aanvullende componenten van het installatiesysteem zijn geladen.
+ .
+ ${WORKAROUND}
+Description-nn.UTF-8: Terminaltillegget er ikkje tilgjengeleg
+ Denne versjonen av installasjonsprogrammet til Debian krev terminaltillegget for å vere i stand til å vise eit skal. Dessverre er ikkje dette tillegget tilgjengeleg no.
+ .
+ Det skal vere tilgjengeleg etter at du har nådd installasjonssteget «Lastar ekstra komponentar».
+ .
+ ${WORKAROUND}
+Description-no.UTF-8: Terminaltillegget er ikke tilgjengelig
+ Denne versjonen av Debian installasjonsprogrammet krever terminaltillegget for å være i stand til å vise et skall. Dessverre er ikke dette tillegget tilgjengelig nå.
+ .
+ Det burde være tilgjengelig etter at du har nådd installasjonssteget «Laster ekstra komponenter».
+ .
+ ${WORKAROUND}
+Description-pl.UTF-8: Wtyczka terminala niedostępna
+ Ta wersja instalatora wymaga podłączonego terminala, by wyświetlić powłokę. Niestety ta wtyczka jest aktualnie niedostępna.
+ .
+ Powinna być dostępna na etapie "Ładowanie dodatkowych składników".
+ .
+ ${WORKAROUND}
+Description-pt.UTF-8: Não está disponível o plugin de terminal
+ Esta compilação do debian-installer necessita do plugin de terminal para que possa mostrar uma shell. Infelizmente, este plugin está actualmente indisponível.
+ .
+ Deve estar disponível após alcançar a etapa "Carregar os componentes adicionais".
+ .
+ ${WORKAROUND}
+Description-pt_BR.UTF-8: Extensão "terminal" não disponível
+ Esta compilação do instalador Debian requer a extensão "terminal" para exibir um shell. Infelizmente, esta extensão não está disponível no momento.
+ .
+ Ela deveria estar disponível após o passo de instalação "Carregando componentes adicionais".
+ .
+ ${WORKAROUND}
+Description-ro.UTF-8: Plugin-ul de terminal nu este disponibil
+ Această versiune a Programului de instalare Debian are nevoie de plugin-ul de terminal pentru a afișa un terminal. Din păcate, acest plugin nu este momentan disponibil.
+ .
+ Ar trebui să fie disponibil după ce se ajunge la pasul de instalare „Se descarcă componentele adiționale”.
+ .
+ ${WORKAROUND}
+Description-ru.UTF-8: Модуль терминала не доступен
+ Чтобы отобразить оболочку командной строки для данной сборки debian-installer требуется модуль терминала. К сожалению, в данный момент этот модуль недоступен.
+ .
+ Он будет доступен после завершения этапа установки "Загрузка дополнительных компонентов".
+ .
+ ${WORKAROUND}
+Description-si.UTF-8: අග්‍ර ප්ලගිනය නොපවතී
+ මෙමෙ debian-ස්ථාපකයට ශෙලය පෙන්වීම සඳහා අග්‍ර ප්ලගිනයක් අවශ්‍ය වේ. අවාසනාවට එම ප්ලගිනය දැනට නොපවතී.
+ .
+ එය "අමතර සංරචක පූර්ණය කරමින්" ස්ථාපන අදියරට පැමිණි පසු ලැබිය හැකිවනු ඇත.
+ .
+ ${WORKAROUND}
+Description-sk.UTF-8: Zásuvný modul terminálu nie je k dispozícii
+ Toto zostavenie debian-installer vyžaduje zásuvný modul terminálu, aby bolo možné zobraziť shell. Nanešťastie tento modul nie je momentálne dostupný.
+ .
+ Mal by byť dostupný po dosiahnutí kroku inštalácie „Načítanie ďalších komponentov“.
+ .
+ ${WORKAROUND}
+Description-sl.UTF-8: Vstavek Terminal ni na voljo
+ Ta različica namestitvenega orodja Debian zahteva vstavek Terminal, da lahko prikaže ukazno lupino. Na žalost ta vstavek trenutno ni na voljo.
+ .
+ Na razpolago bi moral biti pri namestitvenem koraku  "Nalaganje dodatnih komponent".
+ .
+ ${WORKAROUND}
+Description-sq.UTF-8: Shtesa e terminalit nuk gjendet
+ Ky debian-instalues ka nevojë për shtesën terminal në mënyrë që të shfaqë një shell. Fatkeqsisht, kjo shtesë nuk gjendet.
+ .
+ Shtesën do ta gjeni pasi të arrini hapin e instalimit "Duke ngarkuar përbërësit shtesë".
+ .
+ ${WORKAROUND}
+Description-sr.UTF-8: Дотатак за терминал није доступан
+ Ова верзија „debian-installer“ програма захтева додатак за терминал да би приказала командни интерфејс. На жалост, овај додатак тренутно није доступан.
+ .
+ Требао би бити доступан након корака инсталације „Учитавање додатних компоненти„.
+ .
+ ${WORKAROUND}
+Description-sv.UTF-8: Terminalinsticksmodulen är inte tillgänglig
+ Detta bygge av debian-installer kräver terminalinsticksmodulen för att kunna visa ett skal. Tyvärr är denna insticksmodulen inte tillgänglig för tillfället.
+ .
+ Det bör finnas tillgängligt efter att du har nått till installationssteget "Läser in ytterligare komponenter".
+ .
+ ${WORKAROUND}
+Description-te.UTF-8: టర్మినల్ ప్లగ్ ఇన్  అందుబాటులో లేదు.
+ షెల్  చూపించడానికి  ఈ డెబియన్ స్థాపన వ్యవస్థ  నిర్మితి (build) కి  టర్మినల్ ప్లగ్ ఇన్  కావాలి. దురదృష్టవశాత్తు, ఆ ప్లగ్ ఇన్ అందుబాటులో లేదు.
+ .
+ "అదనపు అంశాలు ఎక్కించు" అన్న స్థాపనా అంకం తరువాత, అది అందుబాటులో వుండాలి.
+ .
+ ${WORKAROUND}
+Description-tg.UTF-8: Плагири терминал дастрас нест
+ Ин сохти насбкунандаи системаи Debian барои намоиш додани восит плагини терминалиро талаб мекунад. Мутаассифона, дар айни ҳол ин плагин дастнорас аст.
+ .
+ Он ҳангоми иҷрои қадами насби "Боркунии унсурҳои иловагӣ" дастрас мешавад.
+ .
+ ${WORKAROUND}
+Description-th.UTF-8: ไม่มีปลั๊กอินรองรับเทอร์มินัล
+ โปรแกรมติดตั้งเดเบียนรุ่นนี้ ต้องการปลั๊กอินรองรับเทอร์มินัลจึงจะใช้เชลล์ได้ แต่ไม่พบปลั๊กอินดังกล่าว
+ .
+ ควรมีปลั๊กอินดังกล่าวตั้งแต่ถึงขั้นตอน "กำลังโหลดองค์ประกอบเพิ่มเติม" ของการติดตั้งแล้ว
+ .
+ ${WORKAROUND}
+Description-tl.UTF-8: Wala ang terminal plugin
+ Kailangan nitong gawa ng debian-installer ang terminal plugin upang makapagpakita ng shell.  Subalit, wala sa ngayon an plugin na ito.
+ .
+ Magagamit ito pagkatapos maabot ang hakbang sa pagluluklok "Ipinapasok ang karagdagang mga bahagi".
+ .
+ ${WORKAROUND}
+Description-tr.UTF-8: Uçbirim eklentisi mevcut değil
+ Debian kurulum programının bu sürümü, bir kabuk görüntüleyebilmek için uçbirim eklentisine ihtiyaç duyar. Bu eklenti şu an ne yazık ki mevcut değil.
+ .
+ Bu eklenti "Ek bileşenler yükleniyor" adımından sonra kullanılabilir.
+ .
+ ${WORKAROUND}
+Description-ug.UTF-8: تېرمىنال قىستۇرما دېتالىنى ئىشلەتكىلى بولمايدۇ
+ بۇ نەشرىدىكى debian-installer  shell نى كۆرسىتىش ئۈچۈن تېرمىنال قىستۇرمىسىغا ئېھتىياجلىق. ئەپسۇسلىنارلىقى، بۇ قىستۇرمىنى ھازىر ئىشلەتكىلى بولمايدۇ.
+ .
+ ئۇ ئورنىتىش باسقۇچى "قوشۇمچە بۆلەكلەرنى يۈكلە" باسقۇچىغا كەلگەندە ئىشلەتكىلى بولىدۇ.
+ .
+ ${WORKAROUND}
+Description-uk.UTF-8: Термінальний додаток недоступний.
+ Для того, що показувати командну оболонку ця збірка встановлювача Debian потребує термінального додатку. На жаль, на разі термінальний додаток недоступний.
+ .
+ Він повинен з'явитись після досягнення кроку „Завантаження додаткових компонентів“.
+ .
+ ${WORKAROUND}
+Description-vi.UTF-8: Phần bổ sung trình bao không sẵn sàng
+ Bản xây dựng trình cài đặt Debian này cũng đòi hỏi phần bổ sung trình bao để hiển thị một trình bao. Rất tiếc là phần bổ sung này hiện thời không sẵn sàng.
+ .
+ Tuy nhiên, nó nên sẵn sàng sau khi tới bước cài đặt « Đang tải các thành phần thêm ».
+ .
+ ${WORKAROUND}
+Description-zh_CN.UTF-8: 终端插件不可用
+ 此版本的 debian-installer 需要终端插件以显示 shell。遗憾的是，此插件现在不可用。
+ .
+ 它应该会在安装步骤到达“加载附加组件”后可用。
+ .
+ ${WORKAROUND}
+Description-zh_TW.UTF-8: 無法取得終端機外掛
+ 這個版本的 debian-installer 需要終端機外掛以便能呼叫並顯示 shell。但糟糕的是，目前還無法取得這個外掛。
+ .
+ 等進行到 "載入額外的元件" 這個安裝步驟後，應當就能使用了。
+ .
+ ${WORKAROUND}
+
+Template: debian-installer/workaround-gtk
+Type: text
+Description: Alternatively, you can open a shell by pressing Ctrl+Alt+F2. Use Alt+F5 to get back to the installer.
+Description-ar.UTF-8: بدلاً من ذلك، يمكنك الوصول إلى سطر الأوامر بضغط CTRL+ALT+F2. استخدم ALT+F5 للعودة إلى برنامج التثبيت.
+Description-ast.UTF-8: Alternativamente, pues abrir una shell calcando Ctrl+Alt+F2. Usa Alt+F5 pa volver al instalador.
+Description-be.UTF-8: Або вы можаце адкрыць абалонку, націснуўшы Ctrl+Alt+F2. Націсніце Alt+F5, каб вярнуцца ва ўстаноўку.
+Description-bg.UTF-8: Можете да стартирате обвивка и като натиснете Ctrl+Alt+F2. Използвайте Alt+F5 за да се върнете в инсталатора.
+Description-bo.UTF-8: ཡང་ན་ཁྱོད་ཀྱིས་Ctrl+Alt+F2 མནན་ནས་འཇུག་སྒོ་ཞིག་ཁ་ཕྱེ་ཐུབ Alt+F5 སྤྱད་ནས་སྒྲིག་འཇུག་ཆས་ཐོག་ཏུ་ཕར་སྐྱོད་ཐུབ
+Description-bs.UTF-8: Alternativno, možete otvoriti terminal kombinacijom tipki Ctrl+Alt+F2. Koristite Alt+F5 da se vratite u instalaciju.
+Description-ca.UTF-8: Alternativament, podeu obrir un intèrpret d'ordres prement Ctrl+Alt+F2. Empreu Alt+F5 per a tornar a l'instal·lador.
+Description-cs.UTF-8: Alternativně můžete získat shell stiskem Ctrl+Alt+F2. Pro návrat zpět do instalátoru použijte Alt+F5.
+Description-cy.UTF-8: Neu, gallwch agor cragen drwy wasgu Ctrl+Alt+F2. Defnyddiwch Alt+F5 i ddychwelyd i'r sefydlydd.
+Description-da.UTF-8: Alternativt kan du åbne en skal ved at taste Ctrl+Alt+F2. Brug Alt+F5 for at vende tilbage til installationen.
+Description-de.UTF-8: Alternativ können Sie eine Shell durch Drücken von Strg+Alt+F2 öffnen. Verwenden Sie Alt+F5, um zum Installer zurückzukehren.
+Description-el.UTF-8: Εναλλακτικά, μπορείτε να ανοίξετε ένα κέλυφος πληκτρολογώντας Ctrl+Alt+F2.Χρησιμοποιήστε τον συνδυασμό πλήκτρων  Alt+F5 για να επιστρέψετε στον εγκαταστάτη.
+Description-eo.UTF-8: Alternative, vi povas lanĉi ŝelon per premado de Ctrl+Alt+F2. Uzu la kombinon Alt+F5 por retroiri al la instalilo.
+Description-es.UTF-8: También puede abrir un intérprete de órdenes pulsando Ctrl+Alt+F2. Utilice Alt+F5 para volver al instalador.
+Description-et.UTF-8: Lisaks võid sa avad kesta klahvikombinatsiooniga Ctrl+Alt+F2. Paigaldajasse naasmiseks vajuta Alt+F5.
+Description-eu.UTF-8: Bestela, shell bat ireki dezakezu Ktrl+Alt+F2 sakatuz. Alt+F5 erabili instalatzailera itzultzeko.
+Description-fa.UTF-8: همچنین شما می‌توانید یک پوسته با زدن Ctrl+Alt+F5 باز کنید. با زدن کلید Alt+F5 به نصاب باز می‌گردید.
+Description-fi.UTF-8: Vaihtoehtoisesti voit avata komentotulkin painamalla Ctrl+Alt+F2. Näppäinyhdistelmällä Alt+F5 pääset takaisin asentimeen.
+Description-fr.UTF-8: Dans l'intervalle, vous pouvez accéder à la ligne de commande avec la combinaison de touches Ctrl+Alt+F2. Vous pourrez ensuite retourner dans l'installateur avec Alt+F5.
+Description-ga.UTF-8: Mar mhalairt air sin, is féidir leat blaosc a oscailt trí Ctrl+Alt+F2 a bhrú.  Bain úsáid as Alt+F5 chun filleadh ar an suiteálaí.
+Description-gl.UTF-8: De xeito alternativo, pode abrir unha shell premendo Control+Alt+F2. Empregue Alt+F5 para volver ao instalador.
+Description-he.UTF-8: לחלופין, אתה יכול לפתוח מעטפת על ידי הקשת Ctrl+Alt+F2.  השתמש ב-Alt+F5 כדי להגיע חזרה לתוכנית ההתקנה.
+Description-hr.UTF-8: Alternativno, možete otvoriti ljusku tako da pritisnete Ctrl+Alt+F2. Koristite Alt+F5 za povratak u instalacijski program.
+Description-hu.UTF-8: Héj nyitható a Ctrl+Alt+F2 leütésével. Az Alt+F5 visszatér a telepítőhöz.
+Description-id.UTF-8: Sebagai pilihan, Anda dapat membuka shell dengan menekan tombol Ctrl+Alt+F2. Tekan Alt+F5 untuk kembali pada program instalasi.
+Description-is.UTF-8: Einnig er hægt að opna skel með því að ýta á Ctrl+Alt+F2. Notaðu svo Alt+F5 til halda uppsetningu áfram.
+Description-it.UTF-8: In alternativa è possibile aprire una shell premendo Ctrl+Alt+F2. Usare Alt+F5 per tornare al programma d'installazione.
+Description-ja.UTF-8: 別の方法として、Ctrl+Alt+F2 を押してシェルを開くことができます。インストーラに戻るには、Alt+F5 を使います。
+Description-kk.UTF-8: Қоршамды қолдан ашу үшін Ctrl+Alt+F2 басуға болады. Орнату бағдарламасына оралу үшін Alt+F5 басыңыз.
+Description-kn.UTF-8: ಪರ್ಯಾಯವಾಗಿ, ನೀವು ಶೆಲ್ ಅನ್ನು Ctrl+Alt+F2 ಒತ್ತಿ ತೆರೆಯಬಹುದು. ಅನುಸ್ಥಾಪಕ ವ್ಯವಸ್ಥೆಗೆ ಹಿಂತಿರುಗಲು Alt+F5 ಅನ್ನು ಬಳಸಿ
+Description-ko.UTF-8: 다른 방법으로 Ctrl+Alt+F2를 눌러서 쉘을 열 수 있습니다. 설치 프로그램으로 돌아오려면 Alt+F5를 누르십시오.
+Description-ku.UTF-8: Wekî alternatîf, tu dikarî bi Ctrl+Alt+F2 shell'ekê vekî. Bi Alt+F5 tu dê vegerî sazkarê.
+Description-lo.UTF-8: ຫຼືອີກວີທີ່ໜື່ງເຈົ້າສາມາດເປີດເຊຣວໄດ້ໂດ້ກົດ Ctrl+Alt+F2 ແລະກົດ Alt+F5 ເພື່ອຍ້ອນກັບມາທີ່ໂປຣແກຣມຕິດຕັ້ງ.
+Description-lt.UTF-8: Arba kitaip, Jūs galite atidaryti apvalkalą (shell), spausdamas Ctrl+Alt+F2. Naudokite Alt+F5, kad grįžtumėte į įdiegiklį.
+Description-lv.UTF-8: Tāpat jūs varat piekļūt komandrindai nospiežot Ctrl+Alt+F2. Lietojiet taustiņu kombināciju Alt+F5, lai atgrieztos instalēšanas procesā.
+Description-mk.UTF-8: Како алтернатива можете да отворите школка со притискање на Ctrl+Alt+F2. Со Alt+F5 се враќате назад на инсталерот.
+Description-nb.UTF-8: Alternativt kan du åpne et skall ved å trykke Ctrl+Alt+F2. Bruk Alt+F5 for å komme tilbake til installasjonsprogrammet.
+Description-nl.UTF-8: Als alternatief kunt u ook een shell verkrijgen met de toetscombinatie Ctrl+Alt+F2. Gebruik Alt+F5 om de installatie te hervatten.
+Description-nn.UTF-8: Alternativt kan du opne eit skal ved å trykkje Ctrl+Alt+F2. Bruk Alt+F5 for å kome tilbake til installasjonsprogrammet.
+Description-no.UTF-8: Alternativt kan du åpne et skall ved å trykke Ctrl+Alt+F2. Bruk Alt+F5 for å komme tilbake til installasjonsprogrammet.
+Description-pl.UTF-8: Możesz również uruchomić powłokę wciskając Ctrl+Alt+F2. Użyj Alt+F5 by wrócić do instalatora.
+Description-pt.UTF-8: Em alternativa, pode abrir uma shell pressionando Ctrl+Alt+F2. Utilize Alt+F5 para voltar ao instalador.
+Description-pt_BR.UTF-8: Alternativamente, você pode abrir um shell pressionando Ctrl+Alt+F2. Use Alt+F5 para retornar ao instalador.
+Description-ro.UTF-8: Există și posibilitatea să deschideți o consolă apăsând Ctrl+Alt+F2. Folosiți Alt+F5 pentru a vă întoarce la programul de instalare.
+Description-ru.UTF-8: В качестве альтернативы, вы можете открыть оболочку нажав Ctrl+Alt+F2. Комбинация Alt+F5 вернёт вас обратно в программу установки.
+Description-si.UTF-8: ඊට අමතරම ඔබට Ctrl+Alt+F2 එබීමෙන් ශෙලය ලබාගත හැකි අතර. ආපසු ස්ථාපකයට යාමට Alt+F5 යොදාගන්න.
+Description-sk.UTF-8: Namiesto toho môžete otvoriť shell stlačením Ctrl+Alt+F2. Pomocou Alt+F5 sa vrátite späť do inštalátora.
+Description-sl.UTF-8: Kot alternativa lahko odprete ukazno lupino s pritiskom na Ctrl+Alt+F2. Z Alt+F5 se vrnete v namestitveno orodje.
+Description-sq.UTF-8: Ju mund të hapni një shell duke shtypur Ctrl+Alt+F2. Përdorni Alt+F5 për t'u kthyer tek instaluesi.
+Description-sr.UTF-8: Командни интерфејс можете отворити и на други начин, комбинацијом тастера Ctrl+Alt+F2. Користите Alt+F5 за повратак на инсталер.
+Description-sv.UTF-8: Alternativt kan du öppna ett skal genom att trycka Ctrl+Alt+F2. Använd Alt+F5 för att komma tillbaka till installationsprogrammet.
+Description-te.UTF-8: వేరేవిధంగా, షెల్  తెరవడానికి  Ctrl+Alt+F2 నొక్కండి. Alt+F5 వాడి, స్థాపన వ్యవస్థ కి వెళ్లవచ్చు.
+Description-tg.UTF-8: Илова бар ин, шумо метавонед воситро бо пахшкунии тугмаҳои Ctrl+Alt+F2 кушоед. Барои бозгашт ба насбкунанда, тугмаҳои Alt+F5 истифода баред.
+Description-th.UTF-8: หรืออีกวิธีหนึ่ง คุณสามารถเปิดเชลล์ได้โดยกด Ctrl+Alt+F2 และกด Alt+F5 เพื่อย้อนกลับมาที่โปรแกรมติดตั้ง
+Description-tl.UTF-8: Maaari ding piliing magbukas ng shell gamit ang pagpindot ng Ctrl+Alt+F2. Gamitin an Alt+F5 para bumalik sa installer.
+Description-tr.UTF-8: Bunun yerine, Ctrl+Alt+F2 tuşlarına basarak da bir uçbirim açabilirsiniz. Kurulum programına geri dönmek için Alt + F5 tuş bileşimini kullanabilirsiniz.
+Description-ug.UTF-8: ياكى سىز بىرلا ۋاقىتتا Ctrl+Alt+F2 نى بېسىپ shell نى ئاچالايسىز. Alt+F5 ئىشلىتىپ ئورنىتىش پروگراممىسىغا قايتالايسىز.
+Description-uk.UTF-8: Натомість, ви можете відкрити командний рядок, натиснувши Ctrl+Alt+F2. Щоб повернутися назад до встановлювача використовуйте Alt+F5.
+Description-vi.UTF-8: Hoặc bạn có khả năng mở một trình bao bằng cách bấm tổ hợp phím Ctrl+Alt+F2. Hãy sử dụng Alt+F5 để quay lại dùng trình cài đặt.
+Description-zh_CN.UTF-8: 或者，您可以同时按下 Ctrl+Alt+F2 打开 shell。使用 Alt+F5 以回到安装程序。
+Description-zh_TW.UTF-8: 或者，您可以按下 Ctrl+Alt+F2 來開啟 shell。按下 Alt+F5 可以再回到安裝程式。
+
+

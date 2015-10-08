@@ -1,0 +1,188 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+
+log() {
+	logger -t net-retriever "$@"
+}
+error() {
+	log "error: $@"
+	exit 1
+}
+
+db_get mirror/protocol
+protocol="$RET"
+db_get mirror/$protocol/hostname
+hostname="$RET"
+db_get mirror/$protocol/directory
+directory="$RET"
+
+keyring=/usr/share/keyrings/archive.gpg
+
+fetch() {
+	fetch-url -c "${protocol}://${hostname}${directory}/$1" "$2"
+}
+
+# Note: callers are expected to check for non-empty strings in return,
+# which could indicate an unknown checksum type, or a missing foosum
+# binary.
+get_checksum() {
+	type="$1"
+	file="$2"
+
+	case "$type" in
+		MD5Sum) md5sum    "$file" | cut -d' ' -f1 ;;
+		SHA1)   sha1sum   "$file" | cut -d' ' -f1 ;;
+		SHA256) sha256sum "$file" | cut -d' ' -f1 ;;
+		*)      error "Unknown checksum type $type for $file"
+	esac
+}
+
+checkmatch() {
+	Release="$1"
+	Packages="$2"
+	pkgfile="$3"
+	pkgsize="$(wc -c < "$Packages" | tr -d ' ')"
+
+	# Note: When checksum types are modified by the FTP team, make
+	# sure to update both the list below and the case statement in
+	# get_checksum().
+	for checksumtype in MD5Sum SHA1 SHA256; do
+		pkgchecksum=$(get_checksum "$checksumtype" "$Packages")
+		if [ -z "$pkgchecksum" ]; then
+			error "Please report a bug: get_checksum() returned nothing"
+		fi
+
+		set -e
+		sed -n "/^$checksumtype:\$/ b LOOP; b; : PRINT; /:\$/q; p; : LOOP; n; b PRINT" \
+		       "$Release" | (
+			found=0
+			while read checksum size file; do
+				if [ "$file" = "$pkgfile" ]; then
+					if [ "$checksum" != "$pkgchecksum" ]; then
+						error "$checksumtype mismatch for $pkgfile ($checksum != $pkgchecksum)."
+					fi
+					if [ "$size" != "$pkgsize" ]; then
+						error "Size mismatch for $pkgfile ($size != $pkgsize)."
+					fi
+					found=1
+				fi
+			done
+			if [ "$found" != 1 ]; then
+				error "$pkgfile not found in $Release (for $checksumtype checksum)."
+			fi
+		)
+		set +e
+	done
+}
+
+read_gpg_status() {
+	while read prefix keyword rest; do
+		[ "$prefix" = '[GNUPG:]' ] || continue
+		if [ "$keyword" = VALIDSIG ]; then
+			exit 0
+		fi
+	done
+	exit 1
+}
+
+cmd="$1"
+shift
+
+case "$cmd" in
+    retrieve)
+	fetch "$@"
+	exit $?
+	;;
+
+    packages)
+	rm -f "$1"
+	touch "$1"
+
+	# Setting codename to a suite is not very nice, but can do no harm
+	if ! db_get mirror/udeb/suite || [ -z "$RET" ]; then
+		if [ -f /etc/udebs-source ]; then
+			RET=$(cat /etc/udebs-source)
+		else
+			db_get mirror/codename
+		fi
+	fi
+	codename="$RET"
+
+	Release="/tmp/net-retriever-$$-Release"
+	fetch "dists/$codename/Release" "$Release" || exit $?
+	# If gpgv and a keyring are installed, authentication is
+	# mandatory by default.
+	if type gpgv >/dev/null && [ -f "$keyring" ]; then
+		if db_get debian-installer/allow_unauthenticated && [ "$RET" = true ]; then
+			log "Not verifying Release signature: unauthenticated mode enabled"
+		else
+			if ! fetch "dists/$codename/Release.gpg" "$Release.gpg"; then
+				error "dists/$codename/Release is unsigned."
+			fi
+			if ! log-output -t net-retriever --pass-stdout \
+			     gpgv --status-fd 1 --keyring "$keyring" \
+			     --ignore-time-conflict \
+			     "$Release.gpg" "$Release" | read_gpg_status; then
+				error "Bad signature on $Release."
+			fi
+		fi
+	else
+		log "Not verifying Release signature: gpgv not available"
+	fi
+
+	ARCH=`udpkg --print-architecture`
+	components="`grep ^Components: $Release | cut -d' ' -f2-`"
+	ret=1
+	if [ -z "$components" ]; then
+		error "No components listed in $Release."
+	fi
+	for comp in $components; do
+		for ext in '.xz' '.gz' ''; do
+			pkgfile="$comp/debian-installer/binary-$ARCH/Packages$ext"
+			line=`grep $pkgfile\$ $Release 2>/dev/null`
+			if [ $? != 0 ]; then
+				continue
+			fi
+			Packages="/tmp/net-retriever-$$-Packages"
+			rm -f "$Packages"
+			fetch "dists/$codename/$pkgfile" "$Packages" || continue
+			checkmatch "$Release" "$Packages" "$pkgfile"
+			if [ "$ext" = '' ]; then
+				cat "$Packages" >> "$1"
+			elif [ "$ext" = .gz ]; then
+				zcat "$Packages" >> "$1"
+			elif [ "$ext" = .xz ]; then
+				xzcat "$Packages" >> "$1"
+			fi
+			ret=0
+			break
+		done
+	done
+	exit $ret
+	;;
+
+    error)
+	T="retriever/net/error"
+	db_set "$T" "Retry"
+	db_input critical "$T" || true
+
+	if ! db_go; then
+		exit 2
+	fi
+	db_get "$T"
+	if [ "$RET" = "Retry" ]; then
+		exit 0
+	elif [ "$RET" = "Change mirror" ]; then
+		choose-mirror || true
+		exit 0
+	elif [ "$RET" = Cancel ]; then
+		exit 2
+	fi
+	;;
+
+    *)
+	# unknown or missing command
+	exit 1
+	;;
+esac

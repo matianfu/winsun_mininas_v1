@@ -1,0 +1,585 @@
+Template: ethdetect/module_select
+Type: select
+Choices: no ethernet card, ${CHOICES}, none of the above
+Choices-ar.UTF-8: لا يوجد بطاقة Ethernet, ${CHOICES}, ليس أياً مما سبق
+Choices-ast.UTF-8: ensin tarxeta de rede, ${CHOICES}, denguna de les anteriores
+Choices-be.UTF-8: няма ethernet картак, ${CHOICES}, ніводнага з пералічаных
+Choices-bg.UTF-8: без Ethernet карта, ${CHOICES}, никой от горните
+Choices-bo.UTF-8: རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་མི་འདུག, ${CHOICES}, གོང་གི་གང་ཡང་མིན་པ
+Choices-bs.UTF-8: nema mrežne kartice, ${CHOICES}, nijedan od gornjih
+Choices-ca.UTF-8: cap targeta ethernet, ${CHOICES}, cap de les anteriors
+Choices-cs.UTF-8: žádná ethernetová karta, ${CHOICES}, nic z uvedeného
+Choices-cy.UTF-8: dim cerdyn ethernet, ${CHOICES}, dim un o'r uchod
+Choices-da.UTF-8: intet ethernetkort, ${CHOICES}, ingen af ovenstående
+Choices-de.UTF-8: keine Ethernet-Karte, ${CHOICES}, keines der obigen
+Choices-el.UTF-8: δεν υπάρχει κάρτα δικτύου, ${CHOICES}, κανένα από τα παραπάνω
+Choices-eo.UTF-8: neniu ret-karto, ${CHOICES}, neniu el la antaŭaj
+Choices-es.UTF-8: sin tarjeta de red, ${CHOICES}, ninguna de las anteriores
+Choices-et.UTF-8: pole võrgukaarti, ${CHOICES}, mitte ükski nimetatuist
+Choices-eu.UTF-8: ez dago ethernet txartelik, ${CHOICES}, hauetako bat ere ez
+Choices-fa.UTF-8: هیچ کارت اترنت, ${CHOICES}, هیچ یک از موارد فوق
+Choices-fi.UTF-8: ethernet-korttia ei ole, ${CHOICES}, ei mikään edellisistä
+Choices-fr.UTF-8: Aucune carte Ethernet, ${CHOICES}, Aucun de ces choix
+Choices-ga.UTF-8: gan chárta ethernet, ${CHOICES}, níl aon cheann acu thuas
+Choices-gl.UTF-8: ningunha tarxeta ethernet, ${CHOICES}, ningunha das anteriores
+Choices-he.UTF-8: אין כרטיס רשת, ${CHOICES}, אף אחת מהאפשרויות למעלה
+Choices-hr.UTF-8: nema mrežne kartice, ${CHOICES}, ništa od navedenog
+Choices-hu.UTF-8: ethernet-kártya nélkül, ${CHOICES}, egyik sem
+Choices-id.UTF-8: tanpa kartu ethernet, ${CHOICES}, tak satupun di atas
+Choices-is.UTF-8: Ekkert netkort, ${CHOICES}, Ekkert af ofangreindu
+Choices-it.UTF-8: nessuna scheda di rete, ${CHOICES}, nessuna delle precedenti
+Choices-ja.UTF-8: イーサネットカードなし, ${CHOICES}, 該当なし
+Choices-kk.UTF-8: желілік карта жоқ, ${CHOICES}, ешқайсысы
+Choices-kn.UTF-8: ಎಥರ್ನೆಟ್ ಕಾರ್ಡ್ ಇಲ್ಲ‌, ${CHOICES}, ಮೇಲೆ ಸೂಚಿಸಿದವು ಯಾವುವು ಅಲ್ಲ‌
+Choices-ko.UTF-8: 이더넷 카드 없음, ${CHOICES}, 위에 없음
+Choices-ku.UTF-8: karta ethernet tune, ${CHOICES}, ne yek ji van
+Choices-lo.UTF-8: ບໍ່ມີກຣາດອີນເທີເນັດ, ${CHOICES}, ບໍ່ໃຊ້ຕົວເລືອກເບື້ອງຕົ້ນ
+Choices-lt.UTF-8: be tinklo plokštės, ${CHOICES}, niekas iš paminėtų
+Choices-lv.UTF-8: nav ethernet tīkla kartes, ${CHOICES}, neviens no iepriekš minētajiem
+Choices-mk.UTF-8: нема мрежна карта, ${CHOICES}, ниедна од наведените
+Choices-nb.UTF-8: intet ethernet-kort, ${CHOICES}, ingen av de ovenfor
+Choices-nl.UTF-8: geen ethernetkaart, ${CHOICES}, geen van bovenstaande
+Choices-nn.UTF-8: ingen ethernet-kort, ${CHOICES}, ingen av dei ovanfor
+Choices-no.UTF-8: intet ethernet-kort, ${CHOICES}, ingen av de ovenfor
+Choices-pl.UTF-8: brak karty ethernet, ${CHOICES}, żaden z powyższych
+Choices-pt.UTF-8: nenhuma placa ethernet, ${CHOICES}, nenhuma das acima
+Choices-pt_BR.UTF-8: nenhuma placa de rede (ethernet), ${CHOICES}, nenhuma das acima
+Choices-ro.UTF-8: fără placă Ethernet, ${CHOICES}, nici una de mai sus
+Choices-ru.UTF-8: нет сетевых карт, ${CHOICES}, ни одно из перечисленных
+Choices-si.UTF-8: කිසිඳු ඊදර්නෙට් කාඩ්පතක් නොමැත, ${CHOICES}, ඉහත කිසිවක් නොවේ
+Choices-sk.UTF-8: žiadna ethernetová karta, ${CHOICES}, nič z uvedeného
+Choices-sl.UTF-8: ni mrežne kartice, ${CHOICES}, nič od tega
+Choices-sq.UTF-8: asnjë kartë rrjeti, ${CHOICES}, asnjë e të mësipërmëve
+Choices-sr.UTF-8: нема етернет картице, ${CHOICES}, ни једно од наведеног
+Choices-sv.UTF-8: inget ethernetkort, ${CHOICES}, ingen av ovanstående
+Choices-te.UTF-8: ఈథర్నెట్ కార్డు లేదు, ${CHOICES}, పైవేవీ కాదు
+Choices-tg.UTF-8: корти ethernet нест, ${CHOICES}, на яке аз боло
+Choices-th.UTF-8: ไม่มีการ์ดอีเทอร์เน็ต, ${CHOICES}, ไม่ใช่ตัวเลือกข้างต้น
+Choices-tl.UTF-8: walang ethernet card, ${CHOICES}, wala sa itaas
+Choices-tr.UTF-8: ethernet kartı yok, ${CHOICES}, yukarıdakilerden hiçbiri
+Choices-ug.UTF-8: تور كارتىسى يوق, ${CHOICES}, يۇقىرىقىنىڭ ھېچقايسى
+Choices-uk.UTF-8: без мережевої карти, ${CHOICES}, жоден з перерахованих
+Choices-vi.UTF-8: không có thẻ Ethernet, ${CHOICES}, không có cái nào ở trên
+Choices-zh_CN.UTF-8: 无以太网卡, ${CHOICES}, 以上都不是
+Choices-zh_TW.UTF-8: 沒有網路卡, ${CHOICES}, 以上都不是
+Default: no ethernet card
+Description: Driver needed by your Ethernet card:
+ No Ethernet card was detected. If you know the name of the driver
+ needed by your Ethernet card, you can select it from the list.
+Description-ar.UTF-8: المُعرّف الذي تحتاجه بطاقة Ethernet الخاصّة بك:
+ لم تكتشف أيّة بطاقة Ethernet. إذا كنت تعرف اسم المُعرّف الذي تحتاجه بطاقة Ethernet يمكنك اختياره من القائمة.
+Description-ast.UTF-8: Controladores que necesita la tarxeta Ethernet:
+ Nun se deteutó denguna tarxeta de rede. Pues seleicionar el controlador de la llista si conoces el nome que necesita la tarxeta de rede.
+Description-be.UTF-8: Драйвер, патрэбны для Вашай Ethernet карткі:
+ Не вызначана ніводнай Ethernet карткі. Калі Вы ведаеце імя драйвера, які патрэбны для Вашай карткі, Вы можаце пазначыць яго ў спісе.
+Description-bg.UTF-8: Драйвер, изискван от Вашата мрежова карта:
+ Не беше открита Ethernet карта. Ако знаете името на драйвера за Вашата Ethernet карта, можете да го изберете от списъка.
+Description-bo.UTF-8: རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་ལ་དགོས་པའི་སྒུལ་ཆས：
+ རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་རྙེད་མེད་པས་དེའི་སྒུལ་ཆས་ཀྱི་མིང་ཤེས་ན་འདེམས་ཐོ་འདིའི་ཐོག་འདེམས་ཆོག
+Description-bs.UTF-8: Upravljački program potreban za Vašu mrežnu karticu:
+ Mrežna kartica nije pronađena. Ako znate naziv modula potrebnog za Vašu mrežnu karticu, možete ga odabrati sa liste.
+Description-ca.UTF-8: Mòdul requerit per la targeta Ethernet:
+ No s'ha detectat cap targeta Ethernet. Si sabeu el nom del controlador que requereix la targeta Ethernet, podeu seleccionar-lo de la llista.
+Description-cs.UTF-8: Ovladač vyžadovaný vaší ethernetovou kartou:
+ Nebyly rozpoznány žádné ethernetové karty. Pokud znáte název ovladače vyžadovaného vaší ethernetovou kartou, můžete jej vybrat ze seznamu.
+Description-cy.UTF-8: Y gyriant sydd angen ar eich cerdyn Ethernet:
+ Ni chanfuwyd gerdyn Ethernet. Os ydych yn gwybod enw'r gyriant sydd angen ar eich cerdyn Ethernet, gallwch ei ddewis o'r rhestr.
+Description-da.UTF-8: Den driver, som dit ethernetkort skal bruge:
+ Der blev ikke fundet noget ethernetkort. Hvis du kender navnet på den driver, dit ethernetkort skal bruge, kan du vælge den fra listen.
+Description-de.UTF-8: Von Ihrer Ethernet-Karte benötigter Treiber:
+ Es wurde keine Ethernet-Karte gefunden. Wenn Sie den Namen des Treibers Ihrer Ethernet-Karte kennen, können Sie ihn in der Liste auswählen.
+Description-el.UTF-8: Οδηγός που απαιτείται από την κάρτα δικτύου σας:
+ Δεν ανιχνεύτηκε κάρτα δικτύου. Αν γνωρίζετε το όνομα του οδηγού που χρειάζεται η κάρτα δικτύου σας, επιλέξτε τον από τη λίστα.
+Description-eo.UTF-8: Pelilo bezonata de via ret-karto:
+ Neniu karto 'Ethernet' estis detektita. Se vi konas la nomon de la pelilo bezonata de via ret-karto, vi povas elekti ĝin el ĉi tiu listo.
+Description-es.UTF-8: Controladores que necesita la tarjeta Ethernet:
+ No se detectó ninguna tarjeta de red. Puede seleccionar el controlador de la lista si conoce el nombre del que necesita la tarjeta de red.
+Description-et.UTF-8: Võrgukaardile vajaminev draiver:
+ Ühtki võrgukaarti ei tuvastatud. Kui sa tead, millist draiverit su võrgukaart vajab, vali see nimekirjast:
+Description-eu.UTF-8: Ethernet txartelak behar duen kontrolatzailea:
+ Ez da Ethernet txartelik ez da detektatu. Ethernet txartelak behar duen kontrolatzailearen izena badakizu, zerrendan hauta dezakezu.
+Description-fa.UTF-8: راه‌انداز مورد نیاز برای کارت اترنت شما:
+ هیچ کارت اترنت‌ای تشخیص داده نشد. اگر نام راه‌انداز مورد نیاز برای کارت اترنت خود را می‌دانید، می‌توانید آنرا از لیست انتخاب کنید.
+Description-fi.UTF-8: Ethernet-kortin tarvitsema ajuri:
+ Ethernet-korttia ei löytynyt. Jos tiedät Ethernet-korttisi tarvitseman ajurin nimen, voit valita sen listalta.
+Description-fr.UTF-8: Module nécessaire pour la carte Ethernet :
+ Aucune carte réseau Ethernet n'a été trouvée. Si vous connaissez le nom du pilote nécessaire pour le fonctionnement de la carte réseau, veuillez le choisir dans la liste.
+Description-ga.UTF-8: Tiománaí de dhíth ar do chárta Ethernet:
+ Níor braitheadh cárta Ethernet. Más eol duit ainm an tiománaí atá de dhíth ar do chárta Ethernet, is féidir leat é a roghnú ón liosta.
+Description-gl.UTF-8: Controlador preciso pola tarxeta Ethernet:
+ Non se detectou ningunha tarxeta Ethernet. Se coñece o nome do controlador que precisa, pode escollelo na lista.
+Description-he.UTF-8: מנהל התקן שנדרש על ידי כרטיס הרשת שלך:
+ לא זוהה כרטיס רשת. אם אתה יודע את שם מנהל ההתקן הדרוש לכרטיס הרשת שלך, תוכל לבחור אותו מהרשימה.
+Description-hr.UTF-8: Upravljački program za vašu mrežnu karticu:
+ Mrežna kartica nije pronađena. Ako znate naziv upravljačkog programa za vašu mrežnu karticu, izaberite ga s popisa.
+Description-hu.UTF-8: Az Ethernet kártyához szükséges meghajtó:
+ Nem észleltem Ethernet kártyát. Ha tudja az Ethernet kártyához szükséges meghajtó nevét, kiválaszthatja a listából.
+Description-id.UTF-8: Driver yang dibutuhkan kartu ethernet Anda:
+ Kartu ethernet tidak ditemukan. Jika Anda tahu nama driver yang dibutuhkan oleh kartu ethernet Anda, silakan pilih dari daftar.
+Description-is.UTF-8: Rekill sem netkortið þarf:
+ Ekkert netkort fannst. Ef þú þekkir nafn rekilsins sem þörf er á getur þú valið hann í listanum.
+Description-it.UTF-8: Driver necessario per la scheda Ethernet:
+ Non è stata rilevata alcuna scheda Ethernet. Se si conosce il nome del driver necessario a tale scheda, è possibile selezionarlo dall'elenco.
+Description-ja.UTF-8: イーサネットカードに必要なドライバ:
+ イーサネットカードが検出されませんでした。あなたのイーサネットカードに必要なドライバの名前がわかっているなら、リストからそれを選択できます。
+Description-kk.UTF-8: Желілік картаңыздың драйвері:
+ Ешбір желілік карта табылмады. Драйвер атын білсеңіз, төмендегі тізімнен таңдап көруіңізге болады.
+Description-kn.UTF-8: ನಿಮ್ಮ ಎತರ್ನೆಟ್ ಕಾರ್ಡ್ ಬೇಕಾದ ಚಾಲಕ ತಂತ್ರಾಂಶ :
+ ಈಥರ್ ನೆಟ್ ಕಾರ್ಡ್ ಪತ್ತೆಯಾಗಲಿಲ್ಲ. ಈಥರ್ ನೆಟ್ ಕಾರ್ಡ್ ನ ತಂತ್ರಾಂಶ ಚಾಲಕ (ಡ್ರೈವರ್) ನ ಹೆಸರು ತಿಳಿದಿದ್ದಲ್ಲಿ ಕೆಳಗಿನ ಪಟ್ಟಿಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ.
+Description-ko.UTF-8: 이더넷 카드에 필요한 드라이버:
+ 이더넷 카드를 찾을 수 없습니다. 지금 사용하고 있는 이더넷 카드에 필요한 드라이버의 이름을 알고 있다면, 다음 목록에서 고르십시오.
+Description-ku.UTF-8: Ajokara ji bo karta te ya Enternetê pêwist e:
+ Tu karta Enternetê nehate nasîn. Heke tu navê ajokara ku ji karta te ya Enternetê re pêwist e dizanî, tu dikarî ji lîsteyê hilbijêrî.
+Description-lo.UTF-8: ໄດເວີທີ່ກຣ໌າດອີນເທີເນັດຂອງເຈົ້າຕ້ອງການ:
+ ກວດສອບບໍ່ພົບກຣ໌າດອີນເທີເນັດ ຖ້າເຈົ້າຮູ້ຊື່ສຳລັບກຣ໌າດໄດເວີອືນເຕີເນັດຂອງເຈົ້າ ເຈົ້າສາມາດເລືອກໄດ້ຈາກລາຍການນີ້.
+Description-lt.UTF-8: Tvarkyklė, reikalinga tinklo plokštei:
+ Tinklo plokštė neaptikta. Jei žinote tinklo plokštei reikiamos tvarkyklės pavadinimą, galite išsirinkti ją iš sąrašo.
+Description-lv.UTF-8: Jūsu Ethernet kartei nepieciešamais draiveris:
+ Ethernet karte netika atrasta. Ja zināt savai Ethernet kartei nepieciešamā draivera nosaukumu, varat to izvēlēties no saraksta.
+Description-mk.UTF-8: Управувач кој е потребен за твојата мрежна карта:
+ Не беше детектирана мрежна карта. Ако го знаеш името на управувачот за твојата мрежна карта, можеш да го одбереш од листата.
+Description-nb.UTF-8: Driver som nettverkskortet skal bruke:
+ Fant ikke et nettverskort. Velg fra listen om driveren til kortet er kjent.
+Description-nl.UTF-8: Module vereist voor uw ethernetkaart:
+ Er is geen ethernetkaart gedetecteerd. Als u de naam weet van het door uw ethernetkaart vereiste stuurprogramma kunt u het in de lijst selecteren.
+Description-nn.UTF-8: Drivar som Ethernet-kortet ditt treng:
+ Fann ingen Ethernet-kort. Viss du veit namnet på drivaren som trengst for Ethernet-kortet ditt, kan du velje han frå lista.
+Description-no.UTF-8: Driver som nettverkskortet skal bruke:
+ Fant ikke et nettverskort. Velg fra listen om driveren til kortet er kjent.
+Description-pl.UTF-8: Sterownik wymagany przez Twoją kartę Ethernet:
+ Nie wykryto żadnej karty Ethernet. Jeśli znasz nazwę wymaganego sterownika, możesz wybrać go z listy.
+Description-pt.UTF-8: Driver necessário pela sua placa Ethernet:
+ Não foi detectada nenhuma placa Ethernet. Se sabe o nome do driver necessário para a sua placa Ethernet, pode escolhe-lo a partir da lista.
+Description-pt_BR.UTF-8: Driver requerido por sua placa Ethernet:
+ Nenhuma placa Ethernet foi detectada. Se você sabe o nome do driver requerido por sua placa Ethernet, você pode selecioná-lo a partir da lista.
+Description-ro.UTF-8: Modul de nucleu necesar plăcii dumneavoastră Ethernet:
+ Nu s-a detectat nici o placă de rețea Ethernet. Dacă cunoașteți numele modulului necesar plăcii dumneavoastră Ethernet, îl puteți selecta din listă.
+Description-ru.UTF-8: Драйвер, необходимый для вашей сетевой карты:
+ Программа установки не обнаружила сетевую карту. Если вы знаете имя драйвера, нужного для вашей сетевой карты, то можете выбрать его из списка.
+Description-si.UTF-8: ඔබේ ඊදර්නෙට් කාඩ්පතට ඇවැසි ධාවක:
+ කිසිඳු ඊදර්නෙට් කාඩ්පතක් හමු නොවිනි, ඔබේ ඊදර්නෙට් කාඩ්පතට අවශ්‍ය ධාවකයේ නම දන්නේ නම් ලැයිස්තුවෙන් එය තෝරාගත හැක.
+Description-sk.UTF-8: Ovládač potrebný pre vašu ethernetovú kartu:
+ Nebola rozpoznaná žiadna ethernetové karta. Ak viete názov ovládača, ktorý je potrebný pre vašu ethernetovú kartu, môžete si ho zvoliť zo zoznamu.
+Description-sl.UTF-8: Gonilnik za vašo mrežno kartico:
+ Ni bilo mogoče zaznati nobene Ethernet kartice. Če poznate ime gonilnika, ki ga potrebuje vaša Ethernet kartica, ga lahko izberete iz seznama.
+Description-sq.UTF-8: Driver i duhur nga karta tënde Ethernet:
+ Nuk u gjet asnjë kartë Ethernet. Nëse e njeh emrin e drejtuesit që i nevojitet kartës tënde Ethernet, mund ta zgjedhësh nga lista e mëposhtme.
+Description-sr.UTF-8: Потребни драјвери за вашу етернет картицу:
+ Етернет картица није детектована. Ако знате име драјвера потребног завашу етернет картицу, можете га изабрати са листе.
+Description-sv.UTF-8: Drivrutin som behövs för ditt ethernetkort:
+ Hittade inget ethernetkort. Om du vet namnet på drivrutinen som krävs av ditt ethernetkort kan du välja den från listan.
+Description-te.UTF-8: మీ ఈథర్నెట్ కార్డుకి కావలసిన డ్రైవరు:
+ ఈథర్నెట్ కార్డు కనుగొనబడలేదు. మీ ఈథర్నెట్ కార్డు డ్రైవరు (Driver) పేరు మీకు తెలిసినట్లయితే మీరు జాబితా నుంచి ఎంపిక చేసుకోవచ్చు.
+Description-tg.UTF-8: Барои корти Ethernet-и шумо драйвер лозим аст:
+ Ягон корти Ethernet дар системаи шумо ёфт нашуд. Агар шумо номи драйверро барои корти Ethernet-и худ донед, метавонед онро аз рӯйхат интихоб кунед.
+Description-th.UTF-8: ไดรเวอร์ที่การ์ดอีเทอร์เน็ตของคุณต้องการ:
+ ตรวจไม่พบการ์ดอีเทอร์เน็ต ถ้าคุณทราบชื่อไดรเวอร์สำหรับการ์ดอีเทอร์เน็ตของคุณ คุณสามารถเลือกได้จากรายการนี้
+Description-tl.UTF-8: Driver na kailangan ng inyong Ethernet card:
+ Walang Ethernet card na nakita. Kung alam niyo ang pangalan ng driver na kailangan ng inyong Ethernet card ay maaari niyong piliin mula sa talaan.
+Description-tr.UTF-8: Ethernet kartınız için gerekli sürücü:
+ Herhangi bir Ethernet kartı algılanamadı. Ethernet kartınız için gerekli olan sürücünün adını biliyorsanız, sürücüyü listeden seçebilirsiniz.
+Description-ug.UTF-8: تور كارتىڭىز ئېھتىياجلىق قوزغىتىش بۆلىكى:
+ ھېچقانداق تور كارتىسى بايقالمىدى. ئەگەر ئۇنىڭغا لازىملىق قوزغىتىش پروگراممىسىنى بىلسىڭىز، تۆۋەندىكى تىزىملىكتىن تاللاڭ.
+Description-uk.UTF-8: Драйвер, що потрібний для вашої мережевої карти:
+ Ethernet карти не знайдені. Якщо ви знаєте назву драйвера, що потрібний для вашої мережевої карти, то ви можете вибрати його із списку.
+Description-vi.UTF-8: Trình điều khiển cần bởi thẻ Ethernet của bạn:
+ Không có thẻ Ethernet nào được tìm ra. Nếu biết tên trình điều khiển cần bởi thẻ Ethernet trong máy tính này, hãy chọn nó trong danh sách.
+Description-zh_CN.UTF-8: 您的以太网卡所需的驱动模块：
+ 未探测到以太网卡。如果您知道其所需的驱动程序的名称，请从以下列表中选择。
+Description-zh_TW.UTF-8: 您的網路卡所需的驅動程式:
+ 未能偵測到任何網路卡。如果您知道您的網路卡所使用的驅動程式的名稱，請在列表中選取。
+
+Template: ethdetect/use_firewire_ethernet
+Type: boolean
+Default: false
+Description: Do you intend to use FireWire Ethernet?
+ No Ethernet card was detected, but a FireWire interface is present.
+ It's possible, though unlikely, that with the right FireWire hardware
+ connected to it, this could be your primary Ethernet interface.
+Description-ar.UTF-8: هل تنوي استخدام FireWire Ethernet؟
+ لم يتم العثور على أية بطاقة Ethernet، إلا أن هناك واجهة FireWire. من المحتمل مع وجود عتاد FireWire المناسب متصلاً بهذه الواجهة، أن تكون هذه واجهة Ethernet الأولية لديك.
+Description-ast.UTF-8: ¿Va a usar Ethernet Firewire?
+ Nun se deteutó denguna tarxeta de rede pero sí s'alcontró una interface Firewire. Ye dable, magar que non probable, que pueda usala como la so interface Ethernet primaria si'l hardware Firewire correutu ta coneutáu a ésti.
+Description-be.UTF-8: Ці будзеце Вы карыстацца FireWire Ethernet?
+ Не знойдзена ніводнай Ethernet карткі, але прысутнічае інтэрфэйс FireWire.Магчыма, хоць і малаверагодна, што гэта Ваш першасны інтэрфэйс Ethernet (пры ўмове, што да яго падключана адпаведнае абсталяванне FireWire).
+Description-bg.UTF-8: Възнамерявате ли да използвате FireWire Ethernet?
+ Не е открита Ethernet карта, но е открит интерфейс FireWire.  Възможно е, но малко вероятно, този интерфейс да е свързан към хардуер, който да е главният Ethernet интерфейс.
+Description-bs.UTF-8: Da li želite koristiti FireWire Ethernet?
+ Mrežna kartica nije detektovana, ali je prisutan FireWire interfejs. Moguće je iako neuobičajeno, da sa odgovarajućim FireWire hardverom priključenim na njega, ovo može biti vaš primarni mrežni interfejs.
+Description-ca.UTF-8: Voleu utilitzar Ethernet FireWire?
+ No s'ha trobat cap targeta Ethernet, però sí que hi ha una interfície FireWire. És possible, encara que poc probable, que amb el maquinari FireWire adequat connectat a la interfície, aquesta puga ser la vostra interfície Ethernet primària.
+Description-cs.UTF-8: Zamýšlíte použít FireWire Ethernet?
+ Nebyla rozpoznána ethernetová karta, avšak je přítomno rozhraní FireWire. Je možné, nicméně málo pravděpodobné, že s vhodným FireWire zařízením by to mohlo být vaše hlavní ethernetové rozhraní.
+Description-cy.UTF-8: Ydych chi'n bwriadu defnyddio Ethernet FireWire?
+ Ni chanfwyd unrhyw gerdyn Ethernet, ond mae rhyngwyneb FireWire yn bresennol. Mae'n bosib, ond anhebygol, gyda'r caledwedd FireWire cywir wedi ei gysylltu iddo, gallai hwn weithredu fel eich prif ryngwyneb Ethernet.
+Description-da.UTF-8: Har du planer om at bruge FireWire-Ethernet?
+ Det blev ikke fundet noget Ethernet-kort, men der er en FireWire-forbindelse. Det er muligt, omend usandsynligt, at den kan udgøre dit primære netkort, hvis du har det rigtige udstyr tilsluttet.
+Description-de.UTF-8: Beabsichtigen Sie, Fire-Wire-Ethernet zu benutzen?
+ Es wurde keine Netzwerkkarte gefunden, jedoch ist eine FireWire-Schnittstelle vorhanden. Es ist möglich, wenn auch unwahrscheinlich, dass die entsprechende Hardware, die mit diesem Gerät verbunden ist, als primäre Netzwerkschnittstelle dient.
+Description-el.UTF-8: Σκοπεύετε να χρησιμοποιήσετε Ethernet μέσω Firewire;
+ Δεν ανιχνεύτηκε κάρτα δικτύου Ethernet αλλά βρέθηκε διασύνδεση Firewire. Είναι δυνατόν, αν και όχι εύκολα, να χρησιμοποιήσετε αυτή τη διασύνδεση ως κύρια σύνδεση Ethernet με την κατάλληλη σύνδεση με άλλο υλικό Firewire.
+Description-eo.UTF-8: Ĉu vi intencas uzi 'FireWire Ethernet'?
+ Neniu ret-karto estis detektata, sed interfaco 'FireWire' ĉeestas. Eble, ĝi povos iĝi via unuagrada interfaco, se ĝusta ret-aparataro 'FireWire' estos konektita.
+Description-es.UTF-8: ¿Va a utilizar Ethernet Firewire?
+ No se detectó ninguna tarjeta de red pero sí se ha encontrado una interfaz Firewire. Es posible, aunque no probable, que pueda utilizarla como una su interfaz Ethernet primaria si el hardware Firewire correcto está conectado a éste.
+Description-et.UTF-8: Kas plaanid kasutada FireWire ethernet'i?
+ Ühtki võrgukaarti ei leitud, küll aga leiti FireWire liides. Kuigi see on vähelevinud, siis põhimõtteliselt saab sobilikku FireWire seadet kasutada peamise võrguliidesena.
+Description-eu.UTF-8: FireWire ethernet erabiltzeko asmoa duzu?
+ Ez da sareko Ethernet txartelik detektatu, baina FireWire interfaze bat dago. Posible da, gomendatu ez arren, hardware egokia konektatuz hau sareko Ethernet interfaze nagusia izatea.
+Description-fa.UTF-8: آیا می‌خواهید از فایروایر اترنت استفاده کنید؟
+ هیچ کارت اترنتی یافت نشد، اما یک فایروایر اینترفیس آماده است. هرچند غیر مشابه، اما امکان دارد با یک سخت افزار درست متصل شده به آن، بتواند اینترفیس اترنت اولیه شما باشد.
+Description-fi.UTF-8: Aiotaanko käyttää Firewire Ethernettiä?
+ Ethernet-korttia ei löytynyt, mutta Firewire-liitäntä löytyi. On mahdollista, tosin epätodennäköistä, että oikeanlaisen laitteen ollessa siihen kytkettynä se olisi tämän koneen ensisijainen Ethernet-liitäntä.
+Description-fr.UTF-8: Voulez-vous utiliser l'Ethernet FireWire ?
+ Aucune carte Ethernet n'a été détectée mais une interface FireWire existe. Il est possible, quoiqu'improbable, qu'elle puisse devenir l'interface Ethernet principale si un périphérique Ethernet y est connecté.
+Description-ga.UTF-8: An bhfuil sé ar intinn agat FireWire Ethernet a úsáid?
+ Níor braitheadh cárta Ethernet, ach tá comhéadan FireWire ann. Tá caolseans ann, má tá crua-earraí oiriúnacha FireWire ceangailte leis, gurb é seo do phríomh-chomhéadan Ethernet.
+Description-gl.UTF-8: Pretende empregar Ethernet por FireWire?
+ Non se detectou ningunha tarxeta Ethernet, pero hai unha interface FireWire. É posíbel, aínda que pouco probábel, que tendo conectado a ela o hardware FireWire axeitado, este sexa a súa interface Ethernet primaria.
+Description-he.UTF-8: האם יש בכוונתך להשתמש ב-FireWire Ethernet?
+ לא זוהה כרטיס רשת, אבל נמצא ממשק FireWire. ייתכן, אם כי זה לא סביר, שיחד עם חיבור חומרת FireWire מתאימה, זהו ממשק הרשת העיקרי שלך.
+Description-hr.UTF-8: Planirate li koristiti FireWire Ethernet?
+ Nije pronađena nijedna Ethernet kartica, ali dostupno je FireWire sučelje. Moguće je, iako nije vjerojatno, da s priključenim odgovarajućim FireWire sklopovljem ovo može biti vaše primarno Ethernet sučelje.
+Description-hu.UTF-8: FireWire Ethernetet használatát tervezed?
+ Nem érzékeltem Ethernet kártyát, de egy FireWire csatolót igen. Lehet, bár nem valószínű, hogy a helyes FireWire eszköz csatlakoztatásával ez lehet az elsődleges Ethernet csatoló.
+Description-id.UTF-8: Anda ingin menggunakan Ethernet FireWire?
+ Kartu Ethernet tak ditemukan, tapi terdapat antarmuka FireWire. Mungkin saja, ada perangkat ethernet yang terhubung ke FireWire anda.
+Description-is.UTF-8: Hefur þú í hyggju að nota FireWire-netkort?
+ Ekkert netkort fannst, en FireWire-braut er til staðar. Það er mögulegt, en ólíklegt þó, að í vélinni sé FireWire-netkort sem notast skal sem aðalnetkort vélarinnar.
+Description-it.UTF-8: Utilizzare l'interfaccia FireWire Ethernet?
+ Non è stata rilevata alcuna scheda Ethernet, ma è presente un'interfaccia FireWire. È possibile, anche se poco probabile, che questa sia la propria interfaccia Ethernet primaria se risulta collegato l'hardware FireWire adeguato.
+Description-ja.UTF-8: FireWire イーサネットを使いますか?
+ イーサネットカードが検出されませんでしたが、FireWire インターフェイスが提供されています。あまりないことですが、FireWire ハードウェアが正しく接続されているなら、プライマリのイーサネットインターフェイスとして利用できます。
+Description-kk.UTF-8: Сіз FireWire Ethernet қолдануды қалайсыз ба?
+ Ethernet картасы табылмағанымен, FireWire бар екендігі анықталды. Дұрыс жабдықты пайдаланып, FireWire интерфейсін Ethernet интерфейсінің орнына пайдаланып көруге болады.
+Description-kn.UTF-8: ಫೈರ್ ವೈರ್ ಎತರ್ನೆಟ್ ಅನ್ನು  ಬಳಸಲು ಬಯಸುತ್ತೀರ?
+ No Ethernet card was detected, but a FireWire interface is present. It's possible, though unlikely, that with the right FireWire hardware connected to it, this could be your primary Ethernet interface.
+Description-ko.UTF-8: FireWire 이더넷을 사용하시겠습니까?
+ 이더넷 카드가 없지만, FireWire 인터페이스가 있습니다. 보통 그렇지 않겠지만, FireWire에 네트워크 하드웨어가 연결되어 있을 수도 있으면, 그 하드웨어를 주요 이더넷 인터페이스로 쓸 수 있습니다.
+Description-ku.UTF-8: Dixwazî Ethnerneta FireWire bi kar bînî?
+ Karta Ethernet nehat dîtin, lê belê interface a FireWire heye. Îhtimaleke biçûk heye ku interface ya Ethernet a te bi hardware a FireWire dixebite.
+Description-lo.UTF-8: ເຈົ້າເຈດຕະນາໃຊ້ອີນເທີເນັດຜ່ານ FireWire ຫຼື ບໍ່ ?
+ ກວດສອບບໍ່ພົບກຣາດອິນເທີເນັດ ແຕ່ມີອີນເທີເຟຣແບບ FireWire ຢູ່ເປັນໄປໄດ້ຄືກັນ ແຕ່ບໍ່ຫຼາຍທີ່ຈະມີຮາດແວຣ໌ FireWire ເຊື່ອມຕໍ່ຢູ່ກັບອີນເທີເຟຣດັ່ງກວ່າອາດເປັນອີນເທີເຟຣຫຼັກແບບອີນເທີເນັດຂອງເຈົ້າກໍ່ໄດ້
+Description-lt.UTF-8: Ar ketinate naudoti „FireWire“ tinklą?
+ Neaptikta tinklo plokštė, bet yra „FireWire“ sąsaja. Gali būti, nors ir mažai tikėtina, kad esant prie jos prijungtai tinkamai „FireWire“ įrangai, ši sąsaja gali būti naudojama kaip pirminė tinklo sąsaja.
+Description-lv.UTF-8: Vai plānojat lietot FireWire Ethernet?
+ Ethernet karte nav atrasta, taču ir FireWire saskarne. Iespējams, kaut gan maz ticams, ka ar atbilstošu FireWire aparatūru šī varētu būt jūsu galvenā Ethernet saskarne.
+Description-mk.UTF-8: Дали намерувате да користите FireWire етернет?
+ Не е најдена етернет мрежна карта, но е присутен FireWire интерфејст. Можно е, но тешко веројатно, дека со вистински Firewire хардвер поврзан на него, тоа да биде главен етернет интерфејст.
+Description-nb.UTF-8: Akter du å bruke Firewire Ethernet?
+ Fant ikke noe Ethernet-kort, men det finnes et FireWire grensesnitt. Det er mulig, men lite sannsynlig, at dette kan være din hovedtilkobling til Ethernet med rett FireWire-utstyr på plass.
+Description-nl.UTF-8: Bent u van plan om FireWire Ethernet te gebruiken?
+ Er is geen ethernetkaart gevonden, maar er is wel een FireWire-interface aanwezig. Het is mogelijk (doch onwaarschijnlijk) dat, eens de juiste FireWire-hardware aaneengesloten, dit uw primaire Ethernet-interface is.
+Description-nn.UTF-8: Har du planar om å bruke FireWire Ethernet?
+ Ingen Ethernet-kort blei funne, men det finst eit FireWire-grensesnitt. Det er mogeleg, sjølv om det er lite truleg, at dette kan vere di hovudtilkopling til Ethernet med rett FireWire-utstyr på plass.
+Description-no.UTF-8: Akter du å bruke Firewire Ethernet?
+ Fant ikke noe Ethernet-kort, men det finnes et FireWire grensesnitt. Det er mulig, men lite sannsynlig, at dette kan være din hovedtilkobling til Ethernet med rett FireWire-utstyr på plass.
+Description-pl.UTF-8: Chcesz użyć FireWire Ethernet?
+ Nie wykryto karty Ethernet, ale interfejs FireWire jest dostępny. Możliwe, ale mało prawdopodobne, że jest do niego podpięty odpowiedni sprzęt będący podstawowym interfejsem Ethernet.
+Description-pt.UTF-8: Você tenciona utilizar Ethernet por FireWire?
+ Não foi detectada nenhuma placa Ethernet, mas está presente um interface FireWire. É possível, mas pouco provável, que tendo o hardware FireWire correctamente ligado, este possa ser o seu interface primário de Ethernet.
+Description-pt_BR.UTF-8: Você pretende usar FireWire Ethernet?
+ Nenhuma placa Ethernet foi detectada, mas uma interface FireWire está presente. É possível, embora improvável, que com o hardware FireWire correto conectado a ela, essa possa ser sua interface Ethernet primária.
+Description-ro.UTF-8: Intenționați să folosiți Ethernet Firewire?
+ Nu s-a detectat nici o placă Ethernet, dar o interfață Firewire este prezentă. Este posibil, deși puțin probabil, ca, împreună cu componentele Firewire potrivite conectate la ea, aceasta să reprezinte interfața primară Ethernet.
+Description-ru.UTF-8: Хотите использовать FireWire Ethernet?
+ Во время поиска Ethernet карт обнаружено не было, но в машине есть FireWire интерфейс. Возможно, хотя и маловероятно, использовать его в качестве первичного Ethernet интерфейса к правильно подключённому FireWire оборудованию.
+Description-se.UTF-8: Áiggutgo geavahit FireWire Ethernet:a?
+ Ii gávdnan Ethernet-goartta, muhto FireWire-lakta gávdnui. Lea vejolaš, muhto ii jáhkehahtti, ahte dát lea du váldooktavuohta Ethernet:ii, jus dus lea rievttes FireWire rustegat.
+Description-si.UTF-8: ඔබ ෆයර්වයර් ඊදර්නෙට් භාවිත කිරීමට අදහස් කරයිද?
+ කිසිඳය ඊදර්නෙට් කාඩ්පතක් හමු නොවිනි, එහෙත් ෆයර්වයර් අතුරුමුහුණතක් පවතී, මෙය නිවැරදි ෆයර්වයර් දෘඩාංග සමඟ යොදන්නේ නම් ඔබේ ප්‍රධාන ඊදර්නෙට් අතුරු මුහුණත ලෙස භාවිත කල හැක.
+Description-sk.UTF-8: Plánujete používať FireWire Ethernet?
+ Nebola rozpoznaná žiadna ethernetová karta, ale je prítomné FireWire rozhranie. S funkčným FireWire hardvérom pripojeným do tohto rozhrania je možné, hoci veľmi nepravdepodobné, jeho použitie ako primárneho ethernetového rozhrania.
+Description-sl.UTF-8: Ali nameravate uporabljati FireWire Ethernet?
+ Ni bilo mogoče zaznati kartice Ethernet, vendar je prisoten vmesnik FireWire. Možno je, čeprav malo verjetno, da je z ustrezno priključeno strojno opremo FireWire to vaš primarni vmesnik Ethernet.
+Description-sq.UTF-8: Synon të përdorësh Ethernet nga FireWire?
+ Nuk u gjet asnjë kartë Ethernet, por gjendet një ndërfaqe FireWire. Edhe pse pak e mundshme, me mjetin e duhur FireWire lidhur në të, mund të kihet ndërfaqja kryesore e kartës Ethernet.
+Description-sr.UTF-8: Да ли намеравате да користите FireWire етернет?
+ Ниједна етернет картица није детектована, али је присутан FireWire интерфејс. Могуће је да са одговарајућим FireWire уређајем повезаним на њега то буде ваш примарни етернет интерфејс.
+Description-sv.UTF-8: Har du planerat att använda Ethernet över FireWire?
+ Inget Ethernetkort hittades men ett FireWire-gränssnitt hittades. Det är möjligt, kanske inte normalt, att med rätt FireWire-tillbehör ansluten till det att det här är ditt primära Ethernet-gränssnitt.
+Description-te.UTF-8: మీరు  ఫైర్ వైర్ ఈథర్ నెట్  వాడాలనుకుంటున్నారా ?
+ ఈథర్నెట్ కార్డు గుర్తించుటలో విఫలం. కాని ఫైర్‌వైర్ ఇంటర్ఫేస్ వున్నది. సరిపోయిన  హార్డ్వేర్ అనుసంధానించితే, ఇది మీ ప్రధాన ఈథర్నెట్ ఇంటర్ఫేస్ గా వాడే అవకాశం (అరుదుగా) వుంది.
+Description-tg.UTF-8: Шумо мехоҳед, ки FireWire Ethernet-ро истифода баред?
+ Ягон корти Ethernet ёфт нашуд, аммо интерфейси FireWire мавҷуд аст. Эҳтимол аст, ки агар шумо сахтафзори мувофиқро ба он пайваст кунед, он метавонад инттерфейси асосии Ethernet-и шумо гардад.
+Description-th.UTF-8: คุณเจตนาจะใช้อีเทอร์เน็ตผ่าน FireWire หรือไม่?
+ ตรวจไม่พบการ์ดอีเทอร์เน็ต แต่มีอินเทอร์เฟซแบบ FireWire อยู่ เป็นไปได้เหมือนกัน แต่ไม่มาก ที่จะมีฮาร์ดแวร์ FireWire เชื่อมต่ออยู่จริงๆ อินเทอร์เฟซดังกล่าวอาจเป็นอินเทอร์เฟซหลักแบบอีเทอร์เน็ตของคุณก็ได้
+Description-tl.UTF-8: May balak ba kayong gumamit ng FireWire ethernet?
+ Walang Ethernet card na nahanap, ngunit may FireWire interface na narito. Maaari, bagama't di ito tiyak, na kung may akmang kagamitang FireWire na nakakabit dito ay pwedeng ito ang inyong pangunahing ethernet interface.
+Description-tr.UTF-8: FireWire Ethernet kullanmayı düşünür müsünüz?
+ Herhangi bir Ethernet kartı algılanamadı, fakat bir FireWire arayüzü mevcut. Uygun bir FireWire donanımının takılı olması halinde bu arayüzün birincil Ethernet arayüzü olarak işlev görmesi (sık rastlanılır bir durum olmamakla birlikte) mümkün.
+Description-ug.UTF-8: FireWire  تورىنى ئىشلىتەمسىز؟
+ تور كارتىسى بايقالمىدى ئەمما سىستېما FireWire ئېغىزىدىن بىرنى تەمىنلەپتۇ. ئەگەر مۇناسىپ FireWire قاتتىق دېتالى ئۇلانغان بولسا مەزكۇر ئۇلىنىش ئېغىزى سىزنىڭ ئاساسلىق(primary) تور ئېغىزىڭىز بولۇشى مۇمكىن.
+Description-uk.UTF-8: Чи збираєтесь ви використовувати FireWire Ethernet?
+ Карти Ethernet не визначені, проте присутній інтерфейс FireWire. Можливо, хоча й малоймовірно, що, якщо до нього під'єднане потрібне обладнання, це може бути ваш первинний інтерфейс Ethernet.
+Description-vi.UTF-8: Bạn có định sử dụng FireWire Ethernet không?
+ Không có thẻ Ethernet nào được tìm ra, nhưng mà có một giao diện FireWire. Có thể, còn không rất có thể là giao diện này, với phần cứng Firewire đúng được kết nối đến nó, có thể hoạt động như là giao diện Ethernet chính.
+Description-zh_CN.UTF-8: 您准备使用 FireWire 以太网吗？
+ 未探测到以太网卡，但系统提供了一个 FireWire 接口。如果连接了合适的 FireWire 硬件，该接口也可能成为您的主网络接口。
+Description-zh_TW.UTF-8: 您是否打算使用 FireWire 介面的網路卡？
+ 未能偵測到網路卡，但卻找到了一個 FireWire 介面。雖然似乎不是，但在那上面還是可能接了個 FireWire 硬體裝置；它可能正是您主要的網路卡介面。
+
+Template: ethdetect/cannot_find
+Type: error
+Description: Ethernet card not found
+ No Ethernet card was found on the system.
+Description-ar.UTF-8: لم يعثر على بطاقة Ethernet
+ لم يعثر على بطاقة Ethernet على النظام.
+Description-ast.UTF-8: Nun se deteutó denguna tarxeta de rede
+ Nun se deteutó denguna tarxeta de rede nel sistema.
+Description-be.UTF-8: Не знойдзена картак Ethernet
+ У сістэме не знойдзена ніводнай Ethernet карткі.
+Description-bg.UTF-8: Не е открита мрежова карта
+ Не беше открита мрежова карта в системата.
+Description-bo.UTF-8: རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་རྙེད་མེད་པ
+ མ་ལག་གི་ཐོག་རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་མ་རྙེད་པ
+Description-bs.UTF-8: Mrežna kartica nije pronađena
+ Mrežna kartica nije pronađena na sistemu.
+Description-ca.UTF-8: No s'ha trobat la targeta ethernet
+ No s'han detectat targetes ethernet al sistema.
+Description-cs.UTF-8: Ethernetová karta nebyla nalezena.
+ V systému nebyla nalezena žádná ethernetová karta.
+Description-cy.UTF-8: Ni chanfuwyd gerdyn Ethernet
+ Ni chanfuwyd gerdyn Ethernet ar y system.
+Description-da.UTF-8: Fandt ikke ethernetkortet
+ Fandt intet ethernetkort på systemet.
+Description-de.UTF-8: Es wurde keine Ethernet-Karte erkannt.
+ In Ihrem Computer wurde keine Ethernet-Karte gefunden.
+Description-el.UTF-8: Δεν ανιχνεύτηκε κάρτα δικτύου
+ Δεν ανιχνεύτηκε κάρτα δικτύου στον υπολογιστή σας.
+Description-eo.UTF-8: Neniu karto 'Ethernet' estis trovita
+ Neniu karto 'Ethernet' estis trovita en la sistemo.
+Description-es.UTF-8: No se ha detectado ninguna tarjeta de red
+ No se ha detectado ninguna tarjeta de red en el sistema.
+Description-et.UTF-8: Võrgukaarti ei leitud.
+ Süsteemist ei leitud ühtki võrgukaarti.
+Description-eu.UTF-8: Ez da Ethernet txartelik aurkitu
+ Ez da Ethernet txartelik aurkitu sisteman.
+Description-fa.UTF-8: کارت اترنت یافت نشد
+ هیچ کارت اترنت‌ای روی این سیستم یافت نشد.
+Description-fi.UTF-8: Ethernet-korttia ei löytynyt
+ Ethernet-korttia ei löytynyt laitteistosta.
+Description-fr.UTF-8: Aucune carte Ethernet détectée
+ Aucune carte Ethernet n'a été détectée sur le système.
+Description-ga.UTF-8: Cárta Ethernet gan aimsiú
+ Níor aimsíodh cárta Ethernet ar an gcóras.
+Description-gl.UTF-8: Non se atopou unha tarxeta Ethernet
+ Non se atopou ningunha tarxeta ethernet no sistema.
+Description-he.UTF-8: לא נמצא כרטיס רשת
+ לא נמצא כרטיס רשת במערכת שלך.
+Description-hr.UTF-8: Mrežna kartica nije pronađena
+ Na sustavu nije pronađena mrežna kartica.
+Description-hu.UTF-8: Nem találtam Ethernet kártyát
+ Nem találtam Ethernet kártyát a gépen.
+Description-id.UTF-8: Kartu ethernet tidak ditemukan
+ Kartu Ethernet tidak ditemukan pada sistem.
+Description-is.UTF-8: Netkort fannst ekki
+ Ekkert netkort fannst í vélinni.
+Description-it.UTF-8: Scheda Ethernet non trovata
+ Non è stata rilevata sul sistema alcuna scheda Ethernet.
+Description-ja.UTF-8: イーサネットカードは見つかりませんでした
+ システムにイーサネットカードは見つかりませんでした。
+Description-kk.UTF-8: Желілік карта табылмады
+ Жүйеде бір де бір желілік карта табылмады.
+Description-kn.UTF-8: ಎಥರ್ನೆಟ್ ಕಾರ್ಡ್ ಪತ್ತೆಯಾಗಿಲ್ಲ
+  ನಿಮ್ಮ ಗಣಕ ಯಂತ್ರದಲ್ಲಿ ಎತರ್ನೆಟ್ ಕಾರ್ಡ್ ಕಂಡುಬಂದಿಲ್ಲ.
+Description-ko.UTF-8: 이더넷 카드를 찾을 수 없습니다
+ 시스템에서 이더넷 카드를 찾을 수 없습니다.
+Description-ku.UTF-8: Karta Ethernetê nehat dîtin
+ Di pergala te de karteke Ethernetê nehat dîtin.
+Description-lo.UTF-8: ບໍ່ພົບກຣ໌າດອີນເທີເນັດ
+ ບໍ່ພົບກຣ໌າດອີນເທີເນັດໃນລະບົບ
+Description-lt.UTF-8: Tinklo plokštė nerasta
+ Šioje sistemoje nerasta tinklo plokščių.
+Description-lv.UTF-8: Ethernet tīkla karte nav atrasta
+ Sistēmā netika atrasta neviena Ethernet tīkla karte.
+Description-mk.UTF-8: Не најдов мрежна карта
+ Не најдов мрежна карта во системот.
+Description-nb.UTF-8: Fant intet nettverkskort
+ Fant intet nettverkskort på systemet.
+Description-nl.UTF-8: Uw ethernetkaart is niet gevonden.
+ Er is op dit systeem geen ethernetkaart gevonden.
+Description-nn.UTF-8: Fann ingen nettverkskort
+ Fann ingen nettverkskort på systemet.
+Description-no.UTF-8: Fant intet nettverkskort
+ Fant intet nettverkskort på systemet.
+Description-pl.UTF-8: Nie znaleziono karty sieciowej
+ Nie znaleziono karty sieciowej w systemie.
+Description-pt.UTF-8: Placa ethernet não foi encontrada
+ Não foi encontrada nenhuma placa Ethernet neste sistema.
+Description-pt_BR.UTF-8: Placa de rede (Ethernet) não encontrada
+ Não foram encontradas placas de rede (Ethernet) no sistema.
+Description-ro.UTF-8: Placă de rețea Ethernet negăsită
+ Nu s-a găsit nici o placă de rețea Ethernet în sistem.
+Description-ru.UTF-8: Сетевая карта не найдена.
+ В системе не найдено ни одной сетевой карты.
+Description-si.UTF-8: ඊදර්නෙට් කාඩ්පතක් හමු නොවිනි
+ පද්ධතියේ කිසිඳු ඊදර්නෙට් කාඩ්පතක් හමු නොවිනි.
+Description-sk.UTF-8: Nebola nájdená žiadna ethernetová karta
+ V systéme nebola nájdená žiadna ethernetová karta.
+Description-sl.UTF-8: Ni bilo mogoče najti mrežne kartice
+ V sistemu ni bilo mogoče najti nobene mrežne kartice.
+Description-sq.UTF-8: Karta Ethernet nuk u gjet
+ Nuk u gjet asnjë karte Ethernet në sistem.
+Description-sr.UTF-8: Није пронађена етернет картица
+ Ниједна етернет картица није нађена на вашем систему.
+Description-sv.UTF-8: Hittade inget Ethernetkort
+ Inget ethernetkort hittades i systemet.
+Description-te.UTF-8: ఈథర్నెట్ కార్డు కనుగొనబడలేదు
+ సిస్టములో ఈథర్నెట్ కార్డు కనుగొనబడలేదు.
+Description-tg.UTF-8: Корти Ethernet ёфт нашудааст
+ Ягон корти Ethernet дар системаи шумо ёфт нашуд.
+Description-th.UTF-8: ไม่พบการ์ดอีเทอร์เน็ต
+ ไม่พบการ์ดอีเทอร์เน็ตในระบบ
+Description-tl.UTF-8: Walang nakitang Ethernet card
+ Walang nakitang Ethernet card sa makina.
+Description-tr.UTF-8: Ethernet kartı bulunamadı
+ Sisteminizde herhangi bir Ethernet kartı bulunamadı.
+Description-ug.UTF-8: تور كارتىسى تېپىلمىدى
+ سىستېمىدىن تور كارتىسى تېپىلمىدى.
+Description-uk.UTF-8: Мережева карта не знайдена
+ Не знайдено жодної мережевої карти.
+Description-vi.UTF-8: Không tìm thấy thẻ Ethernet
+ Không tìm thấy thẻ Ethernet nào trong hệ thống.
+Description-zh_CN.UTF-8: 未找到以太网卡
+ 未在系统中找到以太网卡。
+Description-zh_TW.UTF-8: 未能找到網路卡
+ 在系統中未能找到任何的網路卡。
+
+Template: ethdetect/detect_progress_title
+Type: text
+Description: Detecting network hardware
+Description-ar.UTF-8: اكتشاف عتاد الشبكة
+Description-ast.UTF-8: Deteutando el hardware de rede
+Description-be.UTF-8: Вызначэнне сеткавага абсталявання
+Description-bg.UTF-8: Разпознаване на мрежов хардуер
+Description-bo.UTF-8: དྲ་བའི་སྲ་ཆས་ཚོར་རྟོགས་བྱེད་བཞིན་པ་་་
+Description-bs.UTF-8: Detektiranje mrežnog hardware-a
+Description-ca.UTF-8: S'està detectant el maquinari de xarxa
+Description-cs.UTF-8: Rozpoznává se síťový hardware
+Description-cy.UTF-8: Yn chwilio am galedwedd rhwydwaith
+Description-da.UTF-8: Søger efter netværksudstyr
+Description-de.UTF-8: Erkennen der Netzwerk-Hardware
+Description-el.UTF-8: Ανίχνευση δικτύου
+Description-eo.UTF-8: Detektado de la reta aparataro
+Description-es.UTF-8: Detectando el hardware de red
+Description-et.UTF-8: Võrguriistvara tuvastamine
+Description-eu.UTF-8: Sareko hardwarea detektatzea
+Description-fa.UTF-8: در حال بازرسی سخت‌افزار شبکه
+Description-fi.UTF-8: Tunnistetaan verkkolaitteistoa
+Description-fr.UTF-8: Détection du matériel réseau
+Description-ga.UTF-8: Crua-earraí líonra á mbrath
+Description-gl.UTF-8: Estase a detectar o hardware de rede
+Description-he.UTF-8: זיהוי חומרת רשת
+Description-hr.UTF-8: Tražim mrežno sklopovlje
+Description-hu.UTF-8: Hálózati hardver felderítése
+Description-id.UTF-8: Sedang mencari perangkat keras jaringan
+Description-is.UTF-8: Leita að netbúnaði
+Description-it.UTF-8: Rilevamento hardware di rete
+Description-ja.UTF-8: ネットワークハードウェアを検出しています
+Description-kk.UTF-8: Желі құрылғылары анықталуда
+Description-kn.UTF-8: ಜಾಲಬಂಧ ಯಂತ್ರಾಂಶಗಳನ್ನು ಪತ್ತೆ ಮಾಡುಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: 네트워크 하드웨어 찾기
+Description-ku.UTF-8: Hardware ya torê tê tesbîtkirin
+Description-lo.UTF-8: ກຳລັງກວດຊອກຫາຮາດແວຣ໌ສຳຫລັບເຄືອຂ່າຍ
+Description-lt.UTF-8: Ieškoma tinklo įrangos
+Description-lv.UTF-8: Nosaka tīkla aparatūru
+Description-mk.UTF-8: Детектирање на мрежниот хардвер
+Description-nb.UTF-8: Ser etter nettverksutstyr
+Description-nl.UTF-8: Automatische herkenning van netwerkhardware wordt uitgevoerd
+Description-nn.UTF-8: Ser etter nettverksutstyr
+Description-no.UTF-8: Ser etter nettverksutstyr
+Description-pl.UTF-8: Wykrywanie sprzętu sieciowego
+Description-pt.UTF-8: A detectar o hardware de rede
+Description-pt_BR.UTF-8: Detectando hardware de rede
+Description-ro.UTF-8: Se detectează componentele de rețea
+Description-ru.UTF-8: Определение сетевого оборудования
+Description-se.UTF-8: Áicamin fierpmádatrusttegiid
+Description-si.UTF-8: ජාල දෘඩාංග හදුනාගනිමින්
+Description-sk.UTF-8: Rozpoznávajú sa sieťové zariadenia
+Description-sl.UTF-8: Zaznavanje omrežne strojne opreme
+Description-sq.UTF-8: Duke zbuluar skedën e rrjetit
+Description-sr.UTF-8: Детектовање мрежног хардвера
+Description-sv.UTF-8: Identifierar nätverksmaskinvara
+Description-te.UTF-8: నెట్వర్క్ హార్డ్వేర్  కనుగొనుట
+Description-tg.UTF-8: Муайянкунии сахтафзори шабакавӣ
+Description-th.UTF-8: กำลังตรวจหาฮาร์ดแวร์สำหรับเครือข่าย
+Description-tl.UTF-8: Hinahanap ang network hardware
+Description-tr.UTF-8: Ağ donanımı algılanıyor
+Description-ug.UTF-8: تور قاتتىق دېتالىنى تەكشۈرۈۋاتىدۇ
+Description-uk.UTF-8: Розпізнавання мережевого обладнання
+Description-vi.UTF-8: Đang dò tìm phần cứng mạng
+Description-zh_CN.UTF-8: 正在探测网络硬件
+Description-zh_TW.UTF-8: 偵測網路硬體
+
+Template: ethdetect/prompt_missing_firmware
+Type: boolean
+Default: true
+Description: for internal use; can be preseeded
+ Prompt for missing firmware to be provided before the network is up?
+
+Template: debian-installer/ethdetect/title
+Type: text
+Description: Detect network hardware
+Description-ar.UTF-8: اكتشف عتاد الشبكة
+Description-ast.UTF-8: Deteición del hardware de rede
+Description-be.UTF-8: Вызначыць сеткавае абсталяванне
+Description-bg.UTF-8: Разпознаване на мрежов хардуер
+Description-bo.UTF-8: དྲ་བའི་སྲ་ཆས་ཚོར་རྟོགས་བྱེད་པ
+Description-bs.UTF-8: Detektiranje mrežnog hardware-a
+Description-ca.UTF-8: Detecta el maquinari de xarxa
+Description-cs.UTF-8: Rozpoznat síťový hardware
+Description-cy.UTF-8: Canfod caledwedd rhwydwaith
+Description-da.UTF-8: Find netværksudstyr
+Description-de.UTF-8: Netzwerk-Hardware erkennen
+Description-el.UTF-8: Ανίχνευση συσκευών δικτύου
+Description-eo.UTF-8: Detekti retan aparataron
+Description-es.UTF-8: Detección del hardware de red
+Description-et.UTF-8: Võrguriistvara tuvastamine
+Description-eu.UTF-8: Detektatu sareko hardwarea
+Description-fa.UTF-8: بازرسی و کشف سخت‌افزار شبکه
+Description-fi.UTF-8: Tunnista verkkolaitteisto
+Description-fr.UTF-8: Détecter le matériel réseau
+Description-ga.UTF-8: Braith crua-earraí líonra
+Description-gl.UTF-8: Detectar o hardware de rede
+Description-he.UTF-8: זהה חומרת רשת
+Description-hr.UTF-8: Odredi mrežno sklopovlje
+Description-hu.UTF-8: Hálózati hardver felderítése
+Description-id.UTF-8: Mencari perangkat keras jaringan
+Description-is.UTF-8: Leita að netbúnaði
+Description-it.UTF-8: Rilevare l'hardware di rete
+Description-ja.UTF-8: ネットワークハードウェアの検出
+Description-kk.UTF-8: Желі құрылғыларын анықтау
+Description-kn.UTF-8: ಜಾಲಬಂಧ ಯಂತ್ರಾಂಶಗಳನ್ನು ಪತ್ತೆ ಮಾಡುಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: 네트워크 하드웨어 찾기
+Description-ku.UTF-8: Tesbîtkirina hardware ya torê
+Description-lo.UTF-8: ກວດຫາຮາດແວຣສຳຫລັບເຄືອຂ່າຍ
+Description-lt.UTF-8: Tinklo įrangos paieška
+Description-lv.UTF-8: Noteikt tīkla aparatūru
+Description-mk.UTF-8: Најди мрежен хардвер
+Description-nb.UTF-8: Finn nettverksutstyr
+Description-nl.UTF-8: Automatische herkenning van netwerkhardware uitvoeren
+Description-nn.UTF-8: Finn nettverksutstyr
+Description-no.UTF-8: Finn nettverksutstyr
+Description-pl.UTF-8: Wykryj sprzęt sieciowy
+Description-pt.UTF-8: Detectar o hardware de rede
+Description-pt_BR.UTF-8: Detectar hardware de rede
+Description-ro.UTF-8: Detecția componentelor de rețea
+Description-ru.UTF-8: Определение сетевой карты
+Description-se.UTF-8: Áicca fierpmádatrusttegiid
+Description-si.UTF-8: ජාල දෘඩාංග හදුනාගන්න
+Description-sk.UTF-8: Rozpoznanie sieťových zariadení
+Description-sl.UTF-8: Zaznaj omrežno strojno opremo
+Description-sq.UTF-8: Gjej skedën e rrjetit
+Description-sr.UTF-8: Детектуј мрежни хардвер
+Description-sv.UTF-8: Identifiera nätverksmaskinvara
+Description-te.UTF-8: నెట్వర్క్ హార్డ్వేర్  కనుగొను
+Description-tg.UTF-8: Муайян кардани сахтафзори шабакавӣ
+Description-th.UTF-8: ตรวจหาฮาร์ดแวร์สำหรับเครือข่าย
+Description-tl.UTF-8: Hanapin ang network hardware
+Description-tr.UTF-8: Ağ donanımını algıla
+Description-ug.UTF-8: تور قاتتىق دېتالىنى تەكشۈر
+Description-uk.UTF-8: Розпізнати мережеве обладнання
+Description-vi.UTF-8: Dò tìm phần cứng mạng
+Description-zh_CN.UTF-8: 探测网络设备
+Description-zh_TW.UTF-8: 偵測網路硬體

@@ -1,0 +1,4 @@
+DISTRIB_ID=Debian
+DISTRIB_DESCRIPTION="Debian GNU/Linux installer"
+DISTRIB_RELEASE="8 (jessie) - installer build 20150422+deb8u2"
+X_INSTALLATION_MEDIUM=netboot

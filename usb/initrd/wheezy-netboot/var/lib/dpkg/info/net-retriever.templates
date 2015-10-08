@@ -1,0 +1,192 @@
+Template: retriever/net/error
+Type: select
+Choices: Retry, Change mirror, Cancel
+Choices-ar.UTF-8: إعادة المحاولة, تغيير المرآة, إلغاء
+Choices-ast.UTF-8: Volver a tentalo, Cambiar d'espeyu, Encaboxar
+Choices-be.UTF-8: Ізноў, Іншае люстэрка, Скасаваць
+Choices-bg.UTF-8: Опит отново, Смяна на огледало, Прекъсване
+Choices-bo.UTF-8: བསྐྱར་དུ་ཚོད་ལྟ, དྲ་ཚིགས་བརྗེ་བ, རྩིས་མེད
+Choices-bs.UTF-8: Ponovi, Promijeni mirror, Prekini
+Choices-ca.UTF-8: Reintenta, Canvia de rèplica, Cancel·la
+Choices-cs.UTF-8: Opakovat, Změnit zrcadlo, Zrušit
+Choices-cy.UTF-8: Ailgeisio, Newid drych, Canslo
+Choices-da.UTF-8: Prøv igen, Skift filspejl, Afbryd
+Choices-de.UTF-8: Wiederholen, Spiegelserver wechseln, Abbrechen
+Choices-el.UTF-8: Ξαναπροσπαθήστε, Αλλαγή καθρέφτη της αρχειοθήκης, Ακύρωση
+Choices-eo.UTF-8: Reprovi, Ŝanĝi spegularkivon, Nuligi
+Choices-es.UTF-8: Reintentar, Cambiar de réplica, Cancelar
+Choices-et.UTF-8: Korda, Vaheta peeglit, Loobu
+Choices-eu.UTF-8: Saiatu berriro, Aldatu ispilua, Utzi
+Choices-fa.UTF-8: دوباره سعی کنید, تغییر آینهٔ دریافت, لغو
+Choices-fi.UTF-8: Yritä uudelleen, Vaihda asennuspalvelinta, Peru
+Choices-fr.UTF-8: Réessayer, Changer de miroir, Annuler
+Choices-ga.UTF-8: Atriail, Athraigh an suíomh scáthánaithe, Cealaigh
+Choices-gl.UTF-8: Tentalo de novo, Mudar a réplica, Cancelar
+Choices-he.UTF-8: נסה שנית, שנה אתר מראה, בטל
+Choices-hr.UTF-8: Pokušati ponovo, Promijeni zrcalni poslužitelj, Otkaži
+Choices-hu.UTF-8: Ismét, Tükör cseréje, Mégsem
+Choices-id.UTF-8: Coba lagi, Ubah cermin, Batal
+Choices-is.UTF-8: Reyna aftur, Skipta um pakkaspegil, Hætta við
+Choices-it.UTF-8: Riprova, Cambia mirror, Annulla
+Choices-ja.UTF-8: 再試行, ミラーの変更, キャンセル
+Choices-kk.UTF-8: Қайталау, Айна ауыстыру, Бас тарту
+Choices-kn.UTF-8: ಮತ್ತೆ ಪ್ರಯತ್ನಿಸು, ದರ್ಪಣವನ್ನು ಬದಲಾಯಿಸಿ., ರದ್ದು ಮಾಡು
+Choices-ko.UTF-8: 다시 시도, 미러 사이트 바꾸기, 취소
+Choices-ku.UTF-8: Dîsa Biceribîne, Neynîkê biguherîne, Betal
+Choices-lo.UTF-8: ລອງໄໝ່, ປຽນແຫ່ງສຳເນົາ, ຍົກເລີກ
+Choices-lt.UTF-8: Pakartoti, Pakeisti archyvo "veidrodį", Atsisakyti
+Choices-lv.UTF-8: Mēģināt vēlreiz, Nomainīt spoguļserveri, Atcelt
+Choices-mk.UTF-8: Повторно, Смени алтернативен сервер, Откажи
+Choices-nb.UTF-8: Prøv igjen, Bytt speil, Avbryt
+Choices-nl.UTF-8: Opnieuw proberen, Via andere spiegelserver, Annuleren
+Choices-nn.UTF-8: Prøv igjen, Byt nettarkiv, Avbryt
+Choices-no.UTF-8: Prøv igjen, Bytt speil, Avbryt
+Choices-pl.UTF-8: Ponów, Zmień serwer lustrzany, Anuluj
+Choices-pt.UTF-8: Tentar novamente, Mudar de mirror, Cancelar
+Choices-pt_BR.UTF-8: Tentar novamente, Mudar espelho de rede, Cancelar
+Choices-ro.UTF-8: Reîncearcă, Schimbă situl alternativ, Anulează
+Choices-ru.UTF-8: Повторить, Сменить зеркало архива, Отмена
+Choices-si.UTF-8: නැවත උත්සාහ කරන්න, පිළිබිඹුව වෙනස් කරන්න, අහෝසි කරන්න
+Choices-sk.UTF-8: Zopakovať, Zmeniť zrkadlo archívu, Zrušiť
+Choices-sl.UTF-8: Poskusi ponovno, Zamenjaj zrcalo, Prekliči
+Choices-sq.UTF-8: Riprovo, Ndrysho pasqyrën, Anullo
+Choices-sr.UTF-8: Поново, Промени мирор, Поништи
+Choices-sv.UTF-8: Försök igen, Byt spegel, Avbryt
+Choices-te.UTF-8: మళ్ళీ ప్రయత్నించు, మిర్రర్ ని మార్చు, రద్దు
+Choices-tg.UTF-8: Такрор кардан, Тағйир додани оина, Бекор кардан
+Choices-th.UTF-8: ลองใหม่, เปลี่ยนแหล่งสำเนา, ยกเลิก
+Choices-tl.UTF-8: Subukan muli, Palitan ang mirror, Kanselahin
+Choices-tr.UTF-8: Tekrar dene, Yansıyı değiştir, İptal et
+Choices-ug.UTF-8: قايتا سىنا, تەسۋىر ئالماشتۇر, ۋاز كەچ
+Choices-uk.UTF-8: Повторити, Змінити дзеркало, Скасувати
+Choices-vi.UTF-8: Thử lại, Đổi nhân bản, Thôi
+Choices-zh_CN.UTF-8: 重试, 更换镜像, 取消
+Choices-zh_TW.UTF-8: 再次嘗試, 更換鏡像站, 取消
+Default: Retry
+Description: Downloading a file failed:
+ The installer failed to download a file from the mirror. This may be a
+ problem with your network, or with the mirror. You can choose to retry
+ the download, select a different mirror, or cancel and choose another
+ installation method.
+Description-ar.UTF-8: فشل تحميل ملف:
+ فشل المُثبّت في تحميل ملفّ من المرآة. قد تكون هذه مشكلة في شبكتك، أو المرآة. يمكن اختيار إعادة المحاولة، اختيار مرآة أخرى، أو الإلغاء واختيار طريقة تثبيت أخرى.
+Description-ast.UTF-8: Fallu al descargar un ficheru:
+ L'instalador falló al descargar un archivu del espeyu. Pue ser por un problema cola rede, o col espeyu. Pues escoyer ente retentar la descarga, seleicionar un espeyu distintu, o encaboxar y escoyer otru métodu d'instalación.
+Description-be.UTF-8: Не атрымалася загрузіць файл:
+ Праграма ўсталявання не змагла загрузіць файл з люстэрка. Магчыма, прычына ў праблемах з сеткай альбо з люстэркам. Вы можаце выбіраць: паспрабаваць яшчэ раз, абраць іншае люстэрка, альбо адмовіцца і выбраць іншы спосаб устаноўкі.
+Description-bg.UTF-8: Грешка при изтеглянето на файл:
+ Грешка при изтеглянето на файл от огледалния сървър. Това може да е проблем с Вашата мрежа или със сървъра. Можете да опитате отново да изтегляте, да изберете различен огледален сървър или да прекъснете и изберете друг начин на инсталация.
+Description-bo.UTF-8: ཡིག་ཆ་ཞིག་ལེན་འཇུག་བྱེད་མ་ཐུབ་པ：
+ སྒྲིག་འཇུག་ཆས་ཀྱིས་ཡིག་ཆ་ཞིག་དྲ་ཚིགས་ནས་ལེན་འཇུག་མ་ཐུབ་པ འདི་ཕལ་ཆེར་ཁྱོད་ཀྱི་དྲ་བའམ་ཡང་ན་དྲ་ཚིགས་འདིའི་སྐྱོན་རེད། ཁྱོད་ཀྱིས་སླར་ལེན་འཇུག་བྱེད་པ་དང་དྲ་ཚིགས་གཞན་ཞིག་འདེམས་པ། ཡང་ན་སྒྲིག་འཇུག་བྱེད་སྟངས་གཞན་ཞིག་འདེམས་ཆོག
+Description-bs.UTF-8: Preuzimanje datoteke nije uspjelo:
+ Instalacijski program nije uspio preuzeti datoteku sa mirrora. Ovo može biti problem na Vašoj mreži ili na mirroru. Možete ponovo pokušati preuzimanje, odabrati drugi mirror ili obustaviti i izabrati drugi instalacioni metod.
+Description-ca.UTF-8: La descàrrega d'un fitxer ha fallat:
+ L'instal·lador no ha pogut descarregar un fitxer des de la rèplica. Això pot ser un problema amb la vostra xarxa o amb la rèplica. Podeu reintentar la descàrrega, seleccionar una rèplica diferent o cancel·lar i seleccionar un altre mètode d'instal·lació.
+Description-cs.UTF-8: Stažení souboru selhalo:
+ Instalační program nemohl stáhnout soubor ze zrcadla. Chyba může být ve vaší síti, nebo v zrcadle. Můžete zkusit nové stažení souboru, použít jiné zrcadlo, nebo zrušit akci a vybrat jinou metodu instalace.
+Description-cy.UTF-8: Lawrlwytho ffeil wedi methu:
+ Methodd y sefydlydd lawrlwytho ffeil o'r drych. Fe all hyn fod oherwydd problem gyda'ch rhwydwaith, neu gyda'r drych. Gallwch ddewis i ailgeisio'r lawrlwythiad, ddewis drych arall, neu ganslo a dewis dull arall o sefydlu.
+Description-da.UTF-8: Det lykkedes ikke at hente en fil:
+ Der var en fil, installationsprogrammet ikke kunne hente fra filspejlet. Det kan skyldes et problem med dit netværk eller med filspejlet. Du kan prøve at hente filen igen, vælge et andet filspejl eller afbryde for at vælge en anden installationsmetode.
+Description-de.UTF-8: Datei-Download fehlgeschlagen:
+ Der Installer konnte eine Datei nicht vom Spiegelserver herunterladen. Dies könnte ein Problem in Ihrem Netzwerk oder auch ein Problem des Spiegels sein. Sie können den Download wiederholen, einen anderen Spiegelserver wählen oder die Installation abbrechen und eine andere Installationsart versuchen.
+Description-el.UTF-8: Απέτυχε η μεταφόρτωση ενός αρχείου:
+ Το πρόγραμμα εγκατάστασης απέτυχε να μεταφορτώσει ένα αρχείο από τον καθρέφτη. Αυτό μπορεί να οφείλεται σε ένα πρόβλημα στο δίκτυό σας ή στον ίδιο τον καθρέφτη της αρχειοθήκης. Μπορείτε να ξαναπροσπαθήσετε τη μεταφόρτωση, να επιλέξετε έναν διαφορετικό καθρέφτη ή να ακυρώσετε και να επιλέξετε μία διαφορετική μέθοδο εγκατάστασης.
+Description-eo.UTF-8: Elŝutado de dosiero malsukcesis:
+ La instalado ne sukcesis elŝulti dosieron el spegularkivo. Eble estas problemo pri via reto, eble pri la spegularkivo. Vi povas reprovi elŝuti, aŭ elekti alian spegularkivon, aŭ eĉ rezigni kaj elekti alian instalad-metodon.
+Description-es.UTF-8: Falló la descarga de un fichero:
+ Se produjo un fallo al descargar un fichero de la réplica. Esto puede deberse a un problema en la red o con la réplica. Puede elegir reintentar la descarga, seleccionar otra réplica o cancelar y elegir otro método de instalación.
+Description-et.UTF-8: Faili laadimine nurjus:
+ Paigaldaja jäi peeglist faili laadimisega hätta. See võib tähendada probleemi kas sinu võrguühenduse või siis peegliga. Võid proovida uuesti laadimist või teise peegli valimist, kuid võid ka loobuda ja valida teise paigaldusmeetodi.
+Description-eu.UTF-8: Huts egin du fitxategia deskargatzean:
+ Instalatzaileak huts egin du ispilutik fitxategia deskargatzean. Arazoa egon liteke sarearekin edo ispiluarekin. Berriro deskargatzen, beste ispilu bat hautatzen edo utzi eta instalatzeko beste metodo bat aukeratzen saia zaitezke.
+Description-fa.UTF-8: بارگیری یک پرونده شکست خورد:
+ نصاب در بارگیری یک پرونده از آینهٔ دریافت شکست خورد. این مشکل ممکن است از شبکهٔ شما و یا از آینهٔ دریافت باشد. می‌توانید انتخاب کنید تا دوباره سعی در بارگیری نمائید، آینهٔ دریافت متفاوتی انتخاب کنید، یا لغو کرده و روش نصب دیگری را انتخاب کنید.
+Description-fi.UTF-8: Tiedoston noutaminen epäonnistui:
+ Asennin ei onnistunut noutamaan tiedostoa asennuspalvelimelta. Vika voi olla verkkoyhteydessä tai asennuspalvelimessa. Voit valita yritätkö asennusta uudelleen, käytätkö muuta asennuspalvelinta tai peruutatko ja käytät jotain muuta asennustapaa.
+Description-fr.UTF-8: Échec du téléchargement d'un fichier :
+ Le programme d'installation n'a pas pu télécharger un fichier depuis le miroir. Cela peut être dû à un problème lié au réseau ou à un problème sur le miroir. Vous pouvez réessayer le téléchargement, changer de miroir ou annuler cette opération pour choisir une autre méthode d'installation.
+Description-ga.UTF-8: Theip ar chomhad a íosluchtú:
+ Theip ar an suiteálaí comhad a íosluchtú ón suíomh scáthánaithe.  B'fhéidir go bhfuil fadhb le do líonra, nó leis an suíomh scáthánaithe.  Is féidir leat an t-íosluchtú a dhéanamh arís, suíomh scáthánaithe eile a roghnú, nó cealú agus modh difriúil suiteála a roghnú.
+Description-gl.UTF-8: Non foi posíbel descargar un ficheiro:
+ O instalador non puido descargar un ficheiro desde a réplica. Isto pode ser por un problema coa rede ou coa réplica. Pode tentar de novo a transferencia, escoller unha réplica diferente, ou cancelar e escoller outro método de instalación.
+Description-he.UTF-8: הורדת קובץ נכשלה:
+ תוכנית ההתקנה נכשלה בהורדת קובץ מאתר המראה. זאת יכולה להיות בעיה ברשת שלך, או עם אתר המראה. תוכל לבחור לנסות שוב להוריד או לבחור אתר מראה אחר. ניתן גם לבטל ולבחור שיטת התקנה אחרת.
+Description-hr.UTF-8: Skidanje datoteke nije uspjelo:
+ Instalacijski program nije uspio skinuti datoteku sa zrcalnog poslužitelja. Možda je problem u vašoj mreži ili na zrcalnom poslužitelju. Možete pokušati iznova, izabrati drugi poslužitelj ili otkazati i pokušati koji drugi način instalacije.
+Description-hu.UTF-8: Fájlletöltés meghiúsult:
+ Egy fájl tükörről való letöltése sikertelen. A hiba oka vagy a hálózati kapcsolatban, vagy a tükörben keresendő. Újrapróbálhatja a letöltést, választhat másik tükröt, vagy kilép és más telepítő módot választ.
+Description-id.UTF-8: Pengunduhan berkas telah gagal:
+ Program Instalasi gagal mengunduh sebuah berkas dari cermin. Ini mungkin karena masalah pada jaringan Anda, atau pada cermin. Anda dapat memilih untuk mencoba lagi, memilih cermin yang berbeda, atau membatalkan dan memilih metoda instalasi yang lain.
+Description-is.UTF-8: Ekki tókst að ná í skrá:
+ Innsetningarforritinu mistókst að ná í skrá frá pakkaspegli.  Vandamálið liggur annaðhvort í tengingu við netið eða við pakkaspegil.  Hægt er að velja um að prófa að ná í pakka aftur, velja annan pakkaspegil eða hætta við og velja aðra innsetningar aðferð.
+Description-it.UTF-8: Scaricamento di un file non riuscito:
+ Il programma d'installazione non è riuscito a scaricare un file dal mirror a causa di un problema della rete locale o del mirror. È possibile riprovare l'operazione, scegliere un mirror diverso o annullare la procedura e scegliere un altro metodo d'installazione.
+Description-ja.UTF-8: ファイルのダウンロード中に失敗しました:
+ インストーラはミラーからファイルをダウンロードするのに失敗しました。これはあなたのネットワークまたはミラーに問題があるためでしょう。ダウンロードの再試行、別のミラーの選択、あるいはキャンセルして別のインストール方法の選択から選ぶことができます。
+Description-kk.UTF-8: Файлды жүктеу мүмкін болмады:
+ Орнату бағдарламасы айнадан файлды жүктей алмады. Бұл сіздің желіңіздің, сондай-ақ айнаның проблемасы болуы мүмкін. Тағы да жүктеп көруге, айнаны ауыстыруға, орнатудың басқа әдісін таңдауға не орнатудан бас тартуға болады.
+Description-kn.UTF-8: ಕಡತವನ್ನು ಡೌನ್ಲೋಡ್ ಮಡುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ:
+ ಅನುಸ್ಥಾಪಕವು ದರ್ಪಣದಿಂದ ಕಡತವೊಂದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ವಿಫಲವಾಗಿದೆ. ನಿಮ್ಮ ಜಾಲಬಂಧದಿಂದಾಗಿ ಅಥವಾ ದರ್ಪಣದಿಂದಾಗಿ ಈ ತೊದರೆಯುಂಟಾಗಿರಬಹುದು. ನೀವು ಮತ್ತೊಮ್ಮೆ ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಬಹುದು, ಇಲ್ಲವೇ ಬೇರೊಂದು ದರ್ಪಣವನ್ನು ಆಯ್ಕೆಮಾಡಬಹುದು ಅಥವಾ ಇದನ್ನು ನಿಲ್ಲಿಸಿ ಬೇರೊಂದು ಅನುಸ್ಥಾಪನಾ ವಿಧಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.
+Description-ko.UTF-8: 파일 다운로드가 실패했습니다:
+ 설치 프로그램이 미러 사이트에서 파일을 다운로드하는데 실패했습니다. 네트워크에 문제가 있거나, 미러 사이트에 문제가 있을 것입니다. 다시 다운로드를 시도할 수도 있고, 미러 사이트를 다른 미러 사이트로 바꿀 수도 있고, 취소하고 다른 설치 방법을 고를 수도 있습니다.
+Description-ku.UTF-8: Daxistian pelekî serneket:
+ Barkirina pel ji eynikê biserneket. dibe ku di tora te de an jî di eynikê de problem hebe. dibe ku dîsa biceribîne, hilbijartina eynikeke din an jî hilbijartina riyeke din were hilbijartin.
+Description-lo.UTF-8: ດາວໂຫຼດແຟ້ມບໍ່ສຳເລັດ:
+ ໂປຣແກຣມຕິດຕັ້ງດາວໂຫຼດແຟ້ມຈາກແຫຼ່ງສຳເນົາບໍ່ສຳເລັດ ອາດເກີດຈາກບັນຫາໃນເຄືອຂ່າຍຂອງທ່ານ ຫຼື ເປັນບັນຫາໃນຕົວແຫຼ່ງສຳເນົາເອງ ທ່ານສາມາດທີ່ຈະເລືອກດາວໂຫຼດໃໝ່ ຫຼື ເລືອກແຫຼ່ງສຳເນົາອື່ນ ຫຼື ຍົກເລີກແລ້ວເລືອກວິທີຕິດຕັ້ງອື່ນ.
+Description-lt.UTF-8: Veiksmas įvykus failo atsisiuntimo klaidai:
+ Įdiegikliui nepavyko atsisiųsti failo iš archyvo "veidrodžio". Tai gali būti tinklo ar "veidrodžio" problema. Galite pasirinkti atsisiuntimo pakartojimą, pasirinkti kitą "veidrodį", arba atsisakyti atsisiuntimo ir pasirinkti kitą įdiegimo metodą.
+Description-lv.UTF-8: Datnes lejupielāde neizdevās:
+ Instalatoram neizdevās lejupielādēt datni no spoguļservera. Tā varētu būt tīkla vai spoguļservera problēma. Varat mēģināt vēlreiz, izvēlēties citu spoguļserveri vai atcelt lejupielādi un izvēlieties citu instalēšanas metodi.
+Description-mk.UTF-8: Преземање на датотека не успеа:
+ Инсталерот не успеа да преземе датотека од алтернативниот сервер. Ова можеби е поради проблем со твојата мрежа или со алтернативниот сервер. Може да пробаш повторно, да одбереш друга локација или да се откажеш и да пробаш со друг метод на инсталација.
+Description-nb.UTF-8: Klarte ikke å laste ned fila:
+ Installeringsprogrammet klarte ikke å laste ned en bestemt fil fra speilet. Feilen kan skyldes nettverket ditt eller speilet. Du kan prøve å laste ned fila på nytt, velge et annet speil eller avbryte og velge en annen installasjonsmetode.
+Description-nl.UTF-8: Ophalen van een bestand is mislukt:
+ Het ophalen van een bestand van de spiegelserver is mislukt. Dit kan een probleem zijn met uw netwerkverbinding, of met de spiegelserver. U kunt: het bestand opnieuw proberen ophalen, een andere spiegelserver kiezen, of annuleren en een andere installatiemethode gebruiken.
+Description-nn.UTF-8: Nedlasting av ei fil feila:
+ Installasjonsprogrammet klarte ikkje å laste ned ei fil frå nettarkivet. Dette kan vere eit problem med nettverket ditt eller med nettarkivet. Du kan velje å prøve å laste ned fila på ny, velje eit anna nettarkiv eller avbryte og velje ein anna installasjonsmetode.
+Description-no.UTF-8: Klarte ikke å laste ned fila:
+ Installeringsprogrammet klarte ikke å laste ned en bestemt fil fra speilet. Feilen kan skyldes nettverket ditt eller speilet. Du kan prøve å laste ned fila på nytt, velge et annet speil eller avbryte og velge en annen installasjonsmetode.
+Description-pl.UTF-8: Pobieranie pliku nie powiodło się:
+ Instalatorowi nie udało się pobrać pliku z serwera. Może to oznaczać problemy z siecią lub tym serwerem. Możesz wybrać ponowienie pobierania, skorzystanie z innego serwera lustrzanego lub anulowanie i wybranie innej metody instalacji.
+Description-pt.UTF-8: Falhou o download de um ficheiro:
+ O instalador falhou o download de um ficheiro a partir do mirror. Isto pode ser um problema da sua rede, ou com o mirror. Pode escolher tentar de novo o download, escolher um mirror diferente, ou cancelar e escolher outro método de instalação.
+Description-pt_BR.UTF-8: Ocorreu uma falha enquanto um arquivo era baixado:
+ O instalador falhou ao baixar um arquivo do espelho de rede. Pode ter ocorrido um problema em sua rede ou com o espelho. Você pode optar por tentar baixar novamente, selecionar um espelho diferente ou cancelar e escolher um outro método de instalação.
+Description-ro.UTF-8: Descărcarea unui fișier a eșuat:
+ Programul de instalare a eșuat la descărcarea unui fișier de pe situl alternativ. Aceasta ar putea fi o problemă cu rețeaua dumneavoastră, sau cu situl alternativ. Puteți alege să reîncercați descărcarea, selecta un alt sit, sau să renunțați și să alegeți o altă metodă de instalare.
+Description-ru.UTF-8: Не удалось загрузить файл:
+ Программе установки не удалось скачать файл с зеркала. Это может быть проблема как вашей сети, так и зеркала. Вы можете повторить попытку загрузки, выбрать другое зеркало или отказаться от скачивания и выбрать другой способ установки.
+Description-si.UTF-8: ගොනුව බා ගැනීම අසාර්ථකයි:
+ ස්ථාපකයට පිළිබිඹුවෙන් ගොනුවක් බාගැනීමට නොහැකි විය, මෙය ඔබේ ජාලය  හෝ පිළිබිඹුව සම්බන්ධ ගැටළුවක් විය හැක, ඔබට බා ගැනීම නැවත උත්සාහ කිරීම, වෙනත් පිළිබිඹුවක් තෝරාගැනීම හෝ අවලංගු කර වෙනත් ස්ථාපන ක්‍රමයක් තෝරාගැනීම සිදුකල හැක.
+Description-sk.UTF-8: Stiahnutie súboru zlyhalo:
+ Inštalačnému programu sa nepodarilo stiahnuť súbor zo zrkadla archívu s Debianom. To môže byť zapríčinené chybou vo vašej sieti alebo chybou zrkadla Debianu. Môžete sa pokúsiť o zopakovanie stiahnutia, môžete si zvoliť iné zrkadlo s Debianom, prípadne zrušiť sťahovanie a použiť iný spôsob inštalácie.
+Description-sl.UTF-8: Neuspel prenos datoteke:
+ Namestilniku ni uspelo prenesti datoteke iz zrcalnega strežnika. Lahko, da je problem v vašem omrežju ali pa z zrcalnim strežnikom. Lahko poskusite ponovno prenesti datoteko, izberete drugi zrcalni strežnik ali pa izberete drug način namestitve.
+Description-sq.UTF-8: Shkarkimi i një file dështoi:
+ Instaluesi dështoi në shkarkimin e një file nga pasqyra. Kjo mund të jetë një problem i rrjetit tënd, ose i pasqyrës. Mund të riprovosh shkarkimin, të zgjedhësh një pasqyrë tjetër, ose ta anullosh dhe të zgjedhësh një mënyrë tjetër instalimi.
+Description-sr.UTF-8: Преузимање фајла није успело:
+ Инсталер није успео да преузме фајл са сервера. Можда је дошло до проблема у вашој мрежи, или са сервером. Можете изабрати да поново покушате да преузмете фајл, да изаберете други сервер, или да поништите преузимање и изаберете други метод инсталације.
+Description-sv.UTF-8: Hämtningen av en fil misslyckades:
+ Installationsprogrammet kunde inte hämta en fil från spegeln. Det kan bero på problem med ditt nätverk eller med spegeln. Du kan välja att försöka hämtningen igen, välja en annan spegelserver eller avbryta och välja en annan installationsmetod.
+Description-te.UTF-8: దస్త్రము దిగుమతి విఫలమయింది:
+ స్థాపన వ్యవస్థ  మిర్రర్ నుండి ఫైలు డౌన్లోడ్  చేయుటలో విఫలమైంది. మీ నెట్వర్క్ కాని మిర్రర్ తో సమస్య వుండవచ్చు. డౌన్లోడ్  మరల ప్రయత్నించవచ్చు, వేరొక మిర్రర్ ఎంచుకోవచ్చు, లేక రద్దు చేసి ఇంకొక స్థాపన పద్ధతి  ఎంచుకోండి.
+Description-tg.UTF-8: Боргирии файл қатъ шудааст:
+ Насбкунанда боргирии файлро аз оина қатъ кардааст. Эҳтимол аст, ки мушкилии шабака ё оина ба вуҷуд омад. Шумо метавонед боргириро аз нав кӯшиш кунед, оинаи дигареро интихоб кунед ё раванди ҷориро бекор кунед ва тарзи насби дигареро интихоб намоед.
+Description-th.UTF-8: ดาวน์โหลดแฟ้มไม่สำเร็จ:
+ โปรแกรมติดตั้งดาวน์โหลดแฟ้มจากแหล่งสำเนาไม่สำเร็จ อาจเกิดจากปัญหาในเครือข่ายของคุณ หรือเป็นปัญหาในตัวแหล่งสำเนาเอง คุณสามารถเลือกที่จะลองดาวน์โหลดใหม่ หรือเลือกแหล่งสำเนาอื่น หรือยกเลิกแล้วเลือกวิธีติดตั้งวิธีอื่น
+Description-tl.UTF-8: Bigo ang pagkuha ng isang talaksan:
+ Bigo ang pagkuha ng installer ng isang talaksan mula sa mirror. Maaaring may problema sa inyong network, o sa mirror. Maaaring subukan muli ang pagkuha, pumili ng ibang mirror, o kanselahin at pumili ng ibang paraan ng pag-install.
+Description-tr.UTF-8: Bir dosya indirilemedi:
+ Kurulum programı bir dosyayı yansıdan başarıyla indiremedi. Bu sorun ağınızdan veya kullandığınız yansıdan kaynaklanıyor olabilir. Dosya indirme işlemini tekrar edebilir, farklı bir yansı deneyebilir veya işlemi iptal ederek başka bir kurulum yöntemi seçebilirsiniz.
+Description-ug.UTF-8: ھۆججەت چۈشۈرۈش مەغلۇپ بولدى:
+ ئورنىتىش پروگراممىسى تەسۋىردىن ھۆججەت چۈشۈرەلمىدى. بۇ تورىڭىزنىڭ مەسىلىسى ياكى تەسۋىرنىڭ خاتالىقى بولۇشى مۇمكىن. قايتا چۈشۈرۈشنى تاللىسىڭىز ياكى باشقا تەسۋىرنى تاللىسىڭىز بولىدۇ، ۋە ياكى بىكار قىلىشنى تاللاپ باشقا ئۇسۇلدا ئورناتسىڭىزمۇ بولىدۇ.
+Description-uk.UTF-8: Не вдалося завантажити файл:
+ Програма встановлення не змогла завантажити файл із дзеркального сервера. Це може бути проблема із мережею або із дзеркальним сервером. Ви можете повторити завантаження, вибрати інший дзеркальний сервер або скасувати та вибрати інший метод встановлення.
+Description-vi.UTF-8: Việc tải về tập tin bị lỗi:
+ Bộ cài đặt đã không tải được một tập tin xuống máy nhân bản. Có thể là vấn đề với mạng của bạn, hoặc trong máy nhân bản. Bạn có thể chọn thử lại việc tải về, chọn máy nhân bản khác, hoặc thôi rồi chọn một phương pháp cài đặt khác.
+Description-zh_CN.UTF-8: 下载文件失败：
+ 安装程序无法从镜像网站下载文件。这可能是您的网络问题，也可能是镜像网站的错误。您可以选择重新下载，或者使用别的镜像网站，也可以选择取消并改用其他的安装方式。
+Description-zh_TW.UTF-8: 在下載檔案時失敗了:
+ 安裝程式無法由鏡像站下載某些檔案。可能是您的網路或是該鏡像站出了什麼問題。您可以選擇再次試著下載、選擇另一個鏡像站、或取消並改用其它的安裝方式。

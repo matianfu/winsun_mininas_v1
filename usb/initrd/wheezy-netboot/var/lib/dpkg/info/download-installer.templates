@@ -1,0 +1,65 @@
+Template: debian-installer/download-installer/title
+Type: text
+Description: Download installer components
+Description-ar.UTF-8: تنزيل مكونات برنامج التثبيت
+Description-ast.UTF-8: Descargar componentes del instalador
+Description-be.UTF-8: Загрузка кампанентаў праграмы ўсталявання
+Description-bg.UTF-8: Изтегляне на компоненти на инсталатора
+Description-bo.UTF-8: སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག་ལེན་འཇུག་བྱེད་པ
+Description-bs.UTF-8: Skini komponente instalera
+Description-ca.UTF-8: Baixa components de l'instal·lador
+Description-cs.UTF-8: Stáhnout komponenty instalátoru
+Description-cy.UTF-8: Lawrlwytho cydrannau y sefydlydd
+Description-da.UTF-8: Hent installationsdele
+Description-de.UTF-8: Installer-Komponenten herunterladen
+Description-el.UTF-8: Μεταφόρτωση των συνιστωσών του εγκαταστάτη
+Description-eo.UTF-8: Elŝuti instalilajn erojn
+Description-es.UTF-8: Descargar componentes del instalador
+Description-et.UTF-8: Paigaldaja komponentide allalaadimine
+Description-eu.UTF-8: Deskargatu instalatzailearen osagaiak
+Description-fa.UTF-8: بارگیری مولفه‌های نصاب
+Description-fi.UTF-8: Nouda asentimen osat
+Description-fr.UTF-8: Télécharger des composants d'installation
+Description-ga.UTF-8: Íosluchtaigh comhpháirteanna an tsuiteálaí
+Description-gl.UTF-8: Descargar compoñentes do instalador
+Description-he.UTF-8: הורדת רכיבי תוכנית ההתקנה
+Description-hr.UTF-8: Preuzmi dijelove instalacijskog programa
+Description-hu.UTF-8: Telepítő összetevőinek letöltése
+Description-id.UTF-8: Mengunduh komponen instalasi
+Description-is.UTF-8: Sækja einingar uppsetningarforrits
+Description-it.UTF-8: Scaricare i componenti del programma d'installazione
+Description-ja.UTF-8: インストーラコンポーネントのダウンロード
+Description-kk.UTF-8: Орнатқыштың құрамасын жүктеу
+Description-kn.UTF-8: ಅನುಸ್ಥಾಪನ ಭಾಗಗಳನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ
+Description-ko.UTF-8: 설치 프로그램 컴포넌트 다운로드
+Description-ku.UTF-8: Parçeyên sazkarê daxe
+Description-lo.UTF-8: ດາວໂຫລດອົງປະກອບການຕິດຕັ້ງ
+Description-lt.UTF-8: Parsiųsti įdiegyklės komponentus per tinklą
+Description-lv.UTF-8: Lejupielādēt instalatora komponentes
+Description-mk.UTF-8: Преземи ги компонентите на инсталерот
+Description-nb.UTF-8: Last ned installasjonskomponenter
+Description-nl.UTF-8: Installatiemodules van het internet ophalen
+Description-nn.UTF-8: Last ned installasjonskomponentar
+Description-no.UTF-8: Last ned installasjonskomponenter
+Description-pl.UTF-8: Pobierz składniki instalatora
+Description-pt.UTF-8: Download de componentes do instalador
+Description-pt_BR.UTF-8: Baixar componentes do instalador
+Description-ro.UTF-8: Descărcarea de componente ale programului de instalare
+Description-ru.UTF-8: Загрузка компонентов программы установки
+Description-se.UTF-8: Viečča sajáiduhti osiid
+Description-si.UTF-8: ස්ථාපක සංරචක බාගත කරන්න
+Description-sk.UTF-8: Stiahnutie súčastí inštalačného programu
+Description-sl.UTF-8: Prenos namestitvenih komponent
+Description-sq.UTF-8: Shkarko përbërësit e instaluesit
+Description-sr.UTF-8: Преузми компоненте инсталера
+Description-sv.UTF-8: Hämta installationskomponenter
+Description-te.UTF-8: స్థాపక వ్యవస్థ అంశాల డౌన్ లోడ్
+Description-tg.UTF-8: Боргирӣ кардани унсурҳои насбкунанда
+Description-th.UTF-8: ดาวน์โหลดองค์ประกอบการติดตั้ง
+Description-tl.UTF-8: Hugutin ang mga bahagi ng installer
+Description-tr.UTF-8: Kurulum programı bileşenlerini indir
+Description-ug.UTF-8: ئورناتقۇنىڭ بۆلەكلىرىنى چۈشۈر
+Description-uk.UTF-8: Завантажити компоненти встановлювача
+Description-vi.UTF-8: Tải về thành phần cài đặt
+Description-zh_CN.UTF-8: 下载安装程序组件
+Description-zh_TW.UTF-8: 下載安裝程式的元件

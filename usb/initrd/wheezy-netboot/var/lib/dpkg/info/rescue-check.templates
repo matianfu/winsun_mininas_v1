@@ -1,0 +1,70 @@
+Template: rescue/enable
+Type: boolean
+Default: false
+Description: for internal use; can be preseeded
+ Enable rescue mode?
+
+Template: rescue/info
+Type: title
+Description: Rescue mode
+Description-ar.UTF-8: وضع الإنقاذ
+Description-ast.UTF-8: Mou recuperación
+Description-be.UTF-8: Рэжым ратавання
+Description-bg.UTF-8: Авариен режим
+Description-bo.UTF-8: མྱུར་སྐྱོབ་ཀྱི་རྣམ་པ
+Description-bs.UTF-8: Mod za spašavanje
+Description-ca.UTF-8: Mode de rescat
+Description-cs.UTF-8: Záchranný režim
+Description-cy.UTF-8: Defnyddio'r modd achub
+Description-da.UTF-8: Redningstilstand
+Description-de.UTF-8: Rettungsmodus
+Description-el.UTF-8: Κατάσταση Διάσωσης
+Description-eo.UTF-8: Restarig-reĝimo
+Description-es.UTF-8: Modo rescate
+Description-et.UTF-8: Päästerežiim
+Description-eu.UTF-8: Berreskuratze modua
+Description-fa.UTF-8: حالت نجات
+Description-fi.UTF-8: Hätäkäynnistystila
+Description-fr.UTF-8: Mode de récupération
+Description-ga.UTF-8: Mód tarrthála
+Description-gl.UTF-8: Modo de rescate
+Description-he.UTF-8: מצב הצלה
+Description-hr.UTF-8: Spasonosni način rada
+Description-hu.UTF-8: Mentés mód
+Description-id.UTF-8: Moda darurat
+Description-is.UTF-8: Björgunarhamur
+Description-it.UTF-8: Modo ripristino
+Description-ja.UTF-8: レスキューモード
+Description-kk.UTF-8: Қалпына келтіру режимі
+Description-kn.UTF-8: ರಕ್ಷಣಾ ಕಾರ್ಯ ವಿಧಾನ
+Description-ko.UTF-8: 복구 모드
+Description-ku.UTF-8: Mod a rizgarkirin
+Description-lo.UTF-8: ໂໝດກູ້ລະຫັດ
+Description-lt.UTF-8: Atstatymo (rescue) veiksena
+Description-lv.UTF-8: Glābšanas režīms
+Description-mk.UTF-8: Режим за спасување
+Description-nb.UTF-8: Nødmodus
+Description-nl.UTF-8: Herstelmodus
+Description-nn.UTF-8: Naudmodus
+Description-no.UTF-8: Nødmodus
+Description-pl.UTF-8: Tryb ratunkowy
+Description-pt.UTF-8: Modo de recuperação
+Description-pt_BR.UTF-8: Modo de recuperação ("rescue")
+Description-ro.UTF-8: Mod recuperare
+Description-ru.UTF-8: Режим восстановления
+Description-si.UTF-8: ගලවාගැනීමේ ප්‍රකාරය
+Description-sk.UTF-8: Záchranný režim
+Description-sl.UTF-8: Reševalni način
+Description-sq.UTF-8: Mënyra shpëtuese (rescue)
+Description-sr.UTF-8: Мод за поправљање система
+Description-sv.UTF-8: Räddningsläge
+Description-te.UTF-8: రక్షణ రూపము
+Description-tg.UTF-8: Ҳолати наҷотдиҳӣ
+Description-th.UTF-8: โหมดกู้ระบบ
+Description-tl.UTF-8: Modang Saklolo
+Description-tr.UTF-8: Kurtarma kipi
+Description-ug.UTF-8: قۇتقۇزۇش ھالىتى
+Description-uk.UTF-8: Режим відновлення
+Description-vi.UTF-8: Chế độ cứu
+Description-zh_CN.UTF-8: 急救模式
+Description-zh_TW.UTF-8: 救援模式

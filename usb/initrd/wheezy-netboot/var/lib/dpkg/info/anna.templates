@@ -1,0 +1,1124 @@
+Template: anna/choose_modules
+Type: multiselect
+Choices-C: ${CHOICES-C}
+Choices: ${CHOICES}
+Description: Installer components to load:
+ All components of the installer needed to complete the install
+ will be loaded automatically and are not listed here. Some other
+ (optional) installer components are shown below. They are probably
+ not necessary, but may be interesting to some users.
+ .
+ Note that if you select a component that requires others, those
+ components will also be loaded.
+Description-ar.UTF-8: مكونات برنامج التثبيت المطلوب تحميلها:
+ جميع مكونات برنامج التثبيت اللازمة لإكمال التثبيت سيتم تحميلها تلقائياً ولم يتم سردها هنا. وتظهر بعض مكونات برنامج التثبيت الأخرى (الاختيارية) أدناه. وهي على الأرجع ليست ضرورية ولكن قد تكون قد تكون ذات أهمية لبعض المستخدمين.
+ .
+ لاحظ أنّك إن اخترت مكوّناً يتطلّب مكوّناتٍ أخرى، فإن تلك المكوّنات ستحمّل أيضاً.
+Description-ast.UTF-8: Componentes del instalador a cargar:
+ Tolos componentes del instalador necesarios pa completar la instalación cargaránse automáticamente y nun van llistase equí. Otros componentes (opcionales) amosaránse darréu. Dablemente nun van ser necesarios, pero puen ser d'interés pa dalgunos usuarios.
+ .
+ Decátese de que si seleiciona un componente que requiera otros, éstos componentes tendrán tamién de cargase.
+Description-be.UTF-8: Кампаненты, якія трэба загрузіць:
+ Усе неабходныя для працягу кампаненты праграмы ўсталявання мусяць быць ужо пазначаныя. Іншыя (неабавязковыя) кампаненты пералічаныя ў спісе. Без іх дакладна можа абысціся, але камусьці яны могуць падацца цікавымі.
+ .
+ Заўважце, што калі Вы пазначаеце кампанент, які патрабуе іншыя кампаненты, яны таксама будуць загружаныя.
+Description-bg.UTF-8: Компоненти на инсталатора, които да се заредят:
+ Всички компоненти на инсталатора, нужни за извършване на инсталацията ще бъдат заредени автоматично и не присъстват в списъка. Другите компоненти на инсталатора имат нисък приоритет и вероятно не са нужни, но могат да бъдат полезни за някои потребители.
+ .
+ Обърнете внимание, че ако изберете компонент, който зависи от други, те също ще бъдат заредени.
+Description-bo.UTF-8: ཡར་འཇུག་དགོས་པའི་སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག：
+ སྒྲིག་འཇུག་ཆས་ཀྱིས་སྒྲིག་འཇུག་ཆ་ཚང་བྱེད་པར་དགོས་ངེས་ཀྱི་ལྷུ་ལག་ཡོངས་རང་འགུལ་གྱིས་ཡར་འཇུག་བྱེད་རྒྱུ་ཡིན་པ་དང་དེ་དག་འདི་ཐོ་འགོད་བྱས་མེད། སྒྲིག་འཇུག་ཆས་ཀྱི་(འདེམས་རུང་བའི)་ལྷུ་ལག་གཞན་དག་གཤམ་དུ་སྟོན་ཡོད། དེ་དག་ཕལ་ཆེར་དགོས་ངེས་མིན་ཡང་སྤྱོད་མཁན་འགའ་ཞིག་ལ་འཐད་པོ་ཡོད
+ .
+ གསལ་བརྡ། ཁྱོད་ཀྱིས་ལྷུ་ལག་གཞན་དག་དགོས་པའི་ལྷུ་ལག་ཞིག་བདམས་ན་དེ་དག་ཀྱང་ཡར་འཇུག་བྱེད་ངེས
+Description-bs.UTF-8: Komponente instalera koje će biti učitane:
+ Sve komponente instalera potrebne za završavanje instalacije će biti automatski učitane i nisu navedene ovdje. Ostale (opcionalne) komponente instalera su prikazane ispod. One vjerovatno nisu neophodne, ali mogu zanimati neke korisnike.
+ .
+ Uočite da ako izaberete komponentu koja zahtijeva druge, te komponente će također biti učitane.
+Description-ca.UTF-8: Components de l'instal·lador a carregar:
+ Tots els components de l'instal·lador que es necessiten per a completar la instal·lació es carregaran automàticament i no s'han llistat ací.  Altres components de l'instal·lador (opcionals) es mostren a continuació. Probablement no són necessaris, però poden ser interessants per a alguns usuaris.
+ .
+ Teniu en compte que si seleccioneu un component que en necessita d'altres, aquests components també es carregaran.
+Description-cs.UTF-8: Komponenty instalátoru, které se mají nahrát:
+ Všechny komponenty instalátoru nutné pro dokončení instalace budou nahrány automaticky a proto zde nejsou uvedeny. Zde uvedené komponenty instalátoru jsou volitelné a pravděpodobně nejsou potřeba, i když mohou být pro některé uživatele zajímavé.
+ .
+ Pokud vyberete komponentu, která vyžaduje další komponenty, budou také nainstalovány.
+Description-cy.UTF-8: Cydrannau sefydlydd i'w llwytho:
+ Bydd yr holl gydrannau o'r sefydlydd sydd eu hangen i gwblhau'r gosodiad yn cael eu llwytho'n awtomatig a ni rhestrir nhw yma. Gweler isod cydrannau sefydlydd (dewisol) eraill. Mae'n debyg nad ydynt yn angenrheidiol, ond efallai byddant o diddordeb i rai defnyddwyr.
+ .
+ Sylwch os dewiswch gydran sy'n dibynnu ar eraill, caiff y cydrannau hynny eu llwytho hefyd.
+Description-da.UTF-8: Installations-komponenter der hentes:
+ Alle de dele af installationsprogrammet, der kræves for at fuldføre installationen, vil blive indlæst automatisk, og vil ikke fremgå her. Andre valgfri installationskomponenter er vist herunder. De er næppe nødvendige, men kan være interessante for nogle brugere.
+ .
+ Bemærk at hvis du vælger en komponent, der kræver andre komponenter, bliver disse også installeret.
+Description-de.UTF-8: Zu ladende Installer-Komponenten:
+ Alle für den Abschluss der Installation benötigten Komponenten werden automatisch geladen und hier nicht aufgeführt. Einige andere (optionale) Komponenten jedoch sind unten aufgelistet. Sie werden möglicherweise nicht benötigt, könnten aber für einige Benutzer nützlich sein.
+ .
+ Beachten Sie bitte, dass, falls Sie ein Modul wählen, welches andere Module benötigt, diese ebenfalls mit installiert werden.
+Description-el.UTF-8: Πακέτα λογισμικού του εγκαταστάτη προς μεταφόρτωση:
+ Όλα τα συστατικά του εγκαταστάτη που χρειάζονται για να ολοκληρωθεί η εγκατάσταση θα φορτωθούν αυτόματα και δεν αναγράφονται εδώ. Μερικά άλλα (προαιρετικά) συστατικά του εγκαταστάτη εμφανίζονται παρακάτω. Πιθανόν να μην είναι απαραίτητα αλλά ίσως να ενδιαφέρουν μερικούς χρήστες.
+ .
+ Αν επιλέξετε ένα πακέτο λογισμικού που εξαρτάται από άλλα, τότε, θα φορτωθούν και αυτά αυτόματα.
+Description-eo.UTF-8: Ŝargotaj instalpakoj:
+ Ĉiuj bezonataj instalpakoj por kompletigi la instalon estos aŭtomate ŝargitaj kaj ne estas menciataj tie ĉi. Aliaj negravaj instalpakoj (opciaj) estas menciataj sube. Ili verŝajne ne nepras, sed povus interesigi kelkajn uzantojn.
+ .
+ Bonvolu rimarki ke se vi elektas instalpakon kiu postulas aliajn, ankaŭ tiuj estos ŝargitaj.
+Description-es.UTF-8: Componentes del instalador a cargar:
+ La mayoría de los componentes que necesitará el instalador para completar la instalación se cargarán automáticamente y no se listarán aquí. Abajo se muestran otros componentes (opcionales). Probablemente no sean necesarios, aunque pueden interesar a algunos usuarios.
+ .
+ Tenga en cuenta que si selecciona un componente que requiere otros componentes, deberá cargar también esos componentes.
+Description-et.UTF-8: Laaditavad paigaldaja komponendid:
+ Kõik paigaldamisel kindlasti vajaminevaid komponendid peaksid olema juba valitud. Ülejäänud (valikulised) komponendid on loetletud allpool. Neid ei lähe ilmselt vaja, kuid mõnele kasutajale võivad need siiski huvi pakkuda.
+ .
+ Võta teadmiseks, et kui valid ühe komponendi, laaditakse ka kõik teised komponendid, mida valitud komponent tööks vajab.
+Description-eu.UTF-8: Kargatu beharreko instalatzailearen osagaiak:
+ Instalatzaileak instalazioa burutzeko behar dituen osagai guztiak automatikoki kargatuko dira. Zerrendan instalatzailearen beste osagai batzuk (aukerakoak). Ziurrenik ez dira beharrezkoak, baina baliteke erabiltzaile batzuentzat interesgarri izatea.
+ .
+ Kontuan izan beste batzuk behar dituen osagai bat hautatzen baduzu, osagai haiek ere kargatu egingo direla.
+Description-fa.UTF-8: مؤلفه‌های نصاب برای بارگذاری:
+ همهٔ کامپوننت‌های نصاب که برای کامل شدن نصب لازم‌اند به صورت خودکار بارگذاری می‌شوند و اینجا فهرست نشده‌اند. برخی دیگر کامپوننت‌های (اختیاری) نصاب در زیر نشان داده شده‌اند. احتمالاُ نیازی به آنها نیست، اما برای برخی کاربران ممکن است جالب باشند.
+ .
+ نوجه کنید که اگر یک کامپوننت که به دیگران نیاز دارد را بارگذاری کنید، آن‌ها نیز بارگذاری خواهند شد.
+Description-fi.UTF-8: Ladattavat asentimen osat:
+ Kaikki asennuksen loppuun saattamiseen tarvittavat asentimen osat tullaan noutamaan automaattisesti eikä niitä luetella tässä. Joitakin muita (valinnaisia) osia näytetään alla. Todennäköisesti ne eivät ole tarpeellisia, mutta voivat kiinnostaa joitakin käyttäjiä.
+ .
+ Jos valitset osan, joka tarvitsee toimiakseen muita osia, myös nämä muut osat asennetaan.
+Description-fr.UTF-8: Composants d'installation à charger :
+ Tous les composants indispensables à l'installation seront chargés automatiquement et ne sont pas affichés ici. D'autres composants de priorité plus faible sont proposés ici. Ils ne sont probablement pas nécessaires, mais ils peuvent être intéressants pour certains utilisateurs.
+ .
+ Veuillez noter que si vous choisissez un composant qui nécessite d'autres composants, ceux-ci seront également chargés.
+Description-ga.UTF-8: Comhpháirteanna an tsuiteálaí le luchtú:
+ Luchtófar gach comhpháirt den suiteálaí is gá leis an tsuiteáil a chur i gcrích go huathoibríoch; níl siad liostáilte anseo. Feicfidh tú comhpháirteanna (roghnacha) eile thíos. Is dócha nach bhfuil gá leo, ach beidh suim ag úsáideoirí áirithe iontu.
+ .
+ Tabhair faoi deara, má roghnaíonn tú comhpháirt a bhfuil comhpháirteanna eile de dhíth uirthi, luchtaítear na comhpháirteanna sin freisin.
+Description-gl.UTF-8: Compoñentes do instalador a cargar:
+ Todas as compoñentes do instalador que sexan necesarias para completar a instalación hanse cargar automaticamente e non aparecen nesta lista. En baixo móstranse outras compoñentes (opcionais) do instalador. Seguramente non sexan necesarias, pero poden ser interesantes para algúns usuarios.
+ .
+ Lembre que se escolle unha compoñente que precisa de outras, esas compoñentes tamén se han cargar.
+Description-he.UTF-8: רכיבי תוכנית התקנה לטעינה:
+ כל הרכיבים של תוכנית ההתקנה הנדרשים כדי לסיים את ההתקנה יטענו אוטומטית ואינם רשומים כאן. רכיבים נוספים של תוכנית ההתקנה מופיעים למטה. לרוב הם אינם נחוצים, אך יכולים להיות רלוונטיים לחלק מהמשתמשים.
+ .
+ שים לב שאם אתה בוחר רכיב שדורש רכיבים אחרים, הם יטענו בנוסף.
+Description-hr.UTF-8: Instalacijski dijelovi za učitavanje:
+ Svi dijelovi instalacijskog programa potrebni za završetak instalacije će se automatski učitati i oni nisu na ovom popisu. Ostali, opcionalni dijelovi instalacijskog programa su prikazani ispod. Oni vjerojatno nisu neophodni, ali mogu biti zanimljivi nekim korisnicima.
+ .
+ Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će se dijelovi učitati.
+Description-hu.UTF-8: Betöltendő telepítő részek:
+ A telepítéshez szükséges valamennyi összetevő automatikusan betöltésre kerül, és nincs itt felsorolva. Alább látható a telepítő pár egyéb (opcionális) része. Ezek valószínűleg nem szükségesek, de egyes felhasználóknak hasznosak lehetnek.
+ .
+ Jó tudni, hogy ha egy kiválasztott összetevő másokat igényel, azok szintén betöltődnek.
+Description-hy.UTF-8: Տեղադրիչի բեռնվող բաղադրիչները`
+ Տեղադրման համար անհրաժեշտ բոլոր բաղադրիչները ավտոմատ կբեռնվեն և չեն ցույց տրվի այստեղ։ Ներքևում թվարկված են տեղադրիչի այլ (ոչ պարտադիր) բաղադրիչները։ Հնարավոր է, որ նրանք պետք չեն գա, բայց որոշ օգտագործողների նրանք կարող են անհրաժեշտ լինել։
+ .
+ Հաշվի առեք, որ երբ դուք նշում եք բաղադրիչ որի համար անհրաժեշտ է մեկ այլ բաղադրիչ, ապա այդ այլ բաղադրիչը կբերնվի ինքնաբար։
+Description-id.UTF-8: Komponen instalasi yang ingin dimuat:
+ Semua komponen yang diperlukan untuk instalasi akan dipilih secara otomatis dan tidak ditampilkan di sini. Beberapa komponen lainnya  ditampilkan di bawah ini. Komponen ini mungkin tidak diperlukan, tetapi bisa jadi berguna bagi pengguna tertentu.
+ .
+ Perhatikan, jika Anda memilih komponen yang bergantung pada komponen lain, komponen tersebut akan dimuat juga.
+Description-is.UTF-8: Hlutar uppsetningarkerfisins sem hlaða á inn:
+ Öll þau gögn sem uppsetningin mun þarfnast, verður hlaðið sjálfkrafa og eru ekki taldir upp. Sumir hlutar, valmöguleikar, eru taldir upp hér fyrir neðan. Þeirra er hugsanlega ekki þörf, en gætu vakið áhuga sumra notenda.
+ .
+ Athugaðu að ef hluti sem valinn er þarfnast annara hluta verður þeim hlaðið inn líka.
+Description-it.UTF-8: Componenti del programma d'installazione da caricare:
+ Tutti i componenti necessari al completamento dell'installazione saranno caricati automaticamente e non sono elencati qui. Alcuni componenti facoltativi del programma d'installazione sono elencati sotto. Probabilmente non sono necessari, ma potrebbero essere interessanti per alcuni utenti.
+ .
+ Notare che selezionando dei componenti che ne richiedono altri, anche questi saranno caricati.
+Description-ja.UTF-8: ロードするインストーラコンポーネント:
+ インストールを完結するのに必要となるインストーラのすべてのコンポーネントは自動的にロードされ、ここには表示されません。その他いくつかの (補助的な) インストーラコンポーネントが以下に示されています。これらはおそらく必要ありませんが、特定のユーザにとっては興味があるかもしれません。
+ .
+ ほかのコンポーネントを必要とするコンポーネントを選んだときには、それらのコンポーネントもインストールされることに注意してください。
+Description-kk.UTF-8: Жүктеуге арналған орнату бағдарламасының құрамасы:
+ Орнатуға міндетті құрама өздігінен жүктеледі, сондықтан бұл жерде көрсетілмейді. Қалған (міндетті емес) құрама төменде көрсетілген. Қалаған құрама таңдаңыз.
+ .
+ Егер сіз басқа құрама талап ететін құраманы таңдасаңыз, олардың да жүктелетінін ескеріңіз.
+Description-kn.UTF-8: ಸಜ್ಜುಗೊಳಿಸಬೇಕಾದ ಅನುಸ್ಥಾಪನ ಅವಯವಗಳು:
+ ಅನುಸ್ಧಾಪನ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಬೇಕಾದ ಅವಯವಗಳನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಆರಿಸಲಾಗಿದ್ದು, ಈ ಕೆಳಗೆ ನಮೂದಿಸಲಾಗಿಲ್ಲ. ಆದರೆ ಇತರೆ (ಐಚ್ಚಿಕ) ಅನುಸ್ಧಾಪಕ ಅವಯವಗಳನ್ನು ಕೆಳಗೆ ತೋರಿಸಲಾಗಿದೆ. ಅವು ಪ್ರಾಯಶಃ ಅನಗತ್ಯವಾದರೂ, ಕೆಲವರು ಅವುಗಳಲ್ಲಿ ಆಸಕ್ತರಿರಬಹುದು.
+ .
+ ಗಮನಿಸಿ ನೀವು ಆರಿಸಿದ ಅವಯವಕ್ಕೆ ಇತರ ಅವಯವಗಳ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ, ಅವುಗಳನ್ನೂ ಆರಿಸಲಾಗುವುದು
+Description-ko.UTF-8: 읽어들일 설치 프로그램 컴포넌트:
+ 설치프로그램은 필요한 컴포넌트를 대부분 자동으로 읽어들이므로, 여기에 표시하지는 않습니다. 중요도가 낮아 선택사항인 컴포넌트는 여기에 표시합니다. 이 사항이 필요한 사용자는 많지 않겠지만, 일부 사용자에게는 중요할 수 있습니다.
+ .
+ 선택한 컴포넌트에 또 다른 컴포넌트가 필요한 경우, 그 필요한 컴포넌트를 자동으로 읽어들입니다.
+Description-ku.UTF-8: Pêkhatiyên sazkirinê yên dê werin barkirin:
+ Hemû pêkhatiyên ji bo sazkirin biqede pêwist in û ji bo bernameya sazkirinê pêk were, bixweber tên bar kirin û li vir nayên nivîsandin. Pêkhatiyên sazkirinê yên din li jêr tên nîşan dan. Gelek caran ne lazim in; lê dibe ku bi kêrî karê hinek bikarhêneran bên.
+ .
+ Ji bîr meke, pêkhatiyên te hilbijartin dê pêkhatiyên ji xwe re pêwist jî saz bikin.
+Description-lo.UTF-8: ອົງປະກອບຂອງການຕິດຕັ້ງທີ່ເອີ້ນໃຊ້:
+ ອົງປະກອບທຸກຢ່າງທີ່ຢູ່ໂປຣແກຣມຕິດຕັ້ງຕ້ອງການໃຊ້ຈະຖືກໂຫຼດໄວ້ໝົດແລ້ວ ແລະຈະບໍ່ສະແດງໃນທີ່ນີ້ ຂ້າງລຸ່ມນີ້ຈະສະແດງອົງປະກອບການຕິດຕັ້ງ ( ເສີມ) ອື່ນໆ ຊຶ່ງອາດບໍ່ຈຳເປັນ ພຽງແຕ່ຜູ້ໃຊ້ບາງຄົນອາດຈະສົນໃຈ.
+ .
+ ສັງເກດວ່າຖ້າເຈົ້າເລືອກອົງປະກອບທີ່ໃຊ້ອົງປະກອບອື່ນຈະປະກອບດ້ວຍ ໂປຣແກຣມຕິດຕັ້ງກໍ່ຈະເອີ້ນໃຊ້ອົງປະກອບເຫຼົ່ານັ້ນດ້ວຍເຊັ່ນກັນ.
+Description-lt.UTF-8: Įkelti įdiegiklio komponentus:
+ Visi komponentai, reikiami pilnam įdiegimui jau turi būti pasirinkti automatiškai ir nenurodyti žemiau pateiktame sąraše. Kai kurie kiti (nebūtini) įdiegiklio komponentai yra pateikti žemiau. Jie greičiausiai yra nereikalingi, tačiau gali būti svarbūs kai kuriems naudotojams.
+ .
+ Pastaba: jei išsirinksite komponentą, kuriam reikalingi dar kiti komponentai, šie taip pat bus įdiegti.
+Description-lv.UTF-8: Ielādējamās instalatora komponentes:
+ Instalēšanas procesa pabeigšanai nepieciešamās instalatora komponentes tiks automātiski ielādētas un nav šeit uzrādītas. Citas (neobligātas) instalatora komponentes ir redzamas zemāk. Tās, visticamāk, nav nepieciešamas, bet varētu būt dažiem lietotājiem interesantas.
+ .
+ Ņemiet vērā — ja izvēlēsities komponenti, kurai ir nepieciešamas citas, tās arī tiks automātiski ielādētas.
+Description-mk.UTF-8: Инсталациони компоненти за вчитување:
+ Сите компоненти на инсталерот потребни за да се заврши инсталацијата ќе бидат автоматски вчитани и тука нема да се прикажат. Некои опциони компоненти се прикажани подолу. Тие најверојатно и не се потребни, но можеби се интересни за некои корисници.
+ .
+ Имајте на ум дека ако избирате компонента на која и се потребни други, тогаш и тие компоненти ќе бидат вчитани.
+Description-nb.UTF-8: Installasjonskomponenter som skal lastes:
+ Alle deler av installasjonsprogrammet som trengs for å fullføre installasjonen blir lastet automatisk og er ikke vist her. Noen andre (valgfrie) installerer-komponenter er vist nedenfor. De er trolig ikke nødvendige, men for noen brukere kan de være av interesse.
+ .
+ Merk at om du velger en modul som trenger andre moduler, så vil disse andre modulene også bli installert.
+Description-nl.UTF-8: Te laden installatiemodules:
+ Alle installatiemodules die nodig zijn om de installatie uit te voeren, worden automatisch geladen en niet hier weergegeven. Een aantal andere (optionele) installatiemodules wordt hieronder getoond. Deze zijn waarschijnlijk niet nodig, maar kunnen voor sommige gebruikers interessant zijn.
+ .
+ Merk op dat het kiezen van een module die van andere modules afhankelijk is tot gevolg heeft dat deze andere modules ook geladen worden.
+Description-nn.UTF-8: Installasjonskomponentar som skal lastast:
+ Alle delane du treng for å fullføre installasjonen blir lasta automatisk og blir ikkje vist her. Andre (valfrie) modular er vist nedanfor. Dei er truleg ikkje nødvendige, men for nokre brukarar kan dei vere av interesse.
+ .
+ Legg merke til at dersom du vel ein modul som krev andre modular, vil desse andre modulane òg bli installerte.
+Description-no.UTF-8: Installasjonskomponenter som skal lastes:
+ Alle deler av installasjonsprogrammet som trengs for å fullføre installasjonen blir lastet automatisk og er ikke vist her. Noen andre (valgfrie) installerer-komponenter er vist nedenfor. De er trolig ikke nødvendige, men for noen brukere kan de være av interesse.
+ .
+ Merk at om du velger en modul som trenger andre moduler, så vil disse andre modulene også bli installert.
+Description-pl.UTF-8: Składniki instalatora do załadowania:
+ Wszystkie potrzebne do instalacji składniki instalatora zostaną załadowane i nie będą znajdować się na tej liście. Inne (opcjonalne) składniki będą znajdować się poniżej. Prawdopodobnie nie są niezbędne, jednak mogą zainteresować niektórych użytkowników.
+ .
+ Pamiętaj, że po wyborze składnika wymagającego innych składników, również one zostaną załadowane.
+Description-pt.UTF-8: Componentes do instalador a carregar:
+ Todos os componentes do instalador necessários para completar a instalação serão carregados automaticamente e não são aqui listados. Alguns outros componentes (opcionais) do instalador são mostrados abaixo. Provavelmente não são necessários, mas podem ser interessantes para alguns utilizadores.
+ .
+ Note que se escolher um componente que requer outros, esses componentes também serão carregados.
+Description-pt_BR.UTF-8: Componentes do instalador a serem carregados:
+ Todos os componentes do instalador necessários para completar a instalação serão carregados automaticamente e não estão listados aqui. Alguns outros componentes (opcionais) do instalador são exibidos abaixo. Eles provavelmente não são necessários, mas podem ser interessantes para alguns usuários.
+ .
+ Note que se você selecionar um componente que requer outros, esses componentes também serão carregados.
+Description-ro.UTF-8: Componentele programului de instalare care se încarcă:
+ Toate componentele programului de instalare necesare finalizării instalării vor fi încărcate automat și nu sunt afișate aici. Alte componente (opționale) ale programului de instalare sunt afișate mai jos. Probabil nu sunt necesare, dar pot prezenta interes pentru unii utilizatori.
+ .
+ A se observa că, dacă selectați o componentă care depinde de altele, acele componente vor fi și ele încărcate.
+Description-ru.UTF-8: Компоненты программы установки, доступные для загрузки:
+ Все компоненты, нужные для выполнения установки, будут загружены автоматически и не показаны здесь. Ниже перечислены остальные (необязательные) компоненты программы установки. Вероятно, в них нет необходимости, но некоторым пользователям они могут пригодиться.
+ .
+ Заметим, что при выборе компонента для работы которого нужны другие компоненты, эти компоненты также будут загружены.
+Description-si.UTF-8: පූර්ණය කිරීමට ඇවැසි ස්ථාපක සංරචක:
+ ස්ථාපනය සම්පූර්ණ කිරීමට ස්ථාපකයට ඇවැසි සියළු සංරචක ස්වයංක්‍රීයව පූර්ණය වනු ඇති අතර මෙහි ලැයිස්තුගත නොවේ. වෙනත් (අමතර) ස්ථාපක සංරචක පමණක් පහත දැක්වේ, ඒවා බොහෝ විට අත්‍යාවශ්‍ය නොවන නමුත්, ඇතැම් පරිශීලකයන් ඒවාට කැමැත්තක් දැක්විය හැක.
+ .
+ ඔබ විසින් වෙනත් සංරචක ඉල්ලා සිටින සංරචකයක් තෝරාගතහොත් එම සංරචකද පූර්ණය වන බව සලකන්න.
+Description-sk.UTF-8: Súčasti inštalačného programu, ktoré sa majú načítať:
+ Všetky súčasti inštalačného programu potrebné na dokončenie inštalácie sa automaticky načítajú, takže tu nie sú uvedené. Nižšie sú uvedené ďalšie (voliteľné) súčasti. Možno nie sú potrebné, no pre niektorých používateľov môžu byť užitočné.
+ .
+ Ak si zvolíte súčasť závislú na iných, tieto sa takisto načítajú.
+Description-sl.UTF-8: Komponente namestitve, ki se naj naložijo:
+ Vse komponente, ki so potrebne za namestitev bodo samodejno naložene in niso prikazane. Ostale komponente so prikazane spodaj. Verjetno niso potrebne, vendar so morda zanimive za nekatere uporabnike.
+ .
+ Vedite, da če izberete komponento, ki potrebuje druge komponente, bodo tudi te nameščene.
+Description-sq.UTF-8: Përbërësit e instaluesit për tu ngarkuar:
+ Të gjithë përbërësit që nevojiten për mbarimin e instalimit do të ngarkohen automatikisht dhe nuk janë rradhitur këtu. Disa përbërës të tjerë (opcionalë) të instaluesit janë shfaqur më poshtë. Ato ndoshta janë të panevojshëm, por mund të jenë interesante për disa përdorues.
+ .
+ Vër re që nëse zgjedh një përbërës që kërkon të tjerë, të gjithë këta të fundit do ngarkohen gjithashtu.
+Description-sr.UTF-8: Компоненте инсталационог програма за учитавање:
+ Све компоненте инсталера неопходни за завршетак инсталације буће учитани аутоматски и нису овде исписани. Неке друге (необавезне) компоненте инсталера су приказани испод. Оне вероватно нису неопходне, али могу бити занимљиве неким корисницима.
+ .
+ Обратите пажњу: ако изаберете компоненту који захтева друге, и те ће бити учитане.
+Description-sv.UTF-8: Installationskomponenter som ska läsas in:
+ Alla installationskomponenter som behövs för att färdigställa installationen kommer att läsas in automatiskt och listas inte här. Några andra (valfria) installationskomponenter visas nedan. De behövs antagligen inte, men kan vara av intresse för vissa användare. 
+ .
+ Observera att om du väljer en komponent som kräver andra komponenter kommer de komponenterna också att läsas in.
+Description-te.UTF-8: లోడు చేయవలసిన స్థాపనఅంశాలు:
+ స్థాపనపూర్తి అగుటకు అవసరమయిన అంశాలు వాటి అంతట అవే లోడు చేయబడతాయి, అవి ఇక్కడ చూపటం లేదు. వేరే స్థాపనఅంశాలు క్రింద చూపబడ్డాయి. ఇవి బహుశా అవసరం లేదు, కానీ కొంత మందికి ఆసక్తికరంగా ఉండవచ్చు.
+ .
+ మీరు ఇతర అంశాలు కావలసిన ఒక అంశమును కనుక ఎంచుకున్నట్లయితే, ఆ అంశాలు కూడా లోడు చేయబడతాయి.
+Description-tg.UTF-8: Унсурҳои насбкунанда барои боркунӣ:
+ Ҳамаи унсурҳои насбкунандае, ки барои ба анҷом расонидани насб лозиманд ба таври худкор бор мешаванд ва дар ин рӯйхат намоиш дода намешаванд. Баъзе (интихобӣ) унсурҳои насбкунандаи дигар дар поён намоиш дода мешаванд. Эҳтимол аст, ки онҳо лозим нестанд, вале барои баъзе корбарон шавқовар мебошанд.
+ .
+ Қайд кунед, ки агар шумо унсуреро, ки унсурҳои дигарро талаб мекунад, интихоб кунед, он унсурҳои талабшуда инчунин бор карда мешаванд.
+Description-th.UTF-8: องค์ประกอบการติดตั้งที่จะเรียกใช้:
+ องค์ประกอบทุกอย่างที่โปรแกรมติดตั้งต้องการใช้ จะถูกโหลดไว้หมดแล้ว และไม่แสดงในที่นี้ ข้างล่างนี้จะแสดงองค์ประกอบการติดตั้ง (เสริม) อื่นๆ ซึ่งอาจไม่จำเป็น เพียงแต่ผู้ใช้บางคนอาจจะสนใจ
+ .
+ สังเกตว่า ถ้าคุณเลือกองค์ประกอบที่ต้องใช้องค์ประกอบอื่นประกอบด้วย โปรแกรมติดตั้งก็จะเรียกใช้องค์ประกอบเหล่านั้นด้วยเช่นกัน
+Description-tl.UTF-8: Mga bahagi ng installer na ipapasok:
+ Awtomatikong ipapasok ang mga bahagi ng tagaluklok na kinakailangan upang mabuo ang pagluklok at hindi nakalista ang mga ito dito. May mga ilang bahagi (opsiyonal) ng tagaluklok na ipinapakita sa ibaba. Ang mga ito ay maaaring hindi na kinakailangan, subalit maaring kagigiliwan ng ilan sa mga gumagamit ng sistema.
+ .
+ Dapat ninyong mabatid na kung pumili kayo ng bahagi na nangangailangan ng iba, ang mga bahagi na iyon ay ipapasok din.
+Description-tr.UTF-8: Yüklenecek kurulum bileşenleri:
+ Kurulum programının, kurulumun tamamlanması için ihtiyaç duyacağı bileşenlerin tümü otomatik olarak yükleneceğinden burada listelenmemiştir. Diğer bazı (isteğe bağlı) kurulum bileşenleri aşağıda görülmektedir. Bunlar çoğu durum için gereksizdir; fakat bazı kullanıcıların işine yarayabilir.
+ .
+ Seçtiğiniz bileşenlerin bağımlı olduğu diğer bileşenlerin de kurulacağını unutmayın.
+Description-ug.UTF-8: يۈكلەيدىغان ئورنىتىش بۆلىكى:
+ ئورناتقۇنىڭ ئورنىتىشقا زۆرۈر بۆلەكلىرى ئاپتوماتىك چۈشۈرۈلىدۇ ھەم بۇ يەردە كۆرسىتىلمەيدۇ. بەزى قوشۇمچە بۆلەكلەر تۆۋەندە كۆرسىتىلگەن. ئۇلارنىڭ زۆرۈرىيىتى بولماسلىقى مۇمكىن، شۇنداقتىمۇ بەزى ئىشلەتكۈچىلەر قىزىقىشى مۇمكىن.
+ .
+ ئەگەر تاللىماقچى بولغان تارماق بۆلەك باشقا بىر بۆلەككە بېقىنسا، شۇ بۆلەكنىڭمۇ چۈشۈرۈلىدىغانلىقى سەمىڭىزدە بولسۇن.
+Description-uk.UTF-8: Компоненти встановлювача для завантаження:
+ Всі компоненти встановлювача, необхідні для завершення встановлення, буде завантажено автоматично і вони тут не показані. Деякі інші (необов'язкові) компоненти наведено нижче. Вони, мабуть, не є необхідними, хоча й можуть зацікавити деяких користувачів.
+ .
+ Зауважте, що якщо ви виберете компонент, для якого потрібні інші компоненти, то вони також будуть встановлені.
+Description-vi.UTF-8: Các thành phần cài đặt cần nạp:
+ Mọi thành phần của bản cài đặt cần thiết để cài đặt xong sẽ được nạp tự động, cũng không được liệt kê ở đây. Một số thành phần cài đặt khác (kiểu tùy chọn) được hiển thị bên dưới. Rất có thể là chúng không cần thiết, nhưng có thể đáng quan tâm cho một số người dùng.
+ .
+ Lưu ý nếu bạn lựa chọn một thành phần phụ thuộc vào thành phần khác nào, nó sẽ cũng được tải.
+Description-zh_CN.UTF-8: 要加载的安装程序组件：
+ 所有完成安装所必需的组件都将被自动加载，也不会列在这里。其他一些可选的安装程序组件列在了下边。它们很可能不是必需的，但是部分用户可能会对其感兴趣。
+ .
+ 注意，如果您的选择依赖于其他组件，那么这些组件也将被加载。
+Description-zh_TW.UTF-8: 要載入的安裝程式元件:
+ 所有在安裝過程中會用到的安裝元件將會被自動載入，所以並沒有出現在以下列表中。而以下列出的則是其它可任意選用的安裝元件。雖然他們大概是派不上用場，但是可能有些使用者會用得著。
+ .
+ 注意，如果您所選擇的元件相依於其他元件，那麼這些元件也會被同時載入。
+
+Template: anna/choose_modules_lowmem
+Type: multiselect
+Choices-C: ${CHOICES-C}
+Choices: ${CHOICES}
+Description: Installer components to load:
+ To save memory, only components that are certainly needed for an install
+ are selected by default. The other installer components are not all necessary
+ for a basic install, but you may need some of them, especially certain kernel
+ modules, so look through the list carefully and select the components you
+ need.
+ .
+ Note that if you select a component that requires others, those
+ components will also be loaded.
+Description-ar.UTF-8: مكونات برنامج التثبيت المطلوب تحميلها:
+ لتوفير الذاكرة، تم اختيار المكونات التي هي مهمة فطعاً للتثبيت بشكل افتراضي. مكونات التثبيت الأخرى ليست مهمة بالكامل للتثبيت الأساسي، ولكن قد تحتاج بعضها، خصوصاً بعض وحدات النواة، لذا اطلع على القائمة بتمعن واختر المكونات التي تحتاجها.
+ .
+ لاحظ أنّك إن اخترت مكوّناً يتطلّب مكوّناتٍ أخرى، فإن تلك المكوّنات ستحمّل أيضاً.
+Description-ast.UTF-8: Componentes del instalador a cargar:
+ P'aforrar enerxía, namái se van instalar los componentes necesarios. El restu los componentes del instalador nun son necesarios pa una instalación básica, pero ye dable que necesite dalgún, sobro tou dalgunos módulos del nucleu. Revise la llista con procuru y seleicione los componentes que-y seyan necesarios.
+ .
+ Decátese de que si seleiciona un componente que requiera otros, éstos componentes tendrán tamién de cargase.
+Description-be.UTF-8: Кампаненты, якія трэба загрузіць:
+ Дзеля эканоміі памяці ад пачатку пазначаныя толькі абсалютна неабходныя для ўстаноўкі кампаненты. Астатнія не абавязкова патрэбныя для базавай устаноўкі, але некаторыя з іх могуць спатрэбіцца -- асабліва, пэўныя модулі ядра. Раім уважліва праглядзець спіс і пазначыць патрэбныя на Вашую думку кампаненты.
+ .
+ Заўважце, што калі Вы пазначаеце кампанент, які патрабуе іншыя кампаненты, яны таксама будуць загружаныя.
+Description-bg.UTF-8: Компоненти на инсталатора, които да се заредят:
+ За да се спести памет, само компонентите, които най-вероятно ще са нужни за инсталацията, са избрани по подразбиране. Не всички изброени компоненти на инсталатора са необходими за проста инсталация, но може би ще решите, че се нуждаете от някои от тях, особено определени модули на ядрото. Затова прегледайте списъка внимателно и изберете тези компоненти, които ще са ви нужни.
+ .
+ Обърнете внимание, че ако изберете компонент, който зависи от други, те също ще бъдат заредени.
+Description-bo.UTF-8: ཡར་འཇུག་དགོས་པའི་སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག：
+ ཡིད་འཛིན་གྲོན་ཆུང་བྱེད་པའི་ཆེད་དུ་སྔོན་སྒྲིག་གིས་སྒྲིག་འཇུག་ཞིག་ལ་དགོས་ངེས་ཀྱི་ལྷུ་ལག་ཁོ་ན་བདམས་ཡོད། སྒྲིག་འཇུག་གི་ལྷུ་ལག་གཞན་དག་སྤྱི་བཏང་གི་་སྒྲིག་འཇུག་ཞིག་ལ་དགོས་ངེས་ཅན་མིན། འོན་ཀྱང་སྐབས་རེར་དེ་དག་འགའ་ཞིག་དགོས་པའི་གོ་སྐབས་ཡོད། དཔེར་ན་ནང་སྙིང་གི་དཔེ་དབྱིབས་དམིགས་བསལ་ཅན་ལ་དགོས་པ། དེའི་ཆེད་དུ་མིང་ཐོའི་ནང་ནས་དོ་སྣང་ཆེན་པོས་རང་ཉིད་ལ་དགོས་པའི་ལྷུ་ལག་དག་འདེམས་དགོས
+ .
+ གསལ་བརྡ། ཁྱོད་ཀྱིས་ལྷུ་ལག་གཞན་དག་དགོས་པའི་ལྷུ་ལག་ཞིག་བདམས་ན་དེ་དག་ཀྱང་ཡར་འཇུག་བྱེད་ངེས
+Description-bs.UTF-8: Komponente instalera koje će biti učitane:
+ Kako bi sačuvali memoriju, samo one komponente koje su zasigurno neophodne za instalaciju se podrazumijevano odabiraju. Sve ostale komponente instalera nisu potrebne za osnovnu instalaciju, ali će Vam možda trebati neke od njih, posebno određeni kernel moduli, pa pažljivo pogledajte ovaj spisak i odaberite komponente koje Vam trebaju.
+ .
+ Uočite da ako izaberete komponentu koja zahtijeva druge, te komponente će također biti učitane.
+Description-ca.UTF-8: Components de l'instal·lador a carregar:
+ Per a estalviar memòria, només es seleccionen per defecte els components que inequívocament es necessiten per a fer una instal·lació. Els altres components de l'instal·lador no són tots necessaris per a una instal·lació bàsica, però és possible que en necessiteu alguns, especialment alguns mòduls del nucli, així doncs analitzeu la llista i seleccioneu-ne els components que necessiteu.
+ .
+ Teniu en compte que si seleccioneu un component que en necessita d'altres, aquests components també es carregaran.
+Description-cs.UTF-8: Komponenty instalátoru, které se mají nahrát:
+ Pro ušetření paměti jsou implicitně vybrány pouze nezbytné komponenty instalačního programu. K základní instalaci není zapotřebí všech komponent, ale některé z nich jsou poměrně užitečné, obzvláště vybrané moduly jádra. Pozorně si tedy seznam prohlédněte a vyberte komponenty, které potřebujete.
+ .
+ Pokud vyberete komponentu, která vyžaduje další komponenty, budou také nainstalovány.
+Description-cy.UTF-8: Cydrannau sefydlydd i'w llwytho:
+ Er mwyn arbed cof, dim ond cydrannau sydd yn angenrheidiol ar gyfer sefydliad sy'n cael eu llwytho'n ddiofyn. Nid yw'r holl cydrannau sefydlydd a restrir yn angenrheidiol ar gyfer sefydliad sylfaenol, ond efallai bydd angen rhai ohonynt arnoch, yn enwedig rhai modiwlau cnewyllyn, felly edrychwch drwy'r rhestr yn ofalus a dewiswch y cydrannau byddwch eu angen.
+ .
+ Sylwch os dewiswch gydran sy'n dibynnu ar eraill, caiff y cydrannau hynny eu llwytho hefyd.
+Description-da.UTF-8: Installations-komponenter der hentes:
+ For at spare hukommelse bliver kun de dele, der helt sikkert er brug for, forvalgt. De andre installationsdele er ikke allesammen nødvendige for en minimal installation, men du har muligvis brug for enkelte af dem. Specielt visse kernemoduler. Så se listen nøje igennem og vælg de komponenter, du har brug for.
+ .
+ Bemærk at hvis du vælger en komponent, der kræver andre komponenter, bliver disse også installeret.
+Description-de.UTF-8: Zu ladende Installer-Komponenten:
+ Um Speicher zu sparen, werden nicht alle Installer-Module geladen. Die aufgelisteten Komponenten des Installers sind für eine Grundinstallation nicht zwingend notwendig. Eventuell benötigen Sie aber einige zusätzliche Komponenten, besonders spezielle Kernel-Module. Gehen Sie die Liste deshalb sorgfältig durch und wählen Sie die Komponenten, die Sie benötigen.
+ .
+ Beachten Sie bitte, dass, falls Sie ein Modul wählen, welches andere Module benötigt, diese ebenfalls mit installiert werden.
+Description-el.UTF-8: Πακέτα λογισμικού του εγκαταστάτη προς μεταφόρτωση:
+ Για οικονομία στη χρήση μνήμης, φορτώνονται μόνο τα συστατικά του εγκαταστάτη που είναι απολύτως απαραίτητα για την εγκατάσταση. Τα υπόλοιπα συστατικά δεν είναι απαραίτητα για μια βασική εγκατάσταση, αλλά υπάρχει η περίπτωση να χρειαστείτε ένα από αυτά, και ειδικότερα οδηγούς του πυρήνα, γι' αυτό εξετάστε τη λίστα προσεκτικά και επιλέξτε τα πακέτα που επιθυμείτε.
+ .
+ Αν επιλέξετε ένα πακέτο λογισμικού που εξαρτάται από άλλα, τότε, θα φορτωθούν και αυτά αυτόματα.
+Description-eo.UTF-8: Ŝargotaj instalpakoj:
+ Por ŝpari memorspacon, nur nepre bezonataj instalpakoj estas implicite elektitaj. Oni ne bezonas la aliajn instalpakojn por baza instalado. Tamen, kelkaj el ili povus interesigi vin, interalie tiuj kernaj moduloj. Vi zorge rigardu la liston por elekti tiujn, kiujn vi bezonos.
+ .
+ Bonvolu rimarki ke se vi elektas instalpakon kiu postulas aliajn, ankaŭ tiuj estos ŝargitaj.
+Description-es.UTF-8: Componentes del instalador a cargar:
+ Sólo se instalarán los componentes necesarios para la instalación para ahorrar memoria. Los demás componentes del instalador no son necesarios para una instalación básica, pero es posible que necesite alguno, sobre todo algunos módulos del núcleo. Revise la lista detenidamente y seleccione los componentes que necesite.
+ .
+ Tenga en cuenta que si selecciona un componente que requiere otros componentes, deberá cargar también esos componentes.
+Description-et.UTF-8: Laaditavad paigaldaja komponendid:
+ Et säästa mälu, laaditakse vaikimisi vaid kindlasti vajaminevad moodulid. Ülejäänud loetletud komponentidest pole tavapärase paigalduse jaoks tarvilikud, mõned aga võivad olla - eriti kerneli moodulid. Vaata nimekiri hoolega üle ja vali tarvilikud komponendid.
+ .
+ Võta teadmiseks, et kui valid ühe komponendi, laaditakse ka kõik teised komponendid, mida valitud komponent tööks vajab.
+Description-eu.UTF-8: Kargatu beharreko instalatzailearen osagaiak:
+ Memoria aurrezteko, instalatzailearen modulu guztiak ez dira kargatuko lehenespenez. Zerrendako instalatzailearen osagai guztiak ez dira beharrezkoak oinarrizko instalaziorako, baina agian batzuk beharko dituzu, bereziki nukleo-modulu batzuk; beraz, begiratu arretaz zerrendari eta hautatu behar dituzun osagaiak.
+ .
+ Kontuan izan beste batzuk behar dituen osagai bat hautatzen baduzu, osagai haiek ere kargatu egingo direla.
+Description-fa.UTF-8: مؤلفه‌های نصاب برای بارگذاری:
+ برای صرفه‌جویی در حافظه، فقط کامپوننت‌هایی که مطمئناً برای نصب لازم‌اند به صورت پیش‌فرض انتخاب می‌گردند. دیگر کامپوننت‌های نصاب برای یک نصب ابتدایی ضروری نیستند، اما ممکن است بعضی از آن‌ها را بخواهید، به خصوص برخی ماژول‌های هسته، بنابراین با دقت به فهرست نگاه کرده و کامپوننت‌هایی که نیاز دارید را انتخاب کنید.
+ .
+ نوجه کنید که اگر یک کامپوننت که به دیگران نیاز دارد را بارگذاری کنید، آن‌ها نیز بارگذاری خواهند شد.
+Description-fi.UTF-8: Ladattavat asentimen osat:
+ Muistin säästämiseksi valitaan oletusarvoisesti vain asennuksessa varmasti tarvittavat asentimen osat. Muut osat eivät ole välttämättömiä perusasennuksessa, mutta joitain niistä saatetaan tarvita, erityisesti tiettyjä ytimen moduuleita. Tutki luettelo huolellisesti ja valitse tarvittavat osat. 
+ .
+ Jos valitset osan, joka tarvitsee toimiakseen muita osia, myös nämä muut osat asennetaan.
+Description-fr.UTF-8: Composants d'installation à charger :
+ Afin d'économiser la mémoire, seuls les composants du programme d'installation qui sont indispensables sont chargés par défaut. Les autres composants ne sont pas tous nécessaires pour une installation simple. Cependant, certains peuvent l'être pour vous, notamment certains modules du noyau : vous devriez vérifier soigneusement la liste et choisir ceux dont vous avez besoin.
+ .
+ Veuillez noter que si vous choisissez un composant qui nécessite d'autres composants, ceux-ci seront également chargés.
+Description-ga.UTF-8: Comhpháirteanna an tsuiteálaí le luchtú:
+ Chun cuimhne a spáráil, ní roghnaítear ach na comhpháirteanna is gá leis an tsuiteáil de réir réamhshocraithe. Níl gá leis na comhpháirteanna suiteála eile chun suiteáil bhunúsach a dhéanamh, ach is féidir go dteastaíonn uait roinnt acu, modúil eithne go háirithe.  Dá bharr sin, ba chóir duit mionscrúdú a dhéanamh ar an liosta agus na comhpháirteanna atá uait a roghnú.
+ .
+ Tabhair faoi deara, má roghnaíonn tú comhpháirt a bhfuil comhpháirteanna eile de dhíth uirthi, luchtaítear na comhpháirteanna sin freisin.
+Description-gl.UTF-8: Compoñentes do instalador a cargar:
+ Para aforrar memoria, por omisión só están escollidas as compoñentes absolutamente precisas para unha instalación. As outras compoñentes do instalador non son necesarias para unha instalación básica, pero pode precisar dalgunhas delas, especialmente algúns módulos do núcleo, así que procure na lista e marque as compoñentes que precise.
+ .
+ Lembre que se escolle unha compoñente que precisa de outras, esas compoñentes tamén se han cargar.
+Description-he.UTF-8: רכיבי תוכנית התקנה לטעינה:
+ כדי לחסוך בזיכרון, רק רכיבים שדרושים להתקנה נבחרים כברירת מחדל. רכיבים אחרים לא נחוצים להתקנה בסיסית, אבל אולי תצטרך את חלקם, במיוחד מספר מודולים לקרנל, כך שכדאי לעבור על הרשימה בקפידה ולבחור את הרכיבים שאתה צריך.
+ .
+ שים לב שאם אתה בוחר רכיב שדורש רכיבים אחרים, הם יטענו בנוסף.
+Description-hr.UTF-8: Instalacijski dijelovi za učitavanje:
+ Zbog uštede memorije, samo oni dijelovi instalacije koji su sigurno potrebni za instalaciju su izabrani za učitavanje. Ostali popisani dijelovi nisu neophodni za osnovnu instalaciju, ali ćete možda ipak trebati neke od njih, osobito pojedine module za kernel. Zato pozorno pregledajte popis i izaberite dijelove koji su vam potrebni.
+ .
+ Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će se dijelovi učitati.
+Description-hu.UTF-8: Betöltendő telepítő részek:
+ Memória kímélés céljából csak a biztosan szükséges összetevők kerülnek alapból kiválasztásra. Más telepítő összetevők nem feltétlenül szükségesek, de igény lehet némelyikre, különösen egyes rendszermag modulokra. Nézze végig a listát alaposan, és válassza ki az Önnek szükséges összetevőket.
+ .
+ Jó tudni, hogy ha egy kiválasztott összetevő másokat igényel, azok szintén betöltődnek.
+Description-hy.UTF-8: Տեղադրիչի բեռնվող բաղադրիչները`
+ Օպերատիվ հիշողության էկանոմիայի պատճառով ինքնաբար ընտրված են տեղադրիչի ամենաանհրաժեշտ բաղադրիչները։ Մնացած բաղադրիչները պարտադիր չեն հասարակ տեղադրման համար, բայց նրանցից որոշները կարող են ձեզ պետք գալ, հատկապես կորիզի մոդուլները, այդ պատճառով նայեք ցուցակը և նշեք ձեզ անհրաժեշտ բաղադրիչները։
+ .
+ Հաշվի առեք, որ երբ դուք նշում եք բաղադրիչ որի համար անհրաժեշտ է մեկ այլ բաղադրիչ, ապա այդ այլ բաղադրիչը կբերնվի ինքնաբար։
+Description-id.UTF-8: Komponen instalasi yang ingin dimuat:
+ Untuk menghemat memori, hanya komponen yang diperlukan yang dipilih. Komponen lainnya tidak diperlukan untuk instalasi dasar. Namun, Anda mungkin memerlukan beberapa modul tersebut, seperti modul kernel tertentu. Jadi, teliti dan pilih komponen yang Anda butuhkan.
+ .
+ Perhatikan, jika Anda memilih komponen yang bergantung pada komponen lain, komponen tersebut akan dimuat juga.
+Description-is.UTF-8: Hlutar uppsetningarkerfisins sem hlaða á inn:
+ Til að spara minni eru einungis þeir hlutar uppsetningarkerfisins sem þörf er á valdir. Aðrir hlutar eru ekki nauðsynlegir fyrir einfalda uppsetningu. Hugsanlegt er samt að þú þarfnist einhverra þeirra, þá sérstaklega kjarnaeininganna, þannig að ráðlagt er að fletta í gegnum listann og velja þá hluta sem þörf er á.
+ .
+ Athugaðu að ef hluti sem valinn er þarfnast annara hluta verður þeim hlaðið inn líka.
+Description-it.UTF-8: Componenti del programma d'installazione da caricare:
+ Per risparmiare memoria, solo i moduli strettamente necessari all'installazione vengono caricati automaticamente. Gli altri componenti non sono necessari per un'installazione di base, ma è possibile che siano richiesti, in particolare alcuni moduli del kernel. Consultare attentamente l'elenco e scegliere i moduli necessari.
+ .
+ Notare che selezionando dei componenti che ne richiedono altri, anche questi saranno caricati.
+Description-ja.UTF-8: ロードするインストーラコンポーネント:
+ メモリを節約するために、インストールに確実に必要となるコンポーネントだけがデフォルトで選択されています。その他のインストーラコンポーネントはすべて基本のインストールには必要ないものですが、このうちのいくつか (特に特定のカーネルモジュール) を必要とするなら、リストを注意深く見渡して、必要なコンポーネントを選択してください。
+ .
+ ほかのコンポーネントを必要とするコンポーネントを選んだときには、それらのコンポーネントもインストールされることに注意してください。
+Description-kk.UTF-8: Жүктеуге арналған орнату бағдарламасының құрамасы:
+ Жедел жадыны үнемдеу мақсатында, орнату бағдарламасының ең керекті құрамасы ғана таңдалған. Орнату бағдарламасының қалған құрамасы кәдімгі орнатуда керек емес, бірақ сізге олардың кейбіреулері (әсіресе ядро модульдері) керек болып қалуы мүмкін, сондықтан тізімді қарап шығып, өзіңізге керегін таңдаңыз.
+ .
+ Егер сіз басқа құрама талап ететін құраманы таңдасаңыз, олардың да жүктелетінін ескеріңіз.
+Description-kn.UTF-8: ಸಜ್ಜುಗೊಳಿಸಬೇಕಾದ ಅನುಸ್ಥಾಪನ ಅವಯವಗಳು:
+ ಸ್ಮರಣ ಸಾಮರ್ಥ್ಯವನ್ನು ಉಳಿಸಲು, ಸಂಸ್ಥಾಪನೆಗೆ ಅತೀ ಅವಶ್ಯವಾದ ಭಾಗಗಳನ್ನು ಮಾತ್ರ ಆರಿಸಲಾಗಿದೆ. ಇತರ ಸಂಸ್ಥಾಪಕ ಭಾಗಗಳು ಮೂಲ ಸಂಸ್ಥಾಪನೆಗೆ ಅವಶ್ಯಕವೆನಿಸುವುದಿಲ್ಲ. ಅದಾಗ್ಯೂ, ತಮಗೆ ಅವುಗಳಲ್ಲಿ ಕೆಲವು, ವಿಶೇಷವಾಗಿ ಕೆಲವು ಕರ್ನಲ್ ಭಾಗಗಳು ಅಗತ್ಯವೆನಿಸಬಹುದು. ಆದುದರಿಂದ ಪಟ್ಟಿಯನ್ನು ಗಮನವಿಟ್ಟು ಪರಿಶೀಲಿಸಿ, ತಮಗೆ ಬೇಕಾದ ಭಾಗಗಳನ್ನು ಆರಿಸಿ.
+ .
+ ಗಮನಿಸಿ ನೀವು ಆರಿಸಿದ ಅವಯವಕ್ಕೆ ಇತರ ಅವಯವಗಳ ಅಗತ್ಯವಿದ್ದಲ್ಲಿ, ಅವುಗಳನ್ನೂ ಆರಿಸಲಾಗುವುದು
+Description-ko.UTF-8: 읽어들일 설치 프로그램 컴포넌트:
+ 메모리를 절약하기 위해 설치프로그램은 꼭 필요한 컴포넌트만 선택합니다. 기본설치에 필요하지는 않지만 일부 사용자에게 필요한 컴포넌트가 있을 수 있습니다. 특히 기본적으로 선택하지 않는 커널 모듈도 있으므로 목록을 잘 보고 필요한 컴포넌트를 선택하십시오.
+ .
+ 선택한 컴포넌트에 또 다른 컴포넌트가 필요한 경우, 그 필요한 컴포넌트를 자동으로 읽어들입니다.
+Description-ku.UTF-8: Pêkhatiyên sazkirinê yên dê werin barkirin:
+ Ji bo hinek bîr vala bimîne, di sazkirinê de bi tenê hinek pêkhatî hatine hilbijartin. Pêkhatiyên din ji bo sazkirineke bingehîn ne girîng in. Lê di serî de hinek modulên dendik, dibe ku pêdiviya te bi hinekan hebe. Ji ber vê yekê baş li lîsteyê binihêre û pêdiviyên xwe hilbijêre.
+ .
+ Ji bîr meke, pêkhatiyên te hilbijartin dê pêkhatiyên ji xwe re pêwist jî saz bikin.
+Description-lo.UTF-8: ອົງປະກອບຂອງການຕິດຕັ້ງທີ່ເອີ້ນໃຊ້:
+ ເພື່ອປະຫຍັດໜ່ວຍຄວາມຈຳ ໂດຍປົກກະຕິຈະເລືອກສະເພາະອົງປະກອບທີ່ຈຳເປັນຈີ່ງໆ ສຳລັບການຕິດຕັ້ງເທົ່ານັ້ນ ອົງປະກອບການຕິດຕັ້ງອື່ນໆ ບໍ່ໄດ້ຈຳເປັນສຳລັບການຕິດຕັ້ງພື້ນຖານ ແຕ່ກໍ່ມີບາງຢາງທີ່ເຈົ້າອາດຈະຕ້ອງໃຊ້ ໂດຍສະເພາະໂມດູນลບາງໂມດູນຂອງເຄີເນຣວ ສະນັ້ນ ກາລຸນາສຳຫຼວດຢ່າງລະມັດລະວັງ ເພື່ອອົງປະກອບທີ່ເຈົ້າຕ້ອງການ.
+ .
+ ສັງເກດວ່າຖ້າເຈົ້າເລືອກອົງປະກອບທີ່ໃຊ້ອົງປະກອບອື່ນຈະປະກອບດ້ວຍ ໂປຣແກຣມຕິດຕັ້ງກໍ່ຈະເອີ້ນໃຊ້ອົງປະກອບເຫຼົ່ານັ້ນດ້ວຍເຊັ່ນກັນ.
+Description-lt.UTF-8: Įkelti įdiegiklio komponentus:
+ Siekiant taupyti atmintį, tik tikrai įdiegimui reikalingi komponentai yra pasirinkti. Kiti įdiegiklio komponentai nėra visi būtini bazinės dalies įdiegimui, bet kai kurių, ypač tam tikrų branduolio modulių, gali Jums prireikti. Taigi, įdėmiai peržiūrėkite sąrašą ir pasirinkite reikiamus komponentus.
+ .
+ Pastaba: jei išsirinksite komponentą, kuriam reikalingi dar kiti komponentai, šie taip pat bus įdiegti.
+Description-lv.UTF-8: Ielādējamās instalatora komponentes:
+ Lai taupītu atmiņu, pēc noklusējuma ir izvēlētas tikai tās komponentes, kas noteikti nepieciešamas instalēšanai. Pārējās instalatora komponentes pamata instalācijā nav nepieciešamas, taču jums kādas no tām varētu būt vajadzīgas. It īpaši tas attiecas uz dažiem kodola moduļiem. Rūpīgi pārskatiet komponenšu sarakstu un izvēlieties sev vajadzīgās.
+ .
+ Ņemiet vērā — ja izvēlēsities komponenti, kurai ir nepieciešamas citas, tās arī tiks automātiski ielādētas.
+Description-mk.UTF-8: Инсталациони компоненти за вчитување:
+ За да се зачува меморија, само компонентите кои сигурно требаат за инсталација ќе бидат одбрани од почеток. Не сите останатите компоненти на инсталерот  се потребни за основна инсталација, но можеби ќе ти требаат некои, особено некои модули за кернелот. Затоа погледни ја листата внимателно и одбери ги компонентите кои ти требаат.
+ .
+ Имајте на ум дека ако избирате компонента на која и се потребни други, тогаш и тие компоненти ќе бидат вчитани.
+Description-nb.UTF-8: Installasjonskomponenter som skal lastes:
+ For å spare plass så lastes bare nødvendige installasjonsmoduler inn av seg selv. De andre installasjonskomponentene er ikke alle nødvendige for en enkel installasjon, men det kan hende du trenger noen av dem. Spesielt gjelder dette kjerne-moduler, så se nøye gjennom lista og velg de komponentene du trenger.
+ .
+ Merk at om du velger en modul som trenger andre moduler, så vil disse andre modulene også bli installert.
+Description-nl.UTF-8: Te laden installatiemodules:
+ Om geheugen uit de sparen worden enkel die modules die zeker nodig zijn om de installatie te kunnen uitvoeren standaard geselecteerd Geen van de andere installatiemodules is noodzakelijk voor een basisinstallatie. Mogelijk heeft u sommige van deze modules wel nodig (voornamelijk bepaalde kernelmodules voor uw hardware), het is dus aan te raden om deze lijst zorgvuldig te bekijken en gewenste modules te selecteren.
+ .
+ Merk op dat het kiezen van een module die van andere modules afhankelijk is tot gevolg heeft dat deze andere modules ook geladen worden.
+Description-nn.UTF-8: Installasjonskomponentar som skal lastast:
+ For å spara minne, vert berre modular som verkeleg trengst for å utføre installasjonen valt som standard. Dei andre installasjonsmodulane er ikkje alle nødvendige for ein enkel installasjon. Men det kan vere du treng nokre av dei, særleg kjernemodular, så sjå gjennom lista og vel dei modulane du treng.
+ .
+ Legg merke til at dersom du vel ein modul som krev andre modular, vil desse andre modulane òg bli installerte.
+Description-no.UTF-8: Installasjonskomponenter som skal lastes:
+ For å spare plass så lastes bare nødvendige installasjonsmoduler inn av seg selv. De andre installasjonskomponentene er ikke alle nødvendige for en enkel installasjon, men det kan hende du trenger noen av dem. Spesielt gjelder dette kjerne-moduler, så se nøye gjennom lista og velg de komponentene du trenger.
+ .
+ Merk at om du velger en modul som trenger andre moduler, så vil disse andre modulene også bli installert.
+Description-pl.UTF-8: Składniki instalatora do załadowania:
+ By zmniejszyć ilość używanej pamięci, domyślnie tylko składniki wymagane do instalacji są wybierane. Inne nie są potrzebne w przypadku podstawowej instalacji, możliwe jednakże, że będziesz potrzebować niektórych z nich, a szczególnie modułów jądra. Przejrzyj listę dokładnie i wybierz potrzebne Ci składniki.
+ .
+ Pamiętaj, że po wyborze składnika wymagającego innych składników, również one zostaną załadowane.
+Description-pt.UTF-8: Componentes do instalador a carregar:
+ Para poupar memória, apenas são escolhidos por omissão componentes que serão de certeza necessários. Os outros componentes do instalador não são todos necessários para uma instalação básica, mas poderá necessitar de alguns deles, especialmente alguns módulos do kernel, por isso veja cuidadosamente a lista e escolha os componentes de que necessita.
+ .
+ Note que se escolher um componente que requer outros, esses componentes também serão carregados.
+Description-pt_BR.UTF-8: Componentes do instalador a serem carregados:
+ Para economizar memória, somente os componentes que com certeza são necessários para uma instalação são selecionados por padrão. Os outros componentes do instalador não são todos necessários para uma instalação básica, mas você pode precisar de alguns deles, especialmente de certos módulos de kernel, portanto, analise a listagem cuidadosamente e selecione os componentes que você precisa.
+ .
+ Note que se você selecionar um componente que requer outros, esses componentes também serão carregados.
+Description-ro.UTF-8: Componentele programului de instalare care se încarcă:
+ Pentru a economisi memorie, doar componentele strict necesare pentru instalare sunt selectate implicit. Celelalte componentele ale programului de instalare nu sunt necesare pentru o instalare de bază, dar este posibil să aveți nevoie de unele dintre ele, în special de anumite module de nucleu, deci verificați lista cu grijă și selectați componentele de care aveți nevoie.
+ .
+ A se observa că, dacă selectați o componentă care depinde de altele, acele componente vor fi și ele încărcate.
+Description-ru.UTF-8: Компоненты программы установки, доступные для загрузки:
+ С целью экономии оперативной памяти, по умолчанию выбраны только самые необходимые компоненты программы установки. Остальные компоненты программы установки не требуются для обычной установки, но вам могут понадобиться некоторые из них, особенно модули ядра, поэтому просмотрите список и выберите нужные вам компоненты.
+ .
+ Заметим, что при выборе компонента для работы которого нужны другие компоненты, эти компоненты также будут загружены.
+Description-si.UTF-8: පූර්ණය කිරීමට ඇවැසි ස්ථාපක සංරචක:
+ මතකය සුරැකීම සඳහා ස්ථාපනයට අත්‍යාවශ්‍ය සංරචක පමණක් පෙරනිමියෙන් තෝරා ඇත. අනෙක් ස්ථාපක සංරචක සියල්ලම මූලික ස්ථාපනයකට ඇවැසි නොවේ. එහෙත් ඔබට කර්නල මොඩියුල වැනි ඒවායින් සමහරක් ඇවැසි විය හැක, එමනිසා ලැයිස්තුව ප්‍රවේශමෙන් පිරික්සා බලා ඇවැසි සංරචක තෝරා ගන්න.
+ .
+ ඔබ විසින් වෙනත් සංරචක ඉල්ලා සිටින සංරචකයක් තෝරාගතහොත් එම සංරචකද පූර්ණය වන බව සලකන්න.
+Description-sk.UTF-8: Súčasti inštalačného programu, ktoré sa majú načítať:
+ Kvôli ušetreniu pamäti sú predvolené iba tie súčasti, ktoré sú naozaj potrebné na inštaláciu. Ďalšie súčasti nie sú nutné na základnú inštaláciu, ale niektoré z nich možno budete potrebovať, napr. určité moduly jadra, takže si pozorne prezrite tento zoznam a zvoľte si potrebné súčasti.
+ .
+ Ak si zvolíte súčasť závislú na iných, tieto sa takisto načítajú.
+Description-sl.UTF-8: Komponente namestitve, ki se naj naložijo:
+ Da bi prihranili pomnilnik, so naložene samo komponente, ki so potrebne za namestitev. Ostale komponente namestitvenega programa niso vse potrebne za osnovno namestitev, vendar jih boste morda potrebovali, še posebej določene module jedra. Temeljito preglejte seznam in izberite potrebne komponente.
+ .
+ Vedite, da če izberete komponento, ki potrebuje druge komponente, bodo tudi te nameščene.
+Description-sq.UTF-8: Përbërësit e instaluesit për tu ngarkuar:
+ Për të ruajtur kujtesë,vetëm përbërësit që patjetër duhen për një instalim janë zgjedhur si zakonisht. Përbërësit e tjerë të instaluesit nuk janë të gjithë të nevojshëm për një instalim bazë, por ndonjëri edhe mund të të nevojitet, sidomos disa module të kernelit, kështu që kqyr mirë listën dhe zgjidh përbërësit që të duhen.
+ .
+ Vër re që nëse zgjedh një përbërës që kërkon të tjerë, të gjithë këta të fundit do ngarkohen gjithashtu.
+Description-sr.UTF-8: Компоненте инсталационог програма за учитавање:
+ Због уштеде меморије неће бити учитане све компоненте инсталације. Пописане компоненте нису неопходне за основну инсталацију, али ћете можда ипак требати неке од њих, посебно модули за кернел. Зато пажљиво прегледајте листу и изаберите делове који су вам потребни.
+ .
+ Обратите пажњу: ако изаберете компоненту који захтева друге, и те ће бити учитане.
+Description-sv.UTF-8: Installationskomponenter som ska läsas in:
+ För att spara minne kommer endast komponenter som verkligen behövs för en installation att väljas som standard. De övriga installationskomponenerna är inte nödvändiga för en grundläggande installation, men du kan behöva vissa av dem, i synnerhet vissa kärnmoduler. Läs därför noggrant igenom listan och välj de komponenter som du behöver.
+ .
+ Observera att om du väljer en komponent som kräver andra komponenter kommer de komponenterna också att läsas in.
+Description-te.UTF-8: లోడు చేయవలసిన స్థాపనఅంశాలు:
+ మెమొరీ ఆదా చేయుటకు స్థాపనకు అత్యవసరమైన అంశాలు మాత్రమే మొదటగా ఎంచుకోబడ్డాయి. మౌలిక స్థాపనకు వేరే స్థాపనవ్యవస్థ అంశాలు అన్నీ అవసరం ఉండకపోవచ్చు, కానీ కొన్ని అవసరం ఉండవచ్చు, ముఖ్యంగా కెర్నెల్ మాధ్యమాలు. కావున జాగ్రత్తగా చూసి క్రింద జాబితా నుండి మీకు కావలసిన అంశాలు ఎన్నుకోండి.
+ .
+ మీరు ఇతర అంశాలు కావలసిన ఒక అంశమును కనుక ఎంచుకున్నట్లయితే, ఆ అంశాలు కూడా లోడు చేయబడతాయి.
+Description-tg.UTF-8: Унсурҳои насбкунанда барои боркунӣ:
+ Барои сарфа кардани ҳофиза, танҳо унсурҳое, ки барои насб дар ҳақиқат лозиманд, ба сурати пешфарз интихоб карда мешаванд. Унсурҳои дигари насбкунанда барои насби асосӣ лозим нестанд, вале эҳтимол аст, ки ба шумо баъзеи онҳо лозим мешаванд, махсусан модулҳои ҳаста, бинобар ин рӯйхатро мутолиа кунед ва унсурҳои лозимиро интихоб намоед.
+ .
+ Қайд кунед, ки агар шумо унсуреро, ки унсурҳои дигарро талаб мекунад, интихоб кунед, он унсурҳои талабшуда инчунин бор карда мешаванд.
+Description-th.UTF-8: องค์ประกอบการติดตั้งที่จะเรียกใช้:
+ เพื่อประหยัดหน่วยความจำ โดยปกติจึงเลือกเฉพาะองค์ประกอบที่จำเป็นจริงๆ สำหรับการติดตั้งเท่านั้น องค์ประกอบการติดตั้งอื่นๆ ไม่ได้จำเป็นสำหรับการติดตั้งพื้นฐาน แต่ก็มีบางอย่างที่คุณอาจต้องใช้ โดยเฉพาะมอดูลบางมอดูลของเคอร์เนล ฉะนั้น กรุณาสำรวจรายการอย่างระมัดระวัง เพื่อเลือกองค์ประกอบที่คุณต้องการ
+ .
+ สังเกตว่า ถ้าคุณเลือกองค์ประกอบที่ต้องใช้องค์ประกอบอื่นประกอบด้วย โปรแกรมติดตั้งก็จะเรียกใช้องค์ประกอบเหล่านั้นด้วยเช่นกัน
+Description-tl.UTF-8: Mga bahagi ng installer na ipapasok:
+ Upang makatipid ng memory, hindi lahat ng mga module ng tagaluklok ay ipapasok ng default. Ang mga nakatalang mga bahagi ng tagaluklok ay hindi kinakailangang lahat sa payak na pagluklok, ngunit maaaring kailanganin ang ilan sa mga ito, lalo na ang ilang mga module ng kernel, kaya basahin ang talaan ng mabuti at piliin ang mga bahagi na kailangan niyo.
+ .
+ Dapat ninyong mabatid na kung pumili kayo ng bahagi na nangangailangan ng iba, ang mga bahagi na iyon ay ipapasok din.
+Description-tr.UTF-8: Yüklenecek kurulum bileşenleri:
+ Bellekten kazanmak için, kurulum bileşenlerinden sadece kesinlikle ihtiyaç duyulanlar yüklenecektir. Diğer kurulum bileşenleri temel bir kurulum için gerekli değildir. Fakat, başta çekirdek modülleri olmak üzere, bunların bazılarına ihtiyaç duyabileceğinizden listeyi dikkatlice inceleyin ve gerekli bileşenleri seçin.
+ .
+ Seçtiğiniz bileşenlerin bağımlı olduğu diğer bileşenlerin de kurulacağını unutmayın.
+Description-ug.UTF-8: يۈكلەيدىغان ئورنىتىش بۆلىكى:
+ ئەسلەكنى تېجەش ئۈچۈن، ئادەتتە پەقەت ئورنىتىشقا چوقۇم كېرەكلىك بولغان بۆلەكلەرلا تاللىنىدۇ. باشقا بۆلەكلەر ئاساسلىق ئورنىتىشقا زۆرۈر ئەمەس، لېكىن بەزىلىرىنى ئىشلىتىپ قىلىشىڭىز مۇمكىن، بولۇپمۇ مەلۇم يادرو(kernel) بۆلەكلىرى دېگەندەك، شۇڭا تىزىملىكنى ئەستايىدىل كۆرۈپ، تاللاشقا تېگىشلىكلىرىنى تاللاڭ.
+ .
+ ئەگەر تاللىماقچى بولغان تارماق بۆلەك باشقا بىر بۆلەككە بېقىنسا، شۇ بۆلەكنىڭمۇ چۈشۈرۈلىدىغانلىقى سەمىڭىزدە بولسۇن.
+Description-uk.UTF-8: Компоненти встановлювача для завантаження:
+ Щоб зберегти пам'ять, типово буде вибрано лише ті компоненти, котрі напевно будуть потрібні. Для звичайного встановлення всі інші компоненти встановлювача не є необхідні, але вам можуть знадобитися деякі з них, особливо певні модулі ядра, тому ретельно перегляньте список та виберіть потрібні вам компоненти.
+ .
+ Зауважте, що якщо ви виберете компонент, для якого потрібні інші компоненти, то вони також будуть встановлені.
+Description-vi.UTF-8: Các thành phần cài đặt cần nạp:
+ Để tiết kiệm bộ nhớ, chỉ những thành phần chắc chắn là cần thiết để cài đặt được chọn theo mặc định. Những thành phần cài đặt khác không cần thiết cho việc cài đăt cơ bản, nhưng bạn vẫn có thể cần một số điều, đặc biệt một số mô-đun hạt nhân, vì vậy hãy xem qua danh sách một cách cẩn thận và lựa chọn những thành phần bạn cần.
+ .
+ Lưu ý nếu bạn lựa chọn một thành phần phụ thuộc vào thành phần khác nào, nó sẽ cũng được tải.
+Description-zh_CN.UTF-8: 要加载的安装程序组件：
+ 为了节省内存，仅有那些对安装来说确实需要的组件才会被默认选定。其他安装程序组件对于基本安装并非必需，但是您可能会需要其中的一部分，特别是某些内核模块。请仔细检查这一列表并选择您需要的组件。
+ .
+ 注意，如果您的选择依赖于其他组件，那么这些组件也将被加载。
+Description-zh_TW.UTF-8: 要載入的安裝程式元件:
+ 為了節省記憶體，預設上只會選取安裝程式所必要的元件。其它的安裝元件基本上在安裝過程中並不會派上用場，但其中也許有些是您會用得到的，尤其是某些 Kernel 模組，所以請仔細得檢視這個列表，並選擇您所需要的元件。
+ .
+ 注意，如果您所選擇的元件相依於其他元件，那麼這些元件也會被同時載入。
+
+Template: anna/progress_title
+Type: text
+Description: Loading additional components
+Description-ar.UTF-8: تحميل مكونات إضافية
+Description-ast.UTF-8: Cargando componentes adicionales
+Description-be.UTF-8: Загрузка дадатковых кампанентаў
+Description-bg.UTF-8: Зареждане на допълнителни компоненти
+Description-bo.UTF-8: ཟུར་སྣོན་གྱི་ལྷུ་ལག་ཡར་འཇུག་བྱེད་པ
+Description-bs.UTF-8: Učitavam dodatne komponente
+Description-ca.UTF-8: S'estan carregant components addicionals
+Description-cs.UTF-8: Nahrávají se dodatečné komponenty
+Description-cy.UTF-8: Llwytho cydrannau ychwanegol
+Description-da.UTF-8: Indlæser yderligere komponenter
+Description-de.UTF-8: Zusätzliche Komponenten laden
+Description-el.UTF-8: Φόρτωση επιπλέον πακέτων λογισμικού
+Description-eo.UTF-8: Muntado de kromaj elementoj
+Description-es.UTF-8: Cargando componentes adicionales
+Description-et.UTF-8: Lisakomponentide laadimine
+Description-eu.UTF-8: Instalatzailearen osagaiak kargatzen
+Description-fa.UTF-8: بارگیری مؤلفه‌های اضافی
+Description-fi.UTF-8: Ladataan lisää asentimen osia
+Description-fr.UTF-8: Chargement de composants supplémentaires
+Description-ga.UTF-8: Comhpháirteanna eile á luchtú
+Description-gl.UTF-8: Estanse a cargar compoñentes adicionais
+Description-he.UTF-8: טעינת רכיבים נוספים
+Description-hr.UTF-8: Učitavanje dodatnih komponenti
+Description-hu.UTF-8: További összetevők betöltése
+Description-hy.UTF-8: Բեռնվում է հավելյալ բաղադրիչները
+Description-id.UTF-8: Memuat komponen tambahan
+Description-is.UTF-8: Hleð aukahlutum
+Description-it.UTF-8: Caricamento componenti aggiuntivi
+Description-ja.UTF-8: 追加コンポーネントをロードしています
+Description-kk.UTF-8: Қосымша құраманы жүктеу
+Description-kn.UTF-8: ಹೆಚ್ಚುವರಿ ಅವಯವಗಳನ್ನು ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: 추가 컴포넌트를 읽어들이는 중입니다
+Description-ku.UTF-8: Pêkhatiyên din tên barkirin
+Description-lo.UTF-8: ກຳລັງໂຫລດອົງປະກອບເພີ່ມຕື່ມ
+Description-lt.UTF-8: Papildomų komponentų įkėlimas
+Description-lv.UTF-8: Ielādē papildu komponentes
+Description-mk.UTF-8: Вчитување на дополнителни компоненти
+Description-nb.UTF-8: Laster ekstra komponenter
+Description-nl.UTF-8: Aanvullende installatiemodules worden geladen
+Description-nn.UTF-8: Lastar tilleggsmodular
+Description-no.UTF-8: Laster ekstra komponenter
+Description-pl.UTF-8: Ładowanie dodatkowych składników
+Description-pt.UTF-8: A carregar componentes adicionais
+Description-pt_BR.UTF-8: Carregando componentes adicionais
+Description-ro.UTF-8: Se descarcă componente adiționale
+Description-ru.UTF-8: Загрузка дополнительных компонентов
+Description-se.UTF-8: Viežžamin lasi osiid
+Description-si.UTF-8: අමතර සංරචක පූරණය කරමින්
+Description-sk.UTF-8: Načítavajú sa ďalšie súčasti
+Description-sl.UTF-8: Nalaganje dodatnih komponent
+Description-sq.UTF-8: Duke ngarkuar përbërës shtesë
+Description-sr.UTF-8: Учитавање додатних компонената
+Description-sv.UTF-8: Läser in ytterligare komponenter
+Description-te.UTF-8: అదనపు అంశాలు ఎక్కించ బడుతున్నాయి
+Description-tg.UTF-8: Боркунии унсурҳои иловагӣ
+Description-th.UTF-8: กำลังโหลดองค์ประกอบเพิ่มเติม
+Description-tl.UTF-8: Ipinapasok ang karagdagang mga bahagi
+Description-tr.UTF-8: Ek bileşenler yükleniyor
+Description-ug.UTF-8: قوشۇمچە بۆلەكلەرنى يۈكلەۋاتىدۇ
+Description-uk.UTF-8: Завантаження додаткових компонентів
+Description-vi.UTF-8: Đang tải các thành phần thêm
+Description-zh_CN.UTF-8: 正在加载额外组件
+Description-zh_TW.UTF-8: 載入額外的元件
+
+Template: anna/progress_step_retr
+Type: text
+Description: Retrieving ${PACKAGE}
+Description-ar.UTF-8: إحضار ${PACKAGE}
+Description-ast.UTF-8: Descargando ${PACKAGE}
+Description-be.UTF-8: Атрыманне ${PACKAGE}
+Description-bg.UTF-8: Доставяне на ${PACKAGE}
+Description-bo.UTF-8: ${PACKAGE} བསྐྱར་དུ་ལེན་བཞིན་པ
+Description-bs.UTF-8: Dobavljam ${PACKAGE}
+Description-ca.UTF-8: S'està obtenint ${PACKAGE}
+Description-cs.UTF-8: Stahuje se ${PACKAGE}
+Description-cy.UTF-8: Yn cyrchu ${PACKAGE}
+Description-da.UTF-8: Henter ${PACKAGE}
+Description-de.UTF-8: Laden von ${PACKAGE}
+Description-el.UTF-8: Ανάκτηση του ${PACKAGE}
+Description-eo.UTF-8: Ricevado de pako '${PACKAGE}'
+Description-es.UTF-8: Descargando ${PACKAGE}
+Description-et.UTF-8: ${PACKAGE} hankimine
+Description-eu.UTF-8: ${PACKAGE} eskuratzen
+Description-fa.UTF-8: بازیابی ${PACKAGE}
+Description-fi.UTF-8: Noudetaan ${PACKAGE}
+Description-fr.UTF-8: Récupération de ${PACKAGE}
+Description-ga.UTF-8: ${PACKAGE} á fháil
+Description-gl.UTF-8: Estase a obter ${PACKAGE}
+Description-he.UTF-8: מביא את ${PACKAGE}
+Description-hr.UTF-8: Dobavljam ${PACKAGE}
+Description-hu.UTF-8: ${PACKAGE} beszerzése
+Description-hy.UTF-8: $-ի ստացում
+Description-id.UTF-8: Mengunduh ${PACKAGE}
+Description-is.UTF-8: Sæki ${PACKAGE}
+Description-it.UTF-8: Ricezione di ${PACKAGE}
+Description-ja.UTF-8: ${PACKAGE} を取得しています
+Description-kk.UTF-8: ${PACKAGE} алу
+Description-kn.UTF-8: ${PACKAGE} ಅನ್ನು ಮರುಪಡೆಯಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: ${PACKAGE} 패키지를 가져오는 중입니다
+Description-ku.UTF-8: Pakêta ${PACKAGE} tê standin
+Description-lo.UTF-8: ກຳລັງໂຫລດ ${PACKAGE}
+Description-lt.UTF-8: Gaunamas paketas „${PACKAGE}“
+Description-lv.UTF-8: Saņem ${PACKAGE}
+Description-mk.UTF-8: Преземање на ${PACKAGE}
+Description-nb.UTF-8: Henter ${PACKAGE}
+Description-nl.UTF-8: ${PACKAGE} wordt opgehaald
+Description-nn.UTF-8: Hentar ${PACKAGE}
+Description-no.UTF-8: Henter ${PACKAGE}
+Description-pl.UTF-8: Pobieranie ${PACKAGE}
+Description-pt.UTF-8: A obter ${PACKAGE}
+Description-pt_BR.UTF-8: Obtendo ${PACKAGE}
+Description-ro.UTF-8: Se descarcă ${PACKAGE}
+Description-ru.UTF-8: Получение ${PACKAGE}
+Description-se.UTF-8: ${PACKAGE} vižžojuvvo
+Description-si.UTF-8: ${PACKAGE} ලබාගනිමින්
+Description-sk.UTF-8: Sťahuje sa ${PACKAGE}
+Description-sl.UTF-8: Pridobivanje ${PACKAGE}
+Description-sq.UTF-8: Duke tërhequr ${PACKAGE}
+Description-sr.UTF-8: Преузимање пакета ${PACKAGE}
+Description-sv.UTF-8: Hämtar ${PACKAGE}
+Description-te.UTF-8: ${PACKAGE}ను తెచ్చుచున్నాను
+Description-tg.UTF-8: Бозёбӣ кардани ${PACKAGE}
+Description-th.UTF-8: กำลังโหลด ${PACKAGE}
+Description-tl.UTF-8: Kinukuha ang ${PACKAGE}
+Description-tr.UTF-8: ${PACKAGE} alınıyor
+Description-ug.UTF-8: ${PACKAGE} قوبۇللاۋاتىدۇ
+Description-uk.UTF-8: Отримання ${PACKAGE}
+Description-vi.UTF-8: Đang lấy gói ${PACKAGE}
+Description-zh_CN.UTF-8: 正在接收 ${PACKAGE}
+Description-zh_TW.UTF-8: 接收 ${PACKAGE}
+
+Template: anna/progress_step_conf
+Type: text
+Description: Configuring ${PACKAGE}
+Description-ar.UTF-8: تهيئة ${PACKAGE}
+Description-ast.UTF-8: Configurando ${PACKAGE}
+Description-be.UTF-8: Наладка ${PACKAGE}
+Description-bg.UTF-8: Настройване на ${PACKAGE}
+Description-bo.UTF-8: ${PACKAGE} སྒྲིག་འགོད་བཞིན་པ
+Description-bs.UTF-8: Konfigurišem ${PACKAGE}
+Description-ca.UTF-8: S'està configurant ${PACKAGE}
+Description-cs.UTF-8: Nastavuje se ${PACKAGE}
+Description-cy.UTF-8: Yn cyflunio ${PACKAGE}
+Description-da.UTF-8: Sætter ${PACKAGE} op
+Description-de.UTF-8: Konfigurieren von ${PACKAGE}
+Description-el.UTF-8: Ρϋθμιση του πακέτου ${PACKAGE}
+Description-eo.UTF-8: Akomodado de '${PACKAGE}'
+Description-es.UTF-8: Configurando ${PACKAGE}
+Description-et.UTF-8: ${PACKAGE} seadistamine
+Description-eu.UTF-8: ${PACKAGE} konfiguratzen
+Description-fa.UTF-8: پیکربندی ${PACKAGE}
+Description-fi.UTF-8: Tehdään paketin ${PACKAGE} asetukset
+Description-fr.UTF-8: Configuration de ${PACKAGE}
+Description-ga.UTF-8: ${PACKAGE} á chumrú
+Description-gl.UTF-8: Estase a configurar ${PACKAGE}
+Description-he.UTF-8: מתצר את ${PACKAGE}
+Description-hr.UTF-8: Podešavam ${PACKAGE}
+Description-hu.UTF-8: ${PACKAGE} beállítása
+Description-hy.UTF-8: $-ի կարգավորում
+Description-id.UTF-8: Mengatur ${PACKAGE}
+Description-is.UTF-8: Stilli ${PACKAGE}
+Description-it.UTF-8: Configurazione di ${PACKAGE}
+Description-ja.UTF-8: ${PACKAGE} を設定しています
+Description-kk.UTF-8: ${PACKAGE} баптау
+Description-kn.UTF-8: ${PACKAGE} ಅನ್ನು ಸಂರಚಿಸಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: ${PACKAGE} 패키지를 설정하는 중입니다
+Description-ku.UTF-8: Pakêta ${PACKAGE} tê veavakirin
+Description-lo.UTF-8: ກຳລັງຕັ້ງຄ່າ ${PACKAGE}
+Description-lt.UTF-8: Konfigūruojamas paketas „${PACKAGE}“
+Description-lv.UTF-8: Konfigurē ${PACKAGE}
+Description-mk.UTF-8: Конфигурирам ${PACKAGE}
+Description-nb.UTF-8: Setter opp ${PACKAGE}
+Description-nl.UTF-8: ${PACKAGE} wordt geconfigureerd
+Description-nn.UTF-8: Set opp ${PACKAGE}
+Description-no.UTF-8: Setter opp ${PACKAGE}
+Description-pl.UTF-8: Konfigurowanie ${PACKAGE}
+Description-pt.UTF-8: A configurar ${PACKAGE}
+Description-pt_BR.UTF-8: Configurando ${PACKAGE}
+Description-ro.UTF-8: Se configurează ${PACKAGE}
+Description-ru.UTF-8: Настройка ${PACKAGE}
+Description-se.UTF-8: Heiveheamen ${PACKAGE}
+Description-si.UTF-8: ${PACKAGE} සැකසීම
+Description-sk.UTF-8: Nastavuje sa ${PACKAGE}
+Description-sl.UTF-8: Nastavljanje ${PACKAGE}
+Description-sq.UTF-8: Duke konfiguruar ${PACKAGE}
+Description-sr.UTF-8: Конфигурисање пакета ${PACKAGE}...
+Description-sv.UTF-8: Konfigurerar ${PACKAGE}
+Description-te.UTF-8: ${PACKAGE} అమర్చుట
+Description-tg.UTF-8: Конфигуратсия кардани ${PACKAGE}
+Description-th.UTF-8: กำลังตั้งค่า ${PACKAGE}
+Description-tl.UTF-8: Isinasaayos ang ${PACKAGE}
+Description-tr.UTF-8: ${PACKAGE} yapılandırılıyor
+Description-ug.UTF-8: ${PACKAGE} سەپلەۋاتىدۇ
+Description-uk.UTF-8: Налаштування ${PACKAGE}
+Description-vi.UTF-8: Đang cấu hình gói ${PACKAGE}
+Description-zh_CN.UTF-8: 正在配置 ${PACKAGE}
+Description-zh_TW.UTF-8: 設定 ${PACKAGE}
+
+
+Template: anna/install_failed
+Type: error
+Description: Failed to load installer component
+ Loading ${PACKAGE} failed for unknown reasons. Aborting.
+Description-ar.UTF-8: فشل تحميل مكوّن برنامج التثبيت
+ فشل تحميل ${PACKAGE} لأسبابٍ مجهولة. جاري الإجهاض.
+Description-ast.UTF-8: Hebo un fallu al cargar un componente del instalador
+ La carga del componente ${PACKAGE} falló por razones desconocíes. Albortando.
+Description-be.UTF-8: Не атрымалася загрузіць кампанент ўсталявальніка
+ Памылка загрузкі ${PACKAGE} з невядомай прычыны. Перарвана.
+Description-bg.UTF-8: Грешка при зареждане на компонента на инсталатора
+ Зареждането на ${PACKAGE} завърши неуспешно поради неизвестни причини.  Прекъсване.
+Description-bo.UTF-8: སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག་ཡར་འཇུག་བྱེད་མ་ཐུབ
+ རྒྱུ་རྐྱེན་གང་ཡིན་མ་ཤེས་པར་${PACKAGE} ཡར་འཇུག་མ་ཐུབ། མཚམས་འཇོག་བཞིན་པ
+Description-bs.UTF-8: Neuspješno učitavanje komponente instalera
+ Učitavanje ${PACKAGE} nije uspjelo iz nepoznatih razloga. Odustajem.
+Description-ca.UTF-8: No s'ha pogut instal·lar el component de l'instal·lador
+ La instal·lació de ${PACKAGE} ha fallat per raons desconegudes. S'està avortant.
+Description-cs.UTF-8: Nahrání komponenty instalačního programu selhalo
+ Nahrání ${PACKAGE} selhalo z neznámého důvodu. Ruším akci.
+Description-cy.UTF-8: Llwytho cydran sefydlydd wedi methu
+ Llwytho ${PACKAGE} wedi methu am resymau anhysbys. Yn terfynu.
+Description-da.UTF-8: Kunne ikke indlæse installationskomponenten
+ Det lykkedes af ukendte grunde ikke at hente ${PACKAGE}. Afbryder.
+Description-de.UTF-8: Fehler beim Laden der Installer-Komponenten
+ Die Installation von ${PACKAGE} ist aus einem unbekannten Grund fehlgeschlagen. Abbruch!
+Description-el.UTF-8: Σφάλμα κατά τη φόρτωση πακέτου λογισμικού του εγκαταστάτη
+  Η φόρτωση του πακέτου λογισμικού ${PACKAGE} απέτυχε για άγνωστους λόγους. Η διαδικασία θα τερματιστεί.
+Description-eo.UTF-8: Ŝargo je instalpako malsukcesis
+ Ŝargado je ${PACKAGE} malsukcesis pro nekonata kialo. Ni rezignas.
+Description-es.UTF-8: Se produjo un fallo al cargar un componente del instalador
+ La carga del componente ${PACKAGE} falló por razones desconocidas. Interrumpiendo.
+Description-et.UTF-8: Paigaldaja komponendi laadimine nurjus
+ ${PACKAGE} laadimine nurjus teadmata põhjustel. Katkestatakse.
+Description-eu.UTF-8: Huts egin du instalatzailearen osagaia kargatzean
+ Ezin izan da ${PACKAGE} kargatu arrazoi ezezagunengatik. Bertan behera utziko da.
+Description-fa.UTF-8: بارگیری مؤلفه‌های نصاب شکست خورد
+ بارگذاری ${PACKAGE} به علت نا معلومی شکست خورد، در حال خاتمه.
+Description-fi.UTF-8: Asentimen osan lataus epäonnistui
+ Asennuspaketin ${PACKAGE} lataaminen epäonnistui tuntemattomasta syystä. Keskeytetään.
+Description-fr.UTF-8: Échec de l'installation du composant
+ L'installation du composant ${PACKAGE} a échoué pour des raisons inconnues. L'opération est abandonnée.
+Description-ga.UTF-8: Theip ar chomhpháirt suiteála a luchtú
+ Theip ar luchtú ${PACKAGE} agus ní fios cén fáth. Á thobscor.
+Description-gl.UTF-8: Non foi posíbel cargar unha compoñente do instalador
+ Produciuse un erro ao cargar ${PACKAGE} por motivos descoñecidos. Interrompendo.
+Description-he.UTF-8: כישלון בטעינת רכיב של תוכנית ההתקנה
+ טעינת ${PACKAGE} נכשלה מסיבה לא ברורה. מוותר.
+Description-hr.UTF-8: Učitavanje instalacijskog dijela nije uspjelo
+ Učitavanje ${PACKAGE} nije uspjelo zbog nepoznatih razloga. Prekidam.
+Description-hu.UTF-8: Egy telepítő rész betöltése meghiúsult
+ ${PACKAGE} betöltése ismeretlen okokból meghiúsult. Kilépek.
+Description-hy.UTF-8: Հնարավոր չէ բեռնել տեղադրիչի բաղադրիչը
+ Անհայտ պատճառով անհնար է բեռնել ${PACKAGE}։
+Description-id.UTF-8: Gagal memuat komponen instalasi 
+ Pemuatan ${PACKAGE} gagal tanpa sebab jelas. Terpaksa dibatalkan.
+Description-is.UTF-8: Tókst ekki að hlaða hluta uppsetningarkerfisins
+ Ekki tókst að hlaða inn ${PACKAGE} af einhverjum ástæðum. Hætti við.
+Description-it.UTF-8: Caricamento del componente del programma d'installazione non riuscito
+ Caricamento di ${PACKAGE} non riuscito per motivi sconosciuti. Terminato.
+Description-ja.UTF-8: インストーラコンポーネントのロードに失敗しました
+ 未知の理由で ${PACKAGE} のロードに失敗しました。中断します。
+Description-kk.UTF-8: Орнату бағдарламасының құрамасын жүктеу мүмкін болмады
+ ${PACKAGE} жүктеу белгісіз себеппен мүмкін болмады. Тоқтату.
+Description-kn.UTF-8: ಅನುಸ್ಥಾಪನ ಅವಯವವನ್ನು ಪ್ರಾರಂಭಿಸುವಲ್ಲಿ ವಿಫಲವಾಯಿತು
+ ${PACKAGE} ಅನ್ನು ತುಂಬುವುದು ಅರಿಯದ ಕಾರಣಗಳಿಂದಾಗಿ ವಿಫಲವಾಗಿದೆ. ನಿರ್ಗಮಿಸಲಾಗುತ್ತಿದೆ.
+Description-ko.UTF-8: 설치 프로그램 컴포넌트를 읽어들이는데 실패했습니다
+ 알 수 없는 이유로 ${PACKAGE} 패키지를 읽어들이는데 실패했습니다. 중지합니다.
+Description-ku.UTF-8: Pêkhatiya sazkirinê nehate barkirin
+ Barkirina ${PACKAGE} ji ber sedemeke nayê zanîn biserneket. Tê rawestandin.
+Description-lo.UTF-8: ໂຫຼດອົງປະກອບການຕິດຕັ້ງບໍ່ສຳເລັດ
+ ໂຫຼດ ${PACKAGE} ບໍ່ສຳເລັດໂດຍບໍ່ຮູ້ເຫດຜົນ. ຍົກເລີກ
+Description-lt.UTF-8: Nepavyko įkelti įdiegiklio komponento
+ ${PACKAGE} įkėlimas, dėl nežinomų priežasčių nepavyko. Darbas nutraukiamas.
+Description-lv.UTF-8: Neizdevās ielādēt instalatora komponenti
+ Moduļa ${PACKAGE} ielāde nezināmu iemeslu dēļ nav izdevusies. Pārtrauc darbu.
+Description-mk.UTF-8: Не успеав да вчитам инсталциона компонента
+ Вчитување на ${PACKAGE} не успеа поради непознати причини. Прекинувам.
+Description-nb.UTF-8: Klarte ikke å laste installasjonskomponenten
+ Lastingen av ${PACKAGE} mislyktes av ukjente årsaker. Avbryter.
+Description-nl.UTF-8: Laden van de installatiemodule is mislukt
+ Laden van ${PACKAGE} is om onbekende reden mislukt. Installatie wordt afgebroken
+Description-nn.UTF-8: Klarte ikkje laste installsjonskomponent
+ Lastinga av ${PACKAGE} mislukkast av ukjend grunn. Avbryt.
+Description-no.UTF-8: Klarte ikke å laste installasjonskomponenten
+ Lastingen av ${PACKAGE} mislyktes av ukjente årsaker. Avbryter.
+Description-pl.UTF-8: Załadowanie składnika instalatora nie powiodło się
+ Załadowanie ${PACKAGE} nie powiodło się, a przyczyna nie jest znana. Przerywanie.
+Description-pt.UTF-8: Não foi possível carregar componente do instalador
+ A leitura de ${PACKAGE} falhou por razões desconhecidas. Abortando.
+Description-pt_BR.UTF-8: Falha ao carregar componente do instalador
+ Falha ao carregar ${PACKAGE} por razões desconhecidas. Abortando.
+Description-ro.UTF-8: Încărcarea componentei programului de instalare a eșuat
+ Încărcarea ${PACKAGE} a eșuat din motive necunoscute. Se abandonează.
+Description-ru.UTF-8: Не удалось загрузить компонент программы установки
+ Не удалось загрузить ${PACKAGE} по неизвестным причинам. Отмена.
+Description-si.UTF-8: ස්ථාපක සංරචක පූර්ණය අසාර්ථක විය
+ ${PACKAGE} පූර්ණය කිරීම නොදන්නා හේතුවක් නිසා අසාර්ථකයි, පිටවෙමින්.
+Description-sk.UTF-8: Načítanie súčasti inštalačného programu zlyhalo
+ Načítanie ${PACKAGE} zlyhalo z neznámych dôvodov. Akcia sa ruší.
+Description-sl.UTF-8: Nalaganje komponente namestitve ni uspelo
+ Nalaganje ${PACKAGE} ni uspelo iz neznanih razlogov. Prekinjam.
+Description-sq.UTF-8: Dështoi në ngarkimin e përbërësve të instaluesit
+ Ngarkimi i ${PACKAGE} dështoi për arsye të panjohura. Duke anulluar.
+Description-sr.UTF-8: Учитавање компоненте инсталера неуспело
+ Учитавање ${PACKAGE} неуспешно из непознатих разлога. Прекидање.
+Description-sv.UTF-8: Misslyckades med att läsa in installationskomponent
+ Inläsningen av ${PACKAGE} misslyckades av okänd anledning. Avbryter.
+Description-te.UTF-8: స్థాపనవ్యవస్థ అంశమును లోడు చేయుట విఫలమైనది.
+ తెలియని కారణాల వల్ల ${PACKAGE}ను లోడు చేయుట విఫలమైనది. విరమించుచున్నాను.
+Description-tg.UTF-8: Боркунии унсури насбкунанда қатъ шудааст
+ Ба сабаби номаълум боркунии ${PACKAGE} қатъ карда шуд. Қатъ шуда истодааст.
+Description-th.UTF-8: โหลดองค์ประกอบการติดตั้งไม่สำเร็จ
+ โหลด ${PACKAGE} ไม่สำเร็จโดยไม่ทราบสาเหตุ ขอยกเลิก
+Description-tl.UTF-8: Bigo sa pagpasok ng bahagi ng installer
+ Ang pagpasok ng ${PACKAGE} ay nabigo dahil sa hindi kilalang dahilan. Hinihinto ang hakbang na ito.
+Description-tr.UTF-8: Kurulum bileşeni yüklenemedi
+ ${PACKAGE} bileşeni bilinmeyen nedenlerle yüklenemedi.
+Description-ug.UTF-8: ئورنىتىش پروگراممىسىنىڭ بۆلەكلىرىنى يۈكلىيەلمىدى
+ ${PACKAGE}نى  يۈكلەش سەۋەبسىز مەغلۇپ بولدى. توختىتىلدى.
+Description-uk.UTF-8: Не вдалося завантажити компонент встановлювача
+ Не вдалося завантажити ${PACKAGE} з невідомої причини. Дію перервано.
+Description-vi.UTF-8: Lỗi nạp thành phần cài đặt
+ Việc nạp gói ${PACKAGE} bị lỗi vì lý do không rõ nên hủy bỏ.
+Description-zh_CN.UTF-8: 加载安装程序组件失败
+ 未知原因导致组件 ${PACKAGE} 加载失败。程序中止。
+Description-zh_TW.UTF-8: 無法載入安裝程式的元件
+ 因不明原因導致無法載入 ${PACKAGE}。程序中止。
+
+Template: anna/no_kernel_modules
+Type: boolean
+Default: false
+Description: Continue the install without loading kernel modules?
+ No kernel modules were found. This probably is due to a mismatch between
+ the kernel used by this version of the installer and the kernel version
+ available in the archive.
+ .
+ If you're installing from a mirror, you can work around this problem by
+ choosing to install a different version of Debian. The install will probably
+ fail to work if you continue without kernel modules.
+Description-ar.UTF-8: الاستمرار بالتثبيت دون تحميل وحدات النواة؟
+ لم يتم العثور على أي وحدات نواة. هذا على الأرجح بسبب التعارض بين النواة المستخدمة من قبل هذه النسخة من برنامج التثبيت ونسخة النواة المتوفرة في الأرشيف.
+ .
+ إن كنت تقوم بالتثبيت من مرآة، فيمكنك حلّ هذه المشكلة باختيار تثبيت نسخة أخرى من دبيان. سيخفق التثبيت على الأرجح ان استمريت بدون وحدات النواة.
+Description-ast.UTF-8: ¿Deseya continuar l'instalación ensin cargar los módulos del nucleu?
+ Nun s'afayaron módulos del nucleu. Dablemente seya una diferencia ente'l nucleu usáu por esta versión del instalador y el nucleu disponible nel  archivu.
+ .
+ Si tas instalando dende un espeyu, pues evitar esti problema escoyendo instalar una versión diferente de Debian. L'instalador dablemente fallará al trabayar si sigues ensin módulos del kernel.
+Description-be.UTF-8: Працягнуць устаноўку без загрузкі модуляў ядра?
+ Не знойдзена модуляў ядра. Магчыма, версія ядра, якую ўжывае ўсталявальнік, адрозніваецца ад версіяў, даступных з архіву.
+ .
+ Калі Вы ўсталёўваеце сістэму з люстэрка, праблему можна абыйсці, абраўшы усталяванне іншай версіі Debian. Гэтая ўстаноўка наўрадці будзе паспяховай, калі працягнуць яе без модуляў ядра.
+Description-bg.UTF-8: Продължаване без зареждане на модули за ядрото?
+ Не са намерени модули. Вероятно това е поради несъответствие между версията на ядрото, използвано от този инсталатор, и версията, налична в архива.
+ .
+ Ако инсталирате от огледало, можете да заобиколите проблема, като изберете инсталиране на друга версия на Debian. Инсталацията сигурно няма да работи, ако продължите без зареждане на модули на ядрото.
+Description-bo.UTF-8: ནང་སྙིང་གི་དཔེ་དབྱིབས་ཡར་འཇུག་མ་བྱས་པར་སྒྲིག་འཇུག་མུ་མཐུད
+ ནང་སྙིང་མ་རྙེད་པ། རྒྱུ་རྐྱེན་ནི་ཕལ་ཆེར་སྒྲིག་འཇུག་ཆས་འདིས་སྤྱོད་པའི་ནང་སྙིང་གི་པར་གཞི་དང་འཇུག་མཛོད་ནང་ནས་སྤྱོད་རུང་བ་གཉིས་གཅིག་མཚུངས་མིན་པ་རེད
+ .
+ དྲ་གནས་ཞིག་ནས་སྒྲིག་འཇུག་བྱེད་བཞིན་ཡོད་ན་Debian གྱི་པར་གཞི་གཞན་ཞིག་བདམས་ནས་བཟོ་ཐུབ། ནང་སྙིང་མེད་པར་མུ་མཐུད་བཟོས་ན་སྒྲིག་འཇུག་མི་ཐུབ་པའི་ཉེན་ཁ་ཡོད
+Description-bs.UTF-8: Nastaviti instalaciju bez učitavanja kernel modula?
+ Kernel moduli nisu pronađeni. Ovo je vjerovatno zbog neslaganja između kernela koji koristi ova verzija instalera i verzije kernela dostupne u arhivi.
+ .
+ Ako instalirate preko mirrora, možete zaobići ovaj problem odabiranjem instaliranja druge verzije Debiana. Instalacija vjerovatno neće raditi ako nastavite bez kernel modula.
+Description-ca.UTF-8: Voleu continuar sense carregar mòduls del nucli?
+ No s'ha trobat cap mòdul del nucli. És probable que això siga a causa de la no coincidència entre el nucli utilitzat per aquesta versió de l'instal·lador i la versió del nucli disponible a l'arxiu.
+ .
+ Si esteu instal·lant des d'una rèplica, podeu evitar aquest problema seleccionant la instal·lació d'una versió diferent de Debian. És probable que la instal·lació no funcione si continueu sense mòduls del nucli.
+Description-cs.UTF-8: Pokračovat v instalaci bez nahrání modulů jádra?
+ Nebyly nalezeny žádné moduly jádra. Pravděpodobně je to způsobeno rozdílným jádrem používaným touto verzí instalátoru a jádrem dostupným v archivu.
+ .
+ Pokud instalujete ze zrcadla, můžete tento problém obejít instalováním jiné verze Debianu. Pokud budete pokračovat bez modulů jádra, instalace pravděpodobně nebude fungovat.
+Description-cy.UTF-8: Parhau gyda'r sefydliad heb lwytho modiwlau cnewyllyn?
+ Ni chanfuwyd unrhyw fodiwlau cnewyllyn. Mae'n debyg fod hyn oherwydd nad yw fersiwn y cnewyllyn a ddefnyddir gan y fersiwn hyn o'r sefydlydd yn cyfateb a fersiwn y cnewyllyn sydd yn yr archif.
+ .
+ Os ydych chi'n sefydlu o ddrych, gallwch weithio o gwmpas y broblem hon gan ddewis i sefydlu fersiwn gwahanol o Debian. Mae'n debygol bydd y sefydliad yn methu gweithio os ydych chi'n parhau heb fodylau cnewyllyn.
+Description-da.UTF-8: Fortsæt installationen uden at indlæse kernemoduler?
+ Der blev ikke fundet nogen kernemoduler. Det skyldes sandsynligvis at den kerneversion, der benyttes af denne version af installationsprogrammet ikke passer til de kerneversioner, der er tilgængelige i arkivet.
+ .
+ Hvis du installerer fra et filspejl, kan du omgå dette problem ved at vælge at installere en anden Debianversion. Installationen vil sandsynligvis ikke komme til at fungere hvis du fortsætter uden kernemodulerne.
+Description-de.UTF-8: Installation ohne Kernel-Module fortsetzen?
+ Es wurden keine Kernel-Module gefunden. Dies liegt vermutlich an einem Unterschied zwischen dem hier verwendeten Kernel des Installers und dem Kernel, der im Debian-Archiv verfügbar ist.
+ .
+ Wenn Sie von einem Spiegelserver installieren, können Sie dieses Problem umgehen, indem Sie eine andere Version von Debian installieren. Die Installation wird vermutlich fehlschlagen, wenn Sie ohne Kernel-Module fortfahren.
+Description-el.UTF-8: Να συνεχιστεί η εγκατάσταση χωρίς τη φόρτωση των αρθρωμάτων του πυρήνα;
+ Δε βρέθηκαν αρθρώματα του πυρήνα. Αυτό πιθανόν να συμβαίνει λόγω ασυμφωνίας της έκδοσης του πυρήνα που χρησιμοποιείται για την εγκατάσταση και της έκδοσης που βρίσκεται στην αρχειοθήκη του Debian.
+ .
+ Αν κάνετε την εγκατάσταση από κάποιον καθρέφτη αρχείων, μπορείτε το ξεπεράσετε το πρόβλημα δοκιμάζοντας να εγκαταστήσετε διαφορετική έκδοση του Debian. Η εγκατάσταση πιθανότατα θα αποτύχει αν συνεχίσετε χωρίς αρθρώματα του πυρήνα.
+Description-eo.UTF-8: Ĉu oni daŭrigu la instalprocezon sen ŝargi je kernaj moduloj?
+ Neniu kerna modulo estis trovita. Verŝajne, la kerna versio uzata de la instalilo malkongruas al tiu, kiu disponeblas en la arkivo.
+ .
+ Se vi instalas uzante Debianan arkivspegulservilon (arkivŝutspegulon), vi povas ĉirkaŭiri la problemon per instalo de alia Debiana versio. La instalprocezo verŝajne fiaskos, se vi daŭrigos la procezon sen kernaj moduloj.
+Description-es.UTF-8: ¿Desea continuar la instalación sin cargar módulos del núcleo?
+ No se han encontrado módulos del núcleo. Ésto probablemente se debe a una diferencia de versión entre el núcleo utilizado por el instalador y el núcleo disponible en el archivo.
+ .
+ Puede resolver este problema seleccionando una versión de Debian distinta para instalar si está instalando de una réplica. La instalación probablemente fallará si continúa sin módulos del núcleo.
+Description-et.UTF-8: Kas jätkata paigaldamist ilma kerneli mooduleid laadimata?
+ Ühtki kerneli moodulit ei leitud. Tõenäoliselt on probleem selles, et paigaldaja kasutab ühte kerneli versiooni, aga arhiivis on saadaval mõni teine kerneli versioon.
+ .
+ Kui sa paigaldad peeglist, võid valida paigaldamiseks teise Debiani versiooni ja nii probleemist mööda hiilida. Kui proovid jätkata ilma kerneli mooduliteta, siis paigaldamine tõenäoliselt nurjub.
+Description-eu.UTF-8: Instalatzen jarraitu nahi duzu nukleo moduluak kargatu gabe?
+ Ez da nukleoaren modulurik aurkitu. Instalatzailearen bertsio honek erabilitako nukleoa eta fitxategian erabilgarri dagoen nukleoaren bertsioa bat ez datozelako izango da ziurrenik.
+ .
+ Ispilu batetik instalatzen ari bazara, arazo horri ekiteko Debian-en beste bertsio bat instalatzea hauta dezakezu. Instalazioak ziurrenik ez du funtzionatuko nukleoaren modulurik gabe jarraitzen baduzu.
+Description-fa.UTF-8: نصب بدون بارگذاری ماژول‌های هسته ادامه یابد؟
+ هیچ ماژول هسته‌ای یافت نشد. احتمالاً به علت نبود تناسب بین هستهٔ مورد استفادهٔ این نسخه از نصاب و نسخهٔ هستهٔ موجود در بایگانی است.
+ .
+ اگر از آینه‌ها در حال نصب کردن هستید، می‌توانید با انتخاب نصب نسخهٔ دیگری از دبیان از کنار این مشکل بگذرید. اگر بدون ماژول‌های هسته ادامه دهید، نصب احتمالاً با شکست مواجه خواهد شد.
+Description-fi.UTF-8: Jatketaanko asennusta lataamatta ytimen moduuleita?
+ Ytimen moduuleita ei löytynyt. Luultavasti tämän asentimen käyttämä ydin on eri versio kuin pakettivarastosta löytyvä.
+ .
+ Palvelimelta asennettaessa tämä ongelma voidaan kiertää valitsemalla asennettavaksi toinen Debianin versio. Asennus luultavasti epäonnistuu, jos jatkat asennusta ilman ytimen moduuleita.
+Description-fr.UTF-8: Faut-il poursuivre l'installation sans charger les modules du noyau ?
+ Aucun module du noyau n'a été trouvé. La version du noyau utilisée par le programme d'installation est sans doute différente de celle présente dans l'archive Debian.
+ .
+ Si vous effectuez l'installation en utilisant un miroir de l'archive Debian, vous pouvez contourner ce problème en installant une autre version de Debian. L'installation échouera probablement si vous poursuivez sans charger les modules du noyau.
+Description-ga.UTF-8: Lean ar aghaidh leis an tsuiteáil gan na modúil eithne a luchtú?
+ Níor aimsíodh aon mhodúil eithne. Is dócha nach raibh an eithne a úsáideann an leagan seo den suiteálaí comhoiriúnach leis an eithne atá ar fáil sa chartlann.
+ .
+ Má tá tú ag suiteáil ó shuíomh scáthánaithe, is féidir an fhadhb seo a sheachaint trí leagan difriúil de Debian a shuiteáil. Is dócha nach n-éireofar leis an tsuiteáil má théann tú ar aghaidh gan mhodúil eithne.
+Description-gl.UTF-8: Desexa continuar a instalación sen cargar os módulos do núcleo?
+ Non se atoparon os módulos do núcleo. Seguramente se deba a que o núcleo empregado nesta versión do instalador e o núcleo dispoñíbel no arquivo non teñen a mesma versión.
+ .
+ Se está a instalar desde unha réplica, pode evitar este problema instalando unha versión diferente de Debian. A instalación ha fallar con bastante probabilidade se segue sen módulos no núcleo.
+Description-he.UTF-8: להמשיך את ההתקנה בלי לטעון מודולי קרנל?
+ לא נמצאו מודולי קרנל. זאת כנראה בגלל אי תאימות בין הקרנל שנמצא בשימוש על ידי גרסה זו של תוכנית ההתקנה והקרנל שנמצא בארכיון.
+ .
+ אם אתה מתקין מאתר מראה, תוכל לעקוף בעיה זאת על ידי בחירה בהתקנת גרסה אחרת של דביאן. ההתקנה כנראה תיכשל אם תמשיך ללא מודולי קרנל.
+Description-hr.UTF-8: Nastavi instalaciju bez učitavanja modula za kernel?
+ Nema modula za kernel. Razlog tomu je vjerojatno nepodudarnost inačica jezgre koju koristi instalacija i jezgre dostupne u arhivi.
+ .
+ Ako instalirate sa zrcalnog poslužitelja, možete riješiti ovaj problem instalirajući neku drugu inačicu Debiana. Instalacija vjerojatno neće uspjeti ako nastavite bez modula za jezgru.
+Description-hu.UTF-8: Folytatja a telepítést rendszermag modulok betöltése nélkül?
+ A rendszermag modulok hiányoznak. Ezt valószínűleg a telepítő e változatában és az archívumban elérhető rendszermag eltérése okozza.
+ .
+ Ha a telepítés egy tükörről történik, a gond egy másik Debian változat telepítésével megkerülhető. A telepítés valószínűleg sikertelen lesz, ha rendszermag modulok nélkül folytatja.
+Description-hy.UTF-8: Շարունակե՞լ տեղադրումը առանց միջուկի մոդուլների։
+ Կորիզի մոդուլները հայտնաբերված չեն։ Հնարավոր է, որ մոդուլները նախատեսված չեն տեղադրիչի կողմից օգտագործվող կորիզի տերբերակի համար։
+ .
+ Եթե դուք տեղադրումը կատարում եք հայելային սպասարկիչից, ապա դուք կարող եք շրջանցել այս խնդիրը ընտրելով կորիզի այլ տարբերակ։ Առանց կորիզի մոդուլների տեղադրման ընթացքը կարող է անհնարին լինել։
+Description-id.UTF-8: Melanjutkan instalasi tanpa memuat modul-modul kernel?
+ Modul-modul kernel tidak ditemukan. Ini kemungkinan karena perbedaan versi kernel yang digunakan penginstal ini dan versi kernel yang tersedia pada arsip.
+ .
+ Jika Anda memasang dari sebuah mirror, Anda dapat memecahkannya dengan memilih memasang versi Debian yang lain. Pemasangan kemungkinan besar akan gagal bila Anda melanjutkan tanpa memasang modul-modul kernel.
+Description-is.UTF-8: Halda uppsetningu áfram án þess að hlaða inn kjarnaeiningum?
+ Engar kjarnaeiningar fundust. Þetta er líklega vegna mismunar í útgáfu kjarnans sem notaður er af þessari útgáfu uppsetningarkerfisins og kjarnaútgáfunnar sem er í boði.
+ .
+ Ef þú ert að setja upp frá pakkaspegli gætir þú reynt að setja upp aðra útgáfu af Debian. Uppsetningin mun að öllum líkindum mistakast ef þú heldur áfram án þess að hlaða inn kjarnaeiningum.
+Description-it.UTF-8: Continuare l'installazione senza caricare i moduli del kernel?
+ Non è stato trovato alcun modulo del kernel. Probabilmente questo è dovuto a un differenza tra il kernel usato da questa versione del programma d'installazione e la versione del kernel disponibile nell'archivio.
+ .
+ Se si sta installando da un mirror, è possibile aggirare questo problema scegliendo di installare una versione diversa di Debian. L'installazione probabilmente non potrà essere completata se si continua senza i moduli del kernel.
+Description-ja.UTF-8: カーネルモジュールをロードせずにインストールを続けますか?
+ カーネルモジュールが見つかりませんでした。これはおそらく、インストーラのこのバージョンで使っているカーネルと、アーカイブで利用できるカーネルバージョンにミスマッチが起きているためです。
+ .
+ ミラーからインストールしているのであれば、異なる Debian バージョンのインストールを選ぶことで、この問題に対処できます。カーネルモジュールなしに続けると、インストールはおそらく失敗します。
+Description-kk.UTF-8: Жүктеуді ядро модульдерісіз жалғастыру керек пе?
+ Ядро модульдері табылмады. Бұл осы бағдарлама нұсқасында қолданылатын ядро мен архивтегі ядро сәйкес келмегендіктен болуы мүмкін.
+ .
+ Егер сіз орнатуды айнадан жүргізсеңіз, басқа Debian нұсқасын таңдау арқылы мәселені шеше аласыз. Егер орнатуды ядро модульдерісіз жалғастырсаңыз, ол сәтсіз аяқталуы мүмкін.
+Description-kn.UTF-8: ಕರ್ನಲ್ ಘಟಕಗಳನ್ನು ಹೇರದೆಯೇ ಸಂಸ್ಥಾಪನೆ ಮುಂದುವರೆಸುವುದೇ?
+ ಕರ್ನಲ್ ಭಾಗಾಂಶಗಳು ಪತ್ತೆಯಾಗಿಲ್ಲ. ಇದು ಬಹುಶಃ ಸ್ಥಾಪಕ ವ್ಯವಸ್ಥೆಯು ಬಳಸುತ್ತಿರುವ ಕರ್ನಲಿನ ಆವೃತ್ತಿ ಮತ್ತು ಆಗರದಲ್ಲಿರುವ ಕರ್ನಲಿನ ಆವೃತ್ತಿಯ ವ್ಯತ್ಯಾಸದಿಂದಾಗಿರಬಹುದು.
+ .
+ ನೀವು ದರ್ಪಣದಿಂದ ಅನುಸ್ಥಾಪಿಸುತ್ತಿದ್ದಲ್ಲಿ, ಈ ಸಮಸ್ಯೆಯನ್ನು ನಿವಾರಿಸಲು ಬೇರೊಂದು ಡೆಬಿಯನ್ ಆವೃತ್ತಿಯನ್ನು ಅನುಸ್ಥಾಪಿಸಿ. ನೀವು ಕರ್ನಲ್ ಘಟಕಗಳಿಲ್ಲದೆ ಮುಂದುವರೆದರೆ ಬಹುಶಃ ಈ ಅನುಸ್ಥಾಪನೆಯು ವಿಫಲಗೊಳ್ಳಬಹುದು.
+Description-ko.UTF-8: 커널 모듈을 읽어들이지 않고 계속 설치하시겠습니까?
+ 커널 모듈이 없습니다. 설치 프로그램의 버전과 아카이브의 커널 버전이 맞지 않아서 그럴 것입니다.
+ .
+ 미러 사이트에서 설치하시는 거라면, 다른 버전의 데비안을 설치하면 이 문제를 피해갈 수도 있습니다. 커널 모듈 없이 계속하신다면 아마도 설치가 실패할 것입니다.
+Description-ku.UTF-8: Bila sazkirin bêyî barkirina modulên kernelê bidome?
+ Tu modulên kernelê nehatin dîtin. Dibe ku di navbera kernela ku di vê guhertoyê de tê bikaranîn û ya di arşîvê de nelihevkirinek hebe.
+ .
+ Heke tu ji neynikekê sazkirinê dikî, guhertoyeke cuda ya Debian hilbijêre da tu vê pirsgirêkê çareser bikî. Heke bêyî modulên kernelê tu bidomînî, bi gumaneke mezin dê sazkirina te bi ser nekeve.
+Description-lo.UTF-8: ຈະຕິດຕັ້ງຕໍ່ໄປໂດຍບໍ່ໂຫຼດໂມດຸນຂອງເຄວຣ໌ເນລຫຼືບໍ່?
+ ບໍ່ພົບໂມດູນຂອງເຄຣ໌ວເນຣ໌ວ ອາດເປັນເພາະລຸ່ນຂອງເຄຣ໌ວເນຣ໌ວທີ່ໃຊ້ໃນໂປຣແກຣມຕິດຕັ້ງນີ້ ບໍ່ກົງກັບລຸ່ນຂອງເຄຣ໌ວເນຣ໌ວ ທີ່ມີໃນແພັກເກັດ.
+ .
+ ຖ້າເຈົ້າກຳລັງຈະຕິດຕັ້ງຈາກແຫຼ່ງສຳເນົາ ເຈົ້າອາດແກ້ໄຂບັນຫານີ້ຊົ່ວຄາວໂດຍການເລືອກຕິດຕັ້ງເດບຽນລຸ່ນອື່ນ ການຕິດຕັ້ງອາດຈະບໍ່ສຳເລັດຖ້າເຈົ້າພາຍາຍາມເຮັດຕໍ່ໄປ ໂດຍບໍ່ມີໂມດູນເຄຣ໌ວເນຣ໌ວ.
+Description-lt.UTF-8: Ar tęsti diegimą, neįkėlus branduolio modulių?
+ Nerasti branduolio moduliai. Tikriausiai todėl, kad skiriasi šio įdiegiklio naudojamo branduolio ir branduolio, esančio archyve, versijos.
+ .
+ Jei diegiate iš archyvo "veidrodžio", galite apeiti šią problemą pasirinkdami diegimui kitą Debian'o versiją. Diegimas be branduolio modulių greičiausiai baigtųsi nesėkmingai.
+Description-lv.UTF-8: Turpināt instalēšanu, neielādējot kodola moduļus?
+ Kodola moduļi nav atrasti. Iespējamais iemesls ir instalatora izmantotās un arhīvā pieejamās kodola versiju nesakritība.
+ .
+ Ja instalējat no spoguļservera, jūs šo problēmu varat apiet, izvēloties instalēt citu Debian versiju. Ja turpināsiet bez kodola moduļiem, instalēšana visdrīzāk nebūs sekmīga.
+Description-mk.UTF-8: Продолжи со инсталацијата без да ги вчиташ модулите на кернелот?
+ Не најдов кернел модули. Најверојатно тоа е поради неусогласеност на верзиите на кернелот кој го користи оваа верзија на инсталерот со верзијата достапна во архивата.
+ .
+ Ако инсталираш од алтернативен сервер, може да го заобиколиш овој проблем ако одбереш да инсталираш друга верзија на Debian.  Инсталацијата најверојатно нема да работи ако продолжиш без кернел модулите.
+Description-nb.UTF-8: Vil du fortsette installasjonen uten å laste inn kjernemoduler?
+ Fant ingen kjernemoduler. Dette skyldes antakelig at kjerneversjonen som brukes i denne versjonen av installasjonsprogrammet ikke stemmer med versjonen som finnes i arkivet.
+ .
+ Hvis du installerer fra et nett-arkiv kan du komme rundt dette problemet ved å velge å installere en annen Debian-versjon. Installasjonen blir antakelig mislykket hvis du fortsetter uten kjernemoduler.
+Description-nl.UTF-8: Installatie voortzetten zonder de kernelmodules te laden?
+ Er zijn geen kernelmodules gevonden. Dit is waarschijnlijk het gevolg van het niet overeenkomen van de kernelversie van het installatieprogramma en de kernelversie beschikbaar in het archief.
+ .
+ Als u installeert vanaf een spiegelserver, kunt u dit probleem omzeilen door een andere versie van Debian te installeren. De installatie zal waarschijnlijk mislukken als u verder gaat zonder kernelmodules.
+Description-nn.UTF-8: Halde fram installasjonen utan å laste kjernemodular?
+ Ingen kjernemodular blei funne. Dette er truleg på grunn av ulik versjon av kjerna som vert brukt i dette installasjonsprogrammet og kjerna som er tilgjengeleg i arkivet.
+ .
+ Viss du installerer frå eit nettarkiv, kan du omgå dette problemet ved å installere ein anna versjon av Debian. Installasjonen vil truleg ikkje fungera viss du held fram utan kjernemodular.
+Description-no.UTF-8: Vil du fortsette installasjonen uten å laste inn kjernemoduler?
+ Fant ingen kjernemoduler. Dette skyldes antakelig at kjerneversjonen som brukes i denne versjonen av installasjonsprogrammet ikke stemmer med versjonen som finnes i arkivet.
+ .
+ Hvis du installerer fra et nett-arkiv kan du komme rundt dette problemet ved å velge å installere en annen Debian-versjon. Installasjonen blir antakelig mislykket hvis du fortsetter uten kjernemoduler.
+Description-pl.UTF-8: Kontynuować instalację bez ładowania modułów jądra?
+ Nie znaleziono modułów jądra. Prawdopodobnie z powodu niezgadzających się wersji jądra używanego przez instalator i tego znajdującego się w archiwum.
+ .
+ Jeśli instalujesz korzystając z serwera lustrzanego, możesz obejść ten problem wybierając instalację innej wersji Debiana. Instalacja bez modułów jądra prawdopodobnie nie powiedzie się.
+Description-pt.UTF-8: Continuar a instalação sem carregar módulos do kernel?
+ Não foram encontrados quaisquer módulos de kernel. Isto provavelmente deve-se a uma diferença entre a versão de kernel utilizado e a versão de kernel disponível no arquivo.
+ .
+ Se está a instalar a partir de um mirror, pode contornar este problema escolhendo instalar uma versão diferente do Debian. A instalação provavelmente não funcionará se continuar sem os módulos do kernel.
+Description-pt_BR.UTF-8: Continuar a instalação sem carregar módulos do kernel?
+ Nenhum módulo de kernel foi encontrado. Provavelmente isso ocorreu devido a uma má combinação entre o kernel usado por esta versão do instalador e a versão do kernel disponível no repositório.
+ .
+ Se você está instalando a partir de um espelho de rede, você pode contornar este problema optando por instalar uma versão diferente do Debian. A instalação provavelmente falhará se você continuar sem módulos de kernel.
+Description-ro.UTF-8: Se continuă instalarea fără a încărca modulele de nucleu?
+ Nu s-a găsit nici un modul de nucleu. Acest lucru se datorează probabil unei nepotriviri dintre nucleul folosit de această versiune a programului de instalare și versiunea de nucleu disponibilă în arhivă.
+ .
+ Dacă instalați de pe un sit alternativ, puteți ocoli această problemă prin instalarea altei versiuni de Debian. Instalarea probabil că va eșua dacă continuați fără module.
+Description-ru.UTF-8: Продолжить установку без загрузки модулей ядра?
+ Модули ядра не найдены. Вероятно, это вызвано тем, что модули архива предназначены не для той версии ядра, которое использует сейчас программа установки.
+ .
+ Если вы производите установку с зеркала, то можете обойти эту проблему, выбрав для установки другую версию Debian. Без модулей ядра продолжение установки может оказаться невозможным.
+Description-si.UTF-8: කර්නල මොඩියුල පූර්ණයෙන් තොරව ස්ථාපනය ඉදිරියට ගෙනයන්නද?
+ කිසිඳු කර්නල මොඩියුලයක් හමු නොවිනි. එය බොහෝවිට මෙම ස්ථාපක සංස්කරණය මගින් භාවිත කරන කර්නල ය හා සංරක්‍ෂකයේ පවතින කර්නල සංස්කරණය නොගැලපීම හේතු විය හැක.
+ .
+ ඔබ පිළිබිඹුවකින් මෙම ස්ථාපනය සිදුකරයි නම්, වෙනත් Debian සංස්කරණයක් තෝරාගැනීම මගින් මෙම ගැටළුව මගහැර යා හැක, ඔක කර්නල මොඩියුලයන්ගෙන් තොරව ඉදිරියට යයි නම් ස්ථාපනය බොහෝවිට අසාර්ථක විය හැක.
+Description-sk.UTF-8: Pokračovať v inštalácii bez načítania modulov jadra?
+ Neboli nájdené žiadne moduly jadra. Je to pravdepodobne kvôli nezhode medzi verziou jadra používaného týmto inštalačným programom a verziou jadra dostupného v archíve.
+ .
+ Ak inštalujete z niektorého zrkadla, tento problém vyriešite zvolením inej verzie Debianu. Inštalácia pravdepodobne zlyhá ak sa rozhodnete pokračovať bez modulov jadra.
+Description-sl.UTF-8: Nadaljujem z namestitvijo ne da bi naložil module jedra?
+ Ni bilo mogoče najti modulov jedra. To je verjetno posledica razlike pri različici jedra, ki je v uporabi v tej različici namestitve in jedra, ki je na voljo v arhivu.
+ .
+ V primeru, da nameščate iz zrcalnega strežnika se lahko izognete temu, tako, da namestite drugo različico Debiana. Namestitev verjetno ne bo uspešna, če se odločite nadaljevati brez modulov za jedro.
+Description-sq.UTF-8: Ta vazhdoj instalimin pa ngarkuar modulet e kernelit?
+ Asnjë modul kerneli nuk u gjet. Kjo ndoshta për shkak të mospërkimit midis versionit të kernelit përdorur nga instaluesi dhe versionit të kernelit që gjendet në arkivë.
+ .
+ Nëse po instalon nga një pasqyrë, mund ta evitosh këtë problem duke zgjedhur instalimin e një versioni tjetër Debian. Instalimi ndoshta do të dështojë nëse vazhdon pa modulet e kernelit.
+Description-sr.UTF-8: Наставити инсталацију без учитавања модула за кернел?
+ Нема модула за кернел. Разлог томе је вероватно неподударност верзија кернела који користи инсталација и кернела доступног у архиви.
+ .
+ Ако инсталирате са мирора, можете заобићи овај проблем тако што ћете изабрати да инсталирате другу верзију Debian-а. Инсталација вероватно неће радити ако наставите без модула за кернел.
+Description-sv.UTF-8: Fortsätt installationen utan att läsa in kärnmoduler?
+ Inga kärnmoduler hittades. Det här beror förmodligen på att installationsprogrammet och Debian-arkivet har olika versioner av kärnan.
+ .
+ Om du installerar från en spegelserver kan du komma runt det här problemet genom att välja att installera en annan version av Debian. Installationen kommer antagligen att misslyckas om du fortsätter utan kärnmoduler.
+Description-te.UTF-8: కెర్నెల్ మాధ్యమాలు లోడు చెయ్యకుండా స్థాపనను కొనసాగించవలెనా?
+ కెర్నెల్  మాడ్యులులు కనబడలేదు. ఈస్థాపన వ్యవస్థ విడుదలలో వున్న కెర్నెల్ సంఖ్యకు, సంగ్రహం లో వున్న కెర్నెల్ విడుదల  సంఖ్యకు తేడా వుండటం వలన  ఇలా జరిగ వుండవచ్చు. 
+ .
+ మిర్రర్ నుండి స్థాపన చేస్తున్నట్లయితే, ఈ సమస్యకి  పరిష్కారంగా, వేరొక డెబియన్ విడుదల సంఖ్యని  స్థాపించవచ్చు. కెర్నెల్  మాడ్యులులు లేకుండా మీరు కొనసాగించినట్లయితే ఈ స్థాపన  బహుశా పనిచేయకపోవచ్చు,
+Description-tg.UTF-8: Насбро бе боркунии модулҳои ҳаста идома медиҳед?
+ Ягон модули ҳаста ёфт нашудааст. Эҳтимол аст, ки ҳастаи истифодашуда дар ин версияи насбкунанда ва версияи ҳастаи дастрас дар бойгонӣ ба ҳамдигар мутобиқат намекунанд.
+ .
+ Агар аз оина насб кунед, метавонед ин мушкилиро тавассути интихоби насби версияи дигари Debian ҳал кунед. Мумкин аст, ки агар шумо бе модулҳои ҳаста идома диҳед, насбкунанда қатъ карда мешавад.
+Description-th.UTF-8: จะติดตั้งต่อไปโดยไม่โหลดมอดูลของเคอร์เนลหรือไม่?
+ ไม่พบมอดูลของเคอร์เนล อาจเป็นเพราะรุ่นของเคอร์เนลที่ใช้ในโปรแกรมติดตั้งนี้ ไม่ตรงกับรุ่นของเคอร์เนลที่มีในแหล่งแพกเกจ
+ .
+ ถ้าคุณกำลังติดตั้งจากแหล่งสำเนา คุณอาจแก้ปัญหานี้ชั่วคราวด้วยการเลือกติดตั้งเดเบียนรุ่นอื่น การติดตั้งอาจล้มเหลวถ้าคุณพยายามทำต่อโดยไม่มีมอดูลของเคอร์เนล
+Description-tl.UTF-8: Ituloy ang pagluklok na hindi ipapasok ang mga module ng kernel?
+ Walang nahanap na mga module ng kernel. Maaaring ito'y dahil sa hindi pagkapareho ng kernel na gamit ng burador ng installer na ito at ng burador ng kernel na makukuha sa arkibo.
+ .
+ Kung kayo'y nagluluklok mula sa mirror, maaari ninyong malipasan ang suliranin na ito sa pamamagitan ng pagpili ng ibang burador ng Debian. Ang pagluklok ay maaaring hindi gumana kapag kayo'y magpatuloy na walang mga module ng kernel.
+Description-tr.UTF-8: Çekirdek modüllerini yüklemeden kuruluma devam edilsin mi?
+ Herhangi bir çekirdek modülü bulunamadı. Bu muhtemelen kurulum programının bu sürümü tarafından kullanılan çekirdekle, arşivde mevcut çekirdek sürümü arasındaki bir uyuşmazlıktan kaynaklanıyor.
+ .
+ Bir yansıdan kurulum yapıyorsanız farklı bir Debian sürümü kurmayı seçerek bu problemi geçici olarak çözebilirsiniz. Çekirdek modülleri olmadan sürdürülen bir kurulum büyük bir olasılıkla başarısız olacaktır.
+Description-ug.UTF-8: يادرو(kernel) بۆلەكلىرىنى يۈكلىمەستىنلا ئورنىتىشنى داۋاملاشتۇرامدۇ؟
+ يادرو(kernel) بۆلەكلىرى تېپىلمىدى. ئورناتقۇنىڭ مەزكۇر نۇسخىسى ئىشلەتكەن يادرولۇق بۆلەك بىلەن ئامباردىكى ئىشلەتكىلى بولىدىغان يادرولۇق بۆلەك نۇسخىسىنىڭ ماس كەلمەسلىكى سەۋەب بولغان بولۇشى مۇمكىن.
+ .
+ ئەگەر تەسۋىردىن چۈشۈرۈپ ئورنىتىۋاتقان بولسىڭىز، بۇ مەسىلىنى Debian نىڭ باشقا نۇسخىلىرىنى ئورنىتىش ئارقىلىق ھەل قىلالىشىڭىز مۇمكىن. ئەگەر يادرولۇق بۆلەكسىز  ئورنىتىشنى داۋام ئەتسىڭىز، ئاقىۋەتتە مەغلۇپ بولۇش ئېھتىماللىقى چوڭ.
+Description-uk.UTF-8: Продовжити встановлення без завантаження модулів ядра?
+ Модулі ядра не знайдені. Можливо, це сталося тому, що версія ядра, що використовується цією версією встановлювача, не збігається із версією, наявною в архіві.
+ .
+ Якщо ви проводите встановлення із дзеркала, то ви можете спробувати вибрати встановлення іншої версії Debian. Встановлення, скоріше за все, буде невдалим, якщо ви продовжите без модулів ядра.
+Description-vi.UTF-8: Tiếp tục cài đặt mà không nạp những mô-đun hạt nhân không?
+ Không tìm thấy mô-đun hạt nhân nào. Rất có thể do sự xung đột giữa hạt nhân được dùng bởi phiên bản trình cài đặt này và phiên bản hạt nhân có sẵn trong kho.
+ .
+ Nến bạn đang cài đặt từ máy nhân bản (mirror), có thể chỉnh sửa vân đề này bằng cách chọn cài đặt một phiên bản Debian khác. Việc cài đặt này rất có thể sẽ không hoặt động được nếu bạn tiếp tục mà không có những mô-đun hạt nhân.
+Description-zh_CN.UTF-8: 未加载内核模块，继续安装吗？
+ 未找到内核模块。这可能是由于本安装程序所使用的内核版本与网络存档中的内核版本不同造成的。
+ .
+ 如果您正在从镜像进行网络安装，可以选择安装其他版本的 Debian 以解决这个问题。如果您选择不加载内核模块，安装程序可能将无法正常工作。
+Description-zh_TW.UTF-8: 是否不載入 Kernel 模組並繼續進行安裝？
+ 未能找到任何的 Kernel 模組。這很可能是因為安裝程式所使用的 Kernel 版本和檔案來源中所提供的 Kernel 版本不同的緣故。
+ .
+ 如果您是使用鏡像站來進行安裝，您可以選擇安裝另一個版本的 Debian 來避開這個問題。如果您不載入 Kernel 模組並繼續進行可能會導致安裝程式無法正常運作。
+
+Template: anna/retriever
+Type: string
+Description: for internal use only
+ Default retriever
+
+Template: anna/standard_modules
+Type: boolean
+Default: true
+Description: for internal use; can be preseeded
+ Install standard modules?

@@ -1,0 +1,885 @@
+Template: debian-installer/network-preseed/title
+Type: text
+Description: Download debconf preconfiguration file
+Description-ar.UTF-8: تنزيل ملف debconf للتهيئة المسبقة
+Description-ast.UTF-8: Baxando ficheru de preconfiguración debconf
+Description-be.UTF-8: Спампоўка файла папярэдніх наладак debconf
+Description-bg.UTF-8: Изтегляне на файл с предварителни настройки
+Description-bo.UTF-8: debconf་ཡི་གྲ་སྒྲིག་སྒྲིག་འགོད་ཡིག་ཆ་ལེན་འཇུག་བྱེད་པ
+Description-bs.UTF-8: Preuzmi debconf prekonfiguracionu datoteku
+Description-ca.UTF-8: Baixa un fitxer de preconfiguració de debconf
+Description-cs.UTF-8: Stáhnout soubor s přednastavením
+Description-cy.UTF-8: Lawrlwytho ffeil rhag-gyflunio Debconf
+Description-da.UTF-8: Hent debconf-prækonfigurationsfil
+Description-de.UTF-8: Debconf-Vorkonfigurationsdatei herunterladen
+Description-el.UTF-8: Κατεβάστε από το δίκυο το αρχείο προρυθμίσεων debconf
+Description-eo.UTF-8: Elŝuti antaŭagordan 'debconf'-dosieron
+Description-es.UTF-8: Descargando el fichero de preconfiguración de debconf
+Description-et.UTF-8: Debconfi eelseadistusfaili allalaadimine
+Description-eu.UTF-8: Deskargatu debconf aurrekonfigurazioko fitxategia
+Description-fa.UTF-8: پایین گزاری فایل‌های از قیل پیکربندی شده debconf
+Description-fi.UTF-8: Noudetaan debconfin esiasetustiedosto
+Description-fr.UTF-8: Télécharger un fichier de préconfiguration
+Description-ga.UTF-8: Íosluchtaigh an comhad réamhchumraíochta debconf
+Description-gl.UTF-8: Descargar o ficheiro de preconfiguración de debconf
+Description-he.UTF-8: הורדת קובץ הגדרות המוקדמות של debconf
+Description-hr.UTF-8: Skini datoteku s pred-postavkama debconfa
+Description-hu.UTF-8: Debconf előbeállító fájl letöltése
+Description-id.UTF-8: Mengunduh berkas prakonfigurasi debconf
+Description-is.UTF-8: Hala niður debconf foruppsetningarskránni
+Description-it.UTF-8: Scaricare il file di preconfigurazione di debconf
+Description-ja.UTF-8: debconf 事前設定ファイルのダウンロード
+Description-kk.UTF-8: Автоматты түрде баптау debconf файлын алу
+Description-kn.UTF-8: debconf ಕಡತವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿಕೊಳ್ಳಿ
+Description-ko.UTF-8: debconf 미리 설정 파일 다운로드
+Description-ku.UTF-8: Pela pêşveavakirina debconf daxe
+Description-lo.UTF-8: ດາວໂຫລດແຟ້ມຄ່າຕັ້ງລ່ວງໜ້າສຳຫລັບ debconf
+Description-lt.UTF-8: Išankstinės „debconf“ konfigūracijos failo parsiuntimas
+Description-lv.UTF-8: Lejupielādēt debconf prekonfigurācijas datni
+Description-mk.UTF-8: Преземи ја debconf предконфигурациската датотеката
+Description-nb.UTF-8: Last ned fila med forhåndsoppsett for debconf
+Description-nl.UTF-8: Het voorconfiguratie-bestand voor debconf ophalen
+Description-nn.UTF-8: Last ned fila med førehandsoppsett av debconf
+Description-no.UTF-8: Last ned fila med forhåndsoppsett for debconf
+Description-pl.UTF-8: Pobierz wstępny plik debconf
+Description-pt.UTF-8: Fazer o download do ficheiro de pré-configuração debconf
+Description-pt_BR.UTF-8: Baixar arquivo de pré-configuração debconf
+Description-ro.UTF-8: Descarcă fișierul debconf anteconfigurat
+Description-ru.UTF-8: Получение файла автоматической настройки debconf
+Description-se.UTF-8: Viečča debconf-preheivehusfiilla
+Description-si.UTF-8: පෙරසැකසූ debconf ගොනුව ලබාගන්න
+Description-sk.UTF-8: Stiahnutie debconf „preseed“ súboru
+Description-sl.UTF-8: Prenos prednastavljene konfiguracijske datoteko debconf
+Description-sq.UTF-8: Shkarko skedarin e parakonfigurimit debconf
+Description-sr.UTF-8: Преузми „debconf“ преконфигурациони фајл
+Description-sv.UTF-8: Hämta förkonfigureringsfil för debconf
+Description-te.UTF-8: డెబ్కాన్ఫ్ ముందలి అమరిక ఫైలు   డౌన్ లోడ్
+Description-tg.UTF-8: Боргирӣ кардани файли конфигуратсияи пешакии debconf
+Description-th.UTF-8: ดาวน์โหลดแฟ้มค่าตั้งล่วงหน้าสำหรับ debconf
+Description-tl.UTF-8: Kunin ang debconf talaksang preconfiguration
+Description-tr.UTF-8: Debconf önyapılandırma dosyasını indir
+Description-ug.UTF-8: debconf ئالدىن سەپلىمە ھۆججەت چۈشۈر
+Description-uk.UTF-8: Отримати файл передналаштувань debconf
+Description-vi.UTF-8: Tải về tập tin cấu hình sẵn debconf
+Description-zh_CN.UTF-8: 下载 debconf 预配置文件
+Description-zh_TW.UTF-8: 下載 debconf 的預先設定檔
+
+Template: preseed/url
+Type: string
+Description: Location of initial preconfiguration file:
+ In order to perform an automated install, you need to supply a
+ preconfiguration file (which can in turn pull in other files).
+ To do that, you need to provide a (perhaps partial) URL.
+ .
+ This can be as simple as the machine name where your preseed
+ files reside up to a full URL. Any of these could be made to work:
+   intra		[for example.com, these three are equivalent]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ For fully automated installs, preseed/url should itself be preseeded
+ (via kernel command line, DHCP, or syslinux.cfg on customised media)
+ .
+ See http://wiki.debian.org/DebianInstaller/Preseed for inspiration.
+Description-ar.UTF-8: موضع الملف الأولي للتهيئة المسبقة:
+ لإجراء التثبيت التلقائي، تحتاج لتجهيز وتحديد موضعملف تهيئة مسبقة (والذي بدوره يطلب ملفات أخرى). وللقيام بذلك، يجب أن تكتب عنوان URL كامل أو جزئي.
+ .
+ يمكن أن يكون هذا الملف ببساطة عبارة عن اسم الجهاز حيث تحفظ ملفات الإعداد أو عنوان URL كامل لهذا الجهاز:
+   intra		[التابع للعنوان example.com، الثلاثة التالية متشابهة]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ لعمل تثبيت آلي بالكامل، يجب عمل preseed لموضع preseed/url (من خلال موجّه الأوامر، أو DHCP، أو syslinux.cfg أو على موضع مخصّص).
+ .
+ راجع http://wiki.debian.org/DebianInstaller/Preseed للمزيد من المعلومات.
+Description-ast.UTF-8: Llocalización del ficheru de preconfiguración inicial:
+ N'orde a facer una instalación automática, necesites ufrir un ficheru de preconfiguración (col que puedas activar otros ficheros). Pa ello, necesites ufrir una URL (quiciabés parcial).
+ .
+ Esto puede ser un nome de máquina simple onde residan los tos ficheros a URL completa. Cualesquiera d'ellos puede facer el trabayu:
+   intra		[por exemplu, estos tres son equivalentes]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pa una instalación totalmente automática, preséu/url debe ser un preséu (vía llínia de comandu al kernel, DHCP, o syslinux.cfg nun preséu configurable)
+ .
+ Mira http://wiki.debian.org/DebianInstaller/Preseed pa idegues.
+Description-be.UTF-8: Знаходжанне пачатковага файла наладак:
+ Каб правесці аўтаматычнае ўсталяванне, вам трэба ўвесці файл з інструкцыямі ўсталявання (які можа ўтрымліваць спасылкі на іншыя файлы). Для гэтага ўвядзіце (магчыма, частковы) URL.
+ .
+ Можа быць такім жа, як і назва машыны, дзе знаходзяцца preseed файлы. Нешта з наступнага можа быць ужыта:
+   intra		[для example.com 3 прыклады аднолькавыя]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Для аўтаматызаванага ўсталявання preseed/url павінны быць пастаўлены (шляхам каманднага радка ядра, DHCP ці syslinux.cfg на змененым носьбіце)
+ .
+ Глядзі http://wiki.debian.org/DebianInstaller/Preseed для натхнення.
+Description-bg.UTF-8: Местоположение на файла с предварителни настройки:
+ За извършване на автоматична инсталация е необходимо предоставянето на файл с предварителни настройки (който може да съдържа препратки към други файлове). За целта е необходимо да предоставите (вероятно частичен) адрес на файла.
+ .
+ Стойността може да е просто име на машината, на която се съхраняват файловете с настройки, а може и да е пълен адрес. Например:
+   intra		[тези три примера са еквивалентни за example.com]
+   intra.example.com
+   http://intra.example.com/d-i/.lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ За изцяло автоматично инсталиране е необходимо указването на адреса на файла с предварителни настройки (на командния ред на ядрото, чрез DHCP или файла syslinux.cfg на специализиран носител)
+ .
+ Допълнителна информация има на страницата http://wiki.debian.org/DebianInstaller/Preseed .
+Description-bs.UTF-8: Lokacija inicijalnog pretkonfiguracijskog fajla:
+ Da biste izvršili automatizovanu instalaciju, morate imate pretkonfiguracijski fajl (koji može povući druge fajlove). Da biste uradili to, morate unijeti (moguće skraćeni) URL.
+ .
+ Ovo može biti jednostavno poput naziva mašine gdje se nalaze pripremljene datoteke ili popun URL. Bilo koje od sljedećeg može raditi:
+   intra		[za example.com, ova tri su ista]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Za potpuno automatizovane instalacije, datoteke/url trebaju biti pripremljni (putem kernel komandne linije, DHCP ili syslinux.cfg na modifikovanom mediju)
+ .
+ Pogledajte http://wiki.debian.org/DebianInstaller/Preseed za ideje.
+Description-ca.UTF-8: Ubicació del fitxer de preconfiguració inicial:
+ Per portar a terme una instal·lació automatitzada, heu de proveir un fitxer de preconfiguració (que podrà obtenir altres fitxers). Per fer això, haureu de proveir una URL (potser parcial).
+ .
+ Això pot ser tan simple com el nom del servidor on emmagatzemeu els vostres fitxers de preconfiguració, o una URL sencera. Qualsevol dels següents exemples podria funcionar:
+   intra		[per a exemple.cat, aquest tres són equivalents]
+   intra.exemple.cat
+   http://intra.exemple.cat/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~joan/prova47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Per instal·lacions totalment automàtiques, s'hauria de preconfigurar preseed/url (via la línia d'ordres del nucli, DHCP o syslinux.cfg en un medi personalitzat)
+ .
+ Vegeu http://wiki.debian.org/DebianInstaller/Preseed per trobar inspiració.
+Description-cs.UTF-8: Umístění souboru s přednastavením:
+ Abyste mohli spustit automatizovanou instalaci, musíte zadat soubor s přednastavením (který si pak může dotáhnout další soubory se zbytkem přednastavení). Zadejte prosím (částečné) URL k tomuto souboru.
+ .
+ URL může představovat cokoliv od prostého jména počítače, na kterém jsou soubory s přednastavením, až po kompletní adresu. Podle nastavení může fungovat cokoliv z následujícího:
+   intra		[pro example.com jsou tyto tři řádky ekvivalentní]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pro zcela automatizované instalace by mělo být přednastaveno i samotné preseed/url, například přes parametr jádra, DHCP nebo syslinux.cfg na upravených médiích.
+ .
+ Viz příklad na http://wiki.debian.org/DebianInstaller/Preseed.
+Description-cy.UTF-8: Lleoliad ffeil rhag-gyflunio cychwynnol:
+ Er mwyn gwneud sefydliad awtomatig, rhaid i chi roi ffeil rhag-gyflunio (a all yn ei dro, dynnu mewn ffeiliau arall). I wneud hynny, rhaid i chi roi URL (efallai rhan ohono).
+ .
+ Fe alllai fod mor syml a'r enw peiriant lle mae'r ffeiliau cynhedynnu yn byw fyny at URL llawn. Gall unrhyw un o rhain weithio:
+   intra		[ar gyfer example.com, mae'r tri yma yr un fath]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Ar gyfer sefydliad gwbl awtomatig, fe ddylai y url/cynhedynnu fod wedi ei gynhedynnu eu hunan (drwy linell orchymyn cnewyllyn, DHCP, neu syslinux.cfg ar gyfrwng addasiedig)
+ .
+ Gweler http://wiki.debian.org/DebianInstaller/Preseed am ysbrydoliaeth.
+Description-da.UTF-8: Placering for oprindelig prækonfigurationsfil:
+ For at udføre en automatiseret installation, så skal du angive en prækonfigurationsfil (som så kan indlæse andre filer). For at gøre dette, så skal du angive en adresse (måske delvis).
+ .
+ Dette kan være så simpelt som maskinnavnet hvor dine forhåndsudfyldte filer befinder sig til en fuld adresse (URL). Alle disse kan komme til at virke:
+   intra		[for eksempel.dk, er disse tre ens]
+   intra.eksempel.dk
+   http://intra.eksempel.dk/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ For fuldt automatiserede installationer, så skal forhåndsudfyldt fil/adresse selv være forhåndsudfyldt (via kernekommandolinje, DHCP eller syslinux.cfg på et tilpasset medie)
+ .
+ Se http://wiki.debian.org/DebianInstaller/Preseed for inspiration.
+Description-de.UTF-8: Speicherort der ersten Vorkonfigurationsdatei:
+ Um eine automatisierte Installation durchzuführen, müssen Sie eine Vorkonfigurationsdatei bereitstellen (die dann wiederum weitere Dateien integrieren kann). Dazu müssen Sie eine (nicht zwingend vollständige) URL angeben.
+ .
+ Dies kann einfach nur der Rechnername sein, auf dem Ihre Vorkonfigurationsdatei liegt, oder eine vollständige URL. Jede der folgenden Varianten könnte funktionieren:
+   intra		[für example.com, diese ersten drei sind gleichbedeutend]
+   intra.example.com
+   http://intra.example.com/d-i/./squeeze/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Für vollständig automatisierte Installationen sollte auch preseed/url vorkonfiguriert sein (über Kernel-Parameter, DHCP oder, bei selbst angepasstem Installationsmedium, syslinux.cfg).
+ .
+ Auf http://wiki.debian.org/DebianInstaller/Preseed können Sie sich weitere Ideen holen.
+Description-el.UTF-8: Τοποθεσία του αρχικού αρχείου προρυθμίσεων:
+ Για να πραγματοποιήσετε μιαν αυτοματοποιημένη εγκατάσταση, θα πρέπει να δώσετε ένα αρχείο προρυθμίσεων (που με τη σειρά του μπορεί να καλεί άλλα αρχεία). Για να το κάνετε αυτό, θα πρέπει να δώσετε ένα (πιθανόν ατελές) URL.
+ .
+ Αυτό μπορεί να είναι τόσο απλό όσο το όνομα του μηχανήματος στο οποίο βρίσκονται τα αρχεία προρύθμισης ή ένα πλήρες URL. Οποιοδήποτε από τα παρακάτω μπορούν να δουλέψουν:
+   intra		[για το example.com, αυτά τα τρία είναι ισοδύναμα]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Για πλήρως αυτοματοποιημένες εγκαταστάσεις, το preseed/url θα πρέπει το ίδιο να δωθεί από πριν (μέσω της γραμμής εντολών του πυρήνα, DHCP, ή του αρχείου syslinux.cfg σε ένα προσαρμοσμένο από σας μέσο)
+ .
+ Δείτε στο http://wiki.debian.org/DebianInstaller/Preseed για να πάρετε ιδέες.
+Description-eo.UTF-8: Loko de komenca antaŭagorda dosiero:
+ Por fari aŭtomatan instalon, vi devas doni antaŭagordan dosieron (kiu povas siavice tiri aliajn dosierojn). Por fari tion, vi devas enmeti (eble nekompletan) URL.
+ .
+ Tio ĉi povas esti tiel simple kiel ekde la komputil-nomo kie viaj antaŭsemaj dosieroj restas, ĝis kompleta URL. Iu ajn el tiuj devus funkcii:
+   intra		[por ekzemplo.com, tiuj ĉi tri estas egalrezultaj]
+   intra.ekzemplo.com
+   http://intra.ekzemplo.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Por tute aŭtomataj instaloj, antaŭsemo/url devos ĝi mem esti antaŭsemita (per kerna komand-linio, DHCP, aŭ syslinux.cfg en personigita datumarujo)
+ .
+ Rigardu http://wiki.debian.org/DebianInstaller/Preseed por havi inspiron.
+Description-es.UTF-8: Ubicación del archivo inicial de preconfiguración:
+ Para poder realizar una instalación automatizada debe proporcionar un archivo de pre-configuración (que puede a su vez cargar otros archivos). Para hacer esto tiene que proporcionar una URL (quizás parcial).
+ .
+ Esto puede ser tan sencillo como el nombre del equipo donde están los archivos de preconfiguración o bien una URL completa. Cualquiera de los siguientes puede hacerse funcionar:
+    intra\t\t[para ejemplo.com, estas tres son equivalentes]
+    intra.ejemplo.com
+    http://intra.ejemplo.com/d-i/./lenny/preconfig.cfg
+    http://192.168.0.1/~phil/test47.txt
+    floppy://preconfig.cfg
+    file://hd-media/kiosko/./preconfig.cfg
+ .
+ Para realizar instalaciones automáticas, «preseed/url» debería a su vez ser preconfigurado (a través de la línea de órdenes del núcleo, DHCP, o syslinux.cfg en un medio realizado a medida)
+ .
+ Puede obtener inspiración consultando http://wiki.debian.org/DebianInstaller/Preseed
+Description-et.UTF-8: Eelseadistusfaili asukoht:
+ Automaatse paigalduse sooritamiseks pead andma eelseadistusfaili (mis võib kaasa haarata teisi faile). Selle tegemiseks pead andma (võib-olla osalise) URL-i.
+ .
+ See võib olla lihtsalt masina nimi, kus eelkülvi (preseed) failid asuvad või ka täielik URL-aadress. Kõik järgnevad variandid võivad olla õiged:
+   intra		[nt example.com, need kolm on samaväärsed]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Täielikult automaatsete paigalduste jaoks peaks preseed/url ise olema eelkülviga (preseeded) (kerneli käsurealt, DHCP kaudu või kohandatud syslinux.cfg faili kaudu meediumil)
+ .
+ Inspiratsiooni leiad aadressil http://wiki.debian.org/DebianInstaller/Preseed
+Description-eu.UTF-8: Hasiera aurrekonfigurazio fitxategiaren kokapena 
+ Instalazio automatikoa osatu ahal izateko, aurrekonfigurazio fitxategi batez (zein fitxategi ezberdinetan banatu daitezken) hornitu behar duzu. Hau egiteko URL bat (agian partziala) eman behar duzu.
+ .
+ Hau aurrekonfigurazio utzi duzun makinaren izena bezain sinplea edo URL oso bat izan daiteke. Hautetako edozeinek funtzionatzea lortu beharko luke:
+   intra		[adibidea.com-erako, hiru hauek berdinak dira]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Guztiz automatizatutako instalazioentzat, aurrezartze/urlak bere burua aurrezarri behar du (kernel komando lerroa, DHCP edo pertsonalizatutako euskarriko syslinux.cfg bidez).
+ .
+ Begiratu http://wiki.debian.org/DebianInstaller/Preseed inspirazio bila.
+Description-fa.UTF-8: محل فایل initial preconfiguration:
+ به منظور انجام نصب خودکار نیاز دارید تا فایل preconfiguration (می‌تواند به جای آن از چندین فایل استخراج شود)‌ را معرفی کنید. برای این منظور باید یک آدرس URL معرفی نمایید.
+ .
+ این قسمت می تواند به سادگی نام ماشینی باشد که فایل های preseed شما به صورت آدرس کامل URL در دسترس است. هر یک از انواع زیر می‌تواند صحیح باشد:
+   intra		[for example.com, these three are equivalent]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ برای نصب به صورت کاملا خودکار preseed/usl باید be preseed (به وسیله خط فرمان هسته، DHCP، یا syslinux.cfg بر روی رسانه شخصی سازی شده)
+ .
+ برای درک بهتر به آدرس http://wiki.debian.org/DebianInstaller/Preseed مراجعه کنید.
+Description-fi.UTF-8: Alustavan esiasetustiedoston sijainti:
+ Esiasetustiedosto (joka voi puolestaan vetää mukanaan muita tiedostoja) tarvitaan automatisoidun asennuksen suorittamiseen. Määritä tiedosto (mahdollisesti osittaisella) URL-osoitteella.
+ .
+ Tämä voi olla yksinkertaisimmillaan laitteen nimi, jolla preseed-tiedostot sijaitsevat, tai vaihtoehtoisesti täysi URL-osoite. Mikä tahansa näistä voi olla toimiva:
+   intra		[esimerkki.com:lle nämä kolme ovat samanveroisia]
+   intra.esimerkki.com
+   http://intra.esimerkki.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Täysin automaattisia asennuksia varten preseed/url itse tulisi myös olla preseed-luettelossa (joko ytimen komentorivillä, DHCP:llä, tai syslinux.cfg:ssä mukautetulla medialla)
+ .
+ Lue sivulta http://wiki.debian.org/DebianInstaller/Preseed lisätietoja.
+Description-fr.UTF-8: Emplacement du fichier initial de préconfiguration :
+ Afin d'effectuer une installation automatisée, il est nécessaire d'indiquer un fichier de préconfiguration (qui peut lui-même faire référence à d'autres fichiers). Pour cela, veuillez indiquer une URL (éventuellement partielle).
+ .
+ Cela peut aller du simple nom d'une machine qui héberge les fichiers de préconfiguration jusqu'à une URL complète. Par exemple :
+   intra		[pour example.com, les trois sont équivalents]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pour une installation totalement automatisée, la valeur preseed/url peut elle-même être préconfigurée (à la ligne de commande du noyau, par le DHCP ou syslinux.cfg sur un support personnalisé).
+ .
+ Vous pouvez consulter http://wiki.debian.org/DebianInstaller/Preseed pour vous inspirer d'exemples.
+Description-ga.UTF-8: Suíomh an chomhaid réamhchumraíochta:
+ Chun suiteáil uathoibríoch a dhéanamh, caithfidh tú comhad réamhchumraíochta a sholáthar (atá ábalta comhaid eile a tharraingt isteach). Chun é seo a dhéanamh, tabhair uait URL (b'fhéidir URL neamhiomlán).
+ .
+ Is féidir rud simplí a thabhairt, mar shampla an ríomhaire ar a bhfuil do chomhaid réamhshíolaithe, nó rud níos casta, mar shampla URL iomlán. Samplaí eile:
+   intra		[ar sampla.com, is ionann na trí cinn seo]
+   intra.sampla.com
+   http://intra.sampla.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Chun suiteáil uathoibríoch a dhéanamh, ba chóir don chomhad ríomhshíolaithe féin a bheith réamhshíolaithe (ar líne na n-orduithe Linux, trí DHCP, nó syslinux.cfg ar mheán saincheaptha)
+ .
+ Féach http://wiki.debian.org/DebianInstaller/Preseed.
+Description-gl.UTF-8: Localización do ficheiro de preconfiguración inicial:
+ Para poder realizar unha instalación automatizada, necesita fornecer un ficheiro de preconfiguración (que á súa vez pode precisar de outros ficheiros). Para iso, debe fornecer unha URL (posiblemente parcial).
+ .
+ Isto pode ser tan sinxelo como o nome da máquina onde os residen os seus ficheiros preparados, ata unha URL completa. Calquera dos seguintes poderían facerse funcionar:
+  intra		[para exemplo.com, estes tres son equivalentes]
+  intra.exemplo.com
+  http://intra.exemplo.com/d-i/.lenny/preseed.cfg
+  http://192.168.0.1/~phil/test47.txt
+  floppy://preseed.cfg
+  file:///hd-media/kiosk/./preseed.cfg
+ .
+ Para unha instalación automatizada por completo, a url do ficheiro de preconfiguración debe ser él mesmo preconfigurado (usando a liña de comando do núcleo, «DHCP», ou o ficheiro «syslinux.cfg» en un medio personalizado).
+ .
+ Consulte http://wiki.debian.org/DebianInstaller/Preseed para inspirarse.
+Description-he.UTF-8: מיקום של קובץ קדם הגדרות התחלתי:
+ כדי לבצע התקנה אוטומטית, עליך לספק קובץ קדם הגדרות (שיכול לכלול קבצים אחרים). כדי לעשות זאת, עליך לספק URL (שיכול להיות חלקי).
+ .
+ זה יכול להיות פשוט כמו שם המכונה שבה קבצי הזרע שלך נמצאים ועד ל-URL מלא. כל אחד מהבאים יכול לעבוד: [שלוש האפשרויות להלן שוות ערך עבור example.com]  intra
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ להתקנות אוטומטיות לגמרי, קבצי זרע/קישור אמורים להיות בעצמם מוזרעים (ע"י שורת פקודה לליבה, DHCP, או syslinux.cfg על מדיה בהתאמה אישית)
+ .
+ ראו את http://wiki.debian.org/DebianInstaller/Preseed עבור השראה.
+Description-hr.UTF-8: Položaj datoteke s inicijalnim pred-postavkama:
+ Kako biste izvršili automatsku instalaciju, morate navesti datoteku s pred-postavkama (koja može 'povući' ostale datoteke). Da biste to napravili, morate navesti (barem djelomični) URL.
+ .
+ Ovo može biti od jednostavnog imena računala gdje se nalaze datoteke sve do potpunog URL-a. Sve navedeno je ispravno:
+   intra		[za primjer.com, ova tri su jednaka]
+   intra.primjer.com
+   http://intra.primjer.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~filip/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Za potpuno automatizirane instalacije, preseed/url bi trebao biti prethodno naveden (preko naredbenog retka jezgre, DHCP-om ili u syslinux.cfg na prilagođenom mediju)
+ .
+ Pogledajte http://wiki.debian.org/DebianInstaller/Preseed za inspiraciju.
+Description-hu.UTF-8: Indító előbeállító fájl helye:
+ Teljesen önműködő telepítéshez szükséges egy előbeállító fájl (mely képes majd behúzni más fájlokat). Ehhez egy (talán részleges) URL-t kell megadni.
+ .
+ Ez egy egyszerű gépnévtől egy teljes URL megadásig bármi lehet. Bármi hasonló működhet:
+   intra		[egy example.com esetén e 3 ugyanaz]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Egy teljesen önműködővé tett telepítéshez maga a preseed/url is előírt kell legyen (kernel parancssor, DHCP vagy syslinux.cfg egy testreszabott médiumon)
+ .
+ Lásd a http://wiki.debian.org/DebianInstaller/Preseed oldalt tippekért.
+Description-id.UTF-8: Lokasi dari berkas preconfiguration
+ Dalam rangka untuk melakukan instalasi otomatis, Anda harus menyediakan file preconfiguration (yang pada gilirannya dapat menarik file lain) Untuk melakukan itu, Anda perlu menyediakan URL (mungkin parsial)..
+ .
+ Hal ini akam mudah seperti nama mesin dimana berkas preseed berada dengan URL lengkap. Semua ini bisa dibuat untuk bekerja:
+  intra		[untuk example.com, ketiganya adalah setara]
+  intra.example.com
+  http://intra.example.com/d-i/./lenny/preseed.cfg
+  http://192.168.0.1/~phil/test47.txt
+  floppy://preseed.cfg
+  file:///hd-media/kiosk/./preseed.cfg
+ .
+ Untuk menginstall sepenuhnya otomatis, Preseed/url itu sendiri akan di preseeded (melalui baris perintah kernel, DHCP, atau syslinux.cfg pada media yang disesuaikan)
+ .
+ Lihat http://wiki.debian.org/DebianInstaller/Preseed untuk inspirasi
+Description-is.UTF-8: Staðsetning á foruppsetningarskránni:
+ Til að framkvæma sjálfvirka uppsetningu verðurðu að tilgreina foruppsetningarskrá (sem aftur lætur ná í aðrar skrár). Til þessa þarftu að tilgreina slóð (hugsanlega hluta af slóð).
+ .
+ Þetta getur verið jafn einfalt og að vera heiti vélarinnar þar sem foruppsetningarskrárnar eru geymdar upp í að vera heil slóð/URL. Hver og ein þessara ætti að duga:
+   intra		[fyrir example.com eru þessar þrjár jafngildar]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Við alsjálfvirkar uppsetningar, preseed/url ætti sjálft að vera forskeytt/preseeded (með skipanalínu kjarnans/kernel, DHCP, eða syslinux.cfg á sérsniðnum miðlum)
+ .
+ Skoðaðu http://wiki.debian.org/DebianInstaller/Preseed til að fá hugmyndir.
+Description-it.UTF-8: Posizione del file di preconfigurazione iniziale:
+ Per poter effettuare un'installazione automatica è necessario fornire un file di preconfigurazione (che può a sua volta utilizzare altri file). Per fare ciò è necessario fornire un URL (anche parziale).
+ .
+ Questo può essere il nome del computer dove sono presenti i file di preseed o un URL completo. Uno qualsiasi di quelli che segue dovrebbe essere sufficiente:
+   intra		[per example.com, i seguenti tre sono equivalenti]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~mario/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Per installazioni completamente automatiche, preseed/url dovrebbe essere in preseed (attraverso la riga di comando del kernel, DHCP o syslinux.cfg su supporti personalizzati)
+ .
+ Per maggiori informazioni, consultare http://wiki.debian.org/DebianInstaller/Preseed
+Description-ja.UTF-8: 初期事前設定ファイルの場所:
+ 自動的なインストールを行うために、事前設定ファイルを提供しなければなりません (他のファイルを引き出すことができます)。これを行うために、(おそらく部分的な) URL を提供する必要があります。
+ .
+ preseed ファイルを完全な URL に属させるのは、マシン名と同じくらい単純です。以下のいずれも動作します:
+   intra		[example.com用, 以下の3つと等価]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ 完全な自動インストールのためには、preseed/url それ自身を (カーネルコマンドライン、DHCP あるいはカスタマイズしたメディアの syslinux.cfg などを経由して) 事前設定させる必要があります。
+ .
+ アイデアについては、http://wiki.debian.org/DebianInstaller/Preseed を参照してください。
+Description-kk.UTF-8: Бастапқы баптаулар файлының орналасуы:
+ Автоматты орнатуды іске асыру үшін, сізге автобаптау файлын қосып жіберу керек (ол файлда басқа файлдар қалай алынатыны беріле алады). Ондайды жасау үшін, сізге (жартылай болса да) сілтемені (URL) көрсету керек.
+ .
+ Ол болса, орналасқан машина аты мен файл атынан тұратын, толық сілтемені жасайтындай құрастырылады. Келесі мысалдар дұрыс сілтемені көрсетеді
+   intra		[example.com үшін, бұл үштік бірдей]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Толығымен автоорнатулар үшін, preseed/url сілтемесі параметр ретінде берілуі керек (ядрның командалық жолында, DHCP, syslinux.cfg не бапталған тасушыда)
+ .
+ Көбірек білу үшін http://wiki.debian.org/DebianInstaller/Preseed қараңыз.
+Description-kn.UTF-8: ಮೊದಲ ಪೂರ್ವಸಂಯೋಜನಾ ಕಡತದ ಸ್ಥಳ:
+ ಸ್ವಯಂಚಾಲಿತ ಅನುಸ್ಥಾಪನೆಯನ್ನು ಮಾಡಲೋಸುಗ ನೀವೊಂದು ಪೂರ್ವಸಂಯೋಜನಾ ಕಡತವನ್ನು ಒದಗಿಸಬೇಕು(ಯಾವುದು ಇನ್ನಿತರೆ ಕಡತಗಳನ್ನು ಒಳಕ್ಕೆ ಸೆಳೆದುಕೊಳ್ಳಬಹುದೊ). ಅದನ್ನು ಮಾಡಲು ನೀವೊಂದು (ಬಹುಶಃ ಅಪೂರ್ಣ) URLಅನ್ನು ಒದಗಿಸಬೇಕು.
+ .
+ ಇದು ನಿಮ್ಮ ಗಣಕದ ಹೆಸರಿನಷ್ಟೆ ಸರಳವಾಗಿರಬಹುದು, ಎಲ್ಲಿ ನಿಮ್ಮ  ಪೂರ್ವನಿಗದಿತ ಕಡತಗಳು ಒಂದು ಪೂರ್ಣ URLನವರೆಗೆ ಇರುತ್ತವೆಯೊ. ಈ ಯಾವುದಾದರೊಂದನ್ನು ಕೆಲಸ ಮಾಡುವಂತೆ ಮಾಡಬಹುದು:
+   intra		[example.comಗೆ, ಈ ಮೂರು ಸಮನಾಗಿವೆ]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ ಸಂಪೂರ್ಣ ಸ್ವಯಂಚಾಲಿತ ಅನುಸ್ಥಾಪನೆಗಳಿಗಾಗಿ preseed/urlಅನ್ನು ಸ್ವತಃ ಪೂರ್ವನಿರ್ಧಾರಿಸಿರಬೇಕು(ಕರ್ನಲ್ ಆಜ್ಞಾ ಸಾಲಿನಿಂದ, DHCP, ಅಥವಾ ವಿಶೇಷ ಮಾಧ್ಯಮದಲ್ಲಿನ syslinux.cfgನಿಂದ)
+ .
+ ಸ್ಪೂರ್ತಿಗಾಗಿ http://wiki.debian.org/DebianInstaller/Preseed ಅನ್ನು ನೋಡಿ.
+Description-ko.UTF-8: 최초의 미리 설정 파일 위치:
+ 자동으로 설치하려면 미리 설정 파일을 하나 지정하면 됩니다. (미리 설정 파일 하나에서 다른 파일을 이용할 수 있습니다.) 미리 설정 파일은 URL을 입력해 지정합니다. (URL이 부분적일 수도 있습니다.) 
+ .
+ 미리 설정 파일이 들어 있는 컴퓨터 이름이 어느 위치냐에 따라 (전체 URL을 쓸 필요가 없는 경우) 간단할 수도 있습니다. 간단한 경우 다음 방식 중의 아무거나 사용해도 동작합니다:
+   intra		[example.com 도메인의 경우, 아래 3개는 동일합니다]
+   intra.example.com
+   http://intra.example.com/d-i/lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://192.168.0.1/~phil/test47.txt
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ 완전 자동 설치를 하려면 preseed/url 값 자체를 미리 설정해야 합니다. 커널 명령행, DHCP 또는 특별히 제작한 미디어의 syslinux.cfg 파일에서 설정합니다.
+ .
+ 자세한 설명은 http://wiki.debian.org/DebianInstaller/Preseed 페이지를 보십시오.
+Description-lo.UTF-8: ສະຖານທີຕັ້ງຂອງໄຟລ໌ກຳໜົດຄ່າຄອນຟິກ່ວງໜ້າເລີ່ມຕົ້ນ:
+ ເພື່ອທີ່ຈະທຳການຕິດຕັ້ງໂດຍອັດຕະໂນມັດທ່ານຈະຕ້ອງຈັດຫາໄຟລ໌ກຳນົດຄ່າຄອນຟິກລວງໜ້າ ( ຊຶ່ງສາມາດເປີດໃນການດຶງໄຟລ໌ອື່ນໆ ) ຕ້ອງການເຮັດເຊັ່ນນັ້ນທ່ານຈຳຕ້ອງໃຫ້  URL ທີ່ ( ບາງສ່ວນ )
+ .
+ ນີ້ສາມາດເປັນງ່າຍໆເປັນຊື່ເຄື່ອງທີ່ໄຟລ໌ preseed ຂອງທ່ານຢູ່ໄດ້ເຖິງ URL ແບບເຕັມໃດໆຂອງເຫຼົ່ານີ້ອາດຈະເຮັດໃຫ້ການເຮັດວຽກ: ເເຕ່ລະອັນຈະໃຊ້ໄດ້:
+   intra		[for example.com,3 ເເບບຈະຄືກັນ]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ ສຳລັບການຕິດຕັ້ງອັດຕະໂນມັດໂຕເອງຄວນ preseed / url ຈະ preseeded ( ຜ່ານທາງຄຳສັ່ງຄອນເນລ, DHCP, ຫຼື syslinux.cfg ກ່ຽວກັບການກຳນົດ )
+ .
+ ເບິ່ງ http://wiki.debian.org/DebianInstaller/Preseed ສຳລັບແຮງບັນດານໃຈ
+Description-lt.UTF-8: Išankstinės konfigūracijos failo vieta:
+ Jeigu norite automatizuoti diegimą, turite įdiegyklei pateikti išankstinės konfigūracijos failą (o šis gali įtraukti kitus failus). Kad tai atliktumėte, turite nurodyti (galbūt dalinį) URL.
+ .
+ Tai gali būti tiek kompiuterio, kuriame yra išankstinės konfigūracijos („preseed“) failas, vardas, tiek pilnas URL adresas iki failo. Štai keletas pavyzdžių:
+   intra		[example.com atveju, pirmieji trys pavyzdžiai yra ekvivalentūs]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Norint visiškai automatizuoti diegimą, pats išankstinės konfigūracijos failo URL adresas turėtų būti nurodytas iš anksto (per branduolio komandinę eilutę, DHCP, syslinux.cfg faile, arba naudojant tinkintą įdiegimo laikmeną)
+ .
+ Įkvėpimo galite paieškoti http://wiki.debian.org/DebianInstaller/Preseed adresu.
+Description-lv.UTF-8: Sākotnējās prekonfigurācijas datnes atrašanās vieta:
+ Lai veiktu automātisko instalēšanu, vajadzīga prekonfigurācijas datne (kas var atsaukties uz citām datnēm). Jums būs jānorāda (iespējams, daļējs) URL.
+ .
+ Formāti var būt dažādi, sākot no datora nosaukuma, kur atrodas jūsu iepriekšdotās datnes, līdz pat pilnam URL. Piemēri:
+   intra		[for example.com, these three are equivalent]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pilnīgi automatizētai instalēšanai iepriekšdotajam/URL pašam jābūt iepriekšdotam (ar kodola komandrindu, DHCP vai syslinux.cfg pielāgotā datu nesējā)
+ .
+ Skatiet http://wiki.debian.org/DebianInstaller/Preseed , lai gūtu iedvesmu.
+Description-mk.UTF-8: Локацијата на преконфигурациската датотеката:
+ За да се изврши автоматска инсталација, морате да додадете преконфигурациска датотека (која што може да повлече и други датотеки). За да го направите ова, потребно е да внесете URL.
+ .
+ Ова може да биде едноставно како на пр. името на машината каде што се наоѓаат твоите pressed датотеки или пак целосно URL. Може да се искористи било кој од примерите:
+   intra		[for example.com, овие три се исти]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ За автоматизирана инсталација preseed/url треба да е preseeded (преку кернел опција, DHCP или syslinux.cfg на прилагодениот медиум)
+ .
+ За инспирација посети го: http://wiki.debian.org/DebianInstaller/Preseed
+Description-nb.UTF-8: Plasseringen av den initielle fila med forhåndsoppsett:
+ For å utføre en automatisert installasjon, må du oppgi en fil med forhåndsoppsett (som i sin tur kan trekke inn andre filer). Du må oppgi en (kanskje delvis) nettadresse for å gjøre dette.
+ .
+ Dette kan være så enkelt som navnet på maskinen der dine preseed-filer ligger opp til en fullstendig nettadresse. Alle disse kan fungere:
+   intra         [for example.com er disse tre ekvivalente]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ For fullt ut automatiserte installasjoner, bør preseed/nettadresse selv være preseeded (via kommandolinjen til kjernen, DHCP eller syslinux.cfg på skreddersydde medier)
+ .
+ Se http://wiki.debian.org/DebianInstaller/Preseed for inspirasjon.
+Description-nl.UTF-8: Lokatie van het eerste voorconfiguratiebestand:
+ Om een geautomatiseerde installatie uit te voeren moet u een voorconfiguratiebestand opgeven (die vervolgens andere bestanden kan binnenhalen). Dit doet u door middel van een (wellicht gedeeltelijke) URL.
+ .
+ Dit kan variëren van simpelweg de computernaam waar de voorconfiguratiebestanden zich bevinden tot een volledige URL. Al deze voorbeelden zouden kunnen werken:
+   intra		[voor example.com zijn deze drie equivalent]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Voor volledige geautomatiseerde installatie moet u preseed/url zelf voorconfigureren (via de commandoregel van de kernel, DHCP of syslinux.cfg op een aangepast medium)
+ .
+ Zie http://wiki.debian.org/DebianInstaller/Preseed voor inspiratie.
+Description-no.UTF-8: Plasseringen av den initielle fila med forhåndsoppsett:
+ For å utføre en automatisert installasjon, må du oppgi en fil med forhåndsoppsett (som i sin tur kan trekke inn andre filer). Du må oppgi en (kanskje delvis) nettadresse for å gjøre dette.
+ .
+ Dette kan være så enkelt som navnet på maskinen der dine preseed-filer ligger opp til en fullstendig nettadresse. Alle disse kan fungere:
+   intra         [for example.com er disse tre ekvivalente]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ For fullt ut automatiserte installasjoner, bør preseed/nettadresse selv være preseeded (via kommandolinjen til kjernen, DHCP eller syslinux.cfg på skreddersydde medier)
+ .
+ Se http://wiki.debian.org/DebianInstaller/Preseed for inspirasjon.
+Description-pl.UTF-8: Lokalizacja wstępnego pliku prekonfiguracji:
+ Aby przeprowadzić instalację automatyczną, należy dostarczyć plik prekonfiguracji (który może z kolei odwoływać się do innych plików). W tym celu należy podać (być może częściowy) URL.
+ .
+ W najprostszym przypadku jest to nazwa maszyny na której znajdują się pliki prekonfiguracji, a w bardziej złożonym - pełny URL. Oto kilka przykładów:
+   intra		[w domenie przyklad.com, następujące są równoważne]
+   intra.przyklad.com
+   http://intra.przyklad.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ W pełni automatycznych instalacjach wartość preseed/url także powinna być dostarczona wcześniej (przez linię polecenia jądra, DHCP lub syslinux.cfg na przerobionym nośniku)
+ .
+ Przykłady dostępne są na http://wiki.debian.org/DebianInstaller/Preseed.
+Description-pt.UTF-8: Localização do ficheiro de pré-configuração inicial:
+ De modo a fazer uma instalação automatizada, tem de fornecer um ficheiro de preconfiguração (que por sua vez pode obter outros ficheiros). Para fazer isso, tem de indicar um URL (talvez parcial).
+ .
+ Isto pode ser tão simples como o nome da máquina onde os seus ficheiros de preseed se encontram ou até um URL completo. Qualquer um destes pode funcionar:
+   intra		[para exemplo.com, estes três são equivalentes]
+   intra.exemplo.com
+   http://intra.exemplo.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Para instalações totalmente automatizadas, dever ser feiro preseed ao próprio  preseed/url (através da linha de comandos do kernel, DHCP ou syslinux.cfg em media personalizada).
+ .
+ Para inspiração veja http://wiki.debian.org/DebianInstaller/Preseed.
+Description-pt_BR.UTF-8: Localização do arquivo inicial de pré-configuração:
+ Para realizar uma instalação automatizada, você precisa fornecer um arquivo de pré-configuração (que pode carregar outros arquivos). Para tanto, você precisa fornecer uma URL (talvez parcial).
+ .
+ Isto pode ser tão simples quanto o nome da máquina onde seus arquivos de pré-configuração estão guardados até uma URL completa. Qualquer um dos itens listados poderia funcionar:
+   intra		[para example.com, estes três são equivalentes]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Para instalações totalmente automatizadas, o próprio valor de "preseed/url" deverá ser pré-configurado (via linha de comando do kernel, DHCP ou um arquivo syslinux.cfg em uma mídia personalizada)
+ .
+ Veja http://wiki.debian.org/DebianInstaller/Preseed para inspiração.
+Description-ro.UTF-8: Locația fișierului cu preconfigurații:
+ Pentru a putea executa o instalare automată trebuie să furnizați un fișier de preconfigurare (care poate aduce și alte fișiere). Pentru acest lucru trebuie să indicați un URL (eventual parțial).
+ .
+ Acesta poate fi doar numele sistemului unde se află fișierul de preconfigurare sau un URL complet. Oricare dintre acestea poate fi făcut să funcționeze:
+   intra		[pentru example.com, acestea trei sunt echivalente]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pentru instalări complet automate, preseed/url ar trebui preconfigurat (prin intermediul liniei de comandă pentru nucleu, DHCP sau syslinux.cfg pe medii modificate)
+ .
+ Vedeți http://wiki.debian.org/DebianInstaller/Preseed pentru inspirație.
+Description-ru.UTF-8: Расположение первичного файла для автоматической настройки:
+ Для выполнения автоматической установки вам нужно создать файл предварительной настройки (который, в свою очередь, может указывать на другие файлы). Для этого вам нужно указать URL (возможно только часть).
+ .
+ Это может быть как просто имя машины, на котором располагаются файл автоматической установки, так и полный. Любой формат будет работать:
+   intra		[для example.com, есть три эквивалентных варианта]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Для полностью автоматической установки сам preseed/url тоже может быть указан в командной строке ядра, DHCP или в syslinux.cfg на собранном самостоятельно носителе
+ .
+ См. http://wiki.debian.org/DebianInstaller/Preseed.
+Description-si.UTF-8: ආරම්භක පෙරසැකසුම් ගොනුව සඳහා ස්ථානය:
+ ස්යවංක්‍රීය ස්ථාපනයක් ඉටුකිරීම සඳහා, ඔබට පෙරසැකසුම් ගොනුවක් සැපයීමට (වෙනත් ගොනු ඇදගත හැකි)ස සිදුවේ. එය සිදුකිරීමට ඔබ URL ලිපිනයක් (කොටසක් හෝ) ලබාදිය යුතුයි.
+ .
+ එය සම්පූර්ණ URL ලෙස යෙදූ පරිගණක නමක් ලෙස සරල විය හැක පහත ඕනෑම එකක් ක්‍රියාකරවිය හැක:
+   intra		[example.com සඳහා, මේ ත්‍රිත්වය අත්‍යාවශ්‍යයි]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ සම්පූර්ණ ස්වයංක්‍රීය ස්ථාපනයක් සඳහා, preseed/url යෙදිය යුතුයි (කර්නල විධාන රේඛාව, DHCP, හෝ වෙනස්කල මාධ්‍ය මත syslinux.cfg මගින්)
+ .
+ තොරතුරු සඳහා http://wiki.debian.org/DebianInstaller/Preseed බලන්න.
+Description-sk.UTF-8: Umiestnenie konfiguračného súboru inštalátora:
+ Ak chcete vykonať automatizovanú inštaláciu, budete musieť dodať konfiguračný súbor inštalátora (ktorý môže stiahnuť ďalšie súbory). Ak to chcete urobiť, musíte poskytnúť URL (prípadne čiastočný URL).
+ .
+ Tento môže byť jednoduchý, ako názov počítača, kde sídlia vaše súbory s konfiguráciou inštalátora alebo to môže byť kompletný URL. Ktorýkoľvek z týchto by mohol fungovať:
+   intra		[v rámci domény example.com sú tieto tri ekvivalentné]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~filip/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Pri plne automatizovaných inštaláciách by mal byť sám konfiguračný súbor inštalátora dodaný v rámci konfigurácie (pomocou príkazového riadka jadra, DHCO alebo syslinux.cfg na vlastných typoch médií)
+ .
+ Inšpirujte sa na http://wiki.debian.org/DebianInstaller/Preseed
+Description-sl.UTF-8: Mesto prednastavljene konfiguracijske datoteke:
+ Za avtomatsko namestitev potrebujete prednastavljeno konfiguracijsko datoteko (ta lahko potem naloži druge datoteke). Za to morate nuditi (verjetno delni) URL.
+ .
+ To je lahko enostavno ime stroja kjer so vaše prednastavljene konfiguracijske datoteke ali pa celoten naslov URL. Vsak od teh lahko deluje:
+   intra		[za example.com, so ti trije enakovredni]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Za popolnoma avtomatsko nastavitev mora biti že sama prednastavljene konfiguracijska datoteka/url prednastavljena (z ukazne vrstice jedra, DHCP ali v datoteki syslinux.cfg na prilagojenem mediju)
+ .
+ Za navdih si oglejte http://wiki.debian.org/DebianInstaller/Preseed.
+Description-sr.UTF-8: Локација иницијалног преконфигурационог фајла:
+ Да бисте извршили аутоматизовену инсталацију, морате да имате преконфигурациони фајл (који може повући и друге фајлове). Да бисте урадили то, морате унети (могуће делимични) URL.
+ .
+ Ово може бити једноставно попут назива машине где се налазе припремљени фајлови или потпун URL. Било шта од следећег се може употребити:
+   intra		[за example.com, ова три су еквивалентна]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ За потпуно аутоматизоване инсталације, datoteke/url требају бити припремљени (путем комадне линије кернела, DHCP или syslinux.cfg прилагођеном медију)
+ .
+ Видите http://wiki.debian.org/DebianInstaller/Preseed за инспирацију.
+Description-sv.UTF-8: Plats för initial förkonfigureringsfil:
+ För att genomföra en automatiserad installation så behöver du ange en förkonfigurationsfil (som i sin tur hämtar in andra filer). För att göra detta så måste du ange en (kanske delvis) URL.
+ .
+ Detta kan vara så enkelt som maskinnamnet där dina förkonfigurationsfiler finns på hela vägen upp till en fullständig URL. Vilket som helst av dessa exempel kan fungera:
+   intra		[för exempel.se, dessa tre är likvärdiga]
+   intra.exempel.se
+   http://intra.exempel.se/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ För helt automatiserade installationer bör själva förkonfigurationen/url vara förkonfigurerad (via kärnans kommandorad, DHCP eller syslinux.cfg på anpassade media)
+ .
+ Se http://wiki.debian.org/DebianInstaller/Preseed för inspiration.
+Description-te.UTF-8: ప్రారంభపు ముందలి అమరిక ఫైలు  స్థానం:
+ స్వయంచాలక స్థాపన చేయాలంటే, ముందలి అమరిక ఫైల్ (దీనిద్వారా ఇతరఫైళ్లను చేర్చవచ్చు) వివరము ప్రవేశపెట్టాలి. దానికొరకు, URL(కనీసం పాక్షిక) ఇవ్వాలి.
+ .
+ ఇది చాలా సులభంగా  ప్రీసీడ్ ఫైళ్లు గల యంత్రం పేరు లేకపూర్తి  URL కావచ్చు. క్రింది వాటిలో ఏదైనా సరిపోతుంది:
+   intra		[ example.com కొరకు, ఈ మూడు సరిసమానం]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ పూర్తి స్వయంచాలక స్థాపన చేయాలంటే,  ప్రీసీడ్/ URL నే ప్రీసీడ్ గా ఇవ్వాలి( కెర్నెల్ ఆదేశవరుస, DHCP, లేక మలచుకున్న మాధ్యమంపై syslinux.cfg)
+ .
+ http://wiki.debian.org/DebianInstaller/Preseed చూడండి స్ఫూర్తి కోసం.
+Description-tg.UTF-8: Ҷойгиршавии файли асосии конфигуратсияи пешакӣ:
+ Барои иҷро кардани насбкунии худкор, шумо бояд файли конфигуратсияи пешакиро муайян кунед (ки дар навбати худ метавонад файлҳои дигарро истифода барад). Барои иҷрои ин амал, шумо бояд Суроғаи URL-ро (эҳтимол аст, ки қисман) пешниҳод кунед.
+ .
+ Ин метавонад ҳамчун номи компютер осон бошад, ки дар он компютер файлҳои худкоршуда то суроғаи пурраи URL ҷойгир мебошанд. Ягонтои зерин метавонад ба кор ояд:
+   intra		[барои example.com, сетои зерин баробар мебошанд]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Барои насбкуниҳои пурра худкоршуда, preseed/url бояд худаш худкор шавад (тавассути сатри фармони мағзӣ, DHCP, ё syslinux.cfg дар захирагоҳи фармоишӣ)
+ .
+ Барои илҳом "http://wiki.debian.org/DebianInstaller/Preseed"-ро бинед.
+Description-th.UTF-8: ตำแหน่งของแฟ้มค่าตั้งล่วงหน้า:
+ เพื่อที่จะดำเนินการติดตั้งแบบอัตโนมัติ คุณต้องกำหนดแฟ้มค่าตั้งล่วงหน้ามาด้วยหนึ่งแฟ้ม (ซึ่งแฟ้มนี้อาจไปดึงแฟ้มอื่นๆ มาเพิ่มอีกก็ได้) การป้อนแฟ้มดังกล่าว คุณต้องระบุเป็น URL (ซึ่งอาจไม่ใช่ URL เต็มก็ได้)
+ .
+ URL อาจอยู่ในรูปง่ายๆ ตั้งแต่แค่ชื่อเครื่องที่เก็บแฟ้มค่าตั้งล่วงหน้า (preseed) ไปจนถึง URL เต็ม URL ในรูปแบบต่อไปนี้สามารถใช้การได้ทั้งหมด:
+   intra		[สำหรับ example.com สามรูปแบบนี้มีค่าเท่ากัน]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ ถ้าจะติดตั้งแบบอัตโนมัติอย่างสมบูรณ์ ตัว URL หรือแฟ้มค่าตั้งล่วงหน้าเองก็ควรถูกตั้งค่าล่วงหน้าไว้ด้วย (โดยผ่านบรรทัดคำสั่งของเคอร์เนล หรือผ่าน DHCP หรือผ่าน syslinux.cfg ในสื่อที่ดัดแปลงเอง)
+ .
+ อ่านรายละเอียดเพิ่มเติมได้ที่ http://wiki.debian.org/DebianInstaller/Preseed
+Description-tr.UTF-8: İlk önyapılandırma dosyasının yeri:
+ Otomatikleştirilmiş kurulum yapmak için bir önyanıt dosyası kullanmanız gerekir (önyanıt dosyası da başka dosyaları kullanabilir).  Önyanıt dosyasının adresini (URL) burada belirtebilirsiniz.
+ .
+ Adresler dosyaların bulunduğu makine adı kadar basit belirtilebildiği gibi dosyaların bulunduğu tam URL kullanılarak da belirtilebilir. Aşağıda bir takım örnekler vardır:  bilgisayarım		[örnek.com için aşağıdakilerin üçü de aynıdır]
+   bilgisayarım.örnek.com
+   http://bilgisayarım.örnek.com/d-i/./lenny/önyanıt.cfg
+   http://192.168.0.1/~osman/test47.txt
+   floppy://önyanıt.cfg
+  (disket için)  file:///hd-media/kiosk/./önyanıt.cfg
+ .
+ Tam otomatik kurulumlar için önyanıt dosyasının adresi de önyanıt şeklinde belirtilmelidir. (çekirdek komut satırı, DHCP ya da özelleştirilmiş bir ortamdaki syslinux.cfg dosyası aracılığıyla)
+ .
+ Bir fikir edinmek için http://wiki.debian.org/DebianInstaller/Preseed sayfasına uğrayın.
+Description-ug.UTF-8: ئالدىن سەپلەنگەن ھۆججەتنىڭ دەسلەپكى ئورنى:
+ ئۆزلۈكىدىن ئورنىتىشنى جەزملەش ئۈچۈن، ئالدىن سەپلەنگەن ھۆججەت(ئۇ باشقا ھۆججەت ئىچىدە بولسىمۇ بولىدۇ)تىن بىرنى تەمىنلىشىڭىز كېرەك. مۇشۇنداق قىلىش ئۈچۈن تور ئادرېسى(URL) دىن بىر(بەلكىم قىسمەن)نى تەمىنلىشىڭىز كېرەك.
+ .
+ بۇ پەقەت سىز ئالدىن سەپلىگەن ئاددىي بولغان ماشىنا ئاتىدىن تەشكىل تاپقان تولۇق URL دۇر. تۆۋەندىكىلەرنىڭ ھەممىسى خىزمەت قىلالايدۇ:
+ intra [example.com ئۈچۈن، ئۇ ئۈچىنىڭ ھەممىسى تەڭداش]
+ intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ تولۇق ئاپتوماتىك ئورنىتىشتا نىسبەتەن، preseed/url ئۆزى ئالدىن سەپلىنىشى كېرەك(يادرو بۇيرۇق قۇرى، DHCP ياكى ئۆزلەشتۈرۈلگەن syslinux.cfg ئارقىلىق)
+ .
+ تەپسىلاتىنى http://wiki.debian.org/DebianInstaller/Preseed نى كۆرۈڭ.
+Description-uk.UTF-8: Місцезнаходження первинного файлу передналаштувань:
+ У випадку здійснення автоматичного встановлення потрібно створити файл передналаштувань (який в свою чергу може посилатись на інші файли). Щоб здійснити це, вкажіть (хоча б частково) адресу URL.
+ .
+ Це може бути як просто ім’я машини, на котрій знаходяться файли автоматичної установки, так і повний URL. Любий з цих форматів буде працювати:
+   intra		[for example.com, ці три еквівалентні]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Для повністю автоматичної установки preseed/url також може бути вказано (у командній строчці ядра, DHCP або у syslinux.cfg на зібраному самостійно носії)
+ .
+ Шукайте натхнення за адресою http://wiki.debian.org/DebianInstaller/Preseed.
+Description-vi.UTF-8: Vị trí tập tin tiền cấu hình ban đầu:
+ Để cài đặt tự động, bạn cần cung cấp tập tin tiền cấu hình (được lấy từ các tập tin khác). Để thực hiện, bạn cần cung cấp một URL (có thể không hoàn chỉnh).
+ .
+ Đây có thể từ một tên máy đơn giản mà bạn dùng để chỉ định tập tin đến một URL hoàn chỉnh. Thí dụ như:
+   intra		[với example.com, ba cái sau đây tương đương]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ Đối với việc cài đặt tự động, preseed/url cần được cung cấp trước (qua dòng lệnh nhân, DHCP hoặc syslinux.cfg đối với phương tiện tùy biến)
+ .
+ Xem http://wiki.debian.org/DebianInstaller/Preseed để có ý tưởng.
+Description-zh_CN.UTF-8: 初始预配置文件位置：
+ 为了执行自动安装，您需要提供预配置文件(用来依次拉取其他文件)。要做到这，需要提供一个 URL(也可能是一个 URL 的一部分)。
+ .
+ 这仅仅简单地就是您放置预置文件的主机名组成一个完整的 URL。下列都可以工作：
+   intra		[对于 example.com，那三个是等同的]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ 对于全自动安装，预配置 URL 本身也应该预配置(通过自定义媒体上的内核命令行、DHCP 或者 syslinux.cfg)。
+ .
+ 查看 http://wiki.debian.org/DebianInstaller/Preseed 来获取灵感。
+Description-zh_TW.UTF-8: 預先設定檔的位置:
+ 為了進行自動安裝，您必須提供預先設定檔 (用來取得其他檔案)。為了取得設定檔，您必須提供一個 (可能是一部份的) URL。
+ .
+ 此 URL 可以是您存放預先設定檔的機器名稱，或是完整的 URL。以下 URL 皆可使用:
+   intra		[在 example.com 內，此與以下兩個相同]
+   intra.example.com
+   http://intra.example.com/d-i/./lenny/preseed.cfg
+   http://192.168.0.1/~phil/test47.txt
+   floppy://preseed.cfg
+   file:///hd-media/kiosk/./preseed.cfg
+ .
+ 為了進行無人值守安裝，預先設定檔或是 URL 本身必須先配置好 (從核心命令、DHCP 或是在自製媒體中的 syslinux.cfg)
+ .
+ 請參考 http://wiki.debian.org/DebianInstaller/Preseed。
+
+Template: preseed/url/checksum
+Type: string
+Description: for internal use; can be preseeded
+ Optional md5sum (or sums) for the preconfiguration files
+
+Template: auto-install/enable
+Type: boolean
+Default: false
+Description: for internal use; can be preseeded
+ If true, attempt a fully automatic install
+
+Template: auto-install/defaultroot
+Type: string
+Default: d-i/jessie/./preseed.cfg
+Description: for internal use; can be preseeded
+ Path added to local server to give the preseed root

@@ -1,0 +1,194 @@
+Template: di-utils-reboot/really_reboot
+Type: boolean
+Default: false
+Description: Are you sure you want to exit now?
+ If you have not finished the install, your system may be left in an
+ unusable state.
+Description-ar.UTF-8: هل أنت متأكّد أنّك تريد الخروج الآن؟
+ إن لم تنته من التثبيت، قد يترك نظامك بوضع لا يسمح باستخدامه.
+Description-ast.UTF-8: ¿De xuru que quies salir agora?
+ Si entá nun finó la instalación, el so sistema pue quedar inutilizable.
+Description-be.UTF-8: Ці вы ўпэўненыя, што хочаце выйсці зараз?
+ Калі Вы не скончылі працэс усталявання, Вашая сістэма можа застацца ў непрыдатным да працы стане.
+Description-bg.UTF-8: Сигурен ли сте, че искате да излезете веднага?
+ Ако не сте довършили инсталацията, Вашата система може да се окаже в неизползваемо състояние.
+Description-bo.UTF-8: ཁྱོད་ཀྱིས་ད་ལྟ་མཚམས་བཞག་པར་གཏན་ཁེལ་ཡིན་ནམ
+ སྒྲིག་འཇུག་དེ་མཇུག་རྫོགས་མེད་ན་ཁྱོད་ཀྱི་མ་ལག་སྤྱོད་མི་རུང་བའི་རྣམ་པའི་ཐོག་ཏུ་ཡོད་སྲིད
+Description-bs.UTF-8: Da li sigurno želite sada izaći?
+ Ako niste završili instalaciju, Vaš sistem može ostati u neupotrebljivom stanju.
+Description-ca.UTF-8: Esteu segur de voler eixir ara?
+ Si no heu finalitzat la instal·lació, el sistema pot quedar en un estat inusable.
+Description-cs.UTF-8: Jste si jisti, že chcete skončit?
+ Pokud jste instalaci nedovedli do konce, váš systém může zůstat v nepoužitelném stavu.
+Description-cy.UTF-8: A ydych yn siwr eich bod am adael nawr?
+ Os nad ydych wedi gorffen y sefydliad, gall eich system gael ei adael mewn cyflwr annefnyddiol.
+Description-da.UTF-8: Er du sikker på, at du vil afslutte nu?
+ Hvis du ikke har afsluttet installationen, kan dit system være ubrugeligt.
+Description-de.UTF-8: Sind Sie sicher, dass Sie die Installation beenden möchten?
+ Wenn Sie Ihre Installation nicht abgeschlossen haben, könnte Ihr System nicht boot-fähig sein.
+Description-el.UTF-8: Είστε σίγουρος/η ότι θέλετε να εγκαταλείψετε τώρα;
+ Αν δεν έχετε ολοκληρώσει την εγκατάσταση, το σύστημα πιθανόν να αφεθεί σε μη χρησιμοποιήσιμη κατάσταση.
+Description-eo.UTF-8: Ĉu vi certas ke vi volas eliri nun?
+ Se vi ne plenumis la instaladon, tiel via sistemo povos iĝi neuzebla.
+Description-es.UTF-8: ¿Seguro que quiere salir ahora?
+ El sistema podría quedar inutilizable si todavía no ha finalizado la instalación.
+Description-et.UTF-8: Kas oled kindel, et soovid väljuda?
+ Kui sa pole paigaldamist lõpule viinud, võib su süsteem kasutuskõlbmatusse olekusse jääda.
+Description-eu.UTF-8: Ziur zaude orain irten nahi duzula?
+ Instalazioa amaitu ez baduzu, sistema erabilezin gera daiteke.
+Description-fa.UTF-8: آیا مطمئن هستید که هم‌اکنون می‌خواهید خارج شوید؟
+ اگر نصب را تمام نکرده‌اید، سیستم شما ممکن است در یک وضعیت ناپایدار قرار داشته باشد.
+Description-fi.UTF-8: Haluatko varmasti lopettaa nyt?
+ Jos et ole päättänyt asennusta, järjestelmäsi voi jäädä käyttökelvottomaan tilaan.
+Description-fr.UTF-8: Voulez-vous vraiment quitter maintenant ?
+ Si l'installation n'est pas terminée, le système peut être inutilisable.
+Description-ga.UTF-8: An bhfuil tú cinnte gur mian leat scor anois?
+ Mura bhfuil an tsuiteáil críochnaithe, seans nach mbeidh do chóras inúsáidte.
+Description-gl.UTF-8: Desexa realmente saír agora?
+ Se non rematou a instalación, o sistema pode quedar nun estado non utilizábel.
+Description-he.UTF-8: האם אתה בטוח שברצונך לצאת עכשיו?
+ אם לא סיימת את ההתקנה, יתכן שהמערכת תישאר במצב לא שמיש.
+Description-hr.UTF-8: Jeste li sigurni da sada želite izaći?
+ Ako niste završili instalaciju, sustav će vam možda ostati neupotrebljiv.
+Description-hu.UTF-8: Biztosan kilép?
+ A telepítés vége előtt a rendszer használhatatlan állapotban maradhat.
+Description-id.UTF-8: Anda yakin ingin keluar sekarang?
+ Bila Anda tidak menyelesaikan instalasi, sistem Anda bisa jadi tidak dapat digunakan.
+Description-is.UTF-8: Ertu viss um að þú viljir hætta núna?
+ Ef þú hefur ekki klárað uppsetningarferlið gæti vélin þín verið í ónothæfu ástandi.
+Description-it.UTF-8: Uscire veramente adesso?
+ Se l'installazione non è stata completata il sistema potrebbe essere non utilizzabile.
+Description-ja.UTF-8: 本当に今すぐ終了しますか?
+ インストールをまだ終えていないのであれば、あなたのシステムは不安定な状態に置かれている可能性があります。
+Description-kk.UTF-8: Жүйеден шығуды шынымен қалайсыз ба?
+ Орнатуды аяқтамасаңыз, жүйе қолдануға жарамсыз түрінде қалуы мүмкін.
+Description-kn.UTF-8: ನೀವು ಖಚಿತವಾಗಿಯು ಈಗ ನಿರ್ಗಮಿಸಬೇಕೆ?
+ ನೀವು ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಗಣಕ ವ್ಯವಸ್ಥೆಯು ನಿರುಪಯೋಗಕ ಸ್ಧಿತಿಯಲ್ಲಿರಬಹುದು.
+Description-ko.UTF-8: 정말로 지금 끝내시겠습니까?
+ 설치를 끝마치지 않으면, 시스템이 사용 불가능한 상태로 남게 될 것입니다.
+Description-ku.UTF-8: Ji dil dixwazî niha derkevî?
+ Heke te sazkirin temam nekiribe, dibe ku pergala te neyê bikaranîn.
+Description-lo.UTF-8: ເຈັ້າແນ່ໃຈຫຼືບໍ່ວ່າຈະອອກຈາກໂປຣແກຣມ?
+ ຖ້າເຈັົ້າຍັງບໍ່ຈົບໃນຂະບວນການຕິດຕັ້ງ ລະບົບຂອງເຈົ້າອາດຈະຢູ່ໃນສະຖານະທີ່ໃຊ້ການບໍ່ໄດ້.
+Description-lt.UTF-8: Ar įsitikinę, kad norite išeiti (nutraukti) dabar?
+ Jei nebaigėte įdiegimo, sistema gali likti nepanaudojamoje būsenoje.
+Description-lv.UTF-8: Vai tiešām vēlaties iziet?
+ Ja vēl neesat pabeiguši instalēšanu, jūsu sistēma var palikt nelietojamā stāvoklī.
+Description-mk.UTF-8: Дали сте сигурни дека сакате да излезете сега?
+ Ако не заврши со инсталацијата, Вашиот систем може да биде остане неупотреблив.
+Description-nb.UTF-8: Er du sikker på at du vil avslutte nå?
+ Hvis du ikke fullførte installasjonen, så kan systemet ditt være ubrukelig.
+Description-nl.UTF-8: Weet u zeker dat u wilt afsluiten?
+ Het niet afwerken van de installatie kan uw systeem in een onbruikbare staat achterlaten.
+Description-nn.UTF-8: Vil du verkeleg avslutte no?
+ Viss du ikkje fullførte installasjonen, så kan systemet ditt vere i ein ubrukeleg tilstand.
+Description-no.UTF-8: Er du sikker på at du vil avslutte nå?
+ Hvis du ikke fullførte installasjonen, så kan systemet ditt være ubrukelig.
+Description-pl.UTF-8: Na pewno chcesz teraz zakończyć?
+ Jeżeli instalacja nie została ukończona, twój system może okazać się bezużyteczny.
+Description-pt.UTF-8: Tem a certeza que quer terminar agora?
+ Caso ainda não tenha terminado a instalação o seu sistema pode ficar num estado em que não é possível iniciá-lo.
+Description-pt_BR.UTF-8: Você tem certeza que deseja sair agora?
+ Se você não terminou a instalação, seu sistema pode ter sido deixado em um estado inutilizável.
+Description-ro.UTF-8: Sigur doriți să ieșiți acum?
+ Dacă nu ați terminat instalarea, sistemul dumneavoastră ar putea fi lăsat într-o stare inutilizabilă.
+Description-ru.UTF-8: Вы уверены, что хотите выйти прямо сейчас?
+ Если вы не закончили установку, система может оказаться в неработоспособном состоянии.
+Description-si.UTF-8: ඔබට දැන් පිටවීමට ඇවැසිද?
+ ඔබ විසින් ස්ථාපනය අවසන් කර නොමැත, ඔබේ පද්ධතිය භාවිත කල නොහැකි තත්වයේ පවතිනු ඇත.
+Description-sk.UTF-8: Ste si istí, že to chcete ukončiť?
+ Ak ste neukončili inštaláciu, váš systém môže zostať v nepoužiteľnom stave.
+Description-sl.UTF-8: Ali ste prepričani, da želite končati zdaj?
+ Če niste dokončali namestitve bo vaš sistem morda ostal v neuporabnem stanju.
+Description-sq.UTF-8: Je i sigurtë që do të dalësh tani?
+ Nëse nuk ke mbaruar instalimin, sistemi mund të ketë mbetur në një gjendje të papërdorshme.
+Description-sr.UTF-8: Да ли сте сигурни да сада желите да изађете?
+ Ако нисте завршили инсталацију, ваш систем може бити остављен у нестабилном стању.
+Description-sv.UTF-8: Är du säker på att du vill avsluta nu?
+ Om du inte har slutfört installationen kan ditt system ha lämnats ett oanvändbart tillstånd.
+Description-te.UTF-8: నిజంగా నిష్క్రమించాలి అనుకుంటున్నారా?
+ ప్రతిష్టాపనను పూర్తి చేయకుంటే మీ కంప్యూటరు అస్థిరమైన స్థితిలో ఉండవచ్చు.
+Description-tg.UTF-8: Шумо мутмаин ҳастед, ки мехоҳед ҳозир хориҷ шавед?
+ Агар шумо насбро ба анҷом нарасонед, системаи шумо дар вазъияти ноустувор мемонад.
+Description-th.UTF-8: คุณแน่ใจหรือไม่ว่าจะออกจากโปรแกรม?
+ ถ้าคุณยังไม่จบกระบวนการติดตั้ง ระบบของคุณอาจอยู่ในสถานะที่ใช้การไม่ได้
+Description-tl.UTF-8: Talaga bang gusto niyo nang lumabas ngayon?
+ Kung hindi pa natatapos ang pagluklok, maaaring hindi magamit ang inyong kompyuter.
+Description-tr.UTF-8: Şimdi çıkmak istediğinize emin misiniz?
+ Eğer kurulumu bitirmediyseniz sisteminiz kullanılamaz bir durumda kalabilir.
+Description-ug.UTF-8: راستىنىلا چېكىنەمسىز؟
+ ئورنىتىشنى تاماملىمىغان بولسىڭىز، سىستېمىڭىز ئىشلەتكىلى بولمايدىغان ھالەتتە بولۇشى مۇمكىن.
+Description-uk.UTF-8: Ви впевнені, що хочете вийти зараз?
+ Якщо ви не закінчили встановлення, система може виявитися в непрацездатному стані.
+Description-vi.UTF-8: Bạn có chắc muốn thoát ra ngay bây giờ không?
+ Nếu bạn chưa cài đặt xong, hệ thống của bạn có thể còn lại vô ích.
+Description-zh_CN.UTF-8: 您确定现在就要退出吗？
+ 如果您没有完成安装过程，系统将可能处于无法使用的状态。
+Description-zh_TW.UTF-8: 您是否確定要在此時退出？
+ 如果未能完成安裝程序，系統將可能會處於不可使用的狀態。
+
+Template: debian-installer/di-utils-reboot/title
+Type: text
+Description: Abort the installation
+Description-ar.UTF-8: أوقف التثبيت
+Description-ast.UTF-8: Torgar la instalación
+Description-be.UTF-8: Перарваць усталяванне
+Description-bg.UTF-8: Прекъсване на инсталацията
+Description-bo.UTF-8: སྒྲིག་འཇུག་མཚམས་གཅོད་པ
+Description-bs.UTF-8: Prekinite instalaciju
+Description-ca.UTF-8: Avorta la instal·lació
+Description-cs.UTF-8: Přerušit instalaci
+Description-cy.UTF-8: Terfynu'r sefydliad
+Description-da.UTF-8: Afbryd installationen
+Description-de.UTF-8: Installation abbrechen
+Description-el.UTF-8: Ακύρωση της εγκατάστασης
+Description-eo.UTF-8: Ĉesigi la instaladon
+Description-es.UTF-8: Interrumpir la instalación
+Description-et.UTF-8: Paigaldamise katkestamine
+Description-eu.UTF-8: Utzi bertan behera instalazioa
+Description-fa.UTF-8: صرف‌نظر کردن از نصب
+Description-fi.UTF-8: Keskeytä asennus
+Description-fr.UTF-8: Interrompre l'installation
+Description-ga.UTF-8: Tobscoir an tsuiteáil
+Description-gl.UTF-8: Interromper a instalación
+Description-he.UTF-8: הפסקת ההתקנה
+Description-hr.UTF-8: Prekini instalaciju
+Description-hu.UTF-8: Telepítés megszakítása
+Description-id.UTF-8: Batalkan instalasi
+Description-is.UTF-8: Hætta við uppsetninguna
+Description-it.UTF-8: Interrompere l'installazione
+Description-ja.UTF-8: インストールの中止
+Description-kk.UTF-8: Орнатуды тоқтату
+Description-kn.UTF-8: ಅನುಸ್ಧಾಪನ ಪ್ರಕ್ರಿಯೆಯನ್ನು ನಿಲ್ಲಿಸು
+Description-ko.UTF-8: 설치 멈추기
+Description-ku.UTF-8: Ji sazkirinê derkeve
+Description-lo.UTF-8: ປະຖິ້ມຂະບວນການຕິດຕັ້ງ
+Description-lt.UTF-8: Nutraukti įdiegimą
+Description-lv.UTF-8: Pārtraukt instalēšanu
+Description-mk.UTF-8: Прекини ја инсталацијата
+Description-nb.UTF-8: Avbryt installasjonen
+Description-nl.UTF-8: De installatie afbreken
+Description-nn.UTF-8: Avbryt installasjonen
+Description-no.UTF-8: Avbryt installasjonen
+Description-pl.UTF-8: Przerwij instalację
+Description-pt.UTF-8: Abortar a instalação
+Description-pt_BR.UTF-8: Abortar a instalação
+Description-ro.UTF-8: Întrerupe instalarea
+Description-ru.UTF-8: Отмена установки
+Description-se.UTF-8: Gaskkalduhte sajáiduhttima
+Description-si.UTF-8: ස්ථාපනය නවත්වන්න
+Description-sk.UTF-8: Prerušenie inštalácie
+Description-sl.UTF-8: Prekini namestitev
+Description-sq.UTF-8: Ndalo instalimin
+Description-sr.UTF-8: Прекини инсталацију
+Description-sv.UTF-8: Avbryt installationen
+Description-te.UTF-8: స్థాపక ప్రక్రియ విరమించు
+Description-tg.UTF-8: Қатъ кардани насбкунӣ
+Description-th.UTF-8: ละทิ้งกระบวนการติดตั้ง
+Description-tl.UTF-8: Hintuin ang pagluklok
+Description-tr.UTF-8: Kurulumdan çık
+Description-ug.UTF-8: ئورنىتىشتىن چېكىن
+Description-uk.UTF-8: Перервати встановлення
+Description-vi.UTF-8: Hủy bỏ cài đặt
+Description-zh_CN.UTF-8: 中止安装
+Description-zh_TW.UTF-8: 中止安裝

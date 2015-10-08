@@ -1,4 +1,0 @@
-# Load acpi fan and thermal modules if available, to avoid machine
-# overheating.
-modprobe fan >/dev/null 2>&1 || true
-modprobe thermal >/dev/null 2>&1 || true

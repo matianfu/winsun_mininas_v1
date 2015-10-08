@@ -1,4 +1,0 @@
-DISTRIB_ID=Debian
-DISTRIB_DESCRIPTION="Debian GNU/Linux installer"
-DISTRIB_RELEASE="7 (wheezy) - installer build 20130613+deb7u2+b4"
-X_INSTALLATION_MEDIUM=cdrom
