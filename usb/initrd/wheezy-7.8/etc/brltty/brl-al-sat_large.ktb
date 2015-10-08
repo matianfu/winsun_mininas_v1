@@ -1,0 +1,5 @@
+title Alva Satellite [5nn] (large)
+context default
+include brl-al-sat_basic.kti
+context default
+include brl-al-sat_extra.kti

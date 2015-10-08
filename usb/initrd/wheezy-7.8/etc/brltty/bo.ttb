@@ -1,0 +1,6 @@
+include letters-tibetan.tti
+include punctuation-tibetan.tti
+include letters-latin-dot8.tti
+include numbers-nemeth.tti
+include punctuation-alternate.tti
+include common.tti

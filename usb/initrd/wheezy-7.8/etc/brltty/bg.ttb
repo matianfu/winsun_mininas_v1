@@ -1,0 +1,5 @@
+include letters-cyrillic.tti
+include letters-latin-dot8.tti
+include numbers-nemeth.tti
+include punctuation-alternate.tti
+include common.tti

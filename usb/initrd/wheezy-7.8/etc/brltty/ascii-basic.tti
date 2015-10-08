@@ -1,0 +1,3 @@
+include letters-latin.tti
+include numbers-dot8.tti
+include punctuation-basic.tti

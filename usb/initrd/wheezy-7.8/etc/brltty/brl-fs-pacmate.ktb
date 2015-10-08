@@ -1,0 +1,18 @@
+title FreedomScientific PAC Mate
+bind Hot1 SKPIDLNS
+bind RightGdf+Hot1 SKPBLNKWINS
+bind Hot2 DISPMD
+bind RightGdf+Hot2 ATTRVIS
+bind Hot3 CSRTRK
+bind RightGdf+Hot3 CSRVIS
+bind Hot4 SIXDOTS
+bind RightGdf+Hot4 AUTOREPEAT
+bind Hot5 HELP
+bind RightGdf+Hot5 FREEZE
+bind Hot6 LEARN
+bind RightGdf+Hot6 PREFLOAD
+bind Hot7 PREFMENU
+bind RightGdf+Hot7 PREFSAVE
+bind Hot8 INFO
+bind RightGdf+Hot8 CSRJMP_VERT
+include brl-fs-common.kti

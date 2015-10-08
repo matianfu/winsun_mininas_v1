@@ -1,0 +1,1992 @@
+Template: cdrom-detect/load_media
+Type: boolean
+Default: true
+Description: Load CD-ROM drivers from removable media?
+ No common CD-ROM drive was detected.
+ .
+ You may need to load additional CD-ROM drivers from removable media, such as
+ a driver floppy. If you have such media available now, insert it, and
+ continue. Otherwise, you will be given the option to manually select
+ CD-ROM modules.
+Description-ar.UTF-8: تريد تحميل مُعرّفات القرص المدمج من وسط قابل للإزالة؟
+ لم يكتشف أي قارئ أقراص مدمجة شائع.
+ .
+ قد تحتاج إلى مُعرّفات قرص مدمج إضافية من وسط قابل للإزالة. إن كان لديك وسط قابل للإزالة متوفّر الآن، ضعه في السواقة، واستمر. وإلا، فسوف تعطى فرصة اختيار وحدات القرص المدمج يدوياً.
+Description-ast.UTF-8: ¿Cargar controladores CD-ROM dende mediu estrayible?
+ Nun se deteutó dengún llector de CD-ROM común.
+ .
+ Ye posible que necesites cargar más d'un controlador en CD-ROM dende un mediu estrayible, como un controlador de disquete. Si tienes mediu disponible agora, inxértalu y sigue. En casu contrariu, podrás seleicionar manualmente los módulos en CD-ROM.
+Description-be.UTF-8: Загрузіць драйверы CD-ROM з рухомага носьбіта?
+ Не знойдзена ніякай прылады CD-ROM.
+ .
+ Магчыма, Вам трэба загрузіць дадатковыя драйверы CD-ROM з рухомага носьбіта. Калі Вы маеце такі носьбіт, устаўце яе ў дыскавод і працягвайце. У іншым выпадку, Вам будзе прапанаваная мажлівасць самастойнага выбару модуляў CD-ROM.
+Description-bg.UTF-8: Зареждане на драйвери за CD от сменяем ностел?
+ Не беше открито компактдисково устройство.
+ .
+ Може да е нужно да заредите допълнителни драйвери за компактдисково устройство от сменяем носител. Ако имате такъв, сложете го и продължете. Иначе ще ви бъде дадена възможността да изберете ръчно различни модули за компактдискови устройства.
+Description-bo.UTF-8: འཁུར་སླའི་འཇུག་སྣོད་ནས་CD-ROM སྒུལ་ཆས་ཡར་འཇུག་བྱེད་དགོས་སམ
+ རྒྱུན་སྤྱོད་ཀྱི་CD-ROM མ་རྙེད་པ
+ .
+ སྒུལ་ཆས་ཀྱི་མཉེན་སྡེར་རམ་འཁུར་སླ་བའི་འཇུག་མཛོད་ཞིག་ནས་CD-ROM སྒུལ་ཆས་ཡར་འཇུག་བྱེད་དགོས་པ འཇུག་སྣོད་དེ་འདྲ་ཡོད་ན་ད་ལྟ་སྦྲེལ་ནས་མུ་མཐུད་དགོས། དེ་མིན་ཚེ་ཁྱོད་ཀྱིས་ལག་བཟོས་ངང་CD-ROM  དཔེ་དབྱིབས་གདམ་དགོས
+Description-bs.UTF-8: Učitaj CD-ROM upravljačke programe sa drugog medija?
+ Uobičajeni CD-ROM pogon nije detektovan.
+ .
+ Možda biste trebali učitati dodatne CD-ROM upravljačke programe sa drugog medija poput floppy diskete. Ako imate takvu disketu, ubacite je u pogon i nastavite. U suprotnom, pružiti će vam se prilika da ručno odaberete CD-ROM module.
+Description-ca.UTF-8: Voleu carregar controladors de CD-ROM des d'un medi extraïble?
+ No s'ha detectat cap unitat de CD-ROM normal.
+ .
+ És possible que necessiteu carregar controladors de CD-ROM addicionals des d'un medi extraïble, com un disquet de controladors. Si teniu un d'aquests medis disponible, inseriu-lo i continueu. Altrament, tindreu l'oportunitat de seleccionar mòduls de CD-ROM manualment.
+Description-cs.UTF-8: Nahrát ovladače CD-ROM z výměnného média?
+ Nebyla nalezena žádná běžná CD-ROM mechanika.
+ .
+ Možná musíte zavést další ovladače CD-ROM z výměnného média, např. z diskety s ovladači. Pokud takové médium máte, vložte je a pokračujte. V opačném případě dostanete možnost vybrat moduly CD-ROM ručně.
+Description-cy.UTF-8: Llwytho gyriannau CD-ROM o gyfrwng symudol?
+ Ni chanfuwyd disgyrrwr CD-ROM cyffredin.
+ .
+ Efallai bydd angen i chi lwytho gyriannau CD-ROM ychwanegol o gyfrwng symudol fel gyrrwr hyblyg. Os oes gennych y fath ddisg nawr, rhowch i fewn a pharhau. Fel arall, cewch y cyfle i ddewis modiwlau CD-ROM â llaw.
+Description-da.UTF-8: Indlæs cd-rom-drivere fra et flytbart medie?
+ Fandt ingen almindelige cd-rom drev.
+ .
+ Du kan have brug for at indlæse yderligere cd-rom-drivere fra et flytbart medie, f.eks. en driverdiskette. Hvis du har sådan et liggende, så indsæt det og fortsæt. Ellers vil du få mulighed for selv at vælge cd-rom-moduler.
+Description-de.UTF-8: CD-ROM-Treiber von einem Wechseldatenträger laden?
+ Es wurde kein gängiges CD-ROM-Laufwerk gefunden.
+ .
+ Sie müssen eventuell zusätzliche CD-ROM-Treiber von einem Wechseldatenträger wie einer Treiberdiskette laden. Falls Sie ein solches Medium nun vorliegen haben, legen Sie es ein und fahren Sie fort. Andernfalls wird Ihnen die Möglichkeit gegeben, manuell ein CD-ROM-Modul auszuwählen.
+Description-el.UTF-8: Θέλετε να φορτώσετε τους οδηγούς του CD-ROM από ένα αφαιρέσιμο μέσο;
+ Δεν ανιχνεύθηκε τυπική μονάδα μονάδα CD-ROM.
+ .
+ Πιθανόν να χρειαστεί να φορτώσετε επιπρόσθετους οδηγούς CD-ROM από κάποιο αφαιρέσιμο μέσο, όπως κάποιον οδηγό δισκέττας. Αν έχετε διαθέσιμο ένα τέτοιο μέσο τώρα, εισάγετέ το και συνεχίστε. Διαφορετικά, θα σας δοθεί η δυνατότητα να επιλέξετε με το χέρι αρθρώματα για CD-ROM.
+Description-eo.UTF-8: Ĉu ŝargi je lumdiskilaj peliloj el demetebla datumarujo?
+ Neniu ordinara lumdiskilo estis detektita.
+ .
+ Vi eble bezonos ŝargi je kromaj lumdiskilaj peliloj el demetebla datumportilo, kiel ekzemple disketon. Se vi havas tian datumportilon, enmetu ĝin kaj daŭrigu. Male, vi havos mem la eblon elekti lumdiskilajn modulojn.
+Description-es.UTF-8: ¿Desea cargar los controladores del CD-ROM de un medio extraíble?
+ No se ha detectado ningún lector de CD-ROM común.
+ .
+ Puede que necesite controladores de CD-ROM de un medio extraíble, como un disquete. Si dispone de ese medio, insértelo ahora y continúe. Si no es así, se le dará la opción de seleccionar los módulos de CD-ROM manualmente.
+Description-et.UTF-8: Kas laadida CD-ROM'i draiverid väliselt andmekandjalt?
+ Ühtki tavapärast CD-ROM seadet ei leitud.
+ .
+ Võib juhtuda, et pead väliselt andmekandjalt CD-ROM'i jaoks lisadraivereid laadima. Kui sul on säärane meedium käepärast, sisesta see ja jätka. Vastasel juhul saad võimaluse käsitsi CD-ROM'i mooduleid valida.
+Description-eu.UTF-8: Kargatu CD-ROM kontrolatzaileak euskarri aldagarritik?
+ Ez da CD-ROM unitate arruntik detektatu.
+ .
+ Agian CD-ROM kontrolatzaile osagarriak diskete baten antzerako euskarri aldagarri batetik kargatu beharko dituzu. Euskarria orain erabilgarri baduzu, jarri unitatean eta jarraitu. Bestela, CD-ROM moduluak automatikoki hautatzeko aukera emango zaizu.
+Description-fa.UTF-8: راه‌اندازهای CD-ROM از رسانهٔ جداشدنی بارگذاری شود؟
+ هیچ گردانندهٔ معمول CD-ROM شناخته نشد.
+ .
+ ممکن است لازم داشته باشید که راه‌اندازهای اضافی CD-ROM را از رسانهٔ جداشدنی مانند راه‌انداز فلاپی، بارگذاری کنید. اگر اکنون چنین رسانه‌ای دارید، آن را قرار دهید و ادامه دهید. در غیر اینصورت، به شما این انتخاب داده خواهد شد که به صورت دستی ماژول‌های CD-ROM را انتخاب کنید.
+Description-fi.UTF-8: Ladataanko CD-ROM-ajureita siirrettävältä taltiolta?
+ Tavanomaista CD-ROM-asemaa ei löytynyt.
+ .
+ CD-ROM-aseman ajureita saatetaan joutua lataamaan siirrettävältä taltiolta, esimerkiksi ajurilevykkeeltä. Jos tällainen taltio on käytettävissä, laita se asemaan ja jatka. Muussa tapauksessa CD-ROM-moduulit voidaan valita käsin.
+Description-fr.UTF-8: Faut-il charger les pilotes de lecteurs de CD-ROM depuis un support amovible ?
+ Aucun lecteur de CD-ROM usuel n'a été détecté.
+ .
+ Il peut être nécessaire de charger des pilotes additionnels de lecteurs de CD-ROM depuis un support amovible, par exemple une disquette de pilotes. Si vous avez une tel support, placez-le dans le lecteur, puis continuez. Dans le cas contraire, vous aurez la possibilité de choisir vous-même les modules des pilotes de lecteurs de CD-ROM.
+Description-ga.UTF-8: Luchtaigh tiománaithe CD-ROM ó mheán inbhainte?
+ Níor braitheadh tiomántán coitianta CD-ROM.
+ .
+ Seans go gcaithfidh tú tiománaithe breise CD-ROM a luchtú ó mheán inbhainte, mar shampla ó dhiosca flapach. Má tá a leithéid de mheán agat anois, cuir é sa tiomántán agus lean ar aghaidh. Mura bhfuil, beidh tú in ann modúil CD-ROM a roghnú de láimh.
+Description-gl.UTF-8: Desexa cargar os controladores do CD-ROM dun soporte extraíbel?
+ Non se atopou ningunha unidade normal de CD-ROM.
+ .
+ Pode ter que cargar algúns controladores de CD-ROM adicionais dun soporte extraíbel; por exemplo, dun disquete de controladores. Se ten un soporte deste tipo, introdúzao e continúe. Se non, háselle dar a oportunidade de escoller manualmente os módulos do CD-ROM.
+Description-he.UTF-8: האם לטעון מנהלי התקנים לכונן התקליטורים מתוך מדניה נתיקה?
+ לא זוהה כונן תקליטורים סטנדרטי.
+ .
+ ייתכן שתצטרך לטעון מנהלי התקנים נוספים לכונן התקליטורים ממדיה נתיקה, כמו דיסקט מנהלי התקנים. אם יש לך מדיה כזו עכשיו, הכנס אותה והמשך. אחרת, תקבל את האפשרות לבחור מודולי כונן תקליטורים בצורה ידנית.
+Description-hr.UTF-8: Učitaj CD-ROM upravljačke programe s izmjenjivih medija?
+ Nije pronađen uobičajeni CD-ROM pogon.
+ .
+ Možda trebate učitati CD-ROM upravljačke programe s izmjenjivih medija, kao što je disketa. Ako imate takve medije, ubacite ih u pogon i nastavite. Ako ne, bit će vam dana mogućnost ručno izabrati module za CD-ROM.
+Description-hu.UTF-8: Eltávolítható médiumról töltöd be a CD-ROM meghajtókat?
+ Nem találtam általános CD-ROM meghajtót.
+ .
+ További CD-ROM meghajtók betöltése lehet szükséges flopiról. Ha van ilyen flopi, most kell azt betenni a folytatáshoz. Egyébként lehetőség nyílik CD-ROM modulok kézi kiválasztására.
+Description-id.UTF-8: Muatkan driver CD-ROM dari media lepas-pasang?
+ Penggerak CD-ROM yang umum tidak terdeteksi.
+ .
+ Anda perlu memuat driver tambahan untuk CD-ROM dari media lepas-pasang, seperti disket driver. Jika Anda memiliki media tersebut, masukkan ke dalam penggerak dan lanjutkan. Jika tidak, Anda akan diberi pilihan untuk memilih modul CD-ROM secara manual.
+Description-is.UTF-8: Viltu hlaða inn geisladiskareglum af fjarlægjanlegum miðli?
+ Ekkert venjulegt geisladrif fannst.
+ .
+ Hugsanlegt er að þú þurfir að hlaða inn aukareklum fyrir geisladrifið þitt af fjarlægjanlegum miðli á borð við diskling eða USB-lykli. Ef þú átt slíkan miðil skaltu tengja hann eða setja í drif núna og halda áfram. Annars verður þér boðið að velja CD-ROM reklaeiningar handvirkt.
+Description-it.UTF-8: Caricare i driver del CD-ROM dal dispositivo rimovibile?
+ Non è stata rilevata alcuna unità CD-ROM comune.
+ .
+ Potrebbe essere necessario il caricamento di driver aggiuntivi per il CD-ROM da un dispositivo rimovibile come un dischetto driver. Se tale dispositivo è disponibile, inserirlo e continuare, altrimenti in seguito sarà possibile selezionare manualmente i moduli del CD-ROM.
+Description-ja.UTF-8: CD-ROM ドライバをリブーバブルメディアからロードしますか?
+ 一般的な CD-ROM ドライブは検出されませんでした
+ .
+ 追加の CD-ROM ドライバを、ドライバフロッピーなどのリムーバブルメディアからロードする必要があるでしょう。そのようなメディアを利用できるならドライブに入れ、継続してください。さもなければ、手動で CD-ROM モジュールを選択する方法もあります。
+Description-kk.UTF-8: CD-ROM драйверін тасымалы құрылғыдан жүктеуді қалайсыз ба?
+ Стандартты CD-ROM табылмады.
+ .
+ Қосымша CD-ROM драйвері қажет болуы мүмкін. Тасымалы құрылғыда (дискет) драйвер бар болса, қазір салып, жалғастырыңыз. Басқа жағдайда CD-ROM модульдерін кейінірек қолдан таңдайсыз.
+Description-kn.UTF-8: ತೆಗೆಯಬಹುದಾದ ಮಾಧ್ಯಮಗಳಿಂದ CD-ROM ಚಾಲಕ ತಂತ್ರಾಂಶಗಳನ್ನು ತುಂಬಬಹುದೆ?
+ ಸಾಮಾನ್ಯವಾದ‌ ಸಿಡಿ-ರಾಂ ಕಂಡುಬಂದಿಲ್ಲ‌.
+ .
+ ನೀವು ಹೆಚ್ಚುವರಿ CD-ROM ಚಾಲಕ ತಂತ್ರಾಂಶಗಳನ್ನು ಕಳಚಬಲ್ಲ ಮಾಧ್ಯಮದಿಂದ, ಉದಾಹರಣೆಗೆ ಚಾಲಕ ಫ್ಲಾಪಿ, ತುಂಬಬೇಕಾದೀತು. ನಿಮ್ಮಲ್ಲಿ ಇಂತಹ ಮಾಧ್ಯಮ ಈಗ ಲಭ್ಯವಿದ್ದರೆ ಅದನ್ನು ಒಳಹಾಕಿ ಮುಂದುವರೆಯಿರಿ. ಇಲ್ಲವಾದಲ್ಲಿ ನಿಮಗೆ ಸ್ವತಃ CD-ROM ಘಟಕಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ಅವಕಾಶ ನೀಡಲಾಗುತ್ತದೆ.
+Description-ko.UTF-8: 이동식 미디어에서 CD-ROM 드라이버를 읽어들이시겠습니까?
+ 일반적인 CD-ROM 드라이브를 찾을 수 없습니다.
+ .
+ 이동식 미디어에서 (드라이버 플로피 등) CD-ROM 드라이버를 추가로 읽어들여야 할 수 있습니다. 그런 미디어가 있다면, 바로 그 미디어를 넣고 계속 하십시오. 그렇지 않은 경우 수동으로 CD-ROM 모듈을 선택하는 옵션이 나옵니다.
+Description-ku.UTF-8: Bila ajokarên CD-ROM'ê ji dîska guhêzbar bar bibin?
+ Ajokareke CD-ROM'ê ya nas nehat dîtin.
+ .
+ Dibe ku pêwist be tu ajokarên CD-ROM ji dîskeke guhêzbar bikî, wekî dîsketeke ajokaran. Heke dîskeke te ya wisa heye, wê têxe ajokar û berdewam bike. Wekî din, ji bo ku tu bikaribî modulên CD-ROMan bi destan hilbijêrî wê bi te bide naskirin.
+Description-lo.UTF-8: ຈະໂຫຼດໄດເວີຊີດີອອກຈາກສື່ຖອດສຽບ ຫຼື ບໍ່?
+ ກວດບໍ່ພົບໄດເວີຊີດີຮອມທີ່ຮູ້ຈັກ.
+ .
+ ເຈົ້າອາດຈຳເປັນຕ້ອງໂຫຼດໄດເວີຊີດີອອກເພີ່ມເຕີມຈາກສື່ຖອດສຽບ ເຊັ່ນ: ແຜ່ນດິດທີ່ເກັບໄດເວີ ຖ້າເຈົ້າມີສື່ດັ່ງກ່ວາ ກາລຸນາໃຊ້ເຂົ້າມາແລ້ວດຳເນີນການຕໍ່ຫຼື ບໍ່ສະນັ້ນ ເຈົ້າກໍ່ມີທາງເລືອກໃຫ້ເລືອກໂມດູນຊີດີດ້ວຍຕົວເອງ.
+Description-lt.UTF-8: Ar įkelti CD-ROM tvarkykles iš keičiamosios laikmenos?
+ Neaptiktas įprastas CD-ROM įrenginys.
+ .
+ Jums gali tekti įkelti papildomas CD-ROM tvarkykles (drivers) iš keičiamosios laikmenos. Jei turite tokia laikmeną šiuo metu, įdėkite ją ir tęskite. Kitaip Jums bus pasiūlyta rankiniu būdu pasirinkti CD-ROM'o modulius.
+Description-lv.UTF-8: Ielādēt CD-ROM draiverus no izņemamā datu nesēja?
+ Parastā tipa CD-ROM dzinis nav atrasts.
+ .
+ Iespējams, ka ir jāielādē papildu moduļi, lai piekļūtu CD-ROM ierīcei. Ja jums ir sagatavots atbilstošs datu nesējs, tad ievietojiet to un turpiniet. Citādāk, jums tiks dota iespēja manuāli izvēlēties CD-ROM moduļus.
+Description-mk.UTF-8: Да ги вчитам драјверите за CD-ROM од преносливоит медиум?
+ Не детектирав вообичаен CD-ROM уред.
+ .
+ Можеби ќе треба да вчитате дополнителни драјвери за CD-ROM од пренослив медиум како што е флопи. Ако имате таков медиум достапна сега, внесете го и продолжете. Ако не, ќе Ви биде дадена опција рачно да ги одберете модулите за CD-ROM.
+Description-nb.UTF-8: Vil du laste CD-drivere fra et fjernbart medium?
+ Fant ingen vanlig CD-spiller.
+ .
+ Det kan være at du må laste inn CD-drivere fra et fjernbart medium. Hvis du har det fjernbare mediet tilgjengelig nå, sett det inn og fortsett. Hvis ikke, så vil du få anledning til å velge CD-moduler manuelt.
+Description-nl.UTF-8: CD-stuurprogramma laden van verwisselbare media?
+ Er is geen gewoon CD-station gedetecteerd
+ .
+ Mogelijk dient u aanvullende CD-stuurprogramma's te laden van verwisselbare media. Als u dergelijke media beschikbaar heeft kunt u deze nu insteken in het systeem en verder gaan. Zoniet dan krijgt u de mogelijkheid om handmatig CD-modules te selecteren.
+Description-nn.UTF-8: Vil du lasta CD-ROM-drivarar frå ein flyttbar disk?
+ Fann ingen vanleg CD-ROM-lesar.
+ .
+ Det kan vere du må laste inn CDROM-drivarar frå eit ekstern lagringsmedium, slik som ein diskett eller ein minnepinne. Viss du har eit slikt lagringsmedium tilgjengeleg no, set det inn og gå vidare. Viss ikkje så vil du bli gjeve høve til å velje CDROM-modular manuelt.
+Description-no.UTF-8: Vil du laste CD-drivere fra et fjernbart medium?
+ Fant ingen vanlig CD-spiller.
+ .
+ Det kan være at du må laste inn CD-drivere fra et fjernbart medium. Hvis du har det fjernbare mediet tilgjengelig nå, sett det inn og fortsett. Hvis ikke, så vil du få anledning til å velge CD-moduler manuelt.
+Description-pl.UTF-8: Załadować sterowniki CD-ROM-u z urządzenia zewnętrznego?
+ Nie wykryto napędu CD-ROM.
+ .
+ Możliwe, że będzie trzeba załadować dodatkowe sterowniki dla CD-ROM-u z zewnętrznego urządzenia. Jeśli masz takie urządzenie, podłącz je teraz i kontynuuj. W przeciwnym wypadku, zostanie udostępniona opcja ręcznego wyboru modułów CD-ROM.
+Description-pt.UTF-8: Carregar os drivers de CD-ROM a partir de mídia amovível?
+ Não foi encontrado nenhum leitor de CD-ROM comum.
+ .
+ Poderá ter de carregar controladores adicionais de CD-ROM a partir de mídia amovível. Se tem disponível tal mídia, insira-a agora, e continue. Caso contrário, ser-lhe-á dada a opção de manualmente escolher módulos de CD-ROM.
+Description-pt_BR.UTF-8: Carregar drivers de CD-ROM a partir de uma mídia removível?
+ Nenhuma unidade de CD-ROM comum foi detectada.
+ .
+ Pode ser que você precise carregar drivers de CD-ROM adicionais a partir de uma mídia removível, como um disquete de drivers. Se você possui uma mídia dessas disponível agora, insira-a na unidade e continue. Caso contrário, será oferecida a opção de selecionar manualmente os módulos de CD-ROM.
+Description-ro.UTF-8: Se încarcă modulele de nucleu pentru CD-ROM de pe un mediu mobil?
+ Nu a fost detectat nici un CD-ROM obișnuit.
+ .
+ S-ar putea să trebuiască să încărcați modulele adiționale pentru CD-ROM de pe un mediu mobil (ex.: o dischetă cu module de nucleu). Dacă aveți un asemenea mediu, introduceți-l în calculator, și continuați. Altfel, vi se va oferi opțiunea de a selecta manual modulele de CD-ROM.
+Description-ru.UTF-8: Загрузить драйверы привода CD-ROM со сменного носителя?
+ Стандартный CD-ROM не обнаружен.
+ .
+ Возможно, вам понадобится подгрузить дополнительные драйверы привода CD-ROM со сменного носителя, например с дискет. Если такой носитель у вас под рукой, вставьте его и продолжайте. Если это не так -- у вас будет возможность вручную выбрать модуль для вашего привода CD-ROМ.
+Description-si.UTF-8: ඉවත්කල හැකි මාධ්‍යයෙන් CD-ROM ධාවක පූර්ණය කරන්නද?
+ පොදු CD-ROM ධාවකයක් හමු නොවිනි.
+ .
+ ඔබට අමතර CD-ROM ධාවක නම්‍ය තැටි වැනි ඉවත්කල හැකි මාධ්‍යය මගින් එක් කිරීමට ඇවැසි විය හැක . ඔබ සතුව එවැන්නක් පවතී නම්, ඇතුළත් කර ඉදිරියට යන්න. එසේ නොවේනම් ඔබට ශ්‍රමිකව CD-ROM මොඩියුල තෝරාගැනීමේ අභිප්‍රේතයක් ලැබෙනු ඇත.
+Description-sk.UTF-8: Načítať ovládače CD-ROM z prenosného nosiča?
+ Nebola rozpoznaná žiadna bežná CD-ROM mechanika.
+ .
+ Možno budete musieť načítať ovládače CD-ROM z prenosného nosiča. Ak máte takýto nosič teraz po ruke, vložte ho a pokračujte, inak budete vyzvaní na manuálnu voľbu CD-ROM modulov.
+Description-sl.UTF-8: Naložim gonilnike za CD-ROM iz izmenljivega medija?
+ Ni bilo mogoče zaznati nobenega običajnega CD-ROM pogona.
+ .
+ Morda je potrebno naložiti dodatne gonilnike za CD-ROM iz izmenljivega medija kot je disketa z gonilniki. Če imate na voljo takšen medij, ga sedaj vstavite in nadaljujte. V nasprotnem primeru boste dobili možnost, da ročno izberete module CD-ROM.
+Description-sq.UTF-8: T'i ngarkoj drejtuesat e CD-ROM-it nga një suport i heqshëm?
+ Nuk u gjet asnjë lexues i zakonshëm CD-ROM.
+ .
+ Mund të shtosh drejtues CD-ROM-i shtesë nga suporti i heqshëm, si psh një disketë floppy. Nëse e ke tani këtë suport, fute në lexues dhe vazhdo. Përndryshe, do të të jepet mundësia të zgjedhësh vetë modulet e CD-ROM-it.
+Description-sr.UTF-8: Учитати CD-ROM драјвере са изменљивог медијума?
+ Није пронађен ниједан уобичајени CD-ROM уређај.
+ .
+ Можда ћете морати учитати додатне драјвере за CD-ROM са изменљивих медија као што је флопи диск. Ако имате такве медијуме, убаците их и наставите са инсталацијом. У супротном, пружиће вам се опција да ручно изаберете CD-ROM модуле.
+Description-sv.UTF-8: Läsa in drivrutiner för cd-rom-enheter från ett flyttbart media?
+ Ingen vanlig cd-rom-läsare identifierades.
+ .
+ Du kan behöva läsa in ytterligare drivrutiner för cd-rom-enheter från ett flyttbart media. såsom en drivrutinsdiskett. Om du har ett sådan media tillgängligt så kan du mata in det och fortsätta. Annars kommer du att ges tillfälle att manuellt välja cd-rom-moduler.
+Description-te.UTF-8: CD-ROM డ్రైవరులను, వేరుచేయగల మాధ్యమాలనుండి ఎక్కించవలెనా?
+ ఉమ్మడి CD-ROM కనబడలేదు.
+ .
+ CD-ROM డ్రైవరులను, డ్రైవర్ ఫ్లాపీ లాంటి వేరుచేయగల మాధ్యమాలనుండి ఎక్కించవలసి రావచ్చు. అటువంటి మాధ్యమాలు వుంటే, వాటిని ప్రవేశపెట్టి కొనసాగించండి.  లేకపోతే, CD-ROM మాడ్యూలులను మీరు  స్వయంగా ఎంచుకోటానికి అవకాశం ఇవ్వబడుతుంది.
+Description-th.UTF-8: จะโหลดไดรเวอร์ซีดีรอมจากสื่อถอดเสียบหรือไม่?
+ ตรวจไม่พบไดรว์ซีดีรอมที่รู้จัก
+ .
+ คุณอาจจำเป็นต้องโหลดไดรเวอร์ซีดีรอมเพิ่มเติมจากสื่อถอดเสียบ เช่น แผ่นฟลอปปี้ที่เก็บไดรเวอร์ ถ้าคุณมีสื่อดังกล่าว กรุณาใส่เข้ามาแล้วดำเนินการต่อ หรือมิฉะนั้น คุณก็ยังมีทางเลือกให้เลือกมอดูลซีดีรอมด้วยตัวเอง
+Description-tl.UTF-8: Ipasok ang mga CD-ROM driver mula sa removable media?
+ Walang nahanap na karaniwang CD-ROM drive.
+ .
+ Maaaring kailangan na magpasok ng karagdagang mga CD-ROM driver mula sa removable media, tulad ng driver floppy. Kung mayroon kayong ganitong media, ikasa ito sa drive, at magpatuloy. Kung hindi, bibigyan kayo ng pagkakataon na pumili ng CD-ROM module ng mano-mano.
+Description-tr.UTF-8: CD-ROM sürücüleri taşınabilir ortamdan yüklensin mi?
+ Herhangi bir CD-ROM sürücü belirlenemedi.
+ .
+ CD-ROM sürücülerini taşınabilir ortamdan, örneğin bir disket sürücüden, yüklemeniz gerekebilir. Hâlihazırda böyle bir ortamınız varsa bunu bilgisayarınıza takın ve devam edin. Aksi takdirde CD-ROM modüllerini elle seçmeniz için size olanak tanınacaktır.
+Description-ug.UTF-8: يۆتكىمە ۋاسىتىدىن CD-ROM نىڭ قوزغىتىش پروگراممىسىنى يۈكلەمسىز؟
+ ئۇنىۋېرسال CD-ROM قوزغاتقۇچ بايقالمىدى.
+ .
+ يۆتكىمە ۋاسىتىدىن CD-ROM قوزغاتقۇچنىڭ قوشۇمچە قوزغىتىش بۆلىكىنى يۈكلىشىڭىز لازىم. ئەگەر سىزدە مۇشۇنداق بىر ۋاسىتە بولسا ئۇنداقتا ئۇنى قىستۇرۇپ ئورنىتىش جەريانىنى داۋاملاشتۇرۇڭ. بولمىسا بېرىلگەن تاللانمىدىن CD-ROM قوزغاتقۇچنىڭ قوزغىتىش بۆلىكىنى ئۆزىڭىز تاللاڭ.
+Description-uk.UTF-8: Завантажити драйвери для CD-ROM зі змінного носія?
+ Стандартний пристрій CD-ROM не був виявлений
+ .
+ Можливо, вам потрібно завантажити додаткові драйвери для CD-ROM зі змінного носія. Якщо у вас є потрібний носій з драйверами, то вставте його та продовжуйте. Інакше, вам буде надано можливість вибрати модулі для CD-ROM вручну.
+Description-vi.UTF-8: Tải các trình điều khiển CD-ROM từ vật chứa rời không?
+ Không có ổ đĩa CD-ROM dùng chung nào được dò tìm.
+ .
+ Bạn có thể cần nạp một số trình điều khiển CD-ROM thêm từ vật chứa rời, như một đĩa mềm trình điều khiển. Nếu bạn có sẵn vật chứa như vậy, hãy nạp nó vào ổ và tiếp tục lại. Không thì bạn sẽ nhận dịp tự chọn các mô-đun đĩa CD-ROM.
+Description-zh_CN.UTF-8: 从可移动介质中加载光盘驱动器的驱动程序吗？
+ 没有探测到常见的光盘驱动器。
+ .
+ 您可能需要从可移动介质中加载额外的光盘驱动器的驱动模块，例如驱动软盘。如果您已经拥有这样的介质，请将其插入，然后继续安装进程。否则，将给您一个选项用以手动选择光盘驱动器模块。
+Description-zh_TW.UTF-8: 是否要從可移除裝置中載入光碟機的驅動程式？
+ 沒有偵測到任何常見的光碟機。
+ .
+ 您可能需要從可移除裝置 (像是驅動程式軟碟片) 中再載入一些額外的光碟機驅動程式。如果您手上已經有這麼一個媒體，請將其插入並繼續進行。否則，您將得手動來選取要載入的光碟機驅動模組。
+
+Template: cdrom-detect/detect_progress_title
+Type: text
+Description: Detecting hardware to find CD-ROM drives
+Description-ar.UTF-8: اكتشاف العتاد للعثور على قارئات الأقراص المدمجة
+Description-ast.UTF-8: Deteutando el hardware p'alcontrar les unidaes de CD-ROM
+Description-be.UTF-8: Пошук прыладаў CD-ROM сярод абсталявання
+Description-bg.UTF-8: Разпознаване на хардуер, за да бъде намерено компактдисково устройство
+Description-bo.UTF-8: CD-ROM སྒུལ་ཆས་འཚོལ་བྱེད་ཀྱི་སྲ་ཆས་ཚོར་རྟོགས་བྱེད་པ
+Description-bs.UTF-8: Detektiram hardware da bi pronašao CD-ROM pogone
+Description-ca.UTF-8: S'està detectant el maquinari per a trobar unitats de CD-ROM
+Description-cs.UTF-8: Rozpoznává se hardware za účelem nalezení CD-ROM mechanik
+Description-cy.UTF-8: Yn chwilio am galedwedd er mwyn canfod disgyrrwyr CD-ROM
+Description-da.UTF-8: Leder efter udstyr for at finde cd-rom drev
+Description-de.UTF-8: Ausführen der Hardware-Erkennung, um CD-ROM-Laufwerke zu finden
+Description-el.UTF-8: Ανίχνευση υλικού για μονάδες CD-ROM
+Description-eo.UTF-8: Aparatara detektado por trovi lumdiskajn ingojn
+Description-es.UTF-8: Detectando el hardware para encontrar las unidades de CD-ROM
+Description-et.UTF-8: Riistvara tuvastamine leidmaks CD-ROM ajameid
+Description-eu.UTF-8: Hardwarea antzematen CD-ROM unitateak bilatzeko
+Description-fa.UTF-8: جستجوی سخت‌افزار برای یافتن درایورهای CD-ROM
+Description-fi.UTF-8: Laitteistotunnistus etsii CD-asemia
+Description-fr.UTF-8: Détection du matériel : recherche des lecteurs de CD-ROM
+Description-ga.UTF-8: Ag brath crua-earraí chun tiomántáin CD-ROM a aimsiú
+Description-gl.UTF-8: Estase a detectar o hardware para atopar unidades de CD-ROM
+Description-he.UTF-8: בוחן חומרה במטרה למצוא כונני תקליטורים
+Description-hr.UTF-8: Pretražujem sklopovlje za CD-ROM pogonima
+Description-hu.UTF-8: CD-ROM meghajtók felderítése
+Description-id.UTF-8: Mendeteksi perangkat keras untuk penggerak CD-ROM
+Description-is.UTF-8: Leita að geisladrifi
+Description-it.UTF-8: Rilevamento hardware alla ricerca di unità CD-ROM
+Description-ja.UTF-8: CD-ROM ドライブを見つけるためにハードウェアを検出しています
+Description-kk.UTF-8: Компакт-дискілердің оқу құрылғысын іздеу
+Description-kn.UTF-8: ಗಣಕದ ಯಂತ್ರಾಂಶಗಳನ್ನು ಸಿ ಡಿ ಡ್ರೈವ್ಗಳಿಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: 하드웨어를 검색해 CD-ROM 드라이브를 찾기
+Description-ku.UTF-8: Hardware tê tesbît kirin da ku ajokarên CD-ROM werin dîtin
+Description-lo.UTF-8: ກຳລັງກວດສອບຮາດແວຣເພື່ອຊອກຫາໄດຣຊີດີຣອມ
+Description-lt.UTF-8: Apžvelgiama aparatūra ieškant CD-ROM įrenginio
+Description-lv.UTF-8: Nosaka aparatūru, lai atrastu CD-ROM draiverus
+Description-mk.UTF-8: Детектирање на хардвер за да се најдат CD-ROM уредите
+Description-nb.UTF-8: Undersøker maskinvaren for å finne CD-spillere
+Description-nl.UTF-8: Hardwareherkenning CD-stations wordt uitgevoerd
+Description-nn.UTF-8: Søkjer gjennom maskinvare for å finna CD-ROM-spelarar
+Description-no.UTF-8: Undersøker maskinvaren for å finne CD-spillere
+Description-pl.UTF-8: Wykrywanie urządzeń w poszukiwaniu napędów CD-ROM
+Description-pt.UTF-8: A detectar o hardware para encontrar leitores de CD-ROM
+Description-pt_BR.UTF-8: Detectando hardware para encontrar unidades de CD-ROM
+Description-ro.UTF-8: Se detectează componentele pentru a găsi CD-ROM-ul
+Description-ru.UTF-8: Поиск привода чтения компакт-дисков
+Description-se.UTF-8: Áicamin mašiidnagálvvu gávdnan dihte CD-ROM-ovttadagaid
+Description-si.UTF-8:  පිරික්සමින් දාවකය සොයාගැනීම සඳහා දෘඩාංග හදුනාගනිමින්
+Description-sk.UTF-8: Rozpoznáva sa hardvér aby sa našla mechanika CD-ROM
+Description-sl.UTF-8: Zaznavanje pogonov CD-ROM
+Description-sq.UTF-8: Duke kërkuar për dispozitiva CD-ROM
+Description-sr.UTF-8: Претраживање хардвера за CD-ROM уређајима
+Description-sv.UTF-8: Identifierar maskinvara för att hitta cd-rom-enheter
+Description-te.UTF-8: CD-ROM డ్రైవ్లు  కోసం  హార్డ్వేర్ ని కనుగొంటున్నాము
+Description-th.UTF-8: กำลังตรวจสอบฮาร์ดแวร์เพื่อหาไดรว์ซีดีรอม
+Description-tl.UTF-8: Naghahanap ng mga CD-ROM drive
+Description-tr.UTF-8: CD-ROM sürücüleri bulmak için donanım algılanıyor
+Description-ug.UTF-8: قاتتىق دېتالدىن CD-ROM قوزغاتقۇچ بايقالدى
+Description-uk.UTF-8: Визначення пристроїв: пошук приводів CD-ROM
+Description-vi.UTF-8: Đang dò tìm phần cứng để tìm ổ CD-ROM
+Description-zh_CN.UTF-8: 正在探测硬件以搜寻 CD-ROM 驱动器
+Description-zh_TW.UTF-8: 偵測硬體以找出光碟機
+
+Template: cdrom-detect/manual_config
+Type: boolean
+Default: true
+Description: Manually select a CD-ROM module and device?
+ No common CD-ROM drive was detected.
+ .
+ Your CD-ROM drive may be an old Mitsumi or another non-IDE, non-SCSI
+ CD-ROM drive. In that case you should choose which module to load and
+ the device to use. If you don't know which module and device are
+ needed, look for some documentation or try a network installation
+ instead of a CD-ROM installation.
+Description-ar.UTF-8: تريد اختيار وحدة وجهاز القرص المدمج يدوياً؟
+ لم يكتشف أي قارئ أقراص مدمجة شائع.
+ .
+ يبدو أن قارئ الأقراص المدمجة هو قارئ ميتسومي قديم أو آخر ليس من نوع IDE، أو SCSI.  في تلك الحالة عليك أن تختار الوحدة لتحميلها والجهاز لاستخدامه. إن لم تكن تعرف أي وحدة أو جهاز هو مطلوب، ابحث عن بعض التوثيق أو حاول أن تقوم بالتثبيت الشبكي بدلاً من التثبيت عبر القرص المدمج.
+Description-ast.UTF-8: ¿Quier seleicionar manualmente el módulu y el preséu del CD-ROM?
+ Nun se deteutó dengún llector de CD-ROM común.
+ .
+ El preséu CD-ROM puede ser un antiguu Mitsumi u otru non-IDE, non-SCSI. Nesi casu tendríes qu'escoyer qué módulu cargar y el preséu a usar. Si nun sabes el módulu y preséu que necesites, tendrás que restolar ente la documentación o tentar una instalación pela rede en cuenta d'una instalación dende'l CD-ROM.
+Description-be.UTF-8: Пазначыць модуль і прыладу CD-ROM самастойна?
+ Не знойдзена ніякай прылады CD-ROM.
+ .
+ Вашая прылада CD-ROM можа быць старой Mitsumi альбо іншай ані-IDE, ані-SCSI прыладай CD-ROM. У гэтым выпадку неабходна пазначыць, які модуль трэба загрузіць і якую прыладу выкарыстаць. Калі Вы не ведаеце адказу, паспрабуйце пашукаць звестак у дакументацыі, або паставіць сістэму па сетцы, а не з кампакт-дыска.
+Description-bg.UTF-8: Ръчно избиране на модула и устройството на компактдиска?
+ Не беше открито компактдисково устройство.
+ .
+ Вашето компактдисково устройство може би е старо Mitsumi, или друго не-IDE и не-SCSI устройство. В този случай можете да укажете точно кой модул да бъде зареден и кое устройство да се използва. Ако не знаете кой модул и кое устройство са нужни, погледнете в документацията и пробвайте мрежова инсталация вместо инсталация от компактдиск.
+Description-bo.UTF-8: ལག་བཟོས་ཀྱིས་CD-ROM དཔེ་དབྱིབས་དང་སྒྲིག་ཆས་ཞིག་འདེམས་དགོས་སམ
+ རྒྱུན་སྤྱོད་ཀྱི་CD-ROM མ་རྙེད་པ
+ .
+ YourCD-ROM drive may be an old Mitsumi or another non-IDE, non-SCSI CD-ROM drive. In that case you should choose which module to load and the device to use. If you don't know which module and device are needed, look for some documentation or try a network installation instead of a CD-ROM installation.
+Description-bs.UTF-8: Ručno odabrati CD-ROM modul i uređaj?
+ Uobičajeni CD-ROM pogon nije detektovan.
+ .
+ Možda imate stari Mitsumi ili drugi ne-IDE, ne-SCSI CD-ROM čitač. U tom slučaju možete navesti koji modul treba učitati i koji uređaj koristiti. Ako ne znate koji su modul i uređaj potrebni, potražite neku dokumentaciju ili pokušajte mrežnu instalaciju umjesto instalacije sa CD-ROM-a.
+Description-ca.UTF-8: Voleu seleccionar manualment el mòdul i dispositiu de CD-ROM?
+ No s'ha detectat cap unitat de CD-ROM normal.
+ .
+ El lector de CD-ROM pot ser un vell Mitsumi, o un altre lector no-IDE, no-SCSI. En aquest cas, hauríeu d'indicar quin mòdul carregar i quin dispositiu utilitzar. Si no sabeu quin mòdul i dispositiu es necessita, cerqueu per un poc de documentació o intenteu una instal·lació per xarxa en comptes d'una instal·lació per CD-ROM.
+Description-cs.UTF-8: Vybrat zařízení a modul pro CD-ROM ručně?
+ Nebyla nalezena žádná běžná CD-ROM mechanika.
+ .
+ Možná máte starou Mitsumi nebo jinou ne-IDE, ne-SCSI mechaniku. V takovém případě můžete vybrat modul a odpovídající zařízení. Pokud nevíte, který modul a zařízení se má použít, podívejte se do dokumentace, nebo místo CD použijte síťovou instalaci.
+Description-cy.UTF-8: Dewis modiwl a dyfais CD-ROM â llaw?
+ Ni chanfuwyd disgyrrwr CD-ROM cyffredin.
+ .
+ Efallai fod eich CD-ROM yn un Mitsumi hen, neu un arall nid yw'n IDE na SCSI. Yn yr achos hynny, dewiswch pa fodiwl i lwytho a'r dyfais i ddefnyddio. Os nad ydych chi'n gwybod pa fodiwl a dyfais sydd angen, chwiliwch am ddogfeniaeth neu ceisiwch sefydliad rhwydwaith yn hytrach na sefydliad CD-ROM.
+Description-da.UTF-8: Vælg cd-rom modul og enhed manuelt?
+ Fandt ingen almindelige cd-rom drev.
+ .
+ Dit cd-rom drev kan være et gammelt Mitsumi eller andet ikke-IDE eller -SCSI cd-rom drev. I så fald skal du angive hvilket modul, du vil indlæse og hvilken enhed, du vil bruge. Hvis du ikke ved, hvilket modul og hvilken enhed, du skal bruge, må du lede efter noget dokumentation eller prøve at gennemføre installationen over nettet i stedet for fra cd.
+Description-de.UTF-8: Ein CD-ROM-Modul und Gerät manuell angeben?
+ Es wurde kein gängiges CD-ROM-Laufwerk gefunden.
+ .
+ Ihr CD-ROM-Laufwerk könnte ein altes Mitsumi oder ein anderes nicht-IDE- oder SCSI-Laufwerk sein. In diesem Fall sollten Sie angeben, welches Modul geladen werden muss und welches Gerät verwendet werden soll. Falls Sie nicht wissen, welches Modul und Laufwerk benötigt wird, versuchen Sie eine Anleitung dazu zu finden oder verwenden Sie eine Netzwerkinstallation statt der CD-ROM-Installation.
+Description-el.UTF-8: Θέλετε να επιλέξετε χειροκίνητα τη μονάδα και τον οδηγό του CD-ROM;
+ Δεν ανιχνεύθηκε τυπική μονάδα μονάδα CD-ROM.
+ .
+ Η μονάδα CD-ROM που έχετε είναι πιθανόν κάποια παλιά μονάδα Mitsumi ή άλλη μονάδα CD-ROM όχι τύπου IDE ή SCSI. Σε αυτήν την περίπτωση θα πρέπει να επιλέξετε να φορτώσετε τον οδηγό της συσκευής που θα χρησιμοποιηθεί για τη μονάδα. Αν δε γνωρίζετε ποιος είναι ο κατάλληλος οδηγός για τη συσκευή σας, αναζητήστε την πληροφορία σε κάποιο κείμενο τεκμηρίωσης ή εναλλακτικά επιλέξτε εγκατάσταση μέσω δικτύου αντί CD-ROM.
+Description-eo.UTF-8: Ĉu vi volas mem elekti lumdiskilan modulon kaj adaptilon?
+ Neniu ordinara lumdiskilo estis detektita.
+ .
+ Se via lumdiskilo estas malnova 'Mitsumi' aŭ ĝi ne estas 'IDE' nek 'SCSI', elektu la koncernajn ŝargotan modulon kaj uzotan adaptilon. Se vi ne scias kiun modulon aŭ adaptilon vi bezonas, konsultu la dokumentadon aŭ provu instaladon per reto anstataŭ per lumdisko.
+Description-es.UTF-8: ¿Quiere seleccionar manualmente el módulo y el dispositivo del CD-ROM?
+ No se ha detectado ningún lector de CD-ROM común.
+ .
+ El lector de CD-ROM puede ser un Mitsumi antiguo u otro lector de CD-ROM que no sea IDE ni SCSI. En ese caso, debería elegir qué módulo desea cargar y qué dispositivo utilizar. Busque documentación o intente una instalación en red en lugar de una instalación desde CD-ROM si no conoce qué módulo o qué dispositivo es necesario.
+Description-et.UTF-8: Kas valida CD-ROM'i moodul ja seade käsitsi?
+ Ühtki tavapärast CD-ROM seadet ei leitud.
+ .
+ Su CD-ROM võib olla vana Mitsumi või mõni muu, mitte IDE ega SCSI CD-ROM seade. Sellisel juhul peaksid valima, milline moodul laadida ja millist seadet kasutada. Kui sa ei tea, millist moodulit ja seadet valida, uuri dokumentatsiooni või proovi laserkettalt paigaldamise asemel võrgust paigaldamist.
+Description-eu.UTF-8: Eskuz hautatu nahi duzu CD-ROM modulua eta gailua?
+ Ez da CD-ROM unitate arruntik detektatu.
+ .
+ Baliteke CD-ROM unitatea Mitsumi zaharra edo IDE eta SCSI ez den CD-ROM unitatea izatea. Kasu horretan, zein modulu kargatu eta zein gailu erabili aukeratu behar duzu. Zein modulu eta gailu behar diren ez badakizu, begiratu dokumentazioa edo saiatu sareko instalazioarekin eta ez CD-ROMeko instalazioarekin.
+Description-fa.UTF-8: مازول و دستگاه CD-ROM به صورت دستی انتخاب شود؟
+ هیچ گردانندهٔ معمول CD-ROM شناخته نشد.
+ .
+ گردانندهٔ CD-ROM شما ممکن است یک Mitsumi قدیمی یا یکی دیگر از گرداننده‌های غیر IDE، غیر SCSI  باشد. در این صورت شما می‌بایست انتخاب کنید که کدام ماژول بارگذاری شود و کدام دستگاه استفاده گردد. اگر نمی‌دانید کدام ماژول و دستگاه مورد نیاز هستند، دنبال مستندات بگردید یا نصب شبکه را بجای CD-ROM انتخاب نمائید.
+Description-fi.UTF-8: Valitsetko itse CD-ROM-laiteajurin ja -laitteen?
+ Tavanomaista CD-ROM-asemaa ei löytynyt.
+ .
+ CD-asema saattaa olla vanha Mitsumi tai muu ei-IDE, ei-SCSI-asema. Tällöin on valittava mikä moduuli ladataan ja mitä laitetta käytetään. Mikäli et tiedä mitä moduulia ja laitetta tarvitaan, tutki ohjeita tai yritä verkkoasennusta CD-levyltä asentamisen sijaan.
+Description-fr.UTF-8: Voulez-vous choisir le module et le périphérique du lecteur de CD-ROM ?
+ Aucun lecteur de CD-ROM usuel n'a été détecté.
+ .
+ Le lecteur de CD-ROM est peut-être un ancien lecteur Mitsumi ou un lecteur qui n'est ni un IDE, ni un SCSI. Si vous êtes dans cette situation, vous pouvez indiquer quel module devra être chargé et quel périphérique sera utilisé. Si vous ne connaissez pas le module et le pilote dont vous avez besoin, veuillez consulter la documentation ou essayez de procéder à une installation via le réseau au lieu d'une installation avec un CD.
+Description-ga.UTF-8: Roghnaigh modúl agus gléas CD-ROM de láimh?
+ Níor braitheadh tiomántán coitianta CD-ROM.
+ .
+ Seans go bhfuil seantiomántán CD-ROM de chuid Mitsumi agat, nó tiomántán CD-ROM neamh-IDE, neamh-SCSI eile. Sa chás sin, ba chóir duit an modúl le luchtú agus an gléas le húsáid a roghnú. Mura bhfuil a fhios agat cé acu modúl agus gléas atá de dhíth ort, féach ar dhoiciméadú do chórais nó bain triail as suiteáil líonra in ionad suiteála ó CD-ROM.
+Description-gl.UTF-8: Desexa escoller manualmente un módulo e dispositivo de CD-ROM?
+ Non se atopou ningunha unidade normal de CD-ROM.
+ .
+ A súa unidade de CD-ROM pode ser unha antiga unidade Mitsumi ou doutro tipo que non sexa IDE ou SCSI. Neste caso debería escoller o módulo a cargar e o dispositivo a empregar. Se non sabe que módulo e dispositivo necesita, procure documentación ou probe a instalar pola rede no canto de instalar dun CD-ROM.
+Description-he.UTF-8: האם ברצונך לבחור ידנית מודול והתקן לכונן התקליטורים?
+ לא זוהה כונן תקליטורים סטנדרטי.
+ .
+ ייתכן שכונן התקליטורים שלך הוא כונן ישן של Mitsumi או סוג אחר של כונן שאינו IDE ואינו SCSI. במקרה כזה, עליך לבחור איזה מודול לטעון ואיזה התקן ישתמש בו. אם אינך יודע איזה מודול והתקן נדרשים, חפש מידע בתיעוד או נסה התקנת רשת במקום התקנה מתוך תקליטור.
+Description-hr.UTF-8: Ručno izaberi CD-ROM modul i uređaj?
+ Nije pronađen uobičajeni CD-ROM pogon.
+ .
+ Možda imate stari Mitsumi CD-ROM, ili koji drugi ne-IDE, ne-SCSI CD-ROM pogon. Ako je tako, trebate odlučiti koji ćete modul i uređaj koristiti. Ako to ne znate, pogledajte u dokumentaciju ili pokušajte instalaciju s mreže namjesto s CD-ROM-a.
+Description-hu.UTF-8: Kézzel választasz CD-ROM modult és eszközt?
+ Nem találtam általános CD-ROM meghajtót.
+ .
+ A CD-ROM meghajtó egy régi Mitsumi vagy más nem-IDE, nem-SCSI eszköz lehet. Ez esetben ki kell választani a betöltendő modult és használandó eszközt. Kétség esetén a létező dokumentációkhoz kell fordulni vagy CD-ROM telepítés helyett hálózati telepítést kell elvégezni.
+Description-id.UTF-8: Pilih modul dan piranti CD-ROM secara manual?
+ Penggerak CD-ROM yang umum tidak terdeteksi.
+ .
+ Penggerak CD-ROM Anda mungkin jenis Mitsumi yang lama atau penggerak CD-ROM non-IDE atau non-SCSI. Jika demikian, silakan pilih modul dan piranti yang harus dipakai. Bila Anda tidak mengetahui modul atau pirantinya, lihat dokumentasi atau coba lakukan instalasi dari jaringan.
+Description-is.UTF-8: Velja geisladrifsrekil og tæki handvirkt?
+ Ekkert venjulegt geisladrif fannst.
+ .
+ Geisladrifið þitt gæti verið gamalt Mitsumi eða önnur gerð sem tengist hvorki IDE- né SCSI-braut. Ef það er tilfellið ættirðu að velja rekilinn sem hlaða þarf, og hvaða drif skal nota. Ef þú veist ekki hvaða rekil nota skal ættirðu að leita að upplýsingum um það, eða reyna netuppsetningu.
+Description-it.UTF-8: Selezionare manualmente il dispositivo CD-ROM e il relativo modulo?
+ Non è stata rilevata alcuna unità CD-ROM comune.
+ .
+ L'unità CD-ROM in uso potrebbe essere un vecchio modello Mitsumi oppure potrebbe trattarsi di una unità non-IDE o non-SCSI. In tal caso, scegliere il modulo da caricare e il device da utilizzare. Se non si sa quale modulo e quale device sono necessari, consultare la documentazione oppure tentare un'installazione via rete invece che da CD-ROM.
+Description-ja.UTF-8: CD-ROM モジュールとデバイスを手動で選択しますか?
+ 一般的な CD-ROM ドライブは検出されませんでした
+ .
+ あなたの CD-ROM ドライブは、古い Mitsumi または非 IDE、非 SCSI の CD-ROM ドライブなのかもしれません。その場合、ロードするモジュールと利用するデバイスを指示できます。必要とされるモジュール、デバイスがわからない場合は、ドキュメントを探すか、CD-ROM インストールの代わりにネットワークインストールを試してみてください。
+Description-kk.UTF-8: CD-ROM құрылғысын және модулін қолдан таңдау керек пе?
+ Стандартты CD-ROM табылмады.
+ .
+ Сіздің CD-ROM оқу құрылғыңыз ескі Mitsumi немесе  IDE емес, SCSI емес құрылғы болуы мүмкін. Мұндай жағдайда қандай модульдерді жүктеу керектігін және қандай құрылғы қолдану керектігін өзіңіз көрсетуіңіз керек. Егер сіз қандай модуль және құрылғы қолдану керектігін білмесеңіз, құжаттарды оқыңыз немесе CD-ROM арқылы орнатудың орнына желі арқылы орнатып көріңіз.
+Description-kn.UTF-8: ಸ್ವತಃ ಸಿಡಿ-ರಾಂ ಘಟಕ ಹಾಗು ಸಾಧನವನ್ನು ಆಯ್ಕೆಮಾಡಿ?
+ ಸಾಮಾನ್ಯವಾದ‌ ಸಿಡಿ-ರಾಂ ಕಂಡುಬಂದಿಲ್ಲ‌.
+ .
+ ನಿಮ್ಮ ಗಣಕಮುದ್ರಿಕೆ ಡ್ರೈವ್ ಹಳೆಯ ಮಿತ್ಸುಮಿ ಅಥವಾ ಬೇರೊಂದು IDEಯಲ್ಲದ, SCSIಯಲ್ಲದ ಗಣಕಮುದ್ರಿಕೆ ಡ್ರೈವ್ ಆಗಿರಬೇಕು. ಹಾಗಾದ ಪಕ್ಷದಲ್ಲಿ ನೀವು ಯಾವ ವಿಭಾಗವನ್ನು ತುಂಬಬೇಕು ಮತ್ತು ಯಾವ್ ಉಪಕರಣವನ್ನು ಬಳಸುವುದೆಂದು ಆಯ್ಕೆ ಮಾಡಬೇಕು. ಅದು ನಿಮಗೆ ತಿಳಿಯದಿದ್ದರೆ ಸಹಾಯ ಮಾಹಿತಿಯಲ್ಲಿ ಹುಡುಕಿ ಅಥವಾ ಗಣಕಮುದ್ರಿಕೆಯ ಅನುಸ್ಥಾಪನೆಯ ಬದಲಾಗಿ ಜಾಲಬಂಧ  ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ.
+Description-ko.UTF-8: 수동으로 CD-ROM 모듈과 장치를 선택하시겠습니까?
+ 일반적인 CD-ROM 드라이브를 찾을 수 없습니다.
+ .
+ CD-ROM 드라이브가 과거의 Mitsumi 혹은 기타 IDE가 아니고, SCSI도 아닌 CD-ROM 드라이브일 수도 있습니다. 이 경우 이 장치를 사용하기 위해 어떤 모듈을 읽어들일 지 선택해야 합니다. 어떤 모듈이 필요하고 어떤 장치 파일을 사용해야 하는 지 알지 못한다면, 관련 문서를 찾아 보시거나 CD-ROM 설치 대신에 네트워크 설치를 시도해 보십시오.
+Description-ku.UTF-8: Bila modula CD-ROM û cîhaza wî bi destan were hilbijartin?
+ Ajokareke CD-ROM'ê ya nas nehat dîtin.
+ .
+ Ajokara te ya CD-ROMê dibe ku Mitsumi, non-IDE'yeke din yan jî CD-ROMeke ku ne SCSI be. Di vê rewşê de modula ku wê were barkirin û cîhaz divê tu hilbijêrî. Heke tu nizanibî kîjan modul û cîhaz pêwist e, li hin dokumentan binêre yan jî dêvila ji CD-ROMê saz bike, hewl bide ku ji torê saz bike.
+Description-lo.UTF-8: ຈະເລືອກໂມດູນ ແລະ ອຸປະກອນຊີດີອອກດ້ວຍຕົວເອງຫຼືບໍ່ ?
+ ກວດບໍ່ພົບໄດເວີຊີດີຮອມທີ່ຮູ້ຈັກ.
+ .
+ ໄດເວີຊີດີຂອງເຈົ້າອາດເປັນໄດເວີ Mitsumi ເກົ່າ ຫຼື ເປັນໄດເວີທີ່ບໍ່ແມ່ນ IDE ຫຼື  SCSI ຊື່ງໃນກໍ່ລະນີ້ດັ່ງກ່ວາ ເຈົ້າຄວນເລືອກໂມດູນທີ່ຈະເລືອກ ແລະ ອຸປະກອນທີ່ຈະໃຊ້ເອງ ຖ້າເຈົ້າບໍ່ຮູ້ວ່າຈະໃຊ້ໂມດູນຫຼືອຸປະກອນໃດ ກາລຸນາກວດສອບເອກະສານຄູ່ມື ຫຼືລອງໃຊ້ວີທີ່ຕິດຕັ້ງຜ່ານເຄືອຄ່າຍແທນການຕິດຕັ້ງດ້ວຍຊີດີອອກ.
+Description-lt.UTF-8: Ar rankiniu būdu pasirinksite CD-ROM modulį ir įrenginį?
+ Neaptiktas įprastas CD-ROM įrenginys.
+ .
+ Jūsų CD-ROM'as galbūt yra senas Mitsumi ar kitas ne IDE, ne SCSI CD-ROM įrenginys. Jei taip, turite pasirinkti, kokį modulį įkelti, ir kokį įrenginį naudoti. Jei nežinote, koks modulis ir įrenginys reikalingi, pasižiūrėkite dokumentacijoje, arba bandykite diegti ne iš kompaktini disko, o per tinklą.
+Description-lv.UTF-8: Izvēlēties CD-ROM moduli un ierīci manuāli?
+ Parastā tipa CD-ROM dzinis nav atrasts.
+ .
+ Iespējams, ka CD-ROM dzinis ir vecs Mitsumi vai kāds cits ne-IDE un ne-SCSI CD-ROM dzinis. Šajā gadījumā jums vajadzētu izvēlēties, kādu moduli ielādēt un kādu ierīces datni lietot. Ja šos parametrus nezināt, meklējiet tos dokumentācijā vai mēģiniet instalēt sistēmu no tīkla.
+Description-mk.UTF-8: Рачно одбери CD-ROM модул и уред?
+ Не детектирав вообичаен CD-ROM уред.
+ .
+ Твојот CD-ROM може да биде стар Mitsumi или друг не-IDE, не-SCSI CD-ROM уред. Во таков случај треба да одбереш кој модул да се вчита и кој уред да се користи. Ако не знаеш што да одбереш, побарај некој дакоументација со CD-ROM-от или пробај со мрежна инсталација.
+Description-nb.UTF-8: Vil du velge modul og enhet for CD-spilleren manuelt?
+ Fant ingen vanlig CD-spiller.
+ .
+ Det kan være at du har en gammel Mitsumi-spiller eller en annen CD-spiller som ikke er en IDE- eller SCSI-spiller. I så fall kan du velge hvilken modul og enhet som skal brukes. Dersom du ikke vet hvilken modul og enhet som trengs, bør du prøve å finne dokumentasjon et annet sted. Du kan også prøve nettverksinstallasjonen isteden for å installere fra CD.
+Description-nl.UTF-8: Wilt u de module en het apparaatbestand voor het CD-station handmatig instellen?
+ Er is geen gewoon CD-station gedetecteerd
+ .
+ Mogelijk is uw CD-station een oude Mitsumi of een ander niet-IDE, niet-SCSI apparaat. In dat geval dient u aan te geven welke module en welk apparaatbestand gebruikt moeten worden om het CD-station aan te spreken. Als u niet weet welke module en welk apparaatbestand vereist zijn zoekt u best naar documentatie, al kunt u natuurlijk ook een netwerkinstallatie uitvoeren in plaats van een CD-installatie.
+Description-nn.UTF-8: Vil du velje modulen og eininga for CDROMen manuelt?
+ Fann ingen vanleg CD-ROM-lesar.
+ .
+ Det kan vere du har ein gammal Mitsumi-spelar eller ein annan CDROM-spelar som ikkje er av IDE- eller SCSI-type. I så fall kan du velje kva for modul og eining som skal brukast. Dersom du ikkje veit kva for modul og eining som trengst, bør du prøve å finne dokumentasjon ein annan stad. Du kan òg prøve nettverksinstallasjon i staden for å installere frå CDROM.
+Description-no.UTF-8: Vil du velge modul og enhet for CD-spilleren manuelt?
+ Fant ingen vanlig CD-spiller.
+ .
+ Det kan være at du har en gammel Mitsumi-spiller eller en annen CD-spiller som ikke er en IDE- eller SCSI-spiller. I så fall kan du velge hvilken modul og enhet som skal brukes. Dersom du ikke vet hvilken modul og enhet som trengs, bør du prøve å finne dokumentasjon et annet sted. Du kan også prøve nettverksinstallasjonen isteden for å installere fra CD.
+Description-pl.UTF-8: Czy chcesz ręcznie wybrać moduł i urządzenie CD-ROM?
+ Nie wykryto napędu CD-ROM.
+ .
+ Twój napęd CD-ROM może być starym napędem Mitsumi lub innym napędem nie IDE i nie SCSI. W takim przypadku powinieneś wybrać, który moduł należy załadować i którego użyć urządzenia. Jeśli nie wiesz, który moduł i urządzenie jest potrzebne, przejrzyj dokumentację lub spróbuj instalacji z wykorzystaniem sieci, a nie CD-ROM.
+Description-pt.UTF-8: Escolher manualmente um módulo e dispositivo de CD-ROM?
+ Não foi encontrado nenhum leitor de CD-ROM comum.
+ .
+ O seu leitor de CD-ROM pode ser um Mitsumi antigo ou um outro leitor de CD-ROMs não-IDE e não-SCSI. Nesse caso deverá escolher o módulo a carregar e o dispositivo a utilizar. Se não sabe que módulos e dispositivos são necessários, procure alguma documentação ou tente a instalação através da rede em vez da instalação por CD-ROM.
+Description-pt_BR.UTF-8: Selecionar manualmente um módulo e dispositivo de CD-ROM?
+ Nenhuma unidade de CD-ROM comum foi detectada.
+ .
+ Sua unidade de CD-ROM pode ser uma antiga unidade Mitsumi ou outra unidade de CD-ROM não-IDE, não-SCSI. Nesse caso, você deverá escolher qual módulo carregar e o dispositivo a ser usado. Se você não sabe qual módulo e dispositivo são necessários, procure por alguma documentação ou tente uma instalação via rede ao invés da instalação via CD-ROM.
+Description-ro.UTF-8: Selectați manual un modul și un dispozitiv CD-ROM?
+ Nu a fost detectat nici un CD-ROM obișnuit.
+ .
+ CD-ROM-ul dumneavoastră ar putea fi un CD-ROM Mitsumi vechi sau unul non-IDE și non-SCSI. În acest caz va trebui să alegeți modulul care trebuie încărcat și dispozitivul care trebuie folosit. Dacă nu știți care modul și dispozitiv este necesar, căutați ceva documentație sau încercați o instalare prin rețea.
+Description-ru.UTF-8: Выбрать модуль и устройство CD-ROM вручную?
+ Стандартный CD-ROM не обнаружен.
+ .
+ Устройство чтения CD-ROM не найдено. Возможно вы используете старое устройство чтения Mitsumi или другой не-IDE, не-SCSI CD-ROM. В таком случае вы должны указать, какие модули загрузить и какое устройство использовать. Если вы не знаете какие модули и устройства вам нужны, то почитайте документацию или попробуйте установку по сети вместо установки с CD-ROM.
+Description-si.UTF-8: ශ්‍රමිකව CD-ROM මොඩියුලය හා උපකරණය තෝරන්නද?
+ පොදු CD-ROM ධාවකයක් හමු නොවිනි.
+ .
+ ඔබේ CD-ROM ධාවකය ඇතැම්විට පැරණි Mitsumi හෝ වෙනත් IDE හෝ SCSI නොවන ධාවකයක් විය හැක, එසේ නම් ඔබට ධාවකය භාවිත කිරීම සඳහා පූර්ණය කිරීමට මොඩියුලය තෝරාගැනීමට සිදුවේ, ධාවකයට සුදුසු මොඩියුලය කුමක්දැයි නොදන්නේ නම්, ලේඛන වලට යොමුවන්න, නැතිනම් CD-ROM ස්ථාපනයක් වෙනුවට ජාල ස්ථාපනයකට යොමුවන්න.
+Description-sk.UTF-8: Manuálne zvoliť CD-ROM modul a zariadenie?
+ Nebola rozpoznaná žiadna bežná CD-ROM mechanika.
+ .
+ Vaša CD-ROM mechanika je možno stará Mitsumi alebo iná nie-IDE, nie-SCSI CD-ROM mechanika. V takom prípade by ste si mali zvoliť modul na zavedenie a odpovedajúce zariadenie. Ak neviete, ktorý modul a zariadenie sa majú použiť, pozrite sa do dokumentácie, alebo skúste namiesto CD-ROM inštalácie sieťovú inštaláciu
+Description-sl.UTF-8: Ali želite ročno izbrati CD-ROM module in napravo?
+ Ni bilo mogoče zaznati nobenega običajnega CD-ROM pogona.
+ .
+ Vaš CD-ROM pogon je morda stari pogon Mitsumi ali drug pogon, ki ni vrste IDE ali SCSI. V tem primeru izberite modul in pogon, ki ga želite uporabljati. Če ne veste kateri modul in pogon potrebujete, poskusite poiskati dokumentacijo ali pa namesto namestitve iz CD-ja, poskusite z namestitvijo prek omrežja.
+Description-sq.UTF-8: Dëshiron ta zgjedhësh vetë modulin dhe dispozitivin e CD-ROM-it?
+ Nuk u gjet asnjë lexues i zakonshëm CD-ROM.
+ .
+ Lexuesi CD-ROM që ke mund të jetë një Mitsumi i vjetër një tjetër jo IDE, apo lexues CD-ROM jo SCSI. Në këtë rast, duhet të zgjedhësh kë modul duhet të ngarkosh dhë dispozitivin për përdorim. Nëse nuk di kush modul apo dispozitiv duhet, shiko dokumentacionin ose përdor instalimin nga rrjeti në vend të atij nga CD-ROM.
+Description-sr.UTF-8: Ручно изабери CD-ROM модул и уређај?
+ Није пронађен ниједан уобичајени CD-ROM уређај.
+ .
+ Могуће да је ваш CD-ROM стари Mitsumi или други не-IDE, не-SCSI CD-ROM уређај. У том случају изаберите који модул учитати и који уређај користити. Ако не знате који модули и уређаји су потребни погледајте документацију или пробајте инсталацију преко мреже уместо CD-ROM инсталације.
+Description-sv.UTF-8: Välj en cd-rom-modul och enhet manuellt?
+ Ingen vanlig cd-rom-läsare identifierades.
+ .
+ Din cd-rom-läsare kan vara en gammal Mitsumi eller en annan cd-rom-läsare av annan typ än IDE eller SCSI. Om så är fallet bör du välja vilken modul som ska läsas in och den enhet som ska användas. Om du inte vet vilken modul och enhet som behövs så sök efter dokumentation eller försök med en nätverksinstallation istället för en cd-rom-installation.
+Description-te.UTF-8: CD-ROM మాడ్యూలు మరియు డివైస్ స్వయంగా ఎంచుకోవాలా?
+ ఉమ్మడి CD-ROM కనబడలేదు.
+ .
+ మీ CD-ROM డ్రైవ్  పాత  మిట్సుమి లేక ఇంకొక non-IDE, non-SCSI, డ్రైవ్ అయివుండవచ్చు. అలాగయితే,ఏ మాడ్యూలు ఎక్కించాలో, ఏ డివైస్  వాడాలో ఎంచుకోవాలి. ఏ మాడ్యూలు, ఏ డివైస్  వాడాలో తెలియకపోతే, వివరాల కోసం వెతకండి, లేక CD-ROM స్థాపన  బదులుగా నెట్వర్క్ స్థాపన  ప్రయత్నించండి.
+Description-th.UTF-8: จะเลือกมอดูลและอุปกรณ์ซีดีรอมด้วยตัวเองหรือไม่?
+ ตรวจไม่พบไดรว์ซีดีรอมที่รู้จัก
+ .
+ ไดรว์ซีดีรอมของคุณอาจเป็นไดรว์ Mitsumi เก่า หรือเป็นไดรว์ที่ไม่ใช่ IDE หรือ SCSI ซึ่งในกรณีดังกล่าว คุณควรเลือกมอดูลที่จะโหลด และอุปกรณ์ที่จะใช้เอง ถ้าคุณไม่ทราบว่าจะใช้มอดูลหรืออุปกรณ์ไหน กรุณาตรวจสอบเอกสารคู่มือ หรือลองใช้วิธีติดตั้งผ่านเครือข่ายแทนการติดตั้งด้วยซีดีรอม
+Description-tl.UTF-8: Pumili ng CD-ROM module at device ng mano-mano?
+ Walang nahanap na karaniwang CD-ROM drive.
+ .
+ Ang inyong CD-ROM drive ay maaaring lumang Mitsumi o ibang hindi IDE, hindi SCSI na CD-ROM drive. Kung ganoon, dapat piliin niyo ang module na ipapasok at ang device na gagamitin. Kung hindi niyo alam kung aling module at device ang kailangan, maghanap ng documentation o subukan ang pagluklok mula sa network sa halip ng pagluklok mula sa CD-ROM.
+Description-tr.UTF-8: Elle bir CD-ROM modülü ve aygıtı seçmek ister misiniz?
+ Herhangi bir CD-ROM sürücü belirlenemedi.
+ .
+ CD-ROM sürücünüz eski bir Mitsumi veya başka bir IDE, SCSI olmayan CD-ROM sürücü olabilir. Bu durumda kullanılacak modülü ve aygıtı siz seçmelisiniz. Eğer hangi modülün ve aygıtın gerekli olduğunu bilmiyorsanız konuyla ilgili belgeleri inceleyin veya CD-ROM'dan kurmak yerine ağdan kurulum yapmayı deneyin.
+Description-ug.UTF-8: CD-ROM قوزغاتقۇچ ئۈسكۈنىسى ۋە ئۇنىڭ قوزغىتىش بۆلىكىنى ئۆزىڭىز تاللامسىز؟
+ ئۇنىۋېرسال CD-ROM قوزغاتقۇچ بايقالمىدى.
+ .
+ CD-ROM قوزغاتقۇچىڭىز كونا پاسوندىكى Mitsumi ياكى غەيرىي IDE، غەيرىي SCSI  تىپ بولۇشى مۇمكىن. ئۇنداق بولغاندا ئىشلىتىدىغان ئۈسكۈنە ۋە ئۇنىڭ قوزغىتىش بۆلىكىنى ئۆزىڭىز تاللىشىڭىز لازىم. ئەگەر قايسىسىنى ئىشلىتىشنى بىلمىسىڭىز، مۇناسىۋەتلىك ماتېرىيالنى ئىزدەڭ ياكى توردىن ئورنىتىشنى ئىشلىتىڭ.
+Description-uk.UTF-8: Вибрати модуль та пристрій CD-ROM вручну?
+ Стандартний пристрій CD-ROM не був виявлений
+ .
+ Можливо ви використовуєте старий пристрій Mitsumi або інший не-IDE, не-SCSI CD-ROM. В цьому випадку ви повинні вказати, які модулі завантажувати та який пристрій використовувати. Якщо ви не знаєте, який вам потрібний модуль та пристрій, то почитайте документацію або спробуйте встановлення через мережу замість встановлення з CD-ROM.
+Description-vi.UTF-8: Bạn muốn tự chọn mô-đun và thiết bị CD-ROM không?
+ Không có ổ đĩa CD-ROM dùng chung nào được dò tìm.
+ .
+ Ổ đĩa CD-ROM của bạn có thể là kiểu Mitsumi cũ, hoặc một ổ đĩa CD-ROM khác cũng khác IDE khác SCSI. Như thế thì bạn nên chọn mô-đun nào cần nạp và thiết bị nào cần sử dụng. Nếu bạn chưa biết điều nào nên chọn, hãy xem tài liệu hướng dẫn, hoặc thử cài đặt qua mạng thay vì qua đĩa CD-ROM.
+Description-zh_CN.UTF-8: 手动选择光盘驱动器设备及其模块吗？
+ 没有探测到常见的光盘驱动器。
+ .
+ 您的光盘驱动器也许是老式的三菱或者其他非 IDE、非 SCSI 的型号。那样的话，请您手动选择将要使用的设备及其驱动模块。如果您不知道应该用哪一个，请查找相关文档资料，或者使用网络安装。
+Description-zh_TW.UTF-8: 是否手動選擇光碟機裝置及其模組？
+ 沒有偵測到任何常見的光碟機。
+ .
+ 您的光碟機也許是老式的 Mitsumi 或者其他非 IDE、非 SCSI 的裝置。若真是這樣的話，請您手動選擇它所使用的裝置及其所需載入的模組。如果您不知道應該使用哪一個裝置及模組，請參考相關文件，或者不要使用安裝光碟，替而使用網路安裝。
+
+Template: cdrom-detect/retry
+Type: boolean
+Default: true
+Description: Retry mounting the CD-ROM?
+ Your installation CD-ROM couldn't be mounted. This probably means that
+ the CD-ROM was not in the drive. If so you can insert it and try again.
+Description-ar.UTF-8: هل أجرب تركيب القرص المدمج مرة أخرى؟
+ لم يمكن قرص التثبيت المدمج . يعني هذا على الأرجح أن القرص المدمج لم يكن في القارئ. إن كان كذلك يمكنك إدخاله ومعاودة المحاولة.
+Description-ast.UTF-8: ¿Intentar montar el CD-ROM de nuevu?
+ Nun pudo montase'l CD-ROM d'instalación. Esto dablemente signifique qu'el CD-ROM nun taba nel llector. Si ye asina, pue inxertalu y prebar de nuevu.
+Description-be.UTF-8: Паспрабаваць яшчэ раз прымацаваць CD-ROM?
+ Не атрымалася прымацаваць установачны CD-ROM. Магчыма, ў прыладзе адсутнічае дыск. Калі так, устаўце яго і паспрабуйце яшчэ раз.
+Description-bg.UTF-8: Да бъде ли направен отново опит за монтиране на компактдиск?
+ Вашият инсталационен компактдиск не може да бъде монтиран. Това вероятно означава, че компактдискът не е в устройството. Ако е така, сложете го и опитайте отново.
+Description-bo.UTF-8: CD-ROM སླར་བཀར་དགོས་སམ
+ ཁྱོད་ཀྱི་སྒྲིག་འཇུག་འོད་སྡེར་འཇུག་སྣོད་དེ་བཀར་མི་ཐུབ་པ། རྒྱུ་རྐྱེན་ནི་འོད་སྡེར་འཇུག་སྣོད་དེ་སྒུལ་ཆས་དང་དུ་མི་འདུག ཁྱོད་ཀྱིས་ནང་དུ་སླར་བཅུག་ནས་བཟོ་དགོས
+Description-bs.UTF-8: Ponovo pokušati montirati CD-ROM?
+ Vaš instalacioni CD-ROM se ne može montirati. Ovo vjerovatno znači da CD-ROM nije u pogonu. Ako je tako, može te ga ubaciti i ponovo pokušati.
+Description-ca.UTF-8: Voleu intentar muntar el CD-ROM una altra vegada?
+ No s'ha pogut muntar el CD-ROM d'instal·lació. Açò probablement vol dir que el CD-ROM no era a la unitat. Si és així, podeu inserir-l'hi i tornar a provar.
+Description-cs.UTF-8: Pokusit se znovu o připojení CD-ROM?
+ Instalační CD-ROM nemohlo být připojeno. To pravděpodobně znamená, že CD-ROM není v mechanice. Vložte jej a zkuste to znovu.
+Description-cy.UTF-8: Ceisio clymu y CD-ROM eto?
+ Ni fedrwyd clymu eich CD-ROM sefydlu. Mwy na thebyg golyga hyn nad oedd y CD-ROM yn y gyrriant. Os felly, gallwch ei fewnosod a cheisio eto.
+Description-da.UTF-8: Forsøg igen og montér cd'en?
+ Din installations-cd kunne ikke monteres. Det betyder sikkert, at den ikke er i drevet. Hvis det er tilfældet, kan du lægge den i og prøve igen.
+Description-de.UTF-8: Noch einmal versuchen, die CD-ROM einzubinden?
+ Ihre Installations-CD-ROM konnte nicht eingebunden werden. Vermutlich liegt keine CD-ROM im Laufwerk. Falls dies zutrifft, legen Sie bitte eine CD-ROM ein und versuchen Sie es erneut.
+Description-el.UTF-8: Θέλετε να ξαναπροσπαθήσετε να προσαρτήσετε το CD-ROM;
+ Αδύνατη η προσάρτηση του CD-ROM εγκατάστασης. Αυτό πιθανόν σημαίνει ότι το CD-ROM δε βρισκόταν στη μονάδα. Αν ισχύει αυτό, μπορείτε να το τοποθετήσετε στη μονάδα και να ξαναπροσπαθήσετε.
+Description-eo.UTF-8: Ĉu reprovi munti la lumdiskon?
+ Via instalada lumdisko ne povis esti muntita. Verŝajne ne estas lumdisko en via lumdiskingo. Se tio okazas, enŝovu ĝin kaj denove reprovu.
+Description-es.UTF-8: ¿Intentar montar el CD-ROM de nuevo?
+ No se pudo montar el CD-ROM de instalación. Esto probablemente signifique que el CD-ROM no estaba en el lector. Si es así, puede insertarlo y probar de nuevo.
+Description-et.UTF-8: Kas proovida uuesti laserketta haakimist?
+ Paigaldusplaati ei õnnestunud haakida. Tõenäoliselt tähendab see, et laserketast ei ole seadmes. Kui see on nii, palun sisesta ketas ja proovi uuesti.
+Description-eu.UTF-8: Berriro saiatu nahi duzu CD-ROMa muntatzen?
+ Ezin izan da CD-ROMaren instalazioa muntatu. Horrek ziurrenik esan nahi du CD-ROMa ez zegoela unitatean. Hala bada, sar ezazu eta saiatu berriro.
+Description-fa.UTF-8: تلاش مجدد برای ماونت CD-ROM؟
+ CD-ROM نصب شما نتوانست ماونت شود. این احتمالاً به این معنی است که CD-ROM در دستگاه نبوده است. اگر اینگونه است می‌توانید آنرا قرار دهید و دوبار سعی نمائید.
+Description-fi.UTF-8: Yritetäänkö uudestaan liittää CD-levy?
+ Asennuslevyä ei voitu liittää. Luultavimmin CD-levy ei ollut asemassa. Jos näin oli, laita levy asemaan ja yritä uudelleen.
+Description-fr.UTF-8: Faut-il réessayer de monter le CD ?
+ Le CD d'installation ne peut être monté. Cela signifie probablement que le CD ne se trouve pas dans le lecteur. Si c'est le cas, vous pouvez l'insérer et recommencer une nouvelle fois.
+Description-ga.UTF-8: Déan iarracht eile an CD-ROM a fheistiú?
+ Níorbh fhéidir do CD-ROM suiteála a fheistiú. Is dócha nach raibh an CD-ROM sa tiomántán. Sa chás sin, cuir é isteach agus bain triail eile as.
+Description-gl.UTF-8: Desexa tentar montar o CD-ROM de novo?
+ Non foi posíbel montar o CD-ROM de instalación. Isto adoita acontecer cando o CD-ROM non está na unidade. Se é así, introdúzao e volva tentalo.
+Description-he.UTF-8: לנסות שוב לעגון את התקליטור?
+ תקליטור ההתקנה שלך לא ניתן לעגינה, זאת כנראה בגלל שהתקליטור לא נמצא בכונן. אם זהו המצב, הכנס אותו ונסה שוב.
+Description-hr.UTF-8: Iznova pokušaj montirati CD-ROM?
+ Ne mogu montirati vaš instalacijski CD-ROM, vjerojatno zato što nije u pogonu. Ako je tako, ubacite ga i pokušajte iznova.
+Description-hu.UTF-8: Megpróbálod ismét felcsatolni a CD-ROM-ot?
+ A telepítő CD-ROM nem csatolható. Valószínűleg nincs a meghajtóban. Ebben az esetben most tedd be és próbáld újra.
+Description-id.UTF-8: Coba lagi mengaitkan CD-ROM?
+ CD-ROM instalasi Anda tidak dapat dikaitkan. Mungkin CD-ROM-nya belum dimasukkan ke dalam penggerak CD. Bila belum, silakan dimasukkan dan ulangi lagi.
+Description-is.UTF-8: Reyna aftur að tengja geisladisk?
+ Ekki tókst að tengja geisladiskinn þinn. Þetta þýðir líklega að diskurinn hafi ekki verið í drifinu. Ef svo er geturðu sett hann í og reynt aftur.
+Description-it.UTF-8: Tentare nuovamente di montare il CD-ROM?
+ Non è stato possibile montare il CD-ROM d'installazione. Probabilmente il CD-ROM non era nell'unità. In tal caso inserirlo e riprovare nuovamente.
+Description-ja.UTF-8: CD-ROM のマウントを再試行しますか?
+ インストール CD-ROM をマウントできませんでした。恐らく CD-ROM がドライブに入っていないのでしょう。そうであれば、挿入の上、再試行できます。
+Description-kk.UTF-8: CD-ROM тіркеуді қайталау керек пе?
+ Сіздің орнату CD-ROM дискіңіз тіркелмеді. CD-ROM салынбаған болса, салып, қайталап көріңіз.
+Description-kn.UTF-8: ಅಡಕ ತಟ್ಟೆಯನ್ನು ಏರಿಸಲು ಮರುಪ್ರಯತ್ನಿಸುವುದೆ?
+ ನಿಮ್ಮ ಅನುಸ್ಥಾಪನ ಗಣಕಮುದ್ರಿಕೆಯನ್ನು ಅರೋಹಿಸಲಾಗುತ್ತಿಲ್ಲ. ಪ್ರಾಯಶಃ ನಿಮ್ಮ ಗಣಕಮುದ್ರಿಕೆ ಡ್ರೈವ್ ಒಳಗಿಲ್ಲ. ಹಾಗಿದ್ದಲ್ಲಿ ಮುದ್ರಿಕೆಯನ್ನು ಒಳಗೆ ಹಾಕಿ, ನಂತರ ಪ್ರಯತ್ನಿಸಿ.
+Description-ko.UTF-8: 다시 한번 CD-ROM 마운트를 시도하시겠습니까?
+ 설치 CD-ROM을 마운트할 수 없습니다. CD-ROM이 드라이브 안에 없는 경우일 것입니다. 그 경우 CD-ROM을 넣고 다시 시도할 수 있습니다.
+Description-ku.UTF-8: Bila mountkirina CD-ROM'ê ji nû ve were ceribandin?
+ CD-ROM'a te ya sazkirinê nayê mountkirin. Dibe ku CD-ROM'a te ne di ajokar de be. Heke wisa be CD'yê têxê û dîsa biceribîne.
+Description-lo.UTF-8: ຈະພະຍາຍາມເມົາຊີດີອອກອີກຄັ້ງຫຼືບໍ່?
+ ບໍ່ສາມາດເມົາແຜ່ນຊີດີອອກຕິດຕັ້ງໄດ້ ເປັນໄປໄດ້ວ່າເຈົ້າບໍ່ໄດ້ໃສ່ແຜ່ນໃນໄດເວີ ຊື່ງຖ້າໃຊ້ ເຈົ້າສາມາດໃສ່ແຜ່ນແລ້ວລອງໃໝ່ໄດ້.
+Description-lt.UTF-8: Ar dar kartą bandyti prijungti CD-ROM įrenginį?
+ Nepavyksta prijungti įdiegiklio kompaktinio disko. Tai galbūt reiškia, kad diskas neįdėtas į įrenginį. Jei taip, įdėkite jį ir pabandykite dar kartą.
+Description-lv.UTF-8: Mēģināt piemontēt CD-ROM vēlreiz?
+ Neizdevās piemontēt jūsu instalācijas CD-ROM. Visticamāk tas nozīmē, ka tas neatrodas CD-ROM dzinī. Ja tā, ielieciet to un mēģiniet vēlreiz.
+Description-mk.UTF-8: Да пробам повторно да го монтирам CD-ROM-от?
+ Инсталациониот CD-ROM не можеше да се монтира. Ова нејверојатно значи дека CD-ROM-от не бил во уредот. Ако е така можеш да го внесеш и да пробаш повторно.
+Description-nb.UTF-8: Vil du prøve å montere CD-en en gang til?
+ Klarte ikke å montere installasjons-CD-en. Det er trolig på grunn av at CD-en ikke var i stasjonen. I så fall kan du sette den i og prøve på nytt.
+Description-nl.UTF-8: Nogmaals proberen de CD aan te koppelen?
+ Uw installatie-CD kon niet aangekoppeld worden. Dit betekent waarschijnlijk dat de CD niet in het station geplaatst was. Als dat het geval is kunt u na het insteken van de CD opnieuw proberen.
+Description-nn.UTF-8: Prøva å montera CDROMen igjen?
+ Klarte ikkje montera installasjons-CDen. Det er truleg på grunn av at CDROMen ikkje var i stasjonen. I so fall kan du setje han i og prøve på ny.
+Description-no.UTF-8: Vil du prøve å montere CD-en en gang til?
+ Klarte ikke å montere installasjons-CD-en. Det er trolig på grunn av at CD-en ikke var i stasjonen. I så fall kan du sette den i og prøve på nytt.
+Description-pl.UTF-8: Spróbować ponownie zamontować CD-ROM?
+ Twój CD-ROM instalacyjny nie mógł być zamontowany. To prawdopodobnie oznacza, że płyta nie znajduje się w napędzie. Jeśli tak jest, włóż ją i spróbuj ponownie.
+Description-pt.UTF-8: Tentar de novo montar o CD-ROM?
+ O seu CD-ROM de instalação não pode ser montado. Isto provavelmente significa que o seu CD-ROM não está no leitor. Se for esse o caso coloque-o e tente de novo.
+Description-pt_BR.UTF-8: Tentar montar o CD-ROM novamente?
+ Não foi possível montar seu CD-ROM de instalação. Isto provavelmente significa que o CD-ROM não estava na unidade. Se este for o caso, você pode inseri-lo na unidade e tentar novamente.
+Description-ro.UTF-8: Încercați din nou să montați CD-ROM-ul?
+ CD-ROM-ul dumneavoastră de instalare nu a putut fi montat. Aceasta probabil înseamnă că CD-ul nu a fost în unitate. În acest caz, puteți să îl introduceți și să încercați din nou.
+Description-ru.UTF-8: Попробовать ещё раз смонтировать CD?
+ Не удаётся смонтировать установочный компакт-диск. Возможно, он не вставлен в устройство чтения CD-ROM. Если это действительно так, вставьте его и попробуйте ещё раз.
+Description-si.UTF-8: CD-ROM රැඳවීමට නැවත උත්සාහ කරන්නද?
+ ඔබේ ස්ථාපනය CD-ROM රැඳවිය නොහැකි විය, මෙය බොහෝවිට ධාවකය තුළ තැටිය නොමැති වීම නිසා විය හැක, එසේ නම් ඔබට එය ඇතුළත් කර නැවත උත්සාහ කල හැක.
+Description-sk.UTF-8: Pokúsiť sa znovu o pripojenie CD-ROM?
+ Vaše inštalačné CD-ROM sa nepodarilo pripojiť. Ak je to kvôli tomu, že CD-ROM nebolo v mechanike, môžete to skúsiť znovu po jeho vložení do mechaniky.
+Description-sl.UTF-8: Ali naj ponovno poskusim priklopiti CD-ROM?
+ Vašega namestitvenega CD-ROM-a ni bilo mogoče priklopiti. To najverjetneje pomeni, da CD-ROM-a ni bilo v pogonu. V tem primeru ga vstavite in poskusite ponovno.
+Description-sq.UTF-8: Ta provoj sërish montimin e CD-ROM-it?
+ CD-ROM-i i instalimit nuk mundi të montohej. Kjo ndoshta ngaqë CD-ROM nuk ishte në lexues. Nëse është kështu, mund ta futësh dhe të provosh sërish.
+Description-sr.UTF-8: Поново монтирати CD-ROM?
+ Ваш инсталациони CD-ROM није могао бити монтиран. Највероватније CD-ROM није у погону. У том случају, убаците CD-ROM и покушајте поново.
+Description-sv.UTF-8: Försöka montera cd-skivan igen?
+ Din installationsskiva kunde inte monteras. Det betyder förmodligen att cd-skivan inte var inmatad i enheten. Om så var fallet kan du mata in den och försöka igen.
+Description-te.UTF-8: సీడీ-రామ్ ని మరలా మౌంట్ చెయ్యడానికి ప్రయత్నించాలా ?
+ మీ సీడీ-రామ్ మౌంట్ చెయ్యబడలేదు. దీనికి కారణం సీడీ-రామ్ డ్రైవ్‍లో లేకపోవడం అయి ఉండవచ్చు. అలాగయితే సీడీ-రామ్‍ని డ్రైవ్లో ఉంచి మరలా ప్రయత్నించండి.
+Description-th.UTF-8: จะพยายามเมานท์ซีดีรอมอีกครั้งหรือไม่?
+ ไม่สามารถเมานท์แผ่นซีดีรอมติดตั้งได้ เป็นไปได้ว่าคุณไม่ได้ใส่แผ่นในไดรว์ ซึ่งถ้าใช่ คุณสามารถใส่แผ่นแล้วลองใหม่ได้
+Description-tl.UTF-8: Subukang i-mount uli ang CD-ROM?
+ Hindi mai-mount ang CD-ROM na panluklok. Ibig sabihin nito ay maaaring hindi naka-kasa ang CD-ROM sa drive. Kung hindi, paki-kasa ito at subukan muli.
+Description-tr.UTF-8: CD'yi bağlamayı tekrar denemek ister misiniz?
+ Kurulum CD'niz bağlanamıyor. Muhtemelen sürücüde CD yok. Eğer öyleyse CD'yi yerleştirip tekrar deneyin.
+Description-ug.UTF-8: CD-ROM ئېگەرلەشنى قايتا سىنامسىز؟
+ ئورنىتىش CD-ROM ئى ئېگەرلەنمىدى، CD-ROM قوزغاتقۇچتا بولماسلىقى مۇمكىن. ئەگەر شۇنداق بولسا CD-ROM نى سېلىپ قايتا سىناڭ.
+Description-uk.UTF-8: Спробувати змонтувати CD-ROM ще раз?
+ Не вдається змонтувати установочний CD. Це може означати, що диск не вставлений в пристрій читання CD-ROM. В цьому випадку, вставте його та спробуйте ще раз.
+Description-vi.UTF-8: Thử lại lắp đĩa CD-ROM không?
+ Đĩa CD-ROM cài đặt của bạn không thể lắp được. Rất có thể vì đĩa CD-ROM chưa nằm trong ổ; như thế thì bạn có thể nạp nó và thử lại.
+Description-zh_CN.UTF-8: 再次尝试挂载光盘吗？
+ 无法挂载安装光盘，有可能是因为光盘并没不在驱动器中。如果是这样请您插入光盘并重试。
+Description-zh_TW.UTF-8: 是否再度嘗試掛載光碟機？
+ 無法掛載您的安裝光碟，也許是因為光碟片並未放入光碟機中。若是這樣的話，請您放入光碟片後再試一次。
+
+Template: cdrom-detect/cdrom_module
+Type: select
+Choices: ${choices}
+Default: none
+Description: Module needed for accessing the CD-ROM:
+ The automatic detection didn't find a CD-ROM drive. You can try to
+ load a specific module if you have an unusual CD-ROM drive (that is
+ neither IDE nor SCSI).
+Description-ar.UTF-8: هناك حاجة لوحدة للوصول إلى قارئ الأقراص المدمجة.
+ لم يعثر الفحص التلقائي على أي قارئ أقراص مدمجة. يمكنك محاولة تحميل وحدة معينة  إن كان لديك قارئ أقراص مدمجة غير عادي (أي أنه ليس IDE أو SCSI).
+Description-ast.UTF-8: Módulos necesarios p'acceder al CD-ROM:
+ La deteición automática nun alcontró dengún llector de CD-ROM. Pue intentar cargar un módulu específicu si tien un llector de CD-ROM poco habitual (ye dicir, que nun seya nin IDE nin SCSI).
+Description-be.UTF-8: Дзеля доступу да CD-ROM патрэбны модуль:
+ Не атрымалася аўтаматычна знайсці прыладу CD-ROM. Вы можаце паспрабаваць загрузіць адпаведны модуль, калі ў Вас незвычайная CD-ROM прылада (што працуе не праз шыну IDE альбо SCSI).
+Description-bg.UTF-8: Модул, необходим за достъп до компактдиска:
+ Автоматичното разпознаване не е открило компактдисково устройство. Можете да пробвате специфичен модул, ако имате необичайно компактдисково устройство (което не е IDE или SCSI).
+Description-bo.UTF-8: འོད་སྡེར་སྒུལ་ཆས་སྤྱོད་པར་དགོས་པའི་དཔེ་དབྱིབས：
+ རང་འགུལ་གྱིས་འཚོལ་ཞིབ་བྱེད་སྐབས་འོད་སྡེར་སྒུལ་ཞིག་མ་རྙེད་པ། དེ་རྒྱུན་མཐོང་གི་འོད་སྡེར་སྒུལ་ཆས(IDE འམ SCSI) མིན་ན་དམིགས་བསལ་གྱི་དཔེ་དབྱིབས་ཞིག་ཡར་འཇུག་བྱེད་དགོས
+Description-bs.UTF-8: Modul potreban za pristup CD-ROM-u:
+ Autodetekcijom nije pronađen nijedan CD-ROM pogon. Možete pokušati sa učitavanjem nekog od modula ako imate neuobičajen CD-ROM pogon (koji nije ni IDE niti SCSI).
+Description-ca.UTF-8: Mòdul requerit per accedir al CD-ROM:
+ L'autodetecció no ha trobat cap lector de CD-ROM. Podeu provar a carregar un mòdul específic si teniu un CD-ROM estrany (que no és ni IDE ni SCSI).
+Description-cs.UTF-8: Modul pro přístup k CD-ROM:
+ Automatická detekce nenalezla žádnou CD-ROM mechaniku. Pokud máte některou ze speciálních CD-ROM mechanik (ani IDE, ani SCSI), můžete zkusit nahrát některý ze speciálních  modulů.
+Description-cy.UTF-8: Y modiwl angenrheidiol ar gyfer cyrchu'r CD-ROM:
+ Ni chanfyddodd y canfod awtomatig disgyrrwr CD-ROM. Gallwch geisio llwytho modiwl penodol os oes gennych disgyrrwr CD-ROM anarferol (nid yw'n un IDE na SCSI).
+Description-da.UTF-8: Modul, der kræves for at tilgå cd'en:
+ Den automatiske søgning fandt intet cd-rom drev. Du kan prøve at indlæse et bestemt modul, hvis du har et andet cd-rom drev (dvs. hverken er IDE eller SCSI).
+Description-de.UTF-8: Für den CD-Zugriff benötigtes Modul:
+ Offenbar kann die automatische Erkennung kein CD-ROM-Laufwerk finden. Falls Sie kein gewöhnliches Laufwerk besitzen, können Sie versuchen, das entsprechende Modul zu laden (betrifft z.B. Laufwerke, die weder IDE- noch SCSI-Laufwerke sind).
+Description-el.UTF-8: Οδηγός για την πρόσβαση στο CD-ROM:
+ Δεν ανιχνεύθηκε κάποια μονάδα CD-ROM. Μπορείτε να δοκιμάσετε να φορτώσετε κάποιον από τους υπάρχοντες οδηγούς αν έχετε κάποια συγκεκριμένη μονάδα CD-ROM (που δεν είναι IDE ή SCSI).
+Description-eo.UTF-8: Bezonata modulo por atingi lumdiskon:
+ La aŭtomata detekto ne trovis lumdiskingan pelilon. Vi povos ŝargi apartan modulon se vi posedas specifan lumdiskan pelilon (kiu estas nek 'IDE'-a nek 'SCSI'-a).
+Description-es.UTF-8: Módulos necesarios para acceder al CD-ROM:
+ La detección automática no encontró ningún lector de CD-ROM. Puede intentar cargar un módulo específico si tiene un lector de CD-ROM poco habitual (es decir, que no sea ni IDE ni SCSI).
+Description-et.UTF-8: CD-ROM'i poole pöördumiseks vajalik moodul:
+ Automaattuvastus ei leidnud ühtki CD-ROM seadet. Kui sul on ebatavaline (mitte IDE ega SCSI) CD-ROM sead, võid proovida sellele vajaliku mooduli käsitsi laadimist.
+Description-eu.UTF-8: CD-ROMa atzitzeko behar den modulua:
+ Detekzio automatikoak ez du CD-ROM unitatea aurkitu. Modulu jakin bat kargatzen saia zaitezke ohikoa ez den CD-ROM unitatea baduzu (hau da, IDE eta SCSI ez dena).
+Description-fa.UTF-8: ماژول برای دسترسی به CD-ROM نیاز است:
+ تشخیص خودکار گرداننده CD-ROM را پیدا نکرد. می‌توانید سعی کنید ماژول مخصوصی را بارگذاری نمائید اگر گردانندهٔ CD-ROM نامعمولی دارید (که نه IDE و نه SCSI است).
+Description-fi.UTF-8: CD-aseman käyttöön tarvittava moduuli:
+ Automaattitunnistus ei löytänyt yhtään CD-asemaa. Voit yrittää ladata yhden moduuleista, jos sinulla on epätavallinen CD-asema (joka ei ole IDE eikä SCSI).
+Description-fr.UTF-8: Module pour le lecteur de CD-ROM :
+ La détection automatique n'a pas trouvé de lecteur de CD-ROM. Vous pouvez essayer de charger un module particulier si vous possédez un lecteur de CD-ROM spécifique (qui n'est ni IDE ni SCSI).
+Description-ga.UTF-8: Modúl de dhíth chun CD-ROM a rochtain:
+ Níor aimsíodh tiomántán CD-ROM go huathoibríoch. Is féidir leat modúl ar leith a luchtú má tá tiomántán neamhchoitianta agat (.i. tiomántán neamh-IDE neamh-SCSI).
+Description-gl.UTF-8: Módulo preciso para acceder ao CD-ROM:
+ A detección automática non atopou ningunha unidade de CD-ROM. Pode probar a cargar un módulo específico se ten unha unidade de CD-ROM non habitual (é dicir, que non sexa IDE ou SCSI).
+Description-he.UTF-8: מודול נדרש לצורך גישה לכונן התקליטורים:
+ הזיהוי האוטומטי לא מצא כונן תקליטורים. אתה יכול לנסות לטעון מודול ספציפי אם יש לך כונן תקליטורים לא סטנדרטי (כלומר אינו IDE ואינו SCSI).
+Description-hr.UTF-8: Modul potreban za pristup CD-ROM-u:
+ Automatska pretraga nije pronašla CD-ROM pogon. Ako imate neobičan CD-ROM (niti IDE, niti SCSI), možete pokušati učitati odgovarajući modul.
+Description-hu.UTF-8: A CD-ROM eléréséhez szükséges modul:
+ Az automatikus észlelés nem talált CD-ROM meghajtót. Nem-szokványos (sem IDE, sem SCSI) CD-ROM meghajtó esetén be kell tölteni a megfelelő modult.
+Description-id.UTF-8: Modul yang diperlukan untuk mengakses CD-ROM:
+ Pencarian otomatis tidak menemukan penggerak CD-ROM . Anda bisa coba memuat modul bila Anda memiliki CD-ROM yang tidak umum (bukan IDE maupun SCSI).
+Description-is.UTF-8: Rekill sem þarf til að tala við geisladrif:
+ Sjálfvirk leit að geisladrifi bar ekki árangur. Þú getur hlaðið inn ákveðnum rekli ef þú ert með geisladrif sem tengist hvorki IDE né SCSI.
+Description-it.UTF-8: Modulo necessario per accedere al CD-ROM:
+ Non è stata rilevata automaticamente alcuna unità CD-ROM. È possibile provare a caricare un modulo specifico se si possiede un'unità CD-ROM non usuale (né IDE né SCSI).
+Description-ja.UTF-8: CD-ROM のアクセスに必要なモジュール:
+ 自動検出は CD-ROM ドライブを発見できませんでした。利用できない CD-ROM ドライブ (IDE でも SCSI でもない) を持っているのであれば、特定のモジュールをロードしてみることができます。
+Description-kk.UTF-8: CD-ROM қатынауға қажет модуль:
+ CD-ROM құрылғысын автоматты түрде анықтау мүмкін емес. Егер сіздің CD-ROM (IDE емес және SCSI емес) ерекше болса, арнайы модульді жүктеуіңізге болады.
+Description-kn.UTF-8: ಗಣಕಮುದ್ರಿಕೆಯನ್ನು ಉಪಯೋಗಿಸಲು ತಂತ್ರಾಂಶಭಾಗದ ಅಗತ್ಯವಿದೆ:
+ ಸ್ವಯಂಚಾಲಿತ ಪತ್ತೆಹಚ್ಚುವಿಕೆ ಗಣಕಮುದ್ರಿಕೆ ಸಾಧನವನ್ನು ಹುಡುಕಲಿಲ್ಲ. ನಿಮ್ಮ ಗಣಕಮುದ್ರಿಕೆ ಸಾಧನ ಅಸಾಮಾನ್ಯದ್ದಾಗಿದ್ದಲ್ಲಿ(ಅಂದರೆ,IDE ಹಾ SCSI ಏತರ) ನಿಶ್ಚಿತ ತಂತ್ರಾಂಶ ಭಾಗವನ್ನು ಉಪಯೋಗಿಸಿ ಮರುಪ್ರಯತ್ನ ಮಾಡಿ.
+Description-ko.UTF-8: CD-ROM을 읽는데 필요한 모듈:
+ 자동 찾기에서 CD-ROM 드라이브를 찾지 못했습니다. 일반적이지 않은 (IDE도 SCSI도 아닌) CD-ROM 드라이브의 경우에는 특정 모듈을 직접 읽어들일 수 있습니다.
+Description-ku.UTF-8: Ji bo gihiştina CD-ROM'ê modula pêwist:
+ Di karê venihêrtina bixweber de ajokara CD-ROM nehate dîtin. Heke CD-ROM'eke te ya ne ji rêzê hebe (yeka IDE yan jî SCSIya wê tunebe), tu dikarî moduleke xweser biceribîne.
+Description-lo.UTF-8: ໂມດູນທີ່ຕ້ອງໃຊ້ເພື່ອຈະໃຊ້ງານຊີດີຮອມ:
+ ການກວດສອບອຸປະກອນໂດຍອັດຕາໂນມັດຫາໄດຊີດີຮອມບໍ່ພົບສາມາດພາຍາຍາຍໂຫຼດໂມດູນເຈາະຈົງກໍ່ໄດ້ ຖ້າໄດຊີດີຮອມຂອງເຈົ້າບໍ່ໃຊ້ໄດປົກກະຕິ (ກ່ວາຄື ບໍ່ແມ່ນທັງ IDE ແລະ SCSI).
+Description-lt.UTF-8: Reikiamas CD-ROM'o veikimui modulis:
+ Automatinio aptikimo būdu nerastas joks CD-ROM'as. Jei CD-ROM'as yra neįprastas (ne IDE, ir ne SCSI įrenginys), galite bandyti jam įkelti specialų modulį.
+Description-lv.UTF-8: Modulis, kas nepieciešams, lai piekļūtu CD-ROM:
+ Automātiskais noteikšanas process nespēja atrast jūsu CD-ROM dzini. Jūs varat mēģināt ielādēt specifisku moduli, ja dzinis ir netipisks (ne IDE, ne SCSI ierīce).
+Description-mk.UTF-8: Модул потребен за пристапување на CD-ROM:
+ Автоматската детекција не најде CD-ROM уред. Можеш да пробаш да вчиташ специфичен  модул ако имаш невообичаен CD-ROm (кој не е IDE ниту SCSI).
+Description-nb.UTF-8: Modul som trengs for å få tilgang til CD-en:
+ Installasjonsprogrammet fant ingen CD-spiller. Du kan forsøke å laste inn en av modulene dersom du har en uvanlig CD-spiller (som verken er IDE eller SCSI).
+Description-nl.UTF-8: Module vereist voor CD-toegang:
+ De automatische CD-herkenning heeft geen CD-station aangetroffen. Als u een speciaal type CD-station heeft (noch IDE, noch SCSI) kunt u proberen om de specifieke module ervoor te laden.
+Description-nn.UTF-8: Modulen som trengst for å få tilgang CDROMen:
+ Installasjonsprogrammet fann ingen CDROM-spelar. Du kan prøve å bruke ein av modulane dersom du har ein spesiell type spelar (ikkje IDE eller SCSI).
+Description-no.UTF-8: Modul som trengs for å få tilgang til CD-en:
+ Installasjonsprogrammet fant ingen CD-spiller. Du kan forsøke å laste inn en av modulene dersom du har en uvanlig CD-spiller (som verken er IDE eller SCSI).
+Description-pl.UTF-8: Moduł potrzebny do dostępu do napędu CD:
+ Automatyczne wykrywanie nie znalazło napędu CD-ROM. Możesz spróbować załadować jeden z modułów jeśli masz specyficzny napęd CD-ROM (czyli taki, który nie jest ani IDE ani SCSI).
+Description-pt.UTF-8: Módulo necessário para aceder ao CD-ROM:
+ A detecção automática não encontrou nenhum leitor de CD-ROM. Pode tentar carregar um módulo específico se tem um CD-ROM pouco comum (que não seja IDE nem SCSI).
+Description-pt_BR.UTF-8: Módulo necessário para acessar o CD-ROM:
+ A detecção automática não encontrou nenhuma unidade de CD-ROM. Você pode tentar carregar um módulo específico se você possui uma unidade de CD-ROM incomum (uma que não seja nem IDE nem SCSI).
+Description-ro.UTF-8: Modulul necesar pentru accesarea CD-ROM-ului:
+ Detecția automată nu a găsit o unitate CD-ROM. Puteți încerca să încărcați un modul specific, dacă aveți un CD-ROM neobișnuit (nu este nici IDE, nici SCSI).
+Description-ru.UTF-8: Модуль, необходимый для доступа к CD-ROM:
+ Определить привод CD-ROM автоматически не удаётся. Если у вас необычный привод CD-ROM (не IDE и не SCSI), то попробуйте загрузить подходящий модуль.
+Description-si.UTF-8: CD-ROM වෙත පිවිසීම සඳහා මොඩියුලයක් අවශ්‍යයි:
+ ස්වයංක්‍රීය හඳුනාගැනීමට CD-ROM ධාවකයක් හමු නොවිනි. ඔබ සතුව අසාමාන්‍ය ධාවකයක් (IDE හෝ SCSI නොවන) පවතී නම් නිශ්චිත මොඩියුල පූර්ණය කිරීමට උත්සාහ කල හැක.
+Description-sk.UTF-8: Modul potrebný pre prístup k CD-ROM:
+ Automatické rozpoznávanie nenašlo CD-ROM mechaniku. Ak máte niektorú z nezvyčajných CD-ROM mechaník (ani IDE, ani SCSI), skúste načítať konkrétny modul.
+Description-sl.UTF-8: Modul, ki je potreben za dostopanje do CD-ROM-a:
+ Samodejna zaznava očitno ni našla nobenega pogona CD-ROM. Če imate čisto določen CD-ROM (ki ni niti IDE niti SCSI), lahko poskusite naložiti enega od posebnih modulov.
+Description-sq.UTF-8: Moduli i duhur për leximin e CD-ROM-it:
+ Zbulimi automatik nuk gjeti asnjë lexues CD-ROM. Mund të provosh të ngarkosh një modul të veçantë nëse ke një lexues CD-ROM të pazakontë (që nuk është as IDE as SCSI).
+Description-sr.UTF-8: Модул потребан за приступ CD-ROM-у:
+ Аутоматска претрага није пронашла CD-ROM погон. Ако имате необичан CD-ROM (нити IDE, нити SCSI), можете покушати учитати одговарајући модул.
+Description-sv.UTF-8: Modul som behövs för att komma åt cd-rom:en:
+ Den automatiska identifieringen hittade inte en cd-rom-enhet. Du kan försöka läsa in en specifik modul om du har en ovanlig cd-rom-enhet (som varken är IDE eller SCSI).
+Description-te.UTF-8: CD-ROM వాడటానికి అవసరమైన మాడ్యూలు:
+ స్వయంచాలక వ్యవస్థ  CD-ROM డ్రైవ్  కనుగొనలేదు. మీది అసాధారణ CD-ROM డ్రైవ్  (IDE, SCSIకాని) అయితే, నిర్దిష్ట మాడ్యూల్  ఎక్కించటానికి ప్రయత్నించండి .
+Description-th.UTF-8: มอดูลที่ต้องใช้เพื่อจะใช้งานซีดีรอม:
+ การตรวจสอบอุปกรณ์อัตโนมัติหาไดรว์ซีดีรอมไม่พบ คุณสามารถพยายามโหลดมอดูลแบบเจาะจงก็ได้ ถ้าไดรว์ซีดีรอมของคุณไม่ใช่ไดรว์ที่ปกติ (กล่าวคือ ไม่ใช่ทั้ง IDE และ SCSI)
+Description-tl.UTF-8: Kinakailangan na module para sa CD-ROM:
+ Hindi nakahanap ng CD-ROM drive ng awtomatiko. Maaari niyong subukang magpasok ng module kung mayroon kayong kakaibang CD-ROM drive (hindi IDE o SCSI).
+Description-tr.UTF-8: CD-ROM'a erişim için gerekli modül:
+ Otomatik donanım tanıması işleminde bir CD-ROM sürücü bulunamadı. Eğer alışılmışın dışında özelliklere sahip bir CD-ROM sürücünüz varsa (IDE veya SCSI olmayan türde) gerekli modülü yüklemeyi deneyebilirsiniz.
+Description-ug.UTF-8: بۇ CD-ROM قوزغاتقۇچنى ئىشلىتىپ يۈكلەيدىغان بۆلەك:
+ ئۆزلۈكىدىن تەكشۈرۈش نۇر دىسكا (CD-ROM) قوزغاتقۇچنى بايقىمىدى. ئەگەر سىزنىڭ نۇر دىسكا قوزغاتقۇچىڭىز (غەيرىي IDE، غەيرىي SCSI) ئاز ئۇچرايدىغان تىپلىق بولسا بەلگىلەنگەن قوزغىتىش بۆلىكىنى يۈكلەشنى سىناڭ.
+Description-uk.UTF-8: Модуль, що необхідний для доступу до CD-ROM:
+ Не вдалося виявити пристрій CD-ROM автоматично. Ви можете спробувати завантажити один з модулів, якщо у вас специфічний пристрій CD-ROM (не IDE та не SCSI).
+Description-vi.UTF-8: Mô-đun cần thiết để truy cập đĩa CD-ROM:
+ Việc dò tìm tự động không tìm thấy ổ đĩa CD-ROM nào. Bạn có thể thử nạp một mô-đun riêng nếu bạn có một ổ đĩa CD-ROM bất thường dùng (tức là khác IDE cũng khác SCSI).
+Description-zh_CN.UTF-8: 使用此光盘所需要加载的模块：
+ 未能通过自动探测发现光盘驱动器。如果您的光盘驱动器十分特殊 (既非 IDE 也非 SCSI)，请尝试加载特定的驱动模块。
+Description-zh_TW.UTF-8: 使用此光碟機所需載入的模組:
+ 自動偵測未能找到任何光碟機。如果您的光碟機十分罕見 (既非 IDE 也非 SCSI)，請嘗試載入其特定的驅動模組。
+
+Template: cdrom-detect/cdrom_device
+Type: string
+Default: /dev/cdrom
+Description: Device file for accessing the CD-ROM:
+ In order to access your CD-ROM drive, please enter the device file that
+ should be used. Non-standard CD-ROM drives use non-standard device
+ files (such as /dev/mcdx).
+ .
+ You may switch to the shell on the second terminal (ALT+F2) to check the
+ available devices in /dev with "ls /dev". You can return to this screen
+ by pressing ALT+F1.
+Description-ar.UTF-8: ملف الجهاز للوصول إلى قارئ الأقراص المدمجة.
+ للوصول إلى قارئ الأقراص المدمجة، الرجاء إدخال اسم ملف الجهاز الذي يجب استخدامه. قارئات الأقراص المدمجة الغير عادية تستخدم أسماء أجهزة غير عادية (مثل /dev/mcdx).
+ .
+ يمكنك التبديل إلى سطر الأوامر على الشاشة الطرفية الثانية (ALT+F2) لتفحص الأجهزة المتوفرة في /dev باستخدام "ls /dev". يمكنك العودة إلى هذه الشاشة بالضغط على ALT+F1.
+Description-ast.UTF-8: Ficheru de preséu p'acceder al CD-ROM:
+ P'acceder al llector de CD-ROM, por favor, teclee'l ficheru de preséu que se tendría d'usar. Los llectores de CD-ROM non estándares empleguen ficheros de preseos non estándares (como /dev/mcdx).
+ .
+ Pue camudar a la consola del segundu terminal (ALT+F2) pa comprobar los preseos disponibles en /dev con "ls /dev". Pue volver equí con ALT+F1.
+Description-be.UTF-8: Файл прылады для доступу да CD-ROM:
+ Калі ласка, увядзіце імя файла прылады, які трэба скарыстаць, каб атрымаць доступ да Вашай прылады CD-ROM. Нестандартныя прылады CD-ROM могуць ужываць нестандартныя файлы прыладаў (кшталту /dev/mcdx).
+ .
+ Вы можаце пераключыцца ў камандную абалонку на другім тэрмінале (ALT+F2), каб праверыць спіс даступных прыладаў у /dev з дапамогай "ls /dev". У гэты экран можна будзе вярнуцца, націснуўшы ALT+F1.
+Description-bg.UTF-8: Файл-устройство за достъп до компактдисковото устройство:
+ За да се стигне до Вашето компактдисково устройство, моля въведете файла-устройство, който да бъде използван. Нестандартните компактдискови устройства използват нестандартни файлове-устройства (например /dev/mcdx).
+ .
+ Можете да превключите към обвивката на втория терминал (Alt+F2), за да проверите достъпните устройства в /dev чрез „ls /dev“. Връщането обратно става чрез Alt+F1.
+Description-bo.UTF-8: འོད་སྡེར་སྒུལ་ཆས་སྤྱོད་བྱེད་ཀྱི་སྒྲིག་ཆས་ཡིག་ཆ：
+ འོད་སྡེར་སྒུལ་ཆས་སྤྱོད་དགོས་ན་སྒྲིག་ཆས་ཡིག་ཆ་དེ་འཇུག་རོགས། ཚད་ལྡན་མིན་པའི་འོད་སྡེར་སྒུལ་ཆས་ལ་ཚད་ལྡན་མིན་པའི་སྒྲིག་ཆས་ཡིག་ཆ་སྤྱོད་དགོས་པ(དཔེར་ན /dev/mcdx).
+ .
+ ཁྱོད་ཀྱིས་མཐའ་སྣེ་གཉིས་པའི་ཐོག་གི་འཇུག་སྒོའི་ཐོག་སྐྱོད་ནས་(ALT+F2) /dev ནང་སྤྱོད་རུང་སྒྲིག་ཆས་འཚོལ་ཞིབ་བྱེད་ཆོག ("ls /dev" བཀའ་བརྡ་འདི་སྤྱོད་དགོས) ALT+F1 མནན་ནས་དང་ཐོག་གི་འཆར་ངོས་ཐོག་ཚུར་ལོག་ཆོག
+Description-bs.UTF-8: Datoteka uređaja za pristup CD-ROM-u:
+ Kako bi pristupili vašem CD-ROM pogonu molim unesite datoteku uređaja koja se treba koristiti. Nestandardni CD-ROM pogoni koriste nestandardne datoteke uređaja (poput naprimjer /dev/mcdx).
+ .
+ Možete se prebaciti na shell na drugom terminalu (ALT+F2) da biste provjerili dostupne uređaje u /dev pomoću naredbe "ls /dev". Na ovaj ekran se vraćate sa ALT+F1.
+Description-ca.UTF-8: Fitxer de dispositiu per a accedir al CD-ROM:
+ Per a obtindre accés al lector de CD-ROM, introduïu el fitxer de dispositiu a utilitzar. Els lectors de CD-ROM no estàndards utilitzen fitxers de dispositius no estàndards (com ara /dev/mcdx).
+ .
+ Podeu canviar a l'intèrpret d'ordres al segon terminal (ALT+F2) per comprovar els dispositius disponibles a /dev amb «ls /dev». Podeu tornar ací prement ALT+F1.
+Description-cs.UTF-8: Soubor zařízení pro přístup k CD-ROM:
+ Aby mohl systém přistupovat k CD-ROM mechanice, musíte zadat soubor zařízení, který se má použít. Nestandardní mechaniky používají nestandardní zařízení (jako třeba /dev/mcdx).
+ .
+ Můžete se přepnout do shellu na druhém terminálu (Alt+F2) a příkazem „ls /dev“ zjistit dostupná zařízení. Zpět na tuto obrazovku se přepnete kombinací Alt+F1.
+Description-cy.UTF-8: Y ffeil dyfais ar gyfer cyrchu'r CD-ROM:
+ Er mwyn cyrchu'ch disgyrrwr CD-ROM, mewnosodwch y ffeil dyfais dylid defnyddio. Mae disgyrrwyr CD-ROM ansafonol yn defnyddio ffeiliau dyfais ansafonol (megis /dev/mcdx).
+ .
+ Cewch newid i'r gragen ar yr ail derfynell (ALT+F2) er mwyn gwirio'r dyfeisiau sydd ar gael yn /dev gyda "ls /dev/". Gallwch ddychwelyd i'r sgrîn yma drwy wasgu ALT+F1.
+Description-da.UTF-8: Enhedsfil for tilgang til cd-rom drevet:
+ For at kunne tilgå dit cd-rom drev, bedes du angive hvilken enhedsfil, der skal bruges. Ikke-standard cd-rom drev benytter ikke-standard enhedsfiler (såsom /dev/mcdx).
+ .
+ Du kan skifte til skallen på den anden terminal (ALT+F2) for at se de tilgængelige enheder i /dev med "ls /dev". Kom tilbage hertil med ALT+F1.
+Description-de.UTF-8: Gerätedatei für CD-ROM-Zugriff:
+ Um das CD-ROM-Laufwerk ansprechen zu können, geben Sie bitte die entsprechende Gerätedatei an. Nicht-Standard-Laufwerke benutzen häufig besondere Gerätedateien (wie z.B. /dev/mcdx).
+ .
+ Sie können zu einer Shell auf die zweite Konsole (Alt+F2) wechseln, um die verfügbaren Geräte in /dev mit Hilfe von »ls /dev« zu überprüfen. Sie können mit Hilfe von Alt+F1 hierher zurückkehren.
+Description-el.UTF-8: Αρχείο συσκευής για πρόσβαση του CD-ROM:
+ Για να έχει το πρόγραμμα εγκατάστασης πρόσβαση στη μονάδα CD-ROM, θα πρέπει να δώσετε το σημείο επαφής της μονάδας που θα πρέπει να χρησιμοποιηθεί (mountpoint). Οι μη τυπικές μονάδες CD-ROM, χρησιμοποιούν μη τυπικά σημεία επαφής (όπως /dev/mcdx).
+ .
+ Μπορείτε να μεταβείτε σε περιβάλλον κελύφους στη δεύτερη κονσόλα (ALT+F2) για να ελέγξετε τις διαθέσιμες συσκευές στον κατάλογο /dev με την εντολή "ls /dev". Για να επιστρέψετε στην τρέχουσα οθόνη πατήστε ALT+F1.
+Description-eo.UTF-8: Aparat-dosiero por atingi la lumdiskingon:
+ Por atingi vian lumdiskingan pelilon, bonvolu tajpi la uzotan aparat-dosieron. Malnormecaj diskingoj uzas malnormecajn aparat-dosierojn (kiel ekzemple '/dev/mcdx').
+ .
+ Vi povos aliri ŝelon sur la dua terminalo ('ALT+F2') por kontroli disponeblajn aparatojn en '/dev' per la komando 'ls /dev'. Vi povos retroiri al tiu ĉi ekrano per la klav-kombino 'ALT+F1'.
+Description-es.UTF-8: Fichero de dispositivo para acceder al CD-ROM:
+ Para acceder al lector de CD-ROM, por favor, teclee el fichero de dispositivo que se debería utilizar. Los lectores de CD-ROM no estándares emplean ficheros de dispositivos no estándares (como /dev/mcdx).
+ .
+ Puede cambiar a la consola del segundo terminal (ALT+F2) para comprobar los dispositivos disponibles en /dev con «ls /dev». Puede volver aquí con ALT+F1.
+Description-et.UTF-8: CD-ROM'i poole pöördumise seadmefail:
+ Palun sisesta seadmefail (nagu näiteks /dev/hdb), mida CD-ROM'i poole pöördumiseks kasutada. Ebastandartsed CD-ROM seadmed kasutavad ebastandartseid seadmefaile (nagu näiteks /dev/mcdx).
+ .
+ Võid minna teisele terminalile (Alt+F2) ja sealse kesta abil valida kättesaadavaid seadmefaile /dev/ all, tippides "ls /dev". Selle ekraani saad tagasi vajutades Alt+F1.
+Description-eu.UTF-8: Gailu-fitxategia CD-ROMa atzitzeko:
+ CD-ROM unitatea atzitzeko, sartu erabili beharreko gailu-fitxategia. CD-ROM unitate ez-estandarrek gailu-fitxategi ez-estandarrak erabiltzen dituzte (adibidez, /dev/mcdx).
+ .
+ Bigarren terminaleko shell-era joan zaitezke (ALT+F2) /dev-en "ls /dev" komandoarekin erabilgarri dauden gailuak egiaztatzeko. Pantaila honetara itzultzeko, sakatu ALT+F1.
+Description-fa.UTF-8: فایل وسیله برای دسترسی به CD-ROM:
+ برای دسترسی به گردانندهٔ CD-ROM، لطفاً فایل وسیله‌ای که می‌بایست استفاده شود را وارد نمائید. گرداننده‌های CD-ROM غیر استاندارد از فایل‌های وسیلهٔ غیر استاندارد استفاده می‌کنند (مانند /dev/mcdx).
+ .
+ می‌توانید به پوستهٔ رو ترمینال دوم (ALT+F2) برای چک کردن وسیله‌های فراهم در /dev توسط «ls /dev» سوئیچ کنید. با زدن ALT+F1 به این صفحه باز می‌گردید.
+Description-fi.UTF-8: CD-aseman laitenimi:
+ Jotta CD-asemaa päästäisiin käyttämään on tiedettävä laitetiedoston nimi. Epästandardit CD-asemat käyttävät epästandardeja laitenimiä (kuten /dev/mcdx).
+ .
+ Voit vaihtaa toisen päätteen komentotulkkiin (Alt+F2) tarkistaaksesi /dev-hakemistossa käytettävissä olevat laitteet komennolla ”ls /dev”. Takaisin palaat näppäinyhdistelmällä ALT+F1.
+Description-fr.UTF-8: Fichier de périphérique pour le lecteur de CD-ROM :
+ Afin de pouvoir accéder au lecteur de CD-ROM, veuillez indiquer le fichier de périphérique utilisé. En effet, les lecteurs non standards utilisent des fichiers de périphérique non standards tels que /dev/mcdx par exemple.
+ .
+ Vous pouvez obtenir un interpréteur de commandes sur le deuxième terminal (ALT+F2) pour voir les périphériques disponibles dans /dev en tapant « ls /dev ». Vous pourrez revenir à cet écran avec ALT+F1.
+Description-ga.UTF-8: Comhad gléis le haghaidh rochtana CD-ROM:
+ Chun do thiomántán CD-ROM a rochtain, iontráil an comhad gléis le húsáid. Úsáideann tiomántáin neamhchaighdeánacha comhaid ghléis neamhchaighdeánacha (mar shampla, /dev/mcdx).
+ .
+ Is féidir leat blaosc a úsáid ar an dara teirminéal (ALT+F2) chun na gléasanna atá ar fáil a thaispeáint le "ls /dev". Ansin, fill ar an scáileán seo le ALT+F1.
+Description-gl.UTF-8: Ficheiro de dispositivo para acceder ao CD-ROM:
+ Para acceder á unidade de CD-ROM, introduza o nome do dispositivo que se debería empregar. As unidades de CD-ROM non estándar empregan dispositivos non estándar (tales como /dev/mcdx).
+ .
+ Pode pasar ao shell do segundo terminal (ALT+F2) para buscar mediante «ls /dev» de que dispositivos dispón en /dev/. Pode volver a esta pantalla premendo ALT+F1.
+Description-he.UTF-8: קובץ התקן לצורך גישה לכונן התקליטורים:
+ כדי לגשת לכונן התקליטורים שלך, אנא הכנס את קובץ ההתקן הדרוש. כונני תקליטורים לא סטנדרטים משתמשים בשמות לא סטנדרטים (כגון /dev/mcdx).
+ .
+ אתה יכול להחליף למעטפת בטרמינל השני (על ידי ALT+F2) כדי לבדוק את ההתקנים הזמינים ב-/dev על ידי הפקודה "ls /dev". תוכל לחזור למסך זה על ידי לחיצה על ALT+F1.
+Description-hr.UTF-8: Datoteka uređaja za pristup CD-ROM-u:
+ Molim unesite datoteku uređaja koja će se koristiti za pristup vašem  CD-ROM-u. Neuobičajeni CD-ROM pogoni rabe neuobičajene datoteke uređaja (npr. /dev/mcdx).
+ .
+ Možete se prebaciti u shell na drugoj konzoli (Alt+F2) da provjerite koji su uređaji dostupni u /dev, pomoću "ls /dev". Vraćate se na ovaj zaslon pomoću Alt+F1.
+Description-hu.UTF-8: A CD-ROM eléréshez használt eszközfájl:
+ A CD-ROM meghajtó eléréséhez meg kell adni a használni kívánt eszközfájlt. A nem-szabványos CD-ROM meghajtók nem-szabványos eszközfájlokat használnak (pl. /dev/mcdx).
+ .
+ A második terminálon (ALT+F2) az "ls /dev | more" paranccsal átnézhetők az elérhető eszközök. Az ALT+F1 visszatér ide.
+Description-id.UTF-8: Berkas piranti untuk mengakses CD-ROM:
+ Agar dapat mengakses penggerak CD-ROM, silakan masukkan berkas piranti yang harus dipakai. Penggerak CD-ROM yang tidak standard menggunakan berkas piranti yang tidak standar (misalnya /dev/mcdx).
+ .
+ Anda dapat berpindah ke shell pada terminal kedua (ALT+F2) untuk memeriksa piranti yang tersedia pada /dev dengan "ls /dev". Anda dapat kembali lagi ke layar ini dengan menekan ALT+F1.
+Description-is.UTF-8: Slóð að geisladrifinu:
+ Til þess að nota geisladrifið þarft þú að slá inn slóðina að því. Óstöðluð geisladrif koma inn á óstöðluðum slóðum (eins og t.d. /dev/mcdx).
+ .
+ Þú getur notað skelina á seinni sýndarskjánum (ALT+F2) til þess að gá hvað er í boði undir /dev með "ls /dev". Þú getur komist aftur á þennan skjá með ALT+F1.
+Description-it.UTF-8: File device per l'accesso al CD-ROM:
+ Per poter accedere all'unità CD-ROM, specificare il file device da utilizzare. Le unità CD-ROM non standard utilizzano dei file device non standard (per esempio /dev/mcdx).
+ .
+ È possibile passare alla shell sul secondo terminale (Alt+F2) per poter controllare quali device sono disponibili in /dev tramite il comando «ls /dev». Per tornare a questa schermata premere Alt+F1.
+Description-ja.UTF-8: CD-ROM にアクセスするためのデバイスファイル:
+ CD-ROM ドライブにアクセスするために、利用すべきデバイスファイルを入力してください。非標準の CD-ROM ドライブは (/dev/mcdx のような) 非標準のデバイスファイルを使います。
+ .
+ /dev にある利用可能なデバイスを確認するには、2 番目の端末にシェルを切り替えて (ALT+F2)、 "ls /dev" で行います。ALT+F1 でこの画面に戻れます。
+Description-kk.UTF-8: CD-ROM қатынауға арналған құрылғы файлы:
+ CD-ROM құрылғысына қатынай алу үшін, құрылғы файлының атын енгізіңіз. Себебі стандартты емес CD-ROM үшін стандартты емес құрылғы файлы (мысалы /dev/mcdx) қолданылады.
+ .
+ Екінші терминалған ауысып (ALT+F2), /dev ішіндегі құрылғының бар-жоғын "ls /dev" арқылы тексеруіңізге болады. Осы экранға оралу үшін ALT+F1 басыңыз.
+Description-kn.UTF-8: .ಗಣಾಕಮುದ್ರಿಕೆಯನ್ನು ಪ್ರವೇಷಿಸಲು ಅಗತ್ಯವಿರುವ ಸಾಧನ ಕಡತ
+ ನಿಮ್ಮ ಗಣಕಮುದ್ರಿಕೆಸಾಧನವನ್ನು ಪ್ರವೇಷಿಸಲು ಅಗತ್ಯವಿರುವ ಸಾಧನ ಕಡತವನ್ನು ಲಭ್ಯ ಮಾಡಿ. ಸ್ಟಾಂಡರ್ಡೇತರ ಗಣಕಮುದ್ರಿಕೆಸಾಧನಗಳು ಸ್ಟಾಂಡರ್ಡೇತರ ಸಾಧನ ಕಡತಗಳನ್ನು ಬಳಸುತ್ತವೆ(/ಡಿಇವಿ/ಎಮ್ ಸಿ ಡಿ ಎಕ್ಸ್) 
+ .
+ ನೀವು ಎರಡನೆ ಟರ್ಮಿನಲ್ ಮೇಲೆ ಶೆಲ್ ಒಳಗೆ ಹೋಗಿ (ALT+F2) /dev ಯೊಳಗಿನ ಸಾಧನಗಳ ಲಭ್ಯತೆಯನ್ನು "ls/dev" ಮೂಲಕ ಅರಿಯಬಹುದು.
+Description-ko.UTF-8: CD-ROM에 접근할 때 사용할 장치 파일:
+ CD-ROM 드라이브를 사용하려면, 그 장치 파일 이름을 입력하십시오. 표준이 아닌 CD-ROM 드라이브는 표준이 아닌 장치 파일 이름을 사용합니다. (/dev/mcdx 따위)
+ .
+ 두 번째 터미널로 전환해서 (ALT+F2) "ls /dev" 명령으로 /dev에 들어 있는 사용 가능 장치의 목록을 볼 수 있습니다. ALT+F1을 누르면 이 화면으로 돌아옵니다.
+Description-ku.UTF-8: Pelê cîhazan ê ji bo gihiştina CD-ROM'ê:
+ Ji bo tu xwe bighînî xwînerê CD-ROM, ji kerema xwe re navê cihazê ku dê were bikaranîn binvîse. xwînerê CD-ROM a ne asayî navê cihazên ne asayî bikartîne. (wekî /dev/mcdx).
+ .
+ Tu dikarî derbasî shella termînala duyem (ALT+F2) bibe, bi fermana "ls /dev" amûrên guncaw ên di /dev de hene kontrol bike. Tu dikarî bi ALT+F1 vegerî vê dîmendera niha.
+Description-lo.UTF-8: ແຟ້ມອຸປະກອນສຳລັບໃຊ້ງານຊີດີຮອມ:
+ ເພື່ອຈະໃຫ້ໃຊ້ງານໄດຊີດີຮອມໄດ້ ກາລຸນາປ້ອນຊື່ແຟ້ມອຸປະກອນສຳລັບໄດເວີທີ່ຈະໃຊ້ ໄດເວີຊີດີທີ່ບໍ່ໄດ້ມາດຕະຖານ (ເຊັ່ນ /dev/mcdx).
+ .
+ ຄຸນອາດສະຫຼັບໄປທີ່ໃນເທີ່ມີນັດທີ່ສອງ (ALT+F2) ເພື່ອກວດສອບອຸປະກອບທີ່ມີໃນ /devດ້ວຍຄຳສັ່ງ "ls /dev" ໄດ້ ແລະເຈົ້າສາມາດກັບມາທີ່ໜ້າຈໍນີ້ໄດ້ ໂດຍກົດ ALT+F1.
+Description-lt.UTF-8: Įrenginio failas priėjimui prie CD-ROM įrenginio:
+ CD-ROM'ui pasiekti įrašykite naudosimą įrenginio failą. Nestandartiniai CD-ROM'ai naudoja nestandartinius įrenginių failus (pvz. /dev/mcdx).
+ .
+ Galite persijungti į apvalkalą (shell) antrajame terminale (ALT+F2) ir pažiūrėti galimus įrenginius aplanke /dev, pasinaudodami komanda „ls /dev“. Grįžti atgal į šį ekraną galėsite, paspaudę ALT+F1.
+Description-lv.UTF-8: CD-ROM ierīces datne:
+ Lai piekļūtu savam CD-ROM dzinim, ievadiet izmantojamo ierīces datni. Nestandarta CD-ROM dziņi lieto nestandarta ierīču datnes (piemēram, /dev/mcdx).
+ .
+ Jūs varat pārslēgties uz otro termināli (ALT+F2), lai pārbaudītu pieejamās ierīces /dev direktorijā ar komandu "ls /dev". Pēc tam jūs varat atgriezties pie šī ekrāna, nospiežot ALT+F1.
+Description-mk.UTF-8: Датотека за пристап на CD-ROM:
+ За да пристапам до CD-ROM-от, те молам внеси уред-датотека кој треба да се користи. Не стандардни CD-ROM уреди користат не стандардни  уред-датотеки (како /dev/mcdx).
+ .
+ Можеш да се префрлиш во школата на вториот терминал (ALT+F2) за да ги провериш достапните уреди во /dev со „ls /dev“. Можеш да се вратиш на овој екран со притискање ALT+F1.
+Description-nb.UTF-8: Enhetsfil for å få tilgang til CD-en:
+ For å kunne bruke CD-spilleren må du skrive inn hvilken enhetsfil som skal brukes. Uvanlige CD-spillere bruker uvanlige enhetsfiler, som for eksempel /dev/mcdx.
+ .
+ Du kan bytte til skallet på det andre konsollet (ALT+F2) for å se etter tilgjengelige enheter i /dev med «ls /dev». Du kommer tilbake hit med ALT+F1.
+Description-nl.UTF-8: Apparaatbestand dat toegang geeft tot de CD:
+ Om toegang te krijgen tot uw CD-station dient u het te gebruiken apparaatbestand in te voeren. Niet-standaard CD-stations maken gebruik van niet-standaard apparaatbestanden (b.v. /dev/mcdx).
+ .
+ U kunt overschakelen naar de shell op de tweede terminal (ALT+F2), waar u de in /dev beschikbare apparaten kunt bekijken met het commando 'ls /dev'. U keert terug naar dit scherm met ALT+F1.
+Description-nn.UTF-8: Einingsfil for å få tilgang til CDROMen:
+ For å kunna bruke CDROM-spelaren, må du skrive inn kva for einingsfil som skal brukast. Uvanlege CDROM-spelarar brukar uvanlege einingsfiler, som til dømes /dev/mcdx.
+ .
+ Du kan byta til skalet på den andre konsollen (Alt + F2) for å sjå kva for einingar som finst i /dev med kommandoen «ls /dev». Du kan gå tilbake hit med Alt + F1.
+Description-no.UTF-8: Enhetsfil for å få tilgang til CD-en:
+ For å kunne bruke CD-spilleren må du skrive inn hvilken enhetsfil som skal brukes. Uvanlige CD-spillere bruker uvanlige enhetsfiler, som for eksempel /dev/mcdx.
+ .
+ Du kan bytte til skallet på det andre konsollet (ALT+F2) for å se etter tilgjengelige enheter i /dev med «ls /dev». Du kommer tilbake hit med ALT+F1.
+Description-pl.UTF-8: Plik urządzenia do dostępu do napędu CD-ROM:
+ Aby uzyskać dostęp do napędu CD-ROM, proszę wprowadzić plik urządzenia, które ma zostać użyte. Niestandardowe napędy CD-ROM używają niestandardowych plików urządzeń (jak np. /dev/mcdx).
+ .
+ Możesz się przełączyć na drugi terminal (ALT+F2), by sprawdzić przy pomocy "ls /dev" dostępne w /dev urządzenia. Wciskając ALT+F1 powrócisz do tego ekranu.
+Description-pt.UTF-8: Ficheiro de dispositivo para aceder ao CD-ROM:
+ Para poder aceder ao seu leitor de CD-ROM, por favor insira o ficheiro de dispositivo que deve ser utilizado. Leitores de CD-ROM não-standard usam ficheiros de dispositivos não-standard (por ex. /dev/mcdx).
+ .
+ Pode alternar para a consola do segundo terminal (ALT+F2) para verificar os dispositivos disponíveis em /dev com "ls /dev". Pode regressar a este ecrã carregando em ALT+F1.
+Description-pt_BR.UTF-8: Arquivo de dispositivo para acessar o CD-ROM:
+ Para acessar sua unidade de CD-ROM, por favor, informe o arquivo de dispositivo que deverá ser usado. Unidades de CD-ROM fora dos padrões usam arquivos de dispositivos fora dos padrões (como /dev/mcdx).
+ .
+ Você pode alternar para o shell no segundo terminal (ALT+F2) para checar os dispositivos disponíveis em /dev com o comando "ls /dev". Você poderá retornar a esta tela pressionando ALT+F1.
+Description-ro.UTF-8: Fișierul-dispozitiv pentru accesul la CD-ROM:
+ Pentru a accesa unitatea dumneavoastră de CD-ROM, vă rugăm să introduceți fișierul-dispozitiv care trebuie folosit. Unitățile CD-ROM non-standard folosesc fișiere-dispozitiv non-standard (ex.: /dev/mcdx).
+ .
+ Puteți să treceți la consola de pe al doilea terminal (ALT+F2) pentru a verifica dispozitivele disponibile în /dev cu „ls /dev”. Vă puteți întoarce la acest ecran cu combinația ALT+F1.
+Description-ru.UTF-8: Файл устройства для доступа к CD-ROM:
+ Перед использованием устройства чтения CD-ROM укажите имя файла устройства. Для нестандартных CD-ROM используются нестандартные имена файлов устройств (например, /dev/mcdx).
+ .
+ Вы можете переключиться в оболочку на второй консоли (ALT+F2) для проверки доступных устройств в каталоге /dev командой "ls /dev". Назад вы можете вернуться нажатием ALT+F1.
+Description-si.UTF-8: CD-ROM වෙත පිවිසීම සඳහාවන ධාවක ගොනුව:
+ ඔබේ CD-ROM ධාවකයට පිවිසීම සඳහා කරුණාකර භාවිත කල යුතු ගොනුව ඇතුලත් කරන්න. සම්මත නොවන CD-ROM ධාවක සම්මත නොවන ගොනු (/dev/mcdx වැනි) භාවිත කරයි.
+ .
+ ඔබට "ls /dev" සමඟ /dev හී පවතින උපකරණ පිරික්සීම සඳහා දෙවැනි අග්‍රයේ ශෙලයට පිවිසිය හැක (ALT+F2). ඔබට ALT+F1 යොදාගෙන ආපසු මෙම තිරයට පැමිණිය හැක.
+Description-sk.UTF-8: Súbor zariadenia na prístup k CD-ROM:
+ Aby mohol systém pristupovať k CD-ROM mechanike, musíte zadať súbor zariadenia, ktoré sa má použiť. Neštandardné CD-ROM mechaniky používajú neštandardné súbory zariadenia (napr. /dev/mcdx).
+ .
+ Pomocou prepnutia sa do shellu na druhom termináli (ALT+F2) môžete zistiť dostupné zariadenia v /dev príkazom „ls /dev“. Naspäť na túto obrazovku sa prepnete pomocou ALT+F1.
+Description-sl.UTF-8: Datoteka naprave za dostopanje do CD-ROM-a:
+ Da bi dobili dostop do CD-ROM-a, moram vedeti katero datoteko z napravo moram uporabiti. Nestandardni CD-ROM-i uporabljajo nestandardne datoteke z napravami (kot na primer /dev/mcdx).
+ .
+ Preklopite lahko na lupino na drugem terminalu (ALT+F2), kjer lahko z ukazom "ls /dev" preverite katere naprave so na voljo. Sem se lahko vrnete z ALT+F1.
+Description-sq.UTF-8: File i dispozitivit për të lexuar CD-ROM-in:
+ Në mënyrë që të lexojë lexues tënd të CD-ROM-it, të lutem zgjidh file e dispozitivit që duhet përdorur. Lexues CD-ROM-i jo standartë përdorin file jo standartë (si p.sh. /dev/mcdx).
+ .
+ Mund të kalosh tek shell në terminalin e dytë (ALT+F2) për të kontrolluar dispozitivat e duhur në /dev me "ls /dev". Mund të kthehesh sërish këtu duke shtypur ALT+F1.
+Description-sr.UTF-8: Фајл уређаја за приступ CD-ROM-у:
+ Унесите фајл уређаја који ће се користити за приступ вашем CD-ROM-у. Неуобичајени CD-ROM погони користе неуобичајене фајлове уређаја (нпр. /dev/mcdx).
+ .
+ Можете се пребацити у shell-у на другој конзоли (Alt+F2) да проверите који су уређаји доступни у /dev, помоћу „ls /dev“. Враћате се на овај екран помоћу Alt+F1.
+Description-sv.UTF-8: Enhetsfil för att komma åt cd-rom-enheten:
+ Ange den enhetsfil som ska användas för att komma åt din cd-rom-enhet. Ovanliga cd-rom-enheter använder ovanliga enhetsfiler (som /dev/mcdx).
+ .
+ Du kan växla till skalet på den andra terminalen (ALT+F2) för att kontrollera de tillgängliga enheterna i /dev med "ls /dev". Du kan återvända till den här skärmen genom att trycka ALT+F1.
+Description-te.UTF-8: CD-ROM వాడటానికి డివైస్ ఫైల్:
+ CD-ROM డ్రైవ్ వాడటానికి, అవసరమైన డివైస్ ఫైలుని ప్రవేశపెట్టండి. ప్రామాణికం కాని  CD-ROM డ్రైవులు ప్రామాణికం కాని   డివైస్ ఫైలుని (ఉదా: /dev/mcdx ) వాడుతాయి  .
+ .
+ రెండవ టర్మినల్ (ALT+F2)కి మారి దాని లో షెల్  ద్వారా  /dev లోఅందుబాటులోగల డివైస్ లను  "ls /dev" కమాండ్ ద్వారా చూడవచ్చు. ఈ తెరకు తిరిగి రావటానికి ALT+F1 నొక్కాలి.
+Description-th.UTF-8: แฟ้มอุปกรณ์สำหรับใช้งานซีดีรอม:
+ เพื่อจะให้ใช้งานไดรว์ซีดีรอมได้ กรุณาป้อนชื่อแฟ้มอุปกรณ์สำหรับไดรว์ที่จะใช้ ไดรว์ซีดีรอมที่ไม่มาตรฐานจะใช้แฟ้มอุปกรณ์ที่ไม่มาตรฐาน (เช่น /dev/mcdx)
+ .
+ คุณอาจสลับไปที่เชลล์ในเทอร์มินัลที่สอง (ALT+F2) เพื่อตรวจสอบอุปกรณ์ที่มีใน /dev ด้วยคำสั่ง "ls /dev" ได้ และคุณสามารถกลับมาที่หน้าจอนี้ได้ โดยกด ALT+F1
+Description-tl.UTF-8: Talaksang device na gamit para sa CD-ROM:
+ Ibigay ang talaksan ng device na gagamitin upang ma-access ang inyong CD-ROM drive. Mga hindi karaniwan na CD-ROM drive ay gumagamit ng hindi karaniwang mga talaksan ng device (tulad ng /dev/mcdx).
+ .
+ Maaari kayong lumipat sa shell sa pangalawang terminal (ALT+F2) upang siyasatin ang magagamit na mga device sa /dev sa pamamagitan ng "ls /dev". Maari kayong bumalik sa screen na ito gamit ang pagpindot ng ALT+F1.
+Description-tr.UTF-8: CD-ROM'a erişim için aygıt dosyası:
+ Lütfen CD-ROM sürücünüze ulaşmak için gerekli aygıt dosyasını girin. Standart türde olmayan CD-ROM sürücüler standart olmayan aygıt dosyaları kullanır (/dev/mcdx gibi).
+ .
+ Var olan aygıtları görmek için ikinci terminale geçerek (ALT+F2) "ls /dev" komutunu kullanabilirsiniz. ALT+F1 ile buraya geri dönebilirsiniz.
+Description-ug.UTF-8: CD-ROM قوزغاتقۇچ ماس كېلىدىغان ئۈسكۈنە ھۆججىتى:
+ CD-ROM قوزغاتقۇچىڭىزنى ئىشلىتىش ئۈچۈن مۇناسىپ ئۈسكۈنە ھۆججەت ئاتىنى كىرگۈزۈڭ. ئۆلچەملىك بولمىغان CD-ROM قوزغاتقۇچ ئۆلچەملىك بولمىغان ئۈسكۈنە ئاتى ئىشلىتىدۇ (مەسىلەن: /dev/mcdx)
+ .
+ سىز ئىككىنچى تېرمىنال (ALT+F2)نىڭ shell غا ئالماشتۇرۇش  ئارقىلىق "ls /dev" بۇيرۇقىنى ئىشلىتىپ /dev مۇندەرىجىسى ئاستىدىكى بارلىق ئىشلەتكىلى بولىدىغان ئۈسكۈنە ھۆججەت ئاتىنى كۆرەلەيسىز. ALT+F1 بېسىپ مەزكۇر ئېكرانغا قايتالايسىز.
+Description-uk.UTF-8: Файл пристрою для доступу до CD-ROM:
+ Для отримання доступу до вашого пристрою CD-ROM, введіть назву файлу пристрою, оскільки нестандартний CD-ROM використовує нестандартний файл пристрою (такий як /dev/mcdx).
+ .
+ Ви можете перемикнутися в оболонку не другому терміналі (ALT+F2) для перевірки доступних пристроїв в каталозі /dev командою „ls /dev“. Назад ви можете повернутися натиснувши ALT+F1.
+Description-vi.UTF-8: Tập tin thiết bị để truy cập đĩa CD-ROM:
+ Để truy cập ổ đĩa CD-ROM của bạn, hãy nhập tên tập tin thiết bị cần dùng. Các ổ CD-ROM khác chuẩn sử dụng tập tin thiết bị cũng khác chuẩn (v.d. « /dev/mcdx »).
+ .
+ Bạn có khả năng chuyển đổi sang trình bao trên thiết bị cuối thứ hai (phím tắt ALT+F2) để kiểm tra xem các thiết bị có sẵn trong « /dev » bằng lệnh « ls /dev » (ls = liệt kê). Cũng có thể trở về màn hình này bằng phím tắt ALT+F1.
+Description-zh_CN.UTF-8: 光盘驱动器所对应的设备文件：
+ 为了能使用您的光盘驱动器，请输入相应的设备文件名。非标准的光盘驱动器会使用非标准的设备名 (例如 /dev/mcdx)。
+ .
+ 您可以通过切换到第二个终端 (ALT+F2) 的 shell 中并使用“ls /dev”命令来查看 /dev 目录下所有可用的设备文件名。按 ALT+F1 可返回本屏。
+Description-zh_TW.UTF-8: 用來存取此光碟機的裝置檔:
+ 為了能夠存取您的光碟機，請輸入其所對應的裝置檔。非標準的光碟機通常會使用非標準的裝置檔 (像是 /dev/mcdx)。
+ .
+ 您可以使用 ALT+F2 來切換到第二個終端畫面的 shell 中，並使用 ls /dev 來檢視 /dev 目錄下可用的裝置檔。請再按下 ALT+F1 來返回本畫面。
+
+Template: cdrom-detect/cdrom_fs
+Type: string
+Default: iso9660
+Description: for internal use only
+ File system used on cdrom-detect/cdrom_device.
+
+Template: cdrom-detect/hybrid
+Type: boolean
+Default: false
+Description: for internal use only
+ Set if the CD appears to be on a USB stick.
+
+Template: cdrom-detect/usb-hdd
+Type: boolean
+Default: false
+Description: for internal use only
+ Set if the CD appears to be a live USB-HDD image.
+
+Template: cdrom-detect/scanning_progress_title
+Type: text
+Description: Scanning CD-ROM
+Description-ar.UTF-8: كشف  القرص
+Description-ast.UTF-8: Analizando'l CD-ROM
+Description-be.UTF-8: Прагляд CD-ROM
+Description-bg.UTF-8: Сканиране на компактдиск
+Description-bo.UTF-8: CD-ROM འཚོལ་བཤེར་བྱེད་པ
+Description-bs.UTF-8: Pretražujem CD-ROM
+Description-ca.UTF-8: S'està analitzant el CD-ROM
+Description-cs.UTF-8: Prohledává se CD-ROM
+Description-cy.UTF-8: Yn sganio CD-ROM
+Description-da.UTF-8: Skanner cd
+Description-de.UTF-8: Durchsuchen der CD-ROM
+Description-el.UTF-8: Ανίχνευση CD-ROM
+Description-eo.UTF-8: Skanado de lumdisko
+Description-es.UTF-8: Analizando el CD-ROM
+Description-et.UTF-8: Laserketta skannimine
+Description-eu.UTF-8: CD-ROMa eskaneatzea
+Description-fa.UTF-8: بررسی سی دی رام
+Description-fi.UTF-8: Luetaan CD-levyä
+Description-fr.UTF-8: Analyse du CD
+Description-ga.UTF-8: CD-ROM á scanadh
+Description-gl.UTF-8: Estase a examinar o CD-ROM
+Description-he.UTF-8: סורק תקליטור
+Description-hr.UTF-8: Pretražujem CD-ROM
+Description-hu.UTF-8: CD-ROM olvasása
+Description-id.UTF-8: Memindai CD-ROM
+Description-is.UTF-8: Skoða geisladrif
+Description-it.UTF-8: Analisi del CD-ROM
+Description-ja.UTF-8: CD-ROM を検査しています
+Description-kk.UTF-8: CD-ROM қаралып жатыр
+Description-kn.UTF-8: ಅಡಕ ತಟ್ಟೆಯನ್ನು ಶೋಧಿಸಲಾಗುತ್ತಿದೆ
+Description-ko.UTF-8: CD-ROM 읽기
+Description-ku.UTF-8: Li CD-ROM tê gerandin
+Description-lo.UTF-8: ກຳລັງກວດສອບຂໍ້ມູນໃນຊີດີຣອມ
+Description-lt.UTF-8: CD-ROM apžvelgimas
+Description-lv.UTF-8: Skenē CD-ROM
+Description-mk.UTF-8: Скенирање на CD-ROM
+Description-nb.UTF-8: Søker gjennom CD-ROM
+Description-nl.UTF-8: CD wordt gescand
+Description-nn.UTF-8: Søkjer gjennom CD-ROM
+Description-no.UTF-8: Søker gjennom CD-ROM
+Description-pl.UTF-8: Przeszukiwanie CD-ROM-u
+Description-pt.UTF-8: A ler o CD-ROM
+Description-pt_BR.UTF-8: Lendo CD-ROM
+Description-ro.UTF-8: Se examinează CD-ROM-ul
+Description-ru.UTF-8: Выполняется просмотр компакт-диска...
+Description-se.UTF-8: Ohcamin CD-CD-ROM čađa
+Description-si.UTF-8: CD-ROM පිරික්සමින්
+Description-sk.UTF-8: Prehľadáva sa CD-ROM
+Description-sl.UTF-8: Pregledovanje CD-ROM
+Description-sq.UTF-8: Duke kontrolluar CD-ROM
+Description-sr.UTF-8: Скенирање CD-ROM-а
+Description-sv.UTF-8: Söker igenom cd-skivan
+Description-te.UTF-8: CD-ROM ని పరిశీలన చేస్తున్నాము
+Description-th.UTF-8: กำลังสำรวจข้อมูลในซีดีรอม
+Description-tl.UTF-8: Sinisiyasat ang CD-ROM
+Description-tr.UTF-8: CD-ROM taranıyor
+Description-ug.UTF-8: CD-ROM نى تەكشۈرۈۋاتىدۇ
+Description-uk.UTF-8: Сканування CD-ROM
+Description-vi.UTF-8: Đang quét đĩa CD-ROM
+Description-zh_CN.UTF-8: 正在扫描 CD-ROM
+Description-zh_TW.UTF-8: 掃瞄光碟機
+
+Template: cdrom-detect/scanning_progress_step
+Type: text
+Description: Scanning ${DIR}...
+Description-ar.UTF-8: كشف ${DIR}...
+Description-ast.UTF-8: Analizando ${DIR}...
+Description-be.UTF-8: Прагляд ${DIR}...
+Description-bg.UTF-8: Сканиране на ${DIR}...
+Description-bo.UTF-8: ${DIR}འཚོར་བཤེར་བྱེད་བཞིན་པ་་་
+Description-bs.UTF-8: Pretražujem ${DIR}...
+Description-ca.UTF-8: S'està analitzant ${DIR}...
+Description-cs.UTF-8: Prohledává se ${DIR}...
+Description-cy.UTF-8: Yn sganio ${DIR}...
+Description-da.UTF-8: Skanner ${DIR}...
+Description-de.UTF-8: Durchsuchen von ${DIR} ...
+Description-el.UTF-8: Ανίχνευση του ${DIR}...
+Description-eo.UTF-8: Skanado de ${DIR}-n...
+Description-es.UTF-8: Analizando ${DIR}...
+Description-et.UTF-8: ${DIR} skannimine...
+Description-eu.UTF-8: ${DIR} eskaneatzen...
+Description-fa.UTF-8: پیمایش ${DIR}...
+Description-fi.UTF-8: Luetaan hakemistoa ${DIR}...
+Description-fr.UTF-8: Analyse du répertoire ${DIR}...
+Description-ga.UTF-8: ${DIR} á scanadh...
+Description-gl.UTF-8: Estase a examinar ${DIR}
+Description-he.UTF-8: סורק את ${DIR}...
+Description-hr.UTF-8: Pretražujem ${DIR}...
+Description-hu.UTF-8: Olvasás alatt: ${DIR}...
+Description-id.UTF-8: Memindai ${DIR}...
+Description-is.UTF-8: Skoða ${DIR}...
+Description-it.UTF-8: Analisi di ${DIR}...
+Description-ja.UTF-8: ${DIR} を検査しています...
+Description-kk.UTF-8: ${DIR} қаралып жатыр...
+Description-kn.UTF-8: ${DIR}ಯನ್ನು ಶೋಧಿಸಲಾಗುತ್ತಿದೆ....
+Description-ko.UTF-8: ${DIR} 디렉토리를 읽는 중입니다...
+Description-ku.UTF-8: Li ${DIR} tê gerandin...
+Description-lo.UTF-8: ກຳລັງສຳຫລວດຂໍ້ມູນໃນ${DIR}...
+Description-lt.UTF-8: Apžvelgiamas aplankas ${DIR}...
+Description-lv.UTF-8: Skenē ${DIR}...
+Description-mk.UTF-8: Скенирање на ${DIR}...
+Description-nb.UTF-8: Søker gjennom ${DIR} ...
+Description-nl.UTF-8: ${DIR} wordt gescand...
+Description-nn.UTF-8: Søkjer gjennom ${DIR} …
+Description-no.UTF-8: Søker gjennom ${DIR} ...
+Description-pl.UTF-8: Przeszukiwanie ${DIR}...
+Description-pt.UTF-8: A ler o ${DIR}...
+Description-pt_BR.UTF-8: Lendo ${DIR}...
+Description-ro.UTF-8: Se examinează ${DIR}...
+Description-ru.UTF-8: Выполняется поиск в ${DIR}...
+Description-se.UTF-8: Ohcamin ${DIR}
+Description-si.UTF-8: ${DIR} පිරික්සමින්...
+Description-sk.UTF-8: Prehľadáva sa ${DIR}...
+Description-sl.UTF-8: Pregledovanje ${DIR} ...
+Description-sq.UTF-8: Duke kontrolluar ${DIR}...
+Description-sr.UTF-8: Скенирање директоријума ${DIR}...
+Description-sv.UTF-8: Söker igenom ${DIR}...
+Description-te.UTF-8: ${DIR} పరిశీలన చేస్తున్నాము...
+Description-th.UTF-8: กำลังสำรวจข้อมูลใน ${DIR}...
+Description-tl.UTF-8: Sinisiyasat ang ${DIR}...
+Description-tr.UTF-8: ${DIR} taranıyor...
+Description-ug.UTF-8: ${DIR} نى تەكشۈرۈۋاتىدۇ…
+Description-uk.UTF-8: Сканування ${DIR}...
+Description-vi.UTF-8: Đang quét thư mục ${DIR}...
+Description-zh_CN.UTF-8: 正在扫描 ${DIR}...
+Description-zh_TW.UTF-8: 正在掃瞄 ${DIR}……
+
+Template: cdrom-detect/success
+Type: note
+Description: CD-ROM detected
+ The CD-ROM autodetection was successful. A CD-ROM drive has been found and it
+ currently contains the CD ${cdname}. The installation will now continue.
+Description-ar.UTF-8: عثر على قرص مدمج
+ نجح فحص قارئ الأقراص المدمجة التلقائي. عثر على قارئ الأقراص المدمجة ويحتوي حالياً على القرص ${cdname}. سوف يستمرّ التثبيت الآن.
+Description-ast.UTF-8: Deteutóse un CD-ROM
+ La deteición automática del CD-ROM funcionó. Alcontróse un llector de CD-ROM col siguiente CD inxertáu: ${cdname}. Pue siguir cola instalación.
+Description-be.UTF-8: Вызначаны CD-ROM
+ Паспяхова скончана аўтаматычнае вызначэнне CD-ROM. Знойдзеная CD-ROM прылада,у якой зараз знаходзіцца дыск ${cdname}. Устаноўка працягваецца.
+Description-bg.UTF-8: Открито беше компактдисково устройство
+ Автоматичното откриване на компактдисково устройство завърши успешно.  В момента то съдържа компактдиска ${cdname}. Сега инсталацията може да продължи.
+Description-bo.UTF-8: འོད་སྡེར་རྙེད་ཡོད་པ
+ འོད་སྡེར་སྒུལ་ཆས་རང་འགུལ་འཚོལ་ཞིབ་བྱེད་ཐུབ་པ དེའི་ནང་དུ་ད་ལྟ་འོད་སྡེར་${cdname} འདུག་པས་དེ་སྒྲིག་འཇུག་བྱེད་རྒྱུ་ཡིན
+Description-bs.UTF-8: CD-ROM detektovan
+ Autodetekcija CD-ROM-a je uspješna. CD-ROM pogon je pronađen sa slijedećim ubačenim CD-om : ${cdname}. Instalacija će se sada nastaviti.
+Description-ca.UTF-8: S'ha detectat un CD-ROM
+ La detecció automàtica del CD-ROM ha funcionat. S'ha trobat un lector de CD-ROM que actualment conté el CD ${cdname}. La instal·lació continuarà ara.
+Description-cs.UTF-8: CD-ROM bylo rozpoznáno
+ Automatická detekce se podařila. Byla nalezena CD-ROM mechanika s vloženým diskem ${cdname}. Instalace bude nyní pokračovat.
+Description-cy.UTF-8: Canfuwyd CD-ROM
+ Roedd y canfod CD-ROM awtomatig yn llwyddiannus. Canfuwyd disgyrrwr CD-ROM ac ar hyn o bryd mae'n cynnwys y CD ${cdname}. Fe fydd y sefydliad nawr yn parhau.
+Description-da.UTF-8: Cd-rom drev fundet
+ Det lykkedes at finde cd-rom drevet automatisk. Der blev fundet et cd-rom drev, og det indeholder cd'en ${cdname}. Installationen vil nu fortsætte.
+Description-de.UTF-8: CD-ROM gefunden
+ Die automatische CD-ROM-Erkennung war erfolgreich. Ein CD-ROM-Laufwerk mit der CD ${cdname} wurde gefunden. Sie können mit der Installation fortfahren.
+Description-el.UTF-8: Ανιχνεύθηκε μονάδα CD-ROM
+ Η αυτόματη ανίχνευση μονάδας CD-ROM ήταν επιτυχής. Βρέθηκε μονάδα CD-ROM η οποία περιέχει το CD ${cdname}. Η εγκατάσταση μπορεί να συνεχιστεί.
+Description-eo.UTF-8: Lumdisko estis detektita
+ La aŭtomata lumdiska detekto sukcesis. Lumdiskinga pelilo estis trovita kaj ĝi nuntempe enhavas la lumdiskon '${cdname}'. La instalado daŭros ekde nun.
+Description-es.UTF-8: Se ha detectado un CD-ROM
+ La detección automática del CD-ROM ha funcionado. Se encontró un lector de CD-ROM con el siguiente CD insertado: ${cdname}. Puede continuar la instalación.
+Description-et.UTF-8: CD-ROM tuvastatud
+ CD-ROM'i tuvastamine õnnestus. Leiti CD-ROM, mis hetkel sisaldab laserketast ${cdname}. Paigaldamine võib jätkuda.
+Description-eu.UTF-8: CD-ROMa detektatu da
+ CD-ROMa ondo detektatu da automatikoki. CD-ROM unitatea aurkitu da eta unean ${cdname} CDa du. Instalatzen jarraituko du.
+Description-fa.UTF-8: CD-ROM شناخته شد
+ تشخیص خودکار CD-ROM موفقیت‌آمیز بود. یک CD-ROM پیدا شده است و هم‌اکنون شامل CD ${cdname} می‌باشد. نصب هم‌اکنون ادمه می‌یابد.
+Description-fi.UTF-8: CD-asema tunnistettu
+ CD-levyn automaattitunnistus toimi. CD-asema löytyi ja asemasta seuraava levy: ${cdname}. Asennus jatkuu.
+Description-fr.UTF-8: Un CD a été détecté
+ La détection automatique du CD s'est bien déroulée. Un lecteur de CD-ROM a été identifié et ce lecteur contient le CD : ${cdname}. Vous pouvez poursuivre l'installation.
+Description-ga.UTF-8: Braitheadh CD-ROM
+ D'éirigh le brath an tiomántáin CD-ROM. Aimsíodh tiomántán CD-ROM agus tá dlúthdhiosca darb ainm ${cdname} ann faoi láthair. Leanfar ar aghaidh leis an tsuiteáil anois.
+Description-gl.UTF-8: Detectouse un CD-ROM
+ A detección automática de CD-ROM tivo éxito; atopouse unha unidade de CD-ROM que contén o CD ${cdname}. Agora ha continuar a instalación.
+Description-he.UTF-8: זוהה תקליטור
+ שלב הזיהוי האוטומטי של כונן התקליטורים הסתיים בהצלחה. כונן התקליטורים זוהה וכרגע הוא מכיל את התקליטור ${cdname}. ההתקנה תמשיך לשלב הבא.
+Description-hr.UTF-8: Pronađen CD-ROM
+ Automatsko traženje CD-ROM-a uspjelo. Pronađen je CD-ROM pogon koji sadrži CD ${cdname}. Instalacija će sada nastaviti.
+Description-hu.UTF-8: CD-ROM észlelve
+ A CD-ROM felismerése megtörtént. Találtam egy CD-ROM meghajtót, melyben most ez a CD van: ${cdname}. A telepítés folytatódik.
+Description-id.UTF-8: CD-ROM ditemukan
+ Pencarian CD-ROM berhasil. Sebuah penggerak CD-ROM ditemukan dan saat ini berisi CD ${cdname}. Instalasi akan dilanjutkan.
+Description-is.UTF-8: Fann geisladisk
+ Leit að geisladisknum bar árangur. Geisladrif fannst og í því er geisladiskurinn ${cdname}. Uppsetningarferlinu mun nú haldið áfram.
+Description-it.UTF-8: Rilevato CD-ROM
+ Il CD-ROM è stato riconosciuto automaticamente. È stato rilevato un lettore CD-ROM con il seguente CD inserito: ${cdname}. È possibile procedere con l'installazione.
+Description-ja.UTF-8: CD-ROM が検出されました
+ CD-ROM 自動検出に成功しました。CD-ROM ドライブが検出され、現在 CD ${cdname} が挿入されています。インストールを続けます。
+Description-kk.UTF-8: CD-ROM табылды
+ CD-ROM автоматты түрде анықталды. CD-ROM құрылғысында келесі CD табылды: ${cdname}. Орнату жалғаса береді.
+Description-kn.UTF-8: ಸಿಡಿ ರಾಂ ಅನ್ನು ಶೋಧಿಸಲ್ಪಟ್ಟಿದೆ
+ ಸಿಡಿ ರಾಂ ನ ಸ್ವಯಂ ತಪಾಸಣೆ ಫಲವಾಗಿದೆ. ಒಂದು ಸಿಡಿ ರಾಂ ಶೋಧಿಸಲ್ಪಟ್ಟಿದೆ ಮತ್ತು ಅದರಲ್ಲಿ ಈಗ ${cdname} ಎಂಬ ಹೆಸರಿನ ಸಿಡಿಯು ಇದೆ. ಅನುಸ್ಥಾಪನೆಯು ಮುಂದುವರೆಯುವುದು.
+Description-ko.UTF-8: CD-ROM을 찾았습니다
+ CD-ROM 자동 찾기가 성공했습니다. CD-ROM 드라이브를 찾았고 현재 ${cdname} CD가 들어 있습니다. 설치를 계속 진행합니다.
+Description-ku.UTF-8: CD-ROM hat dîtin
+ Tesbîtkirina CD-ROM ya bixweber bi ser ket. CD-ROM'ek hat dîtin. Navê CD'yê ${cdname} e. Sazkirin niha didomîne.
+Description-lo.UTF-8: ກວດພົບຊີດີຮອມ
+ ກວດສອບຊີດີຮອມໂດຍອັດຕາໂນມັດໄດ້ສຳເລັດ ພົບໄດເວີຊີວີຮອມ ແລະ ມີແຜ່ນຊີດີ${cdname}ຈະດຳເນີນການຕິດຕັ້ງຕໍ່ໄປ
+Description-lt.UTF-8: Kompaktinių diskų įrenginys (CD-ROM) aptiktas
+ Kompaktinių diskų automatinis aptikimas veikia. Kompaktinių diskų skaitymo įrenginys (CD-ROM) rastas su jame įdėtu CD ${cdname}. Galite tęsti diegimą.
+Description-lv.UTF-8: Atrasts CD-ROM
+ CD-ROM automātiskā noteikšana ir bijusi sekmīga. CD-ROM dzinis ir atrasts un satur CD ar nosaukumu ${cdname}. Instalēšana turpināsies.
+Description-mk.UTF-8: Детектиран CD-ROM
+ Автоматската детекција на CD-ROM беше успешна. CD-ROM уред беше најден и моментално содржи CD ${cdname}. Инсталацијата нема да продолжи.
+Description-nb.UTF-8: Fant en CD-spiller
+ En CD-spiller ble oppdaget automatisk. Denne CD-plata er satt inn: ${cdname}. Du kan fortsette installasjonen.
+Description-nl.UTF-8: Er is een CD gedetecteerd
+ Automatische CD-herkenning is gelukt. Er is een CD-station gevonden met de CD ${cdname} erin. De installatie wordt nu voortgezet.
+Description-nn.UTF-8: Fann CDROM-spelar
+ Ein CDROM-spelar vart oppdaga automatisk. Denne CD-plata er sett inn: ${cdname}. Du kan halde fram med installasjonen.
+Description-no.UTF-8: Fant en CD-spiller
+ En CD-spiller ble oppdaget automatisk. Denne CD-plata er satt inn: ${cdname}. Du kan fortsette installasjonen.
+Description-pl.UTF-8: CD-ROM został wykryty.
+ Automatyczne wykrywanie napędu CD-ROM powiodło się. Napęd CD-ROM został odnaleziony i zawiera następującą płytę: ${cdname}. Instalacja będzie teraz kontynuowana.
+Description-pt.UTF-8: CD-ROM detectado
+ A detecção automática do CD-ROM foi bem sucedida. Foi encontrado um leitor de CD-ROMs e actualmente contém o CD ${cdname}. A instalação vai agora continuar.
+Description-pt_BR.UTF-8: CD-ROM detectado
+ A autodetecção do CD-ROM funcionou. Uma unidade de CD-ROM foi encontrada e atualmente contém o CD ${cdname}. A instalação continuará agora.
+Description-ro.UTF-8: CD-ROM detectat
+ Autodetectarea CD-ROM-ul a reușit. O unitate CD-ROM a fost găsită care acum conține CD-ul ${cdname}. Acum instalarea va continua.
+Description-ru.UTF-8: Обнаружен CD-ROM
+ Автоматическое определение CD-ROM завершено. Обнаружен компакт-диск ${cdname}. Установка будет продолжена.
+Description-si.UTF-8: CD-ROM හඳුනාගැනිනි
+ CD-ROM ස්වයංක්‍රීය හඳුනාගැනීම සාර්ථකයි, CD-ROM ධාවකයක් හමු වූ අතර එහි දැනට  ${cdname} තැටිය පවතී. ස්ථාපනය දැන් ඉදිරියට යයි.
+Description-sk.UTF-8: CD-ROM mechanika bola rozpoznaná
+ Automatická detekcia CD-ROM sa podarila. Bola nájdená CD-ROM mechanika , ktorá práve teraz obsahuje CD ${cdname}. Takže inštalácia bude pokračovať.
+Description-sl.UTF-8: Program je zaznal CD-ROM
+ Samodejno zaznavanje CD-ROM-a je delovalo. Našel sem CD-ROM z naslednjim CD-jem v pogonu: ${cdname}. Sedaj lahko nadaljujete z namestitvijo.
+Description-sq.UTF-8: CD-ROM u gjet
+ Gjetja automatike e CD-ROM-it pati sukses. Një lexues CD-ROM u gjet dhe tashmë përmban CD ${cdname}. Tani instalimi do vazhdojë.
+Description-sr.UTF-8: CD-ROM је пронађен
+ Аутоматско тражење CD-ROM-а је било успешно. CD-ROM уређај је пронађен и садржи CD ${cdname}. Инсталација ће се наставити.
+Description-sv.UTF-8: Cd-rom hittades
+ Den automatiska identifieringen av cd-rom:en lyckades. En cd-rom-enhet har hittats och innehåller för närvarande cd-skivan ${cdname}. Installationen kommer nu att fortsätta.
+Description-te.UTF-8: సీడీ-రామ్ కనుగొనబడింది
+ CD-ROM స్వయంచాలకంగా కనుగొనుట  విజయవంతం అయినది. CD-ROM డ్రైవ్ కనబడింది ఇప్పుడు దానిలో CD ${cdname} వుంది. స్థాపన ఇప్పడు కొనసాగించబడింది.
+Description-th.UTF-8: ตรวจพบซีดีรอม
+ ตรวจสอบซีดีรอมโดยอัตโนมัติได้สำเร็จ พบไดรว์ซีดีรอมและมีแผ่นซีดี ${cdname} จะดำเนินการติดตั้งต่อไป
+Description-tl.UTF-8: Nakita ang CD-ROM
+ Ang paghanap ng CD-ROM ay matagumpay. May nahanap na CD-ROM drive at kasalukuyan ay ang CD ${cdname} ang nilalaman nito. Magpapatuloy ang pagluklok ngayon.
+Description-tr.UTF-8: CD-ROM sürücü belirlendi
+ CD-ROM'un otomatik tanınması başarıyla sonuçlandı. "${cdname}" adlı bir CD bulundu. Şimdi kuruluma devam edilecek.
+Description-ug.UTF-8: CD-ROM بايقالدى
+ CD-ROM قوزغاتقۇچنى ئۆزلۈكىدىن تەكشۈرۈش مۇۋەپپەقىيەتلىك ھالدا بىر دانە نۇر دىسكا قوزغاتقۇچنى بايقىدى، ئۇ  ${cdname} CD-ROM نى ئۆز ئىچىگە ئالغان. ئورنىتىش جەريانى داۋاملىشىدۇ.
+Description-uk.UTF-8: Знайдений CD-ROM
+ Автоматичне виявлення CD-ROM пройшло вдало. В пристрої CD-ROM знайдений диск ${cdname}. Встановлення буде продовжене.
+Description-vi.UTF-8: Đĩa CD-ROM được tìm ra
+ Việc dò tìm tự động đĩa CD-ROM đã thành công. Một ổ đĩa CD-ROM đã được tìm ra, và nó hiện thời chứa đĩa CD ${cdname}. Vậy tiến trình cài đặt sẽ lúc bây giờ tiếp tục lại.
+Description-zh_CN.UTF-8: 探测到光盘
+ 光盘探测成功。发现了一个光盘驱动器，其中包含 ${cdname} 光盘。安装进程将继续。
+Description-zh_TW.UTF-8: 已偵測到光碟機
+ 光碟機自動偵測成功了。找到了一個光碟機，且裡面所放置的光碟是 ${cdname}。安裝作業現可繼續進行。
+
+Template: cdrom-detect/wrong-cd
+Type: error
+Description: Incorrect CD-ROM detected
+ The CD-ROM drive contains a CD which cannot be used for installation.
+ .
+ Please insert a suitable CD to continue with the installation.
+Description-ar.UTF-8: عثر على قرص مدمج غير صحيح
+ يحتوي قارئ الأقراص المدمجة على قرص مدمج لا يمكن استخدامه للتثبيت.
+ .
+ الرجاء إدخال قرص ملائم للاستمرار بالتثبيت.
+Description-ast.UTF-8: Deteutóse un CD-ROM incorreutu
+ El llector de CD-ROM contién un CD que nun pue usase pa la instalación.
+ .
+ Por favor, inxerte'l CD necesariu pa continuar cola instalación.
+Description-be.UTF-8: Вызначаны памылковы CD-ROM
+ Дзеля ўстаноўкі немагчыма выкарыстаць дыск, што знаходзіцца ў CD-ROM.
+ .
+ Калі ласка, устаўце прыдатны дыск, каб працягваць устаноўку
+Description-bg.UTF-8: Неправилен компактдиск
+ Компактдисковото устройство не съдържа компактдиск, който може да бъде използван за инсталация.
+ .
+ Сложете подходящ компактдиск, за да продължите с инсталирането.
+Description-bo.UTF-8: འོད་སྡེར་སྒུལ་ཆས་མི་དག་པ་ཡིན་འདུག
+ འོད་སྡེར་སྒུལ་ཆས་ཀྱི་ནང་དུ་སྤྱོད་མི་ཐུབ་པའི་འོད་སྡེར་ཞིག་བཅུག་འདུག
+ .
+ འོས་འཚམས་ཀྱི་འོད་སྡེར་ཞིག་འཇུག་ནས་སྒྲིག་འཇུག་མུ་མཐུད
+Description-bs.UTF-8: Pogrešan CD-ROM detektovan
+ CD-ROM pogon sadrži CD koji se ne može koristiti za instalaciju.
+ .
+ Molim ubacite odgovarajući CD da biste nastavili instalaciju.
+Description-ca.UTF-8: S'ha detectat un CD-ROM incorrecte
+ El lector de CD-ROM conté un CD que no pot ser emprat per a la instal·lació.
+ .
+ Inseriu un CD adequat per continuar amb la instal·lació.
+Description-cs.UTF-8: Bylo rozpoznáno nesprávné CD
+ Disk vložený v CD-ROM mechanice se nedá použít pro instalaci.
+ .
+ Vložte prosím vhodné instalační CD a pokračujte v instalaci.
+Description-cy.UTF-8: Canfuwyd CD-ROM anghywir
+ Mae'r disgyrrwr CD-ROM yn cynnwys CD na ellir ei ddefnyddio ar gyfer sefydlu.
+ .
+ Mewnosodwch CD addas i barhau â'r sefydliad.
+Description-da.UTF-8: Fandt forkert cd
+ Cd-rom drevet indeholder en cd, der ikke kan bruges til installation.
+ .
+ Indsæt en passende cd for at fortsætte installationen.
+Description-de.UTF-8: Falsche CD-ROM gefunden
+ Das CD-ROM-Laufwerk enthält eine CD, die nicht zur Installation verwendet werden kann.
+ .
+ Bitte legen Sie eine passende CD ein, um mit der Installation fortzufahren.
+Description-el.UTF-8: Ανιχνεύθηκε λάθος CD-ROM
+ Η μονάδα CD-ROM ανίχνευσε CD ακατάλληλο για εγκατάσταση.
+ .
+ Παρακαλώ τοποθετήστε το κατάλληλο CD στη μονάδα για τη συνέχιση της εγκατάστασης.
+Description-eo.UTF-8: Malĝusta lumdisko estis detektita
+ La lumdiskingo enhavas lumdiskon kiu ne estas uzebla por la instalado.
+ .
+ Bonvolu enŝovi taŭgan lumdiskon por daŭrigi la instaladon.
+Description-es.UTF-8: Se ha detectado un CD-ROM incorrecto
+ El lector de CD-ROM contiene un CD que no puede utilizarse para la instalación.
+ .
+ Por favor, inserte el CD apropiado para continuar con la instalación.
+Description-et.UTF-8: Tuvastati sobimatu CD-ROM
+ CD-ROM seadmes on paigaldamiseks sobimatu laserketas.
+ .
+ Paigaldamise jätkamiseks sisesta palun sobiv (Debiani) laserketas.
+Description-eu.UTF-8: CD-ROM baliogabea detektatu da
+ CD-ROM unitateak instalazioan erabil ezin daitekeen CDa du.
+ .
+ Sartu CD egokia instalatzen jarraitzeko.
+Description-fa.UTF-8: CD-ROM ناصحیح شناخته شد
+ گردانندهٔ CD-ROM شامل یک CD است که قابل استفاده برای نصب نیست.
+ .
+ برای ادامه‌ٔ نصب لطفاً یک CD مناسب قرار دهید.
+Description-fi.UTF-8: Väärä CD-levy havaittu
+ CD-asemassa olevaa levyä ei voida käyttää asentamiseen.
+ .
+ Jatka asennusta asettamalla sopiva CD-levy asemaan.
+Description-fr.UTF-8: Un CD non valable a été détecté
+ Le CD présent dans le lecteur ne peut pas être utilisé pour l'installation.
+ .
+ Veuillez insérer un CD valable pour continuer l'installation.
+Description-ga.UTF-8: Braitheadh CD-ROM mícheart
+ Tá dlúthdhiosca sa tiomántán CD-ROM ach ní féidir é a úsáid le haghaidh suiteála.
+ .
+ Ionsáigh dlúthdhiosca oiriúnach chun leanúint ar aghaidh leis an tsuiteáil.
+Description-gl.UTF-8: Detectouse un CD-ROM incorrecto
+ A unidade de CD-ROM contén un CD que non se pode empregar para a instalación.
+ .
+ Insira un CD axeitado para continuar a instalación.
+Description-he.UTF-8: זוהה תקליטור לא תקין
+ כונן התקליטורים מכיל תקליטור שאינו ניתן לשימוש לצורך התקנה.
+ .
+ אנא הכנס תקליטור מתאים כדי להמשיך עם ההתקנה.
+Description-hr.UTF-8: Pronađen krivi CD-ROM
+ CD-ROM pogon sadrži CD koji se ne može koristiti za instalaciju.
+ .
+ Molimo ubacite prikladni CD da bi nastavili instalaciju.
+Description-hu.UTF-8: Hibás CD-ROM-ot észleltem
+ A CD-ROM meghajtóban lévő CD nem telepíthető.
+ .
+ Egy megfelelő CD-t kell betenni a telepítés folytatásához.
+Description-id.UTF-8: Ditemukan CD-ROM yang salah
+ Penggerak CD-ROM tidak berisi CD instalasi.
+ .
+ Silakan masukkan CD yang cocok untuk melanjutkan instalasi.
+Description-is.UTF-8: Vitlaus geisladiskur fannst í drifinu
+ Í geisladrifinu er diskur sem ekki er nothæfur í uppsetningu.
+ .
+ Settu réttan disk í geisladrifið til þess að halda uppsetningu áfram.
+Description-it.UTF-8: Rilevato CD-ROM non corretto
+ L'unità CD-ROM contiene un CD non utilizzabile per l'installazione.
+ .
+ Inserire un CD adatto per procedere con l'installazione.
+Description-ja.UTF-8: 不正な CD-ROM が検出されました
+ CD-ROM ドライブにインストールに利用できない CD が挿入されています。
+ .
+ インストールを続けるために適切な CD を挿入してください。
+Description-kk.UTF-8: Қате CD-ROM табылды
+ CD-ROM ішіне орнатуға жарамайтын CD диск салынған.
+ .
+ Орнатуды жалғастыру үшін жарамды CD салыңыз.
+Description-kn.UTF-8: ಸರಿಯಲ್ಲದ ಸಿಡಿ ರಾಂ ಶೋಧಿಸಲ್ಪಟ್ಟಿದೆ
+ ಸಿಡಿ ರಾಂ ನಲ್ಲಿರುವ ಸಿಡಿಯನ್ನು ಅನುಸ್ಥಾಪನೆಗೆ ಉಪಯೋಗಿಸಲು ಆಗುವುದಿಲ್ಲ‌
+ .
+ ಅನುಸ್ಥಾಪನೆಯನ್ನು ಮುಂದುವರಿಸಲು ದಯವಿಟ್ಟು ಸರಿಯಾದ ಸಿಡಿಯನ್ನು ಸೇರಿಸಿ.
+Description-ko.UTF-8: 올바르지 않은 CD-ROM입니다
+ 설치에 사용할 수 없는 CD가 CD-ROM에 들어 있습니다.
+ .
+ 설치를 계속 진행하시려면 올바른 CD를 넣으십시오.
+Description-ku.UTF-8: CD-ROM'eke çewt hat dîtin
+ CD di ajokara CD-ROM'ê de ji bo sazkirinê nayê bikaranîn.
+ .
+ Ji kerema xwe re CD'yeke ji bo sazkirinê têxe.
+Description-lo.UTF-8: ກວດພົບແຜ່ນຊີດີຮອມທີ່ບໍ່ຖືກຕ້ອງ
+ ໃນໄດເວີຊີດີຮອມມີແຜ່ນຊີດີທີ່ບໍ່ສາມາດໃຊ້ຕິດຕັ້ງໄດ້.
+ .
+ ກາລຸນາໃສ່ແຜ່ນຊີດີທີ່ຖູກຕ້ອງເພື່ອດຳເນີນການຕິດຕັ້ງຕໍ່
+Description-lt.UTF-8: Aptiktas neteisingas CD-ROM įrenginys
+ CD-ROM įrenginyje yra kompaktinis diskas, kuris negali būti panaudotas įdiegimui.
+ .
+ Įdėkite tinkamą kompaktinį diską, kad galėtumėte tęsti įdiegimą.
+Description-lv.UTF-8: Atrasts nepareizs CD-ROM
+ CD-ROM dzinī ir CD, kuru šai instalēšanai izmantot nevar.
+ .
+ Lūdzu, ievietojiet piemērotu CD, lai turpinātu instalēšanu.
+Description-mk.UTF-8: Детектиран неправилен CD-ROM
+ Во CD-ROM уредот има диск кој неможе да се користи за инсталација.
+ .
+ Те молам внеси соодветен диск за да продолжиш со инсталацијата.
+Description-nb.UTF-8: Fant ikke riktig CD-ROM
+ CD-spilleren inneholder en CD som ikke kan brukes til installering.
+ .
+ Sett inn en passende CD for å fortsette installasjonen.
+Description-nl.UTF-8: Incorrecte CD gedetecteerd
+ De CD in het station kan niet voor installatie gebruikt worden.
+ .
+ Om met de installatie verder te gaan dient u installatie-CD in het station te plaatsen.
+Description-nn.UTF-8: Fann ikkje rett CDROM-spelar
+ CDROM-spelaren inneheld ein CD som ikkje kan brukast til installasjon.
+ .
+ Set inn ein rett installasjons-CD for å halde fram med installasjonen.
+Description-no.UTF-8: Fant ikke riktig CD-ROM
+ CD-spilleren inneholder en CD som ikke kan brukes til installering.
+ .
+ Sett inn en passende CD for å fortsette installasjonen.
+Description-pl.UTF-8: Wykryto nieprawidłowy CD-ROM
+ Napęd CD-ROM zawiera płytę, która nie może być wykorzystana do instalacji.
+ .
+ Proszę włożyć odpowiednią płytę CD, by kontynuować instalację.
+Description-pt.UTF-8: Detectado CD-ROM incorrecto
+ Este leitor de CD-ROMs contém um CD que não pode ser utilizado para instalação.
+ .
+ Por favor insira um CD adequado para continuar com a instalação.
+Description-pt_BR.UTF-8: CD-ROM incorreto detectado
+ A unidade de CD-ROM contém um CD que não pode ser usado para instalação.
+ .
+ Por favor, insira um CD adequado para continuar com a instalação.
+Description-ro.UTF-8: S-a detectat un CD-ROM incorect
+ Unitatea CD-ROM conține un CD care nu poate fi folosit pentru instalare.
+ .
+ Vă rugăm să introduceți un CD potrivit pentru a continua instalarea.
+Description-ru.UTF-8: Обнаружен некорректный CD-ROM
+ Диск в устройстве CD-ROM не может быть использован для установки.
+ .
+ Чтобы продолжить установку вставьте правильный установочный CD.
+Description-si.UTF-8: නිවැරදි නොවන CD-ROM හඳුනාගැනිනි
+ CD-ROM ධාවකය සතුව ස්ථාපනය සඳහා යොදාගත නොහැකි CD තැටියක් පවතී.
+ .
+ කරුණාකර ස්ථාපනයෙන් ඉදිරියට යාමට සුදුසු CD තැටියක් ඇතුළත් කරන්න.
+Description-sk.UTF-8: Nebolo nájdené správne CD-ROM
+ CD-ROM mechanika obsahuje CD, ktoré sa nedá použiť na inštaláciu.
+ .
+ Prosím, vložte vhodné CD na pokračovanie inštalácie.
+Description-sl.UTF-8: Zaznan napačen CD-ROM
+ CD-ROM pogon vsebuje CD, ki ga ni moč uporabiti za namestitev.
+ .
+ Vstavite primeren CD za nadaljevanje namestitve.
+Description-sq.UTF-8: U gjet CD-ROM i pasaktë
+ Lexuesi CD-ROM përmban një CD i cili nuk mund të përdoret për instalim.
+ .
+ Të lutem fut CD-në e duhur për të vazhduar me instalimin.
+Description-sr.UTF-8: Погрешан CD-ROM је пронађен
+ У CD-ROM уређају је CD који не може бити коришћен за инсталацију.
+ .
+ Убаците одговарајући CD за наставак инсталације.
+Description-sv.UTF-8: Felaktig cd-skiva hittad
+ Cd-rom-enheten innehåller en cd-skiva som inte kan användas för den här installationen.
+ .
+ Mata in en lämplig Debian-cd för att fortsätta installationen.
+Description-te.UTF-8: తప్పు సీడీ-రామ్ కనుగొనబడింది
+ CD-ROM డ్రైవ్ లో  వున్న  CD స్థాపనకు వాడలేము.
+ .
+ వ్యవస్థీకరణ కొనసాగించడానికి సరయిన సీడీని పెట్టండి.
+Description-th.UTF-8: ตรวจพบแผ่นซีดีรอมที่ไม่ถูกต้อง
+ ในไดรว์ซีดีรอมมีแผ่นซีดีที่ไม่สามารถใช้ติดตั้งได้
+ .
+ กรุณาใส่แผ่นซีดีที่ถูกต้องเพื่อดำเนินการติดตั้งต่อ
+Description-tl.UTF-8: Maling CD-ROM ang nakita
+ Hindi magagamit ang CD sa loob ng CD-ROM drive para sa pagluklok.
+ .
+ Paki-kasa ang akmang CD upang magpatuloy ng pagluklok.
+Description-tr.UTF-8: Geçersiz CD-ROM belirlendi
+ CD-ROM sürücüde kurulumda kullanılamayacak bir CD mevcut.
+ .
+ Lütfen kuruluma devam etmek için uygun bir CD yerleştirin.
+Description-ug.UTF-8: ناتوغرا CD-ROM قوزغاتقۇچ بايقالدى
+ دىسكا قوزغاتقۇچ بايقىغان دىسكىنى ئورنىتىشقا ئىشلەتكىلى بولمايدۇ
+ .
+ مۇۋاپىق دىسكا سېلىپ ئورنىتىشنى داۋاملاشتۇرۇڭ.
+Description-uk.UTF-8: Знайдений неправильний компакт-диск
+ Пристрій читання компакт-дисків містить диск що не може бути використаний для встановлення.
+ .
+ Для продовження встановлення вставте, будь ласка, потрібний диск.
+Description-vi.UTF-8: Đĩa CD-ROM không đúng được tìm ra
+ Ổ đĩa CD-ROM chứa một đĩa CD không thể được dùng để cài đắt.
+ .
+ Hãy nạp một đĩa CD thích hợp để tiếp tục lại tiến trình cài đặt.
+Description-zh_CN.UTF-8: 探测到错误的光盘
+ 光盘驱动器中所放光盘的并不能用于安装。
+ .
+ 请插入合适的光盘以继续安装。
+Description-zh_TW.UTF-8: 偵測到了不正確的光碟片
+ 光碟機中所放入的光碟不能用於安裝程式。
+ .
+ 請放入適當的光碟來讓安裝作業能繼續進行。
+
+Template: cdrom-detect/no-release
+Type: error
+Description: Error reading Release file
+ The CD-ROM does not seem to contain a valid 'Release' file, or that file
+ could not be read correctly.
+ .
+ You may try to repeat CD-ROM detection but, even if it does succeed the
+ second time, you may experience problems later in the installation.
+Description-ar.UTF-8: خطأ في قراءة ملف الإصدار
+ لا يبدو أن القرص المدمج يحتوي ملف 'إصدار' صالح، أو أنه لم يمكن قراءة الملف بشكل صحيح.
+ .
+ قد ترغب بتكرار استكشاف القرص المدمج ولكن، حتى إن نجح ذلك في المرة الثانية، قد تواجه مشاكل لاحقاً في التثبيت.
+Description-ast.UTF-8: Hebo un fallu al lleer el ficheru «Release»
+ El CD-ROM nun paez tener un ficheru «Release» válidu o nun pudo lleese esi ficheru correutamente.
+ .
+ Pues intentar la deteición del CD-ROM pero, inclusu cuando furrule la segunda vegada, ye dable que tengas problemes más alantre na instalación.
+Description-be.UTF-8: Памылка чытання файла Release
+ Здаецца, што на дыску няма прыдатнага файла 'Release', альбо яго немагчыма правільна прачытаць.
+ .
+ Вы можаце паспрабаваць яшчэ раз правесці вызначэнне CD-ROM. Але нават калі гэта атрымаецца, не выключаныя праблемы з далейшай устаноўкай.
+Description-bg.UTF-8: Грешка при четене на файла Release
+ Компактдискът изглежда не съдържа валиден файл Release или този файл не може да бъде прочетен правилно.
+ .
+ Може да опитате повторно разпознаване на компактдисково устройство, но даже и да има успех втория път, възможно е да изпитате проблеми по-късно по време на инсталацията.
+Description-bo.UTF-8: པར་གཞིའི་ཡིག་ཆ་ཀློག་སྐབས་ནོར་འཁྲུལ་བྱུང་འདུག
+ འོད་སྡེར་དེ་ལ་འགྲེམ་སྤེལ་ཡིག་ཆ་ཡང་དག་ཞིག་མེད་པའམ་ཡང་ན་ཡིག་ཆ་དེ་ཀློག་མི་ཐུབ་པ
+ .
+ ཁྱོད་ཀྱིས་འོད་སྡེར་སྒུལ་ཡང་བསྐྱར་འཚོལ་ཆོག་གལ་སྲིད་རྙེད་ནའང་སྒྲིག་འཇུག་སྐབས་སྐྱོན་ཞིག་དང་ཕྲད་སྲིད
+Description-bs.UTF-8: Greška pri čitanju Release datoteke
+ Izgleda da CD-ROM ne sadrži ispravnu Release datoteku, ili da se datoteka ne može ispravno pročitati.
+ .
+ Možete pokušati ponoviti detekciju CD-ROMa, ali čak i ako uspije drugi put, možete iskusiti probleme kasnije u instalaciji.
+Description-ca.UTF-8: S'ha produït un error en llegir el fitxer Release
+ El CD-ROM no sembla contindre un fitxer «Release» vàlid, o aquest fitxer no s'ha pogut llegir correctament.
+ .
+ Podeu provar la detecció del CD-ROM, però encara que tinga èxit la segona vegada, és possible que tingueu problemes més endavant durant la instal·lació.
+Description-cs.UTF-8: Chyba při čtení souboru Release
+ Zdá se, že žádná CD mechanika neobsahuje platný soubor 'Release', nebo jej nedokáže korektně přečíst.
+ .
+ Můžete zkusit znovu spustit rozpoznání CD, avšak i když se to napodruhé povede, mohli byste dále v instalaci zaznamenat nějaké problémy.
+Description-cy.UTF-8: Gwall wrth ddarllen y ffeil Release
+ Nid yw'r CD-ROM yn cynnwys ffeil Release cymwys, neu ni ellir darllen y ffeil yn gywir.
+ .
+ Gallwch geisio ailwneud canfod CD-ROM ond, os yw'n llwyddiannus yr eildro, efallai y cewch broblemau nes ymlaen yn y sefydliad.
+Description-da.UTF-8: Fejl ved læsning af filen "Release"
+ Cd'en lader ikke til at indeholde en gyldig "Release"-fil, eller også kan filen ikke læses korrekt.
+ .
+ Du kan prøve at gentage cd-rom søgningen, men selvom den bliver fundet i andet forsøg, kan du få problemer senere i installationen.
+Description-de.UTF-8: Fehler beim Lesen der Release-Datei
+ Die CD-ROM scheint keine gültige Release-Datei zu enthalten oder sie konnte nicht gelesen werden.
+ .
+ Sie können versuchen, die CD-ROM nochmals zu erkennen. Aber auch falls dies funktioniert, könnten später Probleme bei der Installation auftreten.
+Description-el.UTF-8: Σφάλμα κατά την ανάγνωση του αρχείου Release
+ Το CD-ROM δε φαίνεται να περιέχει ένα έγκυρο αρχείο Release, ή αυτό το αρχείο δε μπορεί να αναγνωστεί σωστά.
+ .
+ Μπορείτε να δοκιμάσετε να επαναλάβετε την ανίχνευση του CD-ROM αλλά, ακόμη και αν είναι επιτυχής τη δεύτερη φορά, πιθανόν να αντιμετωπίσετε προβλήματα στη συνέχεια της εγκατάστασης.
+Description-eo.UTF-8: Eraro dum la legado de la dosiero 'Release'
+ La lumdisko ŝajnas ne enhavi validan dosieron 'Release', aŭ tiu dosiero ne povis esti legita korekte.
+ .
+ Vi povas reprovi la lumdiskan detekton. Tamen se ĝi sukcesos dum la dua provo, vi povos trovi malfacilaĵojn dum la venonta parto de la instalado.
+Description-es.UTF-8: Se ha producido un error al leer el fichero «Release»
+ El CD-ROM no parece tener un fichero «Release» válido o no se pudo leer ese fichero correctamente.
+ .
+ Puede intentar la detección del CD-ROM pero, aún cuando funcione la segunda vez, es posible que tenga problemas más adelante en la instalación.
+Description-et.UTF-8: Tõrge release faili lugemisel
+ Tundub, et laserkettal ei ole kehtivat 'Release' faili, või siis ei õnnestunud seda korralikult lugeda.
+ .
+ Võid CD-ROM'i otsimist uuesti proovida, kuid isegi kui see kord õnneks läheb, võid hiljem paigaldamise käigus ikkagi probleeme kohata.
+Description-eu.UTF-8: Errorea Release fitxategia irakurtzean
+ CD-ROMak ez dirudi baliozko 'Release' fitxategirik duenik edo fitxategi hori ezin da behar bezala irakurri.
+ .
+ CD-ROMa detektatzen saiatu beharko zenuke berriro, hala ere bigarren aldi honetan antzematen bada, arazoak aurki ditzakezu beranduago, instalazioaren zehar.
+Description-fa.UTF-8: خطای خواندن پرونده‌ٔ انتشار
+ CD-ROM به نظر نمی‌آید حاوی پروندهٔ 'Release' معتبر باشد، یا آن پرونده نمی‌تواند به درستی خوانده شود.
+ .
+ ممکن است سعی کنید تشخیص CD-ROM را تکرار کنید، حتی اگر در مرتبهٔ دوم موفق شود، ممکن است بعداً در نصب به مشکلاتی برخورد کنید.
+Description-fi.UTF-8: Virhe luettaessa Release-tiedostoa
+ CD-levyllä ei näytä olevan kunnollista ”Release”-tiedostoa, tai tuota tiedostoa ei saatu luettua oikein.
+ .
+ CD-levyn tunnistusta voidaan yrittää uudestaan, mutta vaikka se toimisikin toisella yrittämällä, voi myöhemmin asennuksen aikana ilmetä ongelmia.
+Description-fr.UTF-8: Erreur de lecture du fichier « Release »
+ Le CD ne semble pas contenir de fichier « Release ». Il est également possible que ce fichier soit présent mais ne puisse pas être lu correctement.
+ .
+ Vous pouvez tenter à nouveau la détection du CD. Cependant, même si elle réussit à la deuxième tentative, vous pourriez rencontrer des difficultés lors de la suite de l'installation.
+Description-ga.UTF-8: Earráid agus an comhad "Release" á léamh
+ Is cosúil nach bhfuil comhad bailí "Release" ar an CD-ROM, nó níorbh fhéidir an comhad sin a léamh i gceart.
+ .
+ Is féidir leat an tiomántán CD-ROM a bhrath arís, ach seans go mbeidh fadhbanna níos déanaí sa tsuiteáil, fiú má éiríonn tú leis an dara huair.
+Description-gl.UTF-8: Aconteceu un erro ao ler o ficheiro Release
+ Semella que o CD-ROM non contén un ficheiro «Release» válido, ou que non foi posíbel ler correctamente ese ficheiro.
+ .
+ Pode probar a repetir a detección do CD-ROM, pero, incluso se ten éxito a segunda vez, pode ter problemas despois na instalación.
+Description-he.UTF-8: שגיאה בקריאת הקובץ Release
+ נראה כי התקליטור לא מכיל קובץ Release תקין, או שהקובץ לא ניתן לקריאה באופן תקין.
+ .
+ ניתן לחזור ולנסות לזהות את התקליטור, אבל גם אם הזיהוי יצליח, ייתכן שיהיו בעיות בשלב מאוחר יותר בתהליך ההתקנה.
+Description-hr.UTF-8: Greška pri učitavanju 'Release' datoteke
+ Čini se da CD-ROM ne sadrži ispravnu 'Release' datoteku, ili se ta datoteka ne može ispravno učitati.
+ .
+ Možete pokušati ponoviti detekciju CD-ROM uređaja, ali čak ako to i uspije iz drugog pokušaja, mogli biste naići na probleme kasnije u instalaciji.
+Description-hu.UTF-8: Hiba a Release fájl olvasásakor
+ A CD-ROM nem tartalmaz érvényes 'Release' fájlt, vagy az nem olvasható.
+ .
+ Újra megkísérelhető a CD-ROM felismerése, de még ha sikerül is, később hibák lehetnek.
+Description-id.UTF-8: Ada kesalahan saat membaca berkas 'Release'
+ CD-ROM tampaknya tidak memiliki berkas 'Release' yang sah, atau berkas tersebut tidak dapat dibaca dengan baik.
+ .
+ Anda dapat mengulangi mendeteksi CD-ROM, tapi biarpun ini berhasil anda mungkin akan menemukan masalah belakangan.
+Description-is.UTF-8: Villa við lestur skrárinnar 'Release'
+ Geisladiskurinn hefur ekki gilda 'Release'-skrá, eða þá mistókst lestur.
+ .
+ Þú getur reynt að endurtaka leitina, en þó hún takist gætirðu lent í vandræðum seinna í uppsetningarferlinu.
+Description-it.UTF-8: Errore nel leggere il file Release
+ Sembra che il CD-ROM non contenga un file «Release» valido, oppure non è possibile leggere il file in modo corretto.
+ .
+ È possibile provare a ripetere il rilevamento del CD-ROM, ma anche se la seconda volta funzionasse, potrebbero verificarsi altri problemi durante l'installazione.
+Description-ja.UTF-8: Release ファイルの読み取り中にエラーが発生しました
+ CD-ROM は有効な 'Release' ファイルを含んでいないか、ファイルを正しく読み取れないようです。
+ .
+ 再度 CD-ROM の検出を試みることができますが、2 度目でうまくいったとしても、このあとのインストール中に問題に遭遇することになるかもしれません。
+Description-kk.UTF-8: Release файлын оқуда қате
+ Компакт-дискіде дұрыс 'Release' файлы жоқ, немесе ол файл дұрыс оқылмайды.
+ .
+ Сіз компакт-дискіні табу әрекетін қайталай аласыз, бірақ екінші реттен ол дұрыс істеп кетсе де, орнату кезінде әр түрлі қиындықтар тууы мүмкін.
+Description-kn.UTF-8: ಬಿಡುಗಡೆ ಕಡತ‌ ದೋಶದಿಂದ ಕೂಡಿದೆ
+ ಸಿಡಿ ರಾಂ ನಲ್ಲಿ ಚಲಾವಣೆಯಿಲ್ಲದ‌ 'ಬಿಡುಗಡೆ' ಕಡತ‌ ಅಥವಾ ಆ ಕಡತ‌ವನ್ನು ಸರಿಯಾಗಿ ಓದಲು ಆಗುತ್ತಿಲ್ಲ‌
+ .
+ ಗಣಕಮುದ್ರಿಕೆ ಸಾಧನವನ್ನು ಪತ್ತೆಹಚ್ಚುವ ಕ್ರಿಯೆಯನ್ನು ಮುಂದುವರಿಸಬಹುದು ಆದರೆ, ಎರಡನೇ ಬಾರಿಯು ಫಲಿಸದಿದ್ದಲ್ಲಿ ಅನುಸ್ಥಾಪಿಸುವಾಗ ತೊಂದರೆ ಉಂಟಾಗಬಹುದು
+Description-ko.UTF-8: Release 파일을 읽는데 오류
+ CD-ROM에 올바른 'Release' 파일이 들어 있지 않거나 파일을 제대로 읽어들일 수 없습니다.
+ .
+ CD-ROM 검색을 다시 시도하면 성공할 수도 있지만, 두 번째에서 성공하더라도 설치 뒤쪽에서 문제가 다시 발생할 수도 있습니다.
+Description-ku.UTF-8: Çewtiya xwendina pelê Release
+ Dixuye ku CD-ROM'ê pelekî derbasbar a 'Release' nehewandiyê an jî ev pel bi awayekî rast nehatiye xwendin.
+ .
+ Tu dikarî dîsa biceribînî da ku CD-ROM'ê nas bike, lê heke naskirin di cara duyemîn de bi ser bikeve jî di sazkirinê de wê pirsgirêk derkevin.
+Description-lo.UTF-8: ເກີດຂໍ້ຜິດພາດຂະນະອ່ານແຟ້ມ Release
+ ເບີ່ງໃນແຜ່ນຊີດີບໍ່ມີແຜ່ນ 'Release' ທີ່ໃຊ້ການ ຫຼືບໍ່ສາມາດອ່ານແຟ້ມດັ່ງກ່ວາໄດ້ຄົບຖ້ວນ.
+ .
+ ເຈົ້າອາດຈະພະຍາຍາມກວດຫາຊີດີຮອມອີກເທື່ອໜື່ງ ແຕ່ເຖີ່ງຈະກວດພົບອີກເປັນຄັ້ງທີ່ສອງເຈົ້າກໍ່ອາດຈະຍັງພໍກັບບັນຫາເກົ່າອີກ ໃນການຕິດຕັ້ງ.
+Description-lt.UTF-8: Klaida skaitant Release failą
+ Panašu, kad CD-ROM'as neturi teisingo 'Release' failo, arba šis failas negali būti teisingai nuskaitytas.
+ .
+ Galite pabandyti pakartoti CD-ROM aptikimo procedūrą, bet net jei pavyks antruoju bandymu, vėliau galite turėti problemų įdiegimo metu.
+Description-lv.UTF-8: Kļūda, nolasot Release datni
+ Šajā CD nav derīgas 'Release' datnes, vai arī šo datni nevar pareizi nolasīt.
+ .
+ Jūs varat atkārtot CD-ROM noteikšanu, taču, pat ja otrajā reizē tas tiks atrasts, ir iespējamas problēmas turpmākajā instalēšanas gaitā.
+Description-mk.UTF-8: Грешка при читањето на Release датотеката
+ CD-ROM уредот изгледа дека не содржи валидна Release датотека, или таа датотека неможеше да се прочита правично.
+ .
+ Може да пробаш повторно со детектирање на CD-ROM, но и да успее вториот пат, сепак може да имаш проблеми подоцна при инсталацијата.
+Description-nb.UTF-8: Feil under lesing av Release-fila
+ CD-plata inneholder ikke en gyldig «Release»-fil, eller den fila kunne ikke leses riktig.
+ .
+ Du kan forsøke å gjenta søk etter CD-ROM, men selv om det lykkes den andre gangen kan du få problemer senere i installeringen.
+Description-nl.UTF-8: Fout bij lezen Release bestand
+ Het lijkt erop dat de CD geen geldig 'Release'-bestand bevat of dat dit bestand niet correct kan worden gelezen.
+ .
+ U kunt proberen de CD-herkenning nogmaals uit te voeren maar, zelfs als deze de tweede keer wel lukt, bestaat de kans dat u later in de installatie problemen zult ondervinden.
+Description-nn.UTF-8: Feil under lesing av Release-fila
+ CD-plata inneheld ikkje ei gyldig «Release»-fil, eller den fila kunne ikkje lesast rett.
+ .
+ Du kan gjere eit nytt forsøk på å oppdage CDROMen. Men sjølv om det lukkast andre gongen, kan du få problem seinare i installeringa.
+Description-no.UTF-8: Feil under lesing av Release-fila
+ CD-plata inneholder ikke en gyldig «Release»-fil, eller den fila kunne ikke leses riktig.
+ .
+ Du kan forsøke å gjenta søk etter CD-ROM, men selv om det lykkes den andre gangen kan du få problemer senere i installeringen.
+Description-pl.UTF-8: Błąd podczas odczytu pliku Release
+ Wygląda na to, że płyta CD nie zawiera prawidłowego pliku 'Release' lub nie można go odczytać.
+ .
+ Możesz spróbować ponowić wykrywanie płyty CD, ale nawet jeśli się powiedzie za drugim razem, możesz doświadczyć problemów w dalszej części instalacji.
+Description-pt.UTF-8: Erro ao ler o ficheiro Release
+ O CD-ROM parece não conter um ficheiro 'Release' válido, ou esse ficheiro não pode ser lido correctamente.
+ .
+ Pode tentar repetir a detecção do CD-ROM mas, mesmo que consiga à segunda vez, poderá vir a ter problemas durante a instalação.
+Description-pt_BR.UTF-8: Erro lendo arquivo 'Release'
+ O CD-ROM não parece conter um arquivo 'Release' válido ou esse arquivo não pode ser lido corretamente.
+ .
+ Você pode tentar repetir a detecção do CD-ROM mas, mesmo se isso funcionar na segunda tentativa, você pode enfrentar problemas posteriormente na instalação.
+Description-ro.UTF-8: Eroare la citirea fișierului Release
+ CD-ul nu pare să conțină un fișier „Release” valid, sau acel fișier nu a putut fi citit corect.
+ .
+ Puteți încerca să repetați detectarea CD-ului, dar, chiar dacă reușește a doua oară, puteți să aveți probleme mai târziu în timpul instalării.
+Description-ru.UTF-8: Ошибка чтения файла Release
+ Вероятно, компакт-диск не содержит правильного файла 'Release' или этот файл был неправильно прочитан.
+ .
+ Вы можете попробовать повторить процедуру обнаружения компакт-диска, но даже если со второго раза она пройдёт успешно, у вас могут возникнуть проблемы во время установки.
+Description-si.UTF-8: නිකුතු ගොනුව කියවීමේ දෝශයක්
+ CD-ROM සතුව වලංගු 'නිකුතු' ගොනුවක් පවතින බවක් නොපෙනේ, නැතහොත් එම ගොනුව නිසිපරිදි කියවිය නොහැක.
+ .
+ ඔබට CD-ROM හඳුනාගැනීම නැවත උත්සාහ කල හැකි නමුත්, එය දෙවන අවස්ථාවේ සාර්ථක වුවද ස්ථාපනයේදී ඔබට ගැටළු ඇතිකල හැක.
+Description-sk.UTF-8: Chyba pri načítavaní súboru Release
+ CD-ROM neobsahuje platný súbor „Release“ alebo sa tento súbor nedá načítať.
+ .
+ Môžete skúsiť zopakovanie rozpoznania CD-ROM, ale aj po úspešnom druhom pokuse očakávajte problémy pri ďalších krokoch inštalácie.
+Description-sl.UTF-8: Napaka pri branju Release datoteke
+ CD-ROM ne vsebuje pravilne 'Release' datoteke, ali pa je ni mogoče pravilno prebrati.
+ .
+ Lahko poskusite ponoviti zaznavo CD-ROM-a, a tudi če uspe, lahko pride do težav kasneje med namestitvijo.
+Description-sq.UTF-8: Gabim gjatë leximit të kartelës Release
+ CD-ROM nuk ngjan të përmbajë një kartelë 'Release' të vlefshme, ose kjo kartelë nuk muni të lexohej siç duhet.
+ .
+ Mund të riprovosh zhbirimin e CD-ROM-it por, edhe nëse del me sukses herën e dytë, më vonë mund të përjetosh probleme gjatë instalimit.
+Description-sr.UTF-8: Грешка при учитавању „Release'“ фајла
+ Чини се да CD-ROM не садржи исправан „Release“ фајл, или се тај фајл не може исправно учитати.
+ .
+ Можете покушати да поновите детекцију CD-ROM уређаја, али чак ако то и успе из другог покушаја, могли бисте наићи на проблеме касније у инсталацији.
+Description-sv.UTF-8: Fel vid läsning av Release-filen
+ Cd-rom-skivan verkar inte innehålla en giltig "Release"-fil eller att den filen inte kunde läsas korrekt.
+ .
+ Du kan försöka igen att hitta cd-rom-enheten men även om det lyckas kan du uppleva problem senare i installationen.
+Description-te.UTF-8: Release ఫైలుని చదవడంలో సమస్య
+ CD-ROM లో  ధృవీకరించిన 'విడుదల' ఫైలు లేనట్లుంది,లేక  ఆ ఫైల్  సరిగా చదవబడలేదు.
+ .
+ CD-ROM కనుగొనటాన్ని  మరల ప్రయత్నించవచ్చు. రెండవసారి  విజయవంతమైనా, స్థాపనలో తరువాత సమస్యలు ఎదుర్కొవచ్చు.
+Description-th.UTF-8: เกิดข้อผิดพลาดขณะอ่านแฟ้ม Release
+ ดูเหมือนในแผ่นซีดีจะไม่มีแฟ้ม 'Release' ที่ใช้การได้ หรือไม่สามารถอ่านแฟ้มดังกล่าวได้ครบถ้วน
+ .
+ คุณอาจพยายามตรวจหาซีดีรอมอีกรอบ แต่ถึงแม้จะตรวจพบอีกเป็นครั้งที่สอง คุณก็อาจยังเจอปัญหาเดิมอีกในการติดตั้ง
+Description-tl.UTF-8: Error sa pagbasa ng talaksang Release
+ Mukhang ang CD-ROM ay may hindi tanggap na talaksang 'Release', o hindi ito mabasa ng tama.
+ .
+ Maaari niyong subukan muli ang paghanap sa CD-ROM subalit, maaaring magkaroon ng problema mamaya sa pagluklok kahit matagumpay ito sa pangalawang subok.
+Description-tr.UTF-8: "Release" dosyası okunurken hata
+ CD-ROM'un geçerli bir 'Release' dosyası içermediği veya bu dosyanın doğru şekilde okunamadığı görünüyor.
+ .
+ CD-ROM'un algılanması işlemini tekrar edebilirsiniz. Fakat bu teşebbüsler başarılı olsa bile kurulumun gelecek aşamalarında sorunlar yaşayabilirsiniz.
+Description-ug.UTF-8: Release ھۆججىتىنى ئوقۇغاندا خاتالىق كۆرۈلدى
+ بۇ CD-ROM ئىناۋەتلىك 'Release' ھۆججىتىنى ئۆز ئىچىگە ئالماپتۇ، ياكى شۇ ھۆججەتنى توغرا ئوقۇيالمىدى.
+ .
+ CD-ROM تەكشۈرۈشنى بىر قانچە قېتىم قايتا سىناڭ، ئەمما ئورنىتىش دىسكىسىنى مۇۋەپپەقىيەتلىك بايقىغان تەقدىردىمۇ كېيىنكى ئورنىتىش جەريانىدا مەسىلىگە يولۇقۇشىڭىز مۇمكىن.
+Description-uk.UTF-8: Помилка при читанні файла Release
+ Здається, що CD-ROM не містить вірного файла „Release“ або цей файл не може бути коректно прочитаний.
+ .
+ Ви можете спробувати повторити визначення CD-ROM, але, навіть якщо це пройде успішно, ви можете мати проблеми при продовженні встановлення.
+Description-vi.UTF-8: Gặp lỗi khi đọc tập tin « Release »
+ Có vẻ là đĩa CD-ROM này không chứa một tập tin « Release » (Phát hành) hợp lệ, hoặc không thể đọc tập tin đó một cách đúng.
+ .
+ Bạn có thể thử lặp lại việc dò tìm đĩa CD-ROM, nhưng mà, thậm chí nếu việc này thành công trong sự thử thứ hai, bạn có thể gặp lỗi vào lúc sau trong tiến trình cài đặt.
+Description-zh_CN.UTF-8: 读取 Release 文件出错
+ 此光盘并未包括有效的“Release”文件，或者该文件无法被正确地读取。
+ .
+ 您可以再次尝试探测光盘，但是，即使能够成功探测到安装光盘，您依然可能在稍后的安装过程中遇到问题。
+Description-zh_TW.UTF-8: 在讀取 Release 檔時發生錯誤
+ 在這張光碟裡似乎並沒有包含正確的 'Release' 檔，或是這個檔案無法被正確地讀取。
+ .
+ 您可以再次試著進行光碟的偵測，但即使第二次僥倖成功了，您在之後的安裝過程裡還是可能會遇到問題。
+
+Template: cdrom-detect/eject
+Type: boolean
+Default: true
+Description: for internal use; can be preseeded
+ Set to false to prevent the system from ejecting the CD-ROM before rebooting
+
+Template: cdrom/suite
+Type: select
+Choices: stable, testing, unstable
+Description: for internal use only
+ Debian version to install
+
+Template: cdrom/codename
+Type: string
+Description: for internal use only
+ Codename for the selected suite
+
+Template: finish-install/progress/cdrom-detect
+Type: text
+Description: Unmounting and ejecting CD-ROM...
+Description-ar.UTF-8: فك وإخراج القرص المدمج...
+Description-ast.UTF-8: Desmontando y espulsando'l CD-ROM...
+Description-be.UTF-8: Адмацаванне і вызваленне CD-ROM...
+Description-bg.UTF-8: Демонтиране и изваждане на компактдиска...
+Description-bo.UTF-8: བཀར་བ་དེ་ཕར་བཤོལ་ནས་CD-ROM ཕྱིར་འདོན་བཞིན་པ་་་
+Description-bs.UTF-8: Demontiram i izbacujem CD-ROM...
+Description-ca.UTF-8: S'està desmuntant i expulsant el CD-ROM...
+Description-cs.UTF-8: Odpojuje se CD-ROM...
+Description-cy.UTF-8: Yn datglymu ac allfwrw'r CD-ROM...
+Description-da.UTF-8: Afmonterer cd og skubber den ud ...
+Description-de.UTF-8: Aufheben der Laufwerkseinbindung und Auswerfen der CD-ROM ...
+Description-el.UTF-8: Αποπροσάρτηση και εξαγωγή του δίσκου CD-ROM...
+Description-eo.UTF-8: Malmuntado kaj elmetado de lumdisko...
+Description-es.UTF-8: Desmontando y expulsando el CD-ROM...
+Description-et.UTF-8: Laserketta lahtihaakimine ja väljastamine...
+Description-eu.UTF-8: CD-ROMa desmuntatzen eta egozten...
+Description-fa.UTF-8: پیاده‌سازی و خارج ساختن  CD-ROM..
+Description-fi.UTF-8: Irrotetaan ja poistetaan CD-levy...
+Description-fr.UTF-8: Démontage du CD et éjection...
+Description-ga.UTF-8: CD-ROM á dhífheistiú agus á dhíchur...
+Description-gl.UTF-8: Estase a desmontar e extraer o CD-ROM
+Description-he.UTF-8: מסיר עגינה ומוציא את התקליטור...
+Description-hr.UTF-8: Demontiram i izbacujem CD-ROM...
+Description-hu.UTF-8: CD-ROM lecsatolása és kiadása...
+Description-id.UTF-8: Melepas dan mengeluarkan CD-ROM...
+Description-is.UTF-8: Aftengi disk og opna geisladrif...
+Description-it.UTF-8: Smontaggio ed espulsione del CD-ROM...
+Description-ja.UTF-8: CD-ROM のアンマウントと取り出しをしています...
+Description-kk.UTF-8: CD-ROM дискіні тіркеуден босатып, шығару...
+Description-kn.UTF-8: ಸಿ ಡಿ ರೋಮ್ ಅನ್ನು ಆರೋಹಣೆಯಿಂದ ತೆಗೆದು, ಹೊರಕಳುಸುತ್ತಿದೆ
+Description-ko.UTF-8: CD-ROM을 마운트 해제하고 뺍니다...
+Description-ku.UTF-8: CD-ROM tê unmountkirin û avêtin...
+Description-lo.UTF-8: ກຳລັງເລີກເມາທ ແລະ ດັນແຜ່ນຊີດີຣອມອອກ....
+Description-lt.UTF-8: CD-ROM laikmenos atjungimas ir išėmimas...
+Description-lv.UTF-8: Atmontē un izgrūž CD-ROM...
+Description-mk.UTF-8: Демонтирање и вадење на CD-ROM...
+Description-nb.UTF-8: Avmonterer og løser ut CD-en ...
+Description-nl.UTF-8: CD wordt losgekoppeld en uitgeworpen...
+Description-nn.UTF-8: Avmonterer og løyser ut CD …
+Description-no.UTF-8: Avmonterer og løser ut CD-en ...
+Description-pl.UTF-8: Odmontowywanie i wysuwanie CD-ROM-u...
+Description-pt.UTF-8: Desmontar e ejectar o CD-ROM...
+Description-pt_BR.UTF-8: Desmontando e ejetando o CD-ROM...
+Description-ro.UTF-8: Se demontează și se scoate CD-ul...
+Description-ru.UTF-8: Размонтирование и извлечение компакт-диска...
+Description-se.UTF-8: Galgamin ja bálkesteamen CD …
+Description-si.UTF-8: CD-ROM අස්ථාපනය හා පිට කරමින්...
+Description-sk.UTF-8: CD-ROM sa odpája a vysúva...
+Description-sl.UTF-8: Odklapljanje in odstranitev CD-ROM ...
+Description-sq.UTF-8: Duke çmontuar dhe nxjerrë CD-ROM-in ...
+Description-sr.UTF-8: Демонтирање и избацивање CD-ROM-а...
+Description-sv.UTF-8: Avmonterar och matar ut cd-skivan ...
+Description-te.UTF-8: CD-ROM అనుసంధానాన్ని తొలగించి, త్రోసివేస్తున్నాము
+Description-th.UTF-8: กำลังเลิกเมานท์และดันแผ่นซีดีรอมออก...
+Description-tl.UTF-8: Ina-unmount at iluluwa ang CD-ROM...
+Description-tr.UTF-8: CD ayrılıyor ve çıkarılıyor...
+Description-ug.UTF-8: CD-ROM نى ئېگەرسىزلەپ چىقىرىۋاتىدۇ…
+Description-uk.UTF-8: Розмонтування та виведення CD-ROM...
+Description-vi.UTF-8: Đang tháo lắp và đẩy ra đĩa CD-ROM...
+Description-zh_CN.UTF-8: 卸载并弹出 CD-ROM...
+Description-zh_TW.UTF-8: 正在卸載並退出光碟片……
+
+Template: debian-installer/cdrom-detect/title
+Type: text
+Description: Detect and mount CD-ROM
+Description-ar.UTF-8: فحص وتركيب قارئ الأقراص المدمجة
+Description-ast.UTF-8: Deteutar y montar el CD-ROM
+Description-be.UTF-8: Вызначэнне і мацаванне CD-ROM
+Description-bg.UTF-8: Разпознаване и монтиране на компактдиск
+Description-bo.UTF-8: འོད་སྡེར་སྒུལ་ཆས་འཚོལ་ནས་བཀར་བ
+Description-bs.UTF-8: Detektiraj i montiraj CD-ROM
+Description-ca.UTF-8: Detecta i munta el CD-ROM
+Description-cs.UTF-8: Rozpoznat a připojit CD-ROM
+Description-cy.UTF-8: Canfod a clymu CD-ROM
+Description-da.UTF-8: Led efter cd-rom drev og montér cd
+Description-de.UTF-8: CD-ROM erkennen und einbinden
+Description-el.UTF-8: Ανίχνευση των μονάδων CD-ROM και προσάρτηση του CD
+Description-eo.UTF-8: Detekti kaj munti lumdiskon
+Description-es.UTF-8: Detectar y montar el CD-ROM
+Description-et.UTF-8: CD-ROM'i tuvastamine ja haakimine
+Description-eu.UTF-8: Detektatu eta muntatu CD-ROMa
+Description-fa.UTF-8: شناخت و ماونت CD-ROM
+Description-fi.UTF-8: Tunnista ja liitä CD-levy
+Description-fr.UTF-8: Détecter et monter le CD
+Description-ga.UTF-8: Braith agus feistigh an CD-ROM
+Description-gl.UTF-8: Detectar e montar o CD-ROM
+Description-he.UTF-8: זיהוי ועגינת כונן תקליטורים
+Description-hr.UTF-8: Pronađi i montiraj CD-ROM
+Description-hu.UTF-8: CD-ROM érzékelése és csatolása
+Description-id.UTF-8: Mencari dan mengaitkan CD-ROM
+Description-is.UTF-8: Finna og tengja geisladisk
+Description-it.UTF-8: Rilevare e montare il CD-ROM
+Description-ja.UTF-8: CD-ROM の検出とマウント
+Description-kk.UTF-8: CD-ROM табу және тіркеу
+Description-kn.UTF-8: ಸಿಡಿ-ರಾಮ್ ಪತ್ತೆ ಹಚ್ಚಿ ಹಾಗು ಮೇಲೆರಿಸಿ
+Description-ko.UTF-8: CD-ROM 찾기 및 마운트
+Description-ku.UTF-8: CD-ROM bibîne û mount bike
+Description-lo.UTF-8: ກວດຫາ ແລະ ເມົາຊີດີ
+Description-lt.UTF-8: CD-ROM įrenginio aptikimas ir CD prijungimas
+Description-lv.UTF-8: Noteikt un piemontēt CD-ROM
+Description-mk.UTF-8: Детектирање и монтирање CD-ROM
+Description-nb.UTF-8: Finn og monter CD-en
+Description-nl.UTF-8: Automatische herkenning en aankoppeling van de CD
+Description-nn.UTF-8: Finn og monter CDROM
+Description-no.UTF-8: Finn og monter CD-en
+Description-pl.UTF-8: Wykryj urządzenia CD-ROM i zamontuj płytę CD
+Description-pt.UTF-8: Detectar e montar o CD-ROM
+Description-pt_BR.UTF-8: Detectar e montar o CD-ROM
+Description-ro.UTF-8: Detectează și montează CD-ul
+Description-ru.UTF-8: Поиск и монтирование CD-ROM
+Description-se.UTF-8: Áicca ja čana CD-ROM
+Description-si.UTF-8: CD-ROM හඳුනාගෙන රඳවන්න
+Description-sk.UTF-8: Rozpoznanie a pripojenie CD-ROM
+Description-sl.UTF-8: Zaznaj in priklopi CD-ROM
+Description-sq.UTF-8: Gjej dhe monto CD-ROM
+Description-sr.UTF-8: Пронађи и монтирај CD-ROM
+Description-sv.UTF-8: Identifiera och montera cd-rom
+Description-te.UTF-8: సీడీ-రామ్ ని కనుగొని మౌంట్ చెయ్యి
+Description-th.UTF-8: ตรวจหาและเมานท์ซีดีรอม
+Description-tl.UTF-8: Hanapin at mag-mount ng CD-ROM
+Description-tr.UTF-8: CD-ROM'u algıla ve bağla
+Description-ug.UTF-8: CD-ROM نى تەكشۈرۈپ ئېگەرلە
+Description-uk.UTF-8: Знайти та змонтувати CD-ROM
+Description-vi.UTF-8: Dò tìm và lắp đĩa CD-ROM
+Description-zh_CN.UTF-8: 探测并挂载光盘
+Description-zh_TW.UTF-8: 偵測並掛載光碟片

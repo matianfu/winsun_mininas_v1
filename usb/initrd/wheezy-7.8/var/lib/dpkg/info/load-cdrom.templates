@@ -1,0 +1,64 @@
+Template: debian-installer/load-cdrom/title
+Type: text
+Description: Load installer components from CD
+Description-ar.UTF-8: تحميل مكونات المثبت من القرص المدمج
+Description-ast.UTF-8: Cargar componentes del instalador dende'l CD
+Description-be.UTF-8: Загрузка кампанентаў праграмы ўсталявання з CD
+Description-bg.UTF-8: Зареждане на компонентите на инсталатора от компактдиск
+Description-bo.UTF-8: འོད་སྡེར་ནས་སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག་འཇུག་པ
+Description-bs.UTF-8: Učitaj komponente installera sa CD-a
+Description-ca.UTF-8: Carrega components de l'instal·lador des d'un CD
+Description-cs.UTF-8: Nahrát komponenty instalátoru z CD
+Description-cy.UTF-8: Llwytho cydrannau y sefydlydd o CD
+Description-da.UTF-8: Indlæs installationsdele fra cd
+Description-de.UTF-8: Installer-Komponenten von CD laden
+Description-el.UTF-8: Φόρτωση των συνιστωσών του εγκαταστάτη από το CD
+Description-eo.UTF-8: Ŝargi je instalilaj eroj el lumdisko
+Description-es.UTF-8: Cargar componentes del instalador desde CD
+Description-et.UTF-8: Laserkettalt paigaldaja komponentide laadimine
+Description-eu.UTF-8: Kargatu instalatzailearen osagaiak CDtik
+Description-fa.UTF-8:  بارگیری مولفه‌های نصاب از لوح فشرده
+Description-fi.UTF-8: Lataa asentimen osia CD-levyltä
+Description-fr.UTF-8: Charger des composants d'installation à partir du CD
+Description-ga.UTF-8: Luchtaigh comhpháirteanna an tsuiteálaí ó dhlúthdhiosca
+Description-gl.UTF-8: Cargar os compoñentes do instalador desde o CD
+Description-he.UTF-8: טעינת רכיבי תוכנית ההתקנה מתקליטור
+Description-hr.UTF-8: Učitaj dijelove instalacije s CD-a
+Description-hu.UTF-8: Telepítő összetevők betöltése CD-ről
+Description-id.UTF-8: Memuat komponen instalasi dari CD
+Description-is.UTF-8: Hlaða inn uppetningareiningum af geisladiski
+Description-it.UTF-8: Caricare i componenti del programma d'installazione dal CD
+Description-ja.UTF-8: CD からインストーラコンポーネントをロード
+Description-kk.UTF-8: Компакт дискіден орнатқыштың құрамасын жүктеу
+Description-kn.UTF-8: ಸ್ಥಾಪಕ ಭಾಗಗಳನ್ನು ಸೀ ಡೀ ಮುಖಾಂತರ ತುಂಬಿರಿ
+Description-ko.UTF-8: CD에서 설치 프로그램 컴포넌트를 읽어들이기
+Description-ku.UTF-8: Parçeyên sazkarê ji CD'ê tên barkirin
+Description-lo.UTF-8: ໂຫລດອົງປະກອບການຕິດຕັ້ງຈາກຊີດີ
+Description-lt.UTF-8: Įkelti įdiegyklės komponentus iš kompaktinio disko
+Description-lv.UTF-8: Ielādēt instalatora komponentes no CD
+Description-mk.UTF-8: Вчитај ги компонентите на инсталерот од CD
+Description-nb.UTF-8: Last installasjonskomponenter fra CD
+Description-nl.UTF-8: Installatiemodules van CD laden
+Description-nn.UTF-8: Last inn installasjonskomponentar frå CD
+Description-no.UTF-8: Last installasjonskomponenter fra CD
+Description-pl.UTF-8: Załaduj składniki instalatora z płyty CD
+Description-pt.UTF-8: Carregar componentes do instalador do CD
+Description-pt_BR.UTF-8: Carregar componentes do instalador a partir do CD
+Description-ro.UTF-8: Încarcă componentele programului de instalare de pe CD
+Description-ru.UTF-8: Загрузка компонентов программы установки с компакт-диска
+Description-se.UTF-8: Viečča sajáiduhti osiid CD:s
+Description-si.UTF-8: සංයුක්ත තැටියෙන් ස්ථාක සංරචක ප්‍රවේශ කරන්න
+Description-sk.UTF-8: Načítanie súčastí inštalačného programu z CD
+Description-sl.UTF-8: Namesti komponente namestilnika iz CD-ja
+Description-sq.UTF-8: Ngarko përbërësit e instaluesit nga CD
+Description-sr.UTF-8: Учитај компоненте инсталера са CD-а
+Description-sv.UTF-8: Läs in installationskomponenter från cd
+Description-te.UTF-8: CD నుండి స్థాపక వ్యవస్థ  అంశాల ఎక్కింపు
+Description-th.UTF-8: โหลดองค์ประกอบการติดตั้งจากซีดี
+Description-tl.UTF-8: Kunin ang mga component ng installer mula sa CD
+Description-tr.UTF-8: Kurulum bileşenlerini CD'den yükle
+Description-ug.UTF-8: ئورناتقۇ بۆلىكىنى CD-ROM دىن يۈكلە
+Description-uk.UTF-8: Завантажити компоненти встановлювача з CD
+Description-vi.UTF-8: Nạp các thành phần cài đặt từ đĩa CD
+Description-zh_CN.UTF-8: 从光盘加载安装程序组件
+Description-zh_TW.UTF-8: 從光碟中載入安裝程式的元件

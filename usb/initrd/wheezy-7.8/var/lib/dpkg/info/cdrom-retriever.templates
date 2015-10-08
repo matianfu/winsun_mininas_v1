@@ -1,0 +1,127 @@
+Template: retriever/cdrom/error
+Type: boolean
+Default: true
+Description: Failed to copy file from CD-ROM. Retry?
+ There was a problem reading data from the CD-ROM. Please make sure it is in
+ the drive. If retrying does not work, you should check the integrity of
+ your CD-ROM.
+Description-ar.UTF-8: تعذر نسخ الملف من القرص المدمج. إعادة المحاولة؟
+ كانت هناك مشكلة في قراءة البيانات من القرص المدمج. رجاء التحقق من وجوده في السواقة. إن لم تساعد إعادة المحاولة في ذلك، عليك التأكد من تكامل القرص المدمج.
+Description-ast.UTF-8: Fallu al copiar l'archivu dende'l CD-ROM. ¿Retentar?
+ Hebo un problema pa lleer datos dende'l CD-ROM. Has d'asegurate que'l discu tea nel preséu. Si retentar nun funciona, habríes de comprobar la integridá del CD-ROM.
+Description-be.UTF-8: Не атрымалася скапіяваць файл з CD-ROM. Яшчэ раз?
+ Праблема ў чытанні дадзеных з дыска. Калі ласка, пераканайцеся, што ён знаходзіцца ў прыладзе. Калі паўторныя спробы таксама скончацца безпаспяхова, раім праверыць цэльнасць вашага CD-ROM.
+Description-bg.UTF-8: Грешка при копиране на файл от компактдиска. Опит отново?
+ Има проблем при четене на данни от компактдиска. Моля, уверете се, че той е в устройството. Ако опитването отново не помага, трябва да проверите Вашия компактдиск за грешки.
+Description-bo.UTF-8: འོད་སྡེར་ནས་འདྲ་བཤུ་བྱེད་མ་ཐུབ་པས་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་དགོས་སམ
+ འོད་སྡེར་སྒུལ་ཆས་ནས་གྲངས་རྒྱུན་ཀློག་སྐབས་སྐྱོན་ཞིག་ཡོད་པས་འོད་སྡེར་སྒུལ་ཆས་ནང་དུ་ཡོད་པར་དག་ཐེར་བྱེད་རོགས ད་དུང་བཟོ་མ་ཐུབ་ན་ཁྱོད་ཀྱི་འོད་སྡེར་སྒུལ་ཆས་ཀྱི་ངོ་བོ་ལ་བརྟག་དཔྱད་བྱེད་དགོས
+Description-bs.UTF-8: Ne mogu kopirati datoteku s CDROM-a. Ponoviti?
+ Došlo je do problema pri čitanju podataka sa CDROM-a. Molim provjerite da li se nalazi u pogonu. Ako ponovni pokušaj ne uspije, trebate provjeriti ispravnost Vašeg CDROM-a.
+Description-ca.UTF-8: No s'ha pogut copiar un fitxer del CD-ROM. Voleu tornar-ho a provar?
+ S'ha produït un error en llegir dades des del CD-ROM. Assegureu-vos que es troba a la unitat. Si reintentar-ho no ho soluciona, hauríeu de comprovar la integritat del CD-ROM.
+Description-cs.UTF-8: Kopírování souboru z CD-ROM selhalo. Opakovat?
+ Při čtení dat z CD-ROM se objevil problém. Ujistěte se, že je CD v mechanice. Pokud i opakované kopírování selže, zkontrolujte integritu CD.
+Description-cy.UTF-8: Methwyd copïo ffeil o'r CDROM. Ailgeisio?
+ Roedd problem wrth ddarllen data o'r CDROM. Os gwelwch yn dda, sicrhewch ei fod yn y disgyrrwr. Os nad yw ailgeisio yn gweithio, dylwch wirio cywirdeb eich CDROM.
+Description-da.UTF-8: Kunne ikke kopiere fil fra cd. Prøv igen?
+ Der var problemer med at læse data fra cd. Sørg for at den er i drevet. Hvis det ikke hjælper at prøve igen, bør du tjekke cd'ens tilstand.
+Description-de.UTF-8: Kopieren einer Datei von der CD-ROM fehlgeschlagen. Wiederholen?
+ Es trat ein Problem beim Lesen einiger Daten von CD-ROM auf. Bitte vergewissern Sie sich, dass sie sich im Laufwerk befindet. Wenn ein erneuter Versuch ebenfalls fehlschlägt, sollten Sie die Integrität der CD-ROM überprüfen. Sie können dazu die Funktion »CD-ROM(s) überprüfen« im Hauptmenü verwenden.
+Description-el.UTF-8: Απέτυχε η αντιγραφή αρχείου από το CD-ROM. Να ξαναπροσπαθήσω;
+ Παρουσιάστηκε πρόβλημα κατά την ανάγνωση δεδομένων από το CD-ROM. Παρακαλώ βεβαιωθείτε ότι βρίσκεται στη μονάδα. Αν η ανάγνωση αποτύχει ξανά, θα πρέπει να ελέγξετε την ακεραιότητα του CD-ROM.
+Description-eo.UTF-8: Malsukcesa kopio de dosiero el lumdisko. Ĉu reprovi?
+ Eraro okazis dum la lumdiska legado. Bonvolu kontroli ĉu la lumdisko estas en la diskingo. Se reprovo ne funkcias, vi devas kontroli la sendifektecon de la lumdisko.
+Description-es.UTF-8: Falló la copia de un fichero del CD-ROM. ¿Reintentar?
+ Se produjo un error al leer datos del CD-ROM. Por favor, asegúrese de que está en la unidad. Debería comprobar la integridad del CD-ROM si reintentar no funciona.
+Description-et.UTF-8: Laserkettalt faili kopeerimine nurjus. Kas proovida uuesti?
+ Laserkettalt andmete lugemisel ilmnes tõrge. Palun veendu, et ketas on lugejas. Kui uuesti proovimisest kasu ei ole, peaksid kontrollima, kas laserketas on täielik ja rikkumata.
+Description-eu.UTF-8: Huts egin du fitxategia CD-ROMetik kopiatzean. Saiatu berriro?
+ Arazoa gertatu da CD-ROMetik datuak irakurtzean. Egiaztatu ezazu CDa unitatean dagoela. Berriro saiatzean ezin bada konpondu, CD-ROMaren osotasuna egiaztatu beharko zenuke.
+Description-fa.UTF-8: کپی‌کردن پرونده از CD-ROM شکست خورد. دوباره؟
+ مشکلی در خواندن داده از CD-ROM بود. لطفاً مطمئن شوید در گرداننده قرار دارد. اگر سعی دوباره موفق نیست، باید محتویات CD-ROM را بازبینی نمائید.
+Description-fi.UTF-8: Tiedoston kopiointi CD-levyltä ei onnistunut. Yritetäänkö uudelleen?
+ Tietojen lukemisessa CD-levyltä ilmeni ongelmia. Varmista, että levy on asemassa. Jos uudelleen yrittäminen ei auta, tarkista onko levy kunnollinen.
+Description-fr.UTF-8: La copie d'un fichier du CD a échoué. Faut-il réessayer ?
+ Une erreur s'est produite lors de la lecture des données du CD. Veuillez vérifier que le CD est bien présent dans le lecteur. Si  l'opération échoue à nouveau, vous devriez vérifier l'intégrité du CD.
+Description-ga.UTF-8: Níorbh fhéidir comhad a chóipeáil ó CD-ROM.  Bain triail eile as?
+ Bhí fadhb ann agus sonraí á léamh ón CD-ROM.  Bí cinnte go bhfuil sé sa tiomántán. Mura n-oibríonn sé nuair a bhainfidh tú triail eile as, seiceáil sláine do CD-ROM.
+Description-gl.UTF-8: Non foi posíbel copiar un ficheiro do CD-ROM. Desexa tentalo de novo?
+ Aconteceu un problema ao ler os datos desde o CD-ROM. Asegúrese de que estea metido na unidade. Se non funciona tentándoo de novo, debería comprobar a integridade do CD-ROM.
+Description-he.UTF-8: כישלון בהעתקת קובץ מתקליטור. לנסות שוב?
+ יש בעיה בקריאת מידע מהתקליטור. אנא וודא כי הוא נמצא בתוך הכונן. אם ניסיון נוסף לא עוזר, בדוק את תקינות התקליטור.
+Description-hr.UTF-8: Kopiranje datoteke s CD-a nije uspjelo. Pokušati opet?
+ Pojavio se problem u čitanju podataka s CD-ROM-a. Molim provjerite je li u pogonu. Ako se ponovni pokušaj ne uspije, trebali biste provjeriti potpunost svoga CD-ROM-a.
+Description-hu.UTF-8: Sikertelen fájlmásolás a CD-ROM-ról. Újrapróbálod?
+ Hiba történt a CD-ROM olvasásakor. Ha a lemez a meghajtóban van, és újrapróbálva sem sikerül, a CD-ROM valószínűleg sérült.
+Description-id.UTF-8: Gagal menyalin berkas dari CDROM. Coba lagi?
+ Ada masalah saat membaca data dari CDROM. Pastikan terdapat CD di dalam pengerak. Jika pengulangan tidak berhasil juga, periksa keutuhan CD Anda.
+Description-is.UTF-8: Mistókst að afrita skrá af geisladiski. Reyna aftur?
+ Það kom upp vandamál við að lesa gögn af geisladisknum. Vinsamegast sannreynið að hann sé í drifinu. Ef reynt er aftur án árangurs, ættir þú að sannreyna heilindi geisladisksins.
+Description-it.UTF-8: Copia del file dal CD-ROM non riuscita. Riprovare?
+ Si è verificato un problema nel leggere i dati dal CD-ROM, assicurarsi che il CD-ROM sia nell'unità. Se il problema persiste, controllare l'integrità del CD-ROM.
+Description-ja.UTF-8: CD-ROM からのファイルのコピーに失敗しました。再試行しますか?
+ CD-ROM からのデータの読み込み中に問題が発生しました。ドライブに CD-ROM があることを確認してください。再試行でうまくいかないようであれば、あなたの CD-ROM の完全性チェックを行ってください。
+Description-kk.UTF-8: Компакт-дискіден файлды көшіру мүмкін емес. Қайталау керек пе?
+ Компакт-дискіден деректерді алу мүмкін емес. Дисктің CD-ROM жетегіне енгізілгенін тексеріңіз. Қайталап көру көмектеспесе, компакт-дискідегі деректердің бүтіндігін тексеріңіз.
+Description-kn.UTF-8: ಸಿಡಿ-ರಾಂ ನಿಂದ ಕಡತವನ್ನು ನಕಲುಮಾಡುವುದು ವಿಫಲವಾಗಿದೆ. ಪುನಃ ಪ್ರಯತ್ನಿಸಬೇಕೆ?
+ ಅಡಕ ತಟ್ಟೆಯಿಂದ ಮಾಹಿತಿಯನ್ನು ಓದುವಲ್ಲಿ ತೊಂದರೆಯುಂಟಾಗಿದೆ. ದಯಮಾಡಿ ಅದು ಡ್ರೈವಿನಲ್ಲಿದೆಯೆಂದು ಖಾತರಿಪಡಿಸಿ. ಮರುಪ್ರಯತ್ನ ಕಾರ್ಯ ಮಾಡದೇ ಹೋದರೆ, ನಿಮ್ಮ ಅಡಕ ತಟ್ಟೆಯ ಸಮಗ್ರತೆಯನ್ನು ಪರೀಕ್ಷಿಸಿ.
+Description-ko.UTF-8: CD-ROM에서 파일을 복사하는데 실패했습니다. 다시 시도하시겠습니까?
+ CD-ROM에서 데이터를 읽는데 문제가 있습니다. 드라이브에 CD-ROM이 들어 있는 지 확인하십시오. 그래도 동작하지 않으면 CD-ROM 내용이 올바른지 확인하십시오.
+Description-ku.UTF-8: Kopyakirina pelî ji CD-ROM'ê serneket. Careke din biceribîne?
+ Dema dane ji CD-ROMê dihate xwendin pirsgirêkek derket. Ji kerema xwe re sax bin bê ka CD di ajoker de ye yan na. Heke ev kar dîsa were dubarekirin û tu encam neyê wergirtin, divê tu rastiya CDROMê kontrol bikî.
+Description-lo.UTF-8: ຄັດລອກແຟ້ມຈາກຊີດີລ່ອມບໍ່ສຳເລັດ ຈະລອງໄໝ່ຫຼືບໍ່?
+ เกิดปัญหาขณะอ่านข้อมูลจากซีดีรอม กรุณาตรวจสอบว่าแผ่นซีดีอยู่ในไดรว์หรือไม่ ถ้าลองใหม่แล้วยังไม่ได้ คุณควรตรวจสอบความครบถ้วนของเนื้อหาซีดีรอมของคุณ
+Description-lt.UTF-8: Nepavyko nukopijuoti failo iš CD-ROM'o. Pakartoti?
+ Tai yra duomenų skaitymo iš CD-ROM'o problema. Įsitikinkite ar reikiamas kompaktinis diskas įdėtas į įrenginį. Jei kartojant vis tik neveiks, reikėtų patikrinti kompaktinio disko vientisumą.
+Description-lv.UTF-8: Nokopēt datni no CD-ROM neizdevās. Mēģināt vēlreiz?
+ Kļūme, lasot datus no CD-ROM — pārliecinieties, ka disks ir dzinī. Ja arī atkārtots mēģinājums nolasīt datus nav sekmīgs, pārbaudiet CD-ROM integritāti.
+Description-mk.UTF-8: Не успеав да ископирам датотека од CD-ROM. Да пробам повторно?
+ Имаше проблем при вчитување на податоците од CD-ROM. Провери дали е внесен правилно. Ако повторното пробање не успева треба да го провериш интегритетот на самиот CD-ROM.
+Description-nb.UTF-8: Klarte ikke kopiere fila fra CD-ROM. Vil du prøve en gang til?
+ Det oppsto et problem ved lesing fra CD-en. Sjekk at CD-en ligger i spilleren. Hvis det ikke går når du prøver igjen, bør du foreta en sjekk av CD-en.
+Description-nl.UTF-8: Bestand van CD kopiëren is mislukt, wilt u opnieuw proberen?
+ Er was een probleem bij het lezen van de gegevens op de CD. Gelieve ervoor te zorgen dat de CD in het station geplaatst is. Als opnieuw proberen niet werkt, kunt u het beste de CD op fouten controleren.
+Description-nn.UTF-8: Klarte ikkje kopiera fil frå CDROM. Prøva igjen?
+ Det var eit problem ved lesing frå CDROMen. Sjå etter at CDen er i spelaren. Viss det ikkje går når du prøver igjen, bør du sjekka integriteten til CDen.
+Description-no.UTF-8: Klarte ikke kopiere fila fra CD-ROM. Vil du prøve en gang til?
+ Det oppsto et problem ved lesing fra CD-en. Sjekk at CD-en ligger i spilleren. Hvis det ikke går når du prøver igjen, bør du foreta en sjekk av CD-en.
+Description-pl.UTF-8: Kopiowanie pliku z CD-ROM-u nie powiodło się. Ponowić?
+ Wystąpił problem podczas odczytu danych z CD-ROM-u. Upewnij się, że płyta znajduje się w napędzie. Jeśli ponowienie nie pomoże, powinno się sprawdzić poprawność płyty.
+Description-pt.UTF-8: Falhou ao copiar ficheiro do CD-ROM. Tentar novamente?
+ Ocorreu um problema  o ler dados a partir do CD-ROM. Por favor certifique-se que este está na drive. Se tentar novamente não resultar, deve verificar a integridade do seu CD-ROM.
+Description-pt_BR.UTF-8: Falha ao copiar arquivo a partir do CD-ROM. Tentar novamente?
+ Ocorreu um problema na leitura dos dados do CD-ROM. Por favor, certifique-se de que o CD-ROM está na unidade. Se tentar novamente não resolver, você deverá checar a integridade de seu CD-ROM.
+Description-ro.UTF-8: Eșec la copierea fișierului de pe CD. Reîncercați?
+ A existat o problemă la citirea datelor de pe CD. Vă rugăm să vă asigurați că este în unitate. Dacă nici atunci nu funcționează, ar trebui să verificați integritatea CD-ului.
+Description-ru.UTF-8: Не удаётся скопировать файл с компакт-диска. Повторить попытку?
+ Невозможно считать данные с компакт-диска. Убедитесь, что диск вставлен в привод CD-ROM. Если дальнейшие попытки ни к чему не приведут, вам следует проверить целостность данных на компакт-диске.
+Description-si.UTF-8: CD-ROM මගින් ගොනුව පිටපත් කිරීම අසාර්ථකයි. නැවත උත්සාහ කරන්නද?
+ CD-ROM මගින් දත්තක කියවීමේ දෝශයක් හට ගැණිනි. කරුණාකර එය ධාවකය තුළ පවතින බව තහවුරු කරගන්න. නැවත උත්සාහ කිරීම ක්‍රියා නොකල හොත්. ඔබේ CD-ROM නිවැරදි දැයි පිරික්සන්න.
+Description-sk.UTF-8: Chyba pri kopírovaní súboru z CD-ROM. Skúsiť znova?
+ Pri čítaní údajov z CD-ROM nastala chyba. Uistite sa, prosím, či je vložené v mechanike. Ak zopakovanie nepomáha, mali by ste skontrolovať neporušenosť vášho CD-ROM.
+Description-sl.UTF-8: Ni bilo mogoče prenesti datoteke iz CD-ROM-a. Želite poskusiti ponovno?
+ Prišlo je do težave pri branju podatkov iz CD-ROM-a. Prepričajte se, če je v pogonu. V primeru, da po ponovnem poskusu še vedno ne deluje, preverite integriteto vašega CD-ROM-a.
+Description-sq.UTF-8: Dështoi në kopjimin e kartelës nga CDROM. Ta riprovoj?
+ Pati një problem me leximin e të dhënave nga CDROM. Të lutem sigurohu që ai gjendet në lexues. Nëse ripërpjekja nuk ka sukses, duhet të kontrollosh integritetin e CDROM-it tënd.
+Description-sr.UTF-8: Грешка у копирању фајла са CD-а. Покушати поново?
+ Настао је проблем у читању података са CD-а. Проверите да ли је у уређају. Ако поновни покушај не успе, требало би да проверите интегритет CD-а.
+Description-sv.UTF-8: Kunde inte kopiera fil från cd-skivan. Försöka igen?
+ Ett problem inträffade när data skulle läsas från cd-skivan. Se till att skivan är i cd-läsaren. Om det inte hjälper att försöka igen så bör du kontrollera att din cd-rom är felfri.
+Description-te.UTF-8: సీడీ-రామ్‌ నుంచి దస్త్రం నకలు విఫలమయింది. మరల ప్రయత్నించాలా?
+ CD-ROM నుండి డాటా చదవటంలో సమస్య ఎదురైంది. డ్రైవ్ లో CD/DVD వున్నట్లుగా ఖచిత పరచుకోండి. మరో ప్రయత్నం పనిచేయకపోతే,  CD-ROM సమగ్రత ని  పరిశీలించండి.
+Description-th.UTF-8: คัดลอกแฟ้มจากซีดีรอมไม่สำเร็จ จะลองใหม่หรือไม่?
+ เกิดปัญหาขณะอ่านข้อมูลจากซีดีรอม กรุณาตรวจสอบว่าแผ่นซีดีอยู่ในไดรว์หรือไม่ ถ้าลองใหม่แล้วยังไม่ได้ คุณควรตรวจสอบความครบถ้วนของเนื้อหาซีดีรอมของคุณ
+Description-tl.UTF-8: Bigo ang pagkopya ng talaksan mula sa CD-ROM. Subukan muli?
+ May problemang naganap sa pagbasa ng datos mula sa CD-ROM. Pakisiguro na ito ay nasa drive. Kung hindi umandar sa pagsubok muli, kailangan niyong suriin ang ayos ng inyong CD-ROM.
+Description-tr.UTF-8: CD-ROM'dan dosya kopyalama başarısız. Tekrar denensin mi?
+ CD-ROM'dan veri okunurken bir sorunla karşılaşıldı. Lütfen CD'nin sürücüde olduğundan emin olun. İşlemin tekrar edilmesi de sonuç vermiyorsa, CDROM'un doğruluğunu denetlemelisiniz.
+Description-ug.UTF-8: CD-ROM دىن ھۆججەت كۆچۈرۈش مەغلۇپ بولدى. قايتا سىنامسىز؟
+ CD-ROM دىن سانلىق مەلۇمات ئوقۇشتا خاتالىق كۆرۈلدى. CD-ROM نى قوزغاتقۇچقا سالغانلىقىڭىزنى جەزملەڭ. ئەگەر قايتا سىنىغاندىن كېيىنمۇ نورمال خىزمەت قىلمىسا CD-ROM نى تەكشۈرۈڭ.
+Description-uk.UTF-8: Не вдалося скопіювати файл із CD-ROM. Спробувати знову?
+ Виникла проблема при зчитуванні даних із CD-ROM. Перевірте, чи є диск у пристрої читання. Якщо не вдається повторити читання, то вам потрібно перевірити цілісність вашого компакт-диску.
+Description-vi.UTF-8: Lỗi sao chép tập tin từ đĩa CD-ROM. Thử lại không?
+ Gặp lỗi khi đọc dữ liệu từ đĩa CD-ROM. Hãy kiểm tra xem nó nằm trong ổ đĩa. Nếu việc thử lại không hoạt động được, bạn nên kiểm tra tính nguyên vẹn của đĩa CD-ROM đó.
+Description-zh_CN.UTF-8: 无法从光盘上拷贝文件。要重试吗？
+ 从光盘上读取数据出错。请确认光盘已被放置在驱动器中。如果重试以后还是无法工作，请检查光盘的完整性。
+Description-zh_TW.UTF-8: 無法由光碟片中複製檔案。是否重新嘗試？
+ 在從光碟片讀取資料時發生了問題，請確認該光碟是否確實放在光碟機中。如果一再重試卻無法解決問題，您應該檢查這片光碟的完整性。

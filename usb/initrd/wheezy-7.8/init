@@ -1,0 +1,26 @@
+#!/bin/sh -e
+# used for initramfs
+export PATH
+. /lib/debian-installer/init-debug
+debugshell "just booted"
+
+mount /run
+mkdir -p /run/lock
+mount /proc
+mount /sys
+/lib/debian-installer/start-udev
+
+init='/bin/busybox init'
+for i in $(cat /proc/cmdline); do
+	case $i in
+		init=/init|init=init)
+			# Avoid endless loop
+			: ;;
+		init=*)
+			init=${i#init=} ;;
+		noshell)
+			sed -i '/^tty[23]/s/^/#/' /etc/inittab ;;
+	esac
+done
+debugshell "before init"
+exec $init

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+if [ -z "$BARCELONA_ROOT" ]; then
+    echo "Error: BARCELONA_ROOT is not set"
+    exit 1
+fi
+
+INITRD_DIR=${BARCELONA_ROOT}/usb/initrd
+TMP_DIR=${BARCELONA_ROOT}/tmp
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+
+# example
+# cd initramfs
+# find . | cpio -H newc -o > ../initramfs.cpio
+# cd ..
+# cat initramfs.cpio | gzip > initramfs.igz
+
+rm -rf ${TMP_DIR}
+mkdir -p ${TMP_DIR}
+
+cd ${INITRD_DIR}
+find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio
+cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/initrd.gz
+
+ls -sail ${OUTPUT_DIR}
+
+

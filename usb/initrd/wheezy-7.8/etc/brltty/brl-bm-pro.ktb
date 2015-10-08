@@ -1,0 +1,5 @@
+title Baum Vario Pro
+include brl-bm-display6.kti
+include brl-bm-wheels.kti
+include brl-bm-status.kti
+include brl-bm-routing6.kti

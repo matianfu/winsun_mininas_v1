@@ -1,0 +1,5 @@
+title EuroBraille Esys 40,64
+include brl-eu-common.kti
+include brl-eu-joysticks.kti
+include brl-eu-sw12.kti
+include brl-eu-sw34.kti

@@ -1,0 +1,74 @@
+#!/bin/sh
+
+# In order to give proper access to the tty, we need to locate the device
+# corresponding to the console we are actually using.
+
+NL="
+"
+
+console=
+if ! [ -f /var/run/console-device ]; then
+	# If the kernel emitted a "handover" message, then it's the one
+	case $(uname -r) in
+	    2.6.2*|2.6.3[01]*)
+		console="$(dmesg -s 262143 |
+			sed -n -r -e 's/(.*\])? *console handover: boot \[.*\] -> real \[(.*)\]$/\2/p')"
+		;;
+	    2.6.3[234567]*)
+		console="$(dmesg -s 262143 |
+			sed -n -r -e 's/(.*\])? *console \[(.*)\] enabled, bootconsole disabled$/\2/p')"
+		;;
+	    *) # >= 2.6.38
+		console_major_minor="$(get-real-console-linux)"
+		console_raw="$(readlink "/sys/dev/char/${console_major_minor}")"
+		console="${console_raw##*/}"
+		;;
+	esac
+
+	# Except if it is the wrong type...
+	if [ "$console" ] && [ "$(console-type)" = serial ] && \
+	   expr "$console" : "tty[0-9]" >/dev/null; then
+		console=
+	fi
+
+	consoles=
+	if [ -z "$console" ]; then
+		# Retrieve all enabled consoles from boot log; ignore those
+		# for which no device file exists
+		for cons in $(dmesg -s 262143 |
+			sed -n -r -e 's/(.*\])? *console \[(.*)\] enabled/\2/p')
+		do
+			if [ -e "/dev/$cons" ]; then
+				consoles="${consoles:+$consoles$NL}$cons"
+			fi
+		done
+		# Only one console? Then we are good.
+		if [ $(echo "$consoles" | wc -l) -eq 1 ]; then
+			console="$consoles"
+		fi
+	fi
+
+	if [ -z "$console" ]; then
+		# Locate the last enabled console present on the command line
+		for arg in $(cat /proc/cmdline); do
+			case $arg in
+			    console=*)
+				arg=${arg#console=}
+				cons=${arg%%,*}
+				if echo "$consoles" | grep -q "^$cons$"; then
+					console=$cons
+				fi
+				;;
+			esac
+		done
+	fi
+
+	if [ -z "$console" ]; then
+		# Still nothing? Default to /dev/console.
+		console=console
+	fi
+	echo /dev/$console > /var/run/console-device
+fi
+
+# Some other session may have it as ctty. Steal it from them
+exec /sbin/steal-ctty $(cat /var/run/console-device) "$@"

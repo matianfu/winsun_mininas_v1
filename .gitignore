@@ -1,10 +1,13 @@
 
 # the following folders are ignored
 
+artifacts
 disc
 images
 workspace
 tmp
+output
+
 
 *.swp
 *.img
