@@ -4,6 +4,7 @@
 disc
 images
 workspace
+tmp
 
 *.swp
 *.img

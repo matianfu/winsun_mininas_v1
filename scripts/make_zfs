@@ -1,0 +1,61 @@
+#!/bin/sh
+
+# exit immediately if error
+set -e
+
+if [ -z "$BARCELONA_ROOT" ]; then
+    echo "Error: BARCELONA_ROOT is not set"
+    exit 1
+fi
+
+echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+
+SPL_NAME=spl-0.6.4.2
+ZFS_NAME=zfs-0.6.4.2
+
+SPL_TARNAME=${SPL_NAME}.tar.gz
+ZFS_TARNAME=${ZFS_NAME}.tar.gz
+
+WORKSPACE=${BARCELONA_ROOT}/workspace
+
+TMP_DIR=${BARCELONA_ROOT}/tmp
+SPL_DIR=${TMP_DIR}/${SPL_NAME}
+ZFS_DIR=${TMP_DIR}/${ZFS_NAME}
+ARTIFACTS=${BARCELONA_ROOT}/artifacts
+
+KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
+
+rm -rf ${TMP_DIR}
+
+if [ ! -e "${ARTIFACTS}/${SPL_TARNAME}" ]; then 
+    echo "Error, ${SPL_TARNAME} not found in artifacts folder"
+    exit 1
+fi
+
+if [ ! -e "${ARTIFACTS}/${ZFS_TARNAME}" ]; then
+    echo "Error, ${ZFS_TARNAME} not found in artifacts folder"
+    exit 1
+fi
+
+mkdir $TMP_DIR
+
+tar xvzf ${ARTIFACTS}/${SPL_TARNAME} -C $TMP_DIR
+tar xvzf ${ARTIFACTS}/${ZFS_TARNAME} -C $TMP_DIR
+
+cd ${TMP_DIR}/${SPL_NAME}
+
+./configure --with-linux=${KERNEL_DIR}  --with-linux-obj=${KERNEL_DIR}
+make
+
+cd ${TMP_DIR}/${ZFS_NAME}
+
+./configure --with-linux=${KERNEL_DIR}  --with-linux-obj=${KERNEL_DIR} \
+    --with-spl=${TMP_DIR}/${SPL_NAME} --with-spl-obj=${TMP_DIR}/${SPL_NAME}
+make
+
+ls $(find ${TMP_DIR} -name '*.ko')
+
+cp $(find ${TMP_DIR} -name '*.ko') ${WORKSPACE}/project_build_i686/IntelCE/root/lib/modules
+
+ls ${WORKSPACE}/project_build_i686/IntelCE/root/lib/modules
+
