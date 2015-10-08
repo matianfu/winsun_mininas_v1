@@ -1,3 +1,31 @@
+
+if [ -z "$BARCELONA_ROOT" ]; then
+    echo "Error: BARCELONA_ROOT is not set"
+    exit 1
+fi
+
+if [ -z "$TFTP_ROOT" ]; then
+    echo "Error: TFTP_ROOT is not set"
+    exit 1
+fi
+
+echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+echo "TFTP_ROOT is set to $TFTP_ROOT"
+
+WORKSPACE=${BARCELONA_ROOT}/workspace
+CEFDK_BIN=${BARCELONA_ROOT}/binaries/IntelCE
+
+rm ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/.built
+rm ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
+
+make -C ${WORKSPACE} kernel prepare
+
+cp ${CEFDK_BIN}/bzImage ${TFTP_ROOT}
+
+ls -sail ${TFTP_ROOT}
+
+exit 0
+
 cd workspace
 rm project_build_i686/IntelCE/kernel-29.0.12344.325128/.built
 rm project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
