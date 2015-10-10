@@ -85,7 +85,7 @@ else
 OS=`udpkg --print-os`
 if [ "$OS" = hurd ]
 then
-[ ! -f /var/run/hurd-console.pid ] || kill `cat /var/run/hurd-console.pid`
+kill `cat /var/run/hurd-console.pid`
 else
 setupcon --force --save
 fi

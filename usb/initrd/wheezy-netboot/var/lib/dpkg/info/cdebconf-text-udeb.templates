@@ -22,7 +22,7 @@ Description-fr.UTF-8: !! ERREUR : %s
 Description-ga.UTF-8: !! EARRÁID: %s
 Description-gl.UTF-8: !! ERRO: %s
 Description-he.UTF-8: !! שגיאה: %s
-Description-hr.UTF-8: !! GREŠKA: %s
+Description-hr.UTF-8: !! POGREŠKA: %s
 Description-hu.UTF-8: !! HIBA: %s
 Description-id.UTF-8: !! KESALAHAN: %s
 Description-is.UTF-8: !! VILLA: %s
@@ -53,7 +53,6 @@ Description-sq.UTF-8: !! GABIM: %s
 Description-sr.UTF-8: !! ГРЕШКА: %s
 Description-sv.UTF-8: !! FEL: %s
 Description-te.UTF-8: !! తప్పు: %s
-Description-tg.UTF-8: !! ХАТО: %s
 Description-th.UTF-8: !! ผิดพลาด: %s
 Description-tl.UTF-8: !! ERROR: %s
 Description-tr.UTF-8: !! HATA: %s
@@ -118,7 +117,6 @@ Description-sq.UTF-8: SEKUENCA TASTESH:
 Description-sr.UTF-8: ПРИТИСЦИ:
 Description-sv.UTF-8: NEDSLAG:
 Description-te.UTF-8: మీట నొక్కులు:
-Description-tg.UTF-8: ТУГМАҲО:
 Description-th.UTF-8: ปุ่มกด:
 Description-tl.UTF-8: KEYSTROKES:
 Description-tr.UTF-8: TUŞLAR:
@@ -180,7 +178,6 @@ Description-sq.UTF-8: '%c'
 Description-sr.UTF-8: „%c“
 Description-sv.UTF-8: "%c"
 Description-te.UTF-8: '%c'
-Description-tg.UTF-8: '%c'
 Description-th.UTF-8: '%c'
 Description-tl.UTF-8: '%c'
 Description-tr.UTF-8: '%c'
@@ -245,7 +242,6 @@ Description-sq.UTF-8: Shfaq këtë mesazh ndihme
 Description-sr.UTF-8: Прикажи ову помоћну поруку
 Description-sv.UTF-8: Visa det här hjälpmeddelandet
 Description-te.UTF-8: ఈ సహాయం చూపించు
-Description-tg.UTF-8: Намоиш додани ин паёми кӯмак
 Description-th.UTF-8: แสดงข้อความช่วยเหลือนี้
 Description-tl.UTF-8: Ipakita ang payo na ito
 Description-tr.UTF-8: Bu yardım iletisini göster
@@ -310,7 +306,6 @@ Description-sq.UTF-8: Kthehu mbrapa në pyetjen e mëparshme
 Description-sr.UTF-8: Назад на претходно питање
 Description-sv.UTF-8: Gå tillbaka till föregående fråga
 Description-te.UTF-8: ముందరి ప్రశ్న?
-Description-tg.UTF-8: Бозгашт ба саволи қаблӣ
 Description-th.UTF-8: กลับไปที่คำถามก่อน
 Description-tl.UTF-8: Bumalik sa nakaraang tanong
 Description-tr.UTF-8: Önceki soruya geri dön
@@ -375,7 +370,6 @@ Description-sq.UTF-8: Zgjidh një hyrje bosh
 Description-sr.UTF-8: Изабери празан унос
 Description-sv.UTF-8: Välj en tom post
 Description-te.UTF-8: ఒక ఖాళీ ఎంట్రీ ని ఎంచుకో
-Description-tg.UTF-8: Воридаи холиро интихоб кунед
 Description-th.UTF-8: เลือกรายการว่างเปล่า
 Description-tl.UTF-8: Pumili ng blankong punan
 Description-tr.UTF-8: Boş bir giriş değeri seç
@@ -441,7 +435,6 @@ Description-sq.UTF-8: Po
 Description-sr.UTF-8: Да
 Description-sv.UTF-8: Ja
 Description-te.UTF-8: అవును
-Description-tg.UTF-8: Ҳа
 Description-th.UTF-8: ใช่
 Description-tl.UTF-8: Oo
 Description-tr.UTF-8: Evet
@@ -507,7 +500,6 @@ Description-sq.UTF-8: Jo
 Description-sr.UTF-8: Не
 Description-sv.UTF-8: Nej
 Description-te.UTF-8: కాదు
-Description-tg.UTF-8: Не
 Description-th.UTF-8: ไม่
 Description-tl.UTF-8: Hindi
 Description-tr.UTF-8: Hayır
@@ -571,7 +563,6 @@ Description-sq.UTF-8: Prompt: '%c' për ndihmë, e prezgjedhur=%d>
 Description-sr.UTF-8: Питај: '%c' -- помоћ, подразумевано=%d>
 Description-sv.UTF-8: Val: "%c" för hjälp, standardvärde=%d>
 Description-te.UTF-8: ప్రాంప్ట్: '%c' సహాయానికి, అప్రమేయం=%d>
-Description-tg.UTF-8: Луқма: "%c" барои кӯмак, пешфарз=%d>
 Description-th.UTF-8: คำสั่ง: '%c' ดูวิธีใช้, ค่าปริยาย=%d>
 Description-tl.UTF-8: Prompt: '%c' para sa tulong, default=%d>
 Description-tr.UTF-8: İstem: yardım için '%c', varsayılan=%d>
@@ -635,7 +626,6 @@ Description-sq.UTF-8: Prompt: '%c' për ndihmë>
 Description-sr.UTF-8: Питај: „%c“ за помоћ>
 Description-sv.UTF-8: Val: "%c" för hjälp>
 Description-te.UTF-8: ప్రాంప్ట్: '%c' సహాయానికి>
-Description-tg.UTF-8: Луқма: "%c" барои кӯмак>
 Description-th.UTF-8: คำสั่ง: '%c' ดูวิธีใช้>
 Description-tl.UTF-8: Prompt: '%c' para sa tulong>
 Description-tr.UTF-8: İstem: yardım için '%c'>
@@ -699,7 +689,6 @@ Description-sq.UTF-8: Prompt: '%c' për ndihmë, e prezgjedhur=%s>
 Description-sr.UTF-8: Питај: '%c' -- помоћ, подразумевано=%s>
 Description-sv.UTF-8: Val: "%c" för hjälp, standardvärde=%s>
 Description-te.UTF-8: ప్రాంప్ట్: '%c' సహాయానికి, అప్రమేయం=%s>
-Description-tg.UTF-8: Луқма: "%c" барои кӯмак, пешфарз=%s>
 Description-th.UTF-8: คำสั่ง: '%c' ดูวิธีใช้, ค่าปริยาย=%s>
 Description-tl.UTF-8: Prompt: '%c' para sa tulong, default=%s>
 Description-tr.UTF-8: İstem: yardım için '%c', varsayılan=%s>
@@ -764,7 +753,6 @@ Description-sq.UTF-8: [Shtyp enter për të vazhduar]
 Description-sr.UTF-8: [Притисни „Enter“ за наставак]
 Description-sv.UTF-8: [Tryck enter för att fortsätta]
 Description-te.UTF-8: కొనసాగించడానికి  ఎంటర్  ని నొక్కండి
-Description-tg.UTF-8: [Барои идома додан тугмаи enter-ро зер кунед]
 Description-th.UTF-8: [กด enter เพื่อดำเนินการต่อ]
 Description-tl.UTF-8: [Pindutin ang enter para makapagpatuloy]
 Description-tr.UTF-8: [Devam etmek için enter'a basın]

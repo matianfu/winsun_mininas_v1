@@ -22,7 +22,7 @@ mkdir -p ${TMP_DIR}
 
 cd ${INITRD_DIR}
 find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio
-cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/initrd.gz
+cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/ramdisk   # initrd.gz
 
 ls -sail ${OUTPUT_DIR}
 

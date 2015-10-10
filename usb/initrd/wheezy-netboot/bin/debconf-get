@@ -1,5 +1,4 @@
-#!/bin/sh
-set -e
+#!/bin/sh -e
 export DEBIAN_FRONTEND=noninteractive
 . /usr/share/debconf/confmodule
 db_get "$1"

@@ -1,15 +1,14 @@
 protocol_fetch() {
-	local url file RETVAL i j options
+	local url file RETVAL i j
 	url="$1"
 	file="$2"
-	options=
 
 	wget404() {
 	# see README.wget404 in the debian-installer-utils udeb source for more info about this
 		if [ "ftp" = "$proto" ] ; then
-			local file_not_found_pattern='bad response to RETR: 550 \|^No such file '
+			local file_not_found_pattern='bad response to RETR: 550 '
 		else
-			local file_not_found_pattern='server returned error: HTTP\/[0-9.]\+ 404 \| ERROR 404: '
+			local file_not_found_pattern='server returned error: HTTP\/[0-9.]\+ 404 '
 		fi
 
 		local RETVAL=$( {
@@ -26,27 +25,14 @@ protocol_fetch() {
 		export ${proto}_proxy="$RET"
 	fi
 
-	if wget --version 2>/dev/null | grep -q 'GNU Wget'; then
-		options=--no-verbose
-		if [ "https" = "$proto" ] && \
-		   db_get debian-installer/allow_unauthenticated_ssl && [ "$RET" = true ]; then
-			options="$options --no-check-certificate"
-		fi
-	else
-		if [ "https" = "$proto" ]; then
-			echo "busybox wget does not support https" >&2
-			return 1
-		fi
-		options=-q
-	fi
 	RETVAL=0
 	for i in 1 2; do
-		wget404 $options -O "$file" "$url" || RETVAL=$?
+		wget404 -q -O "$file" "$url" || RETVAL=$?
 		[ $RETVAL = 1 ] || return $RETVAL
 
 		if [ "$TRY_CONTINUE" ] && [ -s "$file" ]; then
 			for j in 1 2 3; do
-				wget404 -c $options "$url" -O "$file" || RETVAL=$?
+				wget404 -c -q "$url" -O "$file" || RETVAL=$?
 				[ $RETVAL = 1 ] || return $RETVAL
 			done
 		fi

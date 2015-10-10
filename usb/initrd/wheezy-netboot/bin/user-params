@@ -14,7 +14,7 @@ for item in $(sed -e 's/[^ =]*="[^"]*[ ][^"]*"//g' \
 	# Remove trailing '?' for debconf variables set with '?='
 	var="${var%\?}"
 
-	if [ "$item" = "--" ] || [ "$item" = "---" ]; then
+	if [ "$item" = "--" ]; then
 		inuser=1
 		collect=""
 	elif [ "$inuser" ]; then

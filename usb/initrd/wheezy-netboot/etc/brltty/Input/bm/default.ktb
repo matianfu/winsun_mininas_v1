@@ -1,5 +1,0 @@
-title Baum (default)
-include display6.kti
-include keyboard.kti
-include joystick.kti
-include routing6.kti

@@ -1,11 +1,5 @@
 ram=$(grep ^MemTotal: /proc/meminfo | { read x y z; echo $y; }) || true # in kilobytes
 
-if [ "$(udpkg --print-os)" = linux ]
-then
-	# Linux' default is now 50%
-	mount / -o remount,size=100%
-fi
-
 if [ -z "$ram" ]; then
 	echo "Cannot determine system memory, skipping lowmem probe" >&2
 else
@@ -15,7 +9,6 @@ else
 	# Also update the values in the installation manual, in
 	# build/arch-options/
 	# Also update the gtk values in rootskel, S60frontend
-	# Also update the values in debian-installer/build/boot/x86/f2.txt
 	ARCH=$(udpkg --print-architecture)
 	case $ARCH in
 		alpha)
@@ -25,9 +18,9 @@ else
 			min=39
 		;;
 		amd64)
-			level1=113 # MT=116520, qemu: -m 125
-			level2=105 # MT=108328, qemu: -m 117
-			min=100    # MT=103208, qemu: -m 112
+			level1=97 # MT=98352, qemu: -m 105
+			level2=97 # MT=98352, qemu: -m 105
+			min=82    # MT=82992, qemu: -m 90
 		;;
 		arm|armel|armhf)
 			level1=76 # MT=77036, qemu: -m 80
@@ -41,9 +34,9 @@ else
 			min=18
 		;;
 		i386)
-			level1=90 # MT=92516, qemu: -m 98
-			level2=84 # MT=86436, qemu: -m 92
-			min=74    # MT=76248, qemu: -m 80
+			level1=90 # MT=91480, qemu: -m 95
+			level2=90 # MT=91480, qemu: -m 95
+			min=75    # MT=76248, qemu: -m 80
 		;;
 		mips)
 			level1=78 # MT=79788, qemu: -m 85

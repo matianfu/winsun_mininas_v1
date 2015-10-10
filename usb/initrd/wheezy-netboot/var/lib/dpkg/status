@@ -1,477 +1,179 @@
-Package: input-modules-3.16.0-4-586-di
+Package: libblkid1-udeb
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: input-modules
-Depends: kernel-image-3.16.0-4-586-di, usb-modules-3.16.0-4-586-di, i2c-modules-3.16.0-4-586-di
-Description: Input devices support
+Version: 2.20.1-5.3
+Depends: libc6-udeb (>= 2.13), libuuid1-udeb (>= 2.16)
+Description: block device id library
 
-Package: nano-udeb
+Package: preseed-common
 Status: install ok unpacked
-Version: 2.2.6-3
-Provides: editor
-Depends: libc6-udeb (>= 2.19), libslang2-udeb (>= 2.2.4)
-Description: small, friendly text editor inspired by Pico - udeb
+Version: 1.58
+Depends: cdebconf-udeb, di-utils (>= 1.58)
+Description: common files for preseeding
 
-Package: serial-modules-3.16.0-4-586-di
+Package: udpkg
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: serial-modules
-Depends: kernel-image-3.16.0-4-586-di, pcmcia-modules-3.16.0-4-586-di
-Description: Serial drivers
+Version: 1.14
+Depends: libc6-udeb (>= 2.13), libdebian-installer4-udeb (>= 0.81)
+Description: tiny dpkg clone
 
-Package: udev-udeb
+Package: localechooser
 Status: install ok unpacked
-Version: 215-17+deb8u2
-Depends: libblkid1-udeb (>= 2.25), libc6-udeb (>= 2.19), libkmod2-udeb, util-linux-udeb
-Description: /dev/ and hotplug management daemon
+Version: 2.53
+Depends: cdebconf-udeb (>= 0.129)
+Description: choose language/country/locale
+Installer-Menu-Item: 1000
 
-Package: mountmedia
+Package: mmc-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 0.23
-Depends: di-utils (>= 1.66)
-Description: Mounts media
+Version: 3.2.41-2
+Provides: mmc-modules
+Depends: kernel-image-3.2.0-4-486-di, core-modules-3.2.0-4-486-di, mmc-core-modules-3.2.0-4-486-di
+Description: MMC/SD card modules
 
-Package: ethdetect
+Package: libnss-dns-udeb
 Status: install ok unpacked
-Version: 1.108
-Provides: ethernet-card-detection
-Depends: rootskel (>= 1.30), cdebconf-udeb (>= 0.38), hw-detect, di-utils (>= 1.13), pciutils-udeb
-Description: Detect network hardware and load kernel drivers for it
-Installer-Menu-Item: 1700
-
-Package: libuuid1-udeb
-Status: install ok unpacked
-Version: 2.25.2-6
-Depends: libc6-udeb (>= 2.19)
-Description: stripped down universally unique id library, for debian-installer
-
-Package: libnl-3-200-udeb
-Status: install ok unpacked
-Version: 3.2.24-2
-Depends: libc6-udeb (>= 2.18)
-Description: library for dealing with netlink sockets
-
-Package: libfribidi0-udeb
-Status: install ok unpacked
-Version: 0.19.6-3
-Depends: libc6-udeb (>= 2.19)
-Description: Free Implementation of the Unicode BiDi algorithm
-
-Package: network-preseed
-Status: install ok unpacked
-Version: 1.66
-Depends: cdebconf-udeb, configured-network, preseed-common
-Description: download debconf preseed file
-Installer-Menu-Item: 2100
-
-Package: lowmemcheck
-Status: install ok unpacked
-Version: 1.42
-Depends: libc6-udeb (>= 2.19), cdebconf-udeb (>= 0.75), main-menu (>= 1.03)
-Description: detect low-memory systems and enter lowmem mode
-
-Package: netcfg
-Status: install ok unpacked
-Version: 1.131
-Provides: configured-network
-Depends: libc6-udeb (>= 2.19), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.99), libiw30-udeb (>= 30~pre1), ethernet-card-detection, wpasupplicant-udeb, crypto-modules, rdnssd-udeb, ndisc6-udeb, wide-dhcpv6-client-udeb
-Description: Configure the network
-Installer-Menu-Item: 1800
-
-Package: wide-dhcpv6-client-udeb
-Status: install ok unpacked
-Version: 20080615-12
-Depends: libc6-udeb (>= 2.17)
-Description: DHCPv6 client for automatic IPv6 hosts configuration
-
-Package: di-utils-reboot
-Status: install ok unpacked
-Version: 1.110
-Depends: cdebconf-udeb
-Description: Reboot
-Installer-Menu-Item: 99500
-
-Package: media-retriever
-Status: install ok unpacked
-Version: 1.36
-Provides: retriever
-Depends: cdebconf-udeb, mountmedia
-Description: Fetches modules from removable media
-
-Package: nic-shared-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: nic-shared-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: Shared NIC drivers
-
-Package: crypto-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: crypto-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: crypto modules
-
-Package: hw-detect
-Status: install ok unpacked
-Version: 1.108
-Depends: rootskel (>= 1.30), archdetect, cdebconf-udeb (>= 0.75), di-utils (>= 1.73), pciutils-udeb, udpkg (>= 1.14)
-Description: Detect hardware and load kernel drivers for it
-
-Package: busybox-udeb
-Status: install ok unpacked
-Version: 1:1.22.0-9+deb8u1
-Depends: libc6-udeb (>= 2.19)
-Description: Tiny utilities for the debian-installer
-
-Package: kernel-image-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: kernel-image, rtc-modules, zlib-modules
-Description: Linux kernel binary image for the Debian installer
-
-Package: rescue-check
-Status: install ok unpacked
-Version: 1.51
-Depends: cdebconf-udeb (>= 0.75), main-menu (>= 1.03), di-utils (>= 1.18)
-Description: enter d-i rescue mode if requested
-
-Package: debian-archive-keyring-udeb
-Status: install ok unpacked
-Version: 2014.3
-Description: GnuPG keys of the Debian archive
+Version: 2.13-38
+Description: Embedded GNU C Library: NSS helper for DNS - udeb
 
 Package: download-installer
 Status: install ok unpacked
-Version: 1.39
+Version: 1.32
 Depends: cdebconf-udeb, net-retriever, anna (>= 1.07)
 Description: Download installer components
 Installer-Menu-Item: 2300
 
-Package: pciutils-udeb
+Package: fat-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 1:3.2.1-3
-Depends: libc6-udeb (>= 2.19), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
-Description: Linux PCI Utilities (udeb)
+Version: 3.2.41-2
+Provides: fat-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: FAT filesystem support
 
-Package: archdetect
+Package: lowmemcheck
 Status: install ok unpacked
-Version: 1.108
-Depends: libc6-udeb (>= 2.19), libdebian-installer4-udeb (>= 0.99)
-Description: Hardware architecture detector
-
-Package: scsi-core-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: scsi-core-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: Core SCSI subsystem
-
-Package: uinput-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: uinput-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: uinput support
-
-Package: libblkid1-udeb
-Status: install ok unpacked
-Version: 2.25.2-6
-Depends: libc6-udeb (>= 2.19), libuuid1-udeb (>= 2.25.2)
-Description: stripped down block device id library, for debian-installer
-
-Package: usb-storage-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: usb-storage-modules
-Depends: kernel-image-3.16.0-4-586-di, scsi-core-modules-3.16.0-4-586-di, usb-modules-3.16.0-4-586-di
-Description: USB storage support
-
-Package: wpasupplicant-udeb
-Status: install ok unpacked
-Version: 2.3-1+deb8u1
-Depends: libc6-udeb (>= 2.19), libcrypto1.0.0-udeb (>= 1.0.1d), libnl-3-200-udeb, libnl-genl-3-200-udeb, busybox-udeb
-Description: Client support for WPA and WPA2 (IEEE 802.11i)
-
-Package: nic-usb-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: nic-usb-modules
-Depends: kernel-image-3.16.0-4-586-di, nic-shared-modules-3.16.0-4-586-di, nic-wireless-modules-3.16.0-4-586-di, usb-modules-3.16.0-4-586-di, core-modules-3.16.0-4-586-di, crc-modules-3.16.0-4-586-di
-Description: USB NIC drivers
-
-Package: rootskel
-Status: install ok unpacked
-Version: 1.110
-Depends: di-utils (>= 1.66), udev-udeb (>= 0.125-6), cdebconf-udeb
-Description: Skeleton root filesystem used by debian-installer
-
-Package: udpkg
-Status: install ok unpacked
-Version: 1.17
-Depends: libc6-udeb (>= 2.19), libdebian-installer4-udeb (>= 0.94)
-Description: tiny dpkg clone
-
-Package: mmc-core-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: mmc-core-modules
-Depends: kernel-image-3.16.0-4-586-di, core-modules-3.16.0-4-586-di
-Description: MMC/SD/SDIO core modules
-
-Package: libasound2-udeb
-Status: install ok unpacked
-Version: 1.0.28-1
-Depends: libc6-udeb (>= 2.19)
-Description: shared library for ALSA applications (udeb)
+Version: 1.38
+Depends: libc6-udeb (>= 2.13), cdebconf-udeb (>= 0.75), main-menu (>= 1.03)
+Description: detect low-memory systems and enter lowmem mode
 
 Package: main-menu
 Status: install ok unpacked
-Version: 1.45
-Depends: libc6-udeb (>= 2.18), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.93), cdebconf-udeb
+Version: 1.39
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.85), cdebconf-udeb
 Description: Debian installer main menu
+
+Package: di-utils-shell
+Status: install ok unpacked
+Version: 1.92+deb7u1
+Depends: cdebconf-udeb, di-utils (>= 1.62)
+Description: Execute a shell
+Installer-Menu-Item: 95000
+
+Package: fb-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: fb-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: Frame buffer support
+
+Package: input-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: input-modules
+Depends: kernel-image-3.2.0-4-486-di, usb-modules-3.2.0-4-486-di
+Description: Input devices support
+
+Package: di-utils
+Status: install ok unpacked
+Version: 1.92+deb7u1
+Depends: libc6-udeb (>= 2.13), libdebian-installer4-udeb (>= 0.85), cdebconf-udeb
+Description: Miscellaneous utilities for the debian installer
+
+Package: libnl-genl-3-200-udeb
+Status: install ok unpacked
+Version: 3.2.7-4
+Depends: libnl-3-200-udeb (= 3.2.7-4), libc6-udeb (>= 2.13)
+Description: library for dealing with netlink sockets - generic netlink
+
+Package: pcmcia-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: pcmcia-modules
+Depends: kernel-image-3.2.0-4-486-di, core-modules-3.2.0-4-486-di
+Description: Common PCMCIA drivers
+
+Package: floppy-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: floppy-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: Floppy driver
 
 Package: choose-mirror
 Status: install ok unpacked
-Version: 2.62
+Version: 2.45
 Depends: configured-network, choose-mirror-bin
 Description: Choose mirror to install from (menu item)
 Installer-Menu-Item: 2300
 
-Package: choose-mirror-bin
+Package: wide-dhcpv6-client-udeb
 Status: install ok unpacked
-Version: 2.62
-Depends: libc6-udeb (>= 2.19), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.99), cdebconf-udeb
-Description: Choose mirror to install from (program)
+Version: 20080615-11.1
+Depends: libc6-udeb (>= 2.13)
+Description: DHCPv6 client for automatic IPv6 hosts configuration
 
-Package: installation-locale
+Package: core-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 1.5
-Depends: rootskel
-Description: UTF-8 C locale
-
-Package: usb-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: usb-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: USB support
-
-Package: fat-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: fat-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: FAT filesystem support
-
-Package: preseed-common
-Status: install ok unpacked
-Version: 1.66
-Depends: cdebconf-udeb, di-utils (>= 1.58)
-Description: common files for preseeding
-
-Package: bogl-bterm-udeb
-Status: install ok unpacked
-Version: 0.1.18-9
-Depends: libc6-udeb (>= 2.17)
-Description: Ben's Own Graphics Library - graphical terminal
-
-Package: cdebconf-text-udeb
-Status: install ok unpacked
-Version: 0.192
-Depends: cdebconf-udeb, libc6-udeb (>= 2.19)
-Description: Plain text frontend for Debian Configuration Management System
-
-Package: pcmciautils-udeb
-Status: install ok unpacked
-Version: 018-8
-Depends: udev-udeb, libc6-udeb (>= 2.13)
-Description: PCMCIA utilities for Linux 2.6
+Version: 3.2.41-2
+Provides: core-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: Core modules
 
 Package: console-setup-udeb
 Status: install ok unpacked
-Version: 1.123
+Version: 1.88
 Provides: keyboard-setup
 Depends: archdetect, cdebconf-udeb, kbd-udeb | kbdcontrol-udeb | hurd-udeb
 Description: Configure the keyboard
 Installer-Menu-Item: 1200
 
-Package: anna
+Package: nic-wireless-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 1.52
-Depends: libc6-udeb (>= 2.18), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.93), cdebconf-udeb
-Description: anna's not nearly apt, but for the Debian installer, it will do
+Version: 3.2.41-2
+Provides: nic-wireless-modules
+Depends: kernel-image-3.2.0-4-486-di, nic-shared-modules-3.2.0-4-486-di, core-modules-3.2.0-4-486-di, usb-modules-3.2.0-4-486-di, mmc-modules-3.2.0-4-486-di, pcmcia-modules-3.2.0-4-486-di, crc-modules-3.2.0-4-486-di
+Description: Wireless NIC drivers
 
-Package: i2c-modules-3.16.0-4-586-di
+Package: network-preseed
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: i2c-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: i2c support modules
-
-Package: cdebconf-udeb
-Status: install ok unpacked
-Version: 0.192
-Provides: debconf-2.0
-Depends: libc6-udeb (>= 2.19), libdebian-installer4-udeb (>= 0.96), libtextwrap1-udeb
-Description: Debian Configuration Management System (C-implementation)
-
-Package: env-preseed
-Status: install ok unpacked
-Version: 1.66
-Description: debconf preseeding via environment variables
-
-Package: libkmod2-udeb
-Status: install ok unpacked
-Version: 18-3
-Depends: libc6-udeb (>= 2.19)
-Description: libkmod shared library
-
-Package: hyperv-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: hyperv-modules
-Depends: kernel-image-3.16.0-4-586-di, input-modules-3.16.0-4-586-di, scsi-core-modules-3.16.0-4-586-di
-Description: Hyper-V modules
-
-Package: save-logs
-Status: install ok unpacked
-Version: 2.58
-Depends: cdebconf-udeb
-Description: save logs and configuration for debug purposes
-Installer-Menu-Item: 94000
-
-Package: kbd-udeb
-Status: install ok unpacked
-Version: 1.15.5-2
-Depends: libc6-udeb (>= 2.19)
-Description: Linux console keyboard setup utilities
-
-Package: fb-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: fb-modules
-Depends: kernel-image-3.16.0-4-586-di, i2c-modules-3.16.0-4-586-di
-Description: Frame buffer support
-
-Package: nic-pcmcia-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: nic-pcmcia-modules
-Depends: kernel-image-3.16.0-4-586-di, nic-shared-modules-3.16.0-4-586-di, nic-wireless-modules-3.16.0-4-586-di, pcmcia-modules-3.16.0-4-586-di, mmc-core-modules-3.16.0-4-586-di
-Description: Common PCMCIA NIC drivers
-
-Package: libtextwrap1-udeb
-Status: install ok unpacked
-Version: 0.1-14
-Depends: libc6-udeb (>= 2.17)
-Description: text-wrapping library with i18n - runtime udeb
-
-Package: cdebconf-priority
-Status: install ok unpacked
-Version: 0.192
-Depends: cdebconf-udeb
-Description: Change debconf priority
-Installer-Menu-Item: 93000
-
-Package: libiw30-udeb
-Status: install ok unpacked
-Version: 30~pre9-8
-Depends: libc6-udeb (>= 2.13)
-Description: Tools for manipulating Linux Wireless Extensions
-
-Package: libcrypto1.0.0-udeb
-Status: install ok unpacked
-Version: 1.0.1k-3+deb8u1
-Depends: libc6-udeb (>= 2.19)
-Description: Secure Sockets Layer toolkit - libcrypto udeb
-
-Package: usb-serial-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: usb-serial-modules
-Depends: kernel-image-3.16.0-4-586-di, usb-modules-3.16.0-4-586-di
-Description: USB serial drivers
-
-Package: libnss-files-udeb
-Status: install ok unpacked
-Version: 2.19-18+deb8u1
-Description: GNU C Library: NSS helper for files - udeb
-
-Package: net-retriever
-Status: install ok unpacked
-Version: 1.39
-Provides: retriever
-Depends: cdebconf-udeb, choose-mirror, configured-network, di-utils (>= 1.58), gpgv-udeb, debian-archive-keyring-udeb
-Description: Fetch modules from the Internet
-
-Package: console-setup-pc-ekmap
-Status: install ok unpacked
-Version: 1.123
-Provides: console-setup-ekmap
-Description: encoded Linux keyboard layouts for PC keyboards
-
-Package: cdebconf-newt-terminal
-Status: install ok unpacked
-Version: 0.23
-Provides: cdebconf-terminal
-Depends: cdebconf-newt-udeb (>= 0.146), libc6-udeb (>= 2.17), libnewt0.52
-Description: cdebconf newt plugin to provide a clean terminal
+Version: 1.58
+Depends: cdebconf-udeb, configured-network, preseed-common
+Description: download debconf preseed file
+Installer-Menu-Item: 2100
 
 Package: cdebconf-newt-udeb
 Status: install ok unpacked
-Version: 0.192
-Depends: cdebconf-udeb, di-utils-terminfo, libc6-udeb (>= 2.19), libnewt0.52, libslang2-udeb (>= 2.2.4), libtextwrap1-udeb
+Version: 0.182
+Depends: cdebconf-udeb, di-utils-terminfo, libc6-udeb (>= 2.13), libnewt0.52, libslang2-udeb (>= 2.2.4), libtextwrap1-udeb
 Description: Newt frontend for Debian Configuration Management System
 
 Package: gpgv-udeb
 Status: install ok unpacked
-Version: 1.4.18-7
-Depends: libc6-udeb (>= 2.19), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Version: 1.4.12-7
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
 Description: minimal signature verification tool
 
-Package: util-linux-udeb
+Package: usb-serial-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 2.25.2-6
-Depends: libblkid1-udeb (>= 2.25.2), libc6-udeb (>= 2.19)
-Description: stripped down miscellaneous system utilities, for debian-installer
+Version: 3.2.41-2
+Provides: usb-serial-modules
+Depends: kernel-image-3.2.0-4-486-di, usb-modules-3.2.0-4-486-di
+Description: USB serial drivers
 
-Package: nic-modules-3.16.0-4-586-di
+Package: rootskel
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: nic-extra-modules, nic-modules
-Depends: kernel-image-3.16.0-4-586-di, nic-shared-modules-3.16.0-4-586-di, core-modules-3.16.0-4-586-di, i2c-modules-3.16.0-4-586-di, crc-modules-3.16.0-4-586-di
-Description: NIC drivers
-
-Package: crc-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: crc-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: CRC modules
-
-Package: di-utils-terminfo
-Status: install ok unpacked
-Version: 1.110
-Description: Terminfo entries needed by newt/slang in debian installer
-
-Package: initrd-preseed
-Status: install ok unpacked
-Version: 1.66
-Depends: preseed-common
-Description: load debconf preseed file from /preseed.cfg on the initrd
-
-Package: pcmcia-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: pcmcia-modules
-Depends: kernel-image-3.16.0-4-586-di, core-modules-3.16.0-4-586-di
-Description: Common PCMCIA drivers
-
-Package: zlib1g-udeb
-Status: install ok unpacked
-Version: 1:1.2.8.dfsg-2+b1
-Description: compression library - runtime for Debian installer
+Version: 1.102
+Depends: di-utils (>= 1.66), udev-udeb (>= 0.125-6), cdebconf-udeb
+Description: Skeleton root filesystem used by debian-installer
 
 Package: rdnssd-udeb
 Status: install ok unpacked
@@ -479,75 +181,103 @@ Version: 1.0.1-1+b1
 Depends: libc6-udeb (>= 2.13), libnss-files-udeb
 Description: IPv6 recursive DNS server discovery daemon
 
-Package: di-utils-shell
+Package: crypto-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 1.110
-Depends: cdebconf-udeb, di-utils (>= 1.62)
-Description: Execute a shell
-Installer-Menu-Item: 95000
+Version: 3.2.41-2
+Provides: crypto-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: crypto modules
 
-Package: libnl-genl-3-200-udeb
+Package: firewire-core-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 3.2.24-2
-Depends: libnl-3-200-udeb (= 3.2.24-2), libc6-udeb (>= 2.18)
-Description: library for dealing with netlink sockets - generic netlink
+Version: 3.2.41-2
+Provides: firewire-core-modules
+Depends: kernel-image-3.2.0-4-486-di, scsi-core-modules-3.2.0-4-486-di, crc-modules-3.2.0-4-486-di
+Description: Core FireWire drivers
 
-Package: libdebian-installer4-udeb
+Package: udev-udeb
 Status: install ok unpacked
-Version: 0.99+deb8u1
-Depends: libc6-udeb (>= 2.19)
-Description: Library of common debian-installer functions
+Version: 175-7.2
+Depends: libc6-udeb (>= 2.13), util-linux-udeb
+Description: /dev/ and hotplug management daemon
 
-Package: di-utils
+Package: uinput-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 1.110
-Depends: libc6-udeb (>= 2.19), libdebian-installer4-udeb (>= 0.99), cdebconf-udeb
-Description: Miscellaneous utilities for the debian installer
+Version: 3.2.41-2
+Provides: uinput-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: uinput support
 
-Package: core-modules-3.16.0-4-586-di
+Package: libnss-files-udeb
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: core-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: Core modules
+Version: 2.13-38
+Description: Embedded GNU C Library: NSS helper for files - udeb
 
-Package: localechooser
+Package: nic-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 2.64
-Depends: cdebconf-udeb (>= 0.129)
-Description: choose language/country/locale
-Installer-Menu-Item: 1000
-
-Package: libdebconfclient0-udeb
-Status: install ok unpacked
-Version: 0.192
-Depends: libc6-udeb (>= 2.19), cdebconf-udeb
-Description: Debian Configuration Management System (C-implementation)
-
-Package: acpi-modules-3.16.0-4-586-di
-Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: acpi-modules
-Depends: kernel-image-3.16.0-4-586-di
-Description: ACPI support modules
+Version: 3.2.41-2
+Provides: nic-modules
+Depends: kernel-image-3.2.0-4-486-di, nic-shared-modules-3.2.0-4-486-di, core-modules-3.2.0-4-486-di, firewire-core-modules-3.2.0-4-486-di
+Description: Common NIC drivers
 
 Package: brltty-udeb
 Status: install ok unpacked
-Version: 5.2~20141018-5
-Depends: libasound2-udeb (>= 1.0.27), libc6-udeb (>= 2.19)
+Version: 4.4-10
+Depends: libc6-udeb (>= 2.13)
 Description: Access software for a blind person using a braille display
 
-Package: libnss-dns-udeb
+Package: i2c-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 2.19-18+deb8u1
-Description: GNU C Library: NSS helper for DNS - udeb
+Version: 3.2.41-2
+Provides: i2c-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: i2c support modules
 
-Package: mmc-modules-3.16.0-4-586-di
+Package: libfribidi0-udeb
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: mmc-modules
-Depends: kernel-image-3.16.0-4-586-di, core-modules-3.16.0-4-586-di, mmc-core-modules-3.16.0-4-586-di
-Description: MMC/SD card modules
+Version: 0.19.2-3
+Depends: libc6-udeb (>= 2.13)
+Description: Free Implementation of the Unicode BiDi algorithm
+
+Package: usb-storage-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: usb-storage-modules
+Depends: kernel-image-3.2.0-4-486-di, scsi-core-modules-3.2.0-4-486-di, usb-modules-3.2.0-4-486-di
+Description: USB storage support
+
+Package: usb-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: usb-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: USB support
+
+Package: libtextwrap1-udeb
+Status: install ok unpacked
+Version: 0.1-13
+Depends: libc6-udeb (>= 2.13)
+Description: text-wrapping library with i18n - runtime udeb
+
+Package: hyperv-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: hyperv-modules
+Depends: kernel-image-3.2.0-4-486-di, input-modules-3.2.0-4-486-di, scsi-core-modules-3.2.0-4-486-di
+Description: Hyper-V modules
+
+Package: rescue-check
+Status: install ok unpacked
+Version: 1.35
+Depends: cdebconf-udeb (>= 0.75), main-menu (>= 1.03), di-utils (>= 1.18)
+Description: enter d-i rescue mode if requested
+
+Package: nano-udeb
+Status: install ok unpacked
+Version: 2.2.6-1+b1
+Provides: editor
+Depends: libc6-udeb (>= 2.13), libslang2-udeb (>= 2.2.4)
+Description: small, friendly text editor inspired by Pico - udeb
 
 Package: ndisc6-udeb
 Status: install ok unpacked
@@ -555,29 +285,314 @@ Version: 1.0.1-1+b1
 Depends: libc6-udeb (>= 2.13)
 Description: IPv6 diagnostic tools
 
-Package: nic-wireless-modules-3.16.0-4-586-di
+Package: cdebconf-udeb
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
-Provides: nic-wireless-modules
-Depends: kernel-image-3.16.0-4-586-di, nic-shared-modules-3.16.0-4-586-di, core-modules-3.16.0-4-586-di, usb-modules-3.16.0-4-586-di, mmc-modules-3.16.0-4-586-di, pcmcia-modules-3.16.0-4-586-di, crc-modules-3.16.0-4-586-di
-Description: Wireless NIC drivers
+Version: 0.182
+Provides: debconf-2.0
+Depends: libc6-udeb (>= 2.13), libdebian-installer4-udeb (>= 0.85), libtextwrap1-udeb
+Description: Debian Configuration Management System (C-implementation)
 
-Package: virtio-modules-3.16.0-4-586-di
+Package: nic-extra-modules-3.2.0-4-486-di
 Status: install ok unpacked
-Version: 3.16.7-ckt11-1+deb8u3
+Version: 3.2.41-2
+Provides: nic-extra-modules
+Depends: kernel-image-3.2.0-4-486-di, nic-shared-modules-3.2.0-4-486-di, core-modules-3.2.0-4-486-di, i2c-modules-3.2.0-4-486-di, crc-modules-3.2.0-4-486-di
+Description: Rare NIC drivers
+
+Package: debian-archive-keyring-udeb
+Status: install ok unpacked
+Version: 2012.4
+Description: GnuPG keys of the Debian archive
+
+Package: libkmod2-udeb
+Status: install ok unpacked
+Version: 9-3
+Depends: libc6-udeb (>= 2.13)
+Description: libkmod shared library
+
+Package: kbd-udeb
+Status: install ok unpacked
+Version: 1.15.3-9
+Depends: libc6-udeb (>= 2.13)
+Description: Linux console keyboard setup utilities
+
+Package: libiw30-udeb
+Status: install ok unpacked
+Version: 30~pre9-8
+Depends: libc6-udeb (>= 2.13)
+Description: Tools for manipulating Linux Wireless Extensions
+
+Package: cdebconf-text-udeb
+Status: install ok unpacked
+Version: 0.182
+Depends: cdebconf-udeb, libc6-udeb (>= 2.13)
+Description: Plain text frontend for Debian Configuration Management System
+
+Package: serial-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: serial-modules
+Depends: kernel-image-3.2.0-4-486-di, pcmcia-modules-3.2.0-4-486-di
+Description: Serial drivers
+
+Package: libnl-3-200-udeb
+Status: install ok unpacked
+Version: 3.2.7-4
+Depends: libc6-udeb (>= 2.13)
+Description: library for dealing with netlink sockets
+
+Package: nic-usb-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: nic-usb-modules
+Depends: kernel-image-3.2.0-4-486-di, nic-shared-modules-3.2.0-4-486-di, nic-wireless-modules-3.2.0-4-486-di, usb-modules-3.2.0-4-486-di, core-modules-3.2.0-4-486-di
+Description: USB NIC drivers
+
+Package: nic-pcmcia-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: nic-pcmcia-modules
+Depends: kernel-image-3.2.0-4-486-di, nic-shared-modules-3.2.0-4-486-di, nic-wireless-modules-3.2.0-4-486-di, pcmcia-modules-3.2.0-4-486-di, mmc-core-modules-3.2.0-4-486-di
+Description: Common PCMCIA NIC drivers
+
+Package: ethdetect
+Status: install ok unpacked
+Version: 1.92
+Provides: ethernet-card-detection
+Depends: rootskel (>= 1.30), cdebconf-udeb (>= 0.38), hw-detect, di-utils (>= 1.13), pciutils-udeb
+Description: Detect network hardware and load kernel drivers for it
+Installer-Menu-Item: 1700
+
+Package: busybox-udeb
+Status: install ok unpacked
+Version: 1:1.20.0-7
+Depends: libc6-udeb (>= 2.13)
+Description: Tiny utilities for the debian-installer
+
+Package: initrd-preseed
+Status: install ok unpacked
+Version: 1.58
+Depends: preseed-common
+Description: load debconf preseed file from /preseed.cfg on the initrd
+
+Package: net-retriever
+Status: install ok unpacked
+Version: 1.32
+Provides: retriever
+Depends: cdebconf-udeb, choose-mirror, configured-network, di-utils (>= 1.58), gpgv-udeb, debian-archive-keyring-udeb
+Description: Fetch modules from the Internet
+
+Package: virtio-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
 Provides: virtio-modules
-Depends: kernel-image-3.16.0-4-586-di, scsi-core-modules-3.16.0-4-586-di
+Depends: kernel-image-3.2.0-4-486-di
 Description: virtio modules
+
+Package: kernel-image-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: kernel-image, rtc-modules
+Description: Linux kernel binary image for the Debian installer
+
+Package: libuuid1-udeb
+Status: install ok unpacked
+Version: 2.20.1-5.3
+Depends: libc6-udeb (>= 2.13)
+Description: stripped down universally unique id library, for debian-installer
+
+Package: archdetect
+Status: install ok unpacked
+Version: 1.92
+Depends: libc6-udeb (>= 2.13), libdebian-installer4-udeb (>= 0.85)
+Description: Hardware architecture detector
+
+Package: save-logs
+Status: install ok unpacked
+Version: 2.49
+Depends: cdebconf-udeb
+Description: save logs and configuration for debug purposes
+Installer-Menu-Item: 94000
+
+Package: mmc-core-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: mmc-core-modules
+Depends: kernel-image-3.2.0-4-486-di, core-modules-3.2.0-4-486-di
+Description: MMC/SD/SDIO core modules
+
+Package: util-linux-udeb
+Status: install ok unpacked
+Version: 2.20.1-5.3
+Depends: libblkid1-udeb (>= 2.16), libc6-udeb (>= 2.13)
+Description: Miscellaneous system utilities
+
+Package: di-utils-reboot
+Status: install ok unpacked
+Version: 1.92+deb7u1
+Depends: cdebconf-udeb
+Description: Reboot
+Installer-Menu-Item: 99500
+
+Package: anna
+Status: install ok unpacked
+Version: 1.44+deb7u1
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.85), cdebconf-udeb
+Description: anna's not nearly apt, but for the Debian installer, it will do
+
+Package: choose-mirror-bin
+Status: install ok unpacked
+Version: 2.45
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.85), cdebconf-udeb
+Description: Choose mirror to install from (program)
+
+Package: pcmciautils-udeb
+Status: install ok unpacked
+Version: 018-8
+Depends: udev-udeb, libc6-udeb (>= 2.13)
+Description: PCMCIA utilities for Linux 2.6
+
+Package: pciutils-udeb
+Status: install ok unpacked
+Version: 1:3.1.9-6
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: Linux PCI Utilities (udeb)
+
+Package: wpasupplicant-udeb
+Status: install ok unpacked
+Version: 1.0-3+b1
+Depends: libc6-udeb (>= 2.13), libcrypto1.0.0-udeb (>= 1.0.0), libnl-3-200-udeb (>= 3.2.7), libnl-genl-3-200-udeb (>= 3.2.7), busybox-udeb
+Description: Client support for WPA and WPA2 (IEEE 802.11i)
+
+Package: cdebconf-newt-terminal
+Status: install ok unpacked
+Version: 0.18
+Provides: cdebconf-terminal
+Depends: cdebconf-newt-udeb (>= 0.146), libc6-udeb (>= 2.13), libnewt0.52
+Description: cdebconf newt plugin to provide a clean terminal
+
+Package: di-utils-terminfo
+Status: install ok unpacked
+Version: 1.92+deb7u1
+Description: Terminfo entries needed by newt/slang in debian installer
+
+Package: nic-shared-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: nic-shared-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: Shared NIC drivers
+
+Package: hw-detect
+Status: install ok unpacked
+Version: 1.92
+Depends: rootskel (>= 1.30), archdetect, cdebconf-udeb (>= 0.75), di-utils (>= 1.73), pciutils-udeb, udpkg (>= 1.14)
+Description: Detect hardware and load kernel drivers for it
+
+Package: libdebian-installer4-udeb
+Status: install ok unpacked
+Version: 0.87
+Depends: libc6-udeb (>= 2.13)
+Description: Library of common debian-installer functions
+
+Package: console-setup-pc-ekmap
+Status: install ok unpacked
+Version: 1.88
+Provides: console-setup-ekmap
+Description: encoded Linux keyboard layouts for PC keyboards
+
+Package: scsi-core-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: scsi-core-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: Core SCSI subsystem
+
+Package: acpi-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: acpi-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: ACPI support modules
+
+Package: media-retriever
+Status: install ok unpacked
+Version: 1.28
+Provides: retriever
+Depends: cdebconf-udeb, mountmedia
+Description: Fetches modules from removable media
+
+Package: installation-locale
+Status: install ok unpacked
+Version: 1.4
+Depends: rootskel
+Description: UTF-8 C locale
+
+Package: crc-modules-3.2.0-4-486-di
+Status: install ok unpacked
+Version: 3.2.41-2
+Provides: crc-modules
+Depends: kernel-image-3.2.0-4-486-di
+Description: CRC modules
+
+Package: env-preseed
+Status: install ok unpacked
+Version: 1.58
+Description: debconf preseeding via environment variables
+
+Package: cdebconf-priority
+Status: install ok unpacked
+Version: 0.182
+Depends: cdebconf-udeb
+Description: Change debconf priority
+Installer-Menu-Item: 93000
+
+Package: netcfg
+Status: install ok unpacked
+Version: 1.108
+Provides: configured-network
+Depends: libc6-udeb (>= 2.13), libdebconfclient0-udeb, libdebian-installer4-udeb (>= 0.86), libiw30-udeb (>= 30~pre1), ethernet-card-detection, wpasupplicant-udeb, crypto-modules, rdnssd-udeb, ndisc6-udeb, wide-dhcpv6-client-udeb
+Description: Configure the network
+Installer-Menu-Item: 1800
 
 Package: file-preseed
 Status: install ok unpacked
-Version: 1.66
+Version: 1.58
 Depends: cdebconf-udeb, di-utils, preseed-common
 Description: load debconf preseed file
 Installer-Menu-Item: 1400
 
+Package: zlib1g-udeb
+Status: install ok unpacked
+Version: 1:1.2.7.dfsg-13
+Description: compression library - runtime for Debian installer
+
+Package: libcrypto1.0.0-udeb
+Status: install ok unpacked
+Version: 1.0.1e-2
+Depends: libc6-udeb (>= 2.13), zlib1g-udeb (>= 1:1.2.3.3.dfsg-1)
+Description: crypto shared library - udeb
+
+Package: libdebconfclient0-udeb
+Status: install ok unpacked
+Version: 0.182
+Depends: libc6-udeb (>= 2.13), cdebconf-udeb
+Description: Debian Configuration Management System (C-implementation)
+
+Package: mountmedia
+Status: install ok unpacked
+Version: 0.22
+Depends: di-utils (>= 1.66)
+Description: Mounts media
+
+Package: bogl-bterm-udeb
+Status: install ok unpacked
+Version: 0.1.18-8+b1
+Depends: libc6-udeb (>= 2.13)
+Description: Ben's Own Graphics Library - graphical terminal
+
 Package: debian-installer
 Status: install ok installed
-Version: netboot-20150422+deb8u2
+Version: netboot-20130430
 Description: debian installation image
 

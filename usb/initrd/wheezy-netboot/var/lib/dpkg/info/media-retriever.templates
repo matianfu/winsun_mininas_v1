@@ -6,7 +6,7 @@ Description-ast.UTF-8: Escaneando mediu estrayible
 Description-be.UTF-8: Прагляд рухомага носьбіта
 Description-bg.UTF-8: Преглеждане на сменяем носител
 Description-bo.UTF-8: སྤྱོད་བདེ་འཇུག་སྣོད་འཚོལ་བཤེར་བྱེད་པ
-Description-bs.UTF-8: Učitavam prenosivi medij
+Description-bs.UTF-8: Učitavam medij
 Description-ca.UTF-8: S'està analitzant el medi extraïble
 Description-cs.UTF-8: Zkoumá se výměnné médium
 Description-cy.UTF-8: Sganio cyfrwng symudol
@@ -24,7 +24,7 @@ Description-ga.UTF-8: Meán inbhainte á scanadh
 Description-gl.UTF-8: Estase a examinar o soporte extraíbel
 Description-he.UTF-8: סורק מדיה נתיקה
 Description-hr.UTF-8: Pregledavam izmjenjive medije
-Description-hu.UTF-8: Külső adathordozó áttekintése
+Description-hu.UTF-8: Eltávolítható médium áttekintése
 Description-id.UTF-8: Memindai media lepas-pasang
 Description-is.UTF-8: Leita á fjarlægjanlegum miðli
 Description-it.UTF-8: Analisi del supporto rimovibile
@@ -54,7 +54,6 @@ Description-sq.UTF-8: Duke kontrolluar suportet e heqshme
 Description-sr.UTF-8: Скенирање изменљивих медијума
 Description-sv.UTF-8: Söker av flyttbart media
 Description-te.UTF-8: వేరుచేయగల మాధ్యమాలను పరిశీలించు
-Description-tg.UTF-8: Сканкунии медиаи ҷудошаванда
 Description-th.UTF-8: กำลังสำรวจข้อมูลในสื่อถอดเสียบ
 Description-tl.UTF-8: Tinatanaw ang removable media
 Description-tr.UTF-8: Taşınabilir ortam taranıyor
@@ -80,8 +79,8 @@ Description-bg.UTF-8: Носителят не може да бъде проче�
  Имаше проблем при четене от сменяемият носител. Проверете дали и поставен правилният носител. Ако продължавате да имате проблеми, може би носителят е повреден.
 Description-bo.UTF-8: སྤྱོད་བདེ་འཇུག་མཛོད་ཀློག་མི་ཐུབ་པ་དང་སྒུལ་ཆས་མ་རྙེད་པ
  སྤྱོད་བདེ་འཇུག་སྣོད་ནས་གྲངས་རྒྱུན་ཀློག་སྐབས་སྐྱོན་ཞིག་ཡོད་པས་འཇུག་སྣོད་དེ་ནང་དུ་བཅུག་ཡོད་པར་དག་ཐེར་བྱེད་རོགས ད་དུང་བཟོ་མ་ཐུབ་ན་ཁྱོད་ཀྱི་འཇུག་སྣོད་ལ་སྐྱོན་ཞིག་ཡོད་སྲིད
-Description-bs.UTF-8: Ne mogu čitati prenosivi medij ili nema upravljačkih programa.
- Došlo je do problema pri čitanju podataka sa prenosivog medija. Molim provjerite da li se u pogonu nalazi odgovarajući medij. Ako i dalje imate probleme, možda imate neispravan prenosivi medij.
+Description-bs.UTF-8: Ne mogu čitati medij ili nema nema upravljačkih programa (drivera).
+ Došlo je do problema pri čitanju podataka sa medija. Molim provjerite da li se u pogonu nalazi odgovarajući medij. Ako nastavite imati probleme, možda imate neispravan medij.
 Description-ca.UTF-8: No es pot llegir el medi extraïble, o no s'han trobat controladors.
  S'ha produït un error en llegir dades des del medi extraïble. Assegureu-vos que el medi correcte és present. Si continueu tenint problemes, és possible que el medi siga defectuós.
 Description-cs.UTF-8: Výměnné médium nelze přečíst, nebo nebyly nalezeny žádné ovladače.
@@ -114,10 +113,10 @@ Description-gl.UTF-8: Non se pode ler o soporte extraíbel, ou non se atoparon c
  Aconteceu un problema ao ler os datos do soporte extraíbel. Asegúrese de que o soporte correcto estea introducido. Se segue a ter problemas, pode ter un soporte defectuoso.
 Description-he.UTF-8: לא מצליח לקרוא מהמדיה הנתיקה או שלא נמצאו מנהלי התקנים.
  יש בעיה בקריאת מידע מהמדיה הנתיקה. וודא כי המדיה הנכונה מחוברת. אם עדיין יש בעיות, כנראה שהמדיה מקולקלת.
-Description-hr.UTF-8: Ne mogu pročitati izmjenjivi medij ili nema upravljačkih programa.
+Description-hr.UTF-8: Ne mogu pročitati izmjenjivi medij, ili nema upravljačkih programa.
  Pojavio se problem u čitanju podataka s izmjenjivog medija. Molim provjerite je li pravi uređaj u pogonu. Ako se problemi nastave, možda imate neispravan medij.
-Description-hu.UTF-8: A külső adathordozó nem olvasható vagy nem található illesztőprogram.
- Hiba történt a külső adathordozó olvasásakor. Kérem, ellenőrizze helyességét. Ha továbbra is gondja van, hibás lehet a külső adathordozója.
+Description-hu.UTF-8: Az eltávolítható médium nem olvasható vagy nincsenek meghajtó-modulok.
+ Hiba történt az eltávolítható médium olvasásakor. Ellenőrizd a médium helyességét. Ha a folytatáskor gond támad, az utalhat arra, hogy az eltávolítható médium hibás.
 Description-id.UTF-8: Tidak dapat membaca media lepas-pasang, atau driver tidak ditemukan.
  Ada masalah saat membaca data dari media lepas-pasang. Pastikan Anda memasukkan media yang benar. Bila Anda terus mendapatkan masalah ini, mungkin media lepas-pasang Anda rusak.
 Description-is.UTF-8: Get ekki lesið fjarlægjanlegan miðil, eða að engir reklar fundust.
@@ -174,8 +173,6 @@ Description-sv.UTF-8: Kan inte läsa flyttbart media, eller inga drivrutiner hit
  Ett problem inträffade när data skulle läsas från flyttbart media. Se till att korrekt media används. Om du fortsätter att ha problem kan det bero på skadat media.
 Description-te.UTF-8: వేరుచేయగల మాధ్యమాలను  చదవటం కుదరలేదు లేక డ్రైవరులు కనబడలేదు.
  వేరుచేయగల మాధ్యమాలను   చదవటంలో సమస్య ఎదురైంది. సరైన మాధ్యమం వున్నట్లుగా ఖచిత పరచుకోండి. సమస్య కొనసాగుతూ వుంటే,  వేరుచేయగల మాధ్యమము చెడిపోయి వుండవచ్చు.
-Description-tg.UTF-8: Медиаи ҷудошаванда хонда намешавад, ё ягон драйвер ёфт нашуд.
- Ҳангоми хониши маълумоти медиаи ҷудошаванда мушкилӣ ба вуҷуд омад. Лутфан, мутмаин шавед, ки медиаи дуруст истифода шудааст. Агар ин мушкилӣ такроран пайдо шавад, мумкин аст, ки медиаи шумо дорои нуқсон мебошад.
 Description-th.UTF-8: ไม่สามารถอ่านสื่อถอดเสียบ หรือหาไดรเวอร์ไม่พบ
  เกิดปัญหาขณะอ่านข้อมูลจากสื่อถอดเสียบ กรุณาตรวจสอบว่าคุณใส่สื่อที่ถูกต้อง ถ้าลองใหม่แล้วยังไม่ได้ ก็หมายความว่าสื่ออาจจะเสีย
 Description-tl.UTF-8: Hindi mabasa ang removable media, o walang natagpuang drivers dito.

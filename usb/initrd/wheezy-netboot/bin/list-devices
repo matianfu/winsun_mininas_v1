@@ -1,5 +1,4 @@
-#! /bin/sh
-set -e
+#! /bin/sh -e
 TYPE="$1"
 
 case $TYPE in

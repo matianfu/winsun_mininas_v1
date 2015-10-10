@@ -1,19 +1,31 @@
 #!/bin/sh -e
 
-if [ -w /sys/kernel/uevent_helper ]; then
-    echo > /sys/kernel/uevent_helper
-fi
+make_extra_nodes() {
+  [ -e /etc/udev/links.conf ] || return 0
+  grep '^[^#]' /etc/udev/links.conf | \
+  while read type name arg1; do
+    [ "$type" -a "$name" -a ! -e "/dev/$name" -a ! -L "/dev/$name" ] ||continue
+    case "$type" in
+      L) ln -s $arg1 /dev/$name ;;
+      D) mkdir -p /dev/$name ;;
+      M) mknod -m 600 /dev/$name $arg1 ;;
+      *) echo "links.conf: unparseable line ($type $name $arg1)" ;;
+    esac
+  done
+}
 
-if ! grep -E -q "^[^[:space:]]+ /dev devtmpfs" /proc/mounts; then
-    mount -n -o mode=0755 -t devtmpfs devtmpfs /dev
-fi
+echo > /sys/kernel/uevent_helper
 
-/lib/systemd/systemd-udevd --daemon --resolve-names=never
+if ! grep -E -q "^[^[:space:]]+ /dev (dev)?tmpfs" /proc/mounts; then
+  mount -n -o mode=0755 -t tmpfs tmpfs /dev
+fi
+make_extra_nodes
+
+udevd --daemon --resolve-names=never
 
 udevadm trigger --action=add
 
-mkdir -p /dev/pts
-mount -t devpts -o noexec,nosuid,gid=5,mode=0620 devpts /dev/pts
+mount /dev/pts
 
 udevadm settle || true
 

@@ -54,7 +54,6 @@ Description-sq.UTF-8: Shkarko skedarin e parakonfigurimit debconf
 Description-sr.UTF-8: Преузми „debconf“ преконфигурациони фајл
 Description-sv.UTF-8: Hämta förkonfigureringsfil för debconf
 Description-te.UTF-8: డెబ్కాన్ఫ్ ముందలి అమరిక ఫైలు   డౌన్ లోడ్
-Description-tg.UTF-8: Боргирӣ кардани файли конфигуратсияи пешакии debconf
 Description-th.UTF-8: ดาวน์โหลดแฟ้มค่าตั้งล่วงหน้าสำหรับ debconf
 Description-tl.UTF-8: Kunin ang debconf talaksang preconfiguration
 Description-tr.UTF-8: Debconf önyapılandırma dosyasını indir
@@ -755,20 +754,6 @@ Description-te.UTF-8: ప్రారంభపు ముందలి అమర�
  పూర్తి స్వయంచాలక స్థాపన చేయాలంటే,  ప్రీసీడ్/ URL నే ప్రీసీడ్ గా ఇవ్వాలి( కెర్నెల్ ఆదేశవరుస, DHCP, లేక మలచుకున్న మాధ్యమంపై syslinux.cfg)
  .
  http://wiki.debian.org/DebianInstaller/Preseed చూడండి స్ఫూర్తి కోసం.
-Description-tg.UTF-8: Ҷойгиршавии файли асосии конфигуратсияи пешакӣ:
- Барои иҷро кардани насбкунии худкор, шумо бояд файли конфигуратсияи пешакиро муайян кунед (ки дар навбати худ метавонад файлҳои дигарро истифода барад). Барои иҷрои ин амал, шумо бояд Суроғаи URL-ро (эҳтимол аст, ки қисман) пешниҳод кунед.
- .
- Ин метавонад ҳамчун номи компютер осон бошад, ки дар он компютер файлҳои худкоршуда то суроғаи пурраи URL ҷойгир мебошанд. Ягонтои зерин метавонад ба кор ояд:
-   intra		[барои example.com, сетои зерин баробар мебошанд]
-   intra.example.com
-   http://intra.example.com/d-i/./lenny/preseed.cfg
-   http://192.168.0.1/~phil/test47.txt
-   floppy://preseed.cfg
-   file:///hd-media/kiosk/./preseed.cfg
- .
- Барои насбкуниҳои пурра худкоршуда, preseed/url бояд худаш худкор шавад (тавассути сатри фармони мағзӣ, DHCP, ё syslinux.cfg дар захирагоҳи фармоишӣ)
- .
- Барои илҳом "http://wiki.debian.org/DebianInstaller/Preseed"-ро бинед.
 Description-th.UTF-8: ตำแหน่งของแฟ้มค่าตั้งล่วงหน้า:
  เพื่อที่จะดำเนินการติดตั้งแบบอัตโนมัติ คุณต้องกำหนดแฟ้มค่าตั้งล่วงหน้ามาด้วยหนึ่งแฟ้ม (ซึ่งแฟ้มนี้อาจไปดึงแฟ้มอื่นๆ มาเพิ่มอีกก็ได้) การป้อนแฟ้มดังกล่าว คุณต้องระบุเป็น URL (ซึ่งอาจไม่ใช่ URL เต็มก็ได้)
  .
@@ -839,7 +824,7 @@ Description-vi.UTF-8: Vị trí tập tin tiền cấu hình ban đầu:
  .
  Xem http://wiki.debian.org/DebianInstaller/Preseed để có ý tưởng.
 Description-zh_CN.UTF-8: 初始预配置文件位置：
- 为了执行自动安装，您需要提供预配置文件(用来依次拉取其他文件)。要做到这，需要提供一个 URL(也可能是一个 URL 的一部分)。
+ 为了执行自动安装，您需要提供预配置文件(用来依次拉取其它文件)。要做到这，需要提供一个 URL(也可能是一个 URL 的一部分)。
  .
  这仅仅简单地就是您放置预置文件的主机名组成一个完整的 URL。下列都可以工作：
    intra		[对于 example.com，那三个是等同的]
@@ -880,6 +865,6 @@ Description: for internal use; can be preseeded
 
 Template: auto-install/defaultroot
 Type: string
-Default: d-i/jessie/./preseed.cfg
+Default: d-i/wheezy/./preseed.cfg
 Description: for internal use; can be preseeded
  Path added to local server to give the preseed root

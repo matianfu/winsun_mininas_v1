@@ -1,5 +1,4 @@
-#! /bin/sh
-set -e
+#! /bin/sh -e
 
 OLD_STDIN="$DEBCONF_OLD_FD_BASE"
 OLD_STDOUT="$(($DEBCONF_OLD_FD_BASE + 1))"

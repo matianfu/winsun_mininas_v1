@@ -31,9 +31,9 @@ check_gtk () {
 	case "$(archdetect)" in
 	# Tested with Uyghur
 	    powerpc/*|amd64/*)
-		local MEMLIMIT=216 ;;	# is 220968kB, qemu -m 229
+		local MEMLIMIT=164 ;;	# is 170 MiB
 	    *)
-		local MEMLIMIT=202 ;;	# is 206212kB, qemu -m 210
+		local MEMLIMIT=134 ;;	# is 140 MiB
 	esac
 
 	if [ $(get_mem) -lt $MEMLIMIT ] ; then

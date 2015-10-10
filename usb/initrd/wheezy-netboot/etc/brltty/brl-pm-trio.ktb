@@ -1,0 +1,4 @@
+title Papenmeier BrailleX Trio
+assign statusKeys 0
+include brl-pm-bar.kti
+include brl-pm-keyboard.kti

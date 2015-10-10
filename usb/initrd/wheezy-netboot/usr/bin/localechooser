@@ -82,7 +82,7 @@ language_display_level() {
 		fi
 		# ASCII only if we are on serial console, dumb, or Mach terminal
 		# Both variables should already be set at init time
-		if [ "$TERM_TYPE" = "serial" ] || [ "$TERM" = "dumb" ] || [ "$TERM" = "mach-gnu-color" ] ; then
+		if [ "$TERM_TYPE" = "serial" ] || [ "$TERM" = "dumb" ] || [ "$TERM" = "mach-color" ] ; then
 			level=0
 		fi
 		;;

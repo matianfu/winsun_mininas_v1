@@ -32,8 +32,3 @@ Type: boolean
 Default: false
 Description: for internal use; can be preseeded
 
-Template: debian-installer/allow_unauthenticated_ssl
-Type: boolean
-Default: false
-Description: for internal use; can be preseeded
-

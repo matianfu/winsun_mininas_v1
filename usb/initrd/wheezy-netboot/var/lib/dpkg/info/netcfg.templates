@@ -23,8 +23,6 @@ Description-be.UTF-8: Наладзіць сетку аўтаматычна?
  Працу з сеткай можна наладжваць самастойна альбо з выкарыстаннем DHCP (ці разнастайных сродкаў IPv6) для аўтаматычнага вызначэння наладак сеткі. Калі Вы aбярэце аўтаналадку, але праграма ўсталявання не зможа атрымаць працоўныя наладкі з Вашай сеткі, Вам будзе дадзеная магчымасць наладзіць сетку самастойна.
 Description-bg.UTF-8: Автоматично настройване на мрежата?
  Мрежата може да бъде настроена или ръчно въвеждане на нужната информация, или автоматично чрез DHCP (или някой от методите за настройка на IPv6). Ако изберете автоматично настройване инсталаторът не успее да настрои мрежата, ще Ви бъде дадена възможност за ръчна настройка.
-Description-bs.UTF-8: Automatski podesiti mrežu?
- Umrežavanje može biti podešeno ručno unošenjem svih informacija ili putem DHCP-a (ili raznih IPv6-specifičnih metoda) da podesite mrežu automatski. Ako izaberete automatsko podešavanje i instaler ne bude u mogućnosti podesiti mrežu tako da radi, dat će Vam se prilika da podesite mrežu ručno.
 Description-ca.UTF-8: Voleu configurar la xarxa automàticament?
  Es pot configurar la xarxa introduint manualment tota la informació o emprant DHCP (o una varietat de mètodes específics per a IPv6) per detectar els paràmetres de xarxa automàticament. Si decidiu emprar l'autoconfiguració i l'instal·lador no és capaç d'obtindre una configuració funcional des de la vostra xarxa, tindreu l'oportunitat de configurar la vostra xarxa manualment.
 Description-cs.UTF-8: Nastavit síť automaticky?
@@ -58,9 +56,9 @@ Description-gl.UTF-8: Desexa configurar automaticamente a rede?
 Description-he.UTF-8: הגדרה אוטומטית של הרשת?
  ניתן להגדיר רשת על ידי הכנסת כל המידע באופן ידני או על ידי שימוש ב-DHCP (או באחת מהשיטות הרבות הזמינות ב-IPv6) לגילוי אוטומטי של הגדרות הרשת. אם תבחר להשתמש בשיטה לגילוי אוטומטי ותוכנית ההתקנה אינה מצליחה לקבל מהרשת הגדרות רשת שעובדות, תקבל הזדמנות להגדיר את הרשת בצורה ידנית.
 Description-hr.UTF-8: Automatski podesi mrežu?
- Umrežavanje može biti podešeno ručnim unošenjem svih podataka ili korištenjem DHCP-a (ili nizom IPv6 specifičnih načina) za automatsko otkrivanje mrežnih postavki. Ako izaberete automatsko podešavanje, a program za instalaciju ne bude mogao dobiti ispravne radne postavke s vaše mreže, ipak ćete moći i ručno podesiti svoju mrežu.
+ Umrežavanje može biti podešeno ručnim unošenjem svih podataka ili korištenjem DHCP-a (ili nizom IPv6 specifičnih načina) za automatsko otkrivanje mrežnih postavki. Ako izaberete automatsko podešavanje, a program za instalaciju ne bude mogao dobiti valjane radne postavke s vaše mreže, ipak ćete moći podesiti svoju mrežu i ručno.
 Description-hu.UTF-8: Megpróbáljam automatikusan beállítani a hálózatot DHCP-vel?
- A hálózat konfigurálása történhet az összes szükséges adat beírásával, vagy automatikusan, DHCP-vel (vagy annak IPv6-specifikus módszereivel). Ha az automata módot választja, de a  telepítő a DHCP-vel nem tudja beállítani a hálózatot, lehetősége lesz a hálózat kézi beállítására.
+ A hálózat konfigurálása történhet DHCP-vel (vagy annak IPv6-specifikus módszereivel), vagy az összes szükséges adat  beírásával. Ha a telepítő DHCP-vel nem tudja beállítani a hálózatot, lehetőséged lesz a hálózat kézi beállítására.
 Description-id.UTF-8: Atur jaringan secara otomatis?
  Jaringan dapat diatur dengan memasukkan informasi secara manual atau dengan DHCP (atau beragam metode IPv6) untuk mendeteksi setelan jaringan secara otomatis. Bila Anda memilih konfigurasi otomatis dan program instalasi tidak mendapatkan konfigurasi dari jaringan, Anda akan diberi kesempatan untuk konfigurasi manual.
 Description-is.UTF-8: Stilla net sjáfvirkt?
@@ -109,8 +107,6 @@ Description-sv.UTF-8: Ska nätverket ställas in automatiskt?
  Inställningar för nätverket kan göras antingen genom att manuellt ange alla detaljer eller genom att använda DHCP (eller olika IPv6-specifika metoder) för att hämta inställningar för nätverket automatiskt.Om du väljer DHCP men installationsprogrammet misslyckas med att hämta fungerande inställningar från en DHCP-server på ditt nätverk så kommer du att få möjlighet att ställa in nätverket manuellt.
 Description-te.UTF-8: నెట్వర్క్ ని  DHCPతో స్వయంచాలకంగాఅమర్చుట
  నెట్వర్క్అమరికలను   DHCP ద్వారా లేక మీరు సమాచారం చేర్చటం ద్వారా చేయవచ్చును. మీరు  DHCP ఎంచుకుంటే, పనిచేయగల అమరిక DHCP సేవిక నుండి పొందలేకపోతే, మీరు సమాచారంచేర్చే అవకాశం ఇవ్వబడుతుంది.
-Description-tg.UTF-8: Шабакаро ба таври худкор танзим мекунед?
- Шумо метавонед шабакаро бо ворид кардани ҳамаи маълумот ба таври дастӣ ё бо истифодаи DHCP (ё усулҳои гуногуни махсус барои IPv6) барои муайян кардани танзимоти шабака ба таври худкор танзим кунед. Агар танзими худкорро интихоб кунед ва барномаи насб натавонад танзими кориро аз шабака гирад, ба шумо имконият пайдо мешавад, ки тавонед шабакаро ба таври дастӣ танзим кунед.
 Description-th.UTF-8: ตั้งค่าเครือข่ายแบบอัตโนมัติหรือไม่?
  คุณสามารถตั้งค่าเครือข่ายโดยป้อนข้อมูลทั้งหมดเอง หรือโดยใช้ DHCP (หรือวิธีการจำเพาะอื่นสำหรับ IPv6) ก็ได้ ถ้าคุณเลือกที่จะตั้งค่าแบบอัตโนมัติ และโปรแกรมติดตั้งไม่สามารถขอค่าตั้งที่ใช้การได้จากเครือข่ายของคุณแล้ว คุณก็ยังมีโอกาสที่จะตั้งค่าเครือข่ายของคุณด้วยตัวเอง
 Description-tr.UTF-8: Ağ otomatik yapılandırılsın mı?
@@ -143,8 +139,8 @@ Description-bg.UTF-8: Домейн:
  Домейнът е частта от Вашия Интернет адрес, която е отдясно на пълното име на хоста. Често е нещо, завършващо на .com, .net, .edu или .org. Ако настройвате домашна мрежа, може да си измислите такъв, но се уверете, че използвате един и същ домейн на всички компютри.
 Description-bo.UTF-8: དྲ་ཁོངས་ཀྱི་མིང：
  དྲ་ཁོངས་ནི་ཁྱོད་ཀྱི་རྩ་འཛུགས་གནས་གཡས་སུ་ཡོད་པའི་དྲ་རྒྱ་ཁ་ཡིག་གི་ཁག་ཞིག་རེད  དུས་རྒྱུན་དེ .com、.net、.edu  ཡང་ན་ .org གིས་མཇུག་ལྡོག་ཡོད ཁྱོད་ཀྱིས་ཁྱིམ་གཞིའི་དྲ་ལམ་ཞིག་སྒྲིག་འཛུགས་བྱེད་དགོས་ན་ཁྱོད་ཀྱིས་གསར་གཏོད་ཅིག་བྱེད་ཆོག་ཡིནའང་ཁྱོད་ཀྱི་རྩིས་འཁོར་ཡོངས་ཀྱི་དྲ་ཁོངས་ངེས་པར་དུ་གཅིག་མཚུངས་ཡིན་དགོས
-Description-bs.UTF-8: Ime domene:
- Ime domene je dio vaše Internet adrese desno od Vašeg host imena.  To je obično nešto što se često završava na .com, .net, .edu, ili .org.  Ako postavljate kućnu mrežu, možete izmisliti nešto, ali pobrinite se da koristite isto ime domene na svim Vašim kompjuterima.
+Description-bs.UTF-8: Domain name:
+ domain name je dio vaše Internet adrese desno od vašeg host namea.  To je ime koje se često završava s .com, .net, .edu ili .org.  Ako postavljate kućnu mrežu, možete izmisliti neko ime, ali pobrinite se da koristite isti domain name na svim vašim kompjuterima.
 Description-ca.UTF-8: Nom del domini:
  El nom de domini és la part de la vostra adreça d'Internet a la dreta del vostre nom d'ordinador. Sovint, aquest acaba en .com, .net, .edu o .org. Si esteu configurant una xarxa domèstica podeu inventar-vos-en un, però assegureu-vos que utilitzeu el mateix nom de domini a tots els ordinadors.
 Description-cs.UTF-8: Název domény:
@@ -239,8 +235,6 @@ Description-sv.UTF-8: Domännamn:
  Domännamnet är den del av din internetadress som finns på höger sida av värdnamnet. Det är ofta något som slutar med .com, .net, .edu .org eller .se. Om du installerar ett nätverk för hemmabruk kan du hitta på någonting, men se till att du använder samma domännamn på alla dina datorer.
 Description-te.UTF-8: డొమైన్ పేరు:
  డొమైన్ పేరు మీ అంతర్జాల చిరునామాలో మీ హోస్ట్ పేరుకి కుడివైపున వున్నది.సాధారణంగా .com, .net .edu  లేక  .org తో అంతమయ్యేది. మీరు హోం నెట్వర్క్ అమర్చుతుంటే, మీరు ఉత్తిగా ఏదైనా చేర్చవచ్చు,కాని అదే పేరు మీ నెట్వర్క్ లో అన్ని కంప్యూటర్లకి వాడాలి.
-Description-tg.UTF-8: Номи домен:
- Номи домен - ин қисми суроғаи Интернет мебошад, ки ба тарафи рости номи мизбони илова карда мешавад. Бисёр вақт он бо .tj, .ru, .com, ё .org (масалан: mydomain.tj) анҷом меёбад.  Агар шумо шабакаи хонагиро танзим кунед, шумо метавонед чизеро ба ҷо оред, аммо мутмаин шавед, ки номи ягонаи доменро дар ҳамаи компютерҳо истифода мебаред.
 Description-th.UTF-8: ชื่อโดเมน:
  ชื่อโดเมนคือส่วนของที่อยู่อินเทอร์เน็ตที่อยู่ถัดจากชื่อโฮสต์ของคุณ โดยส่วนใหญ่จะลงท้ายด้วย .com, .net, .edu, .org หรือ .th  หากคุณแค่กำลังตั้งเครือข่ายในบ้าน คุณอาจสมมุติชื่ออะไรขึ้นมาก็ได้ แต่ขอให้แน่ใจว่าคุณใช้ชื่อโดเมนเหมือนกันทุกเครื่อง
 Description-tl.UTF-8: Domain name:
@@ -282,8 +276,8 @@ Description-bg.UTF-8: Адреси на DNS-сървъри:
  DNS-сървърите се използват за търсене на имена на хостове в мрежата. Моля, въведете IP адреси (не имена на хостове) на не повече от 3 DNS-сървъра, разделени с интервали. Не използвайте запетайки. Първият сървър в списъка ще бъде първият, който ще получава запитванията. Ако не искате да използвате DNS-сървър, просто оставете полето празно.
 Description-bo.UTF-8: དྲ་ཁོངས་ཞབས་ཞུ་བའི་ཁ་ཡིག：
  དྲ་ཁོངས་ཞབས་ཞུ་བ་ནི་དྲ་ཐོག་ཏུ་རྩ་འཛུགས་མིང་འཚོལ་ཞིབ་བྱེད་པར་སྤྱོད་དགོས་པ དྲ་ཁོངས་ཞབས་ཞུ་བ་གསུམ་གྱི་IP ཁ་ཡིག་(རྩ་འཛུགས་མིང་མ་རེད) འཇུག་དགོས དེ་བར་སྟོང་སྤྱད་ནས་འཚམས་དབྱེ་བ་ལས་, སྤྱོད་མི་ཉན། མིང་ཐོའི་ནང་གི་དྲ་ཁོངས་ཞབས་ཞུ་བ་དང་པོ་དེ་དང་པོ་འཚམས་འདྲི་བྱེད་རྒྱུ་ཡིན་པ། ཁྱོད་ཀྱིས་དྲ་ཁོངས་ཞབས་ཞུ་བ་སྤྱོད་མ་འདོད་ན་རེའུ་མིག་འདི་སྟོང་པ་བསྐྱུར་ཆོག
-Description-bs.UTF-8: Adrese servera:
- Ime servera se koristi za prepoznavanje imena računara na mreži. Molimu nesite IP adrese (ne host imena) do 3 imena servera, razdvojene razmacima. Nemojte koristiti zareze. Serveri će biti ispitivani redoslijedom kojim ste ih unijeli. Ako ne želite koristiti ime servera, samo ostavite ovo polje prazno.
+Description-bs.UTF-8: Adrese (DNS) name servera:
+ Name serveri se koriste za prepoznavanje naziva računara na mreži. Molim unesite IP adrese (ne host nameove) do 3 (DNS) name servera, razdvojene razmaknicama. Nemojte koristiti zareze. Serveri će biti ispitivani redoslijedom kojim ste ih unijeli. Ako ne želite koristiti name servere, samo ostavite ovo polje prazno.
 Description-ca.UTF-8: Adreces dels servidors de noms:
  Els servidors de noms s'utilitzen per a cercar els noms dels ordinadors a la xarxa. Introduïu l'adreça IP (i no els noms dels ordinadors) de fins a 3 servidors de noms, separats per espais. No utilitzeu comes. El primer servidor de la llista serà el primer en utilitzar-se. Si no voleu utilitzar cap servidor de noms, simplement deixeu aquest camp en blanc.
 Description-cs.UTF-8: Adresy jmenných serverů:
@@ -319,7 +313,7 @@ Description-he.UTF-8: כתובות שרת שמות:
 Description-hr.UTF-8: Adresa imenskih poslužitelja:
  Imenski poslužitelji (name servers) koriste se za traženje imena računala na mreži. Molim unesite IP adrese (ne imena) do 3 imenska poslužitelja, odvojene razmacima. Ne koristite zareze. Prvi imenski poslužitelj na popisu će biti prvi ispitivan. Ako ne želite koristiti imenske poslužitelje, ostavite prazno.
 Description-hu.UTF-8: Névkiszolgálók címei:
- A névkiszolgálók a hálózaton található gépek neveit oldják fel. Szóközökkel elválasztva meg kell adni legfeljebb 3 névkiszolgáló IP- címét. Vesszőt ne használjon. A listában lévő első  névkiszolgálót kérdezi majd le mindig először a rendszer. Ha nem kíván névkiszolgálót használni, hagyja üresen ezt a mezőt.
+ A névkiszolgálók a hálózaton található gépek neveit oldják fel. Szóközökkel elválasztva meg kell adni legfeljebb 3 névkiszolgáló IP- címét. A listában lévő 1. névkiszolgálót kérdezi majd le mindig először a rendszer. Névkiszolgáló nélküli használat esetén üresen kell hagyni ezt a mezőt.
 Description-id.UTF-8: Alamat server DNS:
  Server DNS digunakan untuk mencari nama host Internet. Silakan masukkan alamat IP (bukan nama host) dari server DNS (maksimum 3 server, dipisahkan dengan spasi, bukan koma). Server pertama merupakan server yang akan digunakan pertama kali. Bila Anda tidak menggunakan server DNS, biarkan ruas ini kosong.
 Description-is.UTF-8: Vistföng nafnaþjóna:
@@ -378,8 +372,6 @@ Description-sv.UTF-8: Namnserveradress:
  Namnservrarna används för att slå upp värdnamn på nätverket. Ange IP-adresserna (inte värdnamnen), åtskilda med blanksteg, på upp till tre namnservrar. Använd inte kommatecken. Den första namnservern i listan kommer att frågas först. Om du inte vill använda någon namnserver ska du lämna det här fältet tomt.
 Description-te.UTF-8: సేమ్ సర్వర్  చిరునామాలు:
  నెట్వర్క్ లో హోస్ట్ పేర్లు వెతకడానికి  నేమ్ సర్వర్లు ఉపయోగపడతాయి. 3  నేమ్ సర్వర్ల వరకు IP చిరునామాలు ( పేర్లు కావు)ఖాళీలతో అంకెలు రూపంలో చేర్చండి. కామాలు వాడవద్దు. మీరు నేమ్ సర్వర్ వాడదలుచుకోకపోతే, ఈ భాగాన్ని  ఖాళీగావదలండి.
-Description-tg.UTF-8: Номҳои суроғаҳои серверҳо:
- Серверҳои номҳо барои пайдо кардани номҳои мизбон дар шабака истифода мешаванд. Лутфан, суроғаҳои IP-и (на ин ки номҳои мизбони) то 3 сервери номро бо фазоҳо ҷудо карда, ворид кунед. Вергулҳоро истифода набаред. Сервери якуми номҳо дар рӯйхат аввалин дархост карда мешавад. Агар шумо нахоҳед, ки ягон сервери номро истифода баред, ин майдонро холӣ монед.
 Description-th.UTF-8: ที่อยู่ของ namer server:
  name server ใช้เปิดหาที่อยู่ของชื่อเครื่องในเครือข่าย กรุณาป้อนหมายเลขไอพี (ไม่ใช่ชื่อโฮสต์) ของ name server โดยป้อนได้ถึง 3 หมายเลข คั่นด้วยช่องว่าง อย่าใช้จุลภาค  name server แรกในรายการ จะเป็นเครื่องแรกที่ถูกถามก่อน หากคุณไม่ต้องการใช้ name server ใดๆ เลย ก็ปล่อยช่องข้อมูลนี้ว่างไว้
 Description-tl.UTF-8: Name server addresses:
@@ -415,7 +407,7 @@ Description-bg.UTF-8: Основен мрежов интерфейс:
 Description-bo.UTF-8: རྩ་བའི་དྲ་ལམ་གྱི་འཇུག་ངོགས：
  ཁྱོད་ཀྱི་མ་ལག་ལ་དྲ་ལམ་གྱི་འཇུག་ངོགས་མང་པོ་ཡོད། དེའི་ནང་ནས་ཅིག་སྒྲིག་འཇུག་སྐབས་དྲ་ལམ་གྱི་རྩ་བའི་འཇུག་ངོགས་ལ་གདམ་དགོས། གལ་སྲིད་སྐྱོན་གཞན་མེད་ཚེ་སྦྲེལ་མཐུད་ཚར་བའི་དྲ་ལམ་འཇུག་ངོགས་དེ་གདམ་རྒྱུ་ཡིན
 Description-bs.UTF-8: Primarni mrežni interfejs:
- Vaš sistem ima višestruke mrežne interfejse. Odaberite jedan koji ćete koristiti kao primarni mrežni interfejs tokom instaliranja. Ako je moguće, prvi pronađeni povezani mrežni interfejs je odabran.
+ Vaš sistem ima višestruke mrežne interfejse. Odaberite jedan koji ćete koristiti kao primarni mrežni interfejs tokom instalacije. Ako je bilo moguće, prvi pronađeni povezani mrežni interfejs je odabran.
 Description-ca.UTF-8: Interfície de xarxa principal:
  El sistema té múltiples interfícies de xarxa. Seleccioneu la que s'ha d'utilitzar com a interfície primària mentre s'instal·la Debian. Si ha estat possible, s'haurà seleccionat la primera interfície de xarxa connectada.
 Description-cs.UTF-8: Primární síťové rozhraní:
@@ -449,9 +441,9 @@ Description-gl.UTF-8: Interface de rede primaria:
 Description-he.UTF-8: ממשק רשת ראשי:
  למערכת שלך יש מספר ממשקי רשת. בחר אחד מהם כממשק הראשי בזמן ההתקנה. אם הדבר אפשרי, ממשק הרשת המחובר הראשון שזוהה נבחר.
 Description-hr.UTF-8: Osnovno mrežno sučelje:
- Vaš sustav ima više mrežnih sučelja. Odredite koje ćete koristiti kao osnovno mrežno sučelje tijekom instalacije Debiana. Ako je moguće, izabrano je prvo pronađeno spojeno mrežno sučelje.
+ Vaš sustav ima više mrežnih sučelja. Odredite koje ćete rabiti kao osnovno mrežno sučelje tijekom instalacije Debiana. Ako je moguće, izabrano je prvo pronađeno spojeno mrežno sučelje.
 Description-hu.UTF-8: Elsődleges hálózati csatoló:
- E gépen több hálózati csatoló van. Válassza ki a telepítéskor használandó elsődleges hálózati csatolót. Az először megtalált csatlakoztatott hálózati csatolót már kiválasztottam (ha ez lehetséges volt).
+ E gépen több hálózati csatoló van. Válaszd ki a telepítéskor használt elsődleges hálózati csatolót. Az először megtalált csatlakoztatott hálózati csatolót már kiválasztottam (ha ez lehetséges volt)
 Description-id.UTF-8: Antarmuka jaringan utama:
  Sistem Anda memiliki beberapa antarmuka jaringan. Pilih satu yang akan digunakan sebagai antarmuka jaringan utama saat instalasi. Jika memungkinkan, antarmuka jaringan pertama yang ditemukan telah dipilih.
 Description-is.UTF-8: Aðal netkort:
@@ -510,8 +502,6 @@ Description-sv.UTF-8: Primärt nätverksgränssnitt:
  Ditt system har flera nätverksgränssnitt. Välj det som ska användas som primärt nätverksgränssnitt under tiden Debian installeras. Det första nätverksgränssnittet som hittades har markerats.
 Description-te.UTF-8: ప్రధాన నెట్వర్క్  సంపర్కం:
  మీ వ్యవస్థలో ఎక్కువ నెట్వర్కు సంపర్కాలున్నాయి. స్థాపనలో  ప్రధాన నెట్వర్క్  సంపర్కంగా వాడటానికి ఒకటిఎంచుకోండి. అనుసంధానింపబడిన మొదటి నెట్వర్క్ సంపర్కం కుదిరితే ఎంచుకోబడుతుంది.
-Description-tg.UTF-8: Интерфейси асосии шабакавӣ:
- Системаи шумо дорои якчанд интерфейси шабакавӣ мебошад. Интерфейсро интихоб кунед, ки ҳангоми насбкунӣ ҳамчун пешфарз истифода мешавад. Агар имконпазир бошад, интерфейси аввалини шабакавии пайдошуда интихоб карда шуд.
 Description-th.UTF-8: อินเทอร์เฟซหลักสำหรับเชื่อมต่อเครือข่าย:
  ระบบของคุณมีอินเทอร์เฟซสำหรับเชื่อมต่อเครือข่ายหลายอินเทอร์เฟซ เลือกอินเทอร์เฟซหนึ่งที่จะใช้เป็นอินเทอร์เฟซหลักระหว่างการติดตั้ง ถ้าเป็นไปได้ โปรแกรมจะเลือกอินเทอร์เฟซแรกที่พบว่ามีการเชื่อมต่อไว้
 Description-tl.UTF-8: Pangunahing network interface:
@@ -582,7 +572,7 @@ Description-he.UTF-8: ESSID אלחוטי ל-${iface}:
 Description-hr.UTF-8: Bežični ESSID za ${iface}:
  ${iface} je bežično mrežno sučelje. Molim unesite ime (ESSID) bežične mreže koju želite da ${iface} koristi. Ako želite koristiti bilo koju dostupnu mrežu, ostavite prazno.
 Description-hu.UTF-8: ${iface} drótnélküli ESSID azonosítója:
- ${iface} egy drótnélküli hálózati csatoló. Kérem, adja meg a drótnélküli hálózat nevét (ESSID), melyet ${iface} csatoló által használna. Ha bármely elérhető hálózat megfelel, hagyja üresen.
+ ${iface} egy drótnélküli hálózati csatoló. Add meg a drótnélküli hálózat nevét (ESSID), melyet ${iface} csatoló által használnál. Ha bármely elérhető hálózat megfelel, hagyd üresen.
 Description-id.UTF-8: ESSID nirkabel untuk ${iface}:
  ${iface} merupakan antarmuka jaringan nirkabel. Silakan masukkan nama (ESSID) jaringan nirkabel yang akan dipakai ${iface}. Jika Anda ingin menggunakan jaringan apa saja yang tersedia biarkan ruas ini kosong.
 Description-is.UTF-8: ESSID þráðlauss nets á ${iface}:
@@ -641,8 +631,6 @@ Description-sv.UTF-8: Trådlös ESSID för ${iface}
  ${iface} är ett trådlöst nätverksgränssnitt. Ange namnet (ESSID) på det trådlösa nätverk som du vill att ${iface} ska använda. Om du vill använda alla tillgängliga nätverk ska du lämna det här fältet tomt.
 Description-te.UTF-8: ${iface}కోసం వైర్లెస్ ESSID:
  ${iface} ఒక వైర్లెస్ నెట్వర్క్ సంపర్కం. ${iface}తో వాడటానికి, పేరు (ESSID) ప్రవేశపెట్టండి.  అందుబాటులో గల ఏదైనా నెట్వర్క్ వాడదలచుకుంటే, ఈ భాగం ఖాళీగా వుంచండి.
-Description-tg.UTF-8: Шабакаи ESSID-и бесим барои ${iface}:
- ${iface} - интерфейси шабакаи бесим мебошад. Лутфан, номи шабакаи бесимеро (the ESSID), ки шумо мехоҳед ${iface} истифода барад, ворид кунед. Агар хоҳед, ки ягон шабакаи дастрасро истифода баред, ин майдонро холӣ монед.
 Description-th.UTF-8: ESSID ของเครือข่ายไร้สายสำหรับ ${iface}:
  ${iface} เป็นอินเทอร์เฟซเครือข่ายไร้สาย กรุณาป้อนชื่อ (ESSID) ของเครือข่ายไร้สายที่จะให้ ${iface} ใช้ ถ้าคุณต้องการใช้เครือข่ายใดก็ได้ที่มีอยู่ ก็ปล่อยช่องนี้ให้ว่างไว้
 Description-tl.UTF-8: Wireless ESSID para sa ${iface}:
@@ -684,10 +672,6 @@ Description-bg.UTF-8: Безжичен ESSID за ${iface}:
  Неуспех при опит за намиране на безжична мрежа.
  .
  ${iface} е безжичен мрежов интерфейс. Въведете името (ESSID) на безжичната мрежа, която желаете да се използва от ${iface}. Ако искате коя да е налична мрежа, оставете полето празно.
-Description-bs.UTF-8: Bežični ESSID za ${iface}:
- Neuspio pokušaj pronalaženja bežične mreže.
- .
- ${iface} je bežični mrežni interfejs. Molim unesite ime (ESSID) bežične mreže koju želite da ${iface} koristiti. Da biste koristili bilo koju dostupnu mrežu, ostavite ovo polje prazno.
 Description-ca.UTF-8: ESSID wireless per a ${iface}:
  Ha fallat l'intent de trobar una xarxa sense fil.
  .
@@ -757,9 +741,9 @@ Description-hr.UTF-8: Bežični ESSID za ${iface}:
  .
  ${iface} je bežično mrežno sučelje. Molim unesite ime (ESSID) bežične mreže koju želite da ${iface} koristi. Za spajanje na bilo koju dostupnu mrežu, ostavite prazno.
 Description-hu.UTF-8: ${iface} drótnélküli ESSID azonosítója:
- Nem leltem drótnélküli hálózatot.
+ Nem leltem drótnélküli hálózatot
  .
- ${iface} egy drótnélküli hálózati csatoló. Adja meg a drótnélküli hálózat nevét (ESSID), melyet ${iface} csatoló által használna. Ha bármely elérhető hálózat megfelel, hagyja üresen.
+ ${iface} egy drótnélküli hálózati csatoló. Add meg a drótnélküli hálózat nevét (ESSID), melyet ${iface} csatoló által használnál. Ha bármely elérhető hálózat megfelel, hagyd üresen.
 Description-id.UTF-8: ESSID nirkabel untuk ${iface}:
  Usaha untuk menemukan jaringan nirkabel telah gagal.
  .
@@ -856,10 +840,6 @@ Description-te.UTF-8: ${iface}కోసం వైర్లెస్ ESSID:
  అందుబాటులో గల వైర్లెస్ నెట్వర్క్లను  కనుగొనే ప్రయత్నం విఫలమైంది.
  .
  ${iface} ఒక వైర్లెస్ నెట్వర్క్ సంపర్కం. ${iface}తో వాడటానికి, పేరు (ESSID) ప్రవేశపెట్టండి.  అందుబాటులో గల ఏదైనా నెట్వర్క్ వాడదలచుకుంటే, ఈ భాగం ఖాళీగా వుంచండి.
-Description-tg.UTF-8: Шабакаи ESSID-и бесим барои ${iface}:
- Кӯшиши пайдо кардани шабакаи дастраси бесим бо нокомӣ дучор шуд.
- .
- ${iface} - интерфейси шабакаи бесим мебошад. Лутфан, номи шабакаи бесимеро (ESSID), ки шумо мехоҳед ${iface} истифода барад ворид кунед. Барои пайваст шудан ба ягон шабакаи дастрас ин майдонро холӣ монед.
 Description-th.UTF-8: ESSID ของเครือข่ายไร้สายสำหรับ ${iface}:
  ไม่สามารถหาเครือข่ายไร้สายที่มีอยู่ได้
  .
@@ -942,7 +922,6 @@ Choices-sl.UTF-8: WEP/Odprto omrežje, WPA/WPA2 PSK
 Choices-sr.UTF-8: WEP/Отворена мрежа, WPA/WPA2 PSK
 Choices-sv.UTF-8: WEP/Öppet nätverk, WPA/WPA2 PSK
 Choices-te.UTF-8: WEP/Open నెట్వర్క్, WPA/WPA2 PSK
-Choices-tg.UTF-8: Шабакаи WEP/Кушод, WPA/WPA2 PSK
 Choices-th.UTF-8: WEP/เครือข่ายเปิด, WPA/WPA2 PSK
 Choices-tr.UTF-8: WEP/Açık Ağ, WPA/WPA2 PSK
 Choices-ug.UTF-8: WEP/ئوچۇق تور, WPA/WPA2 PSK
@@ -965,7 +944,7 @@ Description-bg.UTF-8: Вид безжична мрежа за ${iface}:
 Description-bo.UTF-8: ${iface} ཡི་སྐུད་མེད་དྲ་བའི་དབྱེ་རིགས：
  གལ་སྲིད་དྲ་བ་དེ་སྤྱི་སྤྱོད་དང་ཡང་ན་WEPཡིས་སྲུང་བཞིན་ཡོད་ན་WEP/Openསྤྱོད་རོགས དྲ་བ་དེ་WPA/WPA2 PSK (Pre-Shared Key) ཡིས་སྲུང་བཞིན་ཡོད་ན་WPA/WPA2 སྤྱོད་དགོས
 Description-bs.UTF-8: Vrsta bežične mreže za ${iface}:
- Odaberite WEP/Open ako je mreža otvorena ili zaštićena s WEP. Odaberite WPA/WPA2 ako je mreža zaštićena sa WPA/WPA2 PSK (Pre-Shared Key).
+ Odaberite WEP/Open ako je mreža otvorena ili zaštićena WEPom. Odaberite WPA/WPA2 ako je mreža zaštićena sa WPA/WPA2 PSK (Pre-Shared Key).
 Description-ca.UTF-8: Tipus de xarxa sense fil per a ${iface}:
  Seleccioneu WEP/Oberta si la xarxa és oberta o protegida amb WEP. Seleccioneu WPA/WPA2 si la xara és protegida amb WPA/WPA2 PSK (clau precompartida).
 Description-cs.UTF-8: Typ bezdrátové sítě pro ${iface}:
@@ -999,9 +978,9 @@ Description-gl.UTF-8: Tipo de rede sen fíos para ${iface}:
 Description-he.UTF-8: סוג רשת אלחוטית ל-${iface}:
  בחר WEB/Open אם הרשת פתוחה או מאובטחת על ידי WEP.  בחר WPA/WPA2 אם הרשת מוגנת על ידי WPA/WPA2 PSK (מפתח ששותף מראש).
 Description-hr.UTF-8: Vrsta bežične mreže za ${iface}:
- Izaberite WEP/Otvorena ako je mreža otvorena ili zaštićena WEP-om. Izaberite WPA/WPA2 ako je mreža zaštićena WPA/WPA2 PSK ključem (Pre-Shared Key).
-Description-hu.UTF-8: ${iface} drótnélküli hálózat típusa:
- Válassza a WEP/Open-t ha a hálózat nyitott vagy WEP által védett. Válassza a WPA/WPA2 lehetőséget, ha a hálózat WPA/WPA2 PSK (elő-megosztott kulcs) által védett.
+ Odaberite WEP/Otvorena ako je mreža otvorena ili zaštićena WEP-om. Odaberite WPA/WPA2 ako je mreža zaštićena WPA/WPA2 PSK ključem (Pre-Shared Key).
+Description-hu.UTF-8: ${iface} drótnélküli hálózattípus:
+ Válaszd a WEP/Open-t ha a hálózat nyitott vagy WEP által védett. Válaszd a WPA/WPA2 lehetőséget, ha a hálózat WPA/WPA2 PSK (elő-megosztott kulcs) által védett.
 Description-id.UTF-8: ESSID nirkabel untuk ${iface}:
  Pilih WEP/Open jika jaringan terbuka atau terkunci dengan WEP. Pilih WPA/WPA2 jika jaringan terlindungi dengan WPA/WPA2 PSK (Pre-Shared Key)
 Description-is.UTF-8: Tegund þráðlauss nets á ${iface}:
@@ -1052,8 +1031,6 @@ Description-sv.UTF-8: Nätverkstyp för trådlöst nätverk ${iface}:
  Välj WEP/Öppet om nätverket är öppet eller skyddat med WEP. Välj WPA/WPA2 om nätverket är skyddat med WPA/WPA2 PSK (delad nyckel (Pre-Shared Key)).
 Description-te.UTF-8: ${iface}కోసం వైర్లెస్ నెట్వర్క్ రకం:
  WEP/Open  ఎంచుకో, నెట్వర్క్ స్వేచ్ఛమైనది లేక  WEP తో సురక్షితమైనదైతే.  WPA/WPA2 ఎంచుకో, WPA/WPA2 PSK తో నెట్వర్క్ సురక్షితము చేయబడినట్లైతే (ముందుగా పంచబడిన కీ).
-Description-tg.UTF-8: Намуди шабакаи бесим барои ${iface}:
- Агар шабака кушода ё бо WEP муҳофизатшуда бошад, WEP/Open-ро интихоб кунед. Агар шабака бо WPA/WPA2 PSK (калиди мубодилашуда) муҳофизатшуда бошад, WPA/WPA2-ро интихоб кунед.
 Description-th.UTF-8: ชนิดของเครือข่ายไร้สายสำหรับ ${iface}:
  เลือก WEP/เครือข่ายเปิด ถ้าเครือข่ายเป็นแบบเปิดหรือมีการรักษาความปลอดภัยด้วย WEP เลือก WPA/WPA2 ถ้าเครือข่ายรักษาความปลอดภัยด้วย WPA/WPA2 PSK (กุญแจที่แบ่งปันล่วงหน้า)
 Description-tr.UTF-8: ${iface} aygıtının kablosuz ağ türü:
@@ -1126,11 +1103,11 @@ Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་སྒྲ�
 Description-bs.UTF-8: WEP ključ za bežični uređaj ${iface}:
  Ako je potrebno, molim unesite WEP sigurnosni ključ za bežični uređaj ${iface}. To možete učiniti na dva načina:
  .
- Ako je vaš WEP ključ oblika 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn', ili 'nnnnnnnn', gdje je n broj, samo ga unesite kakav jeste u ovo polje.
+ Ako je vaš WEP ključ oblika 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn' ili 'nnnnnnnn', gdje je n broj, samo ga unesite kakav jeste u ovo polje.
  .
- Ako je Vaš WEP ključ u obliku fraze za šifru, dodajte mu prefix 's:' (bez navodnika).
+ Ako je vaš WEP ključ u obliku fraze za šifru, dodajte mu prefix 's:' (bez navodnika).
  .
- Naravno, ako nema WEP ključa za Vašu bežičnu vezu, ostavite ovo polje prazno.
+ Naravno, ako nema WEP ključa za vašu bežičnu vezu, ostavite ovo polje prazno.
 Description-ca.UTF-8: Clau WEP per a la interfície sense fil ${iface}:
  Si s'aplica, introduïu la clau de seguretat WEP per al dispositiu sense fil ${iface}. Hi ha dos maneres de fer açò:
  .
@@ -1262,13 +1239,13 @@ Description-he.UTF-8: מפתח WEP להתקן אלחוטי ${iface}:
 Description-hr.UTF-8: WEP ključ za bežični uređaj ${iface}:
  Ako je potrebno, molim unesite sigurnosni WEP ključ za bežični uređaj ${iface}. To možete na dva načina:
  .
- Ako je vaš WEP ključ u obliku 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn', ili 'nnnnnnnn', gdje je n broj, samo ga unesite u ovo polje kakav jest.
+ Ako je vaš WEP ključ u formatu 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn', ili 'nnnnnnnn', gdje je n broj, samo ga unesite u ovo polje kakav jest.
  .
- Ako je vaš WEP ključ u obliku lozinke, dodajte mu 's:' na početak (bez navodnika).
+ Ako je vaš WEP ključ u formatu lozinke, dodajte mu 's:' na početak (bez navodnika).
  .
  Naravno, ako nema WEP ključa za vašu bežičnu mrežu, ostavite prazno.
 Description-hu.UTF-8: ${iface} drótnélküli eszköz WEP-kulcsa:
- Adja meg a ${iface} drótnélküli eszköz biztonsági WEP-kulcsát (ha van). Ezt kétféle módon teheti:
+ Add meg a ${iface} drótnélküli eszköz biztonsági WEP-kulcsát (ha van). Ezt kétféle módon teheted:
  .
  Ha a WEP-kulcs 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn' vagy 'nnnnnnnn' formátumú (az n-ek helyén számok állnak), akkor úgy kell beírni, ahogy van.
  .
@@ -1507,14 +1484,6 @@ Description-te.UTF-8: ${iface} వైర్లెస్ డివైస్  క�
  WEP కీ  రహస్య పదంరూపంలో వుంటే  ,  's:'(కొటేషన్లు వద్దు) తరవాత చేర్చి ప్రవేశపెట్టండి .
  .
  మీ నెట్వర్క్ కి WEP కీ లేకపోతే , ఈ భాగం ఖాళీగా వుంచండి.
-Description-tg.UTF-8: Калиди WEP барои дастгоҳи бесими ${iface}:
- Агар лозим бошад, калиди амнияти WEP-ро барои дастгоҳи бесими ${iface} ворид кунед. Барои ин ду тариқ дастрасанд:
- .
- Агар калиди WEP дар формати 'nnnn-nnnn-nn', 'nn:nn:nn:nn:nn:nn:nn:nn' ё 'nnnnnnnn' (n = рақам) бошад, онро чӣ хеле ки ҳаст ба ин майдон ворид кунед.
- .
- Агар калиди WEP-и шумо дар формати гузарвожа бошад, ба он префикси 's:'-ро (бе фосила) илова кунед.
- .
- Албатта, агар шабакаи бесими шумо калиди WEP-ро истифода набарад, ин майдонро холӣ монед.
 Description-th.UTF-8: กุญแจ WEP สำหรับอุปกรณ์ไร้สาย ${iface}:
  หากจำเป็นต้องใช้ กรุณาป้อนกุญแจนิรภัยแบบ WEP สำหรับอุปกรณ์ไร้สาย ${iface} มีวิธีป้อนกุญแจนี้ได้สองวิธี:
  .
@@ -1597,7 +1566,7 @@ Description-bg.UTF-8: Невалиден ключ WEP
 Description-bo.UTF-8: ནུས་མེད་ཀྱི་ WEP ལྡེ་མིག
  WEP ལྡེ་མིག་ '${wepkey}' ནུས་མེད་ཡིན་པས་འོག་གི་འཆར་ལམ་གྱི་གསལ་བཤད་ལ་ཞིབ་ཏུ་བལྟས་ནས་WEP དག་བཅོས་བྱེད་པ་དང་བསྐྱར་དུ་འཇུག་དགོས
 Description-bs.UTF-8: Neispravan WEP ključ
- WEP ključ '${wepkey}' je neispravan. Molim pažljivo pročitajte upute na sljedećem ekranu o tome kako da unesete ispravno Vaš WEP ključ i pokušajte ponovo.
+ WEP ključ '${wepkey}' je neispravan. Molim pažljivo pročitajte upute na sljedećem ekranu o tome kako da unesete ispravno vaš WEP ključ i pokušajte ponovo.
 Description-ca.UTF-8: La clau WEP és invàlida
  La clau WEP «${wepkey}» és invàlida. Si us plau, consulteu les instruccions de la següent pantalla per a veure com s'introdueix la vostra clau WEP correctament, i torneu-ho a provar.
 Description-cs.UTF-8: Neplatný WEP klíč
@@ -1630,10 +1599,10 @@ Description-gl.UTF-8: Chave WEP non válida
  A chave WEP «${wepkey}» non é válida. Por favor, lea amodo as instrucións da seguinte páxina para saber como introducir correctamente a chave WEP, e volva tentalo.
 Description-he.UTF-8: מפתח WEP לא תקין
  מפתח ה-WEP '${wepkey}' אינו תקין. קרא היטב את ההוראות במסך הבא כיצד להכניס את מפתח ה-WEP שלך באופן תקין, לאחר מכן, נסה שוב.
-Description-hr.UTF-8: Neispravan WEP ključ
- WEP ključ '${wepkey}' nije ispravan. Molim, pozorno pročitajte naputak na sljedećem zaslonu kako ispravno unijeti WEP ključ i pokušajte iznova.
-Description-hu.UTF-8: Érvénytelen WEP-kulcs
- A WEP-kulcs (${wepkey}) érvénytelen. A következő képernyőn mutatott szabályok szerint újból megadható.
+Description-hr.UTF-8: Nevaljan WEP ključ
+ WEP ključ '${wepkey}' nije valjan. Molim, pozorno pročitajte naputak na sljedećem zaslonu kako ispravno unijeti WEP ključ i pokušajte iznova.
+Description-hu.UTF-8: Rossz WEP-kulcs
+ A WEP-kulcs (${wepkey}) érvénytelen. Az alábbi szabályok szerint újból megadható.
 Description-id.UTF-8: Kunci WEP tidak sah
  Kunci WEP '${wepkey}' tidak sah. Silakan baca petunjuk pada layar berikut tentang cara memasukkan kunci WEP dengan benar dan coba lagi.
 Description-is.UTF-8: Ógildur WEP-lykill
@@ -1690,8 +1659,6 @@ Description-sv.UTF-8: Ogiltig WEP-nyckel
  WEP-nyckeln "${wepkey}" är ogiltig. Läs noggrant instruktionerna på nästa skärm om hur du på ett korrekt sätt anger din WEP-nyckel och försök igen.
 Description-te.UTF-8: సరిపోని WEP కీ 
  WEP కీ'${wepkey}'సరిపోలేదు. WEP  కీ  ఎలా ప్రవేశపెట్టాలో, తరువాతి తెరలో  ఇచ్చిన సూచనలు జాగ్రత్తగా   పాటించి, మరల ప్రయత్నించండి.
-Description-tg.UTF-8: Калиди WEP-и нодуруст
- Калиди WEP '${wepkey}' беэътибор аст. Лутфан, барои дуруст ворид кардани калиди WEP ба дастурҳои дар экрани навбатӣ муроҷиат кунед ва амалро такрор намоед.
 Description-th.UTF-8: กุญแจ WEP ไม่ถูกต้อง
  กุญแจ WEP '${wepkey}' ไม่ถูกต้อง กรุณาอ่านคำอธิบายในหน้าจอถัดไปอย่างละเอียด เกี่ยวกับวิธีการป้อนกุญแจ WEP อย่างถูกต้อง แล้วลองอีกครั้ง
 Description-tl.UTF-8: Hindi tanggap ang WEP key
@@ -1725,7 +1692,7 @@ Description-bg.UTF-8: Грешна парола
 Description-bo.UTF-8: གསང་གྲངས་མ་འགྲིག་པ
  WPA/WPA2 PSK གསང་གྲངས་རིང་དྲག་པ(འབྲུ་64 བརྒལ་བ) ཡང་ན་མཐུང་དྲག་(འབྲུ་8 ལས་ཉུང་པ)
 Description-bs.UTF-8: Neispravna lozinka
- WPA/WPA2 PSK ključ je ili predug (više od 64 znakova) ili prekratak (manje od 8 znakova).
+ WPA/WPA2 PSK ključ je ili predug (više od 64 karaktera) ili prekratak (manje od 8 karaktera).
 Description-ca.UTF-8: La frase de pas no és vàlida
  La frase de pas WPA/WPA2 és o bé massa llarga (més de 64 caràcters) o massa curta (menys de 8 caràcters).
 Description-cs.UTF-8: Neplatná přístupová fráze
@@ -1812,12 +1779,10 @@ Description-sv.UTF-8: Ogiltig lösenfras
  Lösenfrasen för WPA/WPA2 PSK var antingen för lång (över 64 tecken) eller för kort (färre än 8 tecken).
 Description-te.UTF-8: చెల్లని రహస్యపదం
  WPA/WPA2 PSK రహస్యపదం మరీ పొడుగు (64 అక్షరాలకన్నా ఎక్కువ) లేక మరీ చిన్నది(8 అక్షరాలకన్నాతక్కువ).
-Description-tg.UTF-8: Гузарвожаи нодуруст
- Эҳтимол аст, ки гузарвожаи WPA/WPA2 PSK хеле дароз (зиёда аз 64 аломат) ё хеле кӯтоҳ (кам аз 8 аломат) мебошад.
 Description-th.UTF-8: วลีรหัสผ่านผิดพลาด
  วลีรหัสผ่าน WPA/WPA2 PSK ยาวเกินไป (เกิน 64 ตัวอักษร) หรือสั้นเกินไป (ต่ำกว่า 8 ตัวอักษร)
 Description-tr.UTF-8: Geçersiz geçiş parolası
- Girdiğiniz WPA/WPA2 PSK anahtarı ya çok uzun (64 karakterden daha uzun) ya da çok kısa (8 karakterden daha kısa).
+ Girdiğiniz WPA/WPA2 PSK anahtarı ya çok uzun (64 karakterden daha uzun) ya da çok kısa (8 karakterden daha kısa)
 Description-ug.UTF-8: ئىناۋەتسىز ئىم
  WPA/WPA2 PSK ئىمى بەك ئۇزۇن(64 ھەرىپتىن جىق) ياكى بەك قىسقا(8 ھەرپتىن كىچىك).
 Description-uk.UTF-8: Непридатна ключова фраза
@@ -1845,7 +1810,7 @@ Description-bg.UTF-8: Ключ за WPA/WPA2 за безжично устрой�
 Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་སྒྲིག་ཆས་${iface} ཡི་WPA/WPA2 གསང་གྲངས：
  WPA/WPA2 PSK ལ་གསང་གྲངས་འཇུག་ནས་བདེན་དཔངས་བྱེད་པ། གསང་གྲངས་འདི་ནི་ཁྱོད་ཀྱིས་སྐུད་མེད་དྲ་བ་ལ་དམིགས་འཛུགས་བྱས་པ་དེ་དང་ཆ་ཡིན
 Description-bs.UTF-8: WPA/WPA2 lozinka za bežični uređaj ${iface}:
- Unesite ključ za WPA/WPA2 PSK verifikaciju. Ovo bi trebao biti ključ za bežičnu mrežu koju želite koristiti.
+ Unesite ključ za WPA/WPA2 PSK autentikaciju. Ovo bi trebao biti ključ za bežičnu mrežu koju želite koristiti.
 Description-ca.UTF-8: Frase de pas WPA/WPA2 per a la interfície sense fil ${iface}:
  Introduïu la frase de pas per a l'autenticació amb WPA/WPA2 PSK. Això hauria de ser la frase de pas definida per a la xarxa sense fil que esteu intentant emprar.
 Description-cs.UTF-8: Přístupová WPA/WPA2 fráze pro bezdrátové zařízení ${iface}:
@@ -1881,7 +1846,7 @@ Description-he.UTF-8: משפט סיסמה WPA/WPA2 להתקן אלחוטי ${ifa
 Description-hr.UTF-8: WPA/WPA2 lozinka za bežični uređaj ${iface}:
  Unesite lozinku za WPA/WPA2 PSK provjeru podataka. Ovo bi trebala biti lozinka definirana za bežičnu mrežu na koju se pokušavate spojiti.
 Description-hu.UTF-8: ${iface} drótnélküli eszköz WPA/WPA2 jelmondata:
- Adja meg a jelmondatot a WPA/WPA2 PSK hitelesítéshez. Ez a használni kívánt drótnélküli hálózathoz megadott jelmondat kell legyen.
+ Add meg a jelmondatot a WPA/WPA2 PSK hitelesítéshez. Ez a használni kívánt drótnélküli hálózathoz megadott jelmondat kell legyen.
 Description-id.UTF-8: Kunci WEP untuk piranti nirkabel ${iface}:
  Masukkan kata sandi untuk otentifikasi WPA/WPA2 PSK. Ini adalah kata sandi yang didefenisikan untuk jaringan irkabel yang anda coba untuk gunakan
 Description-is.UTF-8: WPA/WPA2 lykilfrasi fyrir þráðlausa kortið ${iface}:
@@ -1932,8 +1897,6 @@ Description-sv.UTF-8: WPA/WPA2-lösenfras för trådlösenhet ${iface}:
  Ange lösenfras för WPA/WPA2 PSK identifiering. Detta ska vara lösenfrasen som är angiven för det trådlösa nätverk som du försöker använda.
 Description-te.UTF-8: ${iface} వైర్లెస్ డివైస్  కొరకు WPA/WPA2  రహస్యపదం:
  WPA/WPA2 PSK ధృవీకరణ కొరకు రహస్యపదం ప్రవేశపెట్టుము. ఇది మీరు సంపర్కంచేయదలచుకున్న వైర్లెస్ నెట్వర్క్ కు నిర్వచించినది
-Description-tg.UTF-8: Гузарвожаи WPA/WPA2 барои дастгоҳи бесими ${iface}:
- Гузорвожаро барои санҷиши ҳаққонияти WPA/WPA2 PSK ворид кунед. Шумо бояд гузарвожаеро ворид кунед, ки барои шабакаи бесими муайян таъин карда шудааст.
 Description-th.UTF-8: วลีรหัสผ่าน WPA/WPA2 สำหรับอุปกรณ์ไร้สาย ${iface}:
  ป้อนวลีรหัสผ่านสำหรับยืนยันตัวบุคคลแบบ WPA/WPA2 PSK ซึ่งเป็นวลีรหัสผ่านที่กำหนดไว้สำหรับเครือข่ายไร้สายที่คุณกำลังพยายามจะใช้
 Description-tr.UTF-8: Kablosuz ${iface} aygıtı için WPA/WPA2 geçiş parolası:
@@ -1962,8 +1925,6 @@ Description-be.UTF-8: Няслушны ESSID
  ESSID "${essid}" з'яўляецца памылковым. Імёны ESSID могуць складацца не больш як з ${max_essid_len} знакаў, але могуць утрымліваць любыя тыпы знакаў.
 Description-bg.UTF-8: Невалиден ESSID
  Името на мрежа (ESSID) „${essid}“ е невалиден. ESSID може да бъде до ${max_essid_len} знака. Позволени са всякакви знаци.
-Description-bs.UTF-8: Neispravni ESSID
- ESSID "${essid}" je neispravan. ESSID mogu biti do ${max_essid_len} znakova, ali mogu sadržavati sve vrste znakova.
 Description-ca.UTF-8: L'ESSID no és vàlid
  L'ESSID «${essid}» és invàlid. Els ESSID només poden contindre fins a ${max_essid_len} caràcters, però poden contindre qualsevol tipus de caràcters.
 Description-cs.UTF-8: Neplatné ESSID
@@ -1996,10 +1957,10 @@ Description-gl.UTF-8: ESSID non válido
  O ESSID «${essid}» non é válido. Os ESSID só poden ter até  ${max_essid_len} caracteres, pero poden ter todo tipo de caracteres.
 Description-he.UTF-8: ESSID לא תקין
  ה-ESSID "${essid}" אינו תקין. ESSID-ים מוגבלים לעד ${max_essid_len} תווים, אך יכולים להכיל תווים מסוגים רבים.
-Description-hr.UTF-8: Neispravan ESSID
- ESSID "${essid}" nije ispravan. ESSID može biti veličine do ${max_essid_len} znaka i može sadržavati sve vrste znakova.
-Description-hu.UTF-8: Érvénytelen ESSID
- Az "${essid}" ESSID érvénytelen. Egy ESSID-k legfeljebb ${max_essid_len} karakterből állhat, bár tetszőleges karaktert tartalmazhat.
+Description-hr.UTF-8: Nevaljan ESSID
+ ESSID "${essid}" nije valjan. ESSID-i mogu biti veličine do ${max_essid_len} znaka i mogu sadržavati sve vrste znakovlja.
+Description-hu.UTF-8: Hibás ESSID
+ Az "${essid}" ESSID hibás. Egy ESSID-k legfeljebb ${max_essid_len} karakterből állhat, bár tetszőleges karaktert tartalmazhat.
 Description-id.UTF-8: ESSID tidak sah
  ESSID "${essid}" tidak sah. ESSID hanya boleh sepanjang maksimum  ${max_essid_len} karakter, tetapi dapat berisi karakter apa saja.
 Description-is.UTF-8: Ógilt ESSID
@@ -2048,8 +2009,6 @@ Description-sv.UTF-8: Ogiltig ESSID
  ESSID-strängen "${essid}" är ogiltig. ESSID får bara vara upp till ${max_essid_len} tecken långa men de får innehålla vilka tecken som helst.
 Description-te.UTF-8: సరిపోని ESSID
  ESSID "${essid}" సరిపోలేదు. ESSIDలుఅన్ని రకాల అక్షరాలతో మిళితమై పరిమాణంలో ${max_essid_len} అక్షరాల వరకే సీమితంగా వుంటాయి.
-Description-tg.UTF-8: ESSID-и нодуруст
- ESSID "${essid}" нодуруст аст. ESSID-ҳо метавонанд танҳо то ${max_essid_len} аломат дар бар гиранд, аммо метавонанд тамоми аломатҳои гуногунро истифода баранд.
 Description-th.UTF-8: ESSID ไม่ถูกต้อง
  ESSID "${essid}" ไม่ถูกต้อง  ESSID ยาวได้ไม่เกิน ${max_essid_len} อักขระ และสามารถมีอักขระชนิดใดก็ได้
 Description-tr.UTF-8: Geçersiz ESSID
@@ -2091,7 +2050,7 @@ Description-ga.UTF-8: Ag iarraidh eochracha a mhalartú leis an bpointe rochtana
 Description-gl.UTF-8: Estase tratando de intercambiar claves co punto de acceso
 Description-he.UTF-8: מנסה להחליף מפתחות עם נקודת גישה...
 Description-hr.UTF-8: Pokušavam razmijeniti ključeve s pristupnom točkom...
-Description-hu.UTF-8: Kulcscsere kísérlet az elérési ponttal...
+Description-hu.UTF-8: Kulcscsere kísérlet az elérési ponthoz...
 Description-id.UTF-8: Mencoba untuk bertukar kunci dengan akses point
 Description-is.UTF-8: Reyni að skiptast á lyklum við aðgangspunkt...
 Description-it.UTF-8: Tentativo di scambio delle chiavi con l'access point...
@@ -2117,7 +2076,6 @@ Description-sl.UTF-8: Poskus izmenjave ključev z dostopno točko ...
 Description-sr.UTF-8: Покушај размене кључа са приступном тачком...
 Description-sv.UTF-8: Försöker utbyta nycklar med accesspunkten...
 Description-te.UTF-8: సంపర్క బిందువుతో కీల మార్పిడి ప్రయత్నం...
-Description-tg.UTF-8: Дар ҳоли мубодилаи калидҳо бо нуқтаи дастрас...
 Description-th.UTF-8: กำลังพยายามแลกเปลี่ยนกุญแจกับ access point...
 Description-tr.UTF-8: Erişim noktasıyla anahtar takası yapılmaya çalışılıyor...
 Description-ug.UTF-8: زىيارەت نۇقتىسى بىلەن ئاچقۇچلارنى ئالماشتۇرۇۋاتىدۇ.
@@ -2182,7 +2140,6 @@ Description-sq.UTF-8: Kjo mund të kërkojë pak kohë.
 Description-sr.UTF-8: Ово може потрајати неко време.
 Description-sv.UTF-8: Det här kan ta lite tid.
 Description-te.UTF-8: ఈ పని కి చాలా సమయం పట్టవచ్చు.
-Description-tg.UTF-8: Ин метавонад якчанд лаҳза гирад.
 Description-th.UTF-8: อาจใช้เวลาสักครู่
 Description-tl.UTF-8: Maaaring magtagal ito.
 Description-tr.UTF-8: Bu işlem biraz zaman alabilir.
@@ -2244,7 +2201,6 @@ Description-sl.UTF-8: Povezava WPA/WPA2 je uspela
 Description-sr.UTF-8: WPA/WPA2 конекција је успела
 Description-sv.UTF-8: WPA/WPA2-asnlutning lyckades
 Description-te.UTF-8: WPA/WPA2 బంధం విజయవంతం
-Description-tg.UTF-8: WPA/WPA2 бомуваффақият пайваст шудааст
 Description-th.UTF-8: เชื่อมต่อ WPA/WPA2 สำเร็จแล้ว
 Description-tr.UTF-8: WPA/WPA2 bağlantısı kuruldu
 Description-ug.UTF-8: WPA/WPA2 باغلىنىشى مۇۋەپپەقىيەتلىك بولدى
@@ -2305,7 +2261,7 @@ Description-he.UTF-8: כשלון בהחלפת מפתחות ושיוכם
 Description-hr.UTF-8: Neuspješna razmjena ključeva i pridruživanje
  Razmjena ključeva i pridruživanje pristupnoj točki nije uspjelo. Molim provjerite WPA/WPA2 parametre koje ste unijeli.
 Description-hu.UTF-8: Sikertelen kulcscsere és társítás
- A kulcscsere és társítás az elérési ponthoz sikertelen. Kérem, ellenőrizze a megadott WPA/WPA2 paramétereket.
+ A kulcscsere és társítás az elérési ponthoz sikertelen. Ellenőrizd a megadott WPA/WPA2 paramétereket.
 Description-id.UTF-8: Gagal bergabung dan bertukar kunci
  Gagal saat pertukaran kunci dan penggabungan dengan akses point. Silakan cek parameter WPA/WPA2 yang anda sediakan
 Description-is.UTF-8: Lyklaskipti og samtenging mistókst
@@ -2356,8 +2312,6 @@ Description-sv.UTF-8: Misslyckades vid nyckelutbyte och nyckelsammankoppling
  Utbytet av nycklar och sammankopplingen med accesspunkten misslyckades. Vänligen kontrollera WPA/WPA2-parametrarna som du angav.
 Description-te.UTF-8: కీ మార్పు మరియు జతచేయటం విఫలం
  సంపర్క బిందువుతో కీ మార్పు మరియు జతచేయుట విఫలం. దయచేసి మీరు ప్రవేశపెట్టిన WPA/WPA2 పరామితులు సరిచూడండి
-Description-tg.UTF-8: Мубодила ва муносибати калид қатъ карда шудааст
- Мубодила ва муносибати калид бо нуқтаи дастрас қатъ карда шудааст. Лутфан, параметрҳои WPA/WPA2-ро ки шумо таъин кардед санҷед.
 Description-th.UTF-8: แลกเปลี่ยนกุญแจและเชื่อมโยงไม่สำเร็จ
  แลกเปลี่ยนกุญแจและเชื่อมโยงกับ access point ไม่สำเร็จ กรุณาตรวจสอบพารามิเตอร์ WPA/WPA2 ที่คุณป้อน
 Description-tr.UTF-8: Başarısız anahtar takası ve ilişkilendirmesi
@@ -2406,7 +2360,7 @@ Description-bo.UTF-8: རྩ་འཛུགས་མིང：
 Description-bs.UTF-8: Hostname:
  Molim unesite hostname za ovaj sistem.
  .
- Hostname je jedna riječ koja identificira Vaš sistem na mreži. Ako ne znate kakav bi trebao biti Vaš hostname, konsultirajte Vašeg mrežnog administratora. Ako postavljate Vašu vlastitu kućnu mrežu, onda možete izmisliti nešto.
+ Hostname je jedna riječ koja identifikuje vaš sistem na mreži.  Ako ne znate kakav bi trebao biti vaš hostname, konsultirajte vašeg mrežnog administratora.  Ako postavljate vašu vlastitu kućnu mrežu, onda možete izmisliti nešto ovdje.
 Description-ca.UTF-8: Nom:
  Si us plau, introduïu el nom que voleu assignar a aquest sistema.
  .
@@ -2476,9 +2430,9 @@ Description-hr.UTF-8: Ime računala:
  .
  Ime računala je jedna riječ koja identificira vaše računalo na mreži. Ako ne znate kakvo ono treba biti, pitajte svog mrežnog administratora. Ako podešavate svoju kućnu mrežu, možete ga proizvoljno odrediti.
 Description-hu.UTF-8: Gépnév:
- Adja meg a rendszer gépnevét.
+ Add meg a rendszer gépnevét.
  .
- A gépnév egy szó, mely a hálózatban azonosítja a rendszerét. Ha nem tudja, mi legyen a gépnév, beszéljen a hálózati rendszergazdájával. Saját, otthoni hálózat esetén bármi lehet.
+ A gépnév egy szó, mely a hálózatban azonosítja a rendszert. Ha nem tudod, mi legyen a gépnév, a hálózati rendszergazda segít. Saját, otthoni hálózat esetén bármi lehet.
 Description-id.UTF-8: Nama host:
  Silakan masukkan nama host untuk sistem ini.
  .
@@ -2595,10 +2549,6 @@ Description-te.UTF-8: హోస్ట్ పేరు:
  ఈ వ్యవస్థకి హోస్ట్ పేరు ప్రవేశ పెట్టండి.
  .
  హోస్ట్ పేరు మీ వ్యవస్థకి గుర్తుగా వుండే ఒక పదము. మీకుహోస్ట్ పేరు ఏది పెట్టాలో తెలియక పోతే, మీరు నెట్వర్క్ నిర్వహణదారుని అడగండి. మీ హోమ్ నెట్వర్క్  ఏర్పాటు చేస్తుంటే, మీరు ఏదో ఒక పదం  హోస్ట్ పేరు గా వాడవచ్చు.
-Description-tg.UTF-8: Номи мизбон:
- Лутфан, номи мизбонро барои ин система ворид кунед.
- .
- Номи мизбон - ин як калимае мебошад (масалан: localhost) , ки системаи шуморо дар шабака муайян мекунад. Агар шумо надонед, ки номи мизбони шумо чӣ бояд бошад, бо маъмури шабакаи худ дар тамос шавед. Агар шумо шабакаи хонагии мушаххаси худро танзим карда бошед, шумо метавонед дар ин ҷо ягон чизро эҷод кунед.
 Description-th.UTF-8: ชื่อโฮสต์:
  กรุณาป้อนชื่อโฮสต์ของเครื่องนี้
  .
@@ -2669,7 +2619,7 @@ Description-bo.UTF-8: རྩ་འཛུགས་གནས་ཀྱི་མི�
 Description-bs.UTF-8: Neispravan hostname
  Hostname "${hostname}" je neispravan.
  .
- Ispravan hostname može sadržavati samo brojeve 0-9, velika i mala slova (A-Z i a-z) i minus. Mora biti najviše ${maxhostnamelen} znakova dug i ne smije počinjati minusom.
+ Ispravan hostname može sadržavati samo brojeve 0-9, velika i mala slova (A-Z i a-z) i minus. Mora biti minimalno ${maxhostnamelen} karaktera dug i ne smije počinjati sa minusom.
 Description-ca.UTF-8: El nom del sistema és invàlid
  El nom «${hostname}» és invàlid.
  .
@@ -2734,14 +2684,14 @@ Description-he.UTF-8: שם מחשב לא תקין
  השם "${hostname}" אינו תקין.
  .
  שם מחשב תקין יכול להכיל רק מספרים (0-9), אותיות (A-Z וגם a-z) וסימן מינוס. השם חייב להיות באורך עד ${maxhostnamelen} תווים, והוא אינו יכול להתחיל או להסתיים בתו מינוס.
-Description-hr.UTF-8: Neispravno ime računala
- Ime "${hostname}" nije ispravno.
+Description-hr.UTF-8: Nevaljano ime računala
+ Ime "${hostname}" nije valjano.
  .
- Ispravno ime računala može sadržavati samo brojke 0-9, mala i velika slova (a-z i A-Z) te znak minusa. Mora biti dugačko najviše ${maxhostnamelen} znakova i ne smije započinjati ili završavati s minusom.
+ Valjano ime računala može sadržavati samo brojke 0-9, mala i velika slova (a-z i A-Z) te znak minusa. Mora biti između dugačko najviše ${maxhostnamelen} znakova i ne smije započinjati ili završavati s minusom.
 Description-hu.UTF-8: Érvénytelen gépnév
- A "${hostname}" gépnév érvénytelen.
+ A "${hostname}" név érvénytelen.
  .
- Egy érvényes gépnév csak számokból (0-9), nagy és kisbetűkből (A-Z és a-z) és mínuszjelből állhat. Legfeljebb ${maxhostnamelen} karakter hosszú, és nem kezdődhet, vagy végződhet mínuszjellel.
+ Egy érvényes gépnév csak számokból (0-9), nagy és kisbetűkből (A-Z és a-z) és a mínuszjelből áll. Legfeljebb ${maxhostnamelen} karakter hosszú, és mínuszjel se az elején, se a végén nincs.
 Description-id.UTF-8: Nama host tidak sah
  Nama "${hostname}" tidak sah.
  .
@@ -2842,10 +2792,6 @@ Description-te.UTF-8: సరిపోని హోస్ట్ పేరు
  "${hostname}" హోస్ట్ పేరు సరిపోలేదు.
  .
  సరియైన హోస్ట్ పేరు లో  అంకెలు 0-9, చిన్న అక్షరాలు a-z, తీసివేత గుర్తు  వుండవచ్చు. అది  2 నుండి  ${maxhostnamelen} అక్షరాల పొడవుండి, ప్రారంభంలో కాని, చివరిగా కాని తీసివేత గుర్తు వుండరాదు.
-Description-tg.UTF-8: Номи мизбони нодуруст
- Номи мизбони "${hostname}" нодуруст аст.
- .
- Номи мизбони эътибор бояд танҳо аз рақамҳои 0-9, ҳарфҳои хурду калон (A-Z ва a-z) ва аломати тарҳ иборат шавад. Он бояд на зиёда аз ${maxhostnamelen} аломат иборат шавад ва дар пеш ё охири худ аломати тарҳро дар бар нагирад.
 Description-th.UTF-8: ชื่อโฮสต์ไม่ถูกต้อง
  ชื่อ "${hostname}" ไม่ถูกต้อง
  .
@@ -2924,8 +2870,8 @@ Description-gl.UTF-8: Erro
  Aconteceu un erro e interrompeuse o proceso de configuración da rede. Pode tentalo de novo desde o menú principal da instalación.
 Description-he.UTF-8: שגיאה
  התרחשה שגיאה ותהליך הגדרת הרשת בוטל. תוכל לנסות ולבצעו מחדש מתוך תפריט ההתקנה הראשי.
-Description-hr.UTF-8: Greška
- Pojavila se greška i postupak podešavanja mreže je prekinut. Možete pokušati ponovo iz glavnog instalacijskog izbornika.
+Description-hr.UTF-8: Pogreška
+ Pojavila se pogreška i postupak podešavanja mreže je prekinut. Možete pokušati ponovo iz glavnog instalacijskog izbornika.
 Description-hu.UTF-8: Hiba
  Hiba történt és a hálózat konfigurálásának folyamata megszakadt. A telepítés főmenüjéből újra megkísérelhető.
 Description-id.UTF-8: Ada Kesalahan
@@ -2984,8 +2930,6 @@ Description-sv.UTF-8: Fel
  Ett fel inträffade och nätverkskonfigureringen har avbrutits. Du kan försöka utföra den igen från installationens huvudmenyn.
 Description-te.UTF-8: పొరపాటు
  దోషం ఏర్పడడంతో, నెట్వర్క్ అమరిక పద్ధతి నిలిపివేయబడింది. స్థాపన ప్రధాన మెనూ నుండి తిరిగి ప్రయత్నించవచ్చు.
-Description-tg.UTF-8: Хато
- Хатогӣ ба вуҷуд омад ва раванди конфигуратсияи шабака қатъ карда шудааст. Шумо метавонед ин амалро аз мению асосии насбкунӣ аз нав кӯшиш кунед.
 Description-th.UTF-8: ผิดพลาด
  เกิดข้อผิดพลาด และการตั้งค่าเครือข่ายถูกยกเลิก คุณอาจลองใหม่ได้จากเมนูหลักของโปรแกรมติดตั้ง
 Description-tl.UTF-8: Error
@@ -3034,7 +2978,7 @@ Description-bo.UTF-8: དྲ་བའི་འཇུག་སྒོ་རྙེ�
 Description-bs.UTF-8: Mrežni interfejsi nisu detektovani
  Mrežni interfejsi nisu pronađeni. Instalacioni sistem ne može pronaći mrežni uređaj.
  .
- Možda biste trebali učitati određeni modul za Vašu mrežnu karticu, ako je imate. Za ovo, idite nazad na korak detekcije mrežnog hardvera.
+ Možda biste trebali učitati određeni modul za vašu mrežnu karticu, ako je imate. Za ovo, idite nazad na korak detekcije mrežnog hardwarea.
 Description-ca.UTF-8: No s'ha detectat cap interfície de xarxa
  No s'ha trobat cap interfície de xarxa. El sistema d'instal·lació no ha pogut trobar un dispositiu de xarxa.
  .
@@ -3102,11 +3046,11 @@ Description-he.UTF-8: לא זוהו ממשקי רשת
 Description-hr.UTF-8: Nema mrežnih sučelja
  Nisu pronađena mrežna sučelja. Instalacijski sustav nije mogao pronaći mrežni uređaj.
  .
- Možda trebate učitati poseban modul za vašu mrežnu karticu, ako je imate. Za to se vratite natrag na korak traženja mrežnih uređaja.
+ Možda trebate učitati poseban modul za vašu mrežnu karticu, ako je imate. Za to se vratite natrag na korak traženja mrežnog sklopovlja.
 Description-hu.UTF-8: Nem találtam hálózati csatolót
- Nem találtam hálózati csatolót. A telepítőrendszer hálózati eszköz híján van.
+ Nem leltem hálózati csatolót. A telepítőrendszer hálózati eszköz híján van.
  .
- Lehetséges, hogy a hálózati kártyához külön meghajtó-modult kell betölteni, ha van. Ehhez most vissza kell lépni a hálózati hardver felderítő lépéshez.
+ Ha van hálózati kártya, meglehet, hogy hozzá egy külön meghajtó-modult kell betölteni. Ehhez most vissza kell lépni a hálózati hardver felderítő lépéshez.
 Description-id.UTF-8: Antarmuka jaringan tidak ditemukan
  Antarmuka jaringan tidak ditemukan. Sistem instalasi tidak dapat menemukan sebuah piranti jaringan.
  .
@@ -3219,10 +3163,6 @@ Description-te.UTF-8: నెట్వర్క్ సంపర్కాలు �
  నెట్వర్క్ సంపర్కాలు ఏవి కనబడలేదు స్థాపనా వ్యవస్థ  నెట్వర్క్ డివైస్ కనుగొనటంలో విఫలమైంది.
  .
  మీకు  తెలిసినట్లయితే, మీ నెట్వర్క్ కార్డ్ కి అవసరమైన మాడ్యూల్  ఎక్కించాలి. దీనికొరకు   నెట్వర్క్ కనుగొను అనే అంకం (వెనక్కి)వెళ్లండి .
-Description-tg.UTF-8: Ягон интерфейси шабака ёфт нашудааст
- Ягон интерфейси шабака ёфт нашудааст. Системаи насбкунӣ дастагоҳи шабакавиро пайдо карда натавонист.
- .
- Агар шумо модули махсус барои корти шабакавӣ дошта бошед, метавонед онро бор кунед. Барои ин шумо бояд ба қадами муайянкунии сахтафзори шабакавӣ баргардед.
 Description-th.UTF-8: ไม่พบอินเทอร์เฟซเครือข่าย
  ไม่พบอินเทอร์เฟซเครือข่าย ระบบติดตั้งตรวจหาอุปกรณ์เครือข่ายไม่พบ
  .
@@ -3306,10 +3246,10 @@ Description-gl.UTF-8: Corte de rede activado en ${iface}
  Semella que ${iface} está desactivada por un «interruptor de corte de rede». Se pretende empregar esta interface, acéndaa antes de continuar.
 Description-he.UTF-8: מתג ניטרול אופשר על ${iface}
  נראה כי ממשק הרשת ${iface} נותק באמצעות "מתג ניטרול". אם יש  לך כוונה להשתמש בממשק זה, כדאי להדליק אותו לפני שתמשיך בתהליך ההתקנה.
-Description-hr.UTF-8: "Kill" prekidač upaljen na ${iface}
- Čini se da je uređaj ${iface} onemogućen korištenjem fizičkog "kill" prekidača. Ako namjeravate koristiti ovo sučelje, molim upalite ga prije nego li nastavite.
-Description-hu.UTF-8: "kill switch" engedélyezve ezen: ${iface}
- Úgy tűnik, ${iface}-t letiltotta egy úgynevezett fizikai "kill switch" kapcsoló. Ha használni kívánja ezt a csatolót, kapcsolja be a folytatáshoz.
+Description-hr.UTF-8: Kill prekidač upaljen na ${iface}
+ Čini se da je ${iface} onemogućena koristeći fizički "kill" prekidač. Ako namjeravate koristiti ovo sučelje, molimo upalite ga prije nego li nastavite.
+Description-hu.UTF-8: "kill switch" ezen: ${iface}
+ ${iface}-t úgy fest, letiltja egy úgynevezett fizikai "kill switch" kapcsoló. E csatoló használata esetén a folytatás előtt, most be kell kapcsolni.
 Description-id.UTF-8: Tombol mati diaktifkan pada ${iface}
  Antarmuka ${iface} tampaknya dimatikan melalui suatu tombol di NIC Anda. Jika anda ingin menggunakannya, silakan nyalakan dulu melalui tombol tersebut sebelum meneruskan.
 Description-is.UTF-8: Lokunarrofi netkortsins er virkur á ${iface}
@@ -3366,8 +3306,6 @@ Description-sv.UTF-8: Kill switch aktiverat på ${iface}
  ${iface} verkar inte vara aktiverad (fysisk "kill switch"). Om du planerar att använda det här gränssnittet, aktivera det innan du fortsätter.
 Description-te.UTF-8: ${iface} పై "అచేతనం మీట" క్రియాశీలకంగా వున్నది
  "అచేతనం మీట"  అనే భౌతిక మీట ద్వారా  ${iface} అచేతనమైనట్లుగా అనిపిస్తున్నది. మీరు ఈ సంపర్కాన్ని వాడదలచుకుంటే, కొనసాగించబోయేముందు దానిని   ఆన్ చేసి చేతనముచేయండి.
-Description-tg.UTF-8: Хомӯш кардани калиди фаъолшуда дар ${iface}
- Чунин менамояд, ки ${iface} ба таври ҷисмонии "калиди хомӯшкунӣ" хомӯш карда шудааст. Агар хоҳед, ки ин интерфейсро истифода баред, лутфан, пеш аз идома онро фаъол кунед.
 Description-th.UTF-8: มีการเปิดใช้ kill switch ที่ ${iface}
  พบว่า ${iface} ถูกปิดใช้งานโดย "kill switch" ที่ตัวเครื่อง หากคุณต้องการจะใช้อินเทอร์เฟซนี้ กรุณาเปิดสวิตช์ดังกล่าวก่อนดำเนินการต่อไป
 Description-tl.UTF-8: Patayin ang switch na naka-enable sa ${iface}
@@ -3441,7 +3379,6 @@ Choices-sq.UTF-8: Rrjet Infrastrukture (I Drejtuar), rrjet Ad-hoc (Peer to peer)
 Choices-sr.UTF-8: Инфраструктурна (управљана) мрежа, Ад-хок мрежа (Peer to peer)
 Choices-sv.UTF-8: Infrastrukturnätverk (styrt), Ad-hoc-nätverk (icke-hierarkiskt)
 Choices-te.UTF-8: మూలసౌకర్య (నిర్వహణ) నెట్వర్క్, తాత్కాలిక నెట్వర్క్ (పీర్ టు పీర్)
-Choices-tg.UTF-8: Инфраструктураи шабака (Идорашуда), Шабакаи Ad-hoc (Ҳамсон ба ҳамсон)
 Choices-th.UTF-8: เครือข่าย infrastructure (managed), เครือข่าย ad-hoc (peer to peer)
 Choices-tl.UTF-8: Infrastructure (Managed) network, Ad-hoc network (Peer to peer)
 Choices-tr.UTF-8: Planlı ağ (Managed), Plansız ağ (Ad-hoc / Peer to peer)
@@ -3465,7 +3402,7 @@ Description-bg.UTF-8: Тип безжична мрежа:
 Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་རིགས：
  སྐུད་མེད་དྲ་བ་ལ་managed དང ad-hoc ཟེར་བའི་སྦྲེལ་མཐུད་བྱེད་སྟངས་གཉིས་ཡོད་དེ ཁྱོད་ཀྱིས་ཁ་གཏོད་དུ་དྲ་བ་ལ་སྦྲེལ་མཐུད་བྱེད་བཞིན་ཡོད་ན་དྲ་བ་དེ་managed ཡིན་པ་དང་གལ་སྲིད་རྩིས་འཁོར་གཞན་ཞིག་བརྒྱུད་ནས་དྲ་ལམ་དེ་སྤྱོད་བཞིན་ཡོད་ན་Ad-hoc རེད།
 Description-bs.UTF-8: Tip bežične mreže:
- Bežične mreže mogu biti managed ili ad-hoc. Ako koristite stvarni access point izvjesnog tipa, Vaša mreža je Managed. Ako je drugi računar Vaš access point, onda je Vaša mreža Ad-hoc.
+ Bežične mreže mogu biti managed ili ad-hoc. Ako koristite stvarni acces point izvjesnog tipa, vaša mreža je Managed. Ako je drugi računar vaš 'access point', onda je vaša mreža Ad-hoc.
 Description-ca.UTF-8: Tipus de xarxa sense fil:
  Les xarxes sense fil són o bé gestionades o bé «ad-hoc». Si empreu qualsevol tipus de punt d'accés real, la vostra xarxa és gestionada. Si un altre ordinador és el vostre «punt d'accés», és possible que la vostra xarxa siga «Ad-hoc».
 Description-cs.UTF-8: Typ bezdrátové sítě:
@@ -3499,7 +3436,7 @@ Description-gl.UTF-8: Tipo de rede sen fíos:
 Description-he.UTF-8: סוג הרשת האלחוטית:
  רשתות אלחוטיות יכולות להיות מנוהלות או ייעודיות. אם אתה משתמש בנקודת גישה אמיתית, הרשת שלך היא מנוהלת. אם מחשב אחר מהווה את נקודת הגישה שלך, אז הרשת שלך היא ייעודית.
 Description-hr.UTF-8: Vrsta bežične mreže:
- Bežične mreže su ili upravljane (stalne) ili ad-hoc (ptp). Ako koristite neku vrstu stvarne pristupne točke, vaša je mreža upravljana. Ako je vaša 'pristupna točka' drugo računalo, onda je vaša mreža ad-hoc.
+ Bežične mreže su ili upravljane (stalne) ili ad-hoc (ptp). Ako rabite neku vrst stalne točke pristupa, vaša je mreža upravljana. Ako je vaša 'točka pristupa' drugo računalo, onda je vaša mreža ad-hoc.
 Description-hu.UTF-8: Drótnélküli hálózat típusa:
  A drótnélküli hálózatok vagy kiépítettek, vagy ad-hoc jellegűek. Egy valódi elérési pont általi kapcsolódáskor a hálózat Kiépített. Ha az 'elérési pont' egy másik gép, akkor inkább Ad-hoc.
 Description-id.UTF-8: Jenis jaringan nirkabel:
@@ -3560,14 +3497,12 @@ Description-sv.UTF-8: Typ av trådlöst nätverk:
  Trådlösa nätverk är antingen styrda eller ad-hoc. Om du använder en riktig åtkomstpunkt av något slag så är ditt nätverk styrt. Om en annan dator är din "åtkomstpunkt" så kan ditt nätverk vara ad-hoc.
 Description-te.UTF-8: వైర్లెస్ నెట్వర్క్ రకము:
  వైర్లెస్ నెట్వర్కులు  నిర్వహించబడేవి  లేక తాత్కాలికమైనవి. నిజమైన సంపర్క కేంద్రం వాడుతుంటే, మీది    నిర్వహించబడే ది లేక ఇంకొక కంప్యూటర్ ను సంపర్క కేంద్రంగా వాడుతుంటే, మీది  తాత్కాలికమైనది.
-Description-tg.UTF-8: Намуди шабакаи бесим:
- Шабакаҳои бесим идорашаванда ё ad-hoc мебошанд. Агар шумо нуқтаи дастрасии воқеӣ ё чизи монандро истифода баред, шабакаи шумо Идорашаванда мебошад. Агар компютери дигар "нуқтаи дастрасии" шумо бошад, он гоҳ эҳтимол аст, ки шабакаи шумо Ad-hoc мебошад.
 Description-th.UTF-8: ชนิดของเครือข่ายไร้สาย:
  เครือข่ายไร้สายมีแบบ managed และแบบ ad-hoc  ถ้าคุณใช้ access point แท้ๆ แบบใดแบบหนึ่ง เครือข่ายของคุณก็เป็นแบบ managed แต่ถ้าคุณใช้คอมพิวเตอร์อีกเครื่องเป็น 'access point' ของคุณ เครือข่ายของคุณอาจเป็นแบบ ad-hoc
 Description-tl.UTF-8: Uri ng wireless network:
  Ang mga wireless network ay managed o ad-hoc. Kung kayo ay gumagamit ng access point na totoo, ang inyong network ay Managed. Kung may ibang kompyuter na nagsisilbing 'access point', marahil ang inyong network ay Ad-hoc.
 Description-tr.UTF-8: Kablosuz ağ türü:
- Kablosuz ağlar Planlı (Managed) veya Plansız (Ad-hoc) olarak sınıflandırılır. Gerçek türde bir erişim noktası kullanıyorsanız bu bir Planlı ağdır. Eğer erişim noktanız bir başka bilgisayar ise ağınız Plansız ağdır.
+ Kablosuz ağlar Planlı (Managed) veya Plansız (Ad-hoc) olarak sınıflanır. Gerçek türde bir erişim noktası kullanıyorsanız bu bir Planlı ağdır. Eğer erişim noktanız bir başka bilgisayar ise ağınız Plansız ağdır.
 Description-ug.UTF-8: سىمسىز تور تىپى:
  سىمسىز تور بەلكىم managed ياكى ad-hoc ئىككىدىن بىرى بولىدۇ. ئەگەر سىز مەلۇم رېئال ۋاقىتلىق كىرىش نۇقتىسىنى ئىشلەتكەن بولسىڭىز تورىڭىز managed. ئەگەر باشقا بىر كومپيۇتېرنى ئۇلىنىش نۇقتىسى قىلسىڭىز ئۇنداقتا سىزنىڭ تورىڭىز ad-hoc.
 Description-uk.UTF-8: Тип бездротової мережі:
@@ -3587,7 +3522,7 @@ Description-ast.UTF-8: Configuración de rede inalámbrica
 Description-be.UTF-8: Наладка радыёсеткі
 Description-bg.UTF-8: Настройване на безжична мрежа
 Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་སྒྲིག་འགོད
-Description-bs.UTF-8: Konfiguracija bežične mreže
+Description-bs.UTF-8: Konfiguracija bežične (wireless) mreže
 Description-ca.UTF-8: Configuració de xarxa sense fil
 Description-cs.UTF-8: Nastavení bezdrátové sítě
 Description-cy.UTF-8: Cyfluniad rhwydwaith diwifr
@@ -3635,7 +3570,6 @@ Description-sq.UTF-8: Konfigurimi i rrjetit me valë
 Description-sr.UTF-8: Подешавање бежичне мреже
 Description-sv.UTF-8: Konfigurering av trådlöst nätverk
 Description-te.UTF-8: వైర్లెస్ నెట్వర్క్   అమరిక
-Description-tg.UTF-8: Танзимоти шабакаи бесим
 Description-th.UTF-8: การตั้งค่าเครือข่ายไร้สาย
 Description-tl.UTF-8: Pagsasaayos ng wireless network
 Description-tr.UTF-8: Kablosuz ağ yapılandırması
@@ -3653,7 +3587,7 @@ Description-ast.UTF-8: Restolando puntos d'accesu inalámbricos...
 Description-be.UTF-8: Пошук пунктаў радыёдоступу...
 Description-bg.UTF-8: Търсене на безжични точки на достъп...
 Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་སྤྱོད་སྒོ་འཚོལ་བཞིན་པ་་་
-Description-bs.UTF-8: Tražim bežične pristupne tačke...
+Description-bs.UTF-8: Tražim bežične pristupne tačke (access points) ...
 Description-ca.UTF-8: S'estan cercant els punts d'accés sense fil...
 Description-cs.UTF-8: Hledají se bezdrátové přístupové body ...
 Description-cy.UTF-8: Yn chwilio am bwyntiau mynediad diwifr...
@@ -3701,7 +3635,6 @@ Description-sq.UTF-8: Duke kërkuar për pika hyrjeje me valë ...
 Description-sr.UTF-8: Тражење прикључне тачке бежичне мреже...
 Description-sv.UTF-8: Söker efter trådlösa åtkomstpunkter ...
 Description-te.UTF-8: వైర్లెస్ సంపర్క కేంద్రాల కోసం వెతుకుట...
-Description-tg.UTF-8: Ҷустуҷӯи нуқтаҳои дастрасии шабакаи бесим...
 Description-th.UTF-8: กำลังค้นหา access point ไร้สาย...
 Description-tl.UTF-8: Naghahanap ng mga wireless access points ...
 Description-tr.UTF-8: Kablosuz erişim noktaları araştırılıyor...
@@ -3735,7 +3668,7 @@ Description-bs.UTF-8: Detektiram link na ${interface}; molim pričekajte...
 Description-ca.UTF-8: S'està detectant l'enllaç a ${interface}, espereu...
 Description-cs.UTF-8: Rozpoznává se spojení na ${interface}, prosím čekejte...
 Description-cy.UTF-8: Yn canfod cysylltiad ar ${interface}, arhoswch os gwelwch yn dda...
-Description-da.UTF-8: Søger efter henvisning på ${interface}; vent venligst ...
+Description-da.UTF-8: Søger efter henvisning på ${interface}; vent venligst...
 Description-de.UTF-8: Erkennen der Verbindung an ${interface}; bitte warten ...
 Description-el.UTF-8: Ανίχνευση συνδέσμου στο ${interface}; παρακαλώ περιμένετε...
 Description-eo.UTF-8: Detektado de ligo en ${interface}, bonvolu atendi...
@@ -3748,8 +3681,8 @@ Description-fr.UTF-8: Détection de la connexion réseau sur ${interface}. Veuil
 Description-ga.UTF-8: Nasc á bhrath ar ${interface}; fan go fóill...
 Description-gl.UTF-8: Estase a detectar a conexión en ${interface}. Agarde.
 Description-he.UTF-8: בדיקת חיבור על ${interface}, נא להמתין...
-Description-hr.UTF-8: Tražim vezu na ${interface}, molim pričekajte...
-Description-hu.UTF-8: Kapcsolat érzékelése itt: ${interface}; kérem, várjon...
+Description-hr.UTF-8: Tražim vezu na ${interface}; molim pričekajte...
+Description-hu.UTF-8: Kapcsolat érzekelese itt: ${interface}; türelem...
 Description-id.UTF-8: Mencari perangkat keras di ${interface}, mohon tunggu...
 Description-is.UTF-8: Leita að tengi á ${interface}; bíddu andartak...
 Description-it.UTF-8: Rilevamento collegamento su ${interface}, attendere...
@@ -3775,7 +3708,6 @@ Description-sl.UTF-8: Zaznavanje povezave na ${interface}, počakajte prosim ...
 Description-sr.UTF-8: Детектовање линка на ${interface}; сачекајте...
 Description-sv.UTF-8: Identifierar länk på ${interface};, vänta...
 Description-te.UTF-8: ${interface} ఫై హార్డ్వేర్ ను  కనుగొనుట, దయచేసి వేచి వుండండి...
-Description-tg.UTF-8: Муайянкунии пайванд дар ${interface}; лутфан, интизор шавед...
 Description-th.UTF-8: กำลังตรวจหาการเชื่อมต่อที่ ${interface} กรุณารอสักครู่...
 Description-tr.UTF-8: ${interface} arayüzündeki bağlantı algılanıyor; lütfen bekleyin...
 Description-ug.UTF-8: ${interface} دىكى ئۇلانمىنى تەكشۈرۈۋاتىدۇ؛ سەل كۈتۈڭ…
@@ -3792,7 +3724,7 @@ Description-ast.UTF-8: <dengún>
 Description-be.UTF-8: <нічога>
 Description-bg.UTF-8: <няма>
 Description-bo.UTF-8: <ཅི་མེད>
-Description-bs.UTF-8: <nijedno>
+Description-bs.UTF-8: <nijedna>
 Description-ca.UTF-8: <cap>
 Description-cs.UTF-8: <nic>
 Description-cy.UTF-8: <dim>
@@ -3839,7 +3771,6 @@ Description-sq.UTF-8: <asnjë>
 Description-sr.UTF-8: <ниједна>
 Description-sv.UTF-8: <inget>
 Description-te.UTF-8: <ఏమీలేదు>
-Description-tg.UTF-8: <ҳеҷ>
 Description-th.UTF-8: <ไม่มี>
 Description-tl.UTF-8: <wala>
 Description-tr.UTF-8: <hiçbiri>
@@ -3857,7 +3788,7 @@ Description-ast.UTF-8: Ethernet inalámbrica (802.11x)
 Description-be.UTF-8: Радыё-ethernet (802.11x)
 Description-bg.UTF-8: Безжичен Ethernet (802.11x)
 Description-bo.UTF-8: སྐུད་མེད་དྲ་བའི་རྒྱུད་ཁོངས (802.11x)
-Description-bs.UTF-8: Bežični ethernet (802.11x)
+Description-bs.UTF-8: Bežični (Wireless) ethernet (802.11x)
 Description-ca.UTF-8: Ethernet Wireless (802.11x)
 Description-cs.UTF-8: Bezdrátový ethernet (802.11x)
 Description-cy.UTF-8: Ethernet diwifr (802.11x)
@@ -3904,7 +3835,6 @@ Description-sq.UTF-8: Ethernet me valë (802.11x)
 Description-sr.UTF-8: Бежични етернет (802.11x)
 Description-sv.UTF-8: Trådlöst ethernet (802.11x)
 Description-te.UTF-8: వైర్‌లెస్ ఈథర్నెట్ (802.11x)
-Description-tg.UTF-8: Шабакаи бесим (802.11x)
 Description-th.UTF-8: อีเทอร์เน็ตไร้สาย (802.11x)
 Description-tl.UTF-8: Wireless ethernet (802.11x)
 Description-tr.UTF-8: Kablosuz ethernet (802.11x)
@@ -3969,7 +3899,6 @@ Description-sq.UTF-8: me valë
 Description-sr.UTF-8: бежично
 Description-sv.UTF-8: trådlöst
 Description-te.UTF-8: వైర్‌లెస్
-Description-tg.UTF-8: бесим
 Description-th.UTF-8: ไร้สาย
 Description-tl.UTF-8: wireless
 Description-tr.UTF-8: kablosuz
@@ -4035,7 +3964,6 @@ Description-sq.UTF-8: Ethernet
 Description-sr.UTF-8: Етернет
 Description-sv.UTF-8: Ethernet
 Description-te.UTF-8: ఈథర్నెట్
-Description-tg.UTF-8: Ethernet
 Description-th.UTF-8: อีเทอร์เน็ต
 Description-tl.UTF-8: Ethernet
 Description-tr.UTF-8: Ethernet
@@ -4100,7 +4028,6 @@ Description-sq.UTF-8: Token Ring
 Description-sr.UTF-8: Токен прстен
 Description-sv.UTF-8: Token Ring
 Description-te.UTF-8: టోకెన్ రింగ్
-Description-tg.UTF-8: Ҳалқаи муайяншуда
 Description-th.UTF-8: โทเค็นริง
 Description-tl.UTF-8: Token Ring
 Description-tr.UTF-8: Token Ring
@@ -4165,7 +4092,6 @@ Description-sq.UTF-8: Rrjet USB
 Description-sr.UTF-8: USB мрежа
 Description-sv.UTF-8: USB-nät
 Description-te.UTF-8: USB నెట్
-Description-tg.UTF-8: Шабакаи USB
 Description-th.UTF-8: USB net
 Description-tl.UTF-8: USB net
 Description-tr.UTF-8: USB ağı
@@ -4234,7 +4160,6 @@ Description-sq.UTF-8: Serial-line IP
 Description-sr.UTF-8: IP преко серијске линије
 Description-sv.UTF-8: Serial-line IP
 Description-te.UTF-8: సీరియల్-లైన్ ఐపీ
-Description-tg.UTF-8: Суроғаи силсилавии IP
 Description-th.UTF-8: IP ผ่านสายอนุกรม
 Description-tl.UTF-8: Serial-line IP
 Description-tr.UTF-8: Seri-hat IP
@@ -4299,7 +4224,6 @@ Description-sq.UTF-8: Parallel-port IP
 Description-sr.UTF-8: IP преко паралелног порта
 Description-sv.UTF-8: Parallel-port IP
 Description-te.UTF-8: పారలెల్-పోర్ట్ ఐపీ
-Description-tg.UTF-8: Суроғаи порти мувозии IP
 Description-th.UTF-8: IP ผ่านพอร์ตขนาน
 Description-tl.UTF-8: Parallel-port IP
 Description-tr.UTF-8: Paralel-port IP
@@ -4317,7 +4241,7 @@ Description-ast.UTF-8: Protocolu Puntu-a-Puntu
 Description-be.UTF-8: Пратакол PPP
 Description-bg.UTF-8: Point-to-Point Protocol (PPP)
 Description-bo.UTF-8: ཁ་སྤྲོད་ཀྱི་འཆིངས་ཡིག
-Description-bs.UTF-8: Point-to-Point protokol
+Description-bs.UTF-8: Point-to-Point Protocol
 Description-ca.UTF-8: Protocol Punt-a-Punt (PPP)
 Description-cs.UTF-8: Point-to-Point Protocol
 Description-cy.UTF-8: Protocol Pwynt-i-Bwynt
@@ -4364,7 +4288,6 @@ Description-sq.UTF-8: Protokolli Point-to-Point
 Description-sr.UTF-8: Протокол тачка-до-тачке (PPP)
 Description-sv.UTF-8: Punkt till punkt-protokoll
 Description-te.UTF-8: పాయింట్-టు-పాయింట్ ప్రోటోకాల్
-Description-tg.UTF-8: Протоколи нуқта-ба-нуқта
 Description-th.UTF-8: Point-to-Point Protocol
 Description-tl.UTF-8: Point-to-Point Protocol
 Description-tr.UTF-8: Noktadan-noktaya protokolü (Point-to-Point)
@@ -4429,7 +4352,6 @@ Description-sq.UTF-8: IPv6-in-IPv4
 Description-sr.UTF-8: IPv6-преко-IPv4
 Description-sv.UTF-8: IPv6-in-IPv4
 Description-te.UTF-8: IPv6-in-IPv4
-Description-tg.UTF-8: IPv6-in-IPv4
 Description-th.UTF-8: IPv6-in-IPv4
 Description-tl.UTF-8: IPv6-in-IPv4
 Description-tr.UTF-8: IPv4 içinde IPv6 (IPv6-in-IPv4)
@@ -4447,7 +4369,7 @@ Description-ast.UTF-8: Protocolu Puntu-a-Puntu RDSI
 Description-be.UTF-8: Пратакол ISDN PPP
 Description-bg.UTF-8: Протокол ISDN Point-to-Point
 Description-bo.UTF-8: ISDN ཁ་སྤྲོད་ཀྱི་འཆིངས་ཡིག
-Description-bs.UTF-8: ISDN Point-to-Point protokol
+Description-bs.UTF-8: ISDN Point-to-Point Protocol
 Description-ca.UTF-8: Protocol Punt-a-Punt de XDSI
 Description-cs.UTF-8: ISDN Point-to-Point Protocol
 Description-cy.UTF-8: Protocol Pwynt-i-Bwynt ISDN
@@ -4494,7 +4416,6 @@ Description-sq.UTF-8: Protokolli Point-to-Point ISDN
 Description-sr.UTF-8: ISDN тачка-до-тачке протокол
 Description-sv.UTF-8: ISDN-Punkt till punkt-protokoll
 Description-te.UTF-8: ISDN Point-to-Point ప్రొటోకాల్
-Description-tg.UTF-8: Протоколи нуқта-ба-нуқтаи ISDN
 Description-th.UTF-8: ISDN Point-to-Point Protocol
 Description-tl.UTF-8: ISDN Point-to-Point Protocol
 Description-tr.UTF-8: ISDN Noktadan-noktaya protokolü (ISDN Point-to-Point Protocol)
@@ -4559,7 +4480,6 @@ Description-sq.UTF-8: Channel-to-channel
 Description-sr.UTF-8: Канал-до-канала
 Description-sv.UTF-8: Channel-to-channel
 Description-te.UTF-8: Channel-to-channel
-Description-tg.UTF-8: Шабака-ба-шабака
 Description-th.UTF-8: Channel-to-channel
 Description-tl.UTF-8: Channel-to-channel
 Description-tr.UTF-8: Kanaldan-kanala (Channel-to-channel)
@@ -4624,7 +4544,6 @@ Description-sq.UTF-8: Real channel-to-channel
 Description-sr.UTF-8: Канал-до-канала
 Description-sv.UTF-8: Riktig channel-to-channel
 Description-te.UTF-8: నిజమైన channel-to-channel
-Description-tg.UTF-8: Шабака-ба-шабакаи ҳақиқӣ
 Description-th.UTF-8: Real channel-to-channel
 Description-tl.UTF-8: Real channel-to-channel
 Description-tr.UTF-8: Gerçek kanaldan-kanala (Real channel-to-channel)
@@ -4693,7 +4612,6 @@ Description-sq.UTF-8: Inter-user communication vehicle
 Description-sr.UTF-8: Мећукорисничко комуникационо возило
 Description-sv.UTF-8: Inter-user communication vehicle
 Description-te.UTF-8: వాడుకరుల మధ్య సమాచారానికి  ఆధారం(బండి)
-Description-tg.UTF-8: Нақлиёти пайвастшавӣ байни корбарон
 Description-th.UTF-8: Inter-user communication vehicle
 Description-tl.UTF-8: Inter-user communication vehicle
 Description-tr.UTF-8: Kullanıcılar arası bağlantı aracı (Inter-user communication vehicle)
@@ -4758,7 +4676,6 @@ Description-sq.UTF-8: Përballje e panjohur
 Description-sr.UTF-8: Непознат интерфејс
 Description-sv.UTF-8: Okänt gränssnitt
 Description-te.UTF-8: గుర్తు తెలియని సంపర్కం
-Description-tg.UTF-8: Интерфейси номаълум
 Description-th.UTF-8: อินเทอร์เฟซไม่ทราบชนิด
 Description-tl.UTF-8: Hindi kilalang interface
 Description-tr.UTF-8: Bilinmeyen arayüz
@@ -4776,11 +4693,11 @@ Description-ast.UTF-8: Atroxando los axustes de rede...
 Description-be.UTF-8: Захаванне наладак сеткі...
 Description-bg.UTF-8: Запазване на настройките на мрежа...
 Description-bo.UTF-8: དྲ་ལམ་གྱི་སྒྲིག་འཛུགས་གསོག་འཇོག་བྱེད་བཞིན་པ་་་
-Description-bs.UTF-8: Spremanje mrežnih postavki ...
+Description-bs.UTF-8: Spremam mrežne postavke ...
 Description-ca.UTF-8: S'estan emmagatzemant els paràmetres de xarxa...
 Description-cs.UTF-8: Ukládají se síťová nastavení...
 Description-cy.UTF-8: Cadw gosodiadau rhwydwaith...
-Description-da.UTF-8: Gemmer netværksindstillinger ...
+Description-da.UTF-8: Gemmer netværksindstillinger...
 Description-de.UTF-8: Speichern der Netzwerkeinstellungen ...
 Description-el.UTF-8: Αποθήκευση των ρυθμίσεων δικτύου...
 Description-eo.UTF-8: Registrado de retaj agordoj...
@@ -4824,7 +4741,6 @@ Description-sq.UTF-8: Duke ruajtur rregullimet e rrjetit ...
 Description-sr.UTF-8: Снимање мрежних подешавања...
 Description-sv.UTF-8: Sparar inställningar för nätverket ...
 Description-te.UTF-8: నెట్వర్క్  లక్షణాలని భద్రపరుచుట...
-Description-tg.UTF-8: Захиракунии танзимоти шабака...
 Description-th.UTF-8: กำลังเติมค่าตั้งเครือข่าย...
 Description-tl.UTF-8: Iniimbak ang pagkaayos ng network ...
 Description-tr.UTF-8: Ağ ayarları kaydediliyor...
@@ -4842,7 +4758,7 @@ Description-ast.UTF-8: Configurar la rede
 Description-be.UTF-8: Наладка сеткі
 Description-bg.UTF-8: Настройване на мрежата
 Description-bo.UTF-8: དྲ་ལམ་སྒྲིག་འགོད་བྱེད་པ
-Description-bs.UTF-8: Podesite mrežu
+Description-bs.UTF-8: Podesi mrežu
 Description-ca.UTF-8: Configura la xarxa
 Description-cs.UTF-8: Nastavit síť
 Description-cy.UTF-8: Cyflunio'r rhwydwaith
@@ -4860,7 +4776,7 @@ Description-ga.UTF-8: Cumraigh an líonra
 Description-gl.UTF-8: Configurar a rede
 Description-he.UTF-8: הגדרות רשת
 Description-hr.UTF-8: Podesi mrežu
-Description-hu.UTF-8: Hálózat beállítása
+Description-hu.UTF-8: Hálózat konfigurálása
 Description-id.UTF-8: Mengatur jaringan
 Description-is.UTF-8: Stilla netið
 Description-it.UTF-8: Configurare la rete
@@ -4890,7 +4806,6 @@ Description-sq.UTF-8: Konfiguro rrjetin
 Description-sr.UTF-8: Подеси мрежу
 Description-sv.UTF-8: Konfigurera nätverket
 Description-te.UTF-8: నెట్వర్క్    అమరిక
-Description-tg.UTF-8: Танзими шабака
 Description-th.UTF-8: ตั้งค่าเครือข่าย
 Description-tl.UTF-8: Isaayos ang network
 Description-tr.UTF-8: Ağı yapılandır
@@ -4926,8 +4841,6 @@ Description-be.UTF-8: Колькі чакаць (у секундах) на вы�
  Упішыце, калі ласка, колькі максімум чакаць, пакуль выявіцца злучэнне з сеткай.
 Description-bg.UTF-8: Изчакване на връзка (секунди):
  Въведете максималното време, което искате да се изчака до откриване на връзка с мрежата.
-Description-bs.UTF-8: Vrijeme čekanja (u sekundama) na detekciju linka:
- Molim unesite maksimalno vrijeme koje želite čekati na detekciju mrežnog linka.
 Description-ca.UTF-8: Temps d'espera (en segons) per a la detecció de la connexió:
  Introduïu el temps màxim d'espera per a la detecció de la connexió a la xarxa.
 Description-cs.UTF-8: Čas (v sekundách) pro rozpoznání spojení:
@@ -4946,7 +4859,7 @@ Description-es.UTF-8: Tiempo de espera (en segundos) para la detección de enlac
  Introduzca el tiempo máximo que desearía esperar para la detección del enlace de red.
 Description-et.UTF-8: Ühenduse tuvastamise ooteaeg sekundites:
  Palun sisesta, kui kaua võrguühenduse tuvastamise järel oodata tohiks.
-Description-eu.UTF-8: Lotura antzemateko itxoiteko denbora (segundotan):
+Description-eu.UTF-8: Lotura antzemateko itxoiteko denbora (segundutan):
  Idatzi sare konexioaren zai gehienez itxoingo den denbora muga.
 Description-fa.UTF-8: زمان انتظار (به ثانیه) برای تشخیص پیوند:
  لطفا حداکثر زمان دلخواه جهت منتظر ماندن برای تشخیص پیوند شبکه را وارد کنید.
@@ -5012,8 +4925,6 @@ Description-sv.UTF-8: Väntetid (i sekunder) för att upptäcka länk:
  Ange hur länge du vill vänta på att nätverket ska hitta länk.
 Description-te.UTF-8:  లింకు కనుగొనుటకు వేచివుండవలసిన అత్యధిక సమయం (సెకన్లలో):
  నెట్వర్క్ లింకు కనుగొనుటకు వేచివుండవలసిన అత్యధిక సమయం ప్రవేశపెట్టు.
-Description-tg.UTF-8: Вақти интизорӣ (дар сонияҳо) барои муайянкунии пайванд:
- Лутфан, вақти зиёдтаринеро, ки шумо мехоҳед система барои муайянкунии пайванди шабака интизор шавад, интихоб намоед.
 Description-th.UTF-8: เวลาคอยการตรวจหาการเชื่อมต่อเครือข่าย (เป็นวินาที):
  กรุณาตั้งเวลาที่นานที่สุดที่คุณจะคอยการตรวจหาการเชื่อมต่อเครือข่าย
 Description-tr.UTF-8: Bağlantı algılama için bekleme süresi (saniye cinsinde):
@@ -5042,8 +4953,6 @@ Description-be.UTF-8: Няправільнае значэнне часу чак�
  Пададзенае значэнне няправільнае. Максімальны час чакання (у секундах), каб выявіць злучэнне з сеткай павінна быць дадатным цэлым.
 Description-bg.UTF-8: Грешно време за изчакване на мрежова връзка
  Въведената стойност е грешна. Максималното време за изчакване на връзка с мрежата трябва да е цялп, положително число.
-Description-bs.UTF-8: Vrijeme čekanja detekcije nevažećeg mrežnog linka
- Vrijednost koju ste dali nije važeća. Maksimalno vrijeme čekanja (u sekundama) za detekciju mrežnog linka mora imati pozitivan cijeli broj.
 Description-ca.UTF-8: Temps d'espera per a la detecció de la connexió a la xarxa invàlid
  El valor que has donat és invàlid. El temps màxim d'espera (en segons) per a la detecció de la connexió de xarxa ha de ser un enter positiu.
 Description-cs.UTF-8: Neplatný čas pro rozpoznání síťového spojení
@@ -5063,7 +4972,7 @@ Description-es.UTF-8: Tiempo de detección de enlace de red inválido
 Description-et.UTF-8: Võrguühenduse tuvastamise ooteaeg on vigane
  Sisestatud väärtus ei ole korrektne. Võrguühenduse tuvastamise maksimaalne ooteaeg sekundites peab olema positiivne täisarv.
 Description-eu.UTF-8: Konexio antzemate itxoite denbora baliogabea
- Ezarri duzun balioa ez da zuzena. Sare konexioa antzemateko gehienezko denbora muga (segundotan) zenbaki oso positibo bat izan behar da.
+ Ezarri duzun balioa ez da zuzena. Sare konexioa antzemateko gehienzko denbora muga (segundutan) zenbaki oso positibo bat izan behar da.
 Description-fa.UTF-8: زمان نامعتبر برای تشخیص پیوند شبکه
  مقداری که شما وارد کردید معتبر نیست.حداکثر زمان انتظار (به ثانیه) برای تشخیص پیوند شبکه باید یک عدد صحیح مثبت باشد.
 Description-fi.UTF-8: Ei kelvollinen verkkolinkin havaitsemisen odotusaika
@@ -5128,8 +5037,6 @@ Description-sv.UTF-8: Felaktigt angiven väntetid för att upptäcka nätverksl�
  Värdet du angav är inte korrekt. Maximal väntetid (i sekunder) för att upptäcka nätverkslänk måste vara ett positivt heltal.
 Description-te.UTF-8: నెట్వర్క్ లింకు కనుగొనుటకు వేచివుండవలసిన  సమయం సరిగాలేదు
   మీరు ప్రవేశపెట్టిన విలువ సరికాదు. నెట్వర్క్ లింకు కనుగొనుటకు వేచివుండవలసిన అత్యధిక సమయం (సెకన్లలో) తప్పనిసరిగా పూర్ణసంఖ్య అయివుండాలి.
-Description-tg.UTF-8: Вақти интизории нодуруст барои муайянкунии пайванди шабака
- Қимате, ки шумо ворид кардед беэътибор аст. Вақти интизории зиёдтарин (дар сонияҳо) барои муайянкунии пайванди шабака бояд адади яклухти мусбат бошад.
 Description-th.UTF-8: เวลาคอยการตรวจหาการเชื่อมต่อเครือข่ายไม่ถูกต้อง
  ค่าที่คุณป้อนไม่ใช่ค่าที่ใช้การได้ เวลาที่นานที่สุดที่จะคอยการตรวจหาการเชื่อมต่อเครือข่าย (เป็นวินาที) ต้องเป็นจำนวนเต็มบวก
 Description-tr.UTF-8: Geçersiz ağ bağlantı algılama bekleme zamanı
@@ -5153,7 +5060,6 @@ Choices-ar.UTF-8: ${essid_list} اكتب ESSID يدوياً
 Choices-ast.UTF-8: ${essid_list} Introducir ESSID manualmente
 Choices-be.UTF-8: ${essid_list} Упішыце ESSID самастойна
 Choices-bg.UTF-8: ${essid_list} Ръчно въвеждане на ESSID
-Choices-bs.UTF-8: ${essid_list} pritisnite ESSID ručno
 Choices-ca.UTF-8: ${essid_list} Introduïu l'ESSID manualment
 Choices-cs.UTF-8: ${essid_list} Zadat ESSID ručně
 Choices-cy.UTF-8: Rhowch ESSID eich hun ${essid_list}
@@ -5170,7 +5076,7 @@ Choices-fr.UTF-8: ${essid_list} Entrer le nom du réseau manuellement
 Choices-ga.UTF-8: ${essid_list} Cuir ESSID isteach de láimh
 Choices-gl.UTF-8: ${essid_list} Introducir o ESSID manualmente
 Choices-he.UTF-8: ${essid_list} הכנסת ESSID ידנית
-Choices-hr.UTF-8: ${essid_list} Ručno unesite ESSID
+Choices-hr.UTF-8: ${essid_list} Unesite ESSID ručno
 Choices-hu.UTF-8: ${essid_list} ESSID (hálózat azonosító) megadása
 Choices-id.UTF-8: ${essid_list} Masukkan ESSID secara manual
 Choices-is.UTF-8: ${essid_list} Settu ESSID inn handvirkt
@@ -5196,7 +5102,6 @@ Choices-sl.UTF-8: ${essid_list} Ročni vnos ESSID
 Choices-sr.UTF-8: ${essid_list} Унесите ESSID ручно
 Choices-sv.UTF-8: ${essid_list} Ange ESSID manuellt
 Choices-te.UTF-8: ${essid_list}  ESSID మానవీయంగా ప్రవేశపెట్టండి
-Choices-tg.UTF-8: ${essid_list} Ворид кардани ESSID ба таври дастӣ
 Choices-th.UTF-8: ${essid_list} ป้อน ESSID เอง
 Choices-tr.UTF-8: ${essid_list} ESSID'yi elle gir
 Choices-ug.UTF-8: ${essid_list} دىكى ESSID نى قولدا كىرگۈزۈڭ
@@ -5214,8 +5119,6 @@ Description-be.UTF-8: Радыёсетка:
  Пазначце, якую радыёсетку скарыстаць падчас працэса ўсталявання.
 Description-bg.UTF-8: Безжична мрежа:
  Изберете безжична мрежа, която да се използва за инсталиранете:
-Description-bs.UTF-8: Bežična mreža:
- Izaberite bežičnu mrežu za korištenje tokom procesa instaliranja:
 Description-ca.UTF-8: Xarxa sense fil:
  Seleccioneu la xarxa sense fil que voleu emprar al procés d'instal·lació.
 Description-cs.UTF-8: Bezdrátová síť:
@@ -5235,7 +5138,7 @@ Description-es.UTF-8: Red inalámbrica
 Description-et.UTF-8: Traadita võrk:
  Vali, millist traadita võrku paigaldusprotsessi käigus kasutada.
 Description-eu.UTF-8: Haririk gabeko sarea:
- Hautatu instalazio prozesuan erabili behar den haririk gabeko sarea.
+ Hautatu instalazio prozesuan erabili behar den haririk gabeko sarearein izena:
 Description-fa.UTF-8: شبکه بی‌سیم:
  شبکه بی‌سیم را برای استفاده در فرآیند نصب انتخاب کنید.
 Description-fi.UTF-8: Langaton verkko:
@@ -5251,7 +5154,7 @@ Description-he.UTF-8: רשת אלחוטית:
 Description-hr.UTF-8: Bežična mreža:
  Izaberite bežičnu mrežu koja će se koristiti tijekom instalacije.
 Description-hu.UTF-8: Vezeték nélküli hálózat:
- Válasszon vezeték nélküli hálózatot a telepítéshez:
+ Válassz vezeték nélküli hálózatot a telepítéshez:
 Description-id.UTF-8: Jaringan nirkabel:
  Pilih jaringan nirkabel yang akan dipakai dalam proses instalasi:
 Description-is.UTF-8: Þráðlaust netkerfi:
@@ -5300,8 +5203,6 @@ Description-sv.UTF-8: Trådlöst nätverk:
  Välj det trådlösa nätverk som ska användas under installationsprocessen.
 Description-te.UTF-8: వైర్లెస్ నెట్వర్క్ :
  స్థాపక ప్రక్రియలో వాడవలసిన వైర్లెస్ నెట్వర్క్ఎంపిక:
-Description-tg.UTF-8: Шабакаи бесим:
- Интихоб кардани шабакаи бесим барои истифода ҳангоми раванди насбкунӣ.
 Description-th.UTF-8: เครือข่ายไร้สาย:
  กรุณาเลือกเครือข่ายไร้สายที่จะใช้ระหว่างการติดตั้ง
 Description-tr.UTF-8: Kablosuz ağ:
@@ -5346,7 +5247,7 @@ Description-bo.UTF-8: DHCP རྩ་འཛུགས་མིང：
  .
  སྤྱོད་མཁན་མང་ཆེ་ཤོས་ཀྱིས་འདི་སྟོང་བ་སྐྱུར་ཆོག
 Description-bs.UTF-8: DHCP hostname:
- Možda biste trebali unijeti DHCP host ime. Ako koristite kablovski modem, trebali biste ovdje navesti broj računa.
+ Možda biste trebali unijeti DHCP host name. Ako koristite kablovski modem, trebali biste ovdje navesti broj računa.
  .
  Većina korisnika može ovo ostaviti prazno.
 Description-ca.UTF-8: Nom de l'ordinador DHCP:
@@ -5416,9 +5317,9 @@ Description-he.UTF-8: שם מחשב של שרת DHCP:
 Description-hr.UTF-8: Ime računala u DHCP-u:
  Možda trebate unijeti ime računala u DHCP-u. Ako koristite kabelski modem, ovdje trebate upisati broj računa.
  .
- Većina ostalih korisnika može ovo ostaviti prazno.
+ Večina ostalih korisnika može ovo ostaviti prazno.
 Description-hu.UTF-8: DHCP-gépnév:
- Szükség lehet DHCP-gépnév megadására. Ha kábelmodemet használ, lehetséges, hogy az előfizetői azonosítóját (account number) kell megadnia.
+ Itt megadhatsz egy DHCP-gépnevet. Ha kábelmodemet használsz, a felhasználóneved add meg.
  .
  Más felhasználók nyugodtan hagyhatják üresen.
 Description-id.UTF-8: Nama host DHCP:
@@ -5537,10 +5438,6 @@ Description-te.UTF-8: DHCP హోస్ట్ పేరు:
  DHCP హోస్ట్ పేరుమీరు  ప్రవేశపట్టవలసి రావచ్చు. మీరు కేబుల్ మోడెమ్ వాడుతున్నట్లయితే, మీరు ఖాతా సంఖ్య ఇవ్వవలసిన అవసరం రావచ్చు.
  .
  చాలమంది  వాడుకరులు, ఈ భాగాన్ని ఖాళీగా వదిలివేస్తారు.
-Description-tg.UTF-8: Номи мизбони DHCP
- Эҳтимол аст, ки ба шумо лозим мешавад, ки номи мизбони DHCP-ро муайян кунед. Агар шумо модеми симдорро истифода баред, ба шумо метавонад лозим шавад, ки дар ин ҷо рақами ҳисобро муайян кунед.
- .
- Қисми зиёди корбарони дигар инро холӣ монда наметавонанд.
 Description-th.UTF-8: ชื่อโฮสต์ DHCP:
  คุณอาจต้องระบุชื่อโฮสต์ DHCP และถ้าคุณใช้เคเบิลโมเด็ม คุณอาจต้องระบุหมายเลขบัญชีที่นี่
  .
@@ -5582,7 +5479,7 @@ Description-ast.UTF-8: Configurando la rede con DHCP
 Description-be.UTF-8: Наладка сеткі пры дапамозе DHCP
 Description-bg.UTF-8: Настройване на мрежата чрез DHCP
 Description-bo.UTF-8: DHCP སྤྱད་ནས་དྲ་ལམ་སྒྲིག་འགོད་བྱེད་བཞིན་པ
-Description-bs.UTF-8: Podešavanje mreže preko DHCP-a
+Description-bs.UTF-8: Podešavam mrežu preko DHCP-a
 Description-ca.UTF-8: S'està configurant la xarxa amb DHCP
 Description-cs.UTF-8: Nastavuje se síť přes DHCP
 Description-cy.UTF-8: Yn cyflunio'r rhwydwaith gyda DHCP
@@ -5599,8 +5496,8 @@ Description-fr.UTF-8: Configuration du réseau avec DHCP
 Description-ga.UTF-8: Líonra á chumrú le DHCP
 Description-gl.UTF-8: Estase a configurar a rede por DHCP
 Description-he.UTF-8: הגדרת הרשת באמצעות DHCP
-Description-hr.UTF-8: Podešavam mrežu pomoću DHCP-a
-Description-hu.UTF-8: Hálózat beállítása DHCP-vel
+Description-hr.UTF-8: Podešavam mrežu pomoću DHCP
+Description-hu.UTF-8: Hálózat konfigurálása DHCP-vel
 Description-id.UTF-8: Mengatur jaringan dengan DHCP
 Description-is.UTF-8: Stilli net með DHCP
 Description-it.UTF-8: Configurazione rete con DHCP
@@ -5630,7 +5527,6 @@ Description-sq.UTF-8: Duke konfiguruar rrjetin me DHCP
 Description-sr.UTF-8: Подешавање мреже помоћу DHCP-а
 Description-sv.UTF-8: Konfigurerar nätverket med DHCP
 Description-te.UTF-8: DHCP తో నెట్వర్క్   అమరిక
-Description-tg.UTF-8: Танзимкунии шабака бо DHCP
 Description-th.UTF-8: กำลังตั้งค่าเครือข่ายด้วย DHCP
 Description-tl.UTF-8: Isinasaayos ang network gamit ang DHCP
 Description-tr.UTF-8: Ağınız DHCP ile yapılandırılıyor
@@ -5696,7 +5592,6 @@ Description-sq.UTF-8: Kjo mund të kërkojë pak kohë.
 Description-sr.UTF-8: Ово може потрајати неко време.
 Description-sv.UTF-8: Det här kan ta lite tid.
 Description-te.UTF-8: ఈ పని కి చాలా సమయం పట్టవచ్చు.
-Description-tg.UTF-8: Ин метавонад якчанд лаҳза гирад.
 Description-th.UTF-8: อาจใช้เวลาสักครู่
 Description-tl.UTF-8: Maaaring magtagal ito.
 Description-tr.UTF-8: Bu işlem biraz zaman alabilir.
@@ -5714,7 +5609,7 @@ Description-ast.UTF-8: Funcionó la configuración automática de la rede
 Description-be.UTF-8: Аўтаматычная наладка сеткі паспяхова скончаная
 Description-bg.UTF-8: Автоматичното настройване на мрежа успя
 Description-bo.UTF-8: དྲ་ལམ་གྱི་རང་འགུལ་སྒྲིག་འགོད་ལེགས་འགྲུབ་འཐོབ་པ
-Description-bs.UTF-8: Uspješno automatsko podešavanje mreže
+Description-bs.UTF-8: Uspješnja autokonfiguracija mreže
 Description-ca.UTF-8: La configuració automàtica de la xarxa ha tingut èxit
 Description-cs.UTF-8: Automatické nastavení sítě bylo úspěšné
 Description-cy.UTF-8: Mae awtogyfluniad rhwydwaith wedi llwyddo
@@ -5732,7 +5627,7 @@ Description-ga.UTF-8: D'éirigh le huathchumraíocht an líonra
 Description-gl.UTF-8: Completouse a configuración automática da rede
 Description-he.UTF-8: הגדרת רשת באופן אוטומטי הצליחה
 Description-hr.UTF-8: Automatsko podešavanje mreže uspjelo
-Description-hu.UTF-8: A hálózat automatikus beállítása sikerült
+Description-hu.UTF-8: A hálózat automatikus konfigurálása sikerült
 Description-id.UTF-8: Pengaturan otomatis jaringan telah berhasil
 Description-is.UTF-8: Sjálfvirk netstilling tókst
 Description-it.UTF-8: La configurazione automatica della rete ha funzionato
@@ -5762,7 +5657,6 @@ Description-sq.UTF-8: Autokonfigurimi i rrjetit doli me sukses
 Description-sr.UTF-8: Аутоматско подешавање мреже је било успешно
 Description-sv.UTF-8: Automatisk nätverkskonfigurering lyckades
 Description-te.UTF-8: నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక విజయవంతమైనది
-Description-tg.UTF-8: Конфигуратсияи худкори шабакавӣ бомуваффақият ба анҷом расид
 Description-th.UTF-8: ตั้งค่าเครือข่ายโดยอัตโนมัติได้สำเร็จ
 Description-tl.UTF-8: Tagumpay ang pagsasaayos ng network
 Description-tr.UTF-8: Otomatik ağ yapılandırması başarıyla tamamlandı
@@ -5801,7 +5695,7 @@ Description-bo.UTF-8: DHCP མཛད་སྤྱོད་མཁན་མ་ར�
 Description-bs.UTF-8: DHCP klijent nije pronađen
  DHCP klijent nije pronađen. Ovaj paket zahtijeva pump ili dhcp-client.
  .
- DHCP konfiguracijski proces je obustavljen.
+ DHCP konfiguracijski proces je obustavljen
 Description-ca.UTF-8: No s'ha trobat cap client DHCP
  No s'ha trobat cap client DHCP. Aquest paquet requereix pump o dhcp-client.
  .
@@ -5986,10 +5880,6 @@ Description-te.UTF-8: DHCP క్లయింటు కనుగొనబడల�
  DHCP క్లయింటు కనుగొనబడలేదు. ఈ ప్యాకేజీకి పంప్ లేదా dhcp-clientఅవసరం.
  .
  DHCP అమరిక  చర్య  మధ్యలోనే నిలిపివేయబడినది.
-Description-tg.UTF-8: Ягон муштарии DHCP ёфт нашудааст
- Ягон муштарии DHCP ёфт нашудааст. Ин қуттӣ муштарии dhcp ё pump-ро талаб мекунад.
- .
- Раванди танзими DHCP қатъ карда шуд.
 Description-th.UTF-8: ไม่มีไคลเอนต์ DHCP
  ไม่พบไคลเอนต์ DHCP  แพกเกจนี้ต้องใช้ pump หรือ dhcp-client
  .
@@ -6031,7 +5921,7 @@ Choices-ast.UTF-8: Reintentar la configuración de rede automática, Reintentar 
 Choices-be.UTF-8: Паўтор аўтаматычнай наладкі сеткі, Паўтор наладкі з назвай сервера DHCP, Наладзіць сетку самастойна, ${wifireconf}, Прапусціць наладку сеткі
 Choices-bg.UTF-8: Нов опит за автоматично настройване на мрежа, Нов опит за автоматично настройване на мрежа чрез DHCP и име на хост, Ръчно настройване на мрежата, ${wifireconf}, Без настройване на мрежата засега
 Choices-bo.UTF-8: དྲ་ལམ་གྱི་རང་འགུལ་སྒྲིག་འགོད་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད, DHCP རྩ་འཛུགས་གནས་མིང་སྤྱད་ནས་དྲ་བའི་རང་འགུལ་སྒྲིག་འགོད་སླར་ཚོད་ལྟ་བྱེད་པ, ལག་བཟོས་ངང་དྲ་ལམ་སྒྲིག་འགོད་བྱེད་པ, ${wifireconf}, ད་ལྟ་དྲ་ལམ་སྒྲིག་འགོད་བྱེད་མི་དགོས་པ
-Choices-bs.UTF-8: Ponovi automatsko podešavanje mreže, Ponovi automatsko podešavanje mreže s hostname-om DHCP servera, Ručno podesite mrežu, ${wifireconf}, Ne podešavajte mrežu sada
+Choices-bs.UTF-8: Ponovi automatsku konfiguraciju mreže, Ponovi auto podešavanje mreže s hostname-om DHCP servera, Ručno podesi mrežu, ${wifireconf}, Ne podešavaj mrežu sada
 Choices-ca.UTF-8: Reintenta la configuració automàtica de la xarxa, Reintenta la configuració automàtica amb un nom d'ordinador DHCP, Configura la xarxa manualment, ${wifireconf}, No configures la xarxa ara mateix
 Choices-cs.UTF-8: Zkusit znovu automatické nastavení sítě, Zkusit znovu automatické nastavení sítě s DHCP jménem, Nastavit síť ručně, ${wifireconf}, Nyní síť nenastavovat
 Choices-cy.UTF-8: Ailgeisio awtogyfluniad rhwydwaith, Ailgeisio awtogyfluniad rhwydwaith gyda enw gwesteiwr DHCP, Cyflunio'r rhwydwaith â llaw, ${wifireconf}, Peidio â chyflunio'r rhwydwaith ar hyn o bryd
@@ -6046,10 +5936,10 @@ Choices-fa.UTF-8: تلاش مجدد برای تنظیم خودکار شبکه , 
 Choices-fi.UTF-8: Yritä uudestaan verkkoasetusten tekoa automaattisesti, Yritä uudestaan käyttäen DHCP-konenimeä, Tee verkkoasetukset itse, ${wifireconf}, Älä tee verkkoasetuksia tällä kertaa
 Choices-fr.UTF-8: Réessayer la configuration automatique du réseau, Réessayer la configuration automatique avec un nom d'hôte DHCP, Configurer vous-même le réseau, ${wifireconf}, Ne pas configurer le réseau maintenant
 Choices-ga.UTF-8: Atriail uathchumraíocht an líonra, Atriail uathchumraíocht an líonra le hóstainm DHCP, Cumraigh an líonra de láimh, ${wifireconf}, Ná cumraigh an líonra faoi láthair
-Choices-gl.UTF-8: Tentar de novo a configuración automática da rede, Tentar de novo a configuración automática cunha máquina DHCP, Configurar a rede manualmente, ${wifireconf}, Non configurar a rede agora
+Choices-gl.UTF-8: Tentar de novo a configuración automática da rede, Tentar de novo a configuración automática da dere cun nome de máquina DHCP, Configurar a rede manualmente, ${wifireconf}, Non configurar a rede agora
 Choices-he.UTF-8: נסה שוב להגדיר רשת באופן אוטומטי, נסה שוב להגדיר את הרשת באופן אוטומטי עם שם מחשב לשרת DHCP, הגדר את הרשת באופן ידני, ${wifireconf}, אל תגדיר רשת בשלב זה
 Choices-hr.UTF-8: Iznova pokušaj automatsko podešavanje mreže, Iznova pokušaj automatsko podešavanje mreže s imenom u DHCP-u, Ručno podesi mrežu, ${wifireconf}, Zasad ne podešavaj mrežu
-Choices-hu.UTF-8: Automatikus hálózatbeállítás újrapróbálása, Automatikus hálózatbeállítás újrapróbálása DHCP-gépnévvel, Hálózat kézi beállítása, ${wifireconf}, Hálózatbeállítás elhalasztása
+Choices-hu.UTF-8: Hálózati autokonfigurálás újrapróbálása, Hálózati autokonfigurálás újrapróbálása DHCP-gépnévvel, Hálózat kézi konfigurálása, ${wifireconf}, Hálózatkonfigurálás elhalasztása
 Choices-id.UTF-8: Ulangi pengaturan otomatis jaringan, Ulangi pengaturan otomatis jaringan dengan nama host DHCP, Atur jaringan secara manual, ${wifireconf}, Jangan mengatur jaringan saat ini
 Choices-is.UTF-8: Reyna sjálfvirka netstillingu aftur, Reyna sjálfvirka netstillingu aftur með DHCP vélarnafni, Stilla net handvirkt, ${wifireconf}, Sleppa netstillingum í bili
 Choices-it.UTF-8: Riprovare configurazione automatica della rete, Riprovare configurazione automatica della rete con nome host DHCP, Configurare la rete manualmente, ${wifireconf}, Non configurare la rete in questo momento
@@ -6079,7 +5969,6 @@ Choices-sq.UTF-8: Riprovo autokonfigurimin e rrjetit, Riprovo autokonfigurimin e
 Choices-sr.UTF-8: Покушај поново аутоматско подешавање мреже, Покушај поново аутоматско подешавање мреже са DHCP именом, Подеси мрежу ручно, ${wifireconf}, Немој подешавати мрежу сада
 Choices-sv.UTF-8: Försök att konfigurera nätverket automatiskt igen, Försök att konfigurera nätverket med ett DHCP-värdnamn, Konfigurera nätverket manuellt, ${wifireconf}, Konfigurera inte nätverket just nu
 Choices-te.UTF-8: నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక  మరల ప్రయత్నించు, నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక \, DHCP హోస్ట్ పేరుతో  మరల ప్రయత్నించండి, నెట్వర్క్ ని  స్వయంగా  అమరిక , ${wifireconf}, నెట్వర్క్     అమరిక  ఇప్పుడు చేయవద్దు
-Choices-tg.UTF-8: Такрор кардани конфигуратсияи худкори шабакавӣ, Такрор кардани конфигуратсияи худкори шабака бо номи мизбони DHCP, Танзим кардани шабака ба таври дастӣ, ${wifireconf}, Дар айни ҳол шабакаро конфигуратсия накунед
 Choices-th.UTF-8: ลองตั้งค่าเครือข่ายอัตโนมัติอีกครั้ง, ลองตั้งค่าเครือข่ายอัตโนมัติอีกครั้ง ด้วยชื่อโฮสต์ DHCP, ตั้งค่าเครือข่ายเอง, ${wifireconf}, ไม่ต้องตั้งค่าเครือข่ายในตอนนี้
 Choices-tl.UTF-8: Subukan muli ang pagsasaayos ng network, Subukan muli ang pagsasaayos ng sarili ang network na may DHCP hostname (pangalan), Isaayos ang network ng mano-mano, ${wifireconf}, Huwag isaayos ang network sa ngayon
 Choices-tr.UTF-8: Otomatik ağ yapılandırmasını tekrar dene, Otomatik ağ yapılandırmasını bir DHCP makine adıyla tekrar dene, Ağı elle yapılandır, ${wifireconf}, Ağı şu an yapılandırma
@@ -6107,7 +5996,7 @@ Description-bg.UTF-8: Начин за настройване на мрежа:
 Description-bo.UTF-8: དྲ་ལམ་སྒྲིག་འགོད་ཀྱི་ཐབས་ཤེས：
  འདི་ནས་DHCP རང་འགུལ་གྱི་དྲ་ལམ་སྒྲིག་འགོད་ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་པ(DHCP ཞབས་ཞུ་བས་དུས་ཚོད་རིང་ཙམ་འགོར་ན་དེ་ལེགས་འགྲུབ་ཐུབ་ཉེན་ཆེ) ཡང་ན་ལག་བཟོས་ངང་སྒྲིག་འགོད་བྱེད་པ DHCP ཞབས་ཞུ་བར་སྤྱོད་མཁན་གྱིས་DHCP རྩ་འཛུགས་གནས་མིང་ཞིག་སྐུར་དགོས་པ། འདི་འདྲ་རྩ་འཛུགས་གནས་མིང་ཞིག་སྤྲད་ནས་DHCP རང་འགུལ་དྲ་ལམ་སྒྲིག་འགོད་དེ་བསྐྱར་དུ་ཚོད་ལྟ་བྱེད་ཆོག
 Description-bs.UTF-8: Metod podešavanja mreže:
- Odavdje možete izabrati da ponovo pokušate DHCP automatsko podešavanje mreže (što može uspjeti ako Vašem DHCP serveru treba dugo vremena da odgovori) ili je možete podesiti ručno. Neki DHCP serveri zahtijevaju slanje njihovog DHCP hostname-a, tako možete odabrati da ponovo pokušate DHCP automatsko podešavanje mreže sa hostname-om koji navedete.
+ Odavde možete izabrati da ponovo pokušate DHCP automatsku konfiguraciju mreže (što može uspjeti ako vašem DHCP serveru treba dugo vremena da odgovori) ili možete ju podesiti ručno. Neki DHCP serveri zahtijevaju slanje njihovog DHCP hostnamea, tako da možete odabrati da ponovo pokušate DHCP automatsku konfiguraciju mreže sa hostname-om koji navedete.
 Description-ca.UTF-8: Mètode de configuració de la xarxa:
  Des d'ací podeu triar tornar a intentar la configuració automàtica de la xarxa amb DHCP (que és possible que funcione si el servidor de DHCP triga molt en respondre) o configurar la xarxa manualment. Alguns servidors de DHCP requereixen que el client envie un nom d'ordinador DHCP, així doncs també podeu intentar la configuració automàtica de la xarxa amb DHCP amb el nom d'ordinador que proveïu.
 Description-cs.UTF-8: Způsob nastavení sítě:
@@ -6141,9 +6030,9 @@ Description-gl.UTF-8: Método para a configuración da rede:
 Description-he.UTF-8: שיטת הגדרת רשת:
  מנקודה זו תוכל לנסות שוב להגדיר אוטומטית את הרשת שלך בעזרת DHCP (שעשויה להצליח אם לוקח לשרת DHCP שלך הרבה זמן לענות) או להגדיר את הרשת ידנית. חלק משרתי DHCP דורשים שיישלח אליהם שם מחשב ספציפי, לכן תוכל גם לבחור לנסות מחדש הגדרה אוטומטית של הרשת שלך בעזרת DHCP עם שם מחשב שתספק.
 Description-hr.UTF-8: Način podešavanja mreže:
- Odavde možete iznova pokušati automatsko DHCP podešavanje mreže (možda vašem DHCP poslužitelju treba vremena da odgovori) ili ručno podesiti mrežu. Neki DHCP poslužitelji traže da klijent pošalje ime računala DHCP-om pa možete pokušati i na taj način.
-Description-hu.UTF-8: A hálózat beállításának módja:
- Ismét megkísérelhető a hálózati DHCP automatikus beállítása (ami sikerülhet, ha a DHCP kiszolgáló lassan válaszol) vagy a hálózat kézi beállítása. Pár DHCP kiszolgáló DHCP gépnevet igényel, így az automatikus hálózatbeállítás ennek megadásával is újrapróbálható.
+ Odavde možete iznova pokušati automatsko DHCP podešavanje mreže (možda vašem DHCP poslužitelju treba vremena da odgovori), ili ručno podesiti mrežu. Neki DHCP poslužitelji traže da klijent pošalje ime računala DHCP-om, pa možete pokušati i na taj način.
+Description-hu.UTF-8: Hálózat konfigurálásának módja:
+ Ismét megkísérelhető a hálózati DHCP autokonfigurálás (ami sikerülhet, ha a DHCP kiszolgáló lassan válaszol) vagy a hálózat kézi beállítása. Pár DHCP kiszolgáló DHCP gépnevet igényel, így az autokonfiguráció ennek megadásával is újrapróbálható.
 Description-id.UTF-8: Metoda pengaturan jaringan:
  Dari sini Anda dapat memilih mengulangi pengaturan otomatis jaringan dengan DHCP (yang mungkin akan berhasil bila DHCP server lambat merespon permintaan) atau mengatur jaringan secara manual. Beberapa server DHCP mewajibkan nama host DHCP dikirimkan oleh klien, jadi Anda dapat juga mengulangi pengaturan otomatis jaringan dengan DHCP menggunakan nama host yang Anda berikan.
 Description-is.UTF-8: Netstilliaðferð sem nota skal:
@@ -6202,8 +6091,6 @@ Description-sv.UTF-8: Metod för nätverkskonfigurering:
  Här kan du välja att försöka konfigurera nätverket automatiskt med DHCP igen (vilket kanske fungerar om din DHCP-server tar lång tid på sig att svara), eller att konfigurera nätverket manuellt. Vissa DHCP-servrar kräver att ett DHCP-värdnamn skickas av klienten, så du kan också välja att försöka konfigurera nätverket med DHCP och ett värdnamn som du anger.
 Description-te.UTF-8: నెట్వర్క్ అమరికచేయు పద్ధతి:
  ఇక్కడ నుండిDHCP నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక  మరల ప్రయత్నించవచ్చు (DHCP సేవిక  ప్రతిస్పందన కు చాల సమయంతీసుకుంటే, ఇది విజయవంతం కావచ్చు) లేక  స్వయంగా  నెట్వర్క్ ని మలచవచ్చు.  కొన్ని DHCP సేవికలు  DHCP హోస్ట్ పేరు, కక్షి పంపిస్తేనే  పనిచేస్తాయి. అందుకని   మీరు ఇచ్చిన DHCP హోస్ట్ పేరుతో   నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక మీరు ఎంచుకోవచ్చు.
-Description-tg.UTF-8: Усули танзими шабака:
- Аз ин ҷо шумо метавонед интихоб кунед, ки конфигуратсияи худкори шабакаи DHCP-ро такрор кунед (ин метавонад он гоҳ ба кор ояд, ки сервери DHCP дер ҷавоб медиҳад), ё ки шабакаро ба таври дастӣ конфигуратсия кунед. Баъзе серверҳои DHCP номи мизбони DHCP-ро аз мизоҷ дархост мекунанд, ва шумо метавонед инчунин конфигуратсияи худкори шабакаи DHCP-ро бо номи мизбоне, ки шумо пешниҳод мекунед, такрор кунед.
 Description-th.UTF-8: วิธีตั้งค่าเครือข่าย:
  จากจุดนี้ คุณสามารถเลือกที่จะลองตั้งค่าเครือข่ายโดยอัตโนมัติด้วย DHCP อีกครั้ง (ซึ่งอาจได้ผลในกรณีที่เซิร์ฟเวอร์ DHCP ของคุณใช้เวลาตอบสนองนาน) หรือคุณอาจเลือกที่จะตั้งค่าเครือข่ายเอง นอกจากนี้ เซิร์ฟเวอร์ DHCP บางตัวต้องการให้ไคลเอนต์ส่งชื่อโฮสต์ DHCP ไปให้ ดังนั้น คุณอาจเลือกที่จะลองตั้งค่าเครือข่ายโดยอัตโนมัติด้วย DHCP โดยระบุชื่อโฮสต์ก็ได้
 Description-tl.UTF-8: Paraan ng pagsaayos ng network:
@@ -6236,7 +6123,7 @@ Description-bg.UTF-8: Грешка по време на автоматичнот
  Вашата мрежа вероятно не използва протокола DHCP. Възможно е DHCP-сървърът да е бавен или някой мрежов хардуер да не работи правилно.
 Description-bo.UTF-8: རང་འགུལ་གྱི་དྲ་ལམ་སྒྲིག་འགོད་ལེགས་འགྲུབ་མ་ཐུབ
  ཁྱོད་ཀྱི་དྲ་བས་DHCP འཆིངས་ཡིག་སྤྱོད་བཞིན་མེད་པར་འདྲ ཡང་ན་DHCP ཞབས་ཞུ་བའི་འགྲོས་ཚད་དམའ་བའམ་དྲ་ལམ་གྱི་སྲ་ཆས་ཞིག་ལ་སྐྱོན་ཡོད་སྲིད
-Description-bs.UTF-8: Automatsko podešavanje mreže nije uspjelo
+Description-bs.UTF-8: Autokonfiguracija mreže nije uspjela
  Vaša mreža vjerovatno ne koristi DHCP protokol. Alternativno, DHCP server je možda spor ili određeni mrežni hardware ne radi ispravno.
 Description-ca.UTF-8: La configuració automàtica de la xarxa ha fallat
  És probable que la vostra xarxa no estiga utilitzant el protocol DHCP. Alternativament, el servidor de DHCP pot ser lent o algun maquinari de xarxa no està funcionant correctament.
@@ -6271,8 +6158,8 @@ Description-gl.UTF-8: Fallou a configuración automática da rede
 Description-he.UTF-8: הגדרת רשת באופן אוטומטי נכשלה
  הרשת שלך כנראה לא משתמשת בפרוטוקול DHCP. לחלופין, שרת ה-DHCP שלך עלול להיות איטי, או שחומרת רשת כלשהי אינה עובדת בצורה תקינה.
 Description-hr.UTF-8: Automatsko podešavanje mreže nije uspjelo
- Vaša mreža vjerojatno ne koristi DHCP protokol, možda je DHCP poslužitelj spor ili neki dio mrežnoga sklopovlja ne radi ispravno.
-Description-hu.UTF-8: Az automatikus hálózatbeállítás sikertelen
+ Vaša mreža vjerojatno ne koristi DHCP protokol, ili je možda DHCP poslužitelj spor, ili koji dio mrežnoga sklopovlja ne radi ispravno.
+Description-hu.UTF-8: Az automatikus hálózat-beállítás sikertelen
  A hálózat valószínűleg nem DHCP-vel működik. Nem kizárható azonban a DHCP-kiszolgáló lassú volta, illetve a hálózati hardver hibája sem.
 Description-id.UTF-8: Pengaturan otomatis jaringan telah gagal
  Jaringan Anda mungkin tidak menggunakan protokol DHCP. Mungkin juga server DHCP lambat, atau perangkat keras jaringan tidak bekerja dengan baik.
@@ -6332,8 +6219,6 @@ Description-sv.UTF-8: Automatisk nätverkskonfigurering misslyckades
  Ditt nätverk använder förmodligen inte DHCP-protokollet. Det kan också vara så att DHCP-servern är långsam eller att någon nätverksmaskinvara inte fungerar ordentligt.
 Description-te.UTF-8: నెట్వర్క్ ని స్వయంచాలకంగా  అమరిక కుదరలేదు.
  మీ నెట్వర్క్ బహుశా DHCP  ప్రోటోకాల్ వాడుటలేదు,  లేక DHCP సేవికచాలా నెమ్మదిగా  పనిచేస్తుండవచ్చు లేక మీ నెట్వర్క్ హార్డ్వేర్ సరిగా పనిచేయుటలేదు.
-Description-tg.UTF-8: Конфигуратсияи худкори шабакавӣ бо нокомӣ дучор шудааст
- Эҳтимол аст, ки шабакаи шумо протоколи DHCP-ро истифода намебарад. Илова бар ин, сервери DHCP метавонад суст бошад, ё ки баъзе сахтафзори шабака ба таври нодуруст кор мекунад.
 Description-th.UTF-8: ตั้งค่าเครือข่ายอัตโนมัติไม่สำเร็จ
  เครือข่ายของคุณอาจไม่ได้ใช้โพรโทคอล DHCP อยู่ หรือมิฉะนั้น เซิร์ฟเวอร์ DHCP อาจจะทำงานช้า หรือฮาร์ดแวร์เครือข่ายบางชิ้นอาจไม่ทำงาน
 Description-tl.UTF-8: Bigo ang pagsasaayos ng sarili ng network
@@ -6383,9 +6268,9 @@ Description-bo.UTF-8: སྔོན་སྒྲིག་གི་རྒྱུད�
  .
  ཁྱོད་ཀྱིས་གལ་སྲིད་གཏན་ཁེལ་མ་ཐུབ་ན་སྔོན་སྒྲིག་གི་རྒྱུད་ལམ་སྤྱད་ནས་མུ་མཐུད་མི་རུང།：གནས་ཚུལ་འདི་རང་ཁུལ་གྱི་དྲ་བ་དོ་དམ་པ་ལ་ཤོད་རོགས
 Description-bs.UTF-8: Nastavite bez default route?
- Automatsko podešavanje mreže je uspješno. Međutim, default route nije postavljen: sistem neće znati kako da komunicira sa drugim računarima na Internetu. Ovo će učiniti nemogućim nastavak instalacije ukoliko nemate prvi instalacioni CD-ROM, 'Netinst' CD-ROM ili pakete dostupne na lokalnoj mreži.
+ Autokonfiguracija mreže je uspješna. Međutim, default route nije postavljen: sistem neće znati kako da komunicira sa drugim računarima na Internetu. Ovo će učiniti nemogućim nastavak instalacije ukoliko nemate prvi instalacioni CD-ROM, 'Netinst' CD-ROM ili pakete dostupne na lokalnoj mreži.
  .
- Ako niste sigurni, ne biste trebali nastavljati bez default route: kontaktirajte Vašeg lokalnog mrežnog administratora u vezi s ovim problemom.
+ Ako niste sigurni, ne biste trebali nastavljati bez default route: kontaktirajte vašeg lokalnog mrežnog administratora u vezi sa ovim problemom.
 Description-ca.UTF-8: Voleu continuar sense una ruta predeterminada?
  La configuració automàtica de la xarxa ha tingut èxit. Tot i així, no s'ha establert cap ruta predeterminada: el sistema no sap com comunicar-se amb els ordinadors a Internet. Això farà que siga impossible continuar amb la instal·lació si no teniu el primer CD-ROM oficial, un CD-ROM «Netinst», o els paquets disponibles a la xarxa local.
  .
@@ -6451,13 +6336,13 @@ Description-he.UTF-8: להמשיך בלי ניתוב ברירת מחדל?
  .
  אם אינך בטוח, לא כדאי שתמשיך בלי נתיב ברירת מחדל: צורך קשר עם מנהל הרשת שלך לגבי בעיה זאת.
 Description-hr.UTF-8: Nastavi bez zadanog puta?
- Automatsko podešavanje mreže je uspjelo. Međutim, nije postavljen zadani put (default route): sustav ne zna kako komunicirati s računalima na Internetu. Zbog toga nećete moći nastaviti instalaciju, osim ako nemate prvi službeni Debianov instalacijski CD-ROM, 'Netinst' CD-ROM ili pakete dostupne na lokalnoj mreži.
+ Automatsko podešavanje mreže je uspjelo. Međutim, nije postavljen zadani put (default route): sustav ne zna kako komunicirati s računalima na Internetu. Zbog toga nećete moći nastaviti instalaciju, osim ako nemate prvi službeni Debianov instalacijski CD-ROM, ili 'Netinst' CD-ROM, ili pakete dostupne na lokalnoj mreži.
  .
- Ako niste sigurni, ne biste trebali nastaviti bez zadanog puta: obratite se svom mrežnom administratoru zbog tog problema.
+ Ako ste nesigurni, ne biste trebali nastaviti bez zadanog puta: obratite se svom mrežnom administratoru zbog tog problema.
 Description-hu.UTF-8: Továbblépés alap útvonal nélkül?
- A hálózat automatikus beállítása sikerült. Mivel azonban nem lett megadva alap útvonal, a rendszer nem tud kommunikálni az internet gépeivel. Így a telepítés folytatásához szükség lesz az 1. telepítő CD-ROM-ra, vagy egy 'Netinst' CD-ROM-ra, vagy a helyi hálón elérhető csomagokra.
+ A hálózat automatikus beállítása sikerült, de mivel nem adtunk meg alap útvonalat, a rendszer nem tud kommunikálni az internettel. Így a folytatáshoz továbbra is vagy az 1. telepítő CD-ROM, egy 'Netinst' CD-ROM vagy a helyi hálón elérhető csomagok kellenek.
  .
- Kétség esetén inkább ne lépjen tovább alapértelmezett útvonal nélkül: kérje a helyi hálózati rendszergazdája segítségét.
+ Kétség esetén nem jó továbblépni alapértelmezett útvonal nélkül: a helyi hálózati rendszergazda segít.
 Description-id.UTF-8: Lanjutkan tanpa sebuah rute utama?
  Konfigurasi otomatis jaringan telah berhasil. Namun, rute utama tidak diatur: sistem tidak tahu bagaimana berkomunikasi dengan host-host di Internet. Hal ini menyebabkan Anda tidak dapat melanjutkan instalasi, kecuali Anda memiliki CD-ROM Debian resmi pertama (#1), CD-ROM 'Netinst', atau paket-paket instalasi tersedia pada jaringan lokal.
  .
@@ -6570,10 +6455,6 @@ Description-te.UTF-8: ఎంపిక ఇవ్వనపుడు వాడవ�
  నెట్వర్క్  స్వయంచాలక అమరిక విజయవంతమైనది. అయితేఅప్రమేయ రూట్  లేదు: ఈ వ్యవస్ధకి  ఇంటర్నెట్ లో హోస్ట్ లతో సంభాషించటము తెలియదు. మొదటి స్థాపన  CD-ROM, 'Netinst' CD-ROM, లేక స్థానిక నెట్వర్క్ లోపాకేజీలు  అందుబాటులో లేకుంటే స్థాపన కొనసాగటం కుదరదు.
  .
  అప్రమేయరూట్ లేకుండా కొనసాగకూడదని  సరిగా తెలియకపోతే:మీ స్థానిక నెట్వర్క నిర్వహణదారుని  ఈ సమస్యగురించి అడగండి.
-Description-tg.UTF-8: Бе шлюзи пешфарз идома медиҳед?
- Танзими шабака ба таври худкор бомуваффақият иҷро шудааст. Лекин, шлюзи пешфарз танзим нашудааст: система наметавонад бо мизбонҳо дар Интернет пайвастро танзим кунад. Идома додани насбкунӣ тавассути шабака имконпазир нест, вале шумо метаводнед диски CD-ROM-и насб ('Netinst' CD-ROM) ё қуттиҳои мавҷудбударо тавассути шабакаи маҳаллӣ истифода баред.
- .
- Агар шумо мутмаин набошед, шумо бояд бе шлюзи пешфарз идома надиҳед: бо маъмури шабакаи маҳаллӣ дар бораи ин мушкилӣ дар тамос шавед.
 Description-th.UTF-8: จะทำงานต่อโดยไม่มีเส้นทางเครือข่ายปริยายหรือไม่?
  ตั้งค่าเครือข่ายอัตโนมัติได้สำเร็จ แต่ไม่ปรากฏมีเส้นทางเครือข่ายปริยาย กล่าวคือ เครื่องของคุณจะไม่สามารถติดต่อกับเครื่องต่างๆ ในอินเทอร์เน็ตได้ ซึ่งจะทำให้ไม่สามารถทำงานต่อไปได้ นอกจากคุณจะมีแผ่นซีดีติดตั้งแผ่นแรก หรือมีซีดี 'Netinst' หรือมีแพกเกจทั้งหมดอยู่ในเครือข่ายท้องถิ่นแล้ว
  .
@@ -6591,7 +6472,7 @@ Description-ug.UTF-8: كۆڭۈلدىكى يول تاللىغۇچسىز داۋا�
  .
  ئەگەر سەۋەبىنى بىلمىسىڭىز، كۆڭۈلدىكى يول تاللىغۇچ يوق ئەھۋالدا ئورنىتىشنى داۋاملاشتۇرماڭ: تور باشقۇرغۇچىڭىزدىن مۇناسىۋەتلىك مەسىلىنى سوراڭ.
 Description-uk.UTF-8: Продовжувати без типового маршруту?
- Автоматичне налаштування мережі пройшло успішно. Однак, не був встановлений типовий маршрут: система не знає, як зв'язуватися з вузлами Інтернет. Ви не зможете продовжити встановлення, якщо ви не маєте першого офіційного компакт-диска Debian, диска „Netinst“ або пакунків, що доступні через локальну мережу.
+ Автоматичне налаштування мережі пройшло успішно. Однак, не був встановлений типовий маршрут: система не знає, як зв'язуватися з вузлами Інтернет. Ви не зможете продовжити встановлення, якщо ви не маєте першого офіційного компакт-диску Debian, диску „Netinst“ або пакунків, що доступні через локальну мережу.
  .
  Якщо ви не впевнені, чи можете ви продовжувати без типового маршруту, проконсультуйтеся із адміністратором вашої локальної мережі.
 Description-vi.UTF-8: Tiếp tục lại mà không có tuyến mặc định không?
@@ -6663,7 +6544,6 @@ Description-sq.UTF-8: Konfiguro rrjetin me valë
 Description-sr.UTF-8: Поново подеси бежичну мрежу
 Description-sv.UTF-8: Konfigurera om det trådlösa nätverket
 Description-te.UTF-8: వైర్లెస్ నెట్వర్క్  తిరిగి   అమరిక
-Description-tg.UTF-8: Танзими дубораи шабакаи бесим
 Description-th.UTF-8: ตั้งค่าเครือข่ายไร้สายอีกครั้ง
 Description-tl.UTF-8: Isaayos muli ang wireless network
 Description-tr.UTF-8: Kablosuz ağı yapılandır
@@ -6691,7 +6571,6 @@ Description-ar.UTF-8: محاولة التهيئة التلقائية لبروت�
 Description-ast.UTF-8: Intentando autoconfiguración IPv6...
 Description-be.UTF-8: Спроба аўтаналадкі IPv6...
 Description-bg.UTF-8: Опит за автоматична настройка на IPv6…
-Description-bs.UTF-8: Kreiram IPv6 automatsko podešavanje...
 Description-ca.UTF-8: S'està intentant l'autoconfiguració d'IPv6...
 Description-cs.UTF-8: Pokus o automatické nastavení IPv6...
 Description-cy.UTF-8: Ailgeisio awtogyfluniad IPv6...
@@ -6734,7 +6613,6 @@ Description-sl.UTF-8: Poskus samodejne nastavitve s protokolom IPv6...
 Description-sr.UTF-8: Проба IPv6 аутоконфигурације...
 Description-sv.UTF-8: Försöker ställa in IPv6 automatiskt...
 Description-te.UTF-8: IPv6 స్వయంచాలక అమరిక ప్రయత్నించుట...
-Description-tg.UTF-8: IPv6 ба таври худкор танзим шуда истодааст...
 Description-th.UTF-8: กำลังพยายามตั้งค่า IPv6 แบบอัตโนมัติ...
 Description-tr.UTF-8: IPv6 otomatik olarak yapılandırılmaya çalışılıyor...
 Description-ug.UTF-8: IPv6 نى ئۆزلۈكىدىن سەپلەشنى سىناۋاتىدۇ…
@@ -6750,7 +6628,6 @@ Description-ar.UTF-8: بانتظار عنوان الاتصال المحلي...
 Description-ast.UTF-8: Esperando a la direición llocal d'enllaz...
 Description-be.UTF-8: Чакаем адрас, лакальны для сегмента...
 Description-bg.UTF-8: Изчакване на локалния за връзката адрес…
-Description-bs.UTF-8: Čekam link lokalne adrese...
 Description-ca.UTF-8: S'està esperant a l'adreça d'enllaç local...
 Description-cs.UTF-8: Čekání na lokální linkovou adresu...
 Description-cy.UTF-8: Yn aros am gyfeiriad dolen-lleol...
@@ -6760,7 +6637,7 @@ Description-el.UTF-8: Αναμονή για τη διεύθυνση του link-
 Description-eo.UTF-8: Atendado de adreso 'ligo-loko'...
 Description-es.UTF-8: Esperando a la dirección local de enlace...
 Description-et.UTF-8: Link-local aadressi ootamine...
-Description-eu.UTF-8: Lotura-lokal helbidea itxoiten...
+Description-eu.UTF-8: Lotura-lokal hbidea itxoiten...
 Description-fa.UTF-8: در حال انتظار برای پیوند محلی نشانی...
 Description-fi.UTF-8: Odotetaan linkkiyhteysosoitetta...
 Description-fr.UTF-8: Attente de l'adresse du lien local (« link-local »)...
@@ -6793,7 +6670,6 @@ Description-sl.UTF-8: Čakanje na naslov link-local ...
 Description-sr.UTF-8: Чекање на адресу локалног линка...
 Description-sv.UTF-8: Väntar på länk-lokal adress...
 Description-te.UTF-8: లింకు స్థానిక చిరునామా కు వేచివున్నాము...
-Description-tg.UTF-8: Дар ҳоли интизори суроғаи пайванди маҳаллӣ...
 Description-th.UTF-8: กำลังรอที่อยู่ของลิงก์เฉพาะที่...
 Description-tr.UTF-8: Link-lokal adresi bekleniyor...
 Description-ug.UTF-8: ئۇلىنىدىغان يەرلىك ئادرېسنى كۈتۈۋاتىدۇ…
@@ -6809,7 +6685,6 @@ Description-ar.UTF-8: محاولة التهيئة التلقائية لبروت�
 Description-ast.UTF-8: Intentando autoconfiguración IPv6...
 Description-be.UTF-8: Спроба аўтаналадкі IPv6...
 Description-bg.UTF-8: Опит за автоматична настройка на IPv6…
-Description-bs.UTF-8: Kreiram IPv6 automatsko podešavanje...
 Description-ca.UTF-8: S'està intentant l'autoconfiguració d'IPv6...
 Description-cs.UTF-8: Pokus o automatické nastavení IPv6...
 Description-cy.UTF-8: Ailgeisio awtogyfluniad IPv6...
@@ -6852,7 +6727,6 @@ Description-sl.UTF-8: Poskus samodejne nastavitve s protokolom IPv6...
 Description-sr.UTF-8: Проба IPv6 аутоконфигурације...
 Description-sv.UTF-8: Försöker ställa in IPv6 automatiskt...
 Description-te.UTF-8: IPv6 స్వయంచాలక అమరిక ప్రయత్నించుట...
-Description-tg.UTF-8: IPv6 ба таври худкор танзим шуда истодааст...
 Description-th.UTF-8: กำลังพยายามตั้งค่า IPv6 แบบอัตโนมัติ...
 Description-tr.UTF-8: IPv6 otomatik olarak yapılandırılmaya çalışılıyor...
 Description-ug.UTF-8: IPv6 نى ئۆزلۈكىدىن سەپلەشنى سىناۋاتىدۇ…
@@ -6874,7 +6748,6 @@ Description-ar.UTF-8: تهيئة الشبكة باستخدام DHCPv6
 Description-ast.UTF-8: Configurando la rede con DHCPv6
 Description-be.UTF-8: Наладка сеткі пры дапамозе DHCPv6
 Description-bg.UTF-8: Настройване на мрежата чрез DHCPv6
-Description-bs.UTF-8: Podešavanje mreže preko DHCPv6
 Description-ca.UTF-8: S'està configurant la xarxa amb DHCPv6
 Description-cs.UTF-8: Nastavuje se síť pomocí DHCPv6
 Description-cy.UTF-8: Yn cyflunio'r rhwydwaith gyda DHCPv6
@@ -6892,7 +6765,7 @@ Description-ga.UTF-8: Líonra á chumrú le DHCPv6
 Description-gl.UTF-8: Estase a configurar a rede con DHCPv6
 Description-he.UTF-8: הגדרת הרשת באמצעות DHCPv6
 Description-hr.UTF-8: Podešavam mrežu pomoću DHCPv6
-Description-hu.UTF-8: Hálózat konfigurálása DHCPv6-tal
+Description-hu.UTF-8: Hálózat konfigurálása DHCPv6-al
 Description-id.UTF-8: Mengatur jaringan dengan DHCPv6
 Description-is.UTF-8: Stilli net með DHCPv6
 Description-it.UTF-8: Configurazione rete con DHCPv6
@@ -6917,7 +6790,6 @@ Description-sl.UTF-8: Nastavljanje omrežja z DHCPv6
 Description-sr.UTF-8: Подешавање мреже помоћу DHCPv6
 Description-sv.UTF-8: Ställer in nätverket med DHCPv6
 Description-te.UTF-8: DHCP తో నెట్వర్క్   అమరిక
-Description-tg.UTF-8: Танзимкунии шабака бо DHCPv6
 Description-th.UTF-8: กำลังตั้งค่าเครือข่ายด้วย DHCPv6
 Description-tr.UTF-8: Ağınız DHCPv6 ile yapılandırılıyor
 Description-ug.UTF-8: تورنى DHCPv6 ئارقىلىق سەپلەۋاتىدۇ
@@ -6973,15 +6845,6 @@ Description-bg.UTF-8: IP адрес:
  По желание можете да добавите и мрежова маска (например „/24“).
  .
  Ако не знаете какво да въведете се консултирайте с администратора на мрежата.
-Description-bs.UTF-8: IP adresa:
- IP adresa je unikatna za Vaš komjuter i može biti:
- .
-  * četiri broja odvojena tačkama (IPv4);
-   * blokovi heksadecimalnih znakova odvojenih dvotačkama (IPv6)
- .
- Također možete opcionalno priložiti CIDR netmask (kao što su "/24").
- .
- Ako ne znate šta koristiti ovdje, konsultirajte svog mrežnog administratora.
 Description-ca.UTF-8: Adreça IP:
  L'adreça IP és única per al vostre ordinador, i pot ser:
  .
@@ -7129,21 +6992,21 @@ Description-he.UTF-8: כתובת IP:
 Description-hr.UTF-8: IP adresa:
  IP adresa je jedinstvena za vaše računalo i može biti:
  .
-  * četiri broja odvojena točkama (IPv4),
+  * četiri broja odvojena točkama (IPv4);
   * blokovi heksadekadskih znakova odvojeni dvotočjima (IPv6).
  .
  Također možete unijeti i CIDR mrežnu masku (npr. "/24").
  .
- Ako ne znate što koristiti, upitajte administratora vaše mreže.
+ Ako ne znate što koristiti, kontaktirajte administratora vaše mreže.
 Description-hu.UTF-8: IP-cím:
  Az IP cím a számítógépre jellemző egyedi azonosító, ami lehet:
  .
   * négy, pontokkal elválasztott szám (IPv4);
   * hexadecimális számok kettősponttal elválasztva (IPv6).
  .
- Megadhat egy CIDR hálózati maszkot is (mint pl. a "/24").
+ Megadhatsz egy CIDR hálózati maszkot is (mint pl. a "/24").
  .
- Ha nem tudja, hogy mit írjon ide, kérdezze meg a rendszergazdát vagy az internet szolgáltatót.
+ Ha nem tudod, hogy mit írj ide, kérdezd meg a rendszergazdát vagy az internet szolgáltatót.
 Description-id.UTF-8: Alamat IP:
  Alamat IP adalah unik untuk komputer Anda, yaitu:
  .
@@ -7360,15 +7223,6 @@ Description-te.UTF-8: IP చిరునామా:
  CIDR నెట్ మాస్క్ ("/24" లాంటిది) చివరన జతచేయవచ్చు.
  .
  మీకు  ఏమి ప్రవేశపెట్టాలో తెలియకపోతే, మీ  నెట్వర్క్ పాలనాధికారిని సంప్రదించండి.
-Description-tg.UTF-8: Суроғаи IP:
- Суроғаи IP барои компютери шумо ягона аст ва метавонад:
- .
-  * дорои чор рақами бо нуқта ҷудошуда бошад (IPv4);
-  * дорои блокҳои рамзи шонздаҳрақамаи бо ду нуқта ҷудошуда бошад (IPv6).
- .
- Шумо инчунин метавонед маскаи шабакаи CIDR-ро илова кунед (монанди "/24").
- .
- Агар шумо надонед, ки чиро бояд истифода баред, ба маъмури шабакаи худ муроҷиат намоед.
 Description-th.UTF-8: หมายเลข IP:
  หมายเลข IP ของเครื่องคุณต้องไม่ซ้ำกับเครื่องอื่น และอาจเป็น:
  .
@@ -7447,8 +7301,6 @@ Description-be.UTF-8: Няслушны IP-адрас
  Прапанаваны IP адрас з'яўляецца памылковым. Ён мусіць мець выгляд x.x.x.x, дзе кожны 'x' - лічба не больш за 255 (адрас IPv4) альбо паслядоўнасць блокаў шаснаццаткавых лічбаў, падзеленых двухкроп'ямі (адрас IPv6). Калі ласка, паспрабуйце яшчэ раз.
 Description-bg.UTF-8: Некоректен IP-адрес
  IP-адресът, който сте дали, е неправилен. Той трябва да бъде във вида „x.x.x.x“, където всяко „x“ е не по-голямо от 255 (за IPv4) или поредица от блокове шестнайсетични цифри, разделени с двоеточия (за IPv6). Моля, опитайте отново.
-Description-bs.UTF-8: Neispravno unešena IP adresa
- IP adresa koju ste unijeli nije ispravna. Treba biti u obliku x.x.x.x gdje svako 'x' nije veće od 255 (IPv4 aderesa), ili  redoslijed blokova heksadecimalnih znakova odvojene dvotočkama (IPv6 adresa). Molim pokušajte ponovo.
 Description-ca.UTF-8: L'adreça IP és malformada
  L'adreça IP que heu proveït és malformada. Haurà d'estar en el format x.x.x.x on cada «x» no és més gran que 255 (una adreça IPv4), o una seqüència de blocs de dígits hexadecimals separats per dos punts (una adreça IPv6). Si us plau, proveu de nou.
 Description-cs.UTF-8: Zkomolená IP adresa
@@ -7464,7 +7316,7 @@ Description-el.UTF-8: Λάθος μορφή διεύθυνσης IP
 Description-eo.UTF-8: Misformita IP-adreso
  Vi donis misformitan IP-adreson. Ĝia strukturo devas esti 'x.x.x.x', kie ĉiu 'x' ne estu pli granda ol 255 (adreso IPv4), aŭ vico da blokoj el deksesumaj ciferoj apartitaj per dupunktoj (adreso IPv6). Bonvolu reprovi.
 Description-es.UTF-8: Dirección IP inválida
- La dirección IP que ha introducido no tiene un formato correcto. Debería tener el formato x.x.x.x donde «x» es un valor numérico inferior a 255 (una dirección IPv4), o una secuencia de bloques de dígitos hexadecimales separados por dos puntos (una dirección IPv6). Por favor, intente de nuevo.
+ La dirección IP que ha introducido no tiene un formato correcto. Debería tener el formato x.x.x.x donde «x» es un valor numérico inferior a 255 (una dirección IPv4), o una secuencia de bloques de digitos hexadecimales separados por dos puntos (una dirección IPv6). Por favor, intente de nuevo.
 Description-et.UTF-8: Sobimatu IP-aadress
  Sinu pakutud IP-aadress on vigane. See peaks olema kujul x.x.x.x, kus ükski 'x' pole suurem kui 255 (IPv4 aadress), või koolonitega eraldatud kuueteistkümnendnumbrite jada (IPv6 aadress). Palun proovi uuesti.
 Description-eu.UTF-8: Gaizki osatutako IP helbidea
@@ -7481,10 +7333,10 @@ Description-gl.UTF-8: Enderezo IP mal formado
  O enderezo IP que forneceu está mal formado. Debería ter a forma x.x.x.x, onde cada «x» non é superior a 255 (un enderezo IPv4), ou unha secuencia de bloques de díxitos hexadecimais separados por dous puntos (unha dirección IPv6). Volva tentalo.
 Description-he.UTF-8: כתובת IP לא תקינה
  כתובת ה-IP שספקת אינה תקינה. היא צריכה להיות במבנה של x.x.x.x כאשר כל x הינו מספר שאינו גדול מ‑255 (כתובת IPv4), או רצף של בלוקים של תווים הקסדצימליים המופרדים על ידי נקודותיים (כתובת IPv6). אנא נסה שוב.
-Description-hr.UTF-8: Neispravna IP adresa
- IP adresa koju ste upisali nije ispravna. Mora biti u obliku 'x.x.x.x' gdje niti jedan 'x' ne može biti veći od 255 (IPv4 adresa), ili niz blokova heksadekadskih znakova odvojenih dvotočjima (IPv6 adresa). Molim pokušajte iznova.
-Description-hu.UTF-8: Hibás IP-cím formátum
- A megadott IP-cím formátuma hibás. A helyes forma vagy x.x.x.x, ahol egy-egy 'x' egy 255-nél nem nagyobb számot jelöl (IPv4 cím esetén), vagy valahány hexadecimális számcsoport kettősponttal elválasztva (IPv6 esetén). Kérem, próbálja újra.
+Description-hr.UTF-8: Nevaljana IP adresa
+ IP adresa koju ste upisali nije valjana. Mora biti u obliku 'x.x.x.x' gdje niti jedan 'x' ne može biti veći od 255 (IPv4 adresa), ili niz blokova heksadekadskih znakova odvojenih dvotočjima (IPv6 adresa). Molim pokušajte iznova.
+Description-hu.UTF-8: Hibás IP-cím
+ A megadott IP-cím formája hibás. A helyes forma vagy x.x.x.x, ahol egy-egy 'x' egy 255-nél nem nagyobb számot jelöl (IPv4 cím esetén), vagy valahány hexadecimális számcsoport kettősponttal elválasztva (IPv6 esetén). Kérlek próbáld újra.
 Description-id.UTF-8: Alamat IP tidak benar
  Alamat IP yang Anda berikan tidak benar. Bentuknya harus sebagai berikut: x.x.x.x dengan tiap 'x' tidak lebih dari 255 (alamat IPv6), atau sekelompok aksara heksadesimal dipisahkan dengan titik-dua (alamat IPv6). Silakan coba lagi.
 Description-is.UTF-8: Ógild IP tala
@@ -7533,8 +7385,6 @@ Description-sv.UTF-8: Felformaterad IP-adress
  IP-adressen som du angav är felformaterad. Den ska vara på formatet x.x.x.x där varje "x" inte är större än 255 (för IPv4), eller en sekvens med hexadecimala tecken separerade med kolon (för IPv6). Försök igen.
 Description-te.UTF-8: తీరు సరిగాలేని  IP చిరునామా
  మీరు ఇచ్చిన   IP చిరునామా తీరు సరిగాలేదు. x.x.x.x లాగా,ఒక్కొక్క x,  255 (ఒక IPv4 చిరునామా లాగా) కన్నా పెద్దదిగా లేకుండా వుండాలి. దయచేసి మరల ప్రయత్నించు.
-Description-tg.UTF-8: Суроғаи IP-и бадшакл
- Суроғаи IP-и воридшуда нодуруст аст. Шумо бояд онро дар шакли x.x.x.x ворид кунед, ҳар куҷое 'x' рақами на зиёда аз 255 (суроғаи IPv4) мебошад, ё тартиби блокҳои шонздаҳрақамаи бо нуқта вергул ҷудошуда мебошад (суроғаи IPv6). Лутфан, амалро такрор кунед.
 Description-th.UTF-8: หมายเลข IP ผิดรูปแบบ
  หมายเลข IP ที่คุณป้อน มีรูปแบบไม่ถูกต้อง รูปแบบที่ถูกต้องอยู่ในรูป x.x.x.x โดยที่ 'x' แต่ละตัว เป็นตัวเลขที่ไม่เกิน 255 (หมายเลข IPv4) หรือลำดับของตัวเลขฐานสิบหกคั่นด้วยทวิภาค (ที่อยู่ IPv6) กรุณาป้อนใหม่
 Description-tr.UTF-8: IP adres biçimi hatalı
@@ -7568,7 +7418,7 @@ Description-bg.UTF-8: Адрес за Point-to-Point:
 Description-bo.UTF-8: ཁ་སྤྲོད་དྲ་བའི་ཁ་ཡིག：
  ཁ་སྤྲོད་དྲ་བའི་ཁ་ཡིག་ནི་དྲ་ཐོག་གི་ཁ་སྤྲོད་ཡིན་པའི་གནས་གཞན་དེ་གཏན་འབེབས་བྱེད་པར་སྤྱོད་རྒྱུ་ཡིན། འདི་ཅི་ཡིན་མ་ཤེས་ན་དྲ་བ་དོ་དམ་པ་ལ་འབྲེལ་བ་བྱེད་རོགས། ཁ་སྤྲོད་ཁ་ཡིག་ནི་ཨང་གྲངས་ཚོ་བཞི་རྟགས་. ཡིས་ཁག་བགོས་ནས་འབྲི་དགོས
 Description-bs.UTF-8: Point-to-point adresa:
- Point-to-point adresa se koristi da bi se ustanovila krajnja tačka point to point mreže.  Konsultujte se sa Vašim mrežnim administratorom ako ne znate vrijednost.  Point-to-point adresa bi se trebala unijeti kao četiri brojke razdvojene tačkama.
+ Point-to-point adresa se koristi da bi se ustanovila krajnja tačka point to point mreže.  Konsultujte se sa vašim mrežnim administratorom ako ne znate vrijednost.  Point-to-point adresa bi se trebala unijeti kao četiri brojke razdvojene tačkama.
 Description-ca.UTF-8: Adreça punt-a-punt:
  L'adreça punt-a-punt s'utilitza per a determinar l'altre extrem de la xarxa punt-a-punt. Consulteu al vostre administrador de xarxa si no sabeu el valor. L'adreça punt-a-punt s'ha d'introduir com quatre números separats per punts.
 Description-cs.UTF-8: Point-to-point adresa:
@@ -7602,9 +7452,9 @@ Description-gl.UTF-8: Enderezo punto a punto:
 Description-he.UTF-8: כתובת נקודה לנקודה:
  כתובת הנקודה לנקודה שמשתמש כדי לקבוע את הנקודה השנייה ברשת הנקודה לנקודה. התייעץ עם מנהל הרשת שלך, אם אינך יודע את הערך הנכון. מסכת הרשת שלך צריכה להיות 4 מספרים מופרדים בנקודות.
 Description-hr.UTF-8: Point-to-point adresa:
- Point-to-point adresa se koristi za određivanje druge krajnje točke 'point-to-point' mreže. Obratite se svom mrežnom administratoru ako je ne znate. Point-to-point adresa se sastoji od četiri broja, odvojena točkama.
+ Point-to-point adresa se rabi za određivanje druge krajnje točke 'point-to-point' mreže. Upitajte svog mrežnog administratora ako je ne znate. Point-to-point adresa se sastoji od četiri broja, odvojena točkama.
 Description-hu.UTF-8: Pont-pont cím:
- A pont-pont cím a pont-pont hálózat másik végpontját állapítja meg. Ha nem tudja az értékét, forduljon a hálózati rendszergazdájához segítségért. A pont-pont cím 4, pontokkal elválasztott számból áll.
+ A pont-pont cím a pont-pont hálózat másik végpontját állapítja meg. Kétség esetén a hálózati rendszergazda segít. A pont-pont cím 4 pontokkal elválasztott számból áll.
 Description-id.UTF-8: Alamat point-to-point:
  Alamat point-to-point digunakan untuk menentukan titik akhir lain dari jaringan point-to-point. Tanyakan pada administrator jaringan Anda bila tidak mengetahui nilainya. Alamat point-to-point harus dimasukkan dalam bentuk 4 angka yang dipisah dengan titik.
 Description-is.UTF-8: Vistfang beins sambands:
@@ -7661,8 +7511,6 @@ Description-sv.UTF-8: Punkt till punkt-adress:
  Punkt till punkt-adressen används för att bestämma den andra ändpunkten i ett punkt till punkt-nätverk. Fråga din nätverksadministratör om du inte vet värdet. Punkt till punkt-adressen skall anges som fyra nummer åtskilda av punkter.
 Description-te.UTF-8: Point-to-point చిరునామా:
  point-to-point చిరునామా వాడి    point to point నెట్వర్క్ రెండవ చివరకేంద్రాన్ని  కనుగొంటారు. మీకు అది తెలియకపోతే  మీ  నెట్వర్క నిర్వహణదారుని   అడగండి.  point-to-point చిరునామా పూర్తి విరామ చిహ్నలు మధ్యలో వస్తూ, నాలుగ సంఖ్యలుగా ప్రవేశ పెట్టాలి.
-Description-tg.UTF-8: Суроғаи нуқта-ба-нуқта
- Суроғаи нуқта-ба-нуқта барои муайян кардани дигар нуқтаи поёнӣ дар шабакаи нуқта ба нуқта истифода мешавад.  Агар шумо қиматеро надонед, ба маъмури шабакаи худ муроҷиат намоед.  Суроғаи нуқта-ба-нуқта бояд ҳамчун рақамҳои ҷудошуда бо нуқта ворид карда шавад.
 Description-th.UTF-8: หมายเลข point-to-point:
  หมายเลข point-to-point ใช้ระบุที่อยู่อีกฝั่งหนึ่งของเครือข่าย point to point  กรุณาสอบถามผู้ดูแลเครือข่ายของคุณหากคุณไม่ทราบค่านี้ หมายเลข point-to-point ควรอยู่ในรูปตัวเลขสี่ตัวคั่นด้วยเครื่องหมายจุด
 Description-tl.UTF-8: Point-to-point address:
@@ -7698,7 +7546,7 @@ Description-bg.UTF-8: Мрежова маска:
 Description-bo.UTF-8: དྲ་བའི་གདོང་བག：
  དྲ་བའི་གདོང་བག་ནི་ཁྱོད་ཀྱི་དྲ་ལམ་ནང་དུ་འཕྲུལ་ཆས་གང་ཞིག་རང་ཁུལ་དུ་གཏོགས་པར་གཏན་འབེབས་བྱེད་ཐུབ ཁྱོད་ཀྱིས་འདིར་ཅི་ཞིག་སྤྱོད་དགོས་མ་ཤེས་ན་དྲ་བའི་དོ་དམ་པ་ལ་འདྲི་དགོས གདོང་བག་དེ་ཨང་གྲངས་བཞི་ཡོད་པ་དང་རྟགས་ . འདིས་མཚམས་བཅད་ཡོད།
 Description-bs.UTF-8: Netmask:
- Netmask se koristi za određivanje koje mašine su lokalne na Vašoj mreži.  Konsultirajte se s Vašim mrežnim administratorom ako ne znate vrijednost.  Netmask se treba unijeti kao četiri broja rastavljena tačkama.
+ netmask se koristi za određivanje koje mašine su lokalno na vašoj mreži.  Konsultujte se s vašim mrežnim administratorom ako ne znate vrijednost.  netmask se treba unijeti kao četiri broja rastavljena tačkama.
 Description-ca.UTF-8: Màscara de xarxa:
  La màscara de xarxa s'utilitza per determinar quins ordinadors són locals a la vostra xarxa. Si no sabeu el valor, consulteu el vostre administrador de xarxa. La màscara de xarxa s'ha d'introduir com quatre números separats per punts.
 Description-cs.UTF-8: Síťová maska:
@@ -7732,9 +7580,9 @@ Description-gl.UTF-8: Máscara de rede:
 Description-he.UTF-8: מסכת רשת (netmask):
  מסכת הרשת (netmask) משמשת כדי לקבוע אלו מחשבים הינם בתוך הרשת שלך. התייעץ עם מנהל הרשת שלך, אם אינך יודע את הערך הנכון. מסכת הרשת שלך צריכה להיות 4 מספרים מופרדים בנקודות.
 Description-hr.UTF-8: Mrežna maska:
- Mrežna maska (netmask) se koristi za određivanje koji su strojevi lokalni na vašoj mreži. Upitajte svog mrežnog administratora ako je ne znate. Mrežna maska se upisuje kao četiri broja odvojena točkama.
+ Mrežna maska (netmask) se rabi za određivanje koji su strojevi lokalni na vašoj mreži. Upitajte svog mrežnog administratora ako je ne znate. Mrežna maska se upisuje kao četiri broja odvojena točkama.
 Description-hu.UTF-8: Hálózati maszk:
- A hálózati maszk a jelen géppel egy alhálózatba tartozó gépeket jelöli. Kétség esetén forduljon a hálózati rendszergazdájához. A hálózati maszkot négy, pontokkal elválasztott számként kell megadni.
+ A hálózati maszk a jelen géppel egy alhálózatba tartozó gépeket jelöli ki. Kétség esetén a hálózati rendszergazda segít. A hálózati maszk 4 pontokkal elválasztott számból áll.
 Description-id.UTF-8: Netmask:
  Netmask digunakan untuk menentukan mesin-mesin lokal pada jaringan. Tanyakan pada administrator jaringan bila Anda tidak mengetahui nilainya. Netmask harus dimasukkan dalam bentuk 4 angka yang dipisah dengan titik.
 Description-is.UTF-8: Nethula (netmask):
@@ -7793,8 +7641,6 @@ Description-sv.UTF-8: Nätmask:
  Nätmasken används för att bestämma vilka datorer som är lokala på ditt nätverk. Fråga din nätverksadministratör om du inte vet värdet. Nätmasken anges som fyra nummer åtskilda av punkter.
 Description-te.UTF-8: నెట్మాస్క్:
  నెట్మాస్క్ ని  వాడి. కంప్యూటర్ లలో స్థానికమైనవి  ఏవో కనుగొంటారు. మీకు తెలియకపోతే, నెట్వర్క్ నిర్వహణదారుని  అడగండి.
-Description-tg.UTF-8: Маскаи шабака:
- Маскаи шабакавӣ барои муайян кардани компютерҳои маҳаллӣ дар шабакаи шумо мебошанд.  Агар шумо онро надонед, бо маъмури системаи худ дар тамос шавед.  Маскаи шабакавӣ бояд ҳамчун чор рақами бо нуқтаҳо ҷудошуда ворид шавад.
 Description-th.UTF-8: เน็ตแมสก์:
  เน็ตแมสก์ใช้กำหนดว่าเครื่องใดอยู่ในเครือข่ายท้องถิ่นของคุณบ้าง กรุณาสอบถามผู้ดูแลเครือข่ายของคุณหากคุณไม่ทราบค่านี้ เน็ตแมสก์ควรอยู่ในรูปตัวเลขสี่ตัวคั่นด้วยเครื่องหมายจุด
 Description-tl.UTF-8: Netmask:
@@ -7833,7 +7679,7 @@ Description-bg.UTF-8: Шлюз:
 Description-bo.UTF-8: དྲ་བའི་སྒོ་ཆེན：
  དྲ་བའི་སྒོ་ཆེན་ནི་IP ཁ་ཡིག་ཞིག་ཡིན་པ་དང་(ཨང་གྲངས་བཞི་ཡོད་པ་དང་རྟགས་ . འདིས་མཚམས་བཅད་ཡོད། ) དེས་སྒོ་ཆེན་གྱི་སྦྲེལ་མཐུད་ཆས་སམ་སྔོན་སྒྲིག་གི་སྦྲེལ་མཐུད་ཆས་མཚོན་བཞིན་ཡོད། རང་ཁུལ་དྲ་བ་ནས་ཕྱིར་སྐྱོད་ཀྱི་བྱ་འགུལ་གང་ཞིག (དཔེར་ན་དྲ་རྒྱ་སྤྱོད་པ) སྦྲེལ་མཐུད་ཆས་འདི་ནས་བརྒྱུད་དགོས། སྐབས་རེ་ཙམ་ཁྱོད་ལ་སྦྲེལ་མཐུད་ཆས་ཞིག་མི་དགོས་པ་དང་དེའི་དུས་འདི་སྟོང་པར་སྐྱུར་ཆོག ཁྱོད་ཀྱིས་འདིར་ཅི་ཡིན་མ་ཤེས་ན་དྲ་བའི་དོ་དམ་པ་ལ་འདྲི་དགོས
 Description-bs.UTF-8: Gateway:
- Gateway je IP adresa (četiri brojke razdvojene tačkama) koja naznačava gateway router, također poznat kao default router.  Sav promet koji ide izvan Vašeg LAN-a (npr. na Internet) se šalje preko ovog routera.  U rijetkim prlikama, možete biti bez routera; u tom slučaju, možete ovo ostaviti prazno.  Ako ne znate tačan odgovor na ovo pitanje, konsultirajte se s Vašim mrežnim administratorom.
+ Gateway je IP adresa (četiri brojke razdvojene tačkama) koja naznačava gateway router, takođe poznat kao default router.  Sav promet koji ide izvan vašeg LAN-a (na primjer, na Internet) se šalje preko ovog routera.  U rijetkim prlikama, možete biti bez routera; u tom slučaju, možete ovo ostaviti prazno.  Ako ne znate podesan odgovor na ovo pitanje, konsultujte se sa vašim mrežnim administratorom.
 Description-ca.UTF-8: Passarel·la:
  La passarel·la és una adreça IP (quatre números separats per punts) que indica el router passarel·la, també conegut com el router predeterminat. Tot el tràfic que va cap a fora de la vostra LAN (per exemple, a Internet) s'envia a través d'aquest router. En algunes circumstàncies no habituals, és possible no tindre un router; en aquest cas, podeu deixar açò en blanc. Si no sabeu la resposta adequada per a aquesta pregunta, consulteu el vostre administrador de xarxa.
 Description-cs.UTF-8: Brána:
@@ -7867,9 +7713,9 @@ Description-gl.UTF-8: Pasarela:
 Description-he.UTF-8: Gateway:
  ה-gateway היא כתובת IP (ארבעה מספרים מופרדים בנקודות) שמציינת את נתב ברירת המחדל. כל התעבורה שיוצאת מחוץ לרשת המקומית שלך (למשל, לאינטרנט) נשלחת דרך נתב זה. במקרים נדירים יכול להיות שאין לך נתב. במקרה זה, ביכולתך לשאיר את השדה ריק. אם אין לך מידע וודאי לגבי שדה זה, התייעץ עם מנהל הרשת שלך.
 Description-hr.UTF-8: Gateway (izlazna adresa):
- Tzv. gateway (poveznik, pristupnik, ulaz) je IP adresa (četiri broja odvojena točkama) koja ukazuje na mrežni usmjerivač koji je pretpostavljeni usmjerivač prometa. Sav mrežni promet koji ide izvan vaše LAN mreže (npr. na Internet) šalje se kroz njega. U rijetkim slučajevima, možda nemate usmjerivač. Ako je tako, ostavite prazno. Ako ne znate odgovor, upitajte svog mrežnog administratora.
+ Tzv. gateway (poveznik, pristupnik, ulaz) je IP adresa (četiri broja odvojena točkama) koja ukazuje na mrežni usmjerivač koji je pretpostavljeni usmjerivač prometa. Sav mrežni promet koji ide izvan vaše LAN mreže (npr. na Internet) šalje se kroz njega. U rijetkim slučajevima, možda nemate usmjerivač; ako je tako, ostavite prazno. Ako ne znate odgovor, upitajte svog mrežnog administratora.
 Description-hu.UTF-8: Átjáró:
- Az átjáró egy IP-cím (négy, pontokkal elválasztott szám), ami az átjáró-útválasztót (alapértelmezett útválasztót) jelöli ki. A helyi hálóból kifelé (például az Internetre) irányuló forgalmat ez az útválasztó kezeli. Egyes ritka esetekben (amikor nincs közbeeső útvonalválasztó) e mező üresen maradhat. Kétség esetén forduljon a hálózati rendszergazdájához.
+ Az átjáró egy IP-cím (4 pontokkal elválasztott szám), ami az átjáró-útválasztót (alapértelmezett útválasztót) jelöli ki. A helyi hálóból kifelé (például az Internetre) irányuló forgalmat ez az útválasztó kezeli. Egyes ritka esetekben (amikor nincs közbeeső útvonalválasztó) e mező üresen maradhat. Kétség esetén a hálózati rendszergazda segít.
 Description-id.UTF-8: Gerbang:
  Gerbang merupakan alamat IP (4 angka yang dipisah dengan titik) yang menunjukan router gerbang, juga disebut sebagai router utama. Semua lalu lintas yang keluar dari LAN (misalnya ke Internet) akan dikirim melalui router ini. Sangat jarang suatu jaringan tidak memiliki router; dalam kasus ini, biarkan ruas ini kosong. Bila Anda tidak tahu jawaban yang benar, tanyakan pada administrator jaringan.
 Description-is.UTF-8: Netgátt (gateway):
@@ -7928,8 +7774,6 @@ Description-sv.UTF-8: Gateway:
  Gateway är en IP-adress (fyra nummer åtskilda av punkter) som anger en gatewayrouter, även kallad standardrutt. All trafik som skall ut från ditt LAN (exempelvis till Internet) skickas via den här routern. I sällsynta fall har du ingen router och då lämnar du det här tomt. Om du inte vet svaret på den här frågan bör du konsultera din nätverksadministratör.
 Description-te.UTF-8: గేట్వే:
  గేట్వే  ఒక IP చిరునామా   (దీనిలో  నాలుగుసంఖ్యలు మధ్య ఖాళీలతో వుంటాయి).ఇది గేట్వే రూటర్ లేక ఎంపికచెయ్యనపుడు రూటర్. మీ LAN బయటకు వెళ్లే ట్రాఫిక్  (ఉదా: అంతర్జాల ట్రాఫిక్) అంతా దీని ద్వారా వెళుతుంది. కొన్ని పరిస్థితులలో, మీకు రూటర్ లేక పోవచ్చు. అప్పుడు, మీరు దీనిని ఖాళీగా వుంచవచ్చు.   మీకు  సరియైన సమాధానం తెలియకపోతే, నెట్వర్క్ నిర్వహణదారుని  అడగండి.
-Description-tg.UTF-8: Шлюз:
- Шлюз - ин суроғаи IP (чор адади бо нуқтаҳо ҷудошуда) мебошад, ки маршрутизатори шлюзро, ки ҳамчун маршрутизатори пешфарз низ дониста мешавад, муайян мекунад.  Тамоми трафике, ки берун аз LAN-и шумо меравад (масалан, ба Интернет), аз миёни ин маршрутизатор фиристода мешавад.  Дар баъзе шароитҳо, шумо метавонед маршрутизатор надошта бошед; дар он ҳолат, шумо метавонед инро холӣ монед.  Агар шумо ба ин савол ҷавоби дурустро надонед, бо маъмури шабакаи худ дар тамос шавед.
 Description-th.UTF-8: เกตเวย์:
  เกตเวย์คือหมายเลข IP (ตัวเลขสี่ตัวคั่นด้วยเครื่องหมายจุด) ของเราเตอร์ที่เป็นเกตเวย์ หรือที่เรียกว่าเราเตอร์ปริยาย การจราจรทุกอย่างที่ออกจาก LAN (เช่น ออกสู่อินเทอร์เน็ต) จะถูกส่งผ่านเราเตอร์นี้ ในบางกรณี (ซี่งไม่ค่อยพบ) คุณอาจไม่มีเราเตอร์ คุณสามารถปล่อยช่องนี้ให้ว่างไว้ได้ แต่ถ้าคุณไม่ทราบค่าที่เหมาะสมสำหรับคำถามนี้ กรุณาสอบถามจากผู้ดูแลเครือข่ายของคุณ
 Description-tl.UTF-8: Gateway:
@@ -8049,7 +7893,7 @@ Description-hr.UTF-8: Nedostupan gateway
 Description-hu.UTF-8: Elérhetetlen átjáró
  A megadott átjárócím nem elérhető.
  .
- Valószínűleg hibásan adta meg az IP-címét, a hálózati maszkot és/vagy az átjárócímet.
+ Talán a megadott IP-cím, hálózati maszk és/vagy átjárócím hibás.
 Description-id.UTF-8: Gerbang tidak dapat dicapai
  Alamat gerbang yang Anda berikan tidak dapat dicapai.
  .
@@ -8162,10 +8006,6 @@ Description-te.UTF-8: గేట్వేకి  చేరలేము
  మీరు ఇచ్చిన  గేట్వే  చిరునామా  చేరలేవు.
  .
  IP చిరునామా, నెట్మాస్క్  మరియయ/లేక గేట్వే మీరు  ప్రవేశపెట్టేటపుడు  పొరపాటు చేసివుండవచ్చు.
-Description-tg.UTF-8: Шлюзи дастнорас
- Суроғаи шлюзи воридшуда дастнорас аст.
- .
- Эҳтимол аст, ки шумо ҳангоми вориди суроғаи IP барои маскаи шабака ва/ё шлюз хато кардед.
 Description-th.UTF-8: ติดต่อเกตเวย์ไม่ได้
  ที่อยู่เกตเวย์ที่คุณป้อนไม่สามารถติดต่อได้
  .
@@ -8212,8 +8052,6 @@ Description-be.UTF-8: IPv6 не падтрымваецца на злучэння
  Адрасы IPv6 нельга ўсталяваць на злучэннях адно-да-аднаго. Калі ласка, карыстайцеся адрасамі IPv4 альбо вярніцеся і выберыце іншы інтэрфэйс сеткі.
 Description-bg.UTF-8: IPv6 не се поддържа при връзки от вида „възел към възел“
  Връзките от тип „възел към възел“ не могат да използват IPv6. Използвайте IPv4 или се върнете назад и изберете друг мрежов интерфейс.
-Description-bs.UTF-8: IPv6 nije podržan na point-to-point linkovima
- IPv6 adrese ne mogu biti konfigurirane na point-to-point linkove.  Molimo koristite IPv4 adresu ili se vratite i odaberite drugi mrežni interfejs.
 Description-ca.UTF-8: L'IPv6 no és implementat en enllaços punt a punt
  Les adreces IPv6 no es poden configurar als enllaços punt a punt. Empreu una adreça IPv4, o torneu enrere i seleccioneu una altra interfície de xarxa.
 Description-cs.UTF-8: IPv6 není na linkách typu point-to-point podporováno
@@ -8229,11 +8067,11 @@ Description-el.UTF-8: Το IPv6 δεν υποστηρίζεται σε συνδ�
 Description-eo.UTF-8: IPv6 ne estas subtenata por ligoj 'punkto-al-punkto'
  Adresoj IPv6 ne povas esti agordataj por ligoj 'punkto-al-punkto'. Bonvolu uzi adresojn IPv4, aŭ retroiru kaj elektu malsaman retinterfacon.
 Description-es.UTF-8: No se soporta IPv6 en enlaces punto a punto
- No se pueden configurar direcciones IPv6 en enlaces punto a punto. Por favor, utilice una dirección IPv6. Puede volver atrás y seleccionar una interfaz de red distinta.
+ No se pueden configurar direcciónes IPv6 en enlaces punto a punto. Por favor, utilice una dirección IPv6. Puede volver atrás y seleccionar una interfaz de red distinta.
 Description-et.UTF-8: IPv6 ei toeta kaks-punkt ühendusi
  IPv6 aadresse ei saa kasutada kahe punkti vaheliste ühenduste jaoks. Palun kasuta IPv4 aadressi või mine tagasi ja vali mõni teine võrguliides.
 Description-eu.UTF-8: IPv6-ek ez du puntuz-puntuko loturarik onartzen
- Ezinda IPv6 helbiderik konfigruatu puntuz-puntuko loturetan. Mesedez IPv4 helbide bat erabili edo atzera joan eta beste sare interfaze bat hautatu.
+ Ezinda IPv6 helbiderik konfigruatu puntuz-puntuko loturaretan. Mesedez IPv4 helbide bat erabili edo atzera joan eta beste sare interfaze bat hautatu.
 Description-fa.UTF-8: IPv6 روی پیوندهای نقطه به نقطه پشتیبانی نمیشود
  نشانی‌های IPv6 نمیتوانند روی پیوندهای نقطه به نقطه پیکربندی شوند.لطفا از یک نشانی IPv4 استفاده کنید و یا به عقب برگردید و یک واسط شبکه متفاوت را انتخاب کنید.
 Description-fi.UTF-8: IPv6:tä ei tueta pisteestä-pisteeseen linkeillä
@@ -8247,7 +8085,7 @@ Description-gl.UTF-8: As ligazóns punto a punto non permiten usar IPv6
 Description-he.UTF-8: ‫IPv6 אינו נתמך בקישורי point-to-point‬
  אי אפשר להגדיר כתובות IPv6 עבור קישורי point-to-point. נא להשתמש בכתובת IPv4, או לחזור ולבחור בממשק רשת אחר.
 Description-hr.UTF-8: IPv6 nije podržan na vezama od točke do točke ("point-to-point")
- IPv6 adrese se ne mogu podesiti na vezama od točke do točke ("point-to-point"). Molim koristite IPv4 adresu ili se vratite natrag i izaberite drugo mrežno sučelje.
+ IPv6 adrese se ne mogu podesiti na vezama od točke do točke ("point-to-point").  Molim koristite IPv4 adresu ili se vratite natrag i izaberite drugo mrežno sučelje.
 Description-hu.UTF-8: Az IPv6 nem támogatott pont-pont (point-to-point) kapcsolatoknál
  IPv6 címet nem lehet pont-pont (point-to-point) kapcsolatoknál beállítani. Kérlek használj IPv4 címet vagy lépj vissza és válassz másik hálózati csatolót.
 Description-id.UTF-8: IPv6 tidak didukung pada jalur titik-ke-titik.
@@ -8300,8 +8138,6 @@ Description-sv.UTF-8: IPv6 stöds inte för punkt-till-punkt-länkar
  IPv6-adresser kan inte ställas in för punkt-till-punkt-länkar. Använd en IPv4-adress istället eller återgå och välj ett annat nätverksgränssnitt.
 Description-te.UTF-8: పాయింట్ నుండి పాయింట్ (PPP) లింకులపై IPv6  తోడ్పాటులేదు
  పాయింట్ నుండి పాయింట్ (PPP) లింకులపై IPv6  తోడ్పాటులేదు. IPv4 చిరునామా వాడండి లేక వెనుకకు వెళ్లి వేరొక నెట్వర్క్ సంపర్కాన్ని ఎంచుకోండి.
-Description-tg.UTF-8: IPv6-и дастгиринашаванда дар пайвандҳои нуқта-ба-нуқта
- Суроғаҳои IPv6 дар пайвандҳои нуқта-ба-нуқта танзим карда намешаванд.  Лутфан, суроғаи IPv4-ро истифода баред ё баргардед ва интерфейси шабакаи дигареро интихоб кунед.
 Description-th.UTF-8: ไม่รองรับ IPv6 ในลิงก์แบบจุดต่อจุด
  ไม่สามารถตั้งค่าหมายเลข IPv6 กับลิงก์แบบจุดต่อจุดได้ กรุณาใช้หมายเลข IPv4 แทน หรือย้อนกลับไปเลือกอินเทอร์เฟซเครือข่ายช่องอื่น
 Description-tr.UTF-8: IPv6, noktadan noktaya bağlantılarda desteklenmez.
@@ -8377,12 +8213,12 @@ Description-bo.UTF-8: ཆ་འཕྲིན་བདེན་པ་རེད་�
 Description-bs.UTF-8: Jesu li ove informacije tačne?
  Trenutno podešeni mrežni parametri:
  .
- interface     = ${interface}
- ipadresa      = ${ipaddress}
- netmask       = ${netmask}
- gateway       = ${gateway}
- pointopoint   = ${pointopoint}
- nameservers    = ${nameservers}
+  interfejs     = ${interface}
+  ipadresa     = ${ipaddress}
+  netmask       = ${netmask}
+  gateway       = ${gateway}
+  pointopoint   = ${pointopoint}
+  nameservers   = ${nameservers}
 Description-ca.UTF-8: És aquesta informació correcta?
  Paràmetres de la xarxa actualment configurada:
  .
@@ -8536,7 +8372,7 @@ Description-hr.UTF-8: Jesu li ovi podaci točni?
   gateway              = ${gateway}
   pointopoint          = ${pointopoint}
   imenski poslužitelji = ${nameservers}
-Description-hu.UTF-8: Helyesek az adatok?
+Description-hu.UTF-8: Az adatok helyesek?
  A jelenleg beállított hálózati paraméterek:
  .
   csatoló         = ${interface}
@@ -8806,15 +8642,6 @@ Description-te.UTF-8: ఈ సమాచారం సరియేనా?
   గేట్వే       = ${gateway}
   పాయింట్ టు పాయింట్   = ${pointopoint}
   నేమ్ సేవికలు   = ${nameservers}
-Description-tg.UTF-8: Оё ин маълумот дуруст аст?
- Параметрҳои танзимшудаи шабакаи ҷорӣ:
- .
- интерфейс     = ${interface}
-  суроғаи ip     = ${ipaddress}
-  маскаи шабака       = ${netmask}
-  шлюз       = ${gateway}
-  нуқта ба нуқта   = ${pointopoint}
-  номи сервер   = ${nameservers}
 Description-th.UTF-8: ข้อมูลนี้ถูกต้องหรือไม่?
  ค่าตั้งปัจจุบันของเครือข่าย:
  .
@@ -8913,7 +8740,7 @@ Description-fr.UTF-8: Configurer manuellement le réseau
 Description-ga.UTF-8: Cumraigh líonra le seolachán statach
 Description-gl.UTF-8: Configurar unha rede empregando direccionamento estático
 Description-he.UTF-8: הגדרת רשת באמצעות כתובת קבועה
-Description-hr.UTF-8: Podesi mrežu korištenjem statičkog adresiranja
+Description-hr.UTF-8: Podesi mrežu rabeći statičko adresiranje
 Description-hu.UTF-8: Hálózat konfigurálása statikus címzéssel
 Description-id.UTF-8: Mengatur jaringan dengan alamat statis
 Description-is.UTF-8: Stilla net með fastri ávörpun (static addressing)
@@ -8944,7 +8771,6 @@ Description-sq.UTF-8: Konfiguro një rrjet duke përdorur adresimin static
 Description-sr.UTF-8: Подешавање мреже са статичким адресирањем
 Description-sv.UTF-8: Konfigurera ett nätverk genom statisk adressering
 Description-te.UTF-8: నెట్వర్క్ ని స్థిర చిరునామా పద్ధతి వాడి అమరికచేయు
-Description-tg.UTF-8: Танзим кардани шабака бо истифодаи суроғаҳои статикӣ
 Description-th.UTF-8: ตั้งค่าเครือข่ายโดยระบุที่อยู่ตายตัว
 Description-tl.UTF-8: Isaayos ang network sa pamamagitan ng static address
 Description-tr.UTF-8: Ağı statik adresleme ile yapılandır

@@ -53,7 +53,6 @@ Choices-sq.UTF-8: asnjë kartë rrjeti, ${CHOICES}, asnjë e të mësipërmëve
 Choices-sr.UTF-8: нема етернет картице, ${CHOICES}, ни једно од наведеног
 Choices-sv.UTF-8: inget ethernetkort, ${CHOICES}, ingen av ovanstående
 Choices-te.UTF-8: ఈథర్నెట్ కార్డు లేదు, ${CHOICES}, పైవేవీ కాదు
-Choices-tg.UTF-8: корти ethernet нест, ${CHOICES}, на яке аз боло
 Choices-th.UTF-8: ไม่มีการ์ดอีเทอร์เน็ต, ${CHOICES}, ไม่ใช่ตัวเลือกข้างต้น
 Choices-tl.UTF-8: walang ethernet card, ${CHOICES}, wala sa itaas
 Choices-tr.UTF-8: ethernet kartı yok, ${CHOICES}, yukarıdakilerden hiçbiri
@@ -76,8 +75,8 @@ Description-bg.UTF-8: Драйвер, изискван от Вашата мре�
  Не беше открита Ethernet карта. Ако знаете името на драйвера за Вашата Ethernet карта, можете да го изберете от списъка.
 Description-bo.UTF-8: རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་ལ་དགོས་པའི་སྒུལ་ཆས：
  རྒྱུད་སྐུད་དྲ་བའི་སྦྲེལ་བྱང་རྙེད་མེད་པས་དེའི་སྒུལ་ཆས་ཀྱི་མིང་ཤེས་ན་འདེམས་ཐོ་འདིའི་ཐོག་འདེམས་ཆོག
-Description-bs.UTF-8: Upravljački program potreban za Vašu mrežnu karticu:
- Mrežna kartica nije pronađena. Ako znate naziv modula potrebnog za Vašu mrežnu karticu, možete ga odabrati sa liste.
+Description-bs.UTF-8: Upravljački program potreban za vašu mrežnu karticu:
+ Mrežna kartica nije pronađena. Ako znate naziv modula potrebnog za vašu mrežnu karticu, možete ga odabrati sa liste.
 Description-ca.UTF-8: Mòdul requerit per la targeta Ethernet:
  No s'ha detectat cap targeta Ethernet. Si sabeu el nom del controlador que requereix la targeta Ethernet, podeu seleccionar-lo de la llista.
 Description-cs.UTF-8: Ovladač vyžadovaný vaší ethernetovou kartou:
@@ -110,10 +109,10 @@ Description-gl.UTF-8: Controlador preciso pola tarxeta Ethernet:
  Non se detectou ningunha tarxeta Ethernet. Se coñece o nome do controlador que precisa, pode escollelo na lista.
 Description-he.UTF-8: מנהל התקן שנדרש על ידי כרטיס הרשת שלך:
  לא זוהה כרטיס רשת. אם אתה יודע את שם מנהל ההתקן הדרוש לכרטיס הרשת שלך, תוכל לבחור אותו מהרשימה.
-Description-hr.UTF-8: Upravljački program za vašu mrežnu karticu:
+Description-hr.UTF-8: Pogonitelj za vašu mrežnu karticu:
  Mrežna kartica nije pronađena. Ako znate naziv upravljačkog programa za vašu mrežnu karticu, izaberite ga s popisa.
-Description-hu.UTF-8: Az Ethernet kártyához szükséges meghajtó:
- Nem észleltem Ethernet kártyát. Ha tudja az Ethernet kártyához szükséges meghajtó nevét, kiválaszthatja a listából.
+Description-hu.UTF-8: Az Ethernet kártya meghajtója:
+ Nem észleltem Ethernet kártyát. Ha tudod az Ethernet kártyához szükséges meghajtó nevét, kiválaszthatod a listából.
 Description-id.UTF-8: Driver yang dibutuhkan kartu ethernet Anda:
  Kartu ethernet tidak ditemukan. Jika Anda tahu nama driver yang dibutuhkan oleh kartu ethernet Anda, silakan pilih dari daftar.
 Description-is.UTF-8: Rekill sem netkortið þarf:
@@ -170,8 +169,6 @@ Description-sv.UTF-8: Drivrutin som behövs för ditt ethernetkort:
  Hittade inget ethernetkort. Om du vet namnet på drivrutinen som krävs av ditt ethernetkort kan du välja den från listan.
 Description-te.UTF-8: మీ ఈథర్నెట్ కార్డుకి కావలసిన డ్రైవరు:
  ఈథర్నెట్ కార్డు కనుగొనబడలేదు. మీ ఈథర్నెట్ కార్డు డ్రైవరు (Driver) పేరు మీకు తెలిసినట్లయితే మీరు జాబితా నుంచి ఎంపిక చేసుకోవచ్చు.
-Description-tg.UTF-8: Барои корти Ethernet-и шумо драйвер лозим аст:
- Ягон корти Ethernet дар системаи шумо ёфт нашуд. Агар шумо номи драйверро барои корти Ethernet-и худ донед, метавонед онро аз рӯйхат интихоб кунед.
 Description-th.UTF-8: ไดรเวอร์ที่การ์ดอีเทอร์เน็ตของคุณต้องการ:
  ตรวจไม่พบการ์ดอีเทอร์เน็ต ถ้าคุณทราบชื่อไดรเวอร์สำหรับการ์ดอีเทอร์เน็ตของคุณ คุณสามารถเลือกได้จากรายการนี้
 Description-tl.UTF-8: Driver na kailangan ng inyong Ethernet card:
@@ -239,7 +236,7 @@ Description-gl.UTF-8: Pretende empregar Ethernet por FireWire?
 Description-he.UTF-8: האם יש בכוונתך להשתמש ב-FireWire Ethernet?
  לא זוהה כרטיס רשת, אבל נמצא ממשק FireWire. ייתכן, אם כי זה לא סביר, שיחד עם חיבור חומרת FireWire מתאימה, זהו ממשק הרשת העיקרי שלך.
 Description-hr.UTF-8: Planirate li koristiti FireWire Ethernet?
- Nije pronađena nijedna Ethernet kartica, ali dostupno je FireWire sučelje. Moguće je, iako nije vjerojatno, da s priključenim odgovarajućim FireWire sklopovljem ovo može biti vaše primarno Ethernet sučelje.
+ Nije pronađena nijedna Ethernet kartica, ali dostupno je FireWire sučelje. Moguće je, iako nije vjerojatno, da s priključenim odgovarajućim FireWire sklopovljem, ovo može biti vaše primarno Ethernet sučelje.
 Description-hu.UTF-8: FireWire Ethernetet használatát tervezed?
  Nem érzékeltem Ethernet kártyát, de egy FireWire csatolót igen. Lehet, bár nem valószínű, hogy a helyes FireWire eszköz csatlakoztatásával ez lehet az elsődleges Ethernet csatoló.
 Description-id.UTF-8: Anda ingin menggunakan Ethernet FireWire?
@@ -300,8 +297,6 @@ Description-sv.UTF-8: Har du planerat att använda Ethernet över FireWire?
  Inget Ethernetkort hittades men ett FireWire-gränssnitt hittades. Det är möjligt, kanske inte normalt, att med rätt FireWire-tillbehör ansluten till det att det här är ditt primära Ethernet-gränssnitt.
 Description-te.UTF-8: మీరు  ఫైర్ వైర్ ఈథర్ నెట్  వాడాలనుకుంటున్నారా ?
  ఈథర్నెట్ కార్డు గుర్తించుటలో విఫలం. కాని ఫైర్‌వైర్ ఇంటర్ఫేస్ వున్నది. సరిపోయిన  హార్డ్వేర్ అనుసంధానించితే, ఇది మీ ప్రధాన ఈథర్నెట్ ఇంటర్ఫేస్ గా వాడే అవకాశం (అరుదుగా) వుంది.
-Description-tg.UTF-8: Шумо мехоҳед, ки FireWire Ethernet-ро истифода баред?
- Ягон корти Ethernet ёфт нашуд, аммо интерфейси FireWire мавҷуд аст. Эҳтимол аст, ки агар шумо сахтафзори мувофиқро ба он пайваст кунед, он метавонад инттерфейси асосии Ethernet-и шумо гардад.
 Description-th.UTF-8: คุณเจตนาจะใช้อีเทอร์เน็ตผ่าน FireWire หรือไม่?
  ตรวจไม่พบการ์ดอีเทอร์เน็ต แต่มีอินเทอร์เฟซแบบ FireWire อยู่ เป็นไปได้เหมือนกัน แต่ไม่มาก ที่จะมีฮาร์ดแวร์ FireWire เชื่อมต่ออยู่จริงๆ อินเทอร์เฟซดังกล่าวอาจเป็นอินเทอร์เฟซหลักแบบอีเทอร์เน็ตของคุณก็ได้
 Description-tl.UTF-8: May balak ba kayong gumamit ng FireWire ethernet?
@@ -368,7 +363,7 @@ Description-gl.UTF-8: Non se atopou unha tarxeta Ethernet
 Description-he.UTF-8: לא נמצא כרטיס רשת
  לא נמצא כרטיס רשת במערכת שלך.
 Description-hr.UTF-8: Mrežna kartica nije pronađena
- Na sustavu nije pronađena mrežna kartica.
+ Na sustavu nije pronađena mrežna karica.
 Description-hu.UTF-8: Nem találtam Ethernet kártyát
  Nem találtam Ethernet kártyát a gépen.
 Description-id.UTF-8: Kartu ethernet tidak ditemukan
@@ -427,8 +422,6 @@ Description-sv.UTF-8: Hittade inget Ethernetkort
  Inget ethernetkort hittades i systemet.
 Description-te.UTF-8: ఈథర్నెట్ కార్డు కనుగొనబడలేదు
  సిస్టములో ఈథర్నెట్ కార్డు కనుగొనబడలేదు.
-Description-tg.UTF-8: Корти Ethernet ёфт нашудааст
- Ягон корти Ethernet дар системаи шумо ёфт нашуд.
 Description-th.UTF-8: ไม่พบการ์ดอีเทอร์เน็ต
  ไม่พบการ์ดอีเทอร์เน็ตในระบบ
 Description-tl.UTF-8: Walang nakitang Ethernet card
@@ -454,7 +447,7 @@ Description-ast.UTF-8: Deteutando el hardware de rede
 Description-be.UTF-8: Вызначэнне сеткавага абсталявання
 Description-bg.UTF-8: Разпознаване на мрежов хардуер
 Description-bo.UTF-8: དྲ་བའི་སྲ་ཆས་ཚོར་རྟོགས་བྱེད་བཞིན་པ་་་
-Description-bs.UTF-8: Detektiranje mrežnog hardware-a
+Description-bs.UTF-8: Detektiram mrežni hardware
 Description-ca.UTF-8: S'està detectant el maquinari de xarxa
 Description-cs.UTF-8: Rozpoznává se síťový hardware
 Description-cy.UTF-8: Yn chwilio am galedwedd rhwydwaith
@@ -502,7 +495,6 @@ Description-sq.UTF-8: Duke zbuluar skedën e rrjetit
 Description-sr.UTF-8: Детектовање мрежног хардвера
 Description-sv.UTF-8: Identifierar nätverksmaskinvara
 Description-te.UTF-8: నెట్వర్క్ హార్డ్వేర్  కనుగొనుట
-Description-tg.UTF-8: Муайянкунии сахтафзори шабакавӣ
 Description-th.UTF-8: กำลังตรวจหาฮาร์ดแวร์สำหรับเครือข่าย
 Description-tl.UTF-8: Hinahanap ang network hardware
 Description-tr.UTF-8: Ağ donanımı algılanıyor
@@ -526,7 +518,7 @@ Description-ast.UTF-8: Deteición del hardware de rede
 Description-be.UTF-8: Вызначыць сеткавае абсталяванне
 Description-bg.UTF-8: Разпознаване на мрежов хардуер
 Description-bo.UTF-8: དྲ་བའི་སྲ་ཆས་ཚོར་རྟོགས་བྱེད་པ
-Description-bs.UTF-8: Detektiranje mrežnog hardware-a
+Description-bs.UTF-8: Detektuj mrežni hardware
 Description-ca.UTF-8: Detecta el maquinari de xarxa
 Description-cs.UTF-8: Rozpoznat síťový hardware
 Description-cy.UTF-8: Canfod caledwedd rhwydwaith
@@ -574,7 +566,6 @@ Description-sq.UTF-8: Gjej skedën e rrjetit
 Description-sr.UTF-8: Детектуј мрежни хардвер
 Description-sv.UTF-8: Identifiera nätverksmaskinvara
 Description-te.UTF-8: నెట్వర్క్ హార్డ్వేర్  కనుగొను
-Description-tg.UTF-8: Муайян кардани сахтафзори шабакавӣ
 Description-th.UTF-8: ตรวจหาฮาร์ดแวร์สำหรับเครือข่าย
 Description-tl.UTF-8: Hanapin ang network hardware
 Description-tr.UTF-8: Ağ donanımını algıla

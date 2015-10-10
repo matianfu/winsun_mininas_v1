@@ -3,12 +3,13 @@
 . /usr/share/debconf/confmodule
 
 if db_get auto-install/enable && [ "$RET" = true ]; then
-	# disable locale & kbd selection for now
-	echo 1 >/var/run/auto-install.active
 	# find at least one preseed
-	if [ ! -e /preseed.cfg ] &&
-	   { db_get preseed/url  || [ -z "$RET" ]; } &&
-	   { db_get preseed/file || [ -z "$RET" ]; }; then
+	if [ -e /preseed.cfg ] ||
+	   { db_get preseed/url  && [ "$RET" ]; } ||
+	   { db_get preseed/file && [ "$RET" ]; }; then
+		# disable locale & kbd selection
+		echo 1 >/var/run/auto-install.active
+	else
 		# register that no preseed was specified
 		touch /var/run/preseed_unspecified_at_boot
 	fi

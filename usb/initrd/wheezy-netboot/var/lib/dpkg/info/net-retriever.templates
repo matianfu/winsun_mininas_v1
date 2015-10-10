@@ -53,7 +53,6 @@ Choices-sq.UTF-8: Riprovo, Ndrysho pasqyrën, Anullo
 Choices-sr.UTF-8: Поново, Промени мирор, Поништи
 Choices-sv.UTF-8: Försök igen, Byt spegel, Avbryt
 Choices-te.UTF-8: మళ్ళీ ప్రయత్నించు, మిర్రర్ ని మార్చు, రద్దు
-Choices-tg.UTF-8: Такрор кардан, Тағйир додани оина, Бекор кардан
 Choices-th.UTF-8: ลองใหม่, เปลี่ยนแหล่งสำเนา, ยกเลิก
 Choices-tl.UTF-8: Subukan muli, Palitan ang mirror, Kanselahin
 Choices-tr.UTF-8: Tekrar dene, Yansıyı değiştir, İptal et
@@ -79,7 +78,7 @@ Description-bg.UTF-8: Грешка при изтеглянето на файл:
 Description-bo.UTF-8: ཡིག་ཆ་ཞིག་ལེན་འཇུག་བྱེད་མ་ཐུབ་པ：
  སྒྲིག་འཇུག་ཆས་ཀྱིས་ཡིག་ཆ་ཞིག་དྲ་ཚིགས་ནས་ལེན་འཇུག་མ་ཐུབ་པ འདི་ཕལ་ཆེར་ཁྱོད་ཀྱི་དྲ་བའམ་ཡང་ན་དྲ་ཚིགས་འདིའི་སྐྱོན་རེད། ཁྱོད་ཀྱིས་སླར་ལེན་འཇུག་བྱེད་པ་དང་དྲ་ཚིགས་གཞན་ཞིག་འདེམས་པ། ཡང་ན་སྒྲིག་འཇུག་བྱེད་སྟངས་གཞན་ཞིག་འདེམས་ཆོག
 Description-bs.UTF-8: Preuzimanje datoteke nije uspjelo:
- Instalacijski program nije uspio preuzeti datoteku sa mirrora. Ovo može biti problem na Vašoj mreži ili na mirroru. Možete ponovo pokušati preuzimanje, odabrati drugi mirror ili obustaviti i izabrati drugi instalacioni metod.
+ Instalacijski program nije uspio preuzeti datoteku sa mirrora. Ovo može biti problem na vašoj mreži ili na mirroru. Možete ponovo pokušati preuzimanje, odabrati drugi mirror ili obustaviti i izabrati drugi instalacioni metod.
 Description-ca.UTF-8: La descàrrega d'un fitxer ha fallat:
  L'instal·lador no ha pogut descarregar un fitxer des de la rèplica. Això pot ser un problema amb la vostra xarxa o amb la rèplica. Podeu reintentar la descàrrega, seleccionar una rèplica diferent o cancel·lar i seleccionar un altre mètode d'instal·lació.
 Description-cs.UTF-8: Stažení souboru selhalo:
@@ -115,7 +114,7 @@ Description-he.UTF-8: הורדת קובץ נכשלה:
 Description-hr.UTF-8: Skidanje datoteke nije uspjelo:
  Instalacijski program nije uspio skinuti datoteku sa zrcalnog poslužitelja. Možda je problem u vašoj mreži ili na zrcalnom poslužitelju. Možete pokušati iznova, izabrati drugi poslužitelj ili otkazati i pokušati koji drugi način instalacije.
 Description-hu.UTF-8: Fájlletöltés meghiúsult:
- Egy fájl tükörről való letöltése sikertelen. A hiba oka vagy a hálózati kapcsolatban, vagy a tükörben keresendő. Újrapróbálhatja a letöltést, választhat másik tükröt, vagy kilép és más telepítő módot választ.
+ Egy fájl tükörről való letöltése sikertelen. A hiba oka vagy a hálózati kapcsolatban, vagy a tükörben keresendő. Újrapróbálhatod a letöltést, választhatsz másik tükröt, vagy választhatsz más telepítő módot.
 Description-id.UTF-8: Pengunduhan berkas telah gagal:
  Program Instalasi gagal mengunduh sebuah berkas dari cermin. Ini mungkin karena masalah pada jaringan Anda, atau pada cermin. Anda dapat memilih untuk mencoba lagi, memilih cermin yang berbeda, atau membatalkan dan memilih metoda instalasi yang lain.
 Description-is.UTF-8: Ekki tókst að ná í skrá:
@@ -172,8 +171,6 @@ Description-sv.UTF-8: Hämtningen av en fil misslyckades:
  Installationsprogrammet kunde inte hämta en fil från spegeln. Det kan bero på problem med ditt nätverk eller med spegeln. Du kan välja att försöka hämtningen igen, välja en annan spegelserver eller avbryta och välja en annan installationsmetod.
 Description-te.UTF-8: దస్త్రము దిగుమతి విఫలమయింది:
  స్థాపన వ్యవస్థ  మిర్రర్ నుండి ఫైలు డౌన్లోడ్  చేయుటలో విఫలమైంది. మీ నెట్వర్క్ కాని మిర్రర్ తో సమస్య వుండవచ్చు. డౌన్లోడ్  మరల ప్రయత్నించవచ్చు, వేరొక మిర్రర్ ఎంచుకోవచ్చు, లేక రద్దు చేసి ఇంకొక స్థాపన పద్ధతి  ఎంచుకోండి.
-Description-tg.UTF-8: Боргирии файл қатъ шудааст:
- Насбкунанда боргирии файлро аз оина қатъ кардааст. Эҳтимол аст, ки мушкилии шабака ё оина ба вуҷуд омад. Шумо метавонед боргириро аз нав кӯшиш кунед, оинаи дигареро интихоб кунед ё раванди ҷориро бекор кунед ва тарзи насби дигареро интихоб намоед.
 Description-th.UTF-8: ดาวน์โหลดแฟ้มไม่สำเร็จ:
  โปรแกรมติดตั้งดาวน์โหลดแฟ้มจากแหล่งสำเนาไม่สำเร็จ อาจเกิดจากปัญหาในเครือข่ายของคุณ หรือเป็นปัญหาในตัวแหล่งสำเนาเอง คุณสามารถเลือกที่จะลองดาวน์โหลดใหม่ หรือเลือกแหล่งสำเนาอื่น หรือยกเลิกแล้วเลือกวิธีติดตั้งวิธีอื่น
 Description-tl.UTF-8: Bigo ang pagkuha ng isang talaksan:
@@ -187,6 +184,6 @@ Description-uk.UTF-8: Не вдалося завантажити файл:
 Description-vi.UTF-8: Việc tải về tập tin bị lỗi:
  Bộ cài đặt đã không tải được một tập tin xuống máy nhân bản. Có thể là vấn đề với mạng của bạn, hoặc trong máy nhân bản. Bạn có thể chọn thử lại việc tải về, chọn máy nhân bản khác, hoặc thôi rồi chọn một phương pháp cài đặt khác.
 Description-zh_CN.UTF-8: 下载文件失败：
- 安装程序无法从镜像网站下载文件。这可能是您的网络问题，也可能是镜像网站的错误。您可以选择重新下载，或者使用别的镜像网站，也可以选择取消并改用其他的安装方式。
+ 安装程序无法从镜像网站下载文件。这可能是您的网络问题，也可能是镜像网站的错误。您可以选择重新下载，或者使用别的镜像网站，也可以选择取消并改用其它的安装方式。
 Description-zh_TW.UTF-8: 在下載檔案時失敗了:
  安裝程式無法由鏡像站下載某些檔案。可能是您的網路或是該鏡像站出了什麼問題。您可以選擇再次試著下載、選擇另一個鏡像站、或取消並改用其它的安裝方式。

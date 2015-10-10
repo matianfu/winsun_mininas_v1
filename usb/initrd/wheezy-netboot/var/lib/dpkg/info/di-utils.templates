@@ -10,7 +10,7 @@ Description-bs.UTF-8: Registrujem module...
 Description-ca.UTF-8: S'estan registrant els mòduls...
 Description-cs.UTF-8: Registrují se moduly...
 Description-cy.UTF-8: Yn cofrestru modiwlau...
-Description-da.UTF-8: Registrerer moduler ...
+Description-da.UTF-8: Registrerer moduler...
 Description-de.UTF-8: Registrieren der Module ...
 Description-el.UTF-8: Καταγραφή αρθρωμάτων λογισμικού ...
 Description-eo.UTF-8: Registrado de moduloj...
@@ -54,7 +54,6 @@ Description-sq.UTF-8: Duke regjistruar modulet ...
 Description-sr.UTF-8: Регистрованје модула...
 Description-sv.UTF-8: Registrerar moduler...
 Description-te.UTF-8: మాధ్యమాలు (modules) నమోదు చేయబడుతున్నాయి...
-Description-tg.UTF-8: Бақайдгирии модулҳо...
 Description-th.UTF-8: กำลังลงทะเบียนมอดูลต่างๆ...
 Description-tl.UTF-8: Tinatala ang mga module...
 Description-tr.UTF-8: Modüller kaydediliyor...
@@ -136,7 +135,6 @@ Description-sq.UTF-8: Shell ndërveprues
 Description-sr.UTF-8: Интерактивни командни интерфејс
 Description-sv.UTF-8: Interaktivt skal
 Description-te.UTF-8: సంవాద(interactive) షెల్
-Description-tg.UTF-8: Восити интерактивӣ
 Description-th.UTF-8: เชลล์โต้ตอบ
 Description-tl.UTF-8: Interactive shell
 Description-tr.UTF-8: Etkileşimli kabuk
@@ -188,9 +186,9 @@ Description-bo.UTF-8: མཐའ་སྣེའི་ནང་འཛུགས་�
  .
  ${WORKAROUND}
 Description-bs.UTF-8: Terminalni plugin nije dostupan
- Ova verzija debian-instalera zahtijeva terminalni plugin da otvorite shell. Nažalost, ovaj plugin trenutno nije dostupan.
+ Ova verzija debian-installera zahtjeva terminalni plugin da otvorite terminal. Nažalost, ovaj plugin trenutno nije dostupan.
  .
- Trebao bi biti dostupan nakon "Učitavanje dodatnih komponenti" instalacijskog koraka.
+ Trebao bi biti dostupan nakon "Učitavanje dodatnih komponenti" instalacionog koraka.
  .
  ${WORKAROUND}
 Description-ca.UTF-8: El connector del terminal no és disponible
@@ -214,7 +212,7 @@ Description-cy.UTF-8: Nid yw'r ategyn terfynell ar gael
 Description-da.UTF-8: Terminaludvidelsen ikke tilgængelig
  Denne udgave af Debian-installationsprogrammet skal bruge terminaludvidelsen for at vise en skal. Desværre er denne udvidelse ikke tilgængelig for øjeblikket.
  .
- Den skulle være tilgængelig, når installationen når til trinnet »Indlæsning af yderligere komponenter«.
+ Den skulle være tilgængelig, når installationen når til trinnet "Indlæsning af yderligere komponenter".
  .
  ${WORKAROUND}
 Description-de.UTF-8: Konsolen-Plugin nicht verfügbar
@@ -289,16 +287,16 @@ Description-he.UTF-8: תוכנת תקע למסוף אינה זמינה
  תוכנת תקע זו אמורה להיות זמינה אחרי הגעה לשלב ההתקנה "הטענת רכיבים נוספים".
  .
  ${WORKAROUND}
-Description-hr.UTF-8: Nije dostupan priključak za terminal
- Ovo izdanje instalacijskog programa zahtijeva priključak za terminal kako bi prikazali ljusku (shell). Nažalost, taj priključak trenutno nije dostupan.
+Description-hr.UTF-8: Nije dostupan plugin za terminal
+ Ovo izdanje instalera zahtijeva plugin za terminal kako bi prikazali ljusku (shell). Nažalost, taj plugin trenutno nije dostupan.
  .
  Trebao bi biti dostupan nakon što se dođe do koraka u instalaciji pod nazivom "Učitavanje dodatnih komponenti".
  .
  ${WORKAROUND}
 Description-hu.UTF-8: Terminál beillesztés nem elérhető
- A debian-telepítő e verziója a terminál beépülő modult igényli a héj megjelenítéséhez. Sajnos e modul jelenleg nem elérhető.
+ A debian-telepítő e verzióra a terminál beillesztést igényli egy héj megjelenítéséhez. Sajnos, e beillesztés jelenleg elérhetetlen.
  .
- Elérhetővé válik a "További összetevők betöltése" telepítő lépéssel.
+ Elérhetővé válhat a "További összetevők betöltése" telepítő lépéssel.
  .
  ${WORKAROUND}
 Description-id.UTF-8: Plugin terminal tidak tersedia
@@ -469,12 +467,6 @@ Description-te.UTF-8: టర్మినల్ ప్లగ్ ఇన్  అం
  "అదనపు అంశాలు ఎక్కించు" అన్న స్థాపనా అంకం తరువాత, అది అందుబాటులో వుండాలి.
  .
  ${WORKAROUND}
-Description-tg.UTF-8: Плагири терминал дастрас нест
- Ин сохти насбкунандаи системаи Debian барои намоиш додани восит плагини терминалиро талаб мекунад. Мутаассифона, дар айни ҳол ин плагин дастнорас аст.
- .
- Он ҳангоми иҷрои қадами насби "Боркунии унсурҳои иловагӣ" дастрас мешавад.
- .
- ${WORKAROUND}
 Description-th.UTF-8: ไม่มีปลั๊กอินรองรับเทอร์มินัล
  โปรแกรมติดตั้งเดเบียนรุ่นนี้ ต้องการปลั๊กอินรองรับเทอร์มินัลจึงจะใช้เชลล์ได้ แต่ไม่พบปลั๊กอินดังกล่าว
  .
@@ -500,7 +492,7 @@ Description-ug.UTF-8: تېرمىنال قىستۇرما دېتالىنى ئىش�
  .
  ${WORKAROUND}
 Description-uk.UTF-8: Термінальний додаток недоступний.
- Для того, що показувати командну оболонку ця збірка встановлювача Debian потребує термінального додатку. На жаль, на разі термінальний додаток недоступний.
+ Для того, що показувати командну оболонку ця збірка встановлювача Debian потребує термінального додатку. Нажаль, на разі термінальний додаток недоступний.
  .
  Він повинен з'явитись після досягнення кроку „Завантаження додаткових компонентів“.
  .
@@ -532,7 +524,7 @@ Description-ast.UTF-8: Alternativamente, pues abrir una shell calcando Ctrl+Alt+
 Description-be.UTF-8: Або вы можаце адкрыць абалонку, націснуўшы Ctrl+Alt+F2. Націсніце Alt+F5, каб вярнуцца ва ўстаноўку.
 Description-bg.UTF-8: Можете да стартирате обвивка и като натиснете Ctrl+Alt+F2. Използвайте Alt+F5 за да се върнете в инсталатора.
 Description-bo.UTF-8: ཡང་ན་ཁྱོད་ཀྱིས་Ctrl+Alt+F2 མནན་ནས་འཇུག་སྒོ་ཞིག་ཁ་ཕྱེ་ཐུབ Alt+F5 སྤྱད་ནས་སྒྲིག་འཇུག་ཆས་ཐོག་ཏུ་ཕར་སྐྱོད་ཐུབ
-Description-bs.UTF-8: Alternativno, možete otvoriti terminal kombinacijom tipki Ctrl+Alt+F2. Koristite Alt+F5 da se vratite u instalaciju.
+Description-bs.UTF-8: Alternativno, možete otvoriti terminal kombinacijom tipki Ctrl+Alt+F2. Koristite Ctrl+Alt+F5 da se vratite u instalaciju.
 Description-ca.UTF-8: Alternativament, podeu obrir un intèrpret d'ordres prement Ctrl+Alt+F2. Empreu Alt+F5 per a tornar a l'instal·lador.
 Description-cs.UTF-8: Alternativně můžete získat shell stiskem Ctrl+Alt+F2. Pro návrat zpět do instalátoru použijte Alt+F5.
 Description-cy.UTF-8: Neu, gallwch agor cragen drwy wasgu Ctrl+Alt+F2. Defnyddiwch Alt+F5 i ddychwelyd i'r sefydlydd.
@@ -549,8 +541,8 @@ Description-fr.UTF-8: Dans l'intervalle, vous pouvez accéder à la ligne de com
 Description-ga.UTF-8: Mar mhalairt air sin, is féidir leat blaosc a oscailt trí Ctrl+Alt+F2 a bhrú.  Bain úsáid as Alt+F5 chun filleadh ar an suiteálaí.
 Description-gl.UTF-8: De xeito alternativo, pode abrir unha shell premendo Control+Alt+F2. Empregue Alt+F5 para volver ao instalador.
 Description-he.UTF-8: לחלופין, אתה יכול לפתוח מעטפת על ידי הקשת Ctrl+Alt+F2.  השתמש ב-Alt+F5 כדי להגיע חזרה לתוכנית ההתקנה.
-Description-hr.UTF-8: Alternativno, možete otvoriti ljusku tako da pritisnete Ctrl+Alt+F2. Koristite Alt+F5 za povratak u instalacijski program.
-Description-hu.UTF-8: Héj nyitható a Ctrl+Alt+F2 leütésével. Az Alt+F5 visszatér a telepítőhöz.
+Description-hr.UTF-8: Alternativno, možete otvoriti ljusku tako da pritisnete Ctrl+Alt+F2. Koristite Alt+F5 za povratak u instaler.
+Description-hu.UTF-8: Héj nyitható a Ctrl+Alt+F2 leütésével is. Az Alt+F5 visszatér a telepítőhöz.
 Description-id.UTF-8: Sebagai pilihan, Anda dapat membuka shell dengan menekan tombol Ctrl+Alt+F2. Tekan Alt+F5 untuk kembali pada program instalasi.
 Description-is.UTF-8: Einnig er hægt að opna skel með því að ýta á Ctrl+Alt+F2. Notaðu svo Alt+F5 til halda uppsetningu áfram.
 Description-it.UTF-8: In alternativa è possibile aprire una shell premendo Ctrl+Alt+F2. Usare Alt+F5 per tornare al programma d'installazione.
@@ -579,7 +571,6 @@ Description-sq.UTF-8: Ju mund të hapni një shell duke shtypur Ctrl+Alt+F2. Pë
 Description-sr.UTF-8: Командни интерфејс можете отворити и на други начин, комбинацијом тастера Ctrl+Alt+F2. Користите Alt+F5 за повратак на инсталер.
 Description-sv.UTF-8: Alternativt kan du öppna ett skal genom att trycka Ctrl+Alt+F2. Använd Alt+F5 för att komma tillbaka till installationsprogrammet.
 Description-te.UTF-8: వేరేవిధంగా, షెల్  తెరవడానికి  Ctrl+Alt+F2 నొక్కండి. Alt+F5 వాడి, స్థాపన వ్యవస్థ కి వెళ్లవచ్చు.
-Description-tg.UTF-8: Илова бар ин, шумо метавонед воситро бо пахшкунии тугмаҳои Ctrl+Alt+F2 кушоед. Барои бозгашт ба насбкунанда, тугмаҳои Alt+F5 истифода баред.
 Description-th.UTF-8: หรืออีกวิธีหนึ่ง คุณสามารถเปิดเชลล์ได้โดยกด Ctrl+Alt+F2 และกด Alt+F5 เพื่อย้อนกลับมาที่โปรแกรมติดตั้ง
 Description-tl.UTF-8: Maaari ding piliing magbukas ng shell gamit ang pagpindot ng Ctrl+Alt+F2. Gamitin an Alt+F5 para bumalik sa installer.
 Description-tr.UTF-8: Bunun yerine, Ctrl+Alt+F2 tuşlarına basarak da bir uçbirim açabilirsiniz. Kurulum programına geri dönmek için Alt + F5 tuş bileşimini kullanabilirsiniz.

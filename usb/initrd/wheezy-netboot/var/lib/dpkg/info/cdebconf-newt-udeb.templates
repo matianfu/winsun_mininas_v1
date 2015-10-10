@@ -54,7 +54,6 @@ Description-sq.UTF-8: Vazhdo
 Description-sr.UTF-8: Настави
 Description-sv.UTF-8: Fortsätt
 Description-te.UTF-8: కొనసాగించు
-Description-tg.UTF-8: Идома додан
 Description-th.UTF-8: ต่อไป
 Description-tl.UTF-8: Ituloy
 Description-tr.UTF-8: Devam
@@ -120,7 +119,6 @@ Description-sq.UTF-8: Kthehu Prapa
 Description-sr.UTF-8: Назад
 Description-sv.UTF-8: Gå tillbaka
 Description-te.UTF-8: వెనక్కి వెళ్ళు
-Description-tg.UTF-8: Ба қафо гузаштан
 Description-th.UTF-8: ย้อนกลับ
 Description-tl.UTF-8: Bumalik
 Description-tr.UTF-8: Geri dön
@@ -186,7 +184,6 @@ Description-sq.UTF-8: Po
 Description-sr.UTF-8: Да
 Description-sv.UTF-8: Ja
 Description-te.UTF-8: అవును
-Description-tg.UTF-8: Ҳа
 Description-th.UTF-8: ใช่
 Description-tl.UTF-8: Oo
 Description-tr.UTF-8: Evet
@@ -252,7 +249,6 @@ Description-sq.UTF-8: Jo
 Description-sr.UTF-8: Не
 Description-sv.UTF-8: Nej
 Description-te.UTF-8: కాదు
-Description-tg.UTF-8: Не
 Description-th.UTF-8: ไม่
 Description-tl.UTF-8: Hindi
 Description-tr.UTF-8: Hayır
@@ -318,7 +314,6 @@ Description-sq.UTF-8: Anullo
 Description-sr.UTF-8: Поништи
 Description-sv.UTF-8: Avbryt
 Description-te.UTF-8: రద్దు
-Description-tg.UTF-8: Бекор кардан
 Description-th.UTF-8: ยกเลิก
 Description-tl.UTF-8: Kanselahin
 Description-tr.UTF-8: İptal et
@@ -336,7 +331,7 @@ Description-ast.UTF-8: <Tab> mover ente elementos; <Space> seleicionar; <Enter> 
 Description-be.UTF-8: <Tab> рух між элементамі; <Прабел> пазнака; <Увод> націск кнопкі
 Description-bg.UTF-8: <Tab> придвижване; <интервал> избор; <Enter> активиране на бутоните
 Description-bo.UTF-8: <Tab> སྤོར་བ; <Space> འདེམས་པ; <Enter> མནན་མཐེབ་ནུས་ཡོད་བཟོ
-Description-bs.UTF-8: <Tab> pomiče; <Space> odabire; <Enter> aktivira tipke
+Description-bs.UTF-8: <Tab> pomiče; <Space> odabire; <Enter> aktivira dugmad
 Description-ca.UTF-8: <Tab> mou; <Espai> selecciona; <Intro> activa els botons
 Description-cs.UTF-8: <Tab> přesunuje; <Mezera> vybírá; <Enter> aktivuje tlačítka
 Description-cy.UTF-8: <Tab> i symud; <Space> i ddewis; <Enter> i ysgogi botymau.
@@ -353,7 +348,7 @@ Description-fr.UTF-8: <Tab> déplacement; <Espace> sélection; <Entrée> activat
 Description-ga.UTF-8: Bogann <Tab> idir roghanna; roghnaíonn <Spás>; cumasaíonn <Enter> cnaipí
 Description-gl.UTF-8: <Tab> move; <Espazo> escolle; <Intro> activa os botóns
 Description-he.UTF-8: <Tab> מעביר בין עצמים; <Space> בוחר; <Enter> מפעיל את הכפתורים
-Description-hr.UTF-8: <Tab> za pomicanje, <Space> bira, <Enter> aktivira dugmad
+Description-hr.UTF-8: <Tab> za pomicanje; <Space> odabire; <Enter> aktivira dugmad
 Description-hu.UTF-8: A <Tab> mozog; a <Space> kijelöl; az <Enter> működteti a gombokat
 Description-id.UTF-8: <Tab> berpindah; <Spasi> memilih; <Enter> mengaktifkan tombol
 Description-is.UTF-8: <Tab> færir milli atriða; <Space> velur; <Enter> virkjar hnappa
@@ -384,7 +379,6 @@ Description-sq.UTF-8: <Tab> lëviz; <Space> zgjedh; <Enter> aktivizon butonat
 Description-sr.UTF-8: <Tab> кретање између опција; <Space> одабира; <Enter> активира одабрано
 Description-sv.UTF-8: <Tab> flyttar, <Blanksteg> väljer, <Enter> aktiverar knappar
 Description-te.UTF-8: <Tab> కదుపు; <Space> ఎంచుకో; <Enter> బటన్లని  చేతనం చేయు.
-Description-tg.UTF-8: Тугмаи <Tab> интиқол медиҳад; тугмаи <Space> интихоб мекунад; тугмаи <Enter> тугмаҳоро фаъол мекунад
 Description-th.UTF-8: <Tab> เลื่อน; <Space> เลือก; <Enter> กดปุ่ม
 Description-tl.UTF-8: <Tab> upang lumipat; <Space> upang pumili; <Enter> upang pindutin ang butones
 Description-tr.UTF-8: <Tab> ögeler arasında geçiş; <Space> seç; <Enter> düğmeleri etkinleştir
@@ -419,7 +413,7 @@ Description-fr.UTF-8: <F1> aide; <Tab> déplacement; <Espace> sélection; <Entr�
 Description-ga.UTF-8: <F1>=cabhair; bogann <Tab>; roghnaíonn <Spás>; cumasaíonn <Enter> cnaipí
 Description-gl.UTF-8: <F1> axuda; <Tab> move; <Space> escolle; <Enter> activa botóns
 Description-he.UTF-8: <F1> לעזרה; <Tab> מעביר בין עצמים; <Space> בוחר; <Enter> מפעיל את הכפתורים
-Description-hr.UTF-8: <F1> za pomoć, <Tab> za pomicanje, <Space> bira, <Enter> aktivira dugmad
+Description-hr.UTF-8: <F1> za pomoć; <Tab> za pomicanje; <Space> odabire; <Enter> aktivira dugmad
 Description-hu.UTF-8: Az <F1> súg; a <Tab> mozog; a <Space> kijelöl; az <Enter> működteti a gombokat
 Description-id.UTF-8: <F1> untuk petunjuk; <Tab> berpindah; <Spasi> memilih; <Enter> mengaktifkan tombol
 Description-is.UTF-8: <F1> veitir aðstoð; <Tab> færir milli atriða; <Space> velur; <Enter> virkjar hnappa
@@ -450,7 +444,6 @@ Description-sq.UTF-8: <F1> për ndihmë; <Tab> lëviz; <Space> zgjedh; <Enter> a
 Description-sr.UTF-8: <F1> помоћ; <Tab> кретање између опција; <Space> одабира; <Enter> активира одабрано
 Description-sv.UTF-8: <F1> för hjälp, <Tab> flyttar, <Blanksteg> väljer, <Enter> aktiverar knappar
 Description-te.UTF-8: <F1> సహాయం కొరకు; <Tab>కదుపు; <Space> ఎంచుకో; <Enter> బటన్లని  చేతనం చేయు.
-Description-tg.UTF-8: Тугмаи <F1> барои кӯмак; <Tab> интиқол медиҳад; <Space> интихоб мекунад; <Enter> тугмаҳоро фаъол мекунад
 Description-th.UTF-8: <F1> ดูวิธีใช้; <Tab> เลื่อน; <Space> เลือก; <Enter> กดปุ่ม
 Description-tl.UTF-8: <F1> Tulong; <Tab> Lipat; <Space> Piliin; <Enter> upang pindutin ang butones
 Description-tr.UTF-8: <F1> yardım; <Tab> geçiş; <Space> seç; <Enter> düğmeleri etkinleştir

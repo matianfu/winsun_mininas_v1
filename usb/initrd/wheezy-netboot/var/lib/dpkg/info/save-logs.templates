@@ -6,7 +6,7 @@ Description-ast.UTF-8: Guardar rexistros de debug
 Description-be.UTF-8: Захоўваць пратаколы для адладкі
 Description-bg.UTF-8: Запазване на журнала от анализа
 Description-bo.UTF-8: སྐྱོན་སེལ་བའི་ཐོ་ཉར་ཚགས་བྱེད་པ
-Description-bs.UTF-8: Spremite debug logove
+Description-bs.UTF-8: Spremi debug logove
 Description-ca.UTF-8: Desa els registres de depuració
 Description-cs.UTF-8: Uložit záznamy pro pozdější ladění
 Description-cy.UTF-8: Cadw cofnodion dadfygio
@@ -54,7 +54,6 @@ Description-sq.UTF-8: Shpëto shënimet(log) e korrigjimeve të gabimeve
 Description-sr.UTF-8: Сними дебаг логове
 Description-sv.UTF-8: Spara felsökningsloggar
 Description-te.UTF-8: debug logs దాచు
-Description-tg.UTF-8: Захира кардани сабтҳои рӯйдодҳои ислоҳи хатоҳо
 Description-th.UTF-8: เก็บบันทึกข้อมูลดีบั๊ก
 Description-tl.UTF-8: Mag-ipon ng talaan na pang-debug
 Description-tr.UTF-8: Hata ayıklama bilgilerini kaydet
@@ -72,7 +71,7 @@ Choices-ast.UTF-8: disquetera, web, sistema de ficheros montáu
 Choices-be.UTF-8: дыскета, web, прымацаваная файлавая сістэма
 Choices-bg.UTF-8: флопидиск, мрежа, монтирана файлова система
 Choices-bo.UTF-8: མཉེན་སྡེར, དྲ་བ, བཀར་ཚར་བའི་ཡིག་ཆ་མ་ལག
-Choices-bs.UTF-8: flopi, web, montirani datotečni sistem
+Choices-bs.UTF-8: floppy, web, montirani datotečni sistem
 Choices-ca.UTF-8: disquet, web, sistema de fitxers muntat
 Choices-cs.UTF-8: disketa, web, připojený souborový systém
 Choices-cy.UTF-8: hyblyg, gwe, system ffeiliau wedi clymu
@@ -119,7 +118,6 @@ Choices-sq.UTF-8: disketë, web, filesistem i montuar
 Choices-sr.UTF-8: дискета, интернет, монтиран фајл систем
 Choices-sv.UTF-8: diskett, webb, monterat filsystem
 Choices-te.UTF-8: ఫ్లాపీ, వెబ్, అనుసంధానమైన ఫైల్ సిస్టమ్
-Choices-tg.UTF-8: флоппи, веб, системаи файлии васлшуда
 Choices-th.UTF-8: ฟลอปปี้, เว็บ, ระบบแฟ้มที่เมานท์ไว้
 Choices-tl.UTF-8: floppy, web, nakasalang na file system
 Choices-tr.UTF-8: disket, web, bağlanmış dosya sistemi
@@ -142,7 +140,7 @@ Description-bg.UTF-8: Как журналът от анализа да бъде 
 Description-bo.UTF-8: སྐྱོན་སེལ་བའི་ཐོ་དེ་གང་འདྲ་ཉར་ཚགས་བྱེད་པ་དང་སྤོར་དགོས
  སྒྲིག་འཇུག་ཆས་ཀྱི་སྐྱོན་སེལ་བའི་ཟིན་ཐོ་ཡིག་ཆ་མཉེན་སྡེར་ཐོག་ཏུ་ཉར་བ་དང་དྲ་བའི་ཐོག་ཡར་འཇུག་བྱེད་ཆོག་པ། ཡང་ན་བཀར་ཡོད་པའི་ཡིག་ཆ་མ་ལག་ཞིག་གི་ཐོག་ཏུ་ཉར་ཆོག་པ
 Description-bs.UTF-8: Kako će debug logovi biti spremljeni ili prebačeni?
- Otkrivanje log datoteka instalera mogu biti spremljene na flopi, poslužene preko weba ili spremljene na montirani datotečni sistem.
+ Debugging log datoteke instalatera mogu biti spremljene na floppy, poslužene preko weba ili spremljene na montirani datotečni sistem.
 Description-ca.UTF-8: Com s'han de desar o transferir els registres de depuració?
  Els fitxers de registre de depuració de l'instal·lador es poden desar en un disquet, oferir per web o desar a un sistema de fitxers muntat.
 Description-cs.UTF-8: Kam se mají uložit nebo přenést záznamy pro ladění?
@@ -150,7 +148,7 @@ Description-cs.UTF-8: Kam se mají uložit nebo přenést záznamy pro ladění?
 Description-cy.UTF-8: Sut ddylai cadw neu drosglwyddo y cofnodion dadfygio?
  Gellir cadw'r ffeiliau cofnodion dadfygio y sefydlydd ar ddisg hyblyg, gweinwyd ar y we, neu ar system ffeil wedi ei glymu.
 Description-da.UTF-8: Hvordan skal fejlsporings-logfilerne gemmes eller overføres?
- Installationsprogrammets fejlsporingslogfiler kan gemmes på en diskette, sendes via webbet eller gemmes til et monteret filsystem.
+ Installationsprogrammets fejlsporings-logfiler kan gemmes på en diskette, sendes via webbet eller gemmes til et monteret filsystem.
 Description-de.UTF-8: Wie sollen die Installationsprotokolle übertragen oder gespeichert werden?
  Installationsprotokolldateien des Installers können auf Diskette oder auf einem eingebundenen Dateisystem gespeichert oder auch über das Netz übertragen werden.
 Description-el.UTF-8: Πώς θέλετε να αποθηκεύσετε ή να μεταφέρετε τα αρχεία καταγραφής;
@@ -176,7 +174,7 @@ Description-gl.UTF-8: Como se deben gardar ou transferir os rexistros de depurac
 Description-he.UTF-8: איך מידע הדיבאג ישמר או יועבר?
  קבצי מידע דיבאג מתוכנית ההתקנה, יכולים להישמר על דיסקט, להיות נגישים דרך ה-web או להישמר על מערכת קבצים שעוגנה.
 Description-hr.UTF-8: Kako treba sačuvati ili prenijeti 'debug' zapise?
- Zapisi za debugiranje instalacijskog programa se mogu spremiti na disketu, poslužiti putem weba ili pohraniti na montirani datotečni sustav.
+ Zapisi za debugiranje instalera se mogu sačuvati na disketu, poslužiti putem weba, ili pohraniti na montirani datotečni sustav.
 Description-hu.UTF-8: Mi történjen a hibanaplókkal?
  A telepítő hibanaplói menthetők flopira, adhatók weben, vagy menthetők egy csatolt fájlrendszerre.
 Description-id.UTF-8: Bagaimana menyimpan atau mentransfer log debug?
@@ -235,8 +233,6 @@ Description-sv.UTF-8: Hur ska felsökningsloggar sparas eller överföras?
  Loggfiler för felsökning för installationen kan sparas på en diskett, skickas via en webbsida eller sparas på ett monterat filsystem.
 Description-te.UTF-8: డిబగ్ లాగ్  లు ఎలా దాచాలా లేక  పంపాలో  తెలియచేయండి?
  స్థాపన వ్యవస్థ డిబగ్ లాగ్ ఫైళ్లు ఫ్లాపీలో దాచవచ్చు, వెబ్ ద్వారా అందచేయవచ్చు లేక, అనుసంధానమైన ఫైల్ సిస్టమ్ పై దాచవచ్చు.
-Description-tg.UTF-8: Чӣ тавр сабти рӯйдодҳои ислоҳи хатоҳо бояд захира ё интиқол дода шаванд?
- Файлҳои сабтҳои рӯйдодҳои ислоҳи хатоҳо метавонанд ба диски нарм захира шаванд, дар веб таъмин шаванд, ё ки ба системаи файлии васлшуда захира шаванд.
 Description-th.UTF-8: จะบันทึกหรือถ่ายโอนข้อมูลดีบั๊กอย่างไร?
  แฟ้มบันทึกข้อมูลดีบั๊ก สามารถบันทึกลงในแผ่นฟลอปปี้ หรือเปิดให้อ่านผ่านเว็บ หรือบันทึกลงในระบบแฟ้มที่เมานท์ไว้ก็ได้
 Description-tl.UTF-8: Paano iimbakin o ililipat ang talaang debug?
@@ -271,7 +267,7 @@ Description-bg.UTF-8: Директория, в която да бъде запа
 Description-bo.UTF-8: སྐྱོན་སེལ་ཟིན་ཐོ་དེ་གསོག་འཇོག་བྱེད་སའི་འཇུག་སྣོད：
  ཁྱོད་ཀྱིས་མུ་མཐུད་མ་བཟོས་སྔོན་དུ་སྐྱོན་སེལ་ཟིན་ཐོ་གསོག་སའི་ཡིག་ཆ་མ་ལག་དེ་བཀར་ཡོད་པར་གཏན་ཁེལ་བྱེད་དགོས
 Description-bs.UTF-8: Direktorij za spremanje debug logova:
- Molim provjerite da je datotečni sistem na koji želite spremiti debug logove montiran prije nego nastavite.
+ Molim provjerite da je datotečni sistem na koji hoćete spremiti debug logove montiran prije nego nastavite.
 Description-ca.UTF-8: Directori on desar els registres de depuració:
  Assegureu-vos que el sistema de fitxers en què voleu desar els registres de depuració està muntat abans de continuar.
 Description-cs.UTF-8: Adresář pro uložení ladicích záznamů:
@@ -304,10 +300,10 @@ Description-gl.UTF-8: Directorio onde gardar os rexistros de depuración:
  Asegúrese de que o sistema de ficheiros no que quere gardar os rexistros de depuración estea montado antes de continuar.
 Description-he.UTF-8: ספריה לשמירת מידע הדיבאג:
  לפני שתמשיך, וודא כי מערכת הקבצים שאליה אתה מעוניין לשמור את מידע הדיבאג מעוגנת.
-Description-hr.UTF-8: Direktorij u koji treba spremiti 'debug' zapise:
- Molim provjerite je li datotečni sustav gdje želite spremiti 'debug' zapise montiran prije nego li nastavite.
+Description-hr.UTF-8: Direktorij u kojem treba spremiti 'debug' zapise:
+ Molim provjerite da je datotečni sustav gdje želite sačuvati 'debug' zapise montiran prije nego li nastavite.
 Description-hu.UTF-8: Hibanaplók mentési könyvtára:
- A továbblépés előtt kérem győződjön meg róla, hogy a hibanaplók kívánt mentési könyvtára csatolva van.
+ Most kell meggyőződni, hogy a hibanaplók kívánt mentési könyvtára csatolva van-e a továbblépés előtt.
 Description-id.UTF-8: Direktori tempat menyimpan log-log debug:
  Pastikan sistem berkas tempat log debug disimpan telah dikaitkan sebelum anda melanjutkan.
 Description-is.UTF-8: Mappa til að vista aflúsunarannálana í:
@@ -364,8 +360,6 @@ Description-sv.UTF-8: Katalog att spara felsökningsloggar i?
  Kontrollera att filsystemet du vill spara felsökningsloggar på är monterat innan du fortsätter.
 Description-te.UTF-8: డీబగ్ లాగులను దాచాల్సిన డైరెక్టరీ
  కొనసాగించేముందు. డిబగ్ లాగ్ ఫైళ్లు  దాచుటకు కావలసిన  ఫైల్ సిస్టమ్ అనుసంధానమైన ది గా ఖచితపరచుకోండి
-Description-tg.UTF-8: Директория барои захиракунии сабти рӯйдодҳои ислоҳи хатоҳо:
- Пеш аз идома, лутфан, мутмаин шавед, ки системаи файлие, ки шумо мехоҳед ба он сабти рӯйдодҳои ислоҳи хатоҳоро захира кунед, васл шудааст.
 Description-th.UTF-8: ไดเรกทอรีที่จะใช้บันทึกข้อมูลดีบั๊ก:
  ก่อนที่จะดำเนินการต่อ กรุณาตรวจสอบให้แน่ใจ ว่าระบบแฟ้มที่คุณจะใช้บันทึกข้อมูลดีบั๊ก ได้ถูกเมานท์ไว้แล้ว
 Description-tl.UTF-8: Directory kung saan iimbakin ang talaang debug:
@@ -397,7 +391,7 @@ Description-bg.UTF-8: Журналът не може да бъде запазе�
  Директорията „${DIR}“ не съществува.
 Description-bo.UTF-8: ཟིན་ཐོ་ཉར་མི་ཐུབ་པ
  འཇུག་སྣོད་"${DIR}" གནས་མེད་པ
-Description-bs.UTF-8: Nemoguće spremiti logove
+Description-bs.UTF-8: Ne mogu spremiti logove
  Direktorij "${DIR}" ne postoji.
 Description-ca.UTF-8: No es poden desar els registres de depuració
  El directori «${DIR}» no existeix.
@@ -406,7 +400,7 @@ Description-cs.UTF-8: Nelze uložit záznamy
 Description-cy.UTF-8: Methu cadw logs
  Nid yw'r cyfeiriadur "${DIR}" yn bodoli.
 Description-da.UTF-8: Kan ikke gemme logfiler
- Mappen »${DIR}« findes ikke.
+ Mappen "${DIR}" eksisterer ikke.
 Description-de.UTF-8: Protokolldateien können nicht gespeichert werden
  Das Verzeichnis »${DIR}« existiert nicht.
 Description-el.UTF-8: Αδύνατη η αποθήκευση των αρχείων καταγραφής
@@ -434,7 +428,7 @@ Description-he.UTF-8: לא ניתן לשמור לוגים
 Description-hr.UTF-8: Nemoguće sačuvati zapise
  Direktorij "${DIR}" ne postoji.
 Description-hu.UTF-8: A hibanaplók nem menthetők
- A "${DIR}" könyvtár nem létezik.
+ A "${DIR}" könyvtár nem létezik
 Description-id.UTF-8: Tak dapat menyimpan log-log
  Tak ada direktori "${DIR}".
 Description-is.UTF-8: Get ekki vistað annála
@@ -491,8 +485,6 @@ Description-sv.UTF-8: Kan inte spara loggarna
  Katalogen "${DIR}" finns inte.
 Description-te.UTF-8: లాగ్స్ ని దాచలేకపోయాము
  "${DIR}" డైరెక్టరీ లేదు.
-Description-tg.UTF-8: Захиракунии сабти рӯйдодҳо имконпазир нест
- Директорияи "${DIR}" вуҷуд надорад.
 Description-th.UTF-8: ไม่สามารถบันทึกข้อมูลดีบั๊ก
  ไม่มีไดเรกทอรี "${DIR}" อยู่
 Description-tl.UTF-8: Hindi maimbak ang mga talaan
@@ -560,7 +552,7 @@ Description-gl.UTF-8: Iniciouse o servidor web, pero a rede non funciona
 Description-he.UTF-8: שרת web הופעל, אך הרשת לא עובדת
  שרת web פשוט הופעל על מחשב זה כדי להגיש קבצי לוג ומידע דביאג. מעבר לכך, הרשת עדיין אינן זמינה. שרת ה-web ימשיך לרות, ויהיה נגיש ברגע שהרשת תהיה מוגדרת.
 Description-hr.UTF-8: Web poslužitelj pokrenut, ali mreža ne radi
- Jednostavan web poslužitelj je pokrenut na ovom računalu kako bi omogućio pristup log zapisima i 'debug' informacijama. No, mreža još nije podešena. Web poslužitelj će ostati pokrenut i postat će dostupan jednom kad se podesi mreža.
+ Jednostavan web poslužitelj je pokrenut na ovom računalu kako bi omogućio pristup log zapisima i 'debug' informacijama. No, mreža još nije podešena. Web poslužitelj će ostati pokrenut, i postat će dostupan jednom kad se podesi mreža.
 Description-hu.UTF-8: A webszerver fut, de a hálózat nem
  Egy egyszerű web kiszolgáló indult a gépen a naplófájlok és hibajelzések kiadásához, de a hálózat még nincs beállítva. A web kiszolgáló továbbra is fut és a hálózat beállításakor lesz elérhető.
 Description-id.UTF-8: Web server dijalankan, tapi jaringan belum hidup
@@ -619,8 +611,6 @@ Description-sv.UTF-8: Webbservern startades men nätverket är inte aktivt
  En enkel webbserver har startats på den här datorn för att hantera loggfiler och felsökningsinformation. Dock är nätverket inte konfigurerat ännu. Webbservern kommer att fortsätta köras och kommer att vara tillgänglig när nätverket har konfigurerats klart.
 Description-te.UTF-8: వెబ్ సేవికప్రారంభమైంది కాని నెట్వర్క్ నడుచుటలేదు
  సాధారణ  వెబ్ సేవిక  ఈ కంప్యూటర్ లో  ప్రారంభించబడింది. దీనిద్వారా  లాగ్ ఫైళ్లు మరియు  డిబగ్ సమాచారం  అందచేయబడుతుంది. అయితే నెట్వర్క్  సిద్ధమవలేదు. వెబ్ సేవిక నడుస్తూనే వుంటుంది. అది నెట్వర్కు మలచినతర్వాత అందుబాటులో వస్తుంది.
-Description-tg.UTF-8: Сервери веб оғоз шудааст, вале шабака ғайрифаъол аст
- Сервери веби оддӣ дар ин компютер оғоз карда шуд, то ин ки файлҳои сабти рӯйдодҳо ва маълумоти ислоҳи хатоҳоро нигоҳ дорад. Аммо шабака то ҳол танзим нашудааст. Сервери веб иҷро мешавад, ва баъд аз конфигуратсия шудани шабака дастрас мешавад.
 Description-th.UTF-8: เว็บเซิร์ฟเวอร์เปิดแล้ว แต่ระบบเครือข่ายไม่ทำงาน
  ได้เปิดเว็บเซิร์ฟเวอร์อย่างง่ายในคอมพิวเตอร์นี้ เพื่อเปิดให้อ่านแฟ้มบันทึกปฏิบัติการ และข้อมูลดีบั๊กแล้ว แต่ยังไม่ได้ตั้งระบบเครือข่าย ระบบจะเปิดเว็บเซิร์ฟเวอร์ไว้ และจะสามารถเข้าอ่านได้เมื่อตั้งค่าเครือข่ายแล้ว
 Description-tl.UTF-8: Pinatakbo ang web server, ngunit hindi umaandar ang network
@@ -746,8 +736,6 @@ Description-sv.UTF-8: Webbserver startad
  En enkel webbserver har startas på den här datorn för att hantera loggfiler och felsökningsinformation. Ett index av de tillgängliga loggfilerna kan hittas på http://${ADDRESS}/
 Description-te.UTF-8: వెబ్ సేవిక  ప్రారంభించబడింది
  సాధారణ  వెబ్ సేవిక  ఈ కంప్యూటర్ లో  ప్రారంభించబడింది. దీనిద్వారా  లాగ్ ఫైళ్లు మరియు  డిబగ్ సమాచారం  అందచేయబడుతుంది.  అందుబాటులో వున్న అన్ని లాగ్ ఫైళ్ల సూచి  చిరునామా  http://${ADDRESS}/
-Description-tg.UTF-8: Сервери веб оғоз шудааст
- Сервери веби оддӣ дар ин компютер оғоз карда шуд, то ин ки файлҳои сабти рӯйдодҳо ва маълумоти ислоҳи хатоҳоро нигоҳ дорад. Индекси ҳамаи файлҳои дастраси сабти рӯйдодҳо метавонад дар суроғаи зерин пайдо шавад: http://${ADDRESS}/
 Description-th.UTF-8: เปิดเว็บเซิร์ฟเวอร์แล้ว
  ได้เปิดเว็บเซิร์ฟเวอร์อย่างง่ายในคอมพิวเตอร์นี้ เพื่อเปิดให้อ่านแฟ้มบันทึกปฏิบัติการ และข้อมูลดีบั๊กแล้ว ดัชนีของแฟ้มบันทึกปฏิบัติการทั้งหมดสามารถอ่านได้ที่ http://${ADDRESS}/
 Description-tl.UTF-8: Pinatakbo ang web server
@@ -792,10 +780,10 @@ Description-bo.UTF-8: གཙང་བཟོ་བྱས་ཟིན་པའི�
  མཉེན་སྡེར་འདིའི་ཐོག་ཏུ་ཟིན་ཐོའི་ཡིག་ཆ་དང་སྐྱོན་སེལ་གྱི་སྐོར་འདྲ་བཤུ་བྱེད་རྒྱུ་ཡིན་པ
  .
  གནས་ཚུལ་འདི་དག་སྒྲིག་འཇུག་བྱས་པའི་མ་ལག་གི /var/log/installer/ ནང་དུའང་གསོག་འཇོག་བྱེད་རྒྱུ་ཡིན
-Description-bs.UTF-8: Umetnite formatirani flopi u disketni pogon
- Log datoteke i debug info će biti kopirani na ovaj flopi.
+Description-bs.UTF-8: Umetnite formatirani floppy u disketni pogon
+ Log datoteke i debug info će biti kopirani na ovaj floppy.
  .
- Informacije će također biti pohranjene u /var/log/instaler/ datoteku na instaliranom sistemu.
+ Informacije će također biti pohranjene u /var/log/installer datoteku na instaliranom sistemu.
 Description-ca.UTF-8: Inseriu un disquet formatat a la disquetera
  Els fitxers de registres i la informació de depuració es copiaran en aquest disquet.
  .
@@ -861,13 +849,13 @@ Description-he.UTF-8: הכנס דיסקט מאותחל לכונן
  .
  בנוסף, המידע יאוחסן גם ב-/var/log/installer/ במערכת המותקנת.
 Description-hr.UTF-8: Ubacite formatiranu disketu u pogon
- Datoteke zabilješki i 'debug' informacije će se spremiti na disketu.
+ Datoteke zabilješki i 'debug' informacije bit će snimljene na disketu.
  .
- Ove obavijesti će se spremiti i u direktorij /var/log/installer/ na instaliranom sustavu.
-Description-hu.UTF-8: Tegyen formázott flopit a meghajtóba
+ Ove obavijesti bit će spremljene i u direktorij /var/log/installer/ na instaliranom sustavu.
+Description-hu.UTF-8: Tégy formázott flopit a meghajtóba
  A naplófájlok és hibaadatok e flopira kerülnek.
  .
- Az adatok a telepített rendszer /var/log/installer/ könyvtárába is bekerülnek.
+ Az adatok a /var/log/installer/ könyvtárba kerülnek
 Description-id.UTF-8: Masukkan disket yang telah diformat ke dalam penggerak
  Berkas log dan info akan disalin ke disket ini.
  .
@@ -980,10 +968,6 @@ Description-te.UTF-8: ఫార్మాట్ చెయ్యబడిన ఫ�
  లాగ్ ఫైళ్ళూ, డీబగ్ ఇన్ఫో ఈ ఫ్లాపీలోకి కాపీ చెయ్యబడతాయి.
  .
  ఈ వివరము మీ స్థాపించిన వ్యవస్థలో/var/log/installer/లో కూడా  నిల్వచేయబడుతుంది.
-Description-tg.UTF-8: Флоппи форматшударо ба драйв дарҷ кунед
- Файлҳои сабти рӯйдодҳо ва иттилооти ислоҳи хатоҳо ба ин флоппи нусха бардошта мешаванд.
- .
- Ин иттилоот инчунин дар /var/log/installer/ дар системаи насбшудаи шумо нигоҳ дошта мешавад.
 Description-th.UTF-8: ใส่แผ่นฟลอปปี้ที่ฟอร์แมตแล้วในไดรว์
  แฟ้มบันทึกปฏิบัติการและข้อมูลดีบั๊กจะถูกคัดลอกลงแผ่นฟลอปปี้นี้
  .
@@ -1001,7 +985,7 @@ Description-ug.UTF-8: قوزغاتقۇچقا فورماتلانغان يۇمشا
  .
  بۇ ئۇچۇرلار سىستېمىنىڭ /var/log/installer/ مۇندەرىجىسىگىمۇ ساقلىنىدۇ.
 Description-uk.UTF-8: Вставте відформовану дискету в дисковод
- Журнали встановлення та діагностична інформація будуть скопійовані на цю дискету.
+ Журнали встановлення та відлагоджувальна інформація будуть скопійовані на цю дискету.
  .
  Інформація також буде збережена у директорії /var/log/installer/ встановленої системи.
 Description-vi.UTF-8: Hãy nạp đĩa mềm đã định dạng vào ổ
@@ -1032,8 +1016,8 @@ Description-bg.UTF-8: Грешка при монтирането на флопи
  Или флопидисковото устройство не може да бъде намерено, или няма форматиран флопидиск в устройството.
 Description-bo.UTF-8: མཉེན་སྡེར་བཀར་མ་ཐུབ་པ
  མཉེན་སྡེར་དེ་རྙེད་མ་ཐུབ་པའམ་ཡང་ན་བཟོ་བཀོད་བསྒྱུར་ཚར་བའི་མཉེན་སྡེར་ཞིག་སྒུལ་ཆས་ནང་དུ་མེད་པ
-Description-bs.UTF-8: Ne mogu montirati flopi
- Ili se flopi uređaj ne može pronaći, ili formatirana disketa nije u pogonu.
+Description-bs.UTF-8: Nemogu montirati floppy
+ Ili se floppy uređaj ne može pronaći, ili formatirana disketa nije u pogonu.
 Description-ca.UTF-8: No s'ha pogut muntar el disquet
  O bé no es troba el dispositiu de la disquetera, o no hi ha un disquet formatat dins la unitat.
 Description-cs.UTF-8: Připojení diskety selhalo
@@ -1066,8 +1050,8 @@ Description-gl.UTF-8: Non foi posíbel montar o disquete
  Non foi posíbel atopar a unidade de disquete, ou non hai un disquete formatado na unidade.
 Description-he.UTF-8: נכשל העיגון של הדיסקט
  כונן הדיסקטים לא נמצא, או שדיסקט מפורמט לא נמצא בכונן.
-Description-hr.UTF-8: Montiranje diskete nije uspjelo
- Disketni pogon se ne može pronaći ili u njemu nije formatirana disketa.
+Description-hr.UTF-8: Montiranje floppy diska nije uspjelo
+ Ili se ne može pronaći disketni pogon, ili u njemu nije formatirana disketa.
 Description-hu.UTF-8: A flopi csatolása sikertelen
  A flopi eszköz nem lelhető, vagy nincs formázott flopi a meghajtóban.
 Description-id.UTF-8: Gagal mengaitkan disket
@@ -1129,8 +1113,6 @@ Description-sv.UTF-8: Misslyckades med att montera disketten
  Antingen kunde diskettenheten inte hittas eller så är det ingen formatterad diskett i enheten.
 Description-te.UTF-8: ఫ్లాపీ అనుసంధానం విఫలమైంది
  ఫ్లాపీ డివైస్ కనబడలేదు, ఫార్మాటు అయిన ఫ్లాపీ డ్రైవ్ లో లేదు.
-Description-tg.UTF-8: Диски нарм васл карда нашуд
- Дастгоҳи диски нарм наметавонад ёфт шавад, ё ки диски нарми форматшуда дар драйв мавҷуд нест.
 Description-th.UTF-8: เมานท์ฟลอปปี้ไม่สำเร็จ
  หาอุปกรณ์ฟลอปปี้ไม่พบ หรือไม่ได้ใส่แผ่นฟลอปปี้ที่ฟอร์แมตแล้วในไดรว์
 Description-tl.UTF-8: Bigo ang pag-mount ng floppy
@@ -1156,11 +1138,11 @@ Description-ast.UTF-8: Recoyendo los datos necesarios pal informe d'instalación
 Description-be.UTF-8: Збор звестак для справаздачы аб усталяванні...
 Description-bg.UTF-8: Събиране на информация за доклада за инсталацията...
 Description-bo.UTF-8: སྒྲིག་འཇུག་གི་ཡར་ཞུ་ལ་ཆ་འཕྲིན་བསྡུ་རུག་བྱེད་བཞིན་པ་་་
-Description-bs.UTF-8: Prikupljanje informacija za izvještaj o instaliranju...
+Description-bs.UTF-8: Prikupljam informacije za izvještaj o instalaciji...
 Description-ca.UTF-8: S'està recollint la informació per a l'informe d'instal·lació...
 Description-cs.UTF-8: Sbírají se informace pro zprávu o instalaci...
 Description-cy.UTF-8: Yn casglu gwybodaeth ar gyfer yr adroddiad sefydlu...
-Description-da.UTF-8: Indsamler oplysninger til installationsrapport ...
+Description-da.UTF-8: Indsamler oplysninger til installationsrapport...
 Description-de.UTF-8: Sammeln von Informationen für den Installationsbericht ...
 Description-el.UTF-8: Συγκέντρωση πληροφοριών για την αναφορά εγκατάστασης ...
 Description-eo.UTF-8: Kolektado de informoj por la instalada raporto...
@@ -1173,7 +1155,7 @@ Description-fr.UTF-8: Regroupement des informations pour le rapport d'installati
 Description-ga.UTF-8: Faisnéis á bailiú le haghaidh tuairisce suiteála...
 Description-gl.UTF-8: Estase a recoller información para o informe de instalación...
 Description-he.UTF-8: אוסף מידע לדוח ההתקנה...
-Description-hr.UTF-8: Skupljam obavijesti za instalacijsko izvješće...
+Description-hr.UTF-8: Skupljam obavijesti za instalacijsko izviješće...
 Description-hu.UTF-8: Telepítési napló információnak összegyűjtése...
 Description-id.UTF-8: Mengumpulkan informasi untuk laporan instalasi ...
 Description-is.UTF-8: Safna upplýsingum fyrir uppsetningarskýrslu...
@@ -1204,7 +1186,6 @@ Description-sq.UTF-8: Duke mbledhur informacione rreth raportit të instalimit .
 Description-sr.UTF-8: Сакупљање информације за извештај о инсталацији...
 Description-sv.UTF-8: Samlar information till installationsrapporten ...
 Description-te.UTF-8: స్థాపన  నివేదిక కొరకు  సమాచారాన్ని సేకరించు...
-Description-tg.UTF-8: Гирифтани маълумот барои гузориши насбкунӣ...
 Description-th.UTF-8: กำลังรวบรวมข้อมูลสำหรับรายงานสรุปการติดตั้ง...
 Description-tl.UTF-8: Tinitipon ang impormasyon para sa ulat tungkol sa pagluklok...
 Description-tr.UTF-8: Kurulum raporu için bilgi toplanıyor...

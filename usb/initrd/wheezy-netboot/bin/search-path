@@ -1,5 +1,4 @@
-#!/bin/sh
-set -e
+#!/bin/sh -e
 # A cut-down version of 'which' from debianutils. Returns zero if executable
 # $1 is found on $PATH.
 PROGRAM="$1"

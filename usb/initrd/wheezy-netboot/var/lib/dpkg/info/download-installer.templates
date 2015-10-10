@@ -6,7 +6,7 @@ Description-ast.UTF-8: Descargar componentes del instalador
 Description-be.UTF-8: Загрузка кампанентаў праграмы ўсталявання
 Description-bg.UTF-8: Изтегляне на компоненти на инсталатора
 Description-bo.UTF-8: སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག་ལེན་འཇུག་བྱེད་པ
-Description-bs.UTF-8: Skini komponente instalera
+Description-bs.UTF-8: Skini komponente installera
 Description-ca.UTF-8: Baixa components de l'instal·lador
 Description-cs.UTF-8: Stáhnout komponenty instalátoru
 Description-cy.UTF-8: Lawrlwytho cydrannau y sefydlydd
@@ -23,7 +23,7 @@ Description-fr.UTF-8: Télécharger des composants d'installation
 Description-ga.UTF-8: Íosluchtaigh comhpháirteanna an tsuiteálaí
 Description-gl.UTF-8: Descargar compoñentes do instalador
 Description-he.UTF-8: הורדת רכיבי תוכנית ההתקנה
-Description-hr.UTF-8: Preuzmi dijelove instalacijskog programa
+Description-hr.UTF-8: Skini dijelove instalacijskog programa
 Description-hu.UTF-8: Telepítő összetevőinek letöltése
 Description-id.UTF-8: Mengunduh komponen instalasi
 Description-is.UTF-8: Sækja einingar uppsetningarforrits
@@ -54,7 +54,6 @@ Description-sq.UTF-8: Shkarko përbërësit e instaluesit
 Description-sr.UTF-8: Преузми компоненте инсталера
 Description-sv.UTF-8: Hämta installationskomponenter
 Description-te.UTF-8: స్థాపక వ్యవస్థ అంశాల డౌన్ లోడ్
-Description-tg.UTF-8: Боргирӣ кардани унсурҳои насбкунанда
 Description-th.UTF-8: ดาวน์โหลดองค์ประกอบการติดตั้ง
 Description-tl.UTF-8: Hugutin ang mga bahagi ng installer
 Description-tr.UTF-8: Kurulum programı bileşenlerini indir

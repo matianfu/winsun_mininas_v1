@@ -212,25 +212,11 @@ if [ -d /sys/bus/platform/devices/s3c2440-usbgadget -o \
 	register-module g_ether
 fi
 
-# Load xenbus_probe_frontend if we're running under the Xen hypervisor, so
-# that it can deal with autoloading such things as xen-blkfront and
-# xen-netfront.
-if [ "$(cat /sys/hypervisor/type 2>/dev/null || true)" = xen ] && \
-   [ ! -d /sys/bus/xen ]; then
-	db_subst hw-detect/load_progress_step CARDNAME "Xen frontend"
-	db_subst hw-detect/load_progress_step MODULE "xenbus_probe_frontend"
-	db_progress INFO hw-detect/load_progress_step
-
-	log "Detected Xen hypervisor, loading xenbus_probe_frontend"
-	load_module xenbus_probe_frontend
-	register-module -i xenbus_probe_frontend
-fi
-
 # If using real hotplug, re-run the rc scripts to pick up new modules.
 # TODO: this just loads modules itself, rather than handing back a list
 # Since we've just run depmod, new modules might be available, so we
 # must trigger as well as settle.
-update-dev >/dev/null
+update-dev
 
 ALL_HW_INFO=$(get_detected_hw_info; get_manual_hw_info)
 db_progress STEP $OTHER_STEPSIZE
@@ -326,12 +312,12 @@ fi
 # be done unconditionally.
 if [ -z "$LOAD_IDE" ] && is_not_loaded ide-generic && \
    [ -e /sys/bus/isa ] && is_available ide-generic; then
-	update-dev --settle >/dev/null
+	update-dev --settle
 	blockdev_count=$(ls /sys/block | wc -w)
 
 	log "ISA bus detected; loading module 'ide-generic'"
 	load_module ide-generic
-	update-dev --settle >/dev/null
+	update-dev --settle
 	if [ $(ls /sys/block | wc -w) -gt $blockdev_count ]; then
 		log "New devices detected after loading ide-generic"
 
@@ -526,6 +512,8 @@ case "$(udpkg --print-architecture)" in
 		# sparc v9 or v9b
 		if grep -q '^cpu.*: .*UltraSparc III' /proc/cpuinfo; then
 			apt-install libc6-sparcv9b || true
+		else
+			apt-install libc6-sparcv9 || true
 		fi
 	fi
 	;;
@@ -543,6 +531,6 @@ check-missing-firmware
 sysfs-update-devnames
 
 # Let userspace /dev tools rescan the devices
-update-dev --settle >/dev/null
+update-dev --settle
 
 exit 0

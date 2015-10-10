@@ -40,9 +40,9 @@ Description-bo.UTF-8: ཕན་ཚུན་འབྲེལ་ཡོད་ཀྱ�
  .
  "exit" བཀའ་བརྡ་སྤྱད་ནས་སྒྲིག་འཇུག་གི་འདེམས་ཐོའི་ཐོག་ཏུ་ལོག་ཐུབ
 Description-bs.UTF-8: Interaktivni shell
- Nakon ove poruke, radit ćete pod "ash", klonom Bourne-shella.
+ Nakon ove poruke, vi ćete raditi pod "ash" shellom, klonom Bourne-shella.
  .
- Root datotečni sistem je RAM disk. Datotečni sistemi hard diska su montirani na "/target". Editor koji Vam je dostupan je nano. On je veoma mal i lagan za upotrebu. Da biste stekli sliku o Unix korisnim programima koji su Vam dostupni, koristite naredbu "help".
+ Root datotečni sistem je RAM disk. Datotečni sistemi hard diska su montirani na "/target". Editor koji vam je dostupan je nano. On je veoma mali i lagan za upotrebu. Da biste stekli sliku o Unix korisnim programima koji su vam dostupni, pokrenite naredbu "help".
  .
  Koristite se "exit" naredbom da bi ste se vratili u instalacioni meni.
 Description-ca.UTF-8: Intèrpret d'ordres interactiu
@@ -64,11 +64,11 @@ Description-cy.UTF-8: Cragen rhyngweithiol
  .
  Defnyddiwch y gorchymyn "exit" i ddychwelyd i'r ddewislen sefydlu.
 Description-da.UTF-8: Interaktiv skal
- Efter denne besked kører du »ash«, en klon af Bourne-skallen.
+ Efter denne besked kører du "ash", en klon af Bourne-skallen.
  .
- Rodfilsystemet er en ramdisk. Harddisk-filsystemerne er monteret på »/target«. Den tilgængelige tekstbehandler hedder nano. Den er meget lille og nem at finde ud af. For at få en idé om, hvilke Unix-værktøjer, du har til rådighed, kan du bruge kommandoen »help«.
+ Rodfilsystemet er en ramdisk. Harddisk-filsystemerne er monteret på "/target". Den tilgængelige tekstbehandler hedder nano. Den er meget lille og nem at finde ud af. For at få en idé om, hvilke Unix-værktøjer, du har til rådighed, kan du bruge kommandoen "help".
  .
- Brug kommandoen »exit« for at komme tilbage til installationsmenuen.
+ Brug kommandoen "exit" for at komme tilbage til installationsmenuen.
 Description-de.UTF-8: Interaktive Shell
  Nach dieser Nachricht wird »ash«, ein Bourne-Shell-Klon ausgeführt.
  .
@@ -142,15 +142,15 @@ Description-he.UTF-8: מעטפת אינטראקטיבית
  .
  השתמש בפקודת "exit" על-מנת לחזור לתפריט ההתקנה.
 Description-hr.UTF-8: Interaktivna ljuska (shell)
- Nakon ove poruke, naći ćete se u "ash" ljusci, klonu Bourne ljuske.
+ Nakon ove poruke, naći ćete se u "ash" shellu, klonu Bourne shella.
  .
- Korijenski datotečni sustav je RAM disk. Datotečni sustavi tvrdih diskova montirani su na "/target". Na raspolaganju vam je uređivač teksta nano, koji je vrlo malen, ali jednostavan za shvatiti. Da biste doznali koji su vam Unix alati na raspolaganju, upišite "help".
+ Korijenski datotečni sustav je RAM disk. Datotečni sustavi tvrdih diskova montirani su na "/target". Na raspolaganju vam je uređivač teksta nano, koji bi je vrlo malen ali jednostavan za shvatiti. Da doznate koji su vam Unix alati na raspolaganju, upišite "help".
  .
- Koristite naredbu "exit" za povratak u instalacijski izbornik.
+ Rabite naredbu "exit" da se vratite u instalacijski izbornik.
 Description-hu.UTF-8: Interaktív héj
  Ezen üzenet után az "ash", egy Bourne-héj másolat indul.
  .
- A gyökér fájlrendszer egy RAM lemez. A merevlemez fájlrendszerek a "/target"-ben vannak. Az elérhető szerkesztő a nano. Ez igen kicsi és könnyen használható. Az elérhető Unix eszközök megismerését a "help" parancs segíti.
+ A gyökér fájlrendszer egy RAM lemez. A merevlemez fájlrendszerek a "/target"-ben vannak. Az elérhető szerkesztő a nano. Ez igen apró és könnyen felfedezhető. Az elérhető eszközök megismerését a "help" parancs segíti.
  .
  A telepítő menüjébe az "exit" paranccsal lehet visszatérni.
 Description-id.UTF-8: Shell interaktif
@@ -321,12 +321,6 @@ Description-te.UTF-8: సంవాద(interactive) షెల్
  రూట్  ఫైల్ సిస్టమ్ ఒక RAM డిస్క్. హార్డ్ డిస్క్  ఫైల్ సిస్టములు  "/target" పై అనుసంధానంచేయబడ్డాయి. nano ఎడిటర్  మీకు అందుబాటులో వుంది. అది చాలా చిన్నది, వాడటం మీరు సులభంగా తెలుసుకోగలరు. "help" కమాండ్ వాడితే, మీకు ఏ యునిక్స్  పరికరాలు అందుబాటులో వున్నాయో తెలుస్తుంది.
  .
  స్థాపనమెనూ కి తిరిగి వెళ్ళడానికి "exit" కమాండుని ఉపయోగించండి.
-Description-tg.UTF-8: Восити интерактивӣ
- Баъд аз ин паём раванди "ash" (намунаи восити Bourne) иҷро мешавад.
- .
- Системаи файлии root ин диски RAM аст. Системаҳои файлии диски компютерӣ дар "/target" васл карда мешаванд. Муҳаррири дастрас барои шумо барномаи nano аст. Ин барномаи хурд ва дар истифода осон аст. Барои гирифтани маълумоти муфассал оиди фармонҳои хидматии Unix шумо метавонед фармони "help"-ро истифода баред.
- .
- Барои баргаштан ба менюи насбкунӣ, фармони "exit"-ро истифода баред.
 Description-th.UTF-8: เชลล์โต้ตอบ
  หลังจากข้อความนี้ คุณจะเข้าสู่ "ash" เชลล์เลียนแบบ Bourne shell ชนิดหนึ่ง
  .
@@ -354,7 +348,7 @@ Description-ug.UTF-8: shell سۆزلىشىشى
 Description-uk.UTF-8: Інтерактивний командний процесор
  Після цього повідомлення ви опинитесь в „ash“, клоні Bourne-shell.
  .
- Коренева файлова система зберігається на RAM-диску. Файлові системи жорстких дисків змонтовані в „/target“. У вашому розпорядженні - редактор nano. Він дуже маленький та простий. Щоб мати уяву про те, які програми Unix доступні, запустіть команду „help“.
+ Коренева файлова система знаходиться на RAM-диску. Файлові системи жорстких дисків змонтовані в „/target“. У вашому розпорядженні - редактор nano. Він дуже маленький та простий. Щоб мати уяву про те, які програми Unix доступні, запустіть команду „help“.
  .
  Для повернення до меню встановлення, використовуйте команду „exit“.
 Description-vi.UTF-8: Trình bao tương tác
@@ -384,7 +378,7 @@ Description-ast.UTF-8: Executar un intérprete d'órdenes
 Description-be.UTF-8: Запусціць абалонку
 Description-bg.UTF-8: Изпълнение на обвивка
 Description-bo.UTF-8: འཇུག་སྒོ་ཞིག་བཀོལ་སྤྱོད་བྱེད་པ
-Description-bs.UTF-8: Pokrenite shell
+Description-bs.UTF-8: Pokreni shell
 Description-ca.UTF-8: Executa un intèrpret d'ordres
 Description-cs.UTF-8: Spustit shell
 Description-cy.UTF-8: Gweithredu cragen
@@ -432,7 +426,6 @@ Description-sq.UTF-8: Ekzekuto një shell
 Description-sr.UTF-8: Покрени командни интерфејс
 Description-sv.UTF-8: Starta ett skal
 Description-te.UTF-8: షెల్ ని నడుపుము
-Description-tg.UTF-8: Иҷро кардани восит
 Description-th.UTF-8: เรียกเชลล์
 Description-tl.UTF-8: Magpatakbo ng shell
 Description-tr.UTF-8: Bir kabuk çalıştır

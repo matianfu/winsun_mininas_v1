@@ -30,10 +30,10 @@ Description-bo.UTF-8: ཡར་འཇུག་དགོས་པའི་སྒ�
  སྒྲིག་འཇུག་ཆས་ཀྱིས་སྒྲིག་འཇུག་ཆ་ཚང་བྱེད་པར་དགོས་ངེས་ཀྱི་ལྷུ་ལག་ཡོངས་རང་འགུལ་གྱིས་ཡར་འཇུག་བྱེད་རྒྱུ་ཡིན་པ་དང་དེ་དག་འདི་ཐོ་འགོད་བྱས་མེད། སྒྲིག་འཇུག་ཆས་ཀྱི་(འདེམས་རུང་བའི)་ལྷུ་ལག་གཞན་དག་གཤམ་དུ་སྟོན་ཡོད། དེ་དག་ཕལ་ཆེར་དགོས་ངེས་མིན་ཡང་སྤྱོད་མཁན་འགའ་ཞིག་ལ་འཐད་པོ་ཡོད
  .
  གསལ་བརྡ། ཁྱོད་ཀྱིས་ལྷུ་ལག་གཞན་དག་དགོས་པའི་ལྷུ་ལག་ཞིག་བདམས་ན་དེ་དག་ཀྱང་ཡར་འཇུག་བྱེད་ངེས
-Description-bs.UTF-8: Komponente instalera koje će biti učitane:
- Sve komponente instalera potrebne za završavanje instalacije će biti automatski učitane i nisu navedene ovdje. Ostale (opcionalne) komponente instalera su prikazane ispod. One vjerovatno nisu neophodne, ali mogu zanimati neke korisnike.
+Description-bs.UTF-8: Komponente instalatera koje će biti učitane:
+ Sve komponente instalatera potrebne za završavanje instalacije će biti automatski učitane i nisu navedene ovdje. Ostale (opcionalne) komponente instalatera su prikazane ispod. One vjerovatno nisu neophodne, ali mogu zanimati neke korisnike.
  .
- Uočite da ako izaberete komponentu koja zahtijeva druge, te komponente će također biti učitane.
+ Primjetite da ako izaberete komponentu koja zahtijeva druge, te komponente će takođe biti učitane.
 Description-ca.UTF-8: Components de l'instal·lador a carregar:
  Tots els components de l'instal·lador que es necessiten per a completar la instal·lació es carregaran automàticament i no s'han llistat ací.  Altres components de l'instal·lador (opcionals) es mostren a continuació. Probablement no són necessaris, però poden ser interessants per a alguns usuaris.
  .
@@ -99,13 +99,13 @@ Description-he.UTF-8: רכיבי תוכנית התקנה לטעינה:
  .
  שים לב שאם אתה בוחר רכיב שדורש רכיבים אחרים, הם יטענו בנוסף.
 Description-hr.UTF-8: Instalacijski dijelovi za učitavanje:
- Svi dijelovi instalacijskog programa potrebni za završetak instalacije će se automatski učitati i oni nisu na ovom popisu. Ostali, opcionalni dijelovi instalacijskog programa su prikazani ispod. Oni vjerojatno nisu neophodni, ali mogu biti zanimljivi nekim korisnicima.
+ Svi dijelovi instalera potrebni za završetak instalacije će biti automatski učitani i oni nisu na ovom popisu. Ostali, opcionalni dijelovi instalera su prikazani ispod. Oni vjerojatno nisu neophodni, ali mogu biti zanimljivi nekim korisnicima.
  .
- Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će se dijelovi učitati.
-Description-hu.UTF-8: Betöltendő telepítő részek:
- A telepítéshez szükséges valamennyi összetevő automatikusan betöltésre kerül, és nincs itt felsorolva. Alább látható a telepítő pár egyéb (opcionális) része. Ezek valószínűleg nem szükségesek, de egyes felhasználóknak hasznosak lehetnek.
+ Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će drugi dijelovi biti učitani.
+Description-hu.UTF-8: Betöltendő telepítőrészek:
+ A telepítő a teljes telepítéshez szükséges valamennyi összetevője kiválasztott. Alább a telepítő pár egyéb (opcionális) része. Ezek valószínűleg nem szükségesek, de egyes felhasználóknak hasznosak lehetnek.
  .
- Jó tudni, hogy ha egy kiválasztott összetevő másokat igényel, azok szintén betöltődnek.
+ Jó tudni, hogy ha egy kiválasztott összetevő másokat kíván, azok szintén betöltődnek.
 Description-hy.UTF-8: Տեղադրիչի բեռնվող բաղադրիչները`
  Տեղադրման համար անհրաժեշտ բոլոր բաղադրիչները ավտոմատ կբեռնվեն և չեն ցույց տրվի այստեղ։ Ներքևում թվարկված են տեղադրիչի այլ (ոչ պարտադիր) բաղադրիչները։ Հնարավոր է, որ նրանք պետք չեն գա, բայց որոշ օգտագործողների նրանք կարող են անհրաժեշտ լինել։
  .
@@ -222,10 +222,6 @@ Description-te.UTF-8: లోడు చేయవలసిన స్థాపన�
  స్థాపనపూర్తి అగుటకు అవసరమయిన అంశాలు వాటి అంతట అవే లోడు చేయబడతాయి, అవి ఇక్కడ చూపటం లేదు. వేరే స్థాపనఅంశాలు క్రింద చూపబడ్డాయి. ఇవి బహుశా అవసరం లేదు, కానీ కొంత మందికి ఆసక్తికరంగా ఉండవచ్చు.
  .
  మీరు ఇతర అంశాలు కావలసిన ఒక అంశమును కనుక ఎంచుకున్నట్లయితే, ఆ అంశాలు కూడా లోడు చేయబడతాయి.
-Description-tg.UTF-8: Унсурҳои насбкунанда барои боркунӣ:
- Ҳамаи унсурҳои насбкунандае, ки барои ба анҷом расонидани насб лозиманд ба таври худкор бор мешаванд ва дар ин рӯйхат намоиш дода намешаванд. Баъзе (интихобӣ) унсурҳои насбкунандаи дигар дар поён намоиш дода мешаванд. Эҳтимол аст, ки онҳо лозим нестанд, вале барои баъзе корбарон шавқовар мебошанд.
- .
- Қайд кунед, ки агар шумо унсуреро, ки унсурҳои дигарро талаб мекунад, интихоб кунед, он унсурҳои талабшуда инчунин бор карда мешаванд.
 Description-th.UTF-8: องค์ประกอบการติดตั้งที่จะเรียกใช้:
  องค์ประกอบทุกอย่างที่โปรแกรมติดตั้งต้องการใช้ จะถูกโหลดไว้หมดแล้ว และไม่แสดงในที่นี้ ข้างล่างนี้จะแสดงองค์ประกอบการติดตั้ง (เสริม) อื่นๆ ซึ่งอาจไม่จำเป็น เพียงแต่ผู้ใช้บางคนอาจจะสนใจ
  .
@@ -235,7 +231,7 @@ Description-tl.UTF-8: Mga bahagi ng installer na ipapasok:
  .
  Dapat ninyong mabatid na kung pumili kayo ng bahagi na nangangailangan ng iba, ang mga bahagi na iyon ay ipapasok din.
 Description-tr.UTF-8: Yüklenecek kurulum bileşenleri:
- Kurulum programının, kurulumun tamamlanması için ihtiyaç duyacağı bileşenlerin tümü otomatik olarak yükleneceğinden burada listelenmemiştir. Diğer bazı (isteğe bağlı) kurulum bileşenleri aşağıda görülmektedir. Bunlar çoğu durum için gereksizdir; fakat bazı kullanıcıların işine yarayabilir.
+ Kurulum programının, kurulumun tamamlanması için ihtiyaç duyacağı bileşenlerin tümü otomatik olarak yükleneceğinden burada listelenmemiştir. Diğer bazı (seçeneksel) kurulum bileşenleri aşağıda görülmektedir. Bunlar çoğu durum için gereksizdir; fakat bazı kullanıcıların işine yarayabilir.
  .
  Seçtiğiniz bileşenlerin bağımlı olduğu diğer bileşenlerin de kurulacağını unutmayın.
 Description-ug.UTF-8: يۈكلەيدىغان ئورنىتىش بۆلىكى:
@@ -251,7 +247,7 @@ Description-vi.UTF-8: Các thành phần cài đặt cần nạp:
  .
  Lưu ý nếu bạn lựa chọn một thành phần phụ thuộc vào thành phần khác nào, nó sẽ cũng được tải.
 Description-zh_CN.UTF-8: 要加载的安装程序组件：
- 所有完成安装所必需的组件都将被自动加载，也不会列在这里。其他一些可选的安装程序组件列在了下边。它们很可能不是必需的，但是部分用户可能会对其感兴趣。
+ 所有完成安装所必需的组件都将被自动加载，也不会列在这里。其它一些可选的安装程序组件列在了下边。它们很可能不是必需的，但是部分用户可能会对其感兴趣。
  .
  注意，如果您的选择依赖于其他组件，那么这些组件也将被加载。
 Description-zh_TW.UTF-8: 要載入的安裝程式元件:
@@ -292,10 +288,10 @@ Description-bo.UTF-8: ཡར་འཇུག་དགོས་པའི་སྒ�
  ཡིད་འཛིན་གྲོན་ཆུང་བྱེད་པའི་ཆེད་དུ་སྔོན་སྒྲིག་གིས་སྒྲིག་འཇུག་ཞིག་ལ་དགོས་ངེས་ཀྱི་ལྷུ་ལག་ཁོ་ན་བདམས་ཡོད། སྒྲིག་འཇུག་གི་ལྷུ་ལག་གཞན་དག་སྤྱི་བཏང་གི་་སྒྲིག་འཇུག་ཞིག་ལ་དགོས་ངེས་ཅན་མིན། འོན་ཀྱང་སྐབས་རེར་དེ་དག་འགའ་ཞིག་དགོས་པའི་གོ་སྐབས་ཡོད། དཔེར་ན་ནང་སྙིང་གི་དཔེ་དབྱིབས་དམིགས་བསལ་ཅན་ལ་དགོས་པ། དེའི་ཆེད་དུ་མིང་ཐོའི་ནང་ནས་དོ་སྣང་ཆེན་པོས་རང་ཉིད་ལ་དགོས་པའི་ལྷུ་ལག་དག་འདེམས་དགོས
  .
  གསལ་བརྡ། ཁྱོད་ཀྱིས་ལྷུ་ལག་གཞན་དག་དགོས་པའི་ལྷུ་ལག་ཞིག་བདམས་ན་དེ་དག་ཀྱང་ཡར་འཇུག་བྱེད་ངེས
-Description-bs.UTF-8: Komponente instalera koje će biti učitane:
- Kako bi sačuvali memoriju, samo one komponente koje su zasigurno neophodne za instalaciju se podrazumijevano odabiraju. Sve ostale komponente instalera nisu potrebne za osnovnu instalaciju, ali će Vam možda trebati neke od njih, posebno određeni kernel moduli, pa pažljivo pogledajte ovaj spisak i odaberite komponente koje Vam trebaju.
+Description-bs.UTF-8: Komponente instalatera koje će biti učitane:
+ Kako bi uštedjeli memoriju, samo one komponente koje su zasigurno neophodne za instalaciju se podrazumijevano odabiraju. Ostale komponente instalatera nisu sve potrebne za osnovnu instalaciju, ali će vam možda trebati neke od njih, posebno određeni kernel moduli, pa pažljivo pogledajte ovaj spisak i odaberite komponente koje vam trebaju.
  .
- Uočite da ako izaberete komponentu koja zahtijeva druge, te komponente će također biti učitane.
+ Primjetite da ako izaberete komponentu koja zahtijeva druge, te komponente će takođe biti učitane.
 Description-ca.UTF-8: Components de l'instal·lador a carregar:
  Per a estalviar memòria, només es seleccionen per defecte els components que inequívocament es necessiten per a fer una instal·lació. Els altres components de l'instal·lador no són tots necessaris per a una instal·lació bàsica, però és possible que en necessiteu alguns, especialment alguns mòduls del nucli, així doncs analitzeu la llista i seleccioneu-ne els components que necessiteu.
  .
@@ -361,13 +357,13 @@ Description-he.UTF-8: רכיבי תוכנית התקנה לטעינה:
  .
  שים לב שאם אתה בוחר רכיב שדורש רכיבים אחרים, הם יטענו בנוסף.
 Description-hr.UTF-8: Instalacijski dijelovi za učitavanje:
- Zbog uštede memorije, samo oni dijelovi instalacije koji su sigurno potrebni za instalaciju su izabrani za učitavanje. Ostali popisani dijelovi nisu neophodni za osnovnu instalaciju, ali ćete možda ipak trebati neke od njih, osobito pojedine module za kernel. Zato pozorno pregledajte popis i izaberite dijelove koji su vam potrebni.
+ Zbog uštede memorije, samo oni moduli instalacije koji su sigurno potrebni za instalaciju su odabrani za učitavanje. Ostali popisani dijelovi nisu neophodni za osnovnu instalaciju, ali ćete možda ipak trebati neke od njih, osobito pojedine module za kernel. Zato pozorno pregledajte popis i izaberite dijelove koji su vam potrebni.
  .
- Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će se dijelovi učitati.
-Description-hu.UTF-8: Betöltendő telepítő részek:
- Memória kímélés céljából csak a biztosan szükséges összetevők kerülnek alapból kiválasztásra. Más telepítő összetevők nem feltétlenül szükségesek, de igény lehet némelyikre, különösen egyes rendszermag modulokra. Nézze végig a listát alaposan, és válassza ki az Önnek szükséges összetevőket.
+ Obratite pozornost: ako izaberete dio koji zahtijeva druge dijelove, i ti će drugi dijelovi biti učitani.
+Description-hu.UTF-8: Betöltendő telepítőrészek:
+ Memória-kímélés céljából csak a biztosan szükséges összetevők kerültek alapból kiválasztásra. Más telepítő összetevők nem feltétlenül szükségesek, de igény lehet egyesekre, különösen egyes rendszermag modulokra, így érdemes átnézni a listát.
  .
- Jó tudni, hogy ha egy kiválasztott összetevő másokat igényel, azok szintén betöltődnek.
+ Jó tudni, hogy ha egy kiválasztott összetevő másokat kíván, azok szintén betöltődnek.
 Description-hy.UTF-8: Տեղադրիչի բեռնվող բաղադրիչները`
  Օպերատիվ հիշողության էկանոմիայի պատճառով ինքնաբար ընտրված են տեղադրիչի ամենաանհրաժեշտ բաղադրիչները։ Մնացած բաղադրիչները պարտադիր չեն հասարակ տեղադրման համար, բայց նրանցից որոշները կարող են ձեզ պետք գալ, հատկապես կորիզի մոդուլները, այդ պատճառով նայեք ցուցակը և նշեք ձեզ անհրաժեշտ բաղադրիչները։
  .
@@ -484,10 +480,6 @@ Description-te.UTF-8: లోడు చేయవలసిన స్థాపన�
  మెమొరీ ఆదా చేయుటకు స్థాపనకు అత్యవసరమైన అంశాలు మాత్రమే మొదటగా ఎంచుకోబడ్డాయి. మౌలిక స్థాపనకు వేరే స్థాపనవ్యవస్థ అంశాలు అన్నీ అవసరం ఉండకపోవచ్చు, కానీ కొన్ని అవసరం ఉండవచ్చు, ముఖ్యంగా కెర్నెల్ మాధ్యమాలు. కావున జాగ్రత్తగా చూసి క్రింద జాబితా నుండి మీకు కావలసిన అంశాలు ఎన్నుకోండి.
  .
  మీరు ఇతర అంశాలు కావలసిన ఒక అంశమును కనుక ఎంచుకున్నట్లయితే, ఆ అంశాలు కూడా లోడు చేయబడతాయి.
-Description-tg.UTF-8: Унсурҳои насбкунанда барои боркунӣ:
- Барои сарфа кардани ҳофиза, танҳо унсурҳое, ки барои насб дар ҳақиқат лозиманд, ба сурати пешфарз интихоб карда мешаванд. Унсурҳои дигари насбкунанда барои насби асосӣ лозим нестанд, вале эҳтимол аст, ки ба шумо баъзеи онҳо лозим мешаванд, махсусан модулҳои ҳаста, бинобар ин рӯйхатро мутолиа кунед ва унсурҳои лозимиро интихоб намоед.
- .
- Қайд кунед, ки агар шумо унсуреро, ки унсурҳои дигарро талаб мекунад, интихоб кунед, он унсурҳои талабшуда инчунин бор карда мешаванд.
 Description-th.UTF-8: องค์ประกอบการติดตั้งที่จะเรียกใช้:
  เพื่อประหยัดหน่วยความจำ โดยปกติจึงเลือกเฉพาะองค์ประกอบที่จำเป็นจริงๆ สำหรับการติดตั้งเท่านั้น องค์ประกอบการติดตั้งอื่นๆ ไม่ได้จำเป็นสำหรับการติดตั้งพื้นฐาน แต่ก็มีบางอย่างที่คุณอาจต้องใช้ โดยเฉพาะมอดูลบางมอดูลของเคอร์เนล ฉะนั้น กรุณาสำรวจรายการอย่างระมัดระวัง เพื่อเลือกองค์ประกอบที่คุณต้องการ
  .
@@ -513,7 +505,7 @@ Description-vi.UTF-8: Các thành phần cài đặt cần nạp:
  .
  Lưu ý nếu bạn lựa chọn một thành phần phụ thuộc vào thành phần khác nào, nó sẽ cũng được tải.
 Description-zh_CN.UTF-8: 要加载的安装程序组件：
- 为了节省内存，仅有那些对安装来说确实需要的组件才会被默认选定。其他安装程序组件对于基本安装并非必需，但是您可能会需要其中的一部分，特别是某些内核模块。请仔细检查这一列表并选择您需要的组件。
+ 为了节省内存，仅有那些对安装来说确实需要的组件才会被默认选定。其它安装程序组件对于基本安装并非必需，但是您可能会需要其中的一部分，特别是某些内核模块。请仔细检查这一列表并选择您需要的组件。
  .
  注意，如果您的选择依赖于其他组件，那么这些组件也将被加载。
 Description-zh_TW.UTF-8: 要載入的安裝程式元件:
@@ -578,7 +570,6 @@ Description-sq.UTF-8: Duke ngarkuar përbërës shtesë
 Description-sr.UTF-8: Учитавање додатних компонената
 Description-sv.UTF-8: Läser in ytterligare komponenter
 Description-te.UTF-8: అదనపు అంశాలు ఎక్కించ బడుతున్నాయి
-Description-tg.UTF-8: Боркунии унсурҳои иловагӣ
 Description-th.UTF-8: กำลังโหลดองค์ประกอบเพิ่มเติม
 Description-tl.UTF-8: Ipinapasok ang karagdagang mga bahagi
 Description-tr.UTF-8: Ek bileşenler yükleniyor
@@ -645,7 +636,6 @@ Description-sq.UTF-8: Duke tërhequr ${PACKAGE}
 Description-sr.UTF-8: Преузимање пакета ${PACKAGE}
 Description-sv.UTF-8: Hämtar ${PACKAGE}
 Description-te.UTF-8: ${PACKAGE}ను తెచ్చుచున్నాను
-Description-tg.UTF-8: Бозёбӣ кардани ${PACKAGE}
 Description-th.UTF-8: กำลังโหลด ${PACKAGE}
 Description-tl.UTF-8: Kinukuha ang ${PACKAGE}
 Description-tr.UTF-8: ${PACKAGE} alınıyor
@@ -712,7 +702,6 @@ Description-sq.UTF-8: Duke konfiguruar ${PACKAGE}
 Description-sr.UTF-8: Конфигурисање пакета ${PACKAGE}...
 Description-sv.UTF-8: Konfigurerar ${PACKAGE}
 Description-te.UTF-8: ${PACKAGE} అమర్చుట
-Description-tg.UTF-8: Конфигуратсия кардани ${PACKAGE}
 Description-th.UTF-8: กำลังตั้งค่า ${PACKAGE}
 Description-tl.UTF-8: Isinasaayos ang ${PACKAGE}
 Description-tr.UTF-8: ${PACKAGE} yapılandırılıyor
@@ -737,7 +726,7 @@ Description-bg.UTF-8: Грешка при зареждане на компоне
  Зареждането на ${PACKAGE} завърши неуспешно поради неизвестни причини.  Прекъсване.
 Description-bo.UTF-8: སྒྲིག་འཇུག་ཆས་ཀྱི་ལྷུ་ལག་ཡར་འཇུག་བྱེད་མ་ཐུབ
  རྒྱུ་རྐྱེན་གང་ཡིན་མ་ཤེས་པར་${PACKAGE} ཡར་འཇུག་མ་ཐུབ། མཚམས་འཇོག་བཞིན་པ
-Description-bs.UTF-8: Neuspješno učitavanje komponente instalera
+Description-bs.UTF-8: Ne mogu da instaliram modul
  Učitavanje ${PACKAGE} nije uspjelo iz nepoznatih razloga. Odustajem.
 Description-ca.UTF-8: No s'ha pogut instal·lar el component de l'instal·lador
  La instal·lació de ${PACKAGE} ha fallat per raons desconegudes. S'està avortant.
@@ -772,9 +761,9 @@ Description-gl.UTF-8: Non foi posíbel cargar unha compoñente do instalador
 Description-he.UTF-8: כישלון בטעינת רכיב של תוכנית ההתקנה
  טעינת ${PACKAGE} נכשלה מסיבה לא ברורה. מוותר.
 Description-hr.UTF-8: Učitavanje instalacijskog dijela nije uspjelo
- Učitavanje ${PACKAGE} nije uspjelo zbog nepoznatih razloga. Prekidam.
-Description-hu.UTF-8: Egy telepítő rész betöltése meghiúsult
- ${PACKAGE} betöltése ismeretlen okokból meghiúsult. Kilépek.
+ Učitavanje ${PACKAGE} nije uspjelo iz neznanih razloga. Prekidam.
+Description-hu.UTF-8: Egy telepítőrész betöltése meghiúsult
+ ${PACKAGE} betöltése ismeretlen okból meghiúsult. Kilépek.
 Description-hy.UTF-8: Հնարավոր չէ բեռնել տեղադրիչի բաղադրիչը
  Անհայտ պատճառով անհնար է բեռնել ${PACKAGE}։
 Description-id.UTF-8: Gagal memuat komponen instalasi 
@@ -833,8 +822,6 @@ Description-sv.UTF-8: Misslyckades med att läsa in installationskomponent
  Inläsningen av ${PACKAGE} misslyckades av okänd anledning. Avbryter.
 Description-te.UTF-8: స్థాపనవ్యవస్థ అంశమును లోడు చేయుట విఫలమైనది.
  తెలియని కారణాల వల్ల ${PACKAGE}ను లోడు చేయుట విఫలమైనది. విరమించుచున్నాను.
-Description-tg.UTF-8: Боркунии унсури насбкунанда қатъ шудааст
- Ба сабаби номаълум боркунии ${PACKAGE} қатъ карда шуд. Қатъ шуда истодааст.
 Description-th.UTF-8: โหลดองค์ประกอบการติดตั้งไม่สำเร็จ
  โหลด ${PACKAGE} ไม่สำเร็จโดยไม่ทราบสาเหตุ ขอยกเลิก
 Description-tl.UTF-8: Bigo sa pagpasok ng bahagi ng installer
@@ -884,7 +871,7 @@ Description-bo.UTF-8: ནང་སྙིང་གི་དཔེ་དབྱི�
  .
  དྲ་གནས་ཞིག་ནས་སྒྲིག་འཇུག་བྱེད་བཞིན་ཡོད་ན་Debian གྱི་པར་གཞི་གཞན་ཞིག་བདམས་ནས་བཟོ་ཐུབ། ནང་སྙིང་མེད་པར་མུ་མཐུད་བཟོས་ན་སྒྲིག་འཇུག་མི་ཐུབ་པའི་ཉེན་ཁ་ཡོད
 Description-bs.UTF-8: Nastaviti instalaciju bez učitavanja kernel modula?
- Kernel moduli nisu pronađeni. Ovo je vjerovatno zbog neslaganja između kernela koji koristi ova verzija instalera i verzije kernela dostupne u arhivi.
+ Kernel moduli nisu pronađeni. Ovo je vjerovatno zbog neslaganja između kernela koji koristi ova verzija instalatera i verzije kernela dostupne u arhivi.
  .
  Ako instalirate preko mirrora, možete zaobići ovaj problem odabiranjem instaliranja druge verzije Debiana. Instalacija vjerovatno neće raditi ako nastavite bez kernel modula.
 Description-ca.UTF-8: Voleu continuar sense carregar mòduls del nucli?
@@ -952,13 +939,13 @@ Description-he.UTF-8: להמשיך את ההתקנה בלי לטעון מודו�
  .
  אם אתה מתקין מאתר מראה, תוכל לעקוף בעיה זאת על ידי בחירה בהתקנת גרסה אחרת של דביאן. ההתקנה כנראה תיכשל אם תמשיך ללא מודולי קרנל.
 Description-hr.UTF-8: Nastavi instalaciju bez učitavanja modula za kernel?
- Nema modula za kernel. Razlog tomu je vjerojatno nepodudarnost inačica jezgre koju koristi instalacija i jezgre dostupne u arhivi.
+ Nema modula za kernel. Razlog tomu je vjerojatno nepodudarnost inačica kernela kojeg koristi instalacija i kernela dostupnog u arhivi.
  .
- Ako instalirate sa zrcalnog poslužitelja, možete riješiti ovaj problem instalirajući neku drugu inačicu Debiana. Instalacija vjerojatno neće uspjeti ako nastavite bez modula za jezgru.
-Description-hu.UTF-8: Folytatja a telepítést rendszermag modulok betöltése nélkül?
+ Ako instalirate sa zrcalnog poslužitelja, možete riješiti ovaj problem instalirajući neku drugu inačicu Debiana. Instalacija vjerojatno neće uspjeti ako nastavite bez modula za kernel.
+Description-hu.UTF-8: Rendszermag-modulok betöltése nélkül folytatod a telepítést?
  A rendszermag modulok hiányoznak. Ezt valószínűleg a telepítő e változatában és az archívumban elérhető rendszermag eltérése okozza.
  .
- Ha a telepítés egy tükörről történik, a gond egy másik Debian változat telepítésével megkerülhető. A telepítés valószínűleg sikertelen lesz, ha rendszermag modulok nélkül folytatja.
+ Ha a telepítés egy tükörről történik, a gond egy másik Debian változat telepítésével megkerülhető. A telepítés valószínűleg sikertelen lesz megfelelő rendszermag modulok nélkül.
 Description-hy.UTF-8: Շարունակե՞լ տեղադրումը առանց միջուկի մոդուլների։
  Կորիզի մոդուլները հայտնաբերված չեն։ Հնարավոր է, որ մոդուլները նախատեսված չեն տեղադրիչի կողմից օգտագործվող կորիզի տերբերակի համար։
  .
@@ -1075,10 +1062,6 @@ Description-te.UTF-8: కెర్నెల్ మాధ్యమాలు ల�
  కెర్నెల్  మాడ్యులులు కనబడలేదు. ఈస్థాపన వ్యవస్థ విడుదలలో వున్న కెర్నెల్ సంఖ్యకు, సంగ్రహం లో వున్న కెర్నెల్ విడుదల  సంఖ్యకు తేడా వుండటం వలన  ఇలా జరిగ వుండవచ్చు. 
  .
  మిర్రర్ నుండి స్థాపన చేస్తున్నట్లయితే, ఈ సమస్యకి  పరిష్కారంగా, వేరొక డెబియన్ విడుదల సంఖ్యని  స్థాపించవచ్చు. కెర్నెల్  మాడ్యులులు లేకుండా మీరు కొనసాగించినట్లయితే ఈ స్థాపన  బహుశా పనిచేయకపోవచ్చు,
-Description-tg.UTF-8: Насбро бе боркунии модулҳои ҳаста идома медиҳед?
- Ягон модули ҳаста ёфт нашудааст. Эҳтимол аст, ки ҳастаи истифодашуда дар ин версияи насбкунанда ва версияи ҳастаи дастрас дар бойгонӣ ба ҳамдигар мутобиқат намекунанд.
- .
- Агар аз оина насб кунед, метавонед ин мушкилиро тавассути интихоби насби версияи дигари Debian ҳал кунед. Мумкин аст, ки агар шумо бе модулҳои ҳаста идома диҳед, насбкунанда қатъ карда мешавад.
 Description-th.UTF-8: จะติดตั้งต่อไปโดยไม่โหลดมอดูลของเคอร์เนลหรือไม่?
  ไม่พบมอดูลของเคอร์เนล อาจเป็นเพราะรุ่นของเคอร์เนลที่ใช้ในโปรแกรมติดตั้งนี้ ไม่ตรงกับรุ่นของเคอร์เนลที่มีในแหล่งแพกเกจ
  .
@@ -1106,7 +1089,7 @@ Description-vi.UTF-8: Tiếp tục cài đặt mà không nạp những mô-đun
 Description-zh_CN.UTF-8: 未加载内核模块，继续安装吗？
  未找到内核模块。这可能是由于本安装程序所使用的内核版本与网络存档中的内核版本不同造成的。
  .
- 如果您正在从镜像进行网络安装，可以选择安装其他版本的 Debian 以解决这个问题。如果您选择不加载内核模块，安装程序可能将无法正常工作。
+ 如果您正在从镜像进行网络安装，可以选择安装其它版本的 Debian 以解决这个问题。如果您选择不加载内核模块，安装程序可能将无法正常工作。
 Description-zh_TW.UTF-8: 是否不載入 Kernel 模組並繼續進行安裝？
  未能找到任何的 Kernel 模組。這很可能是因為安裝程式所使用的 Kernel 版本和檔案來源中所提供的 Kernel 版本不同的緣故。
  .

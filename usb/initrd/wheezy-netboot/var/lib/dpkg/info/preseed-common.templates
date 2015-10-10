@@ -13,8 +13,8 @@ Description-bg.UTF-8: Грешка при доставяне на файла с 
  Файлът с предварителните настройки не може да бъде изтеглен от ${LOCATION}. Инсталацията ще продължи в неавтоматизиран режим.
 Description-bo.UTF-8: སྔོན་འགྲོའི་སྒྲིག་འགོད་ཡིག་ཆ་དེ་ལེན་མ་ཐུབ་པ
  སྔོན་འགྲོའི་སྒྲིག་འགོད་ལ་དགོས་པའི་ཡིག་ཆ་${LOCATION} ནས་ཐོབ་མ་ཐུབ་པས་སྒྲིག་འཇུག་འདི་རང་འགུལ་རྣམ་པ་མིན་པའི་སྒོ་ནས་མུ་མཐུད་རྒྱུ་ཡིན
-Description-bs.UTF-8: Neuspjelo vraćanje prekonfiguracijske datoteke
- Datoteka potrebna za prekonfiguraciju se ne može dobaviti s ${LOCATION}. Instalacija će se nastaviti u neautomatiziranom modu.
+Description-bs.UTF-8: Nemogu kreirati yaboot konfiguraciju
+ Datoteka potrebna za prekonfiguraciju se ne može dobaviti sa ${LOCATION}. Instalacija će se nastaviti u neautomatiziranom modu.
 Description-ca.UTF-8: No s'ha pogut obtindre el fitxer de preconfiguració
  No s'ha pogut obtindre el fitxer requerit per a la preconfiguració des de ${LOCATION}. La instal·lació continuarà en mode no automàtic.
 Description-cs.UTF-8: Selhalo stažení souboru s přednastavením
@@ -48,7 +48,7 @@ Description-gl.UTF-8: Non foi posíbel obter o ficheiro de preconfiguración
 Description-he.UTF-8: כישלון בהבאת קובץ הגדרות מוקדמות
  הקובץ הנדרש בשביל הגדרות מוקדמות לא ניתן להורדה מ-${LOCATION}. תהליך ההתקנה יימשך במצב לא אוטומטי.
 Description-hr.UTF-8: Neuspjelo dobavljanje datoteke s pred-postavkama
- Datoteku koja je potrebna za pred-postavljanje nije moguće dobaviti s ${LOCATION}. Instalacija će se nastaviti u neautomatskom načinu.
+ Datoteku koja je potrebna za prepostavljanje nije moguće dobaviti s ${LOCATION}. Instalacija će se nastaviti u ne-automatskom načinu.
 Description-hu.UTF-8: Előbeállító fájl beszerzése meghiúsult
  Az előkonfigurációhoz szükséges fájlt nem tudtam letölteni innen: ${LOCATION}. A telepítés nem-automata módban megy tovább.
 Description-id.UTF-8: Gagal mengambil berkas prakonfigurasi
@@ -107,8 +107,6 @@ Description-sv.UTF-8: Misslyckades med att hämta förkonfigurationsfilen
  Filen som behövs för förkonfigurering kunde inte hämtas från ${LOCATION}. Installationen kommer att fortsätta i manuellt läge.
 Description-te.UTF-8: ముందలి అమరిక (preconfiguration) ఫైల్  తెచ్చుట విఫలమైంది.
   ${LOCATION}నుండి  ముందలి అమరిక (preconfiguration)ఫైల్  తెచ్చుట విఫలమైంది. స్వయంచాలకము కాని పద్ధతిలో స్థాపన కొనసాగుతుంది.
-Description-tg.UTF-8: Бозёбии файли пештанзимшуда қатъ шудааст
- Файли лозимӣ барои пештанзимкунӣ аз ${LOCATION} бозёбӣ намешавад. Насб дар ҳолати ғайри худкор идома дода мешавад.
 Description-th.UTF-8: ดึงแฟ้มค่าตั้งล่วงหน้าไม่สำเร็จ
  ไม่สามารถดึงแฟ้มที่ต้องใช้เพื่อการตั้งค่าล่วงหน้าจาก ${LOCATION} ได้ การติดตั้งจะดำเนินต่อไปในแบบไม่เป็นอัตโนมัติ
 Description-tl.UTF-8: Bigo ang pagkuha ng talaksang preconfiguration
@@ -141,8 +139,8 @@ Description-bg.UTF-8: Грешка при зареждане на файла с 
  Инсталаторът не можа да зареди файла с предварителните настройки от ${LOCATION}. Файлът може би е повреден.
 Description-bo.UTF-8: སྔོན་འགྲོའི་སྒྲིག་འགོད་ཡིག་ཆ་བེད་སྤྱོད་བྱེད་མ་ཐུབ
  སྔོན་འགྲོའི་སྒྲིག་འགོད་ཡིག་ཆ་དེ་ ${LOCATION} ནས་བེད་སྤྱོད་བྱེད་མ་ཐུབ། ཡིག་ཆ་དེ་ཕལ་ཆེར་འཕྲོ་བརླགས་ཤོར་འདུག
-Description-bs.UTF-8: Neuspjelo procesuiranje prekonfiguracijske datoteke
- Instalater nije uspio procesuirati prekonfiguracijsku datoteku s ${LOCATION}. Datoteka može biti oštećena.
+Description-bs.UTF-8: Ne mogu procesuirati prekonfiguracionu datoteku
+ Instalater nije uspio procesuirati prekonfiguracionu datoteku s ${LOCATION}. Datoteka može biti oštećena.
 Description-ca.UTF-8: No s'ha pogut processar el fitxer de preconfiguració
  L'instal·lador no ha pogut processar el fitxer de preconfiguració de ${LOCATION}. El fitxer pot estar corrupte.
 Description-cs.UTF-8: Selhalo zpracování souboru s přednastavením
@@ -176,7 +174,7 @@ Description-gl.UTF-8: Non foi posíbel procesar o ficheiro de preconfiguración
 Description-he.UTF-8: כישלון בעיבוד קובץ הגדרות מוקדמות
  תוכנית ההתקנה נכשלה בעיבוד קובץ הגדרות מוקדמות מ-${LOCATION}. הקובץ עלול להיות לא תקין.
 Description-hr.UTF-8: Neuspjelo učitavanje datoteke s pred-postavkama
- Instalacija nije uspjela učitati datoteku s pred-postavkama s ${LOCATION}. Datoteka je možda oštećena.
+ Instalacija nije uspjela učitati datoteku s pred-postavkama s ${LOCATION}. Datoteka je bi mogla biti neispravna.
 Description-hu.UTF-8: Előkonfigurációs fájl betöltése meghiúsult
  A telepítő az előbeállító fájlt nem tudta betölteni innen: ${LOCATION}. A fájl megsérülhetett.
 Description-id.UTF-8: Gagal memproses berkas prakonfigurasi 
@@ -235,8 +233,6 @@ Description-sv.UTF-8: Misslyckades med att behandla förkonfigurationsfilen
  Installationsprogrammet misslyckades med att behandla förkonfigurationsfilen från ${LOCATION}. Filen kan vara skadad.
 Description-te.UTF-8: ముందలి అమరిక (preconfiguration) ఫైల్   వాడుట  విఫలమైంది.
  స్థాపన వ్యవస్థ ${LOCATION}నుండి  ముందలి అమరిక (preconfiguration)ఫైల్   వాడుట విఫలమైంది. ఫైల్ చెడిపోయి వుండవచ్చు.
-Description-tg.UTF-8: Иҷрои файли пештанзимкунӣ қатъ шудааст
- Насбкунанда файли конфигуратсияи пешакиро аз ${LOCATION} коркард карда натавонист. Эҳтимол аст, ки файл харобшуда мебошад.
 Description-th.UTF-8: ประมวลผลแฟ้มค่าตั้งล่วงหน้าไม่สำเร็จ
  โปรแกรมติดตั้งประมวลผลแฟ้มค่าตั้งล่วงหน้าจาก ${LOCATION} ไม่สำเร็จ แฟ้มดังกล่าวอาจจะเสียหาย
 Description-tl.UTF-8: Bigo ang pagproseso ng talaksang preconfiguration
@@ -303,8 +299,8 @@ Description-bg.UTF-8: Грешка при изпълнението на кома
  Изпълнението на командата за предварителна настройка „${COMMAND}“ върна грешка с код ${CODE}.
 Description-bo.UTF-8: བཀའ་བརྡ་དེ་བཀོལ་སྤྱོད་བྱས་མ་ཐུབ
  བཀའ་བརྡ་ "${COMMAND}" བཀོལ་སྤྱོད་བྱས་མ་ཐུབ། ནོར་འཁྲུལ་ཨང་རྟགས་ ${CODE} རེད།
-Description-bs.UTF-8: Neuspjelo pokretanje presseded naredbe
- Izvršavanje preseeded naredbe "${COMMAND}" nije uspjelo, kod greške ${CODE}.
+Description-bs.UTF-8: Nemogu particionisati odabrani disk
+ Izvršavanje preseeded naredbe "${COMMAND}" nije uspjelo, kôd greške ${CODE}.
 Description-ca.UTF-8: No s'ha pogut executar l'ordre preconfigurada
  L'execució de l'ordre preconfigurada «${COMMAND}» ha fallat amb codi d'eixida ${CODE}.
 Description-cs.UTF-8: Spuštění příkazu přednastavení selhalo
@@ -312,7 +308,7 @@ Description-cs.UTF-8: Spuštění příkazu přednastavení selhalo
 Description-cy.UTF-8: Methwyd rhedeg y gochymyn cynhedynnedig
  Method gweithrediad y gorchymyn cynhedynnedig "${COMMAND}" gyda'r côd gorffen ${CODE}.
 Description-da.UTF-8: Kunne ikke udføre preseeded-kommando
- Kørsel af preseed-kommando (»${COMMAND}«) mislykkedes med afslutningskode ${CODE}.
+ Kørsel af preseed-kommando ("${COMMAND}") mislykkedes med afslutningskode ${CODE}.
 Description-de.UTF-8: Vorkonfigurationsbefehl konnte nicht ausgeführt werden
  Die Ausführung des Vorkonfigurationsbefehls (»${COMMAND}«) ist fehlgeschlagen: Fehlercode ${CODE}
 Description-el.UTF-8: Αποτυχία εκτέλεσης της εντολής προρύθμισης
@@ -397,8 +393,6 @@ Description-sv.UTF-8: Misslyckades med att köra förinställt kommando
  Exekveringen av det förinställda kommandot "${COMMAND}" misslyckades med felkoden ${CODE}.
 Description-te.UTF-8: preseeded కమాండ్ నడుపుట విఫలమైంది
  preseeded కమాండ్   "${COMMAND}" నడుపుట  ${CODE} నిష్క్రమణ కోడ్ తోవిఫలమైంది
-Description-tg.UTF-8: Иҷрои фармони танзими худкор қатъ карда шуд
- Иҷрои фармони танзими худкори "${COMMAND}" бо рамзи хуруҷи ${CODE} қатъ карда шуд.
 Description-th.UTF-8: เรียกคำสั่งที่มีการตั้งค่าล่วงหน้าไม่สำเร็จ
  การทำงานของคำสั่งที่มีการตั้งค่าล่วงหน้า "${COMMAND}" ล้มเหลวด้วยรหัสข้อผิดพลาด ${CODE}
 Description-tl.UTF-8: Bigo sa pagtakbo ng utos na preseeded

@@ -6,7 +6,7 @@ Description-ast.UTF-8: Menú principal del instalador Debian
 Description-be.UTF-8: Галоўнае меню праграмы ўсталявання Debian
 Description-bg.UTF-8: Главно меню на инсталатор на Debian
 Description-bo.UTF-8: Debian སྒྲིག་འཇུག་ཆས་སྤྱིའི་འདེམས་ཐོ
-Description-bs.UTF-8: Glavni meni Debian instalera
+Description-bs.UTF-8: Glavni meni Debian instalatera
 Description-ca.UTF-8: Menú principal de l'instal·lador de Debian
 Description-cs.UTF-8: Hlavní menu instalace Debianu
 Description-cy.UTF-8: Prif ddewislen sefydlydd Debian
@@ -54,7 +54,6 @@ Description-sq.UTF-8: Menuja kryesore e instaluesit Debian
 Description-sr.UTF-8: Главни мени Debian инсталера
 Description-sv.UTF-8: Huvudmeny i Debians installationsprogram
 Description-te.UTF-8: డెబియన్ స్థాపక వ్యవస్థ ప్రధాన మెనూ (menu)
-Description-tg.UTF-8: Менюи асосии насбкунандаи Debian
 Description-th.UTF-8: เมนูหลักของโปรแกรมติดตั้งเดเบียน
 Description-tl.UTF-8: Pangunahing menu ng Tagaluklok ng Debian
 Description-tr.UTF-8: Debian kurulumu ana menüsü
@@ -74,7 +73,7 @@ Description-ast.UTF-8: Escueyi'l próximu pasu nel procesu d'instalación
 Description-be.UTF-8: Ваш наступны крок працэса ўсталявання:
 Description-bg.UTF-8: Изберете следващата стъпка от инсталационния процес:
 Description-bo.UTF-8: སྒྲིག་འཇུག་གོ་རིམ་ནང་གི་འོག་རིམ་དེ་གདམ་པ：
-Description-bs.UTF-8: Izaberite sljedeći korak procesa instaliranja:
+Description-bs.UTF-8: Izaberite sljedeći korak instalacionog procesa:
 Description-ca.UTF-8: Seleccioneu el següent pas en el procés d'instal·lació:
 Description-cs.UTF-8: Vyberte další krok instalace:
 Description-cy.UTF-8: Dewiswch y cam nesaf yn y broses sefydlu:
@@ -92,7 +91,7 @@ Description-ga.UTF-8: Roghnaigh an chéad chéim eile sa phróiseas suiteála:
 Description-gl.UTF-8: Escolla o seguinte paso no proceso de instalación:
 Description-he.UTF-8: בחר את השלב הבא בתהליך ההתקנה:
 Description-hr.UTF-8: Izaberite sljedeći korak instalacije:
-Description-hu.UTF-8: Válassza ki a telepítőfolyamat következő lépését:
+Description-hu.UTF-8: Válaszd ki a telepítőfolyamat következő lépését:
 Description-id.UTF-8: Pilih langkah berikutnya dalam proses instalasi:
 Description-is.UTF-8: Veldu næsta þrep uppsetningarferlisins:
 Description-it.UTF-8: Scegliere il prossimo passo del processo d'installazione:
@@ -122,7 +121,6 @@ Description-sq.UTF-8: Zgjidh hapin tjetër të proçesit të instalimit:
 Description-sr.UTF-8: Изаберите следећи корак инсталације:
 Description-sv.UTF-8: Välj nästa steg i installationsprocessen:
 Description-te.UTF-8: స్థాపక ప్రక్రియలో తరువాతి అంకం:
-Description-tg.UTF-8: Қадами навбатиро дар раванди насбкунӣ интихоб намоед:
 Description-th.UTF-8: กรุณาเลือกขั้นต่อไปของการติดตั้ง:
 Description-tl.UTF-8: Pumili ng susunod na hakbang sa pagluklok:
 Description-tr.UTF-8: Kurulumun bir sonraki adımını seçin:
@@ -148,8 +146,8 @@ Description-bg.UTF-8: Грешка в инсталационната стъпк�
  Грешка в някоя инсталационна стъпка. Може да се опитате да стартирате тази стъпка отново от менюто или да я прескочите и да изберете нещо друго. Стъпката с грешка е: ${ITEM}
 Description-bo.UTF-8: སྒྲིག་འཇུག་གི་བརྒྱུད་རིམ་ལེགས་འགྲུབ་མ་ཐུབ
  སྒྲིག་འཇུག་གི་རྒྱུད་རིམ་ཞིག་བྱེད་མ་ཐུབ། ཁྱོད་ཀྱིས་འདེམས་ཐོའི་ནང་ནས་བྱེད་མ་ཐུབ་པའི་སྒྲིག་འཇུག་བརྒྱུད་རིམ་དེ་སླར་འཁོར་སྐྱོད་བྱེད་པའམ་དེ་སྐྱུར་ནས་འདེམས་སྟངས་གཞན་ཞིག་བཟོ་ཆོག ལེགས་འགྲུབ་མ་ཐུབ་པའི་རྒྱུད་རིམ་ནི：${ITEM}
-Description-bs.UTF-8: Instalacijski korak nije uspio
- Instalacijski korak nije uspio. Možete pokušati pokrenuti stavku koja nije uspjela ponovno s menija, ili je preskočite i odabrite neku drugu. Neuspješna stavka je: ${ITEM}
+Description-bs.UTF-8: Instalacijski korak nije uspjeo
+ Instalacijski korak nije uspjeo. Možete pokušati pokrenuti stavku koja nije uspjela ponovno sa menija ili ju preskočiti i odabrati neku drugu. Neuspješna stavka je: ${ITEM}
 Description-ca.UTF-8: Ha fallat el pas de la instal·lació
  Ha fallat un pas de la instal·lació. Podeu provar a executar l'element que ha fallat una altra vegada des del menú, o ometre'l i seleccionar una altra cosa. El pas que ha fallat és: ${ITEM}
 Description-cs.UTF-8: Krok instalace selhal
@@ -183,9 +181,9 @@ Description-gl.UTF-8: Produciuse un erro nun paso da instalación
 Description-he.UTF-8: כישלון באחד משלבי ההתקנה
  אחד משלבי ההתקנה נכשל. ניתן לנסות להריץ מחדש את החלק שנכשל דרך התפריט הראשי או לדלג על השלב ולבחור שלב אחר. החלק שנכשל הוא: ${ITEM}
 Description-hr.UTF-8: Korak instalacije nije uspio
- Korak instalacije nije uspio. Možete ga pokušati iznova pokrenuti ili ga preskočiti i izabrati nešto drugo. Neuspio korak je: ${ITEM}
-Description-hu.UTF-8: A telepítő lépés meghiúsult
- Egy telepítő lépés meghiúsult. A menüből megkísérelhető ennek a lépésnek az ismétlése vagy kihagyása és más választása. A sikertelen lépés: ${ITEM}
+ Korak instalacije nije uspio. Možete ga pokušati iznova pokrenuti, ili ga preskočiti i izabrati nešto drugo. Neuspio korak je: ${ITEM}
+Description-hu.UTF-8: A telepítőlépés meghiúsult.
+ Egy telepítőlépés meghiúsult. A menüből megkísérelhető ismétlése vagy kihagyása más választással. A sikertelen lépés: ${ITEM}
 Description-id.UTF-8: Langkah instalasi telah gagal
  Sebuah langkah instalasi telah gagal. Anda dapat mengulangi langkah yang gagal dari menu, atau mengabaikannya dan memilih yang lain. Langkah yang gagal adalah: ${ITEM}
 Description-is.UTF-8: Þetta þrep uppsetningar mistókst
@@ -242,14 +240,12 @@ Description-sv.UTF-8: Installationssteget misslyckades
  Ett installationssteg misslyckades. Du kan försöka att köra det krånglande steget igen från menyn eller hoppa över det och välja något annat. Det steg som krånglar är: ${ITEM}.
 Description-te.UTF-8: స్థాపన అంకం  విఫలమైంది.
  ఒక స్థాపనఅంకం విఫలమైంది. విఫలమైనఅంకాన్ని మీరు మరలా  మెను నుంచి  నడపవచ్చులేదా ఇంకేదయినా ఎంచుకోవచ్చు. విఫలమైన అంకం : ${ITEM}
-Description-tg.UTF-8: Қадами насбкунӣ қатъ шудааст
- Қадаме насбкунӣ қатъ шудааст. Шумо метавонед объекти қатъшударо аз меню дубора иҷро кунед ё онро нодида гузаронед ва чизе дигареро интихоб кунед. Кадами қатъшуда: ${ITEM}
 Description-th.UTF-8: ขั้นตอนการติดตั้งล้มเหลว
  ขั้นตอนการติดตั้งล้มเหลว คุณอาจลองทำขั้นตอนที่มีปัญหาอีกครั้งได้จากเมนู หรืออาจจะข้ามขั้นตอนไปเลือกทำอย่างอื่นก็ได้ ขั้นตอนที่ล้มเหลวคือ: ${ITEM}
 Description-tl.UTF-8: Bigo ang hakbang na ito sa pagluluklok
  May nabigong hakbang sa pagluklok. Maaari mong subukang paganahin muli ang nabigong hakbang mula sa menu, o laktawan ito at pumili ng ibang hakbang. Ang nabigong hakbang ay: ${ITEM}
 Description-tr.UTF-8: Kurulum adımı başarısız oldu
- Kurulum adımlarından biri başarısız oldu. Bu adımı menüden seçerek tekrar deneyebilir veya bu adımı atlayarak başka bir adım seçebilirsiniz. Başarısız olan adım: ${ITEM}
+ Kurulum adımlarından biri başarısız oldu. Bu adımı menüden seçerek tekrar deneyebilir veya bu adımı atlayarak başka bir adım seçebilirsiniz. Başarısız adım: ${ITEM}
 Description-ug.UTF-8: ئورنىتىش مەغلۇپ بولدى
  مەلۇم ئورنىتىش باسقۇچى مەغلۇپ بولدى، سىز ئورنىتىش تىزىملىكىدىن مەغلۇپ بولغان تۈرنى قايتا ئىجرا قىلىڭ، ياكى ئۇنىڭدىن ئاتلاپ كېتىپ باشقا قەدەمنى تاللاڭ. خاتالىق چىققان باسقۇچ: ${ITEM}
 Description-uk.UTF-8: Помилка кроку встановлення
@@ -257,7 +253,7 @@ Description-uk.UTF-8: Помилка кроку встановлення
 Description-vi.UTF-8: Bước cài đặt bị lỗi
  Một bước cài đặt không thành công. Bạn có thể thử chạy lại mục bị lỗi từ trình đơn, hoặc bỏ qua nó và chọn một điều khác. Bước cài đặt bị lỗi là : ${ITEM}
 Description-zh_CN.UTF-8: 安装步骤失败
- 执行某个安装步骤失败。您可以尝试从菜单中重新运行这个失败的项目，或跳过它并选择其他项目。失败的步骤是：${ITEM}
+ 执行某个安装步骤失败。您可以尝试从菜单中重新运行这个失败的项目，或跳过它并选择其它项目。失败的步骤是：${ITEM}
 Description-zh_TW.UTF-8: 安裝步驟失敗
  有個安裝步驟失敗了。您可以從選單中再次試著執行那個失敗的項目，或略過它並選擇其它步驟。該失敗的步驟為: ${ITEM}
 
@@ -279,7 +275,7 @@ Description-bg.UTF-8: Изберете инсталационна стъпка:
 Description-bo.UTF-8: སྒྲིག་འཇུག་གི་བརྒྱུད་རིམ་ཞིག་འདེམས་པ：
  སྒྲིག་འཇུག་གི་བརྒྱུད་རིམ་འདི་སྤྱོད་མེད་པའི་བརྒྱུད་རིམ་གཞན་ཞིག་གམ་འགའ་ཞིག་བརྟེན་དགོས
 Description-bs.UTF-8: Odaberite instalacijski korak:
- Ovaj instalacijski korak zavisi o jednom ili više prethodnih koraka koji još nisu izvršeni.
+ Ovaj instalacijski korak zavisi o jednom ili više prethodnih koraka koji još nisu obavljeni.
 Description-ca.UTF-8: Seleccioneu un pas de la instal·lació:
  Aquest pas de la configuració depèn d'un o més passos addicionals que encara no s'han dut a terme.
 Description-cs.UTF-8: Vyberte krok instalace:
@@ -314,8 +310,8 @@ Description-he.UTF-8: בחירת שלב התקנה:
  שלב ההתקנה הזה תלוי בשלב או שלבי התקנה אחרים שעדיין לא בוצעו.
 Description-hr.UTF-8: Izaberite korak instalacije:
  Ovaj korak instalacije ovisi o jednom ili više drugih koraka koji još nisu učinjeni.
-Description-hu.UTF-8: Válasszon egy telepítő lépést:
- Ez a telepítő lépés egy vagy több még meg nem történt lépés után hajtható csak végre.
+Description-hu.UTF-8: Válassz egy telepítőlépést:
+ Ez a telepítőlépés egy vagy több még meg nem történt lépés eredményére épít.
 Description-id.UTF-8: Pilih sebuah langkah instalasi:
  Langkah instalasi ini bergantung pada satu atau lebih langkah lain yang belum dilakukan.
 Description-is.UTF-8: Veldu uppsetningarþrep:
@@ -372,8 +368,6 @@ Description-sv.UTF-8: Välj ett installationssteg:
  Det här installationssteget kräver ett eller flera andra steg som ännu inte har utförts.
 Description-te.UTF-8: ఒక స్థాపనఅంకాన్ని ఎన్నుకోండి
  ఈ స్థాపనఅంకం ఒకటి లేదా ఇంకా ఎక్కువ స్థాపించని అంకాల మీద ఆధారపడి ఉంది.
-Description-tg.UTF-8: Интихоби қадами насб:
- Ин қадами насбкунӣ аз як ё якчанд қадаме, ки то ҳол иҷро нашудаанд, вобаста аст.
 Description-th.UTF-8: กรุณาเลือกขั้นตอนการติดตั้ง:
  ขั้นตอนการติดตั้งนี้ จำเป็นต้องผ่านขั้นตอนอื่นมาก่อน ซึ่งยังไม่ได้ทำ
 Description-tl.UTF-8: Pumili ng hakbang sa pagluluklok:
