@@ -1,9 +1,8 @@
 
 # the following folders are ignored
 
-artifacts
+cache
 disc
-images
 workspace
 tmp
 output

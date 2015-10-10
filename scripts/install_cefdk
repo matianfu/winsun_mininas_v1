@@ -123,6 +123,8 @@ tar -czf target/ramdisk/toolchain_install.tar.gz -C project_build_i686/IntelCE/r
 #
 make kernel
 
+exit 0
+
 # (experimental) enable devtmpfs and all raid/md related configuration
 patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.config < ../patches/007-kernel-enable-devtmpfs-and-everything-raid-md.patch
 
