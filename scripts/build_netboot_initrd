@@ -1,0 +1,35 @@
+#!/bin/sh
+
+
+ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
+CACHE_DIR=${BARCELONA_ROOT}/cache
+TMP_DIR=${BARCELONA_ROOT}/tmp
+
+CEFDK_ROOTDIR=${BARCELONA_ROOT}/workspace/project_build_i686/IntelCE/root
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+
+rm -rf ${TMP_DIR}
+mkdir -p ${TMP_DIR}
+tar xOvzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+
+mkdir -p ${TMP_DIR}/initrd
+cd ${TMP_DIR}/initrd
+cpio -idv < ${TMP_DIR}/initrd.cpio
+cd -
+
+# fill preseed.cfg
+echo "copy preseed.cfg file"
+cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+
+# cp modules
+echo "copy kernel modules"
+mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
+cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+
+# repack
+rm -f ${TMP_DIR}/initrd.cpio
+cd ${TMP_DIR}/initrd
+find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio
+cd -
+cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/usb/boot/ramdisk
+

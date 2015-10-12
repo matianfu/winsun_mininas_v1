@@ -11,7 +11,7 @@ set -e
 
 
 # This function use expect to install iso image
-function install_iso() {
+function install_iso {
 
     rm -rf tmp
     mkdir tmp
@@ -42,6 +42,52 @@ EOD
     rm -rf tmp
 }
 
+if [ -z "$BARCELONA_ROOT" ]; then
+    echo "Error: BARCELONA_ROOT is not set"
+    exit 1
+fi
+
+echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+
+WORKSPACE=${BARCELONA_ROOT}/workspace
+SCRIPT_DIR=${BARCELONA_ROOT}/scripts
+PATCH_DIR=${BARCELONA_ROOT}/patches
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
+STAGING_DIR=${BARCELONA_ROOT}/staging
+CACHE_DIR=${BARCELONA_ROOT}/cache
+TMP_DIR=${BARCELONA_ROOT}/tmp
+
+PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
+KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/
+CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
+CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
+
+USBBOOT_DIR=${OUTPUT_DIR}/usb/boot
+
+#
+# http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz
+# 
+WHEEZY_NETBOOT_URL="http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+
+# if netboot file is not in cache, download it from internet
+mkdir -p ${CACHE_DIR}
+if [ ! -e "${CACHE_DIR}/netboot.tar.gz" ]; then
+    wget -P ${CACHE_DIR} $WHEEZY_NETBOOT_URL
+
+    if [ ! $? -eq 0 ]; then 
+        echo "wget failed: $WHEEZY_NETBOOT_URL"
+        exit 1;
+    fi
+fi
+
+# clean staging dir
+rm -rf ${STAGING_DIR}
+mkdir -p ${STAGING_DIR}
+
+# clean output dir
+rm -rf ${OUTPUT_DIR}
+mkdir -p ${OUTPUT_DIR}
 
 scripts/banner "Start installing Intel CEFDK iso images"
 
@@ -85,9 +131,6 @@ make defconfig
 make bison-unpackage
 patch project_build_i686/IntelCE/bison-29.0.12344.325128/bison-2.4.2/lib/stdio.in.h < ../patches/001-bison-stdio.in.h-false-warning.patch
 
-# unpack kernel and patch bug
-make kernel-unpackage
-patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/mmc/core/mmc.c < ../patches/002-kernel-mmc-wrong-rev.patch
 
 # patch Makefile to use host fakeroot-ng
 patch Makefile < ../patches/003-Makefile-use-host-fakeroot-ng.patch
@@ -100,9 +143,6 @@ patch project_build_i686/IntelCE/busybox-29.0.12344.325128/conf/busybox.config <
 
 # fix absolute-path bug in busybox-install.tar.gz archive
 patch project_build_i686/IntelCE/busybox-29.0.12344.325128/mk/busybox.mk < ../patches/005-busybox-fix-absolute-path-inside-busybox-install-tar-gz.patch
-
-# build kernel in multithread way (make -j8)
-patch project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < ../patches/006-build-kernel-using-multithread.patch
 
 # modified ramdisk makefile
 patch target/ramdisk/ramdisk.mk < ../patches/100-modified-ramdisk-makefile.patch
@@ -118,25 +158,109 @@ make toolchain
 tar -czf target/ramdisk/toolchain_install.tar.gz -C project_build_i686/IntelCE/root/ .
 
 ../scripts/banner "Building kernel for the first time"
+
+function prepare_kernel {
+    # unpack kernel
+    make kernel-unpackage
+
+    # patch emmc bug
+    patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/mmc/core/mmc.c < ../patches/002-kernel-mmc-wrong-rev.patch
+
+    # patch usb controller
+    cp ../patches/pci-quirks.c project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/usb/host/pci-quirks.c
+
+    # patch ptrace.h for newer version of gcc
+    patch ${KERNEL_DIR}/arch/x86/include/asm/ptrace.h < ${PATCH_DIR}/008-kernel-ptrace-suppress-newer-version-compiler-complain.patch
+
+    # build kernel in multithread way (make -j8)
+    patch project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < ../patches/006-build-kernel-using-multithread.patch
+}
+
+function make_kernel {
+    rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/.built
+    rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
+    make -C ${WORKSPACE} kernel
+}
+
+prepare_kernel
+
 #
-# there won't be configure file if kernel have not ever beed built
+# there won't be configure file if kernel have not ever been built
 #
-make kernel
+make_kernel
+
+# (experimental) enable devtmpfs and all raid/md related configuration
+# patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.config < ../patches/007-kernel-enable-devtmpfs-and-everything-raid-md.patch
+
+
+#
+#
+# step 1: build kbl kernel
+#
+#
+
+../scripts/banner "Building kbl kernel"
+
+cp ${PATCH_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+
+make_kernel
+
+cp ${CEFDK_OUTDIR}/bzImage ${OUTPUT_DIR}/kbl
+
+#
+#
+# step 2: pack kernel source
+#
+#
+
+../scripts/banner "Preparing kernel source package"
+
+make -C ${KERNEL_DIR} mrproper
+
+rm ${KERNEL_DIR}/.build
+rm ${KERNEL_DIR}/.configure
+rm ${KERNEL_DIR}/.install_dev
+rm ${KERNEL_DIR}/.install_target
+rm ${KERNEL_DIR}/linux-2.6.39
+rm ${KERNEL_DIR}/.patch
+rm ${KERNEL_DIR}/.unpacked
+
+mkdir -p ${USBBOOT_DIR}
+tar cvzf ${USBBOOT_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
+
+#
+#
+# step 3: clean kernel package folder, redo 
+#
+#
+
+rm -rf ${PKGSRC_DIR}/kernel-29.0.12344.325128
+
+../scripts/banner "Building kernel again"
+
+prepare_kernel
+
+make_kernel
+
+cp ../patches/kernel_config project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.config
+
+../scripts/banner "Building kernel again and again"
+
+make_kernel
+
+#
+# here we have the bzImage, vmlinuz, and kernel modules for usb drive installer
+#
+mkdir -p ${USBBOOT_DIR}
+
+# cp bzImage
+cp ${CEFDK_OUTDIR}/bzImage ${USBBOOT_DIR}
+
+# rebuild netboot initrd
+fakeroot ${SCRIPT_DIR}/build_netboot_initrd
 
 exit 0
 
-# (experimental) enable devtmpfs and all raid/md related configuration
-patch project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.config < ../patches/007-kernel-enable-devtmpfs-and-everything-raid-md.patch
-
-# patch usb
-cp ../patches/pci-quirks.c project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/drivers/usb/host/pci-quirks.c
-
-../scripts/banner "Building kernel for the second time"
-
-# do it again
-rm -f project_build_i686/IntelCE/kernel-29.0.12344.325128/.built
-rm -f project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
-make kernel
 
 ../scripts/banner "Building all targets"
 
