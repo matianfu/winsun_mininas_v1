@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -e
+# set -o verbose
 
 # -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
 # -rw-r--r-- 1 ma ma   5617664 Aug 24 00:14 IntelCE-CEFDK_DEV-29.0.12364.325671.iso
@@ -9,12 +10,49 @@ set -e
 # -rw-r--r-- 1 ma ma 323629056 Aug 24 00:14 IntelCE-MEDIA-29.0.12364.325671.iso
 # -rw-r--r-- 1 ma ma  68870144 Aug 24 00:14 IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
 
+test_file () {
 
+    if [ -f "$1" ]; then
+        echo "Error: $1 does not exist"
+        exit 1
+    fi
+}
+
+DISC_DIR=${BARCELONA_ROOT}/disc
+
+test_iso_files () {
+
+    test_file ${DISC_DIR}/IntelCE-BASE-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-GATEWAY-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-GPL-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-MEDIA-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+}
+
+check_cache_file_md5 () {
+    
+    # workaround for path in md5
+    cd ${WORKSPACE}
+
+    md5sum -c "$1" cache/$1
+
+    if [ ! $? -eq 0]; then
+        echo "Error: md5 check failed for $1"
+        exit 1
+    fi
+
+    cd -
+}
+
+
+#
 # This function use expect to install iso image
+#
 function install_iso {
 
-    rm -rf tmp
-    mkdir tmp
+    rm -rf ${TMP_DIR}
+    mkdir ${TMP_DIR}
 
     echo "mount"
 
@@ -39,16 +77,26 @@ function install_iso {
 EOD
 
     sudo umount tmp
-    rm -rf tmp
+    rm -rf ${TMP_DIR}
 }
 
+#
+# program starts
+#
+
+#
+# test BARCELONA_ROOT env
+# 
 if [ -z "$BARCELONA_ROOT" ]; then
-    echo "Error: BARCELONA_ROOT is not set"
+    echo "Error: BARCELONA_ROOT is not defined"
     exit 1
 fi
 
 echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
 
+#
+# define all paths
+#
 WORKSPACE=${BARCELONA_ROOT}/workspace
 SCRIPT_DIR=${BARCELONA_ROOT}/scripts
 PATCH_DIR=${BARCELONA_ROOT}/patches
@@ -66,20 +114,81 @@ CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
 USBBOOT_DIR=${OUTPUT_DIR}/usb/boot
 
 #
-# http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz
-# 
-WHEEZY_NETBOOT_URL="http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+# test single cache file
+#
+# $1: file name
+# $2: url
+#
+test_single_cache_file () {
 
-# if netboot file is not in cache, download it from internet
-mkdir -p ${CACHE_DIR}
-if [ ! -e "${CACHE_DIR}/netboot.tar.gz" ]; then
-    wget -P ${CACHE_DIR} $WHEEZY_NETBOOT_URL
+  mkdir -p ${CACHE_DIR}
+  if [ ! -e "${CACHE_DIR}/$1" ]; then
+    wget -P ${CACHE_DIR} "$2"
 
     if [ ! $? -eq 0 ]; then 
         echo "wget failed: $WHEEZY_NETBOOT_URL"
         exit 1;
     fi
-fi
+  fi
+  
+  cd ${BARCELONA_ROOT}
+  # pwd
+  echo "md5sum -c artifacts/${1}.md5"
+  md5sum -c artifacts/${1}.md5
+  cd -
+}
+
+prepare_cache_files() {
+
+    #
+    # reference: http://www.busybox.net/downloads/binaries/latest/
+    #
+    BUSYBOX_I686_NAME=busybox-i686
+    BUSYBOX_I686_URL="http://www.busybox.net/downloads/binaries/latest/busybox-i686"
+
+    test_single_cache_file $BUSYBOX_I686_NAME $BUSYBOX_I686_URL
+
+    #
+    # reference: https://www.kernel.org/pub/linux/utils/kernel/kexec/
+    #
+    KEXEC_TARBALL_NAME=kexec-tools-2.0.10.tar.gz
+    KEXEC_TARBALL_URL="https://www.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.10.tar.gz"
+
+    test_single_cache_file $KEXEC_TARBALL_NAME $KEXEC_TARBALL_URL
+
+    #
+    # reference: http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/ # be sure to use 20130430 version 
+    #
+    # http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz
+    # http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz 
+    # 
+    WHEEZY_NETBOOT_NAME=netboot.tar.gz
+    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+
+    test_single_cache_file $WHEEZY_NETBOOT_NAME $WHEEZY_NETBOOT_URL
+
+    #
+    # reference: http://zfsonlinux.org/generic-deb.html
+    #
+    SPL_TARBALL_NAME=spl-0.6.4.2.tar.gz
+    SPL_TARBALL_URL="http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-0.6.4.2.tar.gz"
+
+    test_single_cache_file $SPL_TARBALL_NAME $SPL_TARBALL_URL
+
+    #
+    # reference: http://zfsonlinux.org/generic-deb.html
+    #
+    ZFS_TARBALL_NAME=zfs-0.6.4.2.tar.gz
+    ZFS_TARBALL_URL="http://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/zfs-0.6.4.2.tar.gz"
+
+    test_single_cache_file $ZFS_TARBALL_NAME $ZFS_TARBALL_URL
+}
+
+prepare_cache_files
+
+
+
+exit 0
 
 # clean staging dir
 rm -rf ${STAGING_DIR}
@@ -130,7 +239,6 @@ make defconfig
 # unpack bison and patch bug
 make bison-unpackage
 patch project_build_i686/IntelCE/bison-29.0.12344.325128/bison-2.4.2/lib/stdio.in.h < ../patches/001-bison-stdio.in.h-false-warning.patch
-
 
 # patch Makefile to use host fakeroot-ng
 patch Makefile < ../patches/003-Makefile-use-host-fakeroot-ng.patch
@@ -260,7 +368,6 @@ cp ${CEFDK_OUTDIR}/bzImage ${USBBOOT_DIR}
 fakeroot ${SCRIPT_DIR}/build_netboot_initrd
 
 exit 0
-
 
 ../scripts/banner "Building all targets"
 

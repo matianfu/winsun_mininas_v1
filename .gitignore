@@ -6,8 +6,10 @@ disc
 workspace
 tmp
 output
+wget-log
 
-
+*.png
+*.ps
 *.swp
 *.img
 *.gz

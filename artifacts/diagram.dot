@@ -1,0 +1,150 @@
+digraph {
+
+    NETBOOT_URL [ label="netboot url" ]
+    BUSYBOX_URL [ label="busybox url" ]
+    KEXEC_URL [ label="kexec url" ]
+    SPL_URL [ label="spl url" ]
+    ZFS_URL [ label="zfs url" ]
+
+    NETBOOT_FILE_CACHE [ label="cache/netboot.tar.gz" ]
+    BUSYBOX_FILE_CACHE [ label="cache/busybox-i686" ]
+    KEXEC_FILE_CACHE [ label="cache/kexec-tools-2.0.10.tar.gz" ]
+    SPL_FILE_CACHE [ label="cache/spl-0.6.4.2.tar.gz" ]
+    ZFS_FILE_CACHE [ label="cache/zfs-0.6.4.2.tar.gz" ]
+
+    NETBOOT_URL -> NETBOOT_FILE_CACHE [ label="download" ]
+    BUSYBOX_URL -> BUSYBOX_FILE_CACHE [ label="download" ]
+    KEXEC_URL -> KEXEC_FILE_CACHE [ label="download" ]
+    SPL_URL -> SPL_FILE_CACHE [ label="download" ]
+    ZFS_URL -> ZFS_FILE_CACHE [ label="download" ]
+
+    /* build kexec */
+    KEXEC_STAGING_FOLDER [ label="staging/kexec-tools-2.0.10" ]
+    KEXEC_BIN_FILE [ label="staging/kexec-tools-2.0.10/kexec" ]
+    KEXEC_FILE_CACHE -> KEXEC_STAGING_FOLDER [ label="untar" ]
+    KEXEC_STAGING_FOLDER -> KEXEC_BIN_FILE [ label="build" ]
+    
+    /* prepare kbl initramfs */
+    PREPARE_KBL_STAGING_FOLDER [ label="prepare kbl initrd" shape="rectangle" ]
+    KBL_INIT_SCRIPT [ label="artifacts/kbl_init" ]
+    KBL_STAGING_FOLDER [ label="staging/kbl_initrd" ]
+
+    BUSYBOX_FILE_CACHE -> PREPARE_KBL_STAGING_FOLDER
+    KEXEC_BIN_FILE -> PREPARE_KBL_STAGING_FOLDER
+    KBL_INIT_SCRIPT -> PREPARE_KBL_STAGING_FOLDER
+
+    PREPARE_KBL_STAGING_FOLDER -> KBL_STAGING_FOLDER
+
+    /* install cefdk */
+    CEFDK_ISO [ label="cefdk iso files" ]
+    CEFDK_ISO -> workspace_state_0 [ label="install" ]
+    workspace_state_0 -> workspace_state_0_1 [ label="patch & config buildroot" ]
+
+    /* build toolchain */
+    BUILD_TOOLCHAIN [ label="build toolchain" shape="rectangle" ]
+    TOOLCHAIN_LIB_TARBALL [ label="staging/toolchain.lib.tar.gz" ]
+
+    workspace_state_0_1 -> BUILD_TOOLCHAIN 
+    
+    BUILD_TOOLCHAIN -> workspace_state_0_2
+    BUILD_TOOLCHAIN -> TOOLCHAIN_LIB_TARBALL
+
+    /* prepare kernel */
+    workspace_state_0_2 -> workspace_state_1 [ label="prepare kernel" ]
+
+    /* snapshot workspace */
+    WORKSPACE_TARBALL [ label="staging/workspace.tar.gz" ]
+    workspace_state_1 -> WORKSPACE_TARBALL [ label="snapshot" ]
+
+    /* build kbl */
+    BUILD_KBL [ label="build kbl" shape="rectangle" ]
+    KBL_KERNEL_CONFIG [ label="artifacts/kbl_kernel_config" ]
+    KBL_BZIMAGE [ label="bzImage" ]
+    KBL_BZIMAGE_OUTPUT [ label="output/kbl" ]
+
+    workspace_state_1 -> BUILD_KBL
+    KBL_KERNEL_CONFIG -> BUILD_KBL [ label="apply" ]
+    KBL_STAGING_FOLDER -> BUILD_KBL
+
+    BUILD_KBL -> workspace_state_2
+    BUILD_KBL -> KBL_BZIMAGE 
+    KBL_BZIMAGE -> KBL_BZIMAGE_OUTPUT [ label="copy" ]
+
+    /* kernel source tarball */
+    KERNEL_SRC_TARBALL [ label="staging/linux-2.6.39.tar.gz" ]
+    
+    workspace_state_2 -> KERNEL_SRC_TARBALL [ label="clean & tar" ]
+    
+    /* restore workspace */
+    WORKSPACE_TARBALL -> workspace_state_3 [ label="untar" ]
+
+    /* make kernel */
+    BUILD_KERNEL [ label="build kernel" shape="rectangle" ]
+    KERNEL_CONFIG [ label="artifacts/kernel_config" ]
+    KERNEL_BZIMAGE [ label="bzImage" ]
+    USBBOOT_BZIMAGE [ label="output/usb/boot/bzImage" ]
+    KMOD_BASIC [ label="root/lib/modules/*.ko" ]
+
+    workspace_state_3 -> BUILD_KERNEL
+    KERNEL_CONFIG -> BUILD_KERNEL [ label="apply" ]
+
+    BUILD_KERNEL -> KERNEL_BZIMAGE
+    BUILD_KERNEL -> KMOD_BASIC
+    BUILD_KERNEL -> workspace_state_4
+
+    /* build installation initrd */
+    BUILD_INST_INITRD [ label="build installation initrd" shape="rectangle" ]    
+    USBBOOT_INITRD [ label="output/usb/boot/ramdisk" ]
+    PRESEED_CFG [ label="artifacts/preseed.cfg" ]
+
+    NETBOOT_FILE_CACHE -> BUILD_INST_INITRD
+    PRESEED_CFG -> BUILD_INST_INITRD
+    KMOD_BASIC -> BUILD_INST_INITRD
+    
+    BUILD_INST_INITRD -> USBBOOT_INITRD
+
+    /* copy other files to usb boot */
+    CMDLINE_USBBOOT [ label="artifacts/cmdline_usbboot" ]
+    USBBOOT_CMDLINE [ label="output/usb/boot/cmdline" ]
+    USBBOOT_KERNEL_CONFIG [ label="output/usb/boot/kernel_config" ]
+    USBBOOT_KERNEL_SRC_TARBALL [ label="output/usb/boot/linux-2.6.39.tar.gz" ]
+    USBBOOT_SPL_TARBALL [ label="output/usb/boot/spl-0.6.4.2.tar.gz" ]
+    USBBOOT_ZFS_TARBALL [ label="output/usb/boot/zfs-0.6.4.2.tar.gz" ]
+
+    KERNEL_BZIMAGE -> USBBOOT_BZIMAGE [ label="copy" ]
+    KERNEL_CONFIG -> USBBOOT_KERNEL_CONFIG [ label="copy" ]
+    KERNEL_SRC_TARBALL -> USBBOOT_KERNEL_SRC_TARBALL [ label="copy" ]
+    SPL_FILE_CACHE -> USBBOOT_SPL_TARBALL [ label="copy" ]
+    ZFS_FILE_CACHE -> USBBOOT_ZFS_TARBALL [ label="copy" ]
+    CMDLINE_USBBOOT -> USBBOOT_CMDLINE [ label="copy" ]
+
+    /* build all */
+    BUILD_ALL [ label="build all" shape="rectangle"]
+    KMOD_ALL [ label="root/lib/modules/*.ko" ]
+    RAMDISK_TEMPLATE [ label="template/ramdisk" ] 
+    RAMDISK_TARBALL [ label="ramdisk.ext2.tar.gz" ]
+    KMOD_ALL_TARBALL [ label="staging/lib.modules.tar.gz" ]
+
+    workspace_state_4 -> BUILD_ALL
+    RAMDISK_TEMPLATE -> BUILD_ALL
+    KMOD_ALL_TARBALL -> BUILD_ALL
+    TOOLCHAIN_LIB_TARBALL -> BUILD_ALL   
+   
+    BUILD_ALL -> KMOD_ALL -> KMOD_ALL_TARBALL
+    BUILD_ALL -> RAMDISK_TARBALL
+
+    /* summary for graph */
+    OUTPUT [ label="output" ]
+
+    KBL_BZIMAGE_OUTPUT -> OUTPUT   
+ 
+    USBBOOT_BZIMAGE -> OUTPUT
+    USBBOOT_INITRD -> OUTPUT
+    USBBOOT_CMDLINE -> OUTPUT
+    
+    USBBOOT_KERNEL_CONFIG -> OUTPUT
+    USBBOOT_KERNEL_SRC_TARBALL -> OUTPUT
+    USBBOOT_SPL_TARBALL -> OUTPUT
+    USBBOOT_ZFS_TARBALL -> OUTPUT
+}
+
