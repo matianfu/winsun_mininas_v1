@@ -1,0 +1,5 @@
+#!/bin/sh
+# This should be called whenever an interface goes up
+
+# cd /etc/sysconfig/network-scripts
+# . network-functions

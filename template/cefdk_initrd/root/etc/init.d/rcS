@@ -1,0 +1,25 @@
+#!/bin/sh
+
+HOSTNAME=CMLinux
+stty -F /dev/ttyS1 -ixon -ixoff 115200
+mount -t proc proc /proc
+mount -t devpts devpts /dev/pts
+mount -t sysfs none /sys
+mount -t tmpfs -o size=8m tmpfs /tmp
+
+/bin/mkdir -p /tmp/mnt
+syslogd -O /var/log/messages
+
+# If /etc/resolv.conf is not writable we'll use this.
+/sbin/udhcpc -i eth0 -H $HOSTNAME -s /etc/udhcpc.script
+/bin/hostname $HOSTNAME
+/sbin/route add -net 224.0.0.0 netmask 240.0.0.0 eth0
+/sbin/ifconfig lo 127.0.0.1
+telnetd -l /bin/sh
+
+mknod /dev/rtc c 10 135
+
+sleep 1
+
+
+# Press 'Enter' within 3 seconds to disable automatic boot.

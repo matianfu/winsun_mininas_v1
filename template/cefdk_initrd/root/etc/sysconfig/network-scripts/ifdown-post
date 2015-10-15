@@ -1,0 +1,7 @@
+#!/bin/sh
+# This should be called whenever an interface goes down, not just when
+# it is brought down explicitly.
+
+# cd /etc/sysconfig/network-scripts
+# . network-functions
+

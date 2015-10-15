@@ -2,29 +2,63 @@
 
 set -e
 
-# -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
-# -rw-r--r-- 1 ma ma   5617664 Aug 24 00:14 IntelCE-CEFDK_DEV-29.0.12364.325671.iso
-# -rw-r--r-- 1 ma ma  45783040 Aug 24 00:14 IntelCE-GATEWAY-29.0.12364.325671.iso
-# -rw-r--r-- 1 ma ma 327315456 Aug 24 00:14 IntelCE-GPL-29.0.12364.325671.iso
-# -rw-r--r-- 1 ma ma 323629056 Aug 24 00:14 IntelCE-MEDIA-29.0.12364.325671.iso
-# -rw-r--r-- 1 ma ma  68870144 Aug 24 00:14 IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+DASH="------------------------------"
+NOCEFDK=
 
+#
+# echo $1 in green color
+#
 highlight () {
 
     echo -e "\e[32m\e[1m${1}\e[0m"
 }
 
-test_file () {
+banner () {
+    echo ""
+    highlight $DASH
+    highlight "$1"
+    highlight $DASH
+}
 
-    if [ -f "$1" ]; then
-        echo "Error: $1 does not exist"
+test_env_var () {
+
+    #
+    # test BARCELONA_ROOT env
+    # 
+    if [ -z "$BARCELONA_ROOT" ]; then
+        echo "Error: BARCELONA_ROOT is not defined"
         exit 1
     fi
+
+    echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+}
+
+#
+# check if $1 exists as normal file, otherwise exit
+#
+test_file () {
+
+    printf "check $1 ... "
+    if [ ! -f "$1" ]; then
+        printf "Error: file does not exist.\n"
+        highlight "stopped"
+        exit 1
+    fi
+    printf "done\n"
 }
 
 DISC_DIR=${BARCELONA_ROOT}/disc
 
 test_iso_files () {
+
+    # -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma   5617664 Aug 24 00:14 IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma  45783040 Aug 24 00:14 IntelCE-GATEWAY-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma 327315456 Aug 24 00:14 IntelCE-GPL-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma 323629056 Aug 24 00:14 IntelCE-MEDIA-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma  68870144 Aug 24 00:14 IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+
+    highlight "check cefdk installation iso files"
 
     test_file ${DISC_DIR}/IntelCE-BASE-29.0.12364.325671.iso
     test_file ${DISC_DIR}/IntelCE-CEFDK_DEV-29.0.12364.325671.iso
@@ -49,59 +83,11 @@ check_cache_file_md5 () {
     cd -
 }
 
-
-#
-# This function use expect to install iso image
-#
-function install_iso {
-
-    highlight "installing $1"
-
-    rm -rf ${TMP_DIR}
-    mkdir ${TMP_DIR}
-
-    sudo mount -t iso9660 -o loop disc/$1 ${TMP_DIR}
-    
-{   /usr/bin/expect << EOD
-
-    spawn ${TMP_DIR}/installer -d .
-    set timeout 1
-    expect -exact "--MORE--"
-    send "q"
-    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
-    send "y"
-    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
-    send "y"
-    set timeout 30
-    expect "Successfully completed installation"
-
-EOD
-} &> /dev/null
-
-    sudo umount ${TMP_DIR}
-    rm -rf ${TMP_DIR}
-}
-
-#
-# program starts
-#
-
-highlight "test BARCELONA_ROOT env var"
-
-#
-# test BARCELONA_ROOT env
-# 
-if [ -z "$BARCELONA_ROOT" ]; then
-    echo "Error: BARCELONA_ROOT is not defined"
-    exit 1
-fi
-
-echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
-
 #
 # define all paths
 #
 WORKSPACE=${BARCELONA_ROOT}/workspace
+
 SCRIPT_DIR=${BARCELONA_ROOT}/scripts
 PATCH_DIR=${BARCELONA_ROOT}/patches
 OUTPUT_DIR=${BARCELONA_ROOT}/output
@@ -109,19 +95,12 @@ ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
 STAGING_DIR=${BARCELONA_ROOT}/staging
 CACHE_DIR=${BARCELONA_ROOT}/cache
 TEMPL_DIR=${BARCELONA_ROOT}/template
-
 TMP_DIR=${BARCELONA_ROOT}/tmp
-
-
 
 PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
 KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
 CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
 CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
-
-USBBOOT_DIR=${OUTPUT_DIR}/usb/boot
-
-
 
 # test single cache file
 #
@@ -130,23 +109,35 @@ USBBOOT_DIR=${OUTPUT_DIR}/usb/boot
 #
 fetch_file_cache () {
 
-  mkdir -p ${CACHE_DIR}
-  if [ ! -e "${CACHE_DIR}/$1" ]; then
-    wget -P ${CACHE_DIR} "$2"
+    mkdir -p ${CACHE_DIR}
 
-    if [ ! $? -eq 0 ]; then 
-        echo "wget failed: $WHEEZY_NETBOOT_URL"
-        exit 1;
+    printf "check if $1 is already cached ..."
+    if [ ! -e "${CACHE_DIR}/$1" ]; then
+    
+        printf "NO\n"
+        wget -P ${CACHE_DIR} "$2"
+
+        if [ ! $? -eq 0 ]; then 
+            echo "wget failed: $WHEEZY_NETBOOT_URL"
+            exit 1;
+        fi
+    else
+        printf "YES\n"          
     fi
-  fi
   
-  cd ${BARCELONA_ROOT}
-  echo "md5sum -c artifacts/${1}.md5"
-  md5sum -c artifacts/${1}.md5
-  cd -
+    printf "check md5 for $1 ... "
+    {
+        cd ${BARCELONA_ROOT}
+        # echo "md5sum -c artifacts/${1}.md5"
+        md5sum -c artifacts/${1}.md5
+        cd -
+    } &> /dev/null
+    printf "OK\n"
 }
 
 prepare_cache_files() {
+
+    highlight "prepare (cached) files and packages"
 
     #
     # reference: http://www.busybox.net/downloads/binaries/latest/
@@ -192,15 +183,58 @@ prepare_cache_files() {
     fetch_file_cache $ZFS_TARBALL_NAME $ZFS_TARBALL_URL
 }
 
-prepare_cache_files
+clean_dirs () {
 
-# clean staging dir
-rm -rf ${STAGING_DIR}
-mkdir -p ${STAGING_DIR}
+    highlight "clean staging dir"
+    sudo rm -rf ${STAGING_DIR}
+    mkdir -p ${STAGING_DIR}
+    echo "done"
 
-# clean output dir
-rm -rf ${OUTPUT_DIR}
-mkdir -p ${OUTPUT_DIR}
+    highlight "clean output dir"
+    sudo rm -rf ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}/kbl
+    mkdir -p ${OUTPUT_DIR}/boot
+    mkdir -p ${OUTPUT_DIR}/cefdk
+    echo "done"
+
+    highlight "clean tmp dir"
+    sudo rm -rf ${TMP_DIR}
+    echo "done"
+}
+
+
+#
+# This function use expect to install iso image
+#
+install_iso () {
+
+    highlight "installing $1"
+
+    rm -rf ${TMP_DIR}
+    mkdir ${TMP_DIR}
+
+    sudo mount -t iso9660 -o loop disc/$1 ${TMP_DIR}
+    
+{   /usr/bin/expect << EOD
+
+    spawn ${TMP_DIR}/installer -d .
+    set timeout 1
+    expect -exact "--MORE--"
+    send "q"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    set timeout 30
+    expect "Successfully completed installation"
+
+EOD
+} &> /dev/null
+
+    sudo umount ${TMP_DIR}
+    rm -rf ${TMP_DIR}
+}
 
 build_kexec () {
 
@@ -238,13 +272,6 @@ build_kexec () {
     echo "done"
 }
 
-if [ -f ${CACHE_DIR}/kexec ]; then
-    highlight "kexec executable found in cache folder"
-else
-    highlight "kexec executable not found in cache folder" 
-    build_kexec
-fi
-
 install_cefdk_iso () {
 
     rm -rf ${WORKSPACE}
@@ -271,12 +298,14 @@ prepare_kernel () {
 
     highlight  "unpack kernel"
     make -C ${WORKSPACE} kernel-unpackage &> /dev/null
+    echo "done"
 
     highlight "patch emmc bug"
     patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
 
     highlight "patch usb controller"
     cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
+    echo "done"
 
     highlight "patch ptrace.h for newer version of gcc"
     patch ${KERNEL_DIR}/arch/x86/include/asm/ptrace.h < ${PATCH_DIR}/008-kernel-ptrace-suppress-newer-version-compiler-complain.patch
@@ -315,10 +344,13 @@ prepare_workspace () {
 
     highlight "generate (buildroot) global buildroot config"
     make -C ${WORKSPACE} defconfig &> /dev/null
+    echo "done"
 
     # unpack bison and patch bug
     highlight "unpack bison"
     make -C ${WORKSPACE} bison-unpackage &> /dev/null
+    echo "done"
+
     highlight "patch bison"
     patch ${WORKSPACE}/project_build_i686/IntelCE/bison-29.0.12344.325128/bison-2.4.2/lib/stdio.in.h < ${PATCH_DIR}/001-bison-stdio.in.h-false-warning.patch
 
@@ -329,6 +361,7 @@ prepare_workspace () {
     # unpack busybox
     highlight "unpack busybox"
     make -C ${WORKSPACE} busybox-unpackage &> /dev/null
+    echo "done"
 
     highlight "patch busybox to enable pivot_root and switch_root"
     patch ${WORKSPACE}/project_build_i686/IntelCE/busybox-29.0.12344.325128/conf/busybox.config < ${PATCH_DIR}/004-busybox-enable-pivot-root-and-switch-root.patch
@@ -338,14 +371,16 @@ prepare_workspace () {
         ${PATCH_DIR}/005-busybox-fix-absolute-path-inside-busybox-install-tar-gz.patch
 
     highlight "patch ramdisk makefile"
-    patch ${WORKSPACE}/target/ramdisk/ramdisk.mk < ${PATCH_DIR}/100-modified-ramdisk-makefile.patch
+    patch ${WORKSPACE}/target/ramdisk/ramdisk.mk < ${PATCH_DIR}/100-modified-ramdisk-makefile-v2.patch
 
     highlight "build toolchain"
     make -C ${WORKSPACE} toolchain &> /dev/null
+    echo "done"
 
-    highlight "tar toolchain lib files for ramdisk"
+    highlight "tar toolchain lib files for (cefdk) ramdisk"
     tar -czf ${WORKSPACE}/target/ramdisk/toolchain_install.tar.gz -C ${WORKSPACE}/project_build_i686/IntelCE/root/ .
     tar czf ${STAGING_DIR}/toolchain.lib.tar.gz -C ${WORKSPACE}/project_build_i686/IntelCE/root/ .
+    echo "toolchain.lib.tar.gz is available in ${STAGING_DIR}" 
 
     # unpack and patch kernel
     prepare_kernel
@@ -353,43 +388,47 @@ prepare_workspace () {
     # there is no .config if kernel have never been built
     make_kernel
 
-    highlight "tar prepared kernel for re-building kernel"
-    tar czf ${STAGING_DIR}/kernel_snapshot.tar.gz -C ${KERNEL_DIR} .
+    highlight "snapshot kernel for rebuilding later"
+    tar czf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR} .
+    echo "kernel.snapshot.tar.gz is available in ${STAGING_DIR}"
 
     highlight "tar workspace"
     tar cfz ${STAGING_DIR}/workspace.tar.gz -C ${WORKSPACE} .
+    echo "workspace.tar.gz is available in ${STAGING_DIR}"
 }
 
 build_kbl_initrd_cpio () {
 
     local FSTATE=${TMP_DIR}/.fstate
 
-    rm -rf ${TMP_DIR}
-    
+    rm -rf ${TMP_DIR} 
     mkdir -p ${TMP_DIR}/kbl_initrd
     touch $FSTATE
 
     highlight "copy template files"
     fakeroot -i $FSTATE -s $FSTATE cp -r ${TEMPL_DIR}/kbl_initrd/* ${TMP_DIR}/kbl_initrd
+    # enable this if you are suspicious 
+    # fakeroot -i $FSTATE -s $FSTATE ls ${TMP_DIR}/kbl_initrd -sail
+    echo "done"
 
     highlight "copy busybox and kexec"
     fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/busybox-i686 ${TMP_DIR}/kbl_initrd/bin/busybox
     fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/kexec ${TMP_DIR}/kbl_initrd/bin
-
-    
+    echo "done"
+ 
     # mknod -m 622 console c 5 1
     # mknod -m 622 tty0 c 4 0
     highlight "mknod console & tty0"
     fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/console c 5 1
     fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/tty0 c 4 0
+    echo "done"
 
     highlight "pack cpio file"
     cd ${TMP_DIR}/kbl_initrd
-    pwd
+    # pwd
     fakeroot -i $FSTATE -s $FSTATE sh -c  "find . | cpio -H newc -o > ${STAGING_DIR}/kbl_initrd.cpio"    
-    cd -
-
-    echo "done" 
+    cd - &> /dev/null
+    echo "kbl_initrd.cpio is available in ${STAGING_DIR}" 
 }
 
 #
@@ -397,34 +436,37 @@ build_kbl_initrd_cpio () {
 #
 build_kbl () {
 
+    # 
     # sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${BARCELONA_ROOT}/staging/kbl_initrd.cpio\"" tmp/kbl_kernel_config
 
-    highlight "building kbl..."
-
-    highlight "rm old cpio"
+    highlight "remove old cpio file"
     rm -rf ${STAGING_DIR}/kbl_initrd.cpio
+    echo "done"
 
     build_kbl_initrd_cpio
 
     highlight "apply kbl_kernel_config to current kernel"
     cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+    echo "done"
 
     highlight "set initramfs path to kernel config"
     sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${STAGING_DIR}/kbl_initrd.cpio\"" ${KERNEL_DIR}/.config
+    echo "done"
 
     make_kernel
 
-    cp ${CEFDK_OUTDIR}/bzImage ${OUTPUT_DIR}/kbl
-    highlight "kbl is availabe in ${OUTPUT_DIR}/kbl"
+    highlight "cp to output folder"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.kbl
+    echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
 }
 
 pack_kernel_source () {
     
-    highlight "packing kernel source..."
-
     highlight "clean kernel source"
     make -C ${KERNEL_DIR} mrproper &> /dev/null
+    echo "done"
 
+    highlight "remove unnecessary files"
     rm ${KERNEL_DIR}/.build
     rm ${KERNEL_DIR}/.configure
     rm ${KERNEL_DIR}/.install_dev
@@ -432,35 +474,36 @@ pack_kernel_source () {
     rm ${KERNEL_DIR}/linux-2.6.39
     rm ${KERNEL_DIR}/.patch
     rm ${KERNEL_DIR}/.unpacked
+    echo "done"
 
-    mkdir -p ${USBBOOT_DIR}
-    tar czf ${USBBOOT_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
-
-    highlight "kernel source tarball is available in ${USBBOOT_DIR}/linux-2.6.39.tar.gz"
+    highlight "tar kernel source code"
+    tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
+    echo "kernel source tarball is available in ${STAGING_DIR}"
 }
 
 build_custom_kernel () {
     
     highlight "remove kernel source"
     rm -rf ${KERNEL_DIR}/*
+    echo "done"
 
     # re-prepare kernel
     # prepare_kernel
     # make_kernel
-    highlight "restore prepared kernel snapshot"
-    tar xzf ${STAGING_DIR}/kernel_snapshot.tar.gz -C ${KERNEL_DIR}
+    highlight "restore kernel snapshot"
+    tar xzf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR}
+    echo "done"
 
     highlight "apply custom kernel config"
     cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
+    echo "done"
 
     make_kernel
 
-    mkdir -p ${USBBOOT_DIR}
-
     # cp bzImage
-    cp ${CEFDK_OUTDIR}/bzImage ${USBBOOT_DIR}
-
-    highlight "custom kernel is available at ${USBBOOT_DIR}/bzImage" 
+    highlight "copy kernel image"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.custom
+    echo "custom kernel (bzImage.custom) is available in ${STAGING_DIR}" 
 }
 
 #
@@ -468,59 +511,134 @@ build_custom_kernel () {
 #
 build_netboot_initrd () {
 
-    highlight "build netboot initrd"
+    local FSTATE=${TMP_DIR}/.fstate
+
     rm -rf ${TMP_DIR}
     mkdir -p ${TMP_DIR}
-    touch ${TMP_DIR}/.fstate
-    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+    touch $FSTATE
 
+    highlight "extract original debian initrd in netboot tarball"
+    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+    echo "done"
+
+    highlight "unpack cpio"
     mkdir -p ${TMP_DIR}/initrd
     cd ${TMP_DIR}/initrd
-    fakeroot -i ${TMP_DIR}/.fstate -s ${TMP_DIR}/.fstate sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
-    cd -
+    fakeroot -i $FSTATE -s $FSTATE sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
+    fakeroot -i $FSTATE -s $FSTATE ls -sail
+    cd - &> /dev/null
 
     # fill preseed.cfg
     highlight "inject preseed.cfg file"
-    cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+    fakeroot -i $FSTATE -s $FSTATE cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+    echo "done"
 
     # cp modules
     highlight "inject kernel modules"
-    mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
-    cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+    fakeroot mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
+    fakeroot -i $FSTATE -s $FSTATE cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+    fakeroot -i $FSTATE -s $FSTATE ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
 
     # repack
     highlight "repack cpio archive"
     rm -f ${TMP_DIR}/initrd.cpio
     cd ${TMP_DIR}/initrd
-    fakeroot -i ${TMP_DIR}/.fstate -s ${TMP_DIR}/.fstate sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
-    cd -
+    fakeroot -i $FSTATE -s $FSTATE sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
+    cd - &> /dev/null
 
     highlight "zip initrd"
-    cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/usb/boot/ramdisk
-
-    highlight "repackaged netboot initrd is now available at ${OUTPUT_DIR}/usb/boot/ramdisk"
+    cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${STAGING_DIR}/initrd.netboot.gz
+    echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
 }
 
-install_cefdk_iso
-prepare_workspace
-build_kbl
-pack_kernel_source
-build_custom_kernel 
-build_netboot_initrd
+generate_output () {
 
-exit 0
+    highlight "prepare dirs"
+    sudo rm -rf ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}/kbl
+    mkdir -p ${OUTPUT_DIR}/boot
+    mkdir -p ${OUTPUT_DIR}/cefdk
+    echo "done"
 
-../scripts/banner "Building all targets"
+    highlight "output files"
+    cp ${STAGING_DIR}/bzImage.kbl ${OUTPUT_DIR}/kbl/kbl
+    cp ${STAGING_DIR}/bzImage.custom ${OUTPUT_DIR}/boot/bzImage
+    cp ${STAGING_DIR}/initrd.netboot.gz ${OUTPUT_DIR}/boot/ramdisk
+    cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
+    cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+    cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+    cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/cmdline
 
-# make all, comment out this line if you want to make manually
-make 
+    tree ${OUTPUT_DIR}
+}
 
 #
-../scripts/banner "Tar lib modules (.ko)" 
-tar -czf binaries/IntelCE/lib_modules.tar.gz -C project_build_i686/IntelCE/root/lib/modules .
+# program starts
+#
 
-../scripts/banner "End"
+if [ $# -ne 0 ]; then
+    if [ $# -ne 1 ] || [ "$1" != "-n" ]
+    then
+        echo "usage: xxxx"
+        exit 0
+    fi
+    NOCEFDK="true"
+    echo "\$NOCEFDK = $NOCEFDK"
+fi
 
-cd -
+banner "test environment variable"
+test_env_var
+
+banner "check prerequisite files"
+test_iso_files
+prepare_cache_files
+
+banner "clean staging, out and tmp folders"
+clean_dirs
+
+banner "prepare kexec"
+if [ -f ${CACHE_DIR}/kexec ]; then
+    highlight "kexec executable found in cache folder"
+else
+    highlight "kexec executable not found in cache folder" 
+    build_kexec
+fi
+
+banner "install cefdk"
+install_cefdk_iso
+
+banner "prepare workspace"
+prepare_workspace
+
+banner "build kbl"
+build_kbl
+
+banner "pack kernel source"
+pack_kernel_source
+
+banner "build custom kernel"
+build_custom_kernel 
+
+banner "build netboot initrd"
+build_netboot_initrd
+
+if [ "$NOCEFDK" != "true" ]; then
+
+    # tried to change BR2_JLEVEL to 2, failed.
+    banner "build all (or selected) cefdk packages"
+    highlight "this takes 15~30 minutes, be patient."
+    make -C ${WORKSPACE} &> /dev/null
+
+    highlight "tar lib.modules after cefdk build"
+    tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
+    echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
+fi
+
+banner "generate output"
+generate_output
+
+
+
 
 
