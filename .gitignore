@@ -5,6 +5,7 @@ cache
 disc
 workspace
 tmp
+staging
 output
 wget-log
 
