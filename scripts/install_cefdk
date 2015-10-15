@@ -199,13 +199,47 @@ rm -rf ${OUTPUT_DIR}
 mkdir -p ${OUTPUT_DIR}
 
 build_kexec () {
+
+    highlight "build kexec from source code"
+
+    rm -rf ${STAGING_DIR}/kexec-tools-2.0.10
     
+    highlight "untar source tarball"
     tar xzf ${CACHE_DIR}/kexec-tools-2.0.10.tar.gz -C ${STAGING_DIR}
     cd ${STAGING_DIR}/kexec-tools-2.0.10
 
-    ./configure --build=i686-pc-linux-gnu "CFLAGS=-m32 -static" "CXXFLAGS=-m32 -static" "LDFLAGS=-m32 -static -m elf_i386"
-    # ./configure --build=i686-pc-linux-gnu CC=gcc -static -m32 CXX=g++ -static -m32 LDFLAGS=-m32
+    # 
+    # this is EXTREMELY important to override CC and CXX rather than CFLAGS and CXXFLAGS, 
+    # otherwise you get the ld relocatable elf 64bit ... to elf 32bit error 
+    #
+    # configure --build=i686-pc-linux-gnu "CC=gcc -static -m32" "CXX=g++ -static -m32" "LDFLAGS=-m32"
+    #
+    highlight "configure kexec source"
+    ./configure --build=i686-pc-linux-gnu "CC=gcc -static -m32" "CXX=g++ -static -m32" "LDFLAGS=-m32" &> /dev/null
+
+    highlight "make"
+    make &> /dev/null
+
+    highlight "strip"
+    strip build/sbin/kexec
+
+    highlight "file"
+    file build/sbin/kexec
+
+    highlight "copy to cache folder"
+    cp build/sbin/kexec ${CACHE_DIR}
+
+    cd -
+
+    echo "done"
 }
+
+if [ -f ${CACHE_DIR}/kexec ]; then
+    highlight "kexec executable found in cache folder"
+else
+    highlight "kexec executable not found in cache folder" 
+    build_kexec
+fi
 
 install_cefdk_iso () {
 
