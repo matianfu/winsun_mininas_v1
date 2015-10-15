@@ -568,7 +568,7 @@ generate_output () {
     cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
     cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
     cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
-    cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/cmdline
+    cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/boot/cmdline
 
     tree ${OUTPUT_DIR}
 }
