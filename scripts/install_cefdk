@@ -108,7 +108,11 @@ OUTPUT_DIR=${BARCELONA_ROOT}/output
 ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
 STAGING_DIR=${BARCELONA_ROOT}/staging
 CACHE_DIR=${BARCELONA_ROOT}/cache
+TEMPL_DIR=${BARCELONA_ROOT}/template
+
 TMP_DIR=${BARCELONA_ROOT}/tmp
+
+
 
 PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
 KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
@@ -260,9 +264,6 @@ install_cefdk_iso () {
     mv IntelCE-29.0.12364.325671 workspace
 }
 
-install_cefdk_iso
-
-#
 # this function is used for avoiding untar the whole workspace
 # if all we need to re-unpack and patch kernel to start a new kernel build.
 #
@@ -359,14 +360,57 @@ prepare_workspace () {
     tar cfz ${STAGING_DIR}/workspace.tar.gz -C ${WORKSPACE} .
 }
 
+build_kbl_initrd_cpio () {
+
+    local FSTATE=${TMP_DIR}/.fstate
+
+    rm -rf ${TMP_DIR}
+    
+    mkdir -p ${TMP_DIR}/kbl_initrd
+    touch $FSTATE
+
+    highlight "copy template files"
+    fakeroot -i $FSTATE -s $FSTATE cp -r ${TEMPL_DIR}/kbl_initrd/* ${TMP_DIR}/kbl_initrd
+
+    highlight "copy busybox and kexec"
+    fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/busybox-i686 ${TMP_DIR}/kbl_initrd/bin/busybox
+    fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/kexec ${TMP_DIR}/kbl_initrd/bin
+
+    
+    # mknod -m 622 console c 5 1
+    # mknod -m 622 tty0 c 4 0
+    highlight "mknod console & tty0"
+    fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/console c 5 1
+    fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/tty0 c 4 0
+
+    highlight "pack cpio file"
+    cd ${TMP_DIR}/kbl_initrd
+    pwd
+    fakeroot -i $FSTATE -s $FSTATE sh -c  "find . | cpio -H newc -o > ${STAGING_DIR}/kbl_initrd.cpio"    
+    cd -
+
+    echo "done" 
+}
+
 #
 # build kernel boot loader
 #
 build_kbl () {
 
+    # sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${BARCELONA_ROOT}/staging/kbl_initrd.cpio\"" tmp/kbl_kernel_config
+
     highlight "building kbl..."
+
+    highlight "rm old cpio"
+    rm -rf ${STAGING_DIR}/kbl_initrd.cpio
+
+    build_kbl_initrd_cpio
+
     highlight "apply kbl_kernel_config to current kernel"
     cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+
+    highlight "set initramfs path to kernel config"
+    sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${STAGING_DIR}/kbl_initrd.cpio\"" ${KERNEL_DIR}/.config
 
     make_kernel
 
@@ -457,12 +501,12 @@ build_netboot_initrd () {
     highlight "repackaged netboot initrd is now available at ${OUTPUT_DIR}/usb/boot/ramdisk"
 }
 
+install_cefdk_iso
 prepare_workspace
 build_kbl
 pack_kernel_source
 build_custom_kernel 
 build_netboot_initrd
-
 
 exit 0
 
