@@ -6,13 +6,17 @@ USB_ROOTDIR=/media/usb
 BOOT_DIR=/media/usb/boot
 TMP_DIR=/media/usb/tmp
 
+KERNEL_APPEND=
+KERNEL_REVISION=
+
 mount -t devpts none /dev/pts                                                                                                                             
 mount -t proc none /proc
 mount -t sysfs none /sys
 mount -t ext4 /dev/sda1 /media/usb
 
-apt-get install build-essential
-apt-get install kernel-package
+apt-get -y install build-essential gawk alien fakeroot
+apt-get -y install zlib1g-dev uuid-dev libblkid-dev libselinux-dev parted lsscsi wget
+apt-get -y install kernel-package initramfs-tools
 
 mkdir ${TMP_DIR}
 
@@ -20,8 +24,11 @@ tar xvzf ${BOOT_DIR}/linux-2.6.39.tar.gz -C ${TMP_DIR}
 cp ${BOOT_DIR}/kernel_config ${TMP_DIR}/.config
 
 cd ${TMP_DIR}
+export CONCURRENCY_LEVEL=3
 make-kpkg --rootcmd fakeroot --initrd kernel_image kernel_headers
 cd -
 
 
+
+console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rw rootwait init=/sbin/init
 

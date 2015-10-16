@@ -1,0 +1,211 @@
+
+original
+shell> script info
+Stored script lists as below:
+***   ramdisk 0x8000000 0x8000000
+***   mfh list nand
+***   bootkernel -id 0 "biosdevname=0 console=ttyS0,115200  memmap=exactmap memmap=128K@128K memmap=1535M@1M vmalloc=586M quiet"
+***   ramdisk 0x8000000 0x8000000
+***   mfh list nand
+***   bootkernel -id 0 "biosdevname=0 console=ttyS0,115200  memmap=exactmap memmap=128K@128K memmap=1535M@1M vmalloc=586M quiet"
+***   ramdisk 0x8000000 0x8000000
+***   mfh list nand
+***   bootkernel -id 0 "biosdevname=0 console=ttyS0,115200  memmap=exactmap memmap=128K@128K memmap=1535M@1M vmalloc=586M quiet"
+***   tftp get 192.168.1.1 0x200000 bzImage
+***   bootkernel -b 0x200000 "console=ttyS0,115200 root=/dev/nfs nfsroot=192.168.1.1:/nfs/root,nolock ip=dhcp memmap=exactmap memmap=128K@128K memmap=511M@1M vmalloc=586M"
+
+################################################################################
+
+# load kernel from tftp
+tftp get 192.168.199.150 0x1000000 bzImage
+
+
+# load ramdisk from tftp
+tftp get 192.168.199.150 0x8000000 ramdisk.ext2.initrd.gz
+
+# set ramdisk 
+# ramdisk <addr> <size>
+# size must be larger than gzipped package
+ramdisk 0x8000000 0x2000000
+
+# boot kernel
+# NOTE: root=/dev/ram0 set the rootfs to ramdisk
+# NOTE: rw for read/write rootfs
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 root=/dev/ram0 rw init=/linuxrc"
+
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 root=/dev/ram0 rw init=/linuxrc ramdisk_size=64000000"
+
+# direct boot
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p3 rw init=/sbin/init"
+
+
+<*> The Extended 4 (ext4) filesystem                                                                                           │ │  
+  │ │                                                        [*]   Ext4 extended attributes                                                                                                 │ │  
+  │ │                                                        [*]     Ext4 POSIX Access Control Lists                                                                                        │ │  
+  │ │                                                        [*]     Ext4 Security Labels 
+  
+  
+# mount -t nfs 192.168.199.150:/serv/nfs/rootfs nfs
+svc: failed to register lockdv1 RPC service (errno 111).
+lockd_up: makesock failed, error=-111
+mount: mounting 192.168.199.150:/serv/nfs/rootfs on nfs failed: Connection refused
+# mount 192.168.199.150:/serv/nfs/rootfs nfs       
+svc: failed to register lockdv1 RPC service (errno 111).
+mount: mounting 192.168.199.150:/serv/nfs/rootfs on nfs failed: Connection refused
+# mount -o port=2049,nolock,proto=tcp 192.168.199.150:/serv/nfs/rootfs nfs
+
+
+
+# dd if=/dev/sda1 of=/dev/sdb1 bs=512 conv=noerror,sync
+
+ZERO partition
+
+# dd if=/dev/zero of=/dev/mmcblk0p1 bs=512
+dd: writing '/dev/mmcblk0p1': No space left on device
+31281+0 records in
+31280+0 records out
+
+***   tftp get 192.168.199.150 0x1000000 bzImage
+***   tftp get 192.168.199.150 0x8000000 ramdisk.ext2.initrd.gz
+***   ramdisk 0x8000000 0x8000000
+***   bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 root=/dev/ram0 rw init=/linuxrc ramdisk_size=64000000"
+
+2048 * 512 4M
+
+# dd if=bzImage of=/dev/mmcblk0 bs=1M seek=4 
+3+1 records in
+3+1 records out
+# dd if=ramdisk.ext2.initrd.gz of=/dev/mmcblk0 bs=1M seek=8
+13+1 records in
+13+1 records out
+
+
+
+
+
+
+
+> cat /etc/resolv.conf
+> nameserver 10.0.0.1
+> nameserver 208.67.222.222
+> nameserver 208.67.220.220
+> search lan
+
+
+
+/home/ma/barcelona/workspace/target/ramdisk/ramdisk_staging
+
+
+./kexec -l ./bzImage --initrd=./ramdisk.ext2.initrd.gz --command-line="console=tty0 console=ttyS0,115200 root=/dev/ram0 rw init=/linuxrc ramdisk_size=64000000"
+
+
+./configure --build=i686-pc-linux-gnu --enable-static CC='gcc -m32' CXX='g++ -m32' LDFLAGS=-m32
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ma@ma-aspire:~$ minicom -D /dev/ttyUSB0 
+
+Welcome to minicom 2.7
+
+OPTIONS: I18n 
+Compiled on Jan  1 2014, 17:13:19.
+Port /dev/ttyUSB0, 23:41:32
+
+Press CTRL-A Z for help on special keys
+
+
+AC_BOOT
+
+Intel(R) Consumer Electronics Firmware Development Kit (Intel(R) CEFDK)
+Copyright (C) 1999-2012 Intel Corporation. All rights reserved.
+Build Time (03/05/15 14:46:22).
+Searching 8051 FW in MFH...
+Load 8051 FW from MFH successfully!
+Splash: BMP found Width 720  Height 480
+SMM: Ok
+ACPI Init: finished with table region from 00011aa0 to 00018000
+acpi: Created tables at 00011aa0-00018000
+
+HCC Version          : 30-5.28bar(Dual) 
+CEFDK Version        : CE5300 (SMP enabled)
+8051 Firmware        : C0-1.0.49 (0x00050000)
+8051 FW I/O Module   : 30-3.7bar  
+Silicon Stepping     : D0 (PCI)
+Silicon SKU          : 0x06C
+Board                : REF0
+CPU Threads          : 4
+CPU Multiplier       : 12
+CPU Bus Speed        : 100 MHz
+Memory Size          : 2048 MB
+Memory Type & Speed  : x16 DDR3-1600 (11-11-11) 
+Memory Configuration : A B Interleave Mode 1
+PCI Mode             : PCI Standard
+Boot Mode            : SPI-NOR
+HW-ID : 0x5
+Check Lan Wake Settings
+
+COLD_BOOT
+
+Intel(R) Consumer Electronics Firmware Development Kit (Intel(R) CEFDK)
+Copyright (C) 1999-2012 Intel Corporation. All rights reserved.
+Build Time (03/05/15 14:46:22).
+Searching 8051 FW in MFH...
+Load 8051 FW from MFH successfully!
+Splash: BMP found Width 720  Height 480
+SMM: Ok
+ACPI Init: finished with table region from 00011aa0 to 00018000
+acpi: Created tables at 00011aa0-00018000
+
+HCC Version          : 30-5.28bar(Dual) 
+CEFDK Version        : CE5300 (SMP enabled)
+8051 Firmware        : C0-1.0.49 (0x00050000)
+8051 FW I/O Module   : 30-3.7bar  
+Silicon Stepping     : D0 (PCI)
+Silicon SKU          : 0x06C
+Board                : REF0
+CPU Threads          : 4
+CPU Multiplier       : 12
+CPU Bus Speed        : 100 MHz
+Memory Size          : 2048 MB
+Memory Type & Speed  : x16 DDR3-1600 (11-11-11) 
+Memory Configuration : A B Interleave Mode 1
+PCI Mode             : PCI Standard
+Boot Mode            : SPI-NOR
+HW-ID : 0x5
+Registered net controller: e1000
+Waiting for the Link up: -
+100M FD Link is ready!
+Configure IP via Bootp
+Mac address is    : 00:1E:33:10:40:05
+Host IP address is: 192.168.199.197
+Subnet Mask is    : 255.255.255.0
+Gateway address is: 192.168.199.1
+Press 'Enter' within 3 seconds to disable automatic boot.
+
+ *************************************************************
+ Hit a key to start the shell or [SPACE] to set MAC address...
+ *************************************************************
+Boot Mode=0
+Running auto script...
+shell> tftp get 192.168.199.150 0x1000000 bzImage
+
+bootkernel –id 0 “console=ttyS0,115200 root=/dev/nfs nfsroot=<ip addr>:<nfsroot path>,nolock ip=dhcp”
+
+
+tftp get 192.168.199.150 0x1000000 bzImage
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 rootfs=ramfs rw init=/linuxrc"
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200 rootfs=ramfs init=/linuxrc"
+bootkernel -b 0x1000000 "console=tty0 console=ttyS0,115200"
+
+/home/ma/winsun_mininas_v1/tmp/mnt
+
+mknod -m 622 console c 5 1
+mknod -m 622 tty0 c 4 0
+
+http://stackoverflow.com/questions/10437995/initramfs-built-into-custom-linux-kernel-is-not-running
+
+http://busybox.net/downloads/binaries/latest/
+
+bootkernel -id 0 "console=tty0 console=ttyS0,115200"
+
