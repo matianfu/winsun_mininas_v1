@@ -604,6 +604,8 @@ generate_output () {
     cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
     echo "$(git rev-parse --short HEAD)" > ${OUTPUT_DIR}/boot/git-short-hash
     cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
+    cp ${ARTIFACT_DIR}/post_inst_hook ${OUTPUT_DIR}/boot/post_inst_hook
+    chmod a+x ${OUTPUT_DIR}/boot/post_inst_hook
     echo "done"
 
     tree ${OUTPUT_DIR}
