@@ -21,8 +21,9 @@ banner () {
 
 highlight $DASH
 highlight "post_inst"
-pwd
-echo ""
+highlight $DASH
+# pwd
+# echo ""
 
 #
 # paths
@@ -44,7 +45,7 @@ highlight "mount usb at /target/media/usb0"
 mount -t ext4 /dev/sda1 /target/media/usb0
 
 highlight "extract append-to-version and revision for make-kpkg"
-KERNEL_APP="-$(cat /target/media/usb0/boot/git-short-hash)"
+KERNEL_APP="-$(cat /target/media/usb0/boot/ker-app)"
 KERNEL_REV="$(cat /target/media/usb0/boot/ker-rev)"
 
 echo "append-to-version=${KERNEL_APP}"
@@ -64,7 +65,7 @@ highlight "install packages required for building spl and zfs"
 chroot /target apt-get -y install build-essential gawk alien fakeroot
 chroot /target apt-get -y install zlib1g-dev uuid-dev libblkid-dev libselinux-dev parted lsscsi wget
 
-highlight "package required for building kernel and initramfs"
+highlight "install package required for building kernel and initramfs"
 chroot /target apt-get -y install kernel-package initramfs-tools
 
 highlight "untar kernel source into /target/media/usb0/tmp/linux"
@@ -74,7 +75,6 @@ highlight "copy kernel_config"
 cp /target/media/usb0/boot/kernel_config /target/media/usb0/tmp/linux/.config
 
 highlight "build kernel image and headers (deb)"
-
 chroot /target /bin/bash -c "cd /media/usb0/tmp/linux; make-kpkg --initrd --jobs=4 --append-to-version=${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers"
 
 highlight "install kernel image deb"
@@ -113,35 +113,35 @@ ln -s $(find . -name initrd.img*) ramdisk
 cd /
 echo "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rw rootwait init=/sbin/init" > /target/boot/cmdline
 
-#
-# this also umount usb drive
-#
 highlight "chroot_cleanup"
 chroot_cleanup
+echo "done"
 
-# highlight "unmount usb drive on target"
-# umount /target/media/usb0
+highlight "unmount usb drive on target"
+umount /target/media/usb0
+echo "done"
 
-highlight "remount usb drive on initrd"
-mkdir -p /mnt/usb
-mount -t ext4 /dev/sda1 /mnt/usb
+# highlight "remount usb drive on initrd"
+# mkdir -p /mnt/usb
+# mount -t ext4 /dev/sda1 /mnt/usb
 
-highlight "unmount target to sync file"
-umount /dev/.static/dev
-umount /target/dev
-umount /target
+# highlight "unmount target to sync file"
+# umount /dev/.static/dev
+# umount /target/dev
+# umount /target
 
-highlight "dd image file"
-dd if=/dev/mmcblk0 of=/mnt/usb/emmc.img
+# highlight "dd image file"
+# dd if=/dev/mmcblk0 of=/mnt/usb/emmc.img
 
-highlight "remount target"
-mount -t ext4 /dev/mmcblk0p1 /target
+# highlight "remount target"
+# mount -t ext4 /dev/mmcblk0p1 /target
 
-highlight "tar target rootfs"
-tar cvf /mnt/usb/targetfs.tar -C /target .
+# highlight "tar target rootfs"
+# tar cvf /mnt/usb/targetfs.tar -C /target .
 
-highlight "post_inst script finished."
-
+highlight $DASH
+highlight "post_inst script finished. exit shell and finish installation."
+highlight $DASH
 
 
 

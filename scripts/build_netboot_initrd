@@ -47,6 +47,10 @@ mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
 cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
 ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
 
+highlight "replace busybox"
+cp -r ${CACHE_DIR}/busybox-i686 ${TMP_DIR}/initrd/bin/busybox
+chmod a+x ${TMP_DIR}/initrd/bin/busybox
+
 # repack
 highlight "repack cpio archive"
 rm -f ${TMP_DIR}/initrd.cpio
