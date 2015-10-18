@@ -1,0 +1,47 @@
+wget http://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/spl-0.6.4.2.tar.gz
+wget http://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/zfs-0.6.4.2.tar.gz
+
+make-kpkg clean --cross-compile --arch=i386
+fakeroot linux32 make-kpkg --initrd --cross-compile --arch=i386 kernel_image kernel_headers
+
+make-kpkg clean --cross-compile - --arch=i386
+fakeroot linux32 make-kpkg --initrd --cross-compile - --arch=i386 kernel_image kernel_headers
+
+chroot /target /bin/bash # may be changed
+
+set -e
+
+mount -t devpts none /dev/pts                                                                                                                             
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t ext4 /dev/sda1 /media/usb
+cd /media/usb/boot
+
+apt-get install build-essential
+apt-get install kernel-package initramfs-tools
+
+apply kernel_config
+
+make-kpkg --rootcmd fakeroot --initrd kernel_image kernel_headers
+
+apt-get -y install build-essential gawk alien fakeroot
+apt-get -y install zlib1g-dev uuid-dev libblkid-dev libselinux-dev parted lsscsi wget
+
+spl
+
+./configure
+./make deb-utils deb-kmod
+
+dpkg -i *.deb
+
+zfs
+
+./configure
+./make deb-utils deb-kmod
+
+clean /tmp
+clean proxy settings if any
+
+MAKEFLAGS="CC=gcc-4.6" DEB_HOST_ARCH=i386 make-kpkg --rootcmd fakeroot --initrd --cross-compile - --arch=i386 --jobs=8 kernel_image kernel_headers
+
+apt-get -t experimental install libc6-i386 libc6-dev libc6-dbg

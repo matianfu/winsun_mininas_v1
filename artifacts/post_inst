@@ -1,0 +1,152 @@
+#!/bin/sh
+
+set -e
+
+DASH="------------------------------"
+
+#
+# echo $1 in green color
+#
+highlight () {
+
+    echo -e "\e[32m\e[1m${1}\e[0m"
+}
+
+banner () {
+    echo ""
+    highlight $DASH
+    highlight "$1"
+    highlight $DASH
+}
+
+highlight $DASH
+highlight "post_inst"
+pwd
+echo ""
+
+#
+# paths
+#
+USB_ROOTDIR=/media/usb
+BOOT_DIR=/media/usb/boot
+TMP_DIR=/media/usb/tmp
+
+#
+# kernel append-to-version will affect kernel uname
+# kernel revision will not
+#
+# git rev-parse --short HEAD
+# 
+KERNEL_APP=
+KERNEL_REV=
+
+highlight "mount usb at /target/media/usb0"
+mount -t ext4 /dev/sda1 /target/media/usb0
+
+highlight "extract append-to-version and revision for make-kpkg"
+KERNEL_APP="-$(cat /target/media/usb0/boot/git-short-hash)"
+KERNEL_REV="$(cat /target/media/usb0/boot/ker-rev)"
+
+echo "append-to-version=${KERNEL_APP}"
+echo "revision=${KERNEL_REV}"
+
+highlight "clean tmp dir on usb drive"
+rm -rf /target/media/usb0/tmp
+mkdir -p /target/media/usb0/tmp/linux
+
+highlight "source chroot-setup.sh script"
+. /lib/chroot-setup.sh
+
+highlight "chroot_setup"
+chroot_setup
+
+highlight "install packages required for building spl and zfs"
+chroot /target apt-get -y install build-essential gawk alien fakeroot
+chroot /target apt-get -y install zlib1g-dev uuid-dev libblkid-dev libselinux-dev parted lsscsi wget
+
+highlight "package required for building kernel and initramfs"
+chroot /target apt-get -y install kernel-package initramfs-tools
+
+highlight "untar kernel source into /target/media/usb0/tmp/linux"
+tar xzf /target/media/usb0/boot/linux-2.6.39.tar.gz -C /target/media/usb0/tmp/linux
+
+highlight "copy kernel_config"
+cp /target/media/usb0/boot/kernel_config /target/media/usb0/tmp/linux/.config
+
+highlight "build kernel image and headers (deb)"
+
+chroot /target /bin/bash -c "cd /media/usb0/tmp/linux; make-kpkg --initrd --jobs=4 --append-to-version=${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers"
+
+highlight "install kernel image deb"
+chroot /target /bin/bash -c "dpkg -i /media/usb0/tmp/linux-image-*.deb"
+
+highlight "install kernel headers deb"
+chroot /target /bin/bash -c "dpkg -i /media/usb0/tmp/linux-headers-*.deb"
+
+#
+# busybox tar complains, use target one
+#
+highlight "untar spl tarball"
+chroot /target /bin/bash -c "tar xzf /media/usb0/boot/spl-0.6.4.2.tar.gz -C /media/usb0/tmp"
+
+highlight "configure, make, and install spl"
+chroot /target /bin/bash -c "cd /media/usb0/tmp/spl-0.6.4.2; pwd; ./configure; make deb-utils deb-kmod; dpkg -i *.deb"
+
+highlight "untar zfs tarball"
+chroot /target /bin/bash -c "tar xzf /media/usb/boot/zfs-0.6.4.2.tar.gz -C /media/usb0/tmp"
+
+highlight "configure, make, and install zfs"
+chroot /target /bin/bash -c "cd /media/usb0/tmp/zfs-0.6.4.2; pwd; ./configure; make deb-utils deb-kmod; dpkg -i *.deb"
+
+highlight "calling hook function"
+chroot /target /media/usb0/boot/post_inst_hook
+
+# unneccessary
+# highlight "update initramfs"
+# chroot /target update-initramfs -c -k ${KERNEL_NAME}
+# ls /target/boot
+
+highlight "build boot file link and create cmdline"
+cd /target/boot
+ln -s $(find . -name vmlinuz*) bzImage
+ln -s $(find . -name initrd.img*) ramdisk
+cd /
+echo "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rw rootwait init=/sbin/init" > /target/boot/cmdline
+
+#
+# this also umount usb drive
+#
+highlight "chroot_cleanup"
+chroot_cleanup
+
+# highlight "unmount usb drive on target"
+# umount /target/media/usb0
+
+highlight "remount usb drive on initrd"
+mkdir -p /mnt/usb
+mount -t ext4 /dev/sda1 /mnt/usb
+
+highlight "unmount target to sync file"
+umount /dev/.static/dev
+umount /target/dev
+umount /target
+
+highlight "dd image file"
+dd if=/dev/mmcblk0 of=/mnt/usb/emmc.img
+
+highlight "remount target"
+mount -t ext4 /dev/mmcblk0p1 /target
+
+highlight "tar target rootfs"
+tar cvf /mnt/usb/targetfs.tar -C /target .
+
+highlight "post_inst script finished."
+
+
+
+
+
+
+
+
+
