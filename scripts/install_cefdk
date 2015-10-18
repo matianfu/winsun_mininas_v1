@@ -623,10 +623,7 @@ generate_output () {
 # program starts
 #
 
-if [[ ! -z $(git status -s) ]]; then 
-    echo "git working tree is not clean."
-    exit 1
-fi
+if [[ ! -z $(git status -s) ]]; then echo "git working tree is not clean."; exit 0; fi
 
 if [ $# -ne 0 ]; then
     if [ $# -ne 1 ] || [ "$1" != "-a" ]
@@ -637,13 +634,13 @@ if [ $# -ne 0 ]; then
     NOCEFDK="false"
 fi
 
-if [ "$NOCEFDK" != "true" ]; then
+# echo $NOCEFDK
+
+if [ "$NOCEFDK" = "true" ]; then
     echo "cefdk ramdisk and kmods won't be built"
 else
     echo "cefdk ramdisk and kmods will be built"
 fi
-
-exit 0
 
 banner "test environment variable"
 test_env_var
