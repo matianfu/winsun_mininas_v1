@@ -1,8 +1,0 @@
-include letters-latin.tti
-char \u010D (1 4 6 )
-char \u0161 ( 234 6 )
-char \u010C (1 4 67 )
-char \u0160 ( 234 67 )
-include numbers-dot8.tti
-include punctuation-basic.tti
-include common.tti

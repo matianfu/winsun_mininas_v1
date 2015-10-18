@@ -1,4 +1,0 @@
-DISTRIB_ID=Debian
-DISTRIB_DESCRIPTION="Debian GNU/Linux installer"
-DISTRIB_RELEASE="7.0 (wheezy) - installer build 20130430"
-X_INSTALLATION_MEDIUM=netboot

@@ -1,5 +1,0 @@
-title Alva ABT [3nn] and Delphi [4nn] (large)
-context default
-include brl-al-abt_basic.kti
-context default
-include brl-al-abt_extra.kti
