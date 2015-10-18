@@ -643,6 +643,8 @@ else
     echo "cefdk ramdisk and kmods will be built"
 fi
 
+exit 0
+
 banner "test environment variable"
 test_env_var
 
