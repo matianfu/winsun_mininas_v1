@@ -1,35 +1,61 @@
 #!/bin/sh
 
+#
+# echo $1 in green color
+#
+highlight () {
+
+    echo -e "\e[32m\e[1m${1}\e[0m"
+}
 
 ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
 CACHE_DIR=${BARCELONA_ROOT}/cache
+STAGING_DIR=${BARCELONA_ROOT}/staging
+
 TMP_DIR=${BARCELONA_ROOT}/tmp
 
 CEFDK_ROOTDIR=${BARCELONA_ROOT}/workspace/project_build_i686/IntelCE/root
 OUTPUT_DIR=${BARCELONA_ROOT}/output
 
+
 rm -rf ${TMP_DIR}
 mkdir -p ${TMP_DIR}
-tar xOvzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
 
+highlight "extract original debian initrd in netboot tarball"
+tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+echo "done"
+
+highlight "unpack cpio"
 mkdir -p ${TMP_DIR}/initrd
 cd ${TMP_DIR}/initrd
-cpio -idv < ${TMP_DIR}/initrd.cpio
-cd -
+sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
+ls -sail
+cd - &> /dev/null
 
 # fill preseed.cfg
-echo "copy preseed.cfg file"
+highlight "inject preseed.cfg file"
 cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+echo "done"
+
+highlight "inject post_inst scripts"
+cp ${ARTIFACT_DIR}/post_inst ${TMP_DIR}/initrd/bin
+chmod a+x ${TMP_DIR}/initrd/bin/post_inst
 
 # cp modules
-echo "copy kernel modules"
+highlight "inject kernel modules"
 mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
 cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
 
 # repack
+highlight "repack cpio archive"
 rm -f ${TMP_DIR}/initrd.cpio
 cd ${TMP_DIR}/initrd
-find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio
-cd -
-cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${OUTPUT_DIR}/usb/boot/ramdisk
+sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
+cd - &> /dev/null
+
+highlight "zip initrd"
+cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${STAGING_DIR}/initrd.netboot.gz
+echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
+
 

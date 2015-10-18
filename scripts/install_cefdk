@@ -498,6 +498,11 @@ pack_kernel_source () {
     rm ${KERNEL_DIR}/.unpacked
     echo "done"
 
+    highlight "apply kernel config"
+    cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
+    echo "done"
+    
+
     highlight "tar kernel source code"
     tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
     echo "kernel source tarball is available in ${STAGING_DIR}"
@@ -573,6 +578,11 @@ build_netboot_initrd () {
     echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
 }
 
+build_netboot_initrd2 () {
+    
+    fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
+}
+
 generate_output () {
 
     highlight "prepare dirs"
@@ -591,6 +601,10 @@ generate_output () {
     cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
     cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
     cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/boot/cmdline
+    cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
+    echo "$(git rev-parse --short HEAD)" > ${OUTPUT_DIR}/boot/git-short-hash
+    cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
+    echo "done"
 
     tree ${OUTPUT_DIR}
 }
@@ -643,7 +657,7 @@ banner "build custom kernel"
 build_custom_kernel 
 
 banner "build netboot initrd"
-build_netboot_initrd
+build_netboot_initrd2
 
 if [ "$NOCEFDK" != "true" ]; then
 
