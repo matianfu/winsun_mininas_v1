@@ -432,7 +432,9 @@ build_kbl_initrd_cpio () {
 }
 
 #
-# build kernel boot loader, this code does NOT work properly
+# build kernel boot loader, this code does NOT work properly, possibly because 
+# 1) we did not provide a zipped archive
+# 2) only lzma enabled in kernel, no zip or bzip2
 # don't delete
 #
 build_kbl () {
@@ -461,6 +463,11 @@ build_kbl () {
     echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
 }
 
+#
+# This new method use configure file
+#
+# see: http://landley.net/writing/rootfs-howto.html 
+#
 build_kbl_v2()  {
 
     highlight "remove old kbl folder in kernel dir if any"
