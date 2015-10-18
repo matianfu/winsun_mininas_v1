@@ -623,6 +623,11 @@ generate_output () {
 # program starts
 #
 
+if [[ ! -z $(git status -s) ]]; then 
+    echo "git working tree is not clean."
+    exit 1
+fi
+
 if [ $# -ne 0 ]; then
     if [ $# -ne 1 ] || [ "$1" != "-n" ]
     then
