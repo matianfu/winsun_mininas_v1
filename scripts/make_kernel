@@ -13,12 +13,12 @@ echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
 echo "TFTP_ROOT is set to $TFTP_ROOT"
 
 WORKSPACE=${BARCELONA_ROOT}/workspace
-CEFDK_BIN=${BARCELONA_ROOT}/binaries/IntelCE
+CEFDK_BIN=${WORKSPACE}/binaries/IntelCE
 
 rm ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/.built
 rm ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
 
-make -C ${WORKSPACE} kernel prepare
+make -C ${WORKSPACE} kernel
 
 cp ${CEFDK_BIN}/bzImage ${TFTP_ROOT}
 

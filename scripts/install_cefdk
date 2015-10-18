@@ -426,19 +426,20 @@ build_kbl_initrd_cpio () {
     highlight "pack cpio file"
     cd ${TMP_DIR}/kbl_initrd
     # pwd
-    fakeroot -i $FSTATE -s $FSTATE sh -c  "find . | cpio -H newc -o > ${STAGING_DIR}/kbl_initrd.cpio"    
+    fakeroot -i $FSTATE -s $FSTATE sh -c  "find . | cpio -H newc -o | gzip > ${STAGING_DIR}/initrd.kbl.gz"    
     cd - &> /dev/null
     echo "kbl_initrd.cpio is available in ${STAGING_DIR}" 
 }
 
 #
-# build kernel boot loader
+# build kernel boot loader, this code does NOT work properly
+# don't delete
 #
 build_kbl () {
 
     # 
-    # sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${BARCELONA_ROOT}/staging/kbl_initrd.cpio\"" tmp/kbl_kernel_config
-
+    #
+    #
     highlight "remove old cpio file"
     rm -rf ${STAGING_DIR}/kbl_initrd.cpio
     echo "done"
@@ -450,8 +451,29 @@ build_kbl () {
     echo "done"
 
     highlight "set initramfs path to kernel config"
-    sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${STAGING_DIR}/kbl_initrd.cpio\"" ${KERNEL_DIR}/.config
+    sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${STAGING_DIR}/initrd.kbl.gz\"" ${KERNEL_DIR}/.config
     echo "done"
+
+    make_kernel
+
+    highlight "cp to output folder"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.kbl
+    echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
+}
+
+build_kbl_v2()  {
+
+    highlight "remove old kbl folder in kernel dir if any"
+    rm -rf ${KERNEL_DIR}/kbl
+    mkdir -p ${KERNEL_DIR}/kbl
+
+    highlight "copy kbl initramfs template files"
+    cp ${TEMPL_DIR}/kbl_initramfs/* ${KERNEL_DIR}/kbl
+    cp ${CACHE_DIR}/busybox-i686 ${KERNEL_DIR}/kbl/busybox
+    cp ${CACHE_DIR}/kexec ${KERNEL_DIR}/kbl/kexec
+
+    highlight "copy kbl kernel config"
+    cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
 
     make_kernel
 
@@ -612,7 +634,9 @@ banner "prepare workspace"
 prepare_workspace
 
 banner "build kbl"
-build_kbl
+build_kbl_v2
+
+exit 0
 
 banner "pack kernel source"
 pack_kernel_source
