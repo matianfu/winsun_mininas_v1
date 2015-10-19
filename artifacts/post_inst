@@ -119,6 +119,8 @@ if [ "$SKIP_BUILD" != "yes" ]; then
     highlight "configure, make, and install zfs"
     chroot /target /bin/bash -c "cd /media/usb0/build/zfs-0.6.4.2; pwd; ./configure; make deb-utils deb-kmod"
 
+fi
+
 highlight "install zfs packages"
 chroot /target /bin/bash -c "dpkg -i /media/usb0/build/zfs-0.6.4.2/*.deb"
 
