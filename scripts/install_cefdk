@@ -162,7 +162,9 @@ prepare_cache_files() {
     # http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz 
     # 
     WHEEZY_NETBOOT_NAME=netboot.tar.gz
-    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+    # WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-amd64/20130430/images/netboot/netboot.tar.gz"
+
 
     fetch_file_cache $WHEEZY_NETBOOT_NAME $WHEEZY_NETBOOT_URL
 
