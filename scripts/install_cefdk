@@ -554,7 +554,7 @@ build_netboot_initrd () {
     touch $FSTATE
 
     highlight "extract original debian initrd in netboot tarball"
-    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/i386/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/amd64/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
     echo "done"
 
     highlight "unpack cpio"
