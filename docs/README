@@ -1,1 +1,12 @@
 1. Both usb_driver.zip and pci-quirks.pdf file are password protected. The password is iec2015.
+
+For build on debian wheezy
+
+sudo apt-get install libc6-dev-i386 build-essential expect lib32ncurses5-dev lib32ncurses5 sudo lib32z1 doxygen tree
+
+adduser <yourusername> sudo
+
+
+export BARCELONA_ROOT=`pwd`
+
+scripts/deb_build
