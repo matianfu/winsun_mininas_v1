@@ -323,7 +323,7 @@ make_kernel () {
     highlight "making kernel, this may take quite a few while, please be patient."
     rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/.built
     rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
-    make -C ${WORKSPACE} kernel # &> /dev/null
+    make -C ${WORKSPACE} kernel &> /dev/null
     echo "done"
 }
 
