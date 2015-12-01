@@ -600,6 +600,9 @@ build_kpkg () {
     cd ${BARCELONA_ROOT}/tmp/kernel
     tar xzf ${BARCELONA_ROOT}/staging/linux-2.6.39.tar.gz
 
+    # dont forget to copy config file
+    cp ${BARCELONA_ROOT}/artifacts/kernel_config_amd64 .config
+
     # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
     make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
 }
