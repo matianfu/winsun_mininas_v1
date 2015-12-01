@@ -592,8 +592,9 @@ build_netboot_initrd2 () {
     fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
 }
 
-
+#
 # This function make kernel package and copy generated .deb file into staging folder
+#
 build_deb_packages () {
 
     local KER_DIR=${BARCELONA_ROOT}/tmp/kernel
@@ -733,7 +734,7 @@ if [ "$NOCEFDK" != "true" ]; then
 fi
 
 banner "build debian kernel package"
-build_kpkg
+build_deb_packages
 
 banner "generate output"
 generate_output
