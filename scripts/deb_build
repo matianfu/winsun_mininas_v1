@@ -592,6 +592,18 @@ build_netboot_initrd2 () {
     fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
 }
 
+build_kpkg () {
+
+    rm -rf ${BARCELONA_ROOT}/tmp
+    mkdir -p ${BARCELONA_ROOT}/tmp/kernel
+
+    cd ${BARCELONA_ROOT}/tmp/kernel
+    tar xzf ${BARCELONA_ROOT}/staging/linux-2.6.39.tar.gz
+
+    # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
+    make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
+}
+
 generate_output () {
 
     highlight "prepare dirs"
@@ -691,6 +703,9 @@ if [ "$NOCEFDK" != "true" ]; then
     tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
     echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
 fi
+
+banner "build debian kernel package"
+build_kpkg
 
 banner "generate output"
 generate_output
