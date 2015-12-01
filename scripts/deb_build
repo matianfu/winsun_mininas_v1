@@ -592,7 +592,13 @@ build_netboot_initrd2 () {
     fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
 }
 
-build_kpkg () {
+
+# This function make kernel package and copy generated .deb file into staging folder
+build_deb_packages () {
+
+    local KER_DIR=${BARCELONA_ROOT}/tmp/kernel
+    local SPL_DIR=${BARCELONA_ROOT}/tmp/spl-0.6.4.2
+    local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.4.2
 
     rm -rf ${BARCELONA_ROOT}/tmp
     mkdir -p ${BARCELONA_ROOT}/tmp/kernel
@@ -606,6 +612,24 @@ build_kpkg () {
     # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
     # fakeroot is required when packaging
     fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
+
+    cp ${BARCELONA_ROOT}/tmp/*.deb ${BARCELONA_ROOT}/staging
+
+    cd ${TMP_DIR}
+
+    tar xzf ${BARCELONA_ROOT}/cache/spl-0.6.4.2.tar.gz
+    tar xzf ${BARCELONA_ROOT}/cache/zfs-0.6.4.2.tar.gz
+
+    cd $SPL_DIR
+
+    # must use absolute path
+    ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR}
+    make deb-utils deb-kmod
+
+    cd $ZFS_DIR
+
+    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR}
+    make deb-utils deb-kmod
 }
 
 generate_output () {
