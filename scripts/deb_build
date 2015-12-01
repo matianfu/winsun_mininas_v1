@@ -604,7 +604,8 @@ build_kpkg () {
     cp ${BARCELONA_ROOT}/artifacts/kernel_config_amd64 .config
 
     # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
-    make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
+    # fakeroot is required when packaging
+    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
 }
 
 generate_output () {
