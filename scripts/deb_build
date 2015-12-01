@@ -625,12 +625,16 @@ build_deb_packages () {
 
     # must use absolute path
     ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR}
-    make deb-utils deb-kmod
+    # make deb-utils deb-kmod
+    # deb-kmod build error, so we build deb-utils and .ko files but not deb-kmod
+    make deb-utils
+    make
 
     cd $ZFS_DIR
 
     ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR}
-    make deb-utils deb-kmod
+    make deb-utils
+    make
 }
 
 generate_output () {
