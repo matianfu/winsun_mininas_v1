@@ -600,6 +600,7 @@ build_deb_packages () {
     local KER_DIR=${BARCELONA_ROOT}/tmp/kernel
     local SPL_DIR=${BARCELONA_ROOT}/tmp/spl-0.6.4.2
     local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.4.2
+    local KER_STAGING_DIR=${BARCELONA_ROOT}/staging/linux-image
 
     rm -rf ${BARCELONA_ROOT}/tmp
     mkdir -p ${BARCELONA_ROOT}/tmp/kernel
@@ -635,7 +636,32 @@ build_deb_packages () {
 
     ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR}
     make deb-utils
-    make    
+    make 
+
+    # now all files we need is ready
+    mkdir -p ${KER_STAGING_DIR}
+    
+    dpkg-deb -x ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}
+    dpkg-deb -e ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}/DEBIAN
+
+    # 
+    local EXTRA_DIR=${KER_STAGING_DIR}/lib/modules/2.6.39.001/extra
+    mkdir -p ${EXTRA_DIR}
+
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/spl ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/splat ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/avl ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/nvpair ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/unicode ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zcommon ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zfs ${EXTRA_DIR}
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zpios ${EXTRA_DIR}
+
+    cd ${BARCELONA_ROOT}/staging
+
+    dpkg-deb -b linux-image-2.6.39.001_001_amd64.deb linux-image
+
+    
 }
 
 generate_output () {
