@@ -625,6 +625,7 @@ build_deb_packages () {
 
     # must use absolute path
     ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR}
+
     # make deb-utils deb-kmod
     # deb-kmod build error, so we build deb-utils and .ko files but not deb-kmod
     make deb-utils
@@ -634,7 +635,7 @@ build_deb_packages () {
 
     ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR}
     make deb-utils
-    make
+    make    
 }
 
 generate_output () {
@@ -719,8 +720,10 @@ build_kbl_v2
 banner "pack kernel source"
 pack_kernel_source
 
-banner "build custom kernel"
-build_custom_kernel 
+# banner "build custom kernel"
+# build_custom_kernel 
+banner "build debian kernel package"
+build_deb_packages
 
 banner "build netboot initrd"
 build_netboot_initrd2
@@ -736,9 +739,6 @@ if [ "$NOCEFDK" != "true" ]; then
     tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
     echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
 fi
-
-banner "build debian kernel package"
-build_deb_packages
 
 banner "generate output"
 generate_output
