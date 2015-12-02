@@ -106,7 +106,8 @@ else
     #
 
     try_boot_partition /dev/sda1
-    try_boot_partition /dev/sdb1 
+    try_boot_partition /dev/sdb1
+    try_boot_partition /dev/mmcblk0p2 
     try_boot_partition /dev/mmcblk0p1
 
     echo "no bootable device/partition found. fall back to shell"

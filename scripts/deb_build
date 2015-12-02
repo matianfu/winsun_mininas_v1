@@ -1,9 +1,31 @@
 #!/bin/bash
 
-set -e
+# set -e
 
 DASH="------------------------------"
 NOCEFDK="true"
+
+DISC_DIR=${BARCELONA_ROOT}/disc
+
+#
+# define all paths
+#
+WORKSPACE=${BARCELONA_ROOT}/workspace
+
+SCRIPT_DIR=${BARCELONA_ROOT}/scripts
+PATCH_DIR=${BARCELONA_ROOT}/patches
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
+STAGING_DIR=${BARCELONA_ROOT}/staging
+CACHE_DIR=${BARCELONA_ROOT}/cache
+TEMPL_DIR=${BARCELONA_ROOT}/template
+TMP_DIR=${BARCELONA_ROOT}/tmp
+
+PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
+KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
+CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
+CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
+
 
 #
 # echo $1 in green color
@@ -47,8 +69,6 @@ test_file () {
     printf "done\n"
 }
 
-DISC_DIR=${BARCELONA_ROOT}/disc
-
 test_iso_files () {
 
     # -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
@@ -82,25 +102,6 @@ check_cache_file_md5 () {
 
     cd -
 }
-
-#
-# define all paths
-#
-WORKSPACE=${BARCELONA_ROOT}/workspace
-
-SCRIPT_DIR=${BARCELONA_ROOT}/scripts
-PATCH_DIR=${BARCELONA_ROOT}/patches
-OUTPUT_DIR=${BARCELONA_ROOT}/output
-ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
-STAGING_DIR=${BARCELONA_ROOT}/staging
-CACHE_DIR=${BARCELONA_ROOT}/cache
-TEMPL_DIR=${BARCELONA_ROOT}/template
-TMP_DIR=${BARCELONA_ROOT}/tmp
-
-PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
-KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
-CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
-CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
 
 # test single cache file
 #
@@ -185,7 +186,7 @@ prepare_cache_files() {
     fetch_file_cache $ZFS_TARBALL_NAME $ZFS_TARBALL_URL
 }
 
-clean_dirs () {
+clean_all_dirs () {
 
     highlight "clean staging dir"
     sudo rm -rf ${STAGING_DIR}
@@ -498,20 +499,19 @@ pack_kernel_source () {
     echo "done"
 
     highlight "remove unnecessary files"
-    rm ${KERNEL_DIR}/.build
-    rm ${KERNEL_DIR}/.configure
-    rm ${KERNEL_DIR}/.install_dev
-    rm ${KERNEL_DIR}/.install_target
-    rm ${KERNEL_DIR}/linux-2.6.39
-    rm ${KERNEL_DIR}/.patch
-    rm ${KERNEL_DIR}/.unpacked
+    rm -rf ${KERNEL_DIR}/.build
+    rm -rf ${KERNEL_DIR}/.configure
+    rm -rf ${KERNEL_DIR}/.install_dev
+    rm -rf ${KERNEL_DIR}/.install_target
+    rm -rf ${KERNEL_DIR}/linux-2.6.39
+    rm -rf ${KERNEL_DIR}/.patch
+    rm -rf ${KERNEL_DIR}/.unpacked
     echo "done"
 
     highlight "apply kernel config"
     cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
     echo "done"
     
-
     highlight "tar kernel source code"
     tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
     echo "kernel source tarball is available in ${STAGING_DIR}"
@@ -548,6 +548,7 @@ build_custom_kernel () {
 build_netboot_initrd () {
 
     local FSTATE=${TMP_DIR}/.fstate
+    local FAKEROOT="fakeroot -i $FSTATE -s $FSTATE"
 
     rm -rf ${TMP_DIR}
     mkdir -p ${TMP_DIR}
@@ -564,22 +565,33 @@ build_netboot_initrd () {
     fakeroot -i $FSTATE -s $FSTATE ls -sail
     cd - &> /dev/null
 
-    # fill preseed.cfg
     highlight "inject preseed.cfg file"
     fakeroot -i $FSTATE -s $FSTATE cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
     echo "done"
 
+    highlight "inject post_inst scripts"
+    $FAKEROOT cp ${ARTIFACT_DIR}/post_inst ${TMP_DIR}/initrd/bin
+    $FAKEROOT chmod a+x ${TMP_DIR}/initrd/bin/post_inst
+    echo "done"
+
     # cp modules
     highlight "inject kernel modules"
-    fakeroot mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
-    fakeroot -i $FSTATE -s $FSTATE cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
-    fakeroot -i $FSTATE -s $FSTATE ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
+    $FAKEROOT mkdir -p ${TMP_DIR}/initrd/lib/modules/
+    # fakeroot -i $FSTATE -s $FSTATE cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+    $FAKEROOT cp -r ${STAGING_DIR}/linux-image/lib/modules/2.6.39.001 ${TMP_DIR}/initrd/lib/modules
+    $FAKEROOT ls ${TMP_DIR}/initrd/lib/modules/2.6.39.001 -sail
+    echo "done"
+
+    highlight "inject gzip"
+    $FAKEROOT cp -r ${ARTIFACT_DIR}/gzip ${TMP_DIR}/initrd/bin
+    $FAKEROOT chmod a+x ${TMP_DIR}/initrd/bin/gzip
+    echo "done"
 
     # repack
     highlight "repack cpio archive"
     rm -f ${TMP_DIR}/initrd.cpio
     cd ${TMP_DIR}/initrd
-    fakeroot -i $FSTATE -s $FSTATE sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
+    $FAKEROOT sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
     cd - &> /dev/null
 
     highlight "zip initrd"
@@ -592,6 +604,59 @@ build_netboot_initrd2 () {
     fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
 }
 
+build_netboot_initrd3 () {
+
+rm -rf ${TMP_DIR}
+mkdir -p ${TMP_DIR}
+
+highlight "extract original debian initrd in netboot tarball"
+tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/amd64/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+echo "done"
+
+highlight "unpack cpio"
+mkdir -p ${TMP_DIR}/initrd
+cd ${TMP_DIR}/initrd
+sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
+ls -sail
+cd - &> /dev/null
+
+# fill preseed.cfg
+highlight "inject preseed.cfg file"
+cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+echo "done"
+
+highlight "inject post_inst scripts"
+cp ${ARTIFACT_DIR}/post_inst ${TMP_DIR}/initrd/bin
+chmod a+x ${TMP_DIR}/initrd/bin/post_inst
+
+# cp modules
+highlight "inject kernel modules"
+mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
+cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
+
+highlight "inject gzip"
+cp -r ${ARTIFACT_DIR}/gzip ${TMP_DIR}/initrd/bin
+chmod a+x ${TMP_DIR}/initrd/bin/gzip
+
+# repack
+highlight "repack cpio archive"
+rm -f ${TMP_DIR}/initrd.cpio
+cd ${TMP_DIR}/initrd
+sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
+cd - &> /dev/null
+
+highlight "zip initrd"
+cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${STAGING_DIR}/initrd.netboot.gz
+echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
+
+}
+
+build_netboot_initrd4 () {
+
+    fakeroot bash -c "build_netboot_initrd3"
+}
+
 #
 # This function make kernel package and copy generated .deb file into staging folder
 #
@@ -602,92 +667,136 @@ build_deb_packages () {
     local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.4.2
     local KER_STAGING_DIR=${BARCELONA_ROOT}/staging/linux-image
 
-    rm -rf ${BARCELONA_ROOT}/tmp
-    mkdir -p ${BARCELONA_ROOT}/tmp/kernel
+    banner "building deb packages"
 
+    highlight "clean previously generated files in staging folder"
+    rm -rf ${KER_STAGING_DIR}
+    rm -rf ${STAGING_DIR}/*.deb
+    echo "done"
+
+    highlight "clean tmp dir"
+    rm -rf ${BARCELONA_ROOT}/tmp
+    echo "done"
+
+    highlight "extract kernel source code into tmp/kernel"
+    mkdir -p ${BARCELONA_ROOT}/tmp/kernel
     cd ${BARCELONA_ROOT}/tmp/kernel
     tar xzf ${BARCELONA_ROOT}/staging/linux-2.6.39.tar.gz
+    echo "done"
 
+    highlight "apply kernel config"
     # dont forget to copy config file
     cp ${BARCELONA_ROOT}/artifacts/kernel_config_amd64 .config
+    echo "done"
 
+    highlight "make kernel package, please wait..."
     # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
     # fakeroot is required when packaging
-    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image kernel_headers
+    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image >& /dev/null
+    echo "kernel package generated in tmp dir"
 
-    cp ${BARCELONA_ROOT}/tmp/*.deb ${BARCELONA_ROOT}/staging
-
+    highlight "extract spl and zfs source tar ball"
+    # cp ${BARCELONA_ROOT}/tmp/*.deb ${BARCELONA_ROOT}/staging
     cd ${TMP_DIR}
-
     tar xzf ${BARCELONA_ROOT}/cache/spl-0.6.4.2.tar.gz
     tar xzf ${BARCELONA_ROOT}/cache/zfs-0.6.4.2.tar.gz
+    echo "done"
 
+    highlight "configure spl"
     cd $SPL_DIR
-
     # must use absolute path
-    ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR}
+    ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR} >& /dev/null
+    echo "done"
 
+    highlight "build spl, deb-utils and kernel modules, but not deb-kmod"
     # make deb-utils deb-kmod
     # deb-kmod build error, so we build deb-utils and .ko files but not deb-kmod
-    make deb-utils
-    make
+    make deb-utils -j8 >& /dev/null
+    make -j8 >& /dev/null
+    echo "done"
 
+    highlight "configure zfs"
     cd $ZFS_DIR
+    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR} 
+    echo "done"
 
-    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR}
-    make deb-utils
-    make 
+    highlight "build zfs, deb-utils and kernel modules, but not deb-kmod"
+    make deb-utils -j8 >& /dev/null
+    make -j8 >& /dev/null
+    echo "done"
 
-    # now all files we need is ready
+    # now all files we need is ready in tmp folder
+
+    highlight "extract linux-image package into staging/linux-image"
     mkdir -p ${KER_STAGING_DIR}
-    
     dpkg-deb -x ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}
     dpkg-deb -e ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}/DEBIAN
+    echo "done"
 
-    # 
+    highlight "copy spl/zfs kernel modules into linux-image folder"
     local EXTRA_DIR=${KER_STAGING_DIR}/lib/modules/2.6.39.001/extra
     mkdir -p ${EXTRA_DIR}
 
-    cp -r ${TMP_DIR}/spl-0.6.4.2/module/spl ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/spl-0.6.4.2/module/splat ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/avl ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/nvpair ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/unicode ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zcommon ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zfs ${EXTRA_DIR}
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zpios ${EXTRA_DIR}
+    mkdir -p ${EXTRA_DIR}/spl
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/spl/*.ko ${EXTRA_DIR}/spl
+    mkdir -p ${EXTRA_DIR}/splat
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/splat/*.ko  ${EXTRA_DIR}/splat
+    mkdir -p ${EXTRA_DIR}/avl
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/avl/*.ko ${EXTRA_DIR}/avl
+    mkdir -p ${EXTRA_DIR}/nvpair
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/nvpair/*.ko ${EXTRA_DIR}/nvpair
+    mkdir -p ${EXTRA_DIR}/unicode
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/unicode/*.ko ${EXTRA_DIR}/unicode
+    mkdir -p ${EXTRA_DIR}/zcommon
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zcommon/*.ko ${EXTRA_DIR}/zcommon
+    mkdir -p ${EXTRA_DIR}/zfs
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zfs/*.ko ${EXTRA_DIR}/zfs
+    mkdir -p ${EXTRA_DIR}/zpios
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zpios/*.ko ${EXTRA_DIR}/zpios
+    echo "done"
 
+    highlight "re-package linux-image debian package"
     cd ${BARCELONA_ROOT}/staging
+    dpkg-deb -b linux-image linux-image-2.6.39.001_001_amd64.deb
+    echo "done"
 
-    dpkg-deb -b linux-image-2.6.39.001_001_amd64.deb linux-image
+    highlight "copy spl/zfs debian packages into staging dir"
+    cp ${TMP_DIR}/spl-0.6.4.2/*.deb ${STAGING_DIR}
+    cp ${TMP_DIR}/zfs-0.6.4.2/*.deb ${STAGING_DIR}
+    echo "done"
+    echo "all linux-image and spl/zfs packages are available in staging folder"
 
-    
+    ls -sail ${STAGING_DIR}
 }
 
 generate_output () {
 
     highlight "prepare dirs"
-    sudo rm -rf ${OUTPUT_DIR}
+    rm -rf ${OUTPUT_DIR}
     mkdir -p ${OUTPUT_DIR}
     mkdir -p ${OUTPUT_DIR}/kbl
     mkdir -p ${OUTPUT_DIR}/boot
+    mkdir -p ${OUTPUT_DIR}/boot/deb
     mkdir -p ${OUTPUT_DIR}/cefdk
     echo "done"
 
     highlight "output files"
     cp ${STAGING_DIR}/bzImage.kbl ${OUTPUT_DIR}/kbl/kbl
-    cp ${STAGING_DIR}/bzImage.custom ${OUTPUT_DIR}/boot/bzImage
+#    cp ${STAGING_DIR}/bzImage.custom ${OUTPUT_DIR}/boot/bzImage
+    cp ${STAGING_DIR}/linux-image/boot/vmlinuz-2.6.39.001 ${OUTPUT_DIR}/boot/bzImage
     cp ${STAGING_DIR}/initrd.netboot.gz ${OUTPUT_DIR}/boot/ramdisk
-    cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
-    cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
-    cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+#    cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
+#    cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+#    cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
     cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/boot/cmdline
-    cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
+#    cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
     echo "$(git rev-parse --short HEAD)" > ${OUTPUT_DIR}/boot/git-short-hash
     cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
     cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
-    cp ${ARTIFACT_DIR}/post_inst_hook ${OUTPUT_DIR}/boot/post_inst_hook
-    chmod a+x ${OUTPUT_DIR}/boot/post_inst_hook
+#    cp ${ARTIFACT_DIR}/post_inst_hook ${OUTPUT_DIR}/boot/post_inst_hook
+#    chmod a+x ${OUTPUT_DIR}/boot/post_inst_hook
+
+    cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
     echo "done"
 
     tree ${OUTPUT_DIR}
@@ -697,7 +806,7 @@ generate_output () {
 # program starts
 #
 
-if [[ ! -z $(git status -s) ]]; then echo "git working tree is not clean."; exit 0; fi
+# if [[ ! -z $(git status -s) ]]; then echo "git working tree is not clean."; exit 0; fi
 
 if [ $# -ne 0 ]; then
     if [ $# -ne 1 ] || [ "$1" != "-a" ]
@@ -719,55 +828,65 @@ fi
 banner "test environment variable"
 test_env_var
 
-banner "check prerequisite files"
-test_iso_files
-prepare_cache_files
+#
+# This function will prepare all prerequisite files, workspace, and snapshot kernel
+#
+build_cefdk () {
 
-banner "clean staging, out and tmp folders"
-clean_dirs
+	banner "check prerequisite files"
+	test_iso_files
+	prepare_cache_files
 
-banner "prepare kexec"
-if [ -f ${CACHE_DIR}/kexec ]; then
-    highlight "kexec executable found in cache folder"
-else
-    highlight "kexec executable not found in cache folder" 
-    build_kexec
-fi
+	banner "clean staging, out and tmp folders"
+	clean_all_dirs
 
-banner "install cefdk"
-install_cefdk_iso
+	banner "prepare kexec"
+	if [ -f ${CACHE_DIR}/kexec ]; then
+    	highlight "kexec executable found in cache folder"
+	else
+   		highlight "kexec executable not found in cache folder" 
+    	build_kexec
+	fi
 
-banner "prepare workspace"
-prepare_workspace
+	banner "install cefdk"
+	install_cefdk_iso
 
-banner "build kbl"
-build_kbl_v2
+	banner "prepare workspace"
+	prepare_workspace
 
-banner "pack kernel source"
-pack_kernel_source
+    banner "pack (cleaned) kernel source"
+    pack_kernel_source
+}
+
+# banner "build kbl"
+# build_kbl_v2
+
+# banner "pack kernel source"
+# pack_kernel_source
 
 # banner "build custom kernel"
 # build_custom_kernel 
-banner "build debian kernel package"
-build_deb_packages
 
-banner "build netboot initrd"
-build_netboot_initrd2
+# banner "build debian kernel package"
+# build_deb_packages
 
-if [ "$NOCEFDK" != "true" ]; then
+# banner "build netboot initrd"
+# build_netboot_initrd2
+
+#if [ "$NOCEFDK" != "true" ]; then
 
     # tried to change BR2_JLEVEL to 2, failed.
-    banner "build all (or selected) cefdk packages"
-    highlight "this takes 15~30 minutes, be patient."
-    make -C ${WORKSPACE} &> /dev/null
+#    banner "build all (or selected) cefdk packages"
+#    highlight "this takes 15~30 minutes, be patient."
+#    make -C ${WORKSPACE} &> /dev/null
 
-    highlight "tar lib.modules after cefdk build"
-    tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
-    echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
-fi
+#    highlight "tar lib.modules after cefdk build"
+#    tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
+#    echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
+#fi
 
-banner "generate output"
-generate_output
+#banner "generate output"
+#generate_output
 
 
 
