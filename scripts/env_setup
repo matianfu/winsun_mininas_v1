@@ -1,0 +1,841 @@
+#!/bin/bash
+
+# set -e
+
+DASH="------------------------------"
+NOCEFDK="true"
+
+DISC_DIR=${BARCELONA_ROOT}/disc
+
+#
+# define all paths
+#
+WORKSPACE=${BARCELONA_ROOT}/workspace
+
+SCRIPT_DIR=${BARCELONA_ROOT}/scripts
+PATCH_DIR=${BARCELONA_ROOT}/patches
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
+STAGING_DIR=${BARCELONA_ROOT}/staging
+CACHE_DIR=${BARCELONA_ROOT}/cache
+TEMPL_DIR=${BARCELONA_ROOT}/template
+TMP_DIR=${BARCELONA_ROOT}/tmp
+
+PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
+KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
+CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
+CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
+
+
+#
+# echo $1 in green color
+#
+highlight () {
+
+    echo -e "\e[32m\e[1m${1}\e[0m"
+}
+
+banner () {
+    echo ""
+    highlight $DASH
+    highlight "$1"
+    highlight $DASH
+}
+
+test_env_var () {
+
+    #
+    # test BARCELONA_ROOT env
+    # 
+    if [ -z "$BARCELONA_ROOT" ]; then
+        echo "Error: BARCELONA_ROOT is not defined"
+        exit 1
+    fi
+
+    echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+}
+
+#
+# check if $1 exists as normal file, otherwise exit
+#
+test_file () {
+
+    printf "check $1 ... "
+    if [ ! -f "$1" ]; then
+        printf "Error: file does not exist.\n"
+        highlight "stopped"
+        exit 1
+    fi
+    printf "done\n"
+}
+
+test_iso_files () {
+
+    # -rw-r--r-- 1 ma ma  60338176 Aug 24 00:14 IntelCE-BASE-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma   5617664 Aug 24 00:14 IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma  45783040 Aug 24 00:14 IntelCE-GATEWAY-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma 327315456 Aug 24 00:14 IntelCE-GPL-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma 323629056 Aug 24 00:14 IntelCE-MEDIA-29.0.12364.325671.iso
+    # -rw-r--r-- 1 ma ma  68870144 Aug 24 00:14 IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+
+    highlight "check cefdk installation iso files"
+
+    test_file ${DISC_DIR}/IntelCE-BASE-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-GATEWAY-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-GPL-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-MEDIA-29.0.12364.325671.iso
+    test_file ${DISC_DIR}/IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+}
+
+check_cache_file_md5 () {
+    
+    # workaround for path in md5
+    cd ${WORKSPACE}
+
+    md5sum -c "$1" cache/$1
+
+    if [ ! $? -eq 0]; then
+        echo "Error: md5 check failed for $1"
+        exit 1
+    fi
+
+    cd -
+}
+
+# test single cache file
+#
+# $1: file name
+# $2: url
+#
+fetch_file_cache () {
+
+    mkdir -p ${CACHE_DIR}
+
+    printf "check if $1 is already cached ..."
+    if [ ! -e "${CACHE_DIR}/$1" ]; then
+    
+        printf "NO\n"
+        wget -P ${CACHE_DIR} "$2"
+
+        if [ ! $? -eq 0 ]; then 
+            echo "wget failed: $WHEEZY_NETBOOT_URL"
+            exit 1;
+        fi
+    else
+        printf "YES\n"          
+    fi
+  
+    printf "check md5 for $1 ... "
+    {
+        cd ${BARCELONA_ROOT}
+        # echo "md5sum -c artifacts/${1}.md5"
+        md5sum -c artifacts/${1}.md5
+        cd -
+    } &> /dev/null
+    printf "OK\n"
+}
+
+prepare_cache_files() {
+
+    highlight "prepare (cached) files and packages"
+
+    #
+    # reference: http://www.busybox.net/downloads/binaries/latest/
+    #
+    BUSYBOX_I686_NAME=busybox-i686
+    BUSYBOX_I686_URL="http://www.busybox.net/downloads/binaries/latest/busybox-i686"
+
+    fetch_file_cache $BUSYBOX_I686_NAME $BUSYBOX_I686_URL
+
+    #
+    # reference: https://www.kernel.org/pub/linux/utils/kernel/kexec/
+    #
+    KEXEC_TARBALL_NAME=kexec-tools-2.0.10.tar.gz
+    KEXEC_TARBALL_URL="https://www.kernel.org/pub/linux/utils/kernel/kexec/kexec-tools-2.0.10.tar.gz"
+
+    fetch_file_cache $KEXEC_TARBALL_NAME $KEXEC_TARBALL_URL
+
+    #
+    # reference: http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/ # be sure to use 20130430 version 
+    #
+    # http://ftp.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz
+    # http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz 
+    # 
+    WHEEZY_NETBOOT_NAME=netboot.tar.gz
+    # WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
+    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-amd64/20130430/images/netboot/netboot.tar.gz"
+
+
+    fetch_file_cache $WHEEZY_NETBOOT_NAME $WHEEZY_NETBOOT_URL
+
+    #
+    # reference: http://zfsonlinux.org/generic-deb.html
+    #
+    SPL_TARBALL_NAME=spl-0.6.4.2.tar.gz
+    SPL_TARBALL_URL="http://archive.zfsonlinux.org/downloads/zfsonlinux/spl/spl-0.6.4.2.tar.gz"
+
+    fetch_file_cache $SPL_TARBALL_NAME $SPL_TARBALL_URL
+
+    #
+    # reference: http://zfsonlinux.org/generic-deb.html
+    #
+    ZFS_TARBALL_NAME=zfs-0.6.4.2.tar.gz
+    ZFS_TARBALL_URL="http://archive.zfsonlinux.org/downloads/zfsonlinux/zfs/zfs-0.6.4.2.tar.gz"
+
+    fetch_file_cache $ZFS_TARBALL_NAME $ZFS_TARBALL_URL
+}
+
+clean_all_dirs () {
+
+    highlight "clean staging dir"
+    sudo rm -rf ${STAGING_DIR}
+    mkdir -p ${STAGING_DIR}
+    echo "done"
+
+    highlight "clean output dir"
+    sudo rm -rf ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}/kbl
+    mkdir -p ${OUTPUT_DIR}/boot
+    mkdir -p ${OUTPUT_DIR}/cefdk
+    echo "done"
+
+    highlight "clean tmp dir"
+    sudo rm -rf ${TMP_DIR}
+    echo "done"
+}
+
+
+#
+# This function use expect to install iso image
+#
+install_iso () {
+
+    highlight "installing $1"
+
+    rm -rf ${TMP_DIR}
+    mkdir ${TMP_DIR}
+
+    sudo mount -t iso9660 -o loop disc/$1 ${TMP_DIR}
+    
+{   /usr/bin/expect << EOD
+
+    spawn ${TMP_DIR}/installer -d .
+    set timeout 1
+    expect -exact "--MORE--"
+    send "q"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    expect -exact "Do you accept this agreement, yes or no? (y/n/h)"
+    send "y"
+    set timeout 30
+    expect "Successfully completed installation"
+
+EOD
+} &> /dev/null
+
+    sudo umount ${TMP_DIR}
+    rm -rf ${TMP_DIR}
+}
+
+build_kexec () {
+
+    highlight "build kexec from source code"
+
+    rm -rf ${STAGING_DIR}/kexec-tools-2.0.10
+    
+    highlight "untar source tarball"
+    tar xzf ${CACHE_DIR}/kexec-tools-2.0.10.tar.gz -C ${STAGING_DIR}
+    cd ${STAGING_DIR}/kexec-tools-2.0.10
+
+    # 
+    # this is EXTREMELY important to override CC and CXX rather than CFLAGS and CXXFLAGS, 
+    # otherwise you get the ld relocatable elf 64bit ... to elf 32bit error 
+    #
+    # configure --build=i686-pc-linux-gnu "CC=gcc -static -m32" "CXX=g++ -static -m32" "LDFLAGS=-m32"
+    #
+    highlight "configure kexec source"
+    ./configure --build=i686-pc-linux-gnu "CC=gcc -static -m32 -Os" "CXX=g++ -static -m32 -Os" "LDFLAGS=-m32" &> /dev/null
+
+    highlight "make"
+    make &> /dev/null
+
+    highlight "strip"
+    strip build/sbin/kexec
+
+    highlight "file"
+    file build/sbin/kexec
+
+    highlight "copy to cache folder"
+    cp build/sbin/kexec ${CACHE_DIR}
+
+    cd -
+
+    echo "done"
+}
+
+install_cefdk_iso () {
+
+    rm -rf ${WORKSPACE}
+
+    # in case previous failure
+    rm -rf IntelCE-29.0.12364.325671
+
+    # install five iso
+    install_iso IntelCE-BASE-29.0.12364.325671.iso
+    install_iso IntelCE-GPL-29.0.12364.325671.iso
+    install_iso IntelCE-CEFDK_DEV-29.0.12364.325671.iso
+    install_iso IntelCE-MEDIA-29.0.12364.325671.iso
+    install_iso IntelCE-XWINDOWS_OPENGL-29.0.12364.325671.iso
+
+    # rename 
+    rm -rf workspace
+    mv IntelCE-29.0.12364.325671 workspace
+}
+
+# this function is used for avoiding untar the whole workspace
+# if all we need to re-unpack and patch kernel to start a new kernel build.
+#
+prepare_kernel () {
+
+    highlight  "unpack kernel"
+    make -C ${WORKSPACE} kernel-unpackage &> /dev/null
+    echo "done"
+
+    highlight "patch emmc bug"
+    patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
+
+    highlight "patch usb controller"
+    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
+    echo "done"
+
+    highlight "patch ptrace.h for newer version of gcc"
+    patch ${KERNEL_DIR}/arch/x86/include/asm/ptrace.h < ${PATCH_DIR}/008-kernel-ptrace-suppress-newer-version-compiler-complain.patch
+
+    highlight "patch kernel Makefile to build kernel in multithread way (make -j8)"
+    patch ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < \
+        ${PATCH_DIR}/006-build-kernel-using-multithread.patch
+
+}
+
+make_kernel () {
+
+    highlight "making kernel, this may take quite a few while, please be patient."
+    rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/.built
+    rm -f ${PKGSRC_DIR}/kernel-29.0.12344.325128/kernel_source/linux-2.6.39/.build
+    make -C ${WORKSPACE} kernel &> /dev/null
+    echo "done"
+}
+
+prepare_workspace () {
+
+    highlight "set targetFS package default to n"
+    patch ${WORKSPACE}/package/targetFS/Config.in < ${PATCH_DIR}/000-01-set-targetFS-package-default-n.patch
+
+    # set freetype package default to n, this will result in all graphics-related packages
+    # unselected, including but not limited to graphics, display, directFB, freedesktop.
+    # this will save about 25 minutes for build time.
+    highlight "set freetype package default to n"
+    patch ${WORKSPACE}/package/freetype/Config.in < ${PATCH_DIR}/000-02-set-freetype-package-default-n.patch
+
+    highlight "disable ext2root build, error in Ubuntu 12.04, but not 15.04"
+    patch ${WORKSPACE}/target/ext2/Config.in < ${PATCH_DIR}/000-03-set-ext2root-default-n.patch
+
+    highlight "disable tarroot build, error in Ubuntu 12.04, but not 15.04"
+    patch ${WORKSPACE}/target/tar/Config.in < ${PATCH_DIR}/000-04-set-tarroot-default-n.patch
+
+    highlight "generate (buildroot) global buildroot config"
+    make -C ${WORKSPACE} defconfig &> /dev/null
+    echo "done"
+
+    # unpack bison and patch bug
+    highlight "unpack bison"
+    make -C ${WORKSPACE} bison-unpackage &> /dev/null
+    echo "done"
+
+    highlight "patch bison"
+    patch ${WORKSPACE}/project_build_i686/IntelCE/bison-29.0.12344.325128/bison-2.4.2/lib/stdio.in.h < ${PATCH_DIR}/001-bison-stdio.in.h-false-warning.patch
+
+    # patch Makefile to use host fakeroot-ng
+    highlight "patch buildroot make file to use host fakeroot"
+    patch ${WORKSPACE}/Makefile < ${PATCH_DIR}/003-Makefile-use-host-fakeroot-ng.patch
+
+    # unpack busybox
+    highlight "unpack busybox"
+    make -C ${WORKSPACE} busybox-unpackage &> /dev/null
+    echo "done"
+
+    highlight "patch busybox to enable pivot_root and switch_root"
+    patch ${WORKSPACE}/project_build_i686/IntelCE/busybox-29.0.12344.325128/conf/busybox.config < ${PATCH_DIR}/004-busybox-enable-pivot-root-and-switch-root.patch
+
+    highlight "patch absolute-path bug in busybox-install.tar.gz archive"
+    patch ${WORKSPACE}/project_build_i686/IntelCE/busybox-29.0.12344.325128/mk/busybox.mk < \
+        ${PATCH_DIR}/005-busybox-fix-absolute-path-inside-busybox-install-tar-gz.patch
+
+    highlight "patch ramdisk makefile"
+    patch ${WORKSPACE}/target/ramdisk/ramdisk.mk < ${PATCH_DIR}/100-modified-ramdisk-makefile-v2.patch
+
+    highlight "build toolchain"
+    make -C ${WORKSPACE} toolchain &> /dev/null
+    echo "done"
+
+    highlight "tar toolchain lib files for (cefdk) ramdisk"
+    tar -czf ${WORKSPACE}/target/ramdisk/toolchain_install.tar.gz -C ${WORKSPACE}/project_build_i686/IntelCE/root/ .
+    tar czf ${STAGING_DIR}/toolchain.lib.tar.gz -C ${WORKSPACE}/project_build_i686/IntelCE/root/ .
+    echo "toolchain.lib.tar.gz is available in ${STAGING_DIR}" 
+
+    # unpack and patch kernel
+    prepare_kernel
+
+    # there is no .config if kernel have never been built
+    make_kernel
+
+    highlight "snapshot kernel for rebuilding later"
+    tar czf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR} .
+    echo "kernel.snapshot.tar.gz is available in ${STAGING_DIR}"
+
+    # highlight "tar workspace"
+    # tar cfz ${STAGING_DIR}/workspace.tar.gz -C ${WORKSPACE} .
+    # echo "workspace.tar.gz is available in ${STAGING_DIR}"
+}
+
+build_kbl_initrd_cpio () {
+
+    local FSTATE=${TMP_DIR}/.fstate
+
+    rm -rf ${TMP_DIR} 
+    mkdir -p ${TMP_DIR}/kbl_initrd
+    touch $FSTATE
+
+    highlight "copy template files"
+    fakeroot -i $FSTATE -s $FSTATE cp -r ${TEMPL_DIR}/kbl_initrd/* ${TMP_DIR}/kbl_initrd
+    # enable this if you are suspicious 
+    # fakeroot -i $FSTATE -s $FSTATE ls ${TMP_DIR}/kbl_initrd -sail
+    echo "done"
+
+    highlight "copy busybox and kexec"
+    fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/busybox-i686 ${TMP_DIR}/kbl_initrd/bin/busybox
+    fakeroot -i $FSTATE -s $FSTATE cp ${CACHE_DIR}/kexec ${TMP_DIR}/kbl_initrd/bin
+    echo "done"
+ 
+    # mknod -m 622 console c 5 1
+    # mknod -m 622 tty0 c 4 0
+    highlight "mknod console & tty0"
+    fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/console c 5 1
+    fakeroot -i $FSTATE -s $FSTATE mknod -m 622 ${TMP_DIR}/kbl_initrd/dev/tty0 c 4 0
+    echo "done"
+
+    highlight "pack cpio file"
+    cd ${TMP_DIR}/kbl_initrd
+    # pwd
+    fakeroot -i $FSTATE -s $FSTATE sh -c  "find . | cpio -H newc -o | gzip > ${STAGING_DIR}/initrd.kbl.gz"    
+    cd - &> /dev/null
+    echo "kbl_initrd.cpio is available in ${STAGING_DIR}" 
+}
+
+#
+# build kernel boot loader, this code does NOT work properly, possibly because 
+# 1) we did not provide a zipped archive
+# 2) only lzma enabled in kernel, no zip or bzip2
+# don't delete
+#
+build_kbl () {
+
+    # 
+    #
+    #
+    highlight "remove old cpio file"
+    rm -rf ${STAGING_DIR}/kbl_initrd.cpio
+    echo "done"
+
+    build_kbl_initrd_cpio
+
+    highlight "apply kbl_kernel_config to current kernel"
+    cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+    echo "done"
+
+    highlight "set initramfs path to kernel config"
+    sed -i "/CONFIG_INITRAMFS_SOURCE/c\\CONFIG_INITRAMFS_SOURCE=\"${STAGING_DIR}/initrd.kbl.gz\"" ${KERNEL_DIR}/.config
+    echo "done"
+
+    make_kernel
+
+    highlight "cp to output folder"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.kbl
+    echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
+}
+
+#
+# This new method use configure file
+#
+# see: http://landley.net/writing/rootfs-howto.html 
+#
+build_kbl_v2()  {
+
+    highlight "remove old kbl folder in kernel dir if any"
+    rm -rf ${KERNEL_DIR}/kbl
+    echo "done"
+
+    highlight "copy kbl initramfs template files"
+    mkdir -p ${KERNEL_DIR}/kbl
+    cp ${TEMPL_DIR}/kbl_initramfs/* ${KERNEL_DIR}/kbl
+    cp ${CACHE_DIR}/busybox-i686 ${KERNEL_DIR}/kbl/busybox
+    cp ${CACHE_DIR}/kexec ${KERNEL_DIR}/kbl/kexec
+    echo "done"
+
+    highlight "apply kbl kernel config"
+    cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+    echo "done"
+
+    make_kernel
+
+    highlight "cp to output folder"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.kbl
+    echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
+}
+
+pack_kernel_source () {
+    
+    highlight "clean kernel source"
+    make -C ${KERNEL_DIR} mrproper &> /dev/null
+    echo "done"
+
+    highlight "remove unnecessary files"
+    rm -rf ${KERNEL_DIR}/.build
+    rm -rf ${KERNEL_DIR}/.configure
+    rm -rf ${KERNEL_DIR}/.install_dev
+    rm -rf ${KERNEL_DIR}/.install_target
+    rm -rf ${KERNEL_DIR}/linux-2.6.39
+    rm -rf ${KERNEL_DIR}/.patch
+    rm -rf ${KERNEL_DIR}/.unpacked
+    echo "done"
+
+    highlight "apply kernel config"
+    cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
+    echo "done"
+    
+    highlight "tar kernel source code"
+    tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
+    echo "kernel source tarball is available in ${STAGING_DIR}"
+}
+
+build_custom_kernel () {
+    
+    highlight "remove kernel source"
+    rm -rf ${KERNEL_DIR}/*
+    echo "done"
+
+    highlight "restore kernel snapshot"
+    tar xzf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR}
+    echo "done"
+
+    highlight "apply custom kernel config"
+    cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
+    echo "done"
+
+    make_kernel
+
+    # cp bzImage
+    highlight "copy kernel image"
+    cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.custom
+    echo "custom kernel (bzImage.custom) is available in ${STAGING_DIR}" 
+}
+
+#
+# this function use fakeroot (persistently)
+#
+build_netboot_initrd () {
+
+    local FSTATE=${TMP_DIR}/.fstate
+    local FAKEROOT="fakeroot -i $FSTATE -s $FSTATE"
+
+    rm -rf ${TMP_DIR}
+    mkdir -p ${TMP_DIR}
+    touch $FSTATE
+
+    highlight "extract original debian initrd in netboot tarball"
+    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/amd64/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+    echo "done"
+
+    highlight "unpack cpio"
+    mkdir -p ${TMP_DIR}/initrd
+    cd ${TMP_DIR}/initrd
+    fakeroot -i $FSTATE -s $FSTATE sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
+    fakeroot -i $FSTATE -s $FSTATE ls -sail
+    cd - &> /dev/null
+
+    highlight "inject preseed.cfg file"
+    fakeroot -i $FSTATE -s $FSTATE cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
+    echo "done"
+
+    highlight "inject post_inst scripts"
+    $FAKEROOT cp ${ARTIFACT_DIR}/post_inst ${TMP_DIR}/initrd/bin
+    $FAKEROOT chmod a+x ${TMP_DIR}/initrd/bin/post_inst
+    echo "done"
+
+    # cp modules
+    highlight "inject kernel modules"
+    $FAKEROOT mkdir -p ${TMP_DIR}/initrd/lib/modules/
+    # fakeroot -i $FSTATE -s $FSTATE cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
+    $FAKEROOT cp -r ${STAGING_DIR}/linux-image/lib/modules/2.6.39.001 ${TMP_DIR}/initrd/lib/modules
+    $FAKEROOT ls ${TMP_DIR}/initrd/lib/modules/2.6.39.001 -sail
+    echo "done"
+
+    highlight "inject gzip"
+    $FAKEROOT cp -r ${ARTIFACT_DIR}/gzip ${TMP_DIR}/initrd/bin
+    $FAKEROOT chmod a+x ${TMP_DIR}/initrd/bin/gzip
+    echo "done"
+
+    # repack
+    highlight "repack cpio archive"
+    rm -f ${TMP_DIR}/initrd.cpio
+    cd ${TMP_DIR}/initrd
+    $FAKEROOT sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
+    cd - &> /dev/null
+
+    highlight "zip initrd"
+    cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${STAGING_DIR}/initrd.netboot.gz
+    echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
+}
+
+build_netboot_initrd2 () {
+    
+    fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
+}
+
+#
+# This function make kernel package and copy generated .deb file into staging folder
+#
+build_deb_packages () {
+
+    local KER_DIR=${BARCELONA_ROOT}/tmp/kernel
+    local SPL_DIR=${BARCELONA_ROOT}/tmp/spl-0.6.4.2
+    local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.4.2
+    local KER_STAGING_DIR=${BARCELONA_ROOT}/staging/linux-image
+
+    banner "building deb packages"
+
+    highlight "clean previously generated files in staging folder"
+    rm -rf ${KER_STAGING_DIR}
+    rm -rf ${STAGING_DIR}/*.deb
+    echo "done"
+
+    highlight "clean tmp dir"
+    rm -rf ${BARCELONA_ROOT}/tmp
+    echo "done"
+
+    highlight "extract kernel source code into tmp/kernel"
+    mkdir -p ${BARCELONA_ROOT}/tmp/kernel
+    cd ${BARCELONA_ROOT}/tmp/kernel
+    tar xzf ${BARCELONA_ROOT}/staging/linux-2.6.39.tar.gz
+    echo "done"
+
+    highlight "apply kernel config"
+    # dont forget to copy config file
+    cp ${BARCELONA_ROOT}/artifacts/kernel_config_amd64 .config
+    echo "done"
+
+    highlight "make kernel package, please wait..."
+    # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
+    # fakeroot is required when packaging
+    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image >& /dev/null
+    echo "kernel package generated in tmp dir"
+
+    highlight "extract spl and zfs source tar ball"
+    # cp ${BARCELONA_ROOT}/tmp/*.deb ${BARCELONA_ROOT}/staging
+    cd ${TMP_DIR}
+    tar xzf ${BARCELONA_ROOT}/cache/spl-0.6.4.2.tar.gz
+    tar xzf ${BARCELONA_ROOT}/cache/zfs-0.6.4.2.tar.gz
+    echo "done"
+
+    highlight "configure spl"
+    cd $SPL_DIR
+    # must use absolute path
+    ./configure --with-linux=${KER_DIR}  --with-linux-obj=${KER_DIR} >& /dev/null
+    echo "done"
+
+    highlight "build spl, deb-utils and kernel modules, but not deb-kmod"
+    # make deb-utils deb-kmod
+    # deb-kmod build error, so we build deb-utils and .ko files but not deb-kmod
+    make deb-utils -j8 >& /dev/null
+    make -j8 >& /dev/null
+    echo "done"
+
+    highlight "configure zfs"
+    cd $ZFS_DIR
+    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR} 
+    echo "done"
+
+    highlight "build zfs, deb-utils and kernel modules, but not deb-kmod"
+    make deb-utils -j8 >& /dev/null
+    make -j8 >& /dev/null
+    echo "done"
+
+    # now all files we need is ready in tmp folder
+
+    highlight "extract linux-image package into staging/linux-image"
+    mkdir -p ${KER_STAGING_DIR}
+    dpkg-deb -x ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}
+    dpkg-deb -e ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}/DEBIAN
+    echo "done"
+
+    highlight "copy spl/zfs kernel modules into linux-image folder"
+    local EXTRA_DIR=${KER_STAGING_DIR}/lib/modules/2.6.39.001/extra
+    mkdir -p ${EXTRA_DIR}
+
+    mkdir -p ${EXTRA_DIR}/spl
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/spl/*.ko ${EXTRA_DIR}/spl
+    mkdir -p ${EXTRA_DIR}/splat
+    cp -r ${TMP_DIR}/spl-0.6.4.2/module/splat/*.ko  ${EXTRA_DIR}/splat
+    mkdir -p ${EXTRA_DIR}/avl
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/avl/*.ko ${EXTRA_DIR}/avl
+    mkdir -p ${EXTRA_DIR}/nvpair
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/nvpair/*.ko ${EXTRA_DIR}/nvpair
+    mkdir -p ${EXTRA_DIR}/unicode
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/unicode/*.ko ${EXTRA_DIR}/unicode
+    mkdir -p ${EXTRA_DIR}/zcommon
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zcommon/*.ko ${EXTRA_DIR}/zcommon
+    mkdir -p ${EXTRA_DIR}/zfs
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zfs/*.ko ${EXTRA_DIR}/zfs
+    mkdir -p ${EXTRA_DIR}/zpios
+    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zpios/*.ko ${EXTRA_DIR}/zpios
+    echo "done"
+
+    highlight "re-package linux-image debian package"
+    cd ${BARCELONA_ROOT}/staging
+    dpkg-deb -b linux-image linux-image-2.6.39.001_001_amd64.deb
+    echo "done"
+
+    highlight "copy spl/zfs debian packages into staging dir"
+    cp ${TMP_DIR}/spl-0.6.4.2/*.deb ${STAGING_DIR}
+    cp ${TMP_DIR}/zfs-0.6.4.2/*.deb ${STAGING_DIR}
+    echo "done"
+    echo "all linux-image and spl/zfs packages are available in staging folder"
+
+    ls -sail ${STAGING_DIR}
+}
+
+generate_output () {
+
+    highlight "prepare dirs"
+    rm -rf ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}
+    mkdir -p ${OUTPUT_DIR}/kbl
+    mkdir -p ${OUTPUT_DIR}/boot
+    mkdir -p ${OUTPUT_DIR}/boot/deb
+    mkdir -p ${OUTPUT_DIR}/cefdk
+    echo "done"
+
+    highlight "output files"
+    cp ${STAGING_DIR}/bzImage.kbl ${OUTPUT_DIR}/kbl/kbl
+#    cp ${STAGING_DIR}/bzImage.custom ${OUTPUT_DIR}/boot/bzImage
+    cp ${STAGING_DIR}/linux-image/boot/vmlinuz-2.6.39.001 ${OUTPUT_DIR}/boot/bzImage
+    cp ${STAGING_DIR}/initrd.netboot.gz ${OUTPUT_DIR}/boot/ramdisk
+#    cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
+#    cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+#    cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
+    cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/boot/cmdline
+#    cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
+    echo "$(git rev-parse --short HEAD)" > ${OUTPUT_DIR}/boot/git-short-hash
+    cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
+    cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
+#    cp ${ARTIFACT_DIR}/post_inst_hook ${OUTPUT_DIR}/boot/post_inst_hook
+#    chmod a+x ${OUTPUT_DIR}/boot/post_inst_hook
+
+    cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
+    echo "done"
+
+    tree ${OUTPUT_DIR}
+}
+
+#
+# program starts
+#
+
+# if [[ ! -z $(git status -s) ]]; then echo "git working tree is not clean."; exit 0; fi
+
+if [ $# -ne 0 ]; then
+    if [ $# -ne 1 ] || [ "$1" != "-a" ]
+    then
+        echo "usage: xxxx"
+        exit 0
+    fi
+    NOCEFDK="false"
+fi
+
+# echo $NOCEFDK
+
+if [ "$NOCEFDK" = "true" ]; then
+    echo "cefdk ramdisk and kmods won't be built"
+else
+    echo "cefdk ramdisk and kmods will be built"
+fi
+
+banner "test environment variable"
+test_env_var
+
+#
+# This function will prepare all prerequisite files, workspace, and snapshot kernel
+#
+build_cefdk () {
+
+    banner "check prerequisite files"
+    test_iso_files
+    prepare_cache_files
+
+    banner "clean staging, out and tmp folders"
+    clean_all_dirs
+
+    banner "prepare kexec"
+    if [ -f ${CACHE_DIR}/kexec ]; then
+        highlight "kexec executable found in cache folder"
+    else
+        highlight "kexec executable not found in cache folder" 
+        build_kexec
+    fi
+
+    banner "install cefdk"
+    install_cefdk_iso
+
+    banner "prepare workspace"
+    prepare_workspace
+
+    banner "pack (cleaned) kernel source"
+    pack_kernel_source
+}
+
+# banner "build kbl"
+# build_kbl_v2
+
+# banner "pack kernel source"
+# pack_kernel_source
+
+# banner "build custom kernel"
+# build_custom_kernel 
+
+# banner "build debian kernel package"
+# build_deb_packages
+
+# banner "build netboot initrd"
+# build_netboot_initrd2
+
+#if [ "$NOCEFDK" != "true" ]; then
+
+    # tried to change BR2_JLEVEL to 2, failed.
+#    banner "build all (or selected) cefdk packages"
+#    highlight "this takes 15~30 minutes, be patient."
+#    make -C ${WORKSPACE} &> /dev/null
+
+#    highlight "tar lib.modules after cefdk build"
+#    tar czf ${STAGING_DIR}/lib.modules.cefdk.tar.gz -C ${CEFDK_ROOT}/lib/modules .
+#    echo "lib.modules.cefdk.tar.gz is available in ${STAGING_DIR}"
+#fi
+
+#banner "generate output"
+#generate_output
+
+
+
+
+
