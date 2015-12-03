@@ -475,15 +475,18 @@ build_kbl_v2()  {
 
     highlight "remove old kbl folder in kernel dir if any"
     rm -rf ${KERNEL_DIR}/kbl
-    mkdir -p ${KERNEL_DIR}/kbl
+    echo "done"
 
     highlight "copy kbl initramfs template files"
+    mkdir -p ${KERNEL_DIR}/kbl
     cp ${TEMPL_DIR}/kbl_initramfs/* ${KERNEL_DIR}/kbl
     cp ${CACHE_DIR}/busybox-i686 ${KERNEL_DIR}/kbl/busybox
     cp ${CACHE_DIR}/kexec ${KERNEL_DIR}/kbl/kexec
+    echo "done"
 
-    highlight "copy kbl kernel config"
+    highlight "apply kbl kernel config"
     cp ${ARTIFACT_DIR}/kbl_kernel_config ${KERNEL_DIR}/.config
+    echo "done"
 
     make_kernel
 
@@ -523,9 +526,6 @@ build_custom_kernel () {
     rm -rf ${KERNEL_DIR}/*
     echo "done"
 
-    # re-prepare kernel
-    # prepare_kernel
-    # make_kernel
     highlight "restore kernel snapshot"
     tar xzf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR}
     echo "done"
@@ -602,59 +602,6 @@ build_netboot_initrd () {
 build_netboot_initrd2 () {
     
     fakeroot ${BARCELONA_ROOT}/scripts/build_netboot_initrd
-}
-
-build_netboot_initrd3 () {
-
-rm -rf ${TMP_DIR}
-mkdir -p ${TMP_DIR}
-
-highlight "extract original debian initrd in netboot tarball"
-tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/amd64/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
-echo "done"
-
-highlight "unpack cpio"
-mkdir -p ${TMP_DIR}/initrd
-cd ${TMP_DIR}/initrd
-sh -c "cpio -id < ${TMP_DIR}/initrd.cpio"
-ls -sail
-cd - &> /dev/null
-
-# fill preseed.cfg
-highlight "inject preseed.cfg file"
-cp ${ARTIFACT_DIR}/preseed.cfg ${TMP_DIR}/initrd
-echo "done"
-
-highlight "inject post_inst scripts"
-cp ${ARTIFACT_DIR}/post_inst ${TMP_DIR}/initrd/bin
-chmod a+x ${TMP_DIR}/initrd/bin/post_inst
-
-# cp modules
-highlight "inject kernel modules"
-mkdir -p ${TMP_DIR}/initrd/lib/modules/2.6.39
-cp -r ${CEFDK_ROOTDIR}/lib/modules/* ${TMP_DIR}/initrd/lib/modules/2.6.39
-ls ${TMP_DIR}/initrd/lib/modules/2.6.39 -sail
-
-highlight "inject gzip"
-cp -r ${ARTIFACT_DIR}/gzip ${TMP_DIR}/initrd/bin
-chmod a+x ${TMP_DIR}/initrd/bin/gzip
-
-# repack
-highlight "repack cpio archive"
-rm -f ${TMP_DIR}/initrd.cpio
-cd ${TMP_DIR}/initrd
-sh -c "find . | cpio -H newc -o > ${TMP_DIR}/initrd.cpio"
-cd - &> /dev/null
-
-highlight "zip initrd"
-cat ${TMP_DIR}/initrd.cpio | gzip -9 > ${STAGING_DIR}/initrd.netboot.gz
-echo "repackaged netboot initrd (initrd.netboot.gz) is now available in ${STAGING_DIR}"
-
-}
-
-build_netboot_initrd4 () {
-
-    fakeroot bash -c "build_netboot_initrd3"
 }
 
 #
@@ -833,26 +780,26 @@ test_env_var
 #
 build_cefdk () {
 
-	banner "check prerequisite files"
-	test_iso_files
-	prepare_cache_files
+    banner "check prerequisite files"
+    test_iso_files
+    prepare_cache_files
 
-	banner "clean staging, out and tmp folders"
-	clean_all_dirs
+    banner "clean staging, out and tmp folders"
+    clean_all_dirs
 
-	banner "prepare kexec"
-	if [ -f ${CACHE_DIR}/kexec ]; then
-    	highlight "kexec executable found in cache folder"
-	else
-   		highlight "kexec executable not found in cache folder" 
-    	build_kexec
-	fi
+    banner "prepare kexec"
+    if [ -f ${CACHE_DIR}/kexec ]; then
+        highlight "kexec executable found in cache folder"
+    else
+        highlight "kexec executable not found in cache folder" 
+        build_kexec
+    fi
 
-	banner "install cefdk"
-	install_cefdk_iso
+    banner "install cefdk"
+    install_cefdk_iso
 
-	banner "prepare workspace"
-	prepare_workspace
+    banner "prepare workspace"
+    prepare_workspace
 
     banner "pack (cleaned) kernel source"
     pack_kernel_source
