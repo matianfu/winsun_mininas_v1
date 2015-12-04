@@ -10,7 +10,7 @@ DASH="------------------------------"
 
 #
 # this is where you put intel cefdk discs
-#
+
 DISC_DIR=${BARCELONA_ROOT}/disc
 
 #
@@ -753,20 +753,12 @@ generate_output () {
 
     highlight "output files"
     cp ${STAGING_DIR}/bzImage.kbl ${OUTPUT_DIR}/kbl/kbl
-#    cp ${STAGING_DIR}/bzImage.custom ${OUTPUT_DIR}/boot/bzImage
     cp ${STAGING_DIR}/linux-image/boot/vmlinuz-2.6.39.001 ${OUTPUT_DIR}/boot/bzImage
     cp ${STAGING_DIR}/initrd.netboot.gz ${OUTPUT_DIR}/boot/ramdisk
-#    cp ${STAGING_DIR}/linux-2.6.39.tar.gz ${OUTPUT_DIR}/boot
-#    cp ${CACHE_DIR}/spl-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
-#    cp ${CACHE_DIR}/zfs-0.6.4.2.tar.gz ${OUTPUT_DIR}/boot
     cp ${ARTIFACT_DIR}/cmdline.usb ${OUTPUT_DIR}/boot/cmdline
-#    cp ${ARTIFACT_DIR}/kernel_config ${OUTPUT_DIR}/boot/kernel_config
     echo "$(git rev-parse --short HEAD)" > ${OUTPUT_DIR}/boot/git-short-hash
     cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
     cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
-#    cp ${ARTIFACT_DIR}/post_inst_hook ${OUTPUT_DIR}/boot/post_inst_hook
-#    chmod a+x ${OUTPUT_DIR}/boot/post_inst_hook
-
     cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
     echo "done"
 
