@@ -9,6 +9,7 @@ staging
 output
 wget-log
 
+log.txt
 *.png
 *.ps
 *.swp

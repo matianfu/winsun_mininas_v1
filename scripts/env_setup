@@ -3,23 +3,31 @@
 # set -e
 
 DASH="------------------------------"
-NOCEFDK="true"
 
-DISC_DIR=${BARCELONA_ROOT}/disc
 
 #
 # define all paths
 #
+
+#
+# this is where you put intel cefdk discs
+#
+DISC_DIR=${BARCELONA_ROOT}/disc
+
+#
+# 
+#
+ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
+CACHE_DIR=${BARCELONA_ROOT}/cache
+PATCH_DIR=${BARCELONA_ROOT}/patches
+SCRIPT_DIR=${BARCELONA_ROOT}/scripts
+TEMPL_DIR=${BARCELONA_ROOT}/template
+
+OUTPUT_DIR=${BARCELONA_ROOT}/output
+STAGING_DIR=${BARCELONA_ROOT}/staging
+TMP_DIR=${BARCELONA_ROOT}/tmp
 WORKSPACE=${BARCELONA_ROOT}/workspace
 
-SCRIPT_DIR=${BARCELONA_ROOT}/scripts
-PATCH_DIR=${BARCELONA_ROOT}/patches
-OUTPUT_DIR=${BARCELONA_ROOT}/output
-ARTIFACT_DIR=${BARCELONA_ROOT}/artifacts
-STAGING_DIR=${BARCELONA_ROOT}/staging
-CACHE_DIR=${BARCELONA_ROOT}/cache
-TEMPL_DIR=${BARCELONA_ROOT}/template
-TMP_DIR=${BARCELONA_ROOT}/tmp
 
 PKGSRC_DIR=${WORKSPACE}/project_build_i686/IntelCE
 KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kernel_source/linux-2.6.39
@@ -49,10 +57,11 @@ test_env_var () {
     # 
     if [ -z "$BARCELONA_ROOT" ]; then
         echo "Error: BARCELONA_ROOT is not defined"
-        exit 1
+        return 1
     fi
 
     echo "BARCELONA_ROOT is set to $BARCELONA_ROOT"
+    return 0
 }
 
 #
@@ -64,7 +73,7 @@ test_file () {
     if [ ! -f "$1" ]; then
         printf "Error: file does not exist.\n"
         highlight "stopped"
-        exit 1
+        return 1
     fi
     printf "done\n"
 }
@@ -755,22 +764,20 @@ generate_output () {
 
 # if [[ ! -z $(git status -s) ]]; then echo "git working tree is not clean."; exit 0; fi
 
-if [ $# -ne 0 ]; then
-    if [ $# -ne 1 ] || [ "$1" != "-a" ]
-    then
-        echo "usage: xxxx"
-        exit 0
-    fi
-    NOCEFDK="false"
-fi
-
+#if [ $# -ne 0 ]; then
+#    if [ $# -ne 1 ] || [ "$1" != "-a" ]
+#    then
+#        echo "usage: xxxx"
+#        exit 0
+#    fi
+#    NOCEFDK="false"
+#fi
 # echo $NOCEFDK
-
-if [ "$NOCEFDK" = "true" ]; then
-    echo "cefdk ramdisk and kmods won't be built"
-else
-    echo "cefdk ramdisk and kmods will be built"
-fi
+#if [ "$NOCEFDK" = "true" ]; then
+#    echo "cefdk ramdisk and kmods won't be built"
+#else
+#    echo "cefdk ramdisk and kmods will be built"
+#fi
 
 banner "test environment variable"
 test_env_var
