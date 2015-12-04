@@ -1,0 +1,59 @@
+#!/bin/sh
+
+set -e
+
+DEB_ARCH=
+UNAME_M=$(uname -m)
+
+if [ "$UNAME_M" = "i686" ]; then
+    echo "running on 32bit system"
+    DEB_ARCH="i386"
+elif [ "UNAME_M" = "x86_64" ]; then
+    DEB_ARCH="amd64"
+    echo "running on 64bit system"
+else
+    echo "ERROR: unsupported architecture"
+    exit 1
+fi
+
+# cannot use 'source' here, only shorthand available
+. /lib/chroot-setup.sh 
+
+# setup chroot enviromment
+chroot_setup
+
+# chroot
+chroot /target /bin/bash
+
+# cd
+cd /media/usb0/boot
+
+# should be preseeded.
+# apt-get install initramfs-tools
+
+# install deb packages
+dpkg -i linux-image-2.6.39.001_001_i386.deb \
+      spl_0.6.4.2-1_i386.deb \
+      zfs_0.6.4.2-1_i386.deb \
+      libnvpair1_0.6.4.2-1_i386.deb \
+      libuutil1_0.6.4.2-1_i386.deb \
+      libzfs2_0.6.4.2-1_i386.deb \
+      libzpool2_0.6.4.2-1_i386.deb
+      
+depmod -a
+
+# install boot link
+cd /boot
+ln -s vmlinuz-2.6.39.001 bzImage
+ln -s initrd.img-2.6.39.001 ramdisk
+echo "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait" > cmdline
+
+# exit chroot
+exit
+
+# cleanup chroot
+chroot_cleanup # umount automatically
+
+#
+echo "all jobs done, my lord."
+

@@ -760,6 +760,7 @@ generate_output () {
     cp ${ARTIFACT_DIR}/ker-rev ${OUTPUT_DIR}/boot/ker-rev
     cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
     cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
+    cp ${ARTIFACT_DIR}/finalize ${OUTPUT_DIR}/boot/finalize
     echo "done"
 
     tree ${OUTPUT_DIR}
