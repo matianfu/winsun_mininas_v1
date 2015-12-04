@@ -4,7 +4,6 @@
 
 DASH="------------------------------"
 
-
 #
 # define all paths
 #
@@ -34,6 +33,7 @@ KERNEL_DIR=${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/kern
 CEFDK_ROOTDIR=${WORKSPACE}/project_build_i686/IntelCE/root
 CEFDK_OUTDIR=${WORKSPACE}/binaries/IntelCE
 
+DEB_ARCH=""
 
 #
 # echo $1 in green color
@@ -51,6 +51,22 @@ banner () {
 }
 
 test_env_var () {
+
+    #
+    # test architecture
+    #
+    local UNAME_M=$(uname -m)
+
+    if [ "$UNAME_M" = "x86_64" ]; then
+        echo "running on x86 64bit platform"
+        DEB_ARCH="amd64"
+    elif [ "$UNAME_M" = "i686" ]; then
+        echo "running on x86 32bit platform"
+        DEB_ARCH="i386"
+    else
+        echo "unsupported platform"
+        return 1
+    fi        
 
     #
     # test BARCELONA_ROOT env
@@ -172,9 +188,8 @@ prepare_cache_files() {
     # http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz 
     # 
     WHEEZY_NETBOOT_NAME=netboot.tar.gz
-    # WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-i386/20130430/images/netboot/netboot.tar.gz"
-    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-amd64/20130430/images/netboot/netboot.tar.gz"
-
+    WHEEZY_NETBOOT_URL="http://ftp.cn.debian.org/debian/dists/wheezy/main/installer-${DEB_ARCH}/20130430/images/netboot/netboot.tar.gz"
+    cp ${ARTIFACT_DIR}/netboot.tar.gz.md5.${DEB_ARCH} ${ARTIFACT_DIR}/netboot.tar.gz.md5 
 
     fetch_file_cache $WHEEZY_NETBOOT_NAME $WHEEZY_NETBOOT_URL
 
@@ -564,7 +579,7 @@ build_netboot_initrd () {
     touch $FSTATE
 
     highlight "extract original debian initrd in netboot tarball"
-    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/amd64/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
+    tar xOzf ${CACHE_DIR}/netboot.tar.gz ./debian-installer/${DEB_ARCH}/initrd.gz | zcat > ${TMP_DIR}/initrd.cpio
     echo "done"
 
     highlight "unpack cpio"
@@ -642,7 +657,7 @@ build_deb_packages () {
 
     highlight "apply kernel config"
     # dont forget to copy config file
-    cp ${BARCELONA_ROOT}/artifacts/kernel_config_amd64 .config
+    cp ${BARCELONA_ROOT}/artifacts/kernel_config.${DEB_ARCH} .config
     echo "done"
 
     highlight "make kernel package, please wait..."
@@ -685,8 +700,8 @@ build_deb_packages () {
 
     highlight "extract linux-image package into staging/linux-image"
     mkdir -p ${KER_STAGING_DIR}
-    dpkg-deb -x ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}
-    dpkg-deb -e ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_amd64.deb ${KER_STAGING_DIR}/DEBIAN
+    dpkg-deb -x ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_${DEB_ARCH}.deb ${KER_STAGING_DIR}
+    dpkg-deb -e ${BARCELONA_ROOT}/tmp/linux-image-2.6.39.001_001_${DEB_ARCH}.deb ${KER_STAGING_DIR}/DEBIAN
     echo "done"
 
     highlight "copy spl/zfs kernel modules into linux-image folder"
@@ -713,7 +728,7 @@ build_deb_packages () {
 
     highlight "re-package linux-image debian package"
     cd ${BARCELONA_ROOT}/staging
-    dpkg-deb -b linux-image linux-image-2.6.39.001_001_amd64.deb
+    dpkg-deb -b linux-image linux-image-2.6.39.001_001_${DEB_ARCH}.deb
     echo "done"
 
     highlight "copy spl/zfs debian packages into staging dir"
