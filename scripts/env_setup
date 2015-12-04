@@ -330,9 +330,9 @@ prepare_kernel () {
     highlight "patch emmc bug"
     patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
 
-    highlight "patch usb controller"
-    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
-    echo "done"
+#    highlight "patch usb controller"
+#    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
+#    echo "done"
 
     highlight "patch ptrace.h for newer version of gcc"
     patch ${KERNEL_DIR}/arch/x86/include/asm/ptrace.h < ${PATCH_DIR}/008-kernel-ptrace-suppress-newer-version-compiler-complain.patch

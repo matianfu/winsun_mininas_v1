@@ -1,0 +1,320 @@
+diff --git a/etc/init.d/check_fan_lan_sit_iec.sh b/etc/init.d/check_fan_lan_sit_iec.sh
+new file mode 100755
+index 0000000..b279459
+--- /dev/null
++++ b/etc/init.d/check_fan_lan_sit_iec.sh
+@@ -0,0 +1,314 @@
++#!/bin/sh
++#Wait for Boot OK
++while [ ! -f "/tmp/boot_ok1" ]
++do
++  sleep 2
++done
++echo "PWR_LED 1" > /proc/BOARD_io
++sleep 1
++# Fix for HDD Hibernation disable HDD thermal
++ln -sf /dev/sda /tmp/sda
++ln -sf /dev/sdb /tmp/sdb
++
++sleep_sec=7
++
++#smart_fan
++fan_bt=92
++fan_bt_0=90
++fan_bt_1=87
++fan_bt_2=84
++fan_bt_3=80
++fan_bt_4=78
++fan_bt_5=68
++fan_bt_6=62
++fan_bt_7=45
++fan_bt_state=9
++temp_error=0
++fan_error=0
++read_error_cnt=0
++read_error=0
++system_state=0
++shutdown_cnt=0
++fan_delay=0
++
++notification_sys_temp(){
++  echo "notification_sys_temp"
++}
++
++notification_fan(){
++  notify_rpm=$1
++  notify_temp=$2
++  #echo "fan error = $fan_error"
++  if [ "${fan_error}" -ne "1" ]; then
++    echo "0">/tmp/fan
++    fan_error=1
++  fi
++
++}
++
++smart_fan(){
++  local temp=$1
++  local fan_bt_state_tmp=${fan_bt_state}
++ 
++  if [ ${temp} -ge ${fan_bt_0} ];then
++    fan_bt_state=0    
++    if [ ${temp} -ge ${fan_bt} ];then
++      shutdown_cnt=$(($shutdown_cnt+1))
++      if [ ${shutdown_cnt} -ge 3 ];then
++        # Force Power Down
++        poweroff      
++      fi
++    else
++      shutdown_cnt=0
++    fi
++    fan_delay=0
++  elif [ ${temp} -ge ${fan_bt_1} ];then
++    fan_bt_state=1    
++    fan_delay=0    
++  elif [ ${temp} -ge ${fan_bt_2} ];then
++    if [ "${fan_bt_state}" -lt "2" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=2    
++      fan_delay=0
++    fi
++  elif [ ${temp} -ge ${fan_bt_3} ];then
++    if [ "${fan_bt_state}" -lt "3" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=3    
++      fan_delay=0
++    fi
++  elif [ ${temp} -ge ${fan_bt_4} ];then
++    if [ "${fan_bt_state}" -lt "4" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=4   
++      fan_delay=0
++    fi
++  elif [ ${temp} -ge ${fan_bt_5} ];then
++    if [ "${fan_bt_state}" -lt "5" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=5    
++      fan_delay=0
++    fi
++  elif [ ${temp} -ge ${fan_bt_6} ];then
++    if [ "${fan_bt_state}" -lt "6" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=6   
++      fan_delay=0
++    fi
++  elif [ ${temp} -ge ${fan_bt_7} ];then
++    if [ "${fan_bt_state}" -lt "7" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=7   
++      fan_delay=0
++    fi
++  else 
++    if [ "${fan_bt_state}" -lt "8" ];then
++      if [ $fan_delay -ge 150 ]; then
++        fan_bt_state=$(($fan_bt_state+1))
++        fan_delay=0
++      fi
++    else
++      fan_bt_state=8    
++      fan_delay=0
++    fi
++  fi
++
++#  echo "fan_bt_state_tmp= ${fan_bt_state_tmp}"
++#  echo "fan_bt_state= ${fan_bt_state}"
++
++  if [ "${fan_bt_state_tmp}" != "${fan_bt_state}" ];then     
++    case "${fan_bt_state}" in
++    '0') #echo "set Fan to Full Speed"
++      echo 100 > /proc/FAN_io
++      temp_error=1
++      notification_sys_temp
++      ;;
++    '1') #echo "set Fan to Full Speed"
++      echo 100 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '2') #echo "set Fan to 2600 rpm"
++      echo 80 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '3') #echo "set Fan to 2200 rpm"
++      echo 67 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '4') #echo "set Fan to 1850 rpm"
++      echo 58 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '5') #echo "set Fan to 1550 rpm"
++      echo 45 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '6') #echo "set Fan to 1400 rpm"
++      echo 41 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '7') #echo "set Fan to 1000 rpm"
++      echo 25 > /proc/FAN_io
++      temp_error=0
++      ;;
++    '8') #echo "set Fan to Stop"
++      echo 0 > /proc/FAN_io
++      temp_error=0
++      ;;
++    *) 
++      ;;
++    esac
++  fi
++}
++
++fan_lan_x86_64(){
++  i=0
++  while :
++  do
++
++    #####################################################
++    #        Check Systm fan
++    #####################################################
++    cpu1temp=$(thermal -r | awk '$4~/0/ {print $7}')
++    cpu2temp=$(thermal -r | awk '$4~/1/ {print $7}')
++    HDD1temp=$(smartctl -a /tmp/sda | awk '$1~/194/ {print $10}')
++    HDD2temp=$(smartctl -a /tmp/sdb | awk '$1~/194/ {print $10}')
++
++if [ "$cpu1temp" != "" ] || [ "$cpu2temp" != "" ]; then 
++  if [ "${read_error_cnt}" -ne "0" ]; then
++  if [ "${read_error}" -ne "0" ]; then
++    # log error event
++    read_error=0
++  fi
++    fan_bt_state=9
++    temp_error=0
++    fan_error=0
++    system_state=0
++    shutdown_cnt=0
++    fan_delay=0
++    read_error_cnt=0
++  fi
++    templist="$HDD1temp $HDD2temp"    
++    if [ -e /tmp/hdd_temp_testmode ]; then
++      templist=$(cat /tmp/hdd_temp_testmode)
++      echo "$templist"
++    fi
++    high_temp=0
++    for temp in $templist
++    do
++      if [ ${temp} -gt ${high_temp} ];then
++        high_temp=${temp}
++      fi
++    done    
++    if [ ${high_temp} -ge 55 ]; then    
++      high_temp=87
++    elif [ ${high_temp} -ge 50 ]; then  
++      high_temp=80
++    elif [ ${high_temp} -ge 45 ]; then
++      high_temp=78
++    fi
++    
++    templist="$cpu1temp $cpu2temp $high_temp"
++    if [ -e /tmp/fan_temp_testmode ]; then
++      templist=$(cat /tmp/fan_temp_testmode)
++      echo "$templist"
++    fi
++#    echo "$templist"
++
++    high_temp=0
++    for temp in $templist
++    do
++      if [ ${temp} -gt ${high_temp} ];then
++        high_temp=${temp}
++      fi
++    done    
++    #echo "$high_temp"
++    smart_fan ${high_temp}
++    if [ ${high_temp} -lt 85 ]; then
++      sleep ${sleep_sec}
++      fan_delay=$(($fan_delay+10))
++    else    
++      fan_delay=$(($fan_delay+3))
++    fi
++    fanspeed1=$(cat /proc/FAN_io)
++    sleep 3    
++    fanspeed2=$(cat /proc/FAN_io)
++    if [ ${fanspeed1} -gt ${fanspeed2} ];then
++      fanspeed=${fanspeed1}
++    else    
++      fanspeed=${fanspeed2}
++    fi
++    #echo "fanspeed=${fanspeed}"
++    
++    if [ "${high_temp}" -ge "50" ] && [ "${fanspeed}" -lt "500" ]; then
++      notification_fan "${fanspeed}" "${high_temp}"
++      
++      #echo "fan_error=${fan_error}"
++    elif [ "${high_temp}" -le "45" ] || [ "${fanspeed}" -ge "700" ]; then
++      fan_error=0    
++    fi
++
++    if [ "${temp_error}" == "1" ]; then
++      if [ "${system_state}" != "2" ]; then
++        #echo "set PWR_LED 4"
++        system_state=2
++        echo "PWR_LED 4" > /proc/BOARD_io  #PWR red LED Always On Over  temperature
++      fi
++    elif [ "${fan_error}" == "1" ]; then
++      if [ "${system_state}" != "1" ]; then
++        #echo "set PWR_LED 4"
++        system_state=1
++        echo "PWR_LED 4" > /proc/BOARD_io  #PWR red LED Always On  Fan Stop
++      fi
++    else
++      if [ "${system_state}" != "0" ]; then
++        #echo "set PWR_LED 1"
++        system_state=0
++        echo "PWR_LED 1" > /proc/BOARD_io  #PWR white LED Always on         
++      fi
++    fi
++    echo "C0:$cpu1temp C1:$cpu2temp H0:$HDD1temp H1:$HDD2temp F:$fan_bt_state S:$fanspeed" > /tmp/fan_temp
++    
++    clear
++else    
++  if [ "${read_error_cnt}" -ge "2" ]; then
++  if [ "${read_error}" -ne "1" ]; then
++    # log error event
++    read_error=1
++  fi
++  fi
++  echo 67 > /proc/FAN_io
++  read_error_cnt=$(($read_error_cnt+1))
++  echo "System thermal was failed : $read_error_cnt" > /tmp/fan_temp
++  /etc/init.d/thermal restart
++  sleep 10
++fi
++  done
++}
++
++fan_lan_x86_64
++

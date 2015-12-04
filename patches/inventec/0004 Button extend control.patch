@@ -1,0 +1,56 @@
+diff --git a/etc/init.d/btn_dispatcher_iec b/etc/init.d/btn_dispatcher_iec
+new file mode 100755
+index 0000000..055afea
+--- /dev/null
++++ b/etc/init.d/btn_dispatcher_iec
+@@ -0,0 +1,50 @@
++#!/bin/sh 
++sleep_secs=1
++pwr_delay=0
++copy_delay=0
++rst2df_delay=0
++
++#/proc/BOARD_event 
++
++while true
++do
++  tmp_event=`cat /proc/BOARD_event | awk '(/ON||OFF/) {print $0}'`
++  btn_on=`echo ${tmp_event} | grep ON | cut -d" " -f1`
++
++  if [ "$btn_on" != "" ]; then
++    case "$btn_on" in
++      "PWR" ) pwr_delay=$(($pwr_delay+1))
++        echo "PWR delay $pwr_delay"
++        if [ "$pwr_delay" -ge 4 ]; then
++          # Do Power Down
++          echo "PWR_LED 2" > /proc/BOARD_io
++          sh -c "poweroff > /dev/null 2>&1"
++        fi  
++        ;;
++      "Copy" ) copy_delay=$(($copy_delay+1))
++        echo "COPY delay $copy_delay"
++        if [ "$copy_delay" -ge 4 ]; then
++          # Do USB disk copy
++          echo "U_LED 3" > /proc/BOARD_io
++          sleep 5
++          echo "U_LED 0" > /proc/BOARD_io          
++        fi  
++        ;;
++      "RST2DF" ) rst2df_delay=$(($rst2df_delay+1))
++        echo "RST2DF delay $rst2df_delay"
++        if [ "$rst2df_delay" -ge 4 ]; then
++          # Do Factory Reset
++          echo "PWR_LED 8" > /proc/BOARD_io
++          sleep 5
++          echo "PWR_LED 1" > /proc/BOARD_io                    
++        fi  
++        ;;
++      "NOBTN" ) pwr_delay=0
++        copy_delay=0
++        rst2df_delay=0
++        ;;
++    esac
++  fi
++
++  sleep ${sleep_secs}
++done

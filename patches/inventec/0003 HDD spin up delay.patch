@@ -1,0 +1,120 @@
+diff --git a/drivers/ata/libahci.c b/drivers/ata/libahci.c
+old mode 100644
+new mode 100755
+index d38c40f..c5dab0c
+--- a/drivers/ata/libahci.c
++++ b/drivers/ata/libahci.c
+@@ -119,6 +119,29 @@ static DEVICE_ATTR(ahci_port_cmd, S_IRUGO, ahci_show_port_cmd, NULL);
+ static DEVICE_ATTR(em_buffer, S_IWUSR | S_IRUGO,
+ 		   ahci_read_em_buffer, ahci_store_em_buffer);
+ static DEVICE_ATTR(em_message_supported, S_IRUGO, ahci_show_em_supported, NULL);
++//IEC-ADD by EDEN HDD spin up delay start at 20131214
++#define IEC_HDD_SPIN_UP_DELAY
++#ifdef IEC_HDD_SPIN_UP_DELAY
++volatile long unsigned int hdd_spin_up_lock_flag=-1;
++struct timer_list hdd_spin_up_timer;
++#define HDD_SPIN_UP_LOCK(addr)  \
++{  \
++  while (test_and_set_bit(0, addr) != 0) {  \
++    ata_msleep(ap, 1);  \
++  }  \  	
++}
++#define HDD_SPIN_UP_UNLOCK(addr)  \
++{  \
++  if (test_and_clear_bit(0, addr) == 0)  \
++    printk(KERN_INFO"hdd_spin_up_lock_flag already released\n");  \
++}
++static void hdd_spin_up_ready(unsigned long arg) {
++	HDD_SPIN_UP_UNLOCK(&hdd_spin_up_lock_flag);
++}
++//extern int sata1_count;
++//extern int sata2_count;
++#endif //IEC_HDD_SPIN_UP_DELAY
++//IEC-ADD by EDEN HDD spin up delay end at 20131214
+ 
+ struct device_attribute *ahci_shost_attrs[] = {
+ 	&dev_attr_link_power_management_policy,
+@@ -648,6 +671,26 @@ static void ahci_power_up(struct ata_port *ap)
+ 	u32 cmd;
+ 
+ 	cmd = readl(port_mmio + PORT_CMD) & ~PORT_CMD_ICC_MASK;
++//IEC-ADD by EDEN HDD spin up delay start at 20131214
++#ifdef IEC_HDD_SPIN_UP_DELAY
++	if(hdd_spin_up_lock_flag==-1) {			
++		hdd_spin_up_lock_flag=0;
++		setup_timer(&hdd_spin_up_timer,hdd_spin_up_ready,0);
++		//IEC-FIX by EDEN for move sata1 to CEFDK spin up at 20131217
++		//boot CEFDK to kernel here almost delay 5250 msec so need to add delay 1250 msec
++		printk(KERN_ERR"***ata%d : ahci_power_up***\n",ap->port_no+1);
++		HDD_SPIN_UP_LOCK(&hdd_spin_up_lock_flag);
++		mod_timer(&hdd_spin_up_timer, jiffies + msecs_to_jiffies(1250));
++	} else {
++		printk(KERN_ERR"***ata%d : ahci_power_up***\n",ap->port_no+1);			
++		HDD_SPIN_UP_LOCK(&hdd_spin_up_lock_flag);
++		mod_timer(&hdd_spin_up_timer, jiffies + msecs_to_jiffies(6500));
++	}
++//	if (ap->port_no==0)sata1_count=0;
++//	else sata2_count=0;
++	printk(KERN_ERR"###ata%d : ahci_power_up###\n",ap->port_no+1);
++#endif //IEC_HDD_SPIN_UP_DELAY
++//IEC-ADD by EDEN HDD spin up delay end at 20131214
+ 
+ 	/* spin up device */
+ 	if (hpriv->cap & HOST_CAP_SSS) {
+@@ -1820,6 +1863,56 @@ static void ahci_thaw(struct ata_port *ap)
+ 
+ static void ahci_error_handler(struct ata_port *ap)
+ {
++//IEC-ADD by EDEN HDD spin up delay start at 20131215
++#ifdef IEC_HDD_SPIN_UP_DELAY
++	struct ata_link *link;
++	ata_for_each_link(link, ap, HOST_FIRST) {		
++		struct ata_eh_context *ehc = &link->eh_context;
++		if (ehc->i.action & ATA_EH_RESET ) {
++			struct ata_device *dev;
++			ata_for_each_dev(dev, link, ALL) {
++				if (dev->flags & ATA_DFLAG_SLEEPING) {
++					dev->flags &= ~ATA_DFLAG_SLEEPING;
++					printk(KERN_ERR"***ata%d : waking up from sleep***\n",ap->port_no+1);	
++					HDD_SPIN_UP_LOCK(&hdd_spin_up_lock_flag);
++					
++					if (!(ap->pflags & ATA_PFLAG_FROZEN)) {
++						/* restart engine */
++						ahci_stop_engine(ap);
++						ahci_start_engine(ap);
++					}
++
++						sata_pmp_error_handler(ap);
++
++					if (!ata_dev_enabled(ap->link.device))
++						ahci_stop_engine(ap);
++					mod_timer(&hdd_spin_up_timer, jiffies + msecs_to_jiffies(6500));		
++//					if (ap->port_no==0)sata1_count=0;
++//					else sata2_count=0;
++					printk(KERN_ERR"###ata%d : waking up from sleep###\n",ap->port_no+1);	
++					{				
++						extern unsigned ata_exec_internal(struct ata_device *dev,	
++							struct ata_taskfile *tf, const u8 *cdb,int dma_dir, 
++							void *buf, unsigned int buflen, unsigned long timeout);
++						struct ata_taskfile tf;
++						unsigned int err_mask;
++						printk("set Idle drive immediately\n");		
++						tf.protocol = ATA_PROT_NODATA;
++						tf.command = ATA_CMD_IDLEIMMEDIATE;
++						tf.device = 0x40;
++						tf.device = dev->devno ?
++						tf.device | ATA_DEV1 : tf.device & ~ATA_DEV1;	
++						tf.flags |= ATA_TFLAG_ISADDR | ATA_TFLAG_DEVICE | ATA_TFLAG_WRITE;			
++						err_mask = ata_exec_internal(dev, &tf, NULL, DMA_NONE, NULL, 0, 0);
++						printk("EXIT, err_mask=%x\n", err_mask);						
++					}
++					return;
++				}
++			}
++		}
++      }
++#endif //IEC_HDD_SPIN_UP_DELAY	
++//IEC-ADD by EDEN HDD spin up delay end at 20131215
+ 	if (!(ap->pflags & ATA_PFLAG_FROZEN)) {
+ 		/* restart engine */
+ 		ahci_stop_engine(ap);

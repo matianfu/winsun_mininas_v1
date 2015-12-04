@@ -1,0 +1,81 @@
+diff --git a/drivers/ata/libata-core.c b/drivers/ata/libata-core.c
+old mode 100644
+new mode 100755
+index 76c3c15..2f9eea4
+--- a/drivers/ata/libata-core.c
++++ b/drivers/ata/libata-core.c
+@@ -69,6 +69,11 @@
+ 
+ #include "libata.h"
+ #include "libata-transport.h"
++//IEC-ADD by EDEN for HDD LED display start at 20151113
++#define LED_OFF         0x0
++#define LED_ON          0x1
++extern void iec_disk_access(int index, int act);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ 
+ /* debounce timing parameters in msecs { interval, duration, timeout } */
+ const unsigned long sata_deb_timing_normal[]		= {   5,  100, 2000 };
+@@ -4700,6 +4705,10 @@ static struct ata_queued_cmd *ata_qc_new(struct ata_port *ap)
+ 			qc = __ata_qc_from_tag(ap, i);
+ 			break;
+ 		}
++//IEC-ADD by EDEN for HDD LED display start at 20151113 	
++		/* disk light random */
++		iec_disk_access(ap->scsi_host->host_no,LED_OFF);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ 
+ 	if (qc)
+ 		qc->tag = i;
+@@ -4755,6 +4764,10 @@ void ata_qc_free(struct ata_queued_cmd *qc)
+ 	if (likely(ata_tag_valid(tag))) {
+ 		qc->tag = ATA_TAG_POISON;
+ 		clear_bit(tag, &ap->qc_allocated);
++//IEC-ADD by EDEN for HDD LED display start at 20151113		
++		/* disk light on */
++ 		iec_disk_access(ap->scsi_host->host_no,LED_ON);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ 	}
+ }
+ 
+diff --git a/drivers/scsi/sd.c b/drivers/scsi/sd.c
+old mode 100644
+new mode 100755
+index bd0806e..c8c46ae
+--- a/drivers/scsi/sd.c
++++ b/drivers/scsi/sd.c
+@@ -95,6 +95,12 @@ MODULE_ALIAS_SCSI_DEVICE(TYPE_RBC);
+ #else
+ #define SD_MINORS	0
+ #endif
++//IEC-ADD by EDEN for HDD LED display start at 20151113
++#define LED_ENABLE      0x4
++#define LED_DISABLE     0x5
++
++extern void iec_disk_access(int index, int act);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ 
+ static void sd_config_discard(struct scsi_disk *, unsigned int);
+ static int  sd_revalidate_disk(struct gendisk *);
+@@ -2492,6 +2498,10 @@ static void sd_probe_async(void *data, async_cookie_t cookie)
+ 		  sdp->removable ? "removable " : "");
+ 	scsi_autopm_put_device(sdp);
+ 	put_device(&sdkp->dev);
++//IEC-ADD by EDEN for HDD LED display start at 20151113
++	if(!strncmp(sdkp->device->host->hostt->name,"ahci",strlen("ahci")))
++		iec_disk_access(sdkp->device->host->host_no+1, LED_ENABLE);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ }
+ 
+ /**
+@@ -2624,6 +2634,10 @@ static int sd_remove(struct device *dev)
+ 	device_del(&sdkp->dev);
+ 	del_gendisk(sdkp->disk);
+ 	sd_shutdown(dev);
++//IEC-ADD by EDEN for HDD LED display start at 20151113
++	if(!strncmp(sdkp->device->host->hostt->name,"ahci",strlen("ahci")))
++		iec_disk_access(sdkp->device->host->host_no+1, LED_DISABLE);
++//IEC-ADD by EDEN for HDD LED display end at 20151113
+ 
+ 	mutex_lock(&sd_ref_mutex);
+ 	dev_set_drvdata(dev, NULL);
