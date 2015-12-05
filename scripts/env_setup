@@ -738,7 +738,7 @@ build_deb_packages () {
 
     highlight "re-package linux-image debian package"
     cd ${BARCELONA_ROOT}/staging
-    dpkg-deb -b linux-image linux-image-2.6.39.001_001_${DEB_ARCH}.deb
+    dpkg-deb -b linux-image linux-image-2.6.39.001_001_${DEB_ARCH}.deb >& /dev/null
     echo "done"
 
     highlight "copy spl/zfs debian packages into staging dir"
@@ -748,6 +748,9 @@ build_deb_packages () {
     echo "all linux-image and spl/zfs packages are available in staging folder"
 
     ls -sail ${STAGING_DIR}
+
+    # go back to 
+    cd ${BARCELONA_ROOT}
 }
 
 generate_output () {
