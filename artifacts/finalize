@@ -60,11 +60,10 @@ echo "apt-get update"
 chroot /target apt-get update
 
 echo "install deb packages"
-chroot /target apt-get -y install \
-    subversion expect python python-django python-setuptools python-pip \
-    python-mysql.connector python-dev python-libtorrent libmysqlclient-dev \ 
-    python-mysqldb python-psutil python-imaging openssh-server  \
-    proftpd-basic samba curl acl chkconfig minidlna avahi-daemon netatalk mysql-server-5.5
+chroot /target apt-get -y install subversion expect python python-django python-setuptools python-pip
+chroot /target apt-get -y install python-mysql.connector python-dev python-libtorrent libmysqlclient-dev
+chroot /target apt-get -y install python-mysqldb python-psutil python-imaging openssh-server
+chroot /target apt-get -y install proftpd-basic samba curl acl chkconfig minidlna avahi-daemon netatalk mysql-server-5.5
 
 if [ "$DEB_ARCH" = "amd64" ]; then
     echo "install lib32z1 on 64bit system"
