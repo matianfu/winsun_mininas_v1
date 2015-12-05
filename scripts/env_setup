@@ -329,6 +329,7 @@ prepare_kernel () {
 
     highlight "patch emmc bug"
     patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
+    echo "done"
 
 #    highlight "patch usb controller"
 #    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
@@ -336,11 +337,28 @@ prepare_kernel () {
 
     highlight "patch ptrace.h for newer version of gcc"
     patch ${KERNEL_DIR}/arch/x86/include/asm/ptrace.h < ${PATCH_DIR}/008-kernel-ptrace-suppress-newer-version-compiler-complain.patch
+    echo "done"
 
     highlight "patch kernel Makefile to build kernel in multithread way (make -j8)"
     patch ${WORKSPACE}/project_build_i686/IntelCE/kernel-29.0.12344.325128/Makefile < \
         ${PATCH_DIR}/006-build-kernel-using-multithread.patch
+    echo "done"
 
+    cd ${BARCELONA_ROOT}
+}
+
+restore_snapshot () {
+
+    if [ ! -e ${STAGING_DIR}/kernel.snapshot.tar.gz ]; then
+        echo "ERROR: ${STAGING_DIR}/kernel.snapshot.tar.gz not found."
+        return 1
+    fi
+
+    highlight "restore kernel snapshot"
+    tar xzf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR}
+    echo "done"
+
+    return 0
 }
 
 make_kernel () {
@@ -415,6 +433,20 @@ prepare_workspace () {
     # there is no .config if kernel have never been built
     make_kernel
 
+    #
+    # inventec patch can only be applied here
+    #
+    highlight "----------------------"
+    highlight "apply inventec patches"
+    highlight "----------------------"
+
+    cd ${KERNEL_DIR}
+    patch -p1 < ${PATCH_DIR}/inventec/0001_Board_IO_drivers.patch
+    patch -p1 < ${PATCH_DIR}/inventec/0002_HDD_LED_extend_control.patch
+    patch -p1 < ${PATCH_DIR}/inventec/0003_HDD_spin_up_delay.patch
+    patch -p1 < ${PATCH_DIR}/inventec/0006_USB_30_driver.patch
+    echo "done"
+
     highlight "snapshot kernel for rebuilding later"
     tar czf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${KERNEL_DIR} .
     echo "kernel.snapshot.tar.gz is available in ${STAGING_DIR}"
@@ -422,6 +454,8 @@ prepare_workspace () {
     # highlight "tar workspace"
     # tar cfz ${STAGING_DIR}/workspace.tar.gz -C ${WORKSPACE} .
     # echo "workspace.tar.gz is available in ${STAGING_DIR}"
+
+    cd ${BARCELONA_ROOT}
 }
 
 build_kbl_initrd_cpio () {
@@ -497,6 +531,12 @@ build_kbl () {
 #
 build_kbl_v2()  {
 
+    restore_snapshot
+
+    if [ ! $? -eq 0 ]; then 
+        return 1    
+    fi
+
     highlight "remove old kbl folder in kernel dir if any"
     rm -rf ${KERNEL_DIR}/kbl
     echo "done"
@@ -517,6 +557,8 @@ build_kbl_v2()  {
     highlight "cp to output folder"
     cp ${CEFDK_OUTDIR}/bzImage ${STAGING_DIR}/bzImage.kbl
     echo "kbl kernel (bzImage.kbl) is availabe in ${STAGING_DIR}"
+
+    cd ${BARCELONA_ROOT}
 }
 
 pack_kernel_source () {
