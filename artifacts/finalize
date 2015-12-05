@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -e
+# set -e
 
 DEB_ARCH=
 UNAME_M=$(uname -m)
@@ -22,34 +22,42 @@ fi
 # setup chroot enviromment
 chroot_setup
 
-# chroot
-chroot /target /bin/bash
-
-# cd
-cd /media/usb0/boot
-
 # should be preseeded.
 # apt-get install initramfs-tools
 
 # install deb packages
-dpkg -i linux-image-2.6.39.001_001_i386.deb \
-      spl_0.6.4.2-1_i386.deb \
-      zfs_0.6.4.2-1_i386.deb \
-      libnvpair1_0.6.4.2-1_i386.deb \
-      libuutil1_0.6.4.2-1_i386.deb \
-      libzfs2_0.6.4.2-1_i386.deb \
-      libzpool2_0.6.4.2-1_i386.deb
-      
-depmod -a
+echo "install linux-image"
+chroot /target dpkg -i /media/usb0/boot/deb/linux-image-2.6.39.001_001_${DEB_ARCH}.deb
+
+echo "install spl"
+chroot /target dpkg -i /media/usb0/boot/deb/spl_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "install zfs"
+chroot /target dpkg -i /media/usb0/boot/deb/zfs_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "install libnvpair"
+chroot /target dpkg -i /media/usb0/boot/deb/libnvpair1_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "install libuutil"
+chroot /target dpkg -i /media/usb0/boot/deb/libuutil1_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "install libzfs"
+chroot /target dpkg -i /media/usb0/boot/deb/libzfs2_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "install libzpool"
+chroot /target dpkg -i /media/usb0/boot/deb/libzpool2_0.6.4.2-1_${DEB_ARCH}.deb
+
+echo "depmod"
+chroot /target depmod -a
+
+echo "easy-install"
+chroot /target easy_install ntplib pexpect eyeD3 django_debug_toolbar apscheduler
 
 # install boot link
-cd /boot
-ln -s vmlinuz-2.6.39.001 bzImage
-ln -s initrd.img-2.6.39.001 ramdisk
-echo "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait" > cmdline
-
-# exit chroot
-exit
+echo "install boot links and cmdline"
+chroot /target /bin/bash -c "cd /boot; ln -s vmlinuz-2.6.39.001 bzImage"
+chroot /target /bin/bash -c "cd /boot; ln -s initrd.img-2.6.39.001 ramdisk"
+echo "console=tty0 console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait" > /target/boot/cmdline
 
 # cleanup chroot
 chroot_cleanup # umount automatically

@@ -520,27 +520,37 @@ build_kbl_v2()  {
 }
 
 pack_kernel_source () {
-    
+
+    highlight "clean tmp dir"
+    rm -rf ${TMP_DIR}
+    mkdir -p ${TMP_DIR}
+    echo "done"
+
+    highlight "extract snapshot into tmp dir"
+    tar xzf ${STAGING_DIR}/kernel.snapshot.tar.gz -C ${TMP_DIR}
+    echo "done"
+
     highlight "clean kernel source"
-    make -C ${KERNEL_DIR} mrproper &> /dev/null
+    make -C ${TMP_DIR} mrproper &> /dev/null
     echo "done"
 
     highlight "remove unnecessary files"
-    rm -rf ${KERNEL_DIR}/.build
-    rm -rf ${KERNEL_DIR}/.configure
-    rm -rf ${KERNEL_DIR}/.install_dev
-    rm -rf ${KERNEL_DIR}/.install_target
-    rm -rf ${KERNEL_DIR}/linux-2.6.39
-    rm -rf ${KERNEL_DIR}/.patch
-    rm -rf ${KERNEL_DIR}/.unpacked
+    rm -rf ${TMP_DIR}/.build
+    rm -rf ${TMP_DIR}/.configure
+    rm -rf ${TMP_DIR}/.install_dev
+    rm -rf ${TMP_DIR}/.install_target
+    rm -rf ${TMP_DIR}/linux-2.6.39
+    rm -rf ${TMP_DIR}/.patch
+    rm -rf ${TMP_DIR}/.unpacked
     echo "done"
 
-    highlight "apply kernel config"
-    cp ${ARTIFACT_DIR}/kernel_config ${KERNEL_DIR}/.config
-    echo "done"
+    # should not carry config
+    # highlight "apply kernel config"
+    # cp ${ARTIFACT_DIR}/kernel_config ${TMP_DIR}/.config
+    # echo "done"
     
     highlight "tar kernel source code"
-    tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${KERNEL_DIR} .
+    tar czf ${STAGING_DIR}/linux-2.6.39.tar.gz -C ${TMP_DIR} .
     echo "kernel source tarball is available in ${STAGING_DIR}"
 }
 
@@ -688,7 +698,7 @@ build_deb_packages () {
 
     highlight "configure zfs"
     cd $ZFS_DIR
-    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR} 
+    ./configure --with-linux=${KER_DIR} --with-linux-obj=${KER_DIR} --with-spl=${SPL_DIR} --with-spl-obj=${SPL_DIR} >& /dev/null
     echo "done"
 
     highlight "build zfs, deb-utils and kernel modules, but not deb-kmod"
