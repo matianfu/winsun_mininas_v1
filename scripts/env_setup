@@ -534,10 +534,26 @@ build_kbl () {
 build_kbl_v2()  {
 
     restore_snapshot
-
     if [ ! $? -eq 0 ]; then 
+        echo "ERROR: restore snapshot failed. aborted."
         return 1    
     fi
+
+    #
+    # stupid workaround
+    #
+    highlight "revert inventec usb patch for kbl"
+    cd ${KERNEL_DIR}
+    patch -p1 -R < ${PATCH_DIR}/inventec/0006_USB_30_driver.patch
+    if [ ! $? -eq 0 ]; then
+        echo "ERROR: unpatch inventec USB driver failed."
+        return 1
+    fi
+    echo "done"
+    
+    highlight "apply old (buggy) single file usb patch for kbl"
+    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c 
+    echo "done"
 
     highlight "remove old kbl folder in kernel dir if any"
     rm -rf ${KERNEL_DIR}/kbl
