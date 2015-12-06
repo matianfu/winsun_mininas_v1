@@ -192,6 +192,8 @@ prepare_cache_files() {
     cp ${ARTIFACT_DIR}/netboot.tar.gz.md5.${DEB_ARCH} ${ARTIFACT_DIR}/netboot.tar.gz.md5 
 
     fetch_file_cache $WHEEZY_NETBOOT_NAME $WHEEZY_NETBOOT_URL
+    # remove temp md5 file 
+    rm -rf ${ARTIFACT_DIR}/netboot.tar.gz.md5
 
     #
     # reference: http://zfsonlinux.org/generic-deb.html
