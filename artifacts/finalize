@@ -8,7 +8,7 @@ UNAME_M=$(uname -m)
 if [ "$UNAME_M" = "i686" ]; then
     echo "running on 32bit system"
     DEB_ARCH="i386"
-elif [ "UNAME_M" = "x86_64" ]; then
+elif [ "$UNAME_M" = "x86_64" ]; then
     DEB_ARCH="amd64"
     echo "running on 64bit system"
 else

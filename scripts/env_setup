@@ -333,10 +333,6 @@ prepare_kernel () {
     patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
     echo "done"
 
-    highlight "patch spi flash driver"
-    cp ${PATCH_DIR}/nmyx25.c ${KERNEL_DIR}/drivers/mtd/devices/nmyx25.c
-    echo "done"
-
 #    highlight "patch usb controller"
 #    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
 #    echo "done"
@@ -451,6 +447,11 @@ prepare_workspace () {
     patch -p1 < ${PATCH_DIR}/inventec/0002_HDD_LED_extend_control.patch
     patch -p1 < ${PATCH_DIR}/inventec/0003_HDD_spin_up_delay.patch
     patch -p1 < ${PATCH_DIR}/inventec/0006_USB_30_driver.patch
+    echo "done"
+
+    # can only be patch after first kernel make, otherwise content duplicate. SHIT!
+    highlight "patch spi flash driver"
+    cp ${PATCH_DIR}/nmyx25.c ${KERNEL_DIR}/drivers/mtd/devices
     echo "done"
 
     highlight "snapshot kernel for rebuilding later"
@@ -737,7 +738,7 @@ build_deb_packages () {
     highlight "make kernel package, please wait..."
     # make-kpkg --initrd --jobs=4 --append-to-version=.${KERNEL_APP} --revision=${KERNEL_REV} kernel_image kernel_headers
     # fakeroot is required when packaging
-    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image >& /dev/null
+    fakeroot make-kpkg --initrd --jobs=8 --append-to-version=.001 --revision=001 kernel_image 
     echo "kernel package generated in tmp dir"
 
     highlight "extract spl and zfs source tar ball"
