@@ -333,6 +333,10 @@ prepare_kernel () {
     patch ${KERNEL_DIR}/drivers/mmc/core/mmc.c < ${PATCH_DIR}/002-kernel-mmc-wrong-rev.patch
     echo "done"
 
+    highlight "patch spi flash driver"
+    cp ${PATCH_DIR}/nmyx25.c ${KERNEL_DIR}/drivers/mtd/devices/nmyx25.c
+    echo "done"
+
 #    highlight "patch usb controller"
 #    cp ${PATCH_DIR}/pci-quirks.c ${KERNEL_DIR}/drivers/usb/host/pci-quirks.c
 #    echo "done"
