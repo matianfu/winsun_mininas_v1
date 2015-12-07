@@ -29,8 +29,6 @@ chroot_setup
 # echo "apt-get update"
 # chroot /target apt-get update
 
-
-
 # install deb packages
 echo "install linux-image"
 chroot /target dpkg -i /media/usb0/boot/deb/linux-image-2.6.39.001_001_${DEB_ARCH}.deb
@@ -55,23 +53,6 @@ chroot /target dpkg -i /media/usb0/boot/deb/libzpool2_0.6.4.2-1_${DEB_ARCH}.deb
 
 echo "depmod"
 chroot /target depmod -a
-
-echo "apt-get update"
-chroot /target apt-get update
-
-echo "install deb packages"
-chroot /target apt-get -y install subversion expect python python-django python-setuptools python-pip
-chroot /target apt-get -y install python-mysql.connector python-dev python-libtorrent libmysqlclient-dev
-chroot /target apt-get -y install python-mysqldb python-psutil python-imaging openssh-server
-chroot /target apt-get -y install proftpd-basic samba curl acl chkconfig minidlna avahi-daemon netatalk mysql-server-5.5
-
-if [ "$DEB_ARCH" = "amd64" ]; then
-    echo "install lib32z1 on 64bit system"
-    chroot /target apt-get -y install lib32z1
-fi
-
-echo "easy-install"
-chroot /target easy_install ntplib pexpect eyeD3 django_debug_toolbar apscheduler
 
 # install boot link
 echo "install boot links and cmdline"
