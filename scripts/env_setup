@@ -709,8 +709,8 @@ build_netboot_initrd2 () {
 build_deb_packages () {
 
     local KER_DIR=${BARCELONA_ROOT}/tmp/kernel
-    local SPL_DIR=${BARCELONA_ROOT}/tmp/spl-0.6.4.2
-    local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.4.2
+    local SPL_DIR=${BARCELONA_ROOT}/tmp/spl-0.6.5.3
+    local ZFS_DIR=${BARCELONA_ROOT}/tmp/zfs-0.6.5.3
     local KER_STAGING_DIR=${BARCELONA_ROOT}/staging/linux-image
 
     banner "building deb packages"
@@ -744,8 +744,8 @@ build_deb_packages () {
     highlight "extract spl and zfs source tar ball"
     # cp ${BARCELONA_ROOT}/tmp/*.deb ${BARCELONA_ROOT}/staging
     cd ${TMP_DIR}
-    tar xzf ${BARCELONA_ROOT}/cache/spl-0.6.4.2.tar.gz
-    tar xzf ${BARCELONA_ROOT}/cache/zfs-0.6.4.2.tar.gz
+    tar xzf ${BARCELONA_ROOT}/cache/spl-0.6.5.3.tar.gz
+    tar xzf ${BARCELONA_ROOT}/cache/zfs-0.6.5.3.tar.gz
     echo "done"
 
     highlight "configure spl"
@@ -784,21 +784,21 @@ build_deb_packages () {
     mkdir -p ${EXTRA_DIR}
 
     mkdir -p ${EXTRA_DIR}/spl
-    cp -r ${TMP_DIR}/spl-0.6.4.2/module/spl/*.ko ${EXTRA_DIR}/spl
+    cp -r ${TMP_DIR}/spl-0.6.5.3/module/spl/*.ko ${EXTRA_DIR}/spl
     mkdir -p ${EXTRA_DIR}/splat
-    cp -r ${TMP_DIR}/spl-0.6.4.2/module/splat/*.ko  ${EXTRA_DIR}/splat
+    cp -r ${TMP_DIR}/spl-0.6.5.3/module/splat/*.ko  ${EXTRA_DIR}/splat
     mkdir -p ${EXTRA_DIR}/avl
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/avl/*.ko ${EXTRA_DIR}/avl
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/avl/*.ko ${EXTRA_DIR}/avl
     mkdir -p ${EXTRA_DIR}/nvpair
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/nvpair/*.ko ${EXTRA_DIR}/nvpair
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/nvpair/*.ko ${EXTRA_DIR}/nvpair
     mkdir -p ${EXTRA_DIR}/unicode
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/unicode/*.ko ${EXTRA_DIR}/unicode
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/unicode/*.ko ${EXTRA_DIR}/unicode
     mkdir -p ${EXTRA_DIR}/zcommon
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zcommon/*.ko ${EXTRA_DIR}/zcommon
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/zcommon/*.ko ${EXTRA_DIR}/zcommon
     mkdir -p ${EXTRA_DIR}/zfs
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zfs/*.ko ${EXTRA_DIR}/zfs
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/zfs/*.ko ${EXTRA_DIR}/zfs
     mkdir -p ${EXTRA_DIR}/zpios
-    cp -r ${TMP_DIR}/zfs-0.6.4.2/module/zpios/*.ko ${EXTRA_DIR}/zpios
+    cp -r ${TMP_DIR}/zfs-0.6.5.3/module/zpios/*.ko ${EXTRA_DIR}/zpios
     echo "done"
 
     highlight "re-package linux-image debian package"
@@ -807,8 +807,8 @@ build_deb_packages () {
     echo "done"
 
     highlight "copy spl/zfs debian packages into staging dir"
-    cp ${TMP_DIR}/spl-0.6.4.2/*.deb ${STAGING_DIR}
-    cp ${TMP_DIR}/zfs-0.6.4.2/*.deb ${STAGING_DIR}
+    cp ${TMP_DIR}/spl-0.6.5.3/*.deb ${STAGING_DIR}
+    cp ${TMP_DIR}/zfs-0.6.5.3/*.deb ${STAGING_DIR}
     echo "done"
     echo "all linux-image and spl/zfs packages are available in staging folder"
 
