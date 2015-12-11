@@ -34,22 +34,25 @@ echo "install linux-image"
 chroot /target dpkg -i /media/usb0/boot/deb/linux-image-2.6.39.001_001_${DEB_ARCH}.deb
 
 echo "install spl"
-chroot /target dpkg -i /media/usb0/boot/deb/spl_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/spl_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "install zfs"
-chroot /target dpkg -i /media/usb0/boot/deb/zfs_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/zfs_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "install libnvpair"
-chroot /target dpkg -i /media/usb0/boot/deb/libnvpair1_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/libnvpair1_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "install libuutil"
-chroot /target dpkg -i /media/usb0/boot/deb/libuutil1_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/libuutil1_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "install libzfs"
-chroot /target dpkg -i /media/usb0/boot/deb/libzfs2_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/libzfs2_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "install libzpool"
-chroot /target dpkg -i /media/usb0/boot/deb/libzpool2_0.6.4.2-1_${DEB_ARCH}.deb
+chroot /target dpkg -i /media/usb0/boot/deb/libzpool2_0.6.5.3-1_${DEB_ARCH}.deb
+
+echo "install zfs-initramfs"
+chroot /target dpkg -i /media/usb0/boot/deb/zfs-initramfs_0.6.5.3-1_${DEB_ARCH}.deb
 
 echo "depmod"
 chroot /target depmod -a

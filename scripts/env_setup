@@ -449,6 +449,10 @@ prepare_workspace () {
     patch -p1 < ${PATCH_DIR}/inventec/0006_USB_30_driver.patch
     echo "done"
 
+    highlight "patch iec_board.c to disable watchdog"
+    cp ${PATCH_DIR}/iec_board.c ${KERNEL_DIR}/drivers/gpio
+    echo "done"
+
     # can only be patch after first kernel make, otherwise content duplicate. SHIT!
     highlight "patch spi flash driver"
     cp ${PATCH_DIR}/nmyx25.c ${KERNEL_DIR}/drivers/mtd/devices
