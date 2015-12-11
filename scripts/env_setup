@@ -469,6 +469,9 @@ prepare_workspace () {
     cd ${BARCELONA_ROOT}
 }
 
+#
+# This function is deprecated. But dont delete code.
+#
 build_kbl_initrd_cpio () {
 
     local FSTATE=${TMP_DIR}/.fstate
@@ -503,6 +506,8 @@ build_kbl_initrd_cpio () {
     echo "kbl_initrd.cpio is available in ${STAGING_DIR}" 
 }
 
+#
+# this function is deprecated but dont delete code
 #
 # build kernel boot loader, this code does NOT work properly, possibly because 
 # 1) we did not provide a zipped archive
