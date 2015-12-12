@@ -827,6 +827,37 @@ build_deb_packages () {
     cd ${BARCELONA_ROOT}
 }
 
+build_usb_flash () {
+    
+    highlight "prepare dirs"
+    rm -rf ${TMP_DIR}
+    mkdir -p ${TMP_DIR}
+    echo "done"
+
+    highlight "untar kernel source"
+    cd ${TMP_DIR}
+    tar xf ${STAGING_DIR}/linux-2.6.39.tar.gz
+    echo "done"
+
+    highlight "copy initramfs template"
+    cp -r ${TEMPL_DIR}/usb_flash_initramfs initramfs
+    echo "done"
+
+    highlight "apply kernel config"
+    cp initramfs/kernel_config .config
+    echo "done"
+
+    highlight "build kernel"
+    make -j8 >& /dev/null
+    echo "done"
+
+    highlight "copy to staging folder"
+    cp arch/x86/boot/bzImage ${STAGING_DIR}/bzImage.usbflash
+    echo "bzImage.usbflash is ready in staging folder"
+
+    cd ${BARCELONA_ROOT}
+}
+
 generate_output () {
 
     highlight "prepare dirs"
@@ -836,6 +867,7 @@ generate_output () {
     mkdir -p ${OUTPUT_DIR}/boot
     mkdir -p ${OUTPUT_DIR}/boot/deb
     mkdir -p ${OUTPUT_DIR}/cefdk
+    mkdir -p ${OUTPUT_DIR}/usb_flash/boot
     echo "done"
 
     highlight "output files"
@@ -848,6 +880,8 @@ generate_output () {
     cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
     cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
     cp ${ARTIFACT_DIR}/finalize ${OUTPUT_DIR}/boot/finalize
+    cp ${STAGING_DIR}/bzImage.usbflash ${OUTPUT_DIR}/usb_flash/boot
+    echo "console=tty0 console=ttyS0,115200" > ${OUTPUT_DIR}/usb_flash/boot/cmdline
     echo "done"
 
     tree ${OUTPUT_DIR}
