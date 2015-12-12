@@ -880,7 +880,7 @@ generate_output () {
     cp ${ARTIFACT_DIR}/ker-app ${OUTPUT_DIR}/boot/ker-app
     cp ${STAGING_DIR}/*.deb ${OUTPUT_DIR}/boot/deb
     cp ${ARTIFACT_DIR}/finalize ${OUTPUT_DIR}/boot/finalize
-    cp ${STAGING_DIR}/bzImage.usbflash ${OUTPUT_DIR}/usb_flash/boot
+    cp ${STAGING_DIR}/bzImage.usbflash ${OUTPUT_DIR}/usb_flash/boot/bzImage
     echo "console=tty0 console=ttyS0,115200" > ${OUTPUT_DIR}/usb_flash/boot/cmdline
     echo "done"
 
