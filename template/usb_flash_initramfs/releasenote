@@ -1,0 +1,41 @@
+
+This release can be used to flash the spi nor flash through USB Drive, or 
+to flash the emmc.
+
+After system start-up, the power led state is white & slow blink;
+
+The script will first check if device file for usb drive (/dev/sda1) exists,
+if not, power led turns off. SATA/PATA drivers are removed from kernel configuration,
+so hard drive won't be recognized by kernel.
+
+Then it try to mount /dev/sda1, if this fails, power led state is set to orange, 
+fast blink.
+
+After that, it checks if spi_nor.bin or emmc.img file exist on usb, if neither file 
+exist, the power led turns to orange, slow blink.
+
+Later on, the script put power led to white, fast blink, indicating it is flashing 
+the spi nor flash or emmc. Only one operation is performed, depending on which 
+image file exists on usb drive. If both files exists, only spi nor is flashed.
+
+Finally, if the operation succeeds, power led turns to white, on. Otherwise, it
+turns orange, on, indicating an error.
+
+--------------------
+
+The file/folder layout on usb drive
+
+.
+├── boot
+│   ├── bzImage
+│   └── cmdline
+└── emmc.img
+
+change emmc.img to spi_nor.bin if you want to flash spi nor flash.
+
+ 
+
+
+
+
+
