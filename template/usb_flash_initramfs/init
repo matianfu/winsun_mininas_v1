@@ -41,7 +41,7 @@ else
     if [ $RESULT -ne 0 ]; then
         # mount failed
         echo "mount usb drive failed."
-        # LED orange ON
+        # LED orange fast flash
         echo "PWR_LED 6" > /proc/BOARD_io
         # fallback to shell
     else        
